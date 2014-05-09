@@ -1,3 +1,6 @@
+Transparency! v7.0.0
+- version bump for helix
+
 Transparency! v6.0.7
 - hide visualization when tv tunes is active
 
