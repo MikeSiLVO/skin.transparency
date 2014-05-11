@@ -57,7 +57,7 @@
 			<posx>40</posx>
 			<posy>100</posy>
 			<width>620</width>
-			<height>90</height>
+			<height>70</height>
 			<align>center</align>
 			<label>-</label>
 			<font>font-20</font>

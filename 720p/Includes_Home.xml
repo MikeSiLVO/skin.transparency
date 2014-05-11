@@ -147,7 +147,7 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 			<animation effect="rotatey" center="333" start="-6" end="-6" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !IsEmpty(Window(Videos).Property(TvTunesIsAlive)) + !Skin.HasSetting(HideHomeVizBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Music_Fanart">
