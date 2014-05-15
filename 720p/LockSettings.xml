@@ -23,7 +23,7 @@
 				<onclick>Dialog.Close(locksettings)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
-			<control type="label">
+			<control type="label" id="2">
 				<description>heading label</description>
 				<posx>40</posx>
 				<posy>15</posy>
@@ -32,7 +32,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<label>$LOCALIZE[20043]</label>
+				<label>-</label>
 				<visible>!Window.IsVisible(ProfileSettings)</visible>
 			</control>
 			<control type="image">

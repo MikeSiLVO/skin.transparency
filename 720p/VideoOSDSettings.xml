@@ -77,7 +77,7 @@
 				<showonepage>true</showonepage>
 			</control>
 		</control>
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<description>Default Slider</description>
 			<height>30</height>
 			<texturefocus border="7">list-focus.png</texturefocus>

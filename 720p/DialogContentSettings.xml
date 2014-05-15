@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">20</defaultcontrol>
 	<controls>
 		<control type="image">
 			<posx>0</posx>
@@ -43,7 +43,7 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="spincontrolex" id="3">
+			<control type="spincontrolex" id="20">
 				<description>Content Picker</description>
 				<posx>200</posx>
 				<posy>80</posy>
@@ -56,16 +56,16 @@
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 				<onup>28</onup>
-				<ondown>4</ondown>
-				<onleft>3</onleft>
-				<onright>3</onright>
+				<ondown>21</ondown>
+				<onleft>20</onleft>
+				<onright>20</onright>
 			</control>
-			<control type="list" id="4">
+			<control type="list" id="21">
 				<posx>200</posx>
 				<posy>143</posy>
 				<width>450</width>
 				<height>300</height>
-				<onup>3</onup>
+				<onup>20</onup>
 				<onleft>5</onleft>
 				<onright>61</onright>
 				<ondown>5</ondown>
@@ -112,7 +112,7 @@
 						<posy>0</posy>
 						<width>400</width>
 						<height>30</height>
-						<visible>Control.HasFocus(4)</visible>
+						<visible>Control.HasFocus(21)</visible>
 						<texture border="7">list-focus2.png</texture>
 						<include>ListFocusScroll13</include>
 					</control>
@@ -134,7 +134,7 @@
 						<textcolor>lightgrey</textcolor>
 						<selectedcolor>lightblue</selectedcolor>
 						<info>ListItem.Label</info>
-						<visible>!Control.HasFocus(4)</visible>
+						<visible>!Control.HasFocus(21)</visible>
 					</control>
 					<control type="label">
 						<posx>50</posx>
@@ -147,7 +147,7 @@
 						<textcolor>white</textcolor>
 						<selectedcolor>lightblue</selectedcolor>
 						<info>ListItem.Label</info>
-						<visible>Control.HasFocus(4)</visible>
+						<visible>Control.HasFocus(21)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -161,7 +161,7 @@
 				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-				<onleft>4</onleft>
+				<onleft>21</onleft>
 				<onright>5</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -173,7 +173,7 @@
 				<width>300</width>
 				<height>300</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Container(4).ListItem.Icon]</texture>
+				<texture>$INFO[Container(21).ListItem.Icon]</texture>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
@@ -182,7 +182,7 @@
 				<width>880</width>
 				<height>150</height>
 				<itemgap>0</itemgap>
-				<onup>4</onup>
+				<onup>21</onup>
 				<ondown>28</ondown>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -224,10 +224,10 @@
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>186</label>
-					<onleft>6</onleft>
+					<onleft>22</onleft>
 					<onright>29</onright>
 					<onup>30</onup>
-					<ondown>3</ondown>
+					<ondown>20</ondown>
 				</control>
 				<control type="button" id="29">
 					<description>Cancel Button</description>
@@ -241,11 +241,11 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>222</label>
 					<onleft>28</onleft>
-					<onright>6</onright>
+					<onright>22</onright>
 					<onup>30</onup>
-					<ondown>3</ondown>
+					<ondown>20</ondown>
 				</control>
-				<control type="button" id="6">
+				<control type="button" id="22">
 					<description>Settings Button</description>
 					<posx>740</posx>
 					<posy>665</posy>
@@ -259,7 +259,7 @@
 					<onleft>29</onleft>
 					<onright>28</onright>
 					<onup>30</onup>
-					<ondown>3</ondown>
+					<ondown>20</ondown>
 				</control>
 				<control type="image">
 					<posx>340</posx>

@@ -90,7 +90,7 @@
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<description>Default Sliderex</description>
 			<height>35</height>
 			<font>font-20</font>

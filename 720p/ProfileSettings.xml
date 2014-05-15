@@ -23,7 +23,7 @@
 				<onclick>Dialog.Close(profilesettings)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
-			<control type="label">
+			<control type="label" id="2">
 				<description>heading label</description>
 				<posx>40</posx>
 				<posy>15</posy>
@@ -32,7 +32,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
-				<label>$INFO[Window.Property(heading)]</label>
+				<label>-</label>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -156,7 +156,7 @@
 				<height>85</height>
 				<texture border="10">underlay.png</texture>
 			</control>
-			<control type="image" id="2">
+			<control type="image" id="101">
 				<description>profile image</description>
 				<posx>10</posx>
 				<posy>535</posy>
@@ -177,7 +177,7 @@
 				<textcolor>lightblue</textcolor>
 				<label>$LOCALIZE[20093]: </label>
 			</control>
-			<control type="label" id="1000">
+			<control type="label" id="102">
 				<description>profile name Value</description>
 				<posx>420</posx>
 				<posy>630</posy>
@@ -196,7 +196,7 @@
 				<textcolor>lightblue</textcolor>
 				<label>$LOCALIZE[20070]: </label>
 			</control>
-			<control type="label" id="1001">
+			<control type="label" id="103">
 				<description>profile directory Value</description>
 				<posx>420</posx>
 				<posy>660</posy>
