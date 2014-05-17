@@ -1,5 +1,7 @@
 Transparency! v7.0.0
 - version bump for helix
+- settings id changes
+- add launch button to addon info
 
 Transparency! v6.0.7
 - hide visualization when tv tunes is active
