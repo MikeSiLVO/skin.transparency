@@ -117,6 +117,7 @@
 						<width>27</width>
 						<height>18</height>
 						<texture>countries/$INFO[ListItem.Thumb,,.gif]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>40</posx>
@@ -164,6 +165,7 @@
 						<width>61</width>
 						<height>9</height>
 						<texture>icon_rating_$INFO[ListItem.ActualIcon].png</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout width="710" height="29">
@@ -189,6 +191,7 @@
 						<width>27</width>
 						<height>18</height>
 						<texture>countries/$INFO[ListItem.Thumb,,.gif]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>40</posx>
@@ -236,6 +239,7 @@
 						<width>61</width>
 						<height>9</height>
 						<texture>icon_rating_$INFO[ListItem.ActualIcon].png</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>
 			</control>

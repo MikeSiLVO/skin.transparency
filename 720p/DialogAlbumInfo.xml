@@ -362,7 +362,7 @@
 						<label>[COLOR=blue][B]$INFO[ListItem.TrackNumber][/B][/COLOR] - $INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>470</posx>
+						<posx>320</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>30</height>
@@ -402,7 +402,7 @@
 						<label>[COLOR=blue][B]$INFO[ListItem.TrackNumber][/B][/COLOR] - $INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>470</posx>
+						<posx>320</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>30</height>
@@ -467,7 +467,7 @@
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>160</posx>
+								<posx>0</posx>
 								<posy>0</posy>
 								<width>160</width>
 								<height>30</height>
@@ -511,7 +511,7 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>160</posx>
+								<posx>0</posx>
 								<posy>0</posy>
 								<width>160</width>
 								<height>30</height>
@@ -610,7 +610,7 @@
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>160</posx>
+								<posx>0</posx>
 								<posy>0</posy>
 								<width>160</width>
 								<height>30</height>
@@ -654,7 +654,7 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>160</posx>
+								<posx>0</posx>
 								<posy>0</posy>
 								<width>160</width>
 								<height>30</height>

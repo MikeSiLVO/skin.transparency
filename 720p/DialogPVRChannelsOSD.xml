@@ -83,10 +83,11 @@
 						<posy>3</posy>
 						<width>24</width>
 						<height>24</height>
-						<info>ListItem.Icon</info>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>30</height>
@@ -108,7 +109,7 @@
 						<info>ListItem.ChannelName</info>
 					</control>
 					<control type="label">
-						<posx>690</posx>
+						<posx>200</posx>
 						<posy>0</posy>
 						<width>490</width>
 						<height>30</height>
@@ -152,10 +153,11 @@
 						<posy>3</posy>
 						<width>24</width>
 						<height>24</height>
-						<info>ListItem.Icon</info>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>80</posx>
+						<posx>40</posx>
 						<posy>0</posy>
 						<width>40</width>
 						<height>30</height>
@@ -177,7 +179,7 @@
 						<info>ListItem.ChannelName</info>
 					</control>
 					<control type="label">
-						<posx>690</posx>
+						<posx>200</posx>
 						<posy>0</posy>
 						<width>490</width>
 						<height>30</height>

@@ -61,7 +61,7 @@
 						<bordersize>7</bordersize>
 					</control>
 					<control type="label">
-						<posx>115</posx>
+						<posx>26</posx>
 						<posy>145</posy>
 						<width>178</width>
 						<height>25</height>
@@ -93,7 +93,7 @@
 						</animation>
 					</control>
 					<control type="label">
-						<posx>115</posx>
+						<posx>26</posx>
 						<posy>145</posy>
 						<width>178</width>
 						<height>25</height>

@@ -96,7 +96,7 @@
 						<info>ListItem.StartTime</info>
 					</control>
 					<control type="label">
-						<posx>700</posx>
+						<posx>200</posx>
 						<posy>0</posy>
 						<width>500</width>
 						<height>30</height>
@@ -152,7 +152,7 @@
 						<info>ListItem.StartTime</info>
 					</control>
 					<control type="label">
-						<posx>700</posx>
+						<posx>200</posx>
 						<posy>0</posy>
 						<width>500</width>
 						<height>30</height>

@@ -360,6 +360,7 @@
 						<width>31</width>
 						<height>31</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -396,6 +397,7 @@
 						<width>31</width>
 						<height>31</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -452,6 +454,7 @@
 						<width>31</width>
 						<height>31</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -488,6 +491,7 @@
 						<width>31</width>
 						<height>31</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>45</posx>

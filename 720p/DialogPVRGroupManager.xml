@@ -81,10 +81,11 @@
 							<posy>4</posy>
 							<width>22</width>
 							<height>22</height>
-							<info>ListItem.Icon</info>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>60</posx>
+							<posx>0</posx>
 							<posy>0</posy>
 							<width>60</width>
 							<height>30</height>
@@ -128,10 +129,11 @@
 							<posy>4</posy>
 							<width>22</width>
 							<height>22</height>
-							<info>ListItem.Icon</info>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>60</posx>
+							<posx>0</posx>
 							<posy>0</posy>
 							<width>60</width>
 							<height>30</height>
@@ -209,12 +211,13 @@
 							<posy>4</posy>
 							<width>22</width>
 							<height>22</height>
-							<info>ListItem.Icon</info>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>60</posx>
+							<posx>0</posx>
 							<posy>0</posy>
-							<width>100</width>
+							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>right</align>
@@ -256,12 +259,13 @@
 							<posy>4</posy>
 							<width>22</width>
 							<height>22</height>
-							<info>ListItem.Icon</info>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>60</posx>
+							<posx>0</posx>
 							<posy>0</posy>
-							<width>100</width>
+							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
 							<align>right</align>

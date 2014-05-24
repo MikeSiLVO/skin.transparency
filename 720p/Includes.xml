@@ -1615,6 +1615,7 @@
 			<width>160</width>
 			<height>40</height>
 			<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
+			<aspectratio>keep</aspectratio>
 			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 		</control>
 		<control type="image">
@@ -1623,10 +1624,11 @@
 			<width>160</width>
 			<height>40</height>
 			<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
+			<aspectratio>keep</aspectratio>
 			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 		</control>
 		<control type="label">
-			<posx>84</posx>
+			<posx>4</posx>
 			<posy>46</posy>
 			<width>160</width>
 			<height>20</height>
@@ -1636,7 +1638,7 @@
 			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 		</control>
 		<control type="label">
-			<posx>84</posx>
+			<posx>4</posx>
 			<posy>64</posy>
 			<width>160</width>
 			<height>20</height>
@@ -1651,6 +1653,7 @@
 			<width>54</width>
 			<height>80</height>
 			<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+			<aspectratio>keep</aspectratio>
 			<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 		</control>
 		<control type="label">
@@ -1788,7 +1791,7 @@
 				<hitrect x="-10" y="-10" w="1" h="1"/>
 				<itemlayout height="35" width="35">
 					<control type="label">
-						<posx>10</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>35</width>
 						<height>35</height>
@@ -1800,7 +1803,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>10</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>35</width>
 						<height>35</height>

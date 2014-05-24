@@ -290,7 +290,7 @@
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
-							<posx>220</posx>
+							<posx>10</posx>
 							<posy>0</posy>
 							<width>210</width>
 							<height>30</height>
@@ -334,7 +334,7 @@
 							<include>ListFocusScroll22</include>
 						</control>
 						<control type="label">
-							<posx>220</posx>
+							<posx>10</posx>
 							<posy>0</posy>
 							<width>210</width>
 							<height>30</height>

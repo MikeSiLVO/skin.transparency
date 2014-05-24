@@ -78,7 +78,7 @@
 					<texture diffuse="video-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>2</posx>
 					<posy>140</posy>
 					<width>170</width>
 					<height>22</height>
@@ -113,7 +113,7 @@
 					</animation>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>2</posx>
 					<posy>140</posy>
 					<width>170</width>
 					<height>22</height>

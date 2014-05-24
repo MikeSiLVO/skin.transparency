@@ -72,7 +72,7 @@
 					<visible>Container.Content(Artists) + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>90</posx>
+					<posx>10</posx>
 					<posy>130</posy>
 					<width>160</width>
 					<height>25</height>
@@ -191,7 +191,7 @@
 					<visible>Container.Content(Artists) + !stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>90</posx>
+					<posx>10</posx>
 					<posy>130</posy>
 					<width>160</width>
 					<height>25</height>
@@ -222,7 +222,7 @@
 					<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="label">
-					<posx>93</posx>
+					<posx>13</posx>
 					<posy>138</posy>
 					<width>160</width>
 					<height>25</height>
@@ -269,7 +269,7 @@
 					<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="label">
-					<posx>93</posx>
+					<posx>13</posx>
 					<posy>138</posy>
 					<width>160</width>
 					<height>25</height>
@@ -304,7 +304,7 @@
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>112</posx>
+					<posx>29</posx>
 					<posy>107</posy>
 					<width>166</width>
 					<height>25</height>
@@ -369,7 +369,7 @@
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>112</posx>
+					<posx>29</posx>
 					<posy>107</posy>
 					<width>166</width>
 					<height>25</height>
@@ -477,7 +477,7 @@
 					<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
-					<posx>89</posx>
+					<posx>6</posx>
 					<posy>180</posy>
 					<width>166</width>
 					<height>25</height>
@@ -592,7 +592,7 @@
 					<visible>stringcompare(ListItem.Label,..) | [!stringcompare(ListItem.Label,..) + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
-					<posx>89</posx>
+					<posx>6</posx>
 					<posy>180</posy>
 					<width>166</width>
 					<height>25</height>
@@ -645,7 +645,7 @@
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>4</posx>
 					<posy>107</posy>
 					<width>166</width>
 					<height>25</height>
@@ -710,7 +710,7 @@
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 				<control type="label">
-					<posx>87</posx>
+					<posx>4</posx>
 					<posy>107</posy>
 					<width>166</width>
 					<height>25</height>
@@ -794,7 +794,7 @@
 					<visible>[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="label">
-					<posx>85</posx>
+					<posx>5</posx>
 					<posy>206</posy>
 					<width>160</width>
 					<height>25</height>
@@ -904,7 +904,7 @@
 					<visible>Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
 				</control>
 				<control type="label">
-					<posx>85</posx>
+					<posx>5</posx>
 					<posy>206</posy>
 					<width>160</width>
 					<height>25</height>

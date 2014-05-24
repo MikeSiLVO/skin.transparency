@@ -85,6 +85,7 @@
 						<width>35</width>
 						<height>27</height>
 						<texture>$INFO[Listitem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>50</posx>
@@ -122,6 +123,7 @@
 						<width>35</width>
 						<height>27</height>
 						<texture>$INFO[Listitem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
 						<posx>50</posx>
