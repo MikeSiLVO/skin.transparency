@@ -252,7 +252,7 @@
 				<width>160</width>
 				<height>25</height>
 				<aspectratio>keep</aspectratio>
-				<label>$INFO[ListItem.StarRating]</label>
+				<texture>$INFO[ListItem.StarRating]</texture>
 			</control>
 			<control type="button" id="14">
 				<description>Decrease Rating</description>

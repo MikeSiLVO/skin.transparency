@@ -1356,7 +1356,7 @@
 				<width>78</width>
 				<height>112</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" backgound="true">$INFO[Container(5044).ListItem.Thumb]</texture>
+				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" background="true">$INFO[Container(5044).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1546,7 +1546,7 @@
 				<width>195</width>
 				<height>110</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png" backgound="true" fallback="DefaultVideo.png">$INFO[Container(5045).ListItem.Thumb]</texture>
+				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5045).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1736,7 +1736,7 @@
 				<width>195</width>
 				<height>110</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png" backgound="true" fallback="DefaultVideo.png">$INFO[Container(5048).ListItem.Thumb]</texture>
+				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5048).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1918,7 +1918,7 @@
 				<posy>31</posy>
 				<width>112</width>
 				<height>112</height>
-				<texture fallback="DefaultAlbum.png" backgound="true">$INFO[Container(5046).ListItem.Thumb]</texture>
+				<texture fallback="DefaultAlbum.png" background="true">$INFO[Container(5046).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="image">
@@ -2108,7 +2108,7 @@
 				<posy>31</posy>
 				<width>112</width>
 				<height>112</height>
-				<texture fallback="DefaultAddon.png" backgound="true" diffuse="thumb-diffuse.png">$INFO[Container(5047).ListItem.Thumb]</texture>
+				<texture fallback="DefaultAddon.png" background="true" diffuse="thumb-diffuse.png">$INFO[Container(5047).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">

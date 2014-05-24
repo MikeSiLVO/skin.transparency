@@ -116,7 +116,6 @@
 						<effect type="slide" start="0,-4" end="0,0" time="200" reversible="false"/>
 						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
 					</animation>
-					<texture diffuse="thumb-diffuse.png" fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
 					<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 				</control>
 				<control type="image">
