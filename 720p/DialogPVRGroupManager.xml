@@ -93,7 +93,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelNumber</info>
+							<label>$INFO[ListItem.ChannelNumber]</label>
 						</control>
 						<control type="label">
 							<posx>70</posx>
@@ -104,7 +104,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelName</info>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="450" height="29">
@@ -141,7 +141,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelNumber</info>
+							<label>$INFO[ListItem.ChannelNumber]</label>
 						</control>
 						<control type="label">
 							<posx>70</posx>
@@ -152,7 +152,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelName</info>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</focusedlayout>
 				</control>
@@ -223,7 +223,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelNumber</info>
+							<label>$INFO[ListItem.ChannelNumber]</label>
 						</control>
 						<control type="label">
 							<posx>70</posx>
@@ -234,7 +234,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelName</info>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="450" height="29">
@@ -271,7 +271,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelNumber</info>
+							<label>$INFO[ListItem.ChannelNumber]</label>
 						</control>
 						<control type="label">
 							<posx>70</posx>
@@ -282,7 +282,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>blue</selectedcolor>
-							<info>ListItem.ChannelName</info>
+							<label>$INFO[ListItem.ChannelName]</label>
 						</control>
 					</focusedlayout>
 				</control>
@@ -353,7 +353,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="450" height="29">
@@ -382,7 +382,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 				</control>

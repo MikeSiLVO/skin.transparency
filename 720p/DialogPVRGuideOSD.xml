@@ -93,7 +93,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.StartTime</info>
+						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -104,7 +104,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="710" height="29">
@@ -149,7 +149,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.StartTime</info>
+						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -160,7 +160,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>

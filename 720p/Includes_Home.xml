@@ -978,7 +978,7 @@
 				<posy>88</posy>
 				<width>770</width>
 				<height>30</height>
-				<info>VideoPlayer.Genre</info>
+				<label>$INFO[VideoPlayer.Genre]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20</font>

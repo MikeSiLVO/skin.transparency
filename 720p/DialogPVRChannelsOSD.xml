@@ -95,7 +95,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.ChannelNumber</info>
+						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="label">
 						<posx>90</posx>
@@ -106,7 +106,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.ChannelName</info>
+						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -118,7 +118,7 @@
 						<aligny>center</aligny>
 						<textcolor>lightblue</textcolor>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Title</info>
+						<label>$INFO[ListItem.Title]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="700" height="29">
@@ -165,7 +165,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.ChannelNumber</info>
+						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="label">
 						<posx>90</posx>
@@ -176,7 +176,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.ChannelName</info>
+						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -188,7 +188,7 @@
 						<aligny>center</aligny>
 						<textcolor>lightblue</textcolor>
 						<selectedcolor>blue</selectedcolor>
-						<info>ListItem.Title</info>
+						<label>$INFO[ListItem.Title]</label>
 					</control>
 				</focusedlayout>
 			</control>

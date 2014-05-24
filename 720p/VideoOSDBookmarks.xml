@@ -87,7 +87,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="180" height="180">
@@ -122,7 +122,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>
