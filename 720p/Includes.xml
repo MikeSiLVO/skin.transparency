@@ -1150,6 +1150,40 @@
 			</control>
 		</control>
 	</include>
+	<include name="CommonFileCount14">
+		<control type="grouplist">
+			<posx>250</posx>
+			<posy>460</posy>
+			<width>500</width>
+			<height>30</height>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<itemgap>0</itemgap>
+			<control type="label">
+				<description>Page Count Label</description>
+				<width min="10" max="250">auto</width>
+				<height>30</height>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<label>$LOCALIZE[31024] $INFO[Container(120).CurrentPage]/$INFO[Container(120).NumPages]</label>
+			</control>
+			<control type="image">
+				<width>29</width>
+				<height>30</height>
+				<texture>dot.png</texture>
+			</control>
+			<control type="label">
+				<description>Item Count Label</description>
+				<width min="10" max="250">auto</width>
+				<height>30</height>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[Container(120).NumItems] $LOCALIZE[31025]</label>
+			</control>
+		</control>
+	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
 			<posx>5</posx>
