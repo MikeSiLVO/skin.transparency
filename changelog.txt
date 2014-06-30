@@ -1,3 +1,6 @@
+Transparency! v7.0.1
+- remove capitalized fonts
+
 Transparency! v7.0.0
 - version bump for helix
 - settings id changes
