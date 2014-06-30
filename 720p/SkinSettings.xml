@@ -1878,17 +1878,17 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="766">
-						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[31031]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-FullList)</selected>
 					</control>
 					<control type="radiobutton" id="767">
-						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[535]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-List)</selected>
 					</control>
 					<control type="radiobutton" id="768">
-						<label>$LOCALIZE[24021] - $LOCALIZE[24001] - $LOCALIZE[21371]</label>
+						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-Thumbnail)</selected>
 					</control>
