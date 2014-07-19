@@ -35,7 +35,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</imagepath>
 			<aspectratio>keep</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<fadetime>2000</fadetime>
