@@ -1455,7 +1455,7 @@
 	</include>
 	<include name="CommonVisualizationBackground">
 		<include condition="!Skin.HasSetting(Vis-Visualization)">home-visualisation1</include>
-		<include condition="Skin.HasSetting(Vis-LastFM)">home-artistslideshow</include>
+		<include condition="Skin.HasSetting(Vis-ArtistSlide)">home-artistslideshow</include>
 		<include condition="Skin.HasSetting(Vis-Slideshow) + !Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
 		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-fanart-fallback</include>
 		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-musicplayer-fanart</include>
