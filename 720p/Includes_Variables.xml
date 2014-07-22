@@ -805,6 +805,10 @@
 		<value condition="![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</value>
 		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</value>
 	</variable>
+	<variable name="ViewFanartLabel10">
+		<value condition="![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Album]</value>
+		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Album]</value>
+	</variable>
 	<variable name="ViewItemLabel1">
 		<value condition="Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)">[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</value>
 		<value condition="Container.Content(TVShows)">[UPPERCASE][B]$LOCALIZE[20416]:[/B][/UPPERCASE]</value>
