@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Transparency!
 # Addon id: skin.transparency
 # Addon Provider: ronie
@@ -132,7 +132,7 @@ msgid "REWIND"
 msgstr ""
 
 msgctxt "#31046"
-msgid "Welcome to XBMC - Please Login"
+msgid "Welcome to Kodi - Please Login"
 msgstr ""
 
 msgctxt "#31047"
@@ -398,11 +398,11 @@ msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Config
 msgstr ""
 
 msgctxt "#31165"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Enable AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of Kodi via UPnP and HTTP - Configure file sharing[CR]Enable AirPlay"
 msgstr ""
 
 msgctxt "#31166"
-msgid "[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue"
+msgid "[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your Kodi user Profile[CR]to login and continue"
 msgstr ""
 
 msgctxt "#31167"

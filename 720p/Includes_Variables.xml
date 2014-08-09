@@ -641,8 +641,8 @@
 		<value condition="Control.HasFocus(603)">$LOCALIZE[20126]</value>
 		<value condition="Control.HasFocus(604)">$LOCALIZE[130]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[7]</value>
-		<value condition="Control.HasFocus(606)">$LOCALIZE[13012] XBMC</value>
-		<value condition="Control.HasFocus(607)">$LOCALIZE[13313] XBMC</value>
+		<value condition="Control.HasFocus(606)">$LOCALIZE[13012] Kodi</value>
+		<value condition="Control.HasFocus(607)">$LOCALIZE[13313] Kodi</value>
 		<value condition="Control.HasFocus(608)">$LOCALIZE[13005]</value>
 		<value condition="Control.HasFocus(609)">$LOCALIZE[13011]</value>
 		<value condition="Control.HasFocus(610)">$LOCALIZE[13010]</value>

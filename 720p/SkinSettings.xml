@@ -524,23 +524,6 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="209">
-						<label>31183</label>
-						<onclick>Skin.ToggleSetting(Show_Custom_Home_Logo)</onclick>
-						<onclick>Skin.Reset(Custom_Home_Logo)</onclick>
-						<selected>Skin.HasSetting(Show_Custom_Home_Logo)</selected>
-					</control>
-					<control type="button" id="210">
-						<label>$LOCALIZE[561]:</label>
-						<label2>$INFO[Skin.String(Custom_Home_Logo)]</label2>
-						<onclick>Skin.SetFile(Custom_Home_Logo)</onclick>
-						<enable>Skin.HasSetting(Show_Custom_Home_Logo)</enable>
-					</control>
-					<control type="image" id="211">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
 					<control type="radiobutton" id="212">
 						<description>enable recent movies info</description>
 						<label>$LOCALIZE[20342] - $LOCALIZE[31410]</label>

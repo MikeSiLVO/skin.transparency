@@ -1568,25 +1568,6 @@
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
-	<include name="Logo">
-		<control type="image">
-			<posx>5</posx>
-			<posy>2</posy>
-			<width>225</width>
-			<height>50</height>
-			<texture>xbmc-logo.png</texture>
-		</control>
-	</include>
-	<include name="Logo-Custom">
-		<control type="image">
-			<posx>5</posx>
-			<posy>2</posy>
-			<width>225</width>
-			<height>46</height>
-			<texture>$INFO[Skin.String(Custom_Home_Logo)]</texture>
-			<aspectratio>keep</aspectratio>
-		</control>
-	</include>
 	<include name="MusicPlayerAlbum">
 		<font>font-40</font>
 		<textcolor>99999999</textcolor>
