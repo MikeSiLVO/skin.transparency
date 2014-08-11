@@ -18,13 +18,6 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
-		<control type="videowindow">
-			<posx>25</posx>
-			<posy>22</posy>
-			<width>825</width>
-			<height>505</height>
-			<visible>Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)</visible>
-		</control>
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
