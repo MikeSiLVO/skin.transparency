@@ -1582,6 +1582,28 @@
 		<onfocus>Skin.Reset(circle9)</onfocus>
 		<onfocus>SetFocus(74)</onfocus>
 	</include>
+	<include name="keyboard-charbutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>48</width>
+		<height>48</height>
+		<texturenofocus border="10">key-nofocus.png</texturenofocus>
+		<texturefocus border="10">key-focus.png</texturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font-20</font>
+	</include>
+	<include name="keyboard-digitbutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>48</width>
+		<height>48</height>
+		<texturenofocus border="10">key-digit-nofocus.png</texturenofocus>
+		<texturefocus border="10">key-focus.png</texturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font-20</font>
+	</include>
 	<include name="MusicPlayerAlbum">
 		<font>font-40</font>
 		<textcolor>99999999</textcolor>
