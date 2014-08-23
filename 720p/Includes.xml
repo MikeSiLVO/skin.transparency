@@ -656,9 +656,17 @@
 		<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 		<onback>50</onback>
 	</include>
+	<include name="ButtonToggleCommonValues">
+		<include condition="!Skin.HasSetting(HateTransparency)">ButtonToggleCommonValues1</include>
+		<include condition="Skin.HasSetting(HateTransparency)">T-ButtonToggleCommonValues1</include>
+	</include>
 	<include name="ButtonCommonValues1">
 		<texturefocus border="10">Button_Side_Focus.png</texturefocus>
 		<texturenofocus border="10">Button_Side_NoFocus.png</texturenofocus>
+	</include>
+	<include name="ButtonToggleCommonValues1">
+		<alttexturefocus border="10">Button_Side_Focus.png</alttexturefocus>
+		<alttexturenofocus border="10">Button_Side_NoFocus.png</alttexturenofocus>
 	</include>
 	<include name="ButtonCommonValuesNormal">
 		<width>183</width>
