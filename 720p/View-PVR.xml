@@ -223,7 +223,7 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label" id="1">
-					<posx>40</posx>
+					<posx>48</posx>
 					<posy>1</posy>
 					<width>160</width>
 					<height>60</height>
@@ -268,7 +268,7 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label" id="1">
-					<posx>40</posx>
+					<posx>48</posx>
 					<posy>1</posy>
 					<width>160</width>
 					<height>60</height>
