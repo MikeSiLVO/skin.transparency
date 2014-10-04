@@ -136,7 +136,7 @@
 			<posx>83</posx>
 			<posy>38</posy>
 			<width>1114</width>
-			<height>450</height>
+			<height>460</height>
 			<texture border="30">panel.png</texture>
 			<bordersize>22</bordersize>
 			<include>T-Level</include>
