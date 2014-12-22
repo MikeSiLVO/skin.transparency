@@ -179,6 +179,38 @@
 				<label>ListItem.Icon: $INFO[ListItem.Icon]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>440</posy>
+				<width>1240</width>
+				<height>40</height>
+				<label>Container.Art(tvshow.fanart): $INFO[Container.Art(tvshow.fanart)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>460</posy>
+				<width>1240</width>
+				<height>40</height>
+				<label>Container.Art(tvshow.poster): $INFO[Container.Art(tvshow.poster)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>420</posy>
+				<width>1240</width>
+				<height>40</height>
+				<label>Container.Art(season.poster): $INFO[Container.Art(season.poster)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>480</posy>
+				<width>1240</width>
+				<height>40</height>
+				<label>Container.Art(artist.fanart): $INFO[Container.Art(artist.fanart)]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<include name="debuginfovideoplayer">
