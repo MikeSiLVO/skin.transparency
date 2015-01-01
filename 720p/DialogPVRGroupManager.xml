@@ -506,7 +506,7 @@
 					<aligny>center</aligny>
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<label>Hide</label>
+					<label>$LOCALIZE[19289]</label>
 					<onleft>28</onleft>
 					<onright>29</onright>
 					<onup>13</onup>

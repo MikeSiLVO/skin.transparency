@@ -106,12 +106,34 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
+					<ondown>31</ondown>
+				</control>
+				<control type="radiobutton" id="31">
+					<description>Filter</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[587]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>28</onup>
+					<ondown>6</ondown>
+				</control>
+				<control type="radiobutton" id="6">
+					<description>Show hidden channels</description>
+					<posx>0</posx>
+					<posy>180</posy>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[19051]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>31</onup>
 					<ondown>901</ondown>
 				</control>
 				<include>PVR-Menu</include>
 				<control type="image">
 					<posx>0</posx>
-					<posy>317</posy>
+					<posy>452</posy>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-bottom2.png</texture>
 					<animation effect="slide" end="0,-90" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
