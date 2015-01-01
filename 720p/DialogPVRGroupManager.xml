@@ -414,7 +414,7 @@
 			<control type="group">
 				<control type="button" id="29">
 					<description>Ok button</description>
-					<posx>240</posx>
+					<posx>140</posx>
 					<posy>670</posy>
 					<width>200</width>
 					<height>35</height>
@@ -427,13 +427,13 @@
 					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>186</label>
-					<onleft>28</onleft>
+					<onleft>25</onleft>
 					<onright>26</onright>
 					<onup>13</onup>
 					<ondown>11</ondown>
 				</control>
 				<control type="button" id="26">
-					<posx>440</posx>
+					<posx>340</posx>
 					<posy>670</posy>
 					<description>Add button</description>
 					<width>200</width>
@@ -454,7 +454,7 @@
 				</control>
 				<control type="button" id="27">
 					<description>Rename button</description>
-					<posx>640</posx>
+					<posx>540</posx>
 					<posy>670</posy>
 					<width>200</width>
 					<height>35</height>
@@ -474,7 +474,7 @@
 				</control>
 				<control type="button" id="28">
 					<description>Delete button</description>
-					<posx>840</posx>
+					<posx>740</posx>
 					<posy>670</posy>
 					<width>200</width>
 					<height>35</height>
@@ -488,12 +488,32 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>117</label>
 					<onleft>27</onleft>
+					<onright>25</onright>
+					<onup>13</onup>
+					<ondown>11</ondown>
+				</control>
+				<control type="radiobutton" id="25">
+					<description>Hide button</description>
+					<posx>940</posx>
+					<posy>670</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>Hide</label>
+					<onleft>28</onleft>
 					<onright>29</onright>
 					<onup>13</onup>
 					<ondown>11</ondown>
 				</control>
 				<control type="image">
-					<posx>240</posx>
+					<posx>140</posx>
 					<posy>670</posy>
 					<width>200</width>
 					<height>35</height>
@@ -501,7 +521,8 @@
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(26)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(27)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(28)">Conditional</animation>
-					<visible>Control.HasFocus(29) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28)</visible>
+					<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(25)">Conditional</animation>
+					<visible>Control.HasFocus(29) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(25)</visible>
 				</control>
 			</control>
 		</control>

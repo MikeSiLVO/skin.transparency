@@ -1,3 +1,7 @@
+Transparency! v8.0.0
+- bump for isengard
+- add hide button in pvr group manager
+
 Transparency! v7.1.5
 - added status label in subtitles dialog
 - added support for video extras addon
