@@ -34,7 +34,7 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<font>font-32</font>
-				<label>21432</label>
+				<label>-</label>
 			</control>
 			<control type="image">
 				<posx>0</posx>
