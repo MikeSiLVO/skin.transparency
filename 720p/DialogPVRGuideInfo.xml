@@ -61,9 +61,9 @@
 			<control type="textbox">
 				<description>Description Value</description>
 				<posx>225</posx>
-				<posy>625</posy>
+				<posy>627</posy>
 				<width>1000</width>
-				<height>65</height>
+				<height>63</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

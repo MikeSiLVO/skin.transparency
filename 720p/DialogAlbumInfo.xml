@@ -237,9 +237,9 @@
 			<control type="textbox" id="4">
 				<description>textarea</description>
 				<posx>225</posx>
-				<posy>582</posy>
+				<posy>584</posy>
 				<width>1015</width>
-				<height>105</height>
+				<height>103</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -251,9 +251,9 @@
 			<control type="textbox" id="4">
 				<description>textarea</description>
 				<posx>265</posx>
-				<posy>582</posy>
+				<posy>584</posy>
 				<width>975</width>
-				<height>105</height>
+				<height>103</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

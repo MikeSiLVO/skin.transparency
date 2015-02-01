@@ -7570,9 +7570,9 @@
 					<control type="textbox" id="5">
 						<description>textarea</description>
 						<posx>50</posx>
-						<posy>115</posy>
+						<posy>117</posy>
 						<width>910</width>
-						<height>400</height>
+						<height>398</height>
 						<font>font-23</font>
 						<align>center</align>
 						<textcolor>white</textcolor>

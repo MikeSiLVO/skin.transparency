@@ -341,9 +341,9 @@
 					</control>
 					<control type="textbox">
 						<posx>588</posx>
-						<posy>180</posy>
+						<posy>182</posy>
 						<width>430</width>
-						<height>256</height>
+						<height>254</height>
 						<font>font-20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -881,9 +881,9 @@
 				</control>
 				<control type="textbox">
 					<posx>588</posx>
-					<posy>180</posy>
+					<posy>182</posy>
 					<width>430</width>
-					<height>256</height>
+					<height>254</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>

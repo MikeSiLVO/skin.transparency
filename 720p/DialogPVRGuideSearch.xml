@@ -74,9 +74,9 @@
 			<control type="textbox">
 				<description>Search help</description>
 				<posx>140</posx>
-				<posy>185</posy>
+				<posy>187</posy>
 				<width>1000</width>
-				<height>100</height>
+				<height>98</height>
 				<align>center</align>
 				<font>font-19</font>
 				<textcolor>lightgrey</textcolor>

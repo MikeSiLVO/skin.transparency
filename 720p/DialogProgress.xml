@@ -55,9 +55,9 @@
 		</control>
 		<control type="textbox" id="9">
 			<posx>40</posx>
-			<posy>100</posy>
+			<posy>102</posy>
 			<width>620</width>
-			<height>70</height>
+			<height>68</height>
 			<align>center</align>
 			<label>-</label>
 			<font>font-20</font>

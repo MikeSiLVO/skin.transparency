@@ -243,9 +243,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>265</posx>
-				<posy>577</posy>
+				<posy>579</posy>
 				<width>975</width>
-				<height>105</height>
+				<height>103</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>

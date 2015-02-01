@@ -4196,9 +4196,9 @@
 				</control>
 				<control type="textbox">
 					<posx>180</posx>
-					<posy>160</posy>
+					<posy>162</posy>
 					<width>920</width>
-					<height>500</height>
+					<height>498</height>
 					<align>center</align>
 					<font>font-23</font>
 					<textcolor>white</textcolor>

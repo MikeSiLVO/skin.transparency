@@ -608,9 +608,9 @@
 			<control type="textbox">
 				<description>Description for Episodes</description>
 				<posx>5</posx>
-				<posy>270</posy>
+				<posy>272</posy>
 				<width>375</width>
-				<height>202</height>
+				<height>200</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

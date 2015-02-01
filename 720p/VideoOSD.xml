@@ -494,9 +494,9 @@
 				<control type="textbox">
 					<description>Plot</description>
 					<posx>385</posx>
-					<posy>-65</posy>
+					<posy>-63</posy>
 					<width>805</width>
-					<height>215</height>
+					<height>213</height>
 					<font>font-20</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>

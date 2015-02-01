@@ -295,9 +295,9 @@
 			</control>
 			<control type="textbox" id="6">
 				<posx>240</posx>
-				<posy>652</posy>
+				<posy>654</posy>
 				<width>800</width>
-				<height>66</height>
+				<height>64</height>
 				<align>center</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>

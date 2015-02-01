@@ -421,9 +421,9 @@
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
 					<posx>257</posx>
-					<posy>595</posy>
+					<posy>597</posy>
 					<width>490</width>
-					<height>62</height>
+					<height>60</height>
 					<font>font-19</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -596,9 +596,9 @@
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>40</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>785</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -610,9 +610,9 @@
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>257</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -838,9 +838,9 @@
 			<control type="textbox">
 				<description>Common Plot Value for all Content types</description>
 				<posx>317</posx>
-				<posy>568</posy>
+				<posy>570</posy>
 				<width>540</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -956,9 +956,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>247</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1025,9 +1025,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>247</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1220,9 +1220,9 @@
 			<control type="textbox">
 				<description>Description Value for Artist</description>
 				<posx>225</posx>
-				<posy>605</posy>
+				<posy>607</posy>
 				<width>636</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -1593,9 +1593,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>225</posx>
-				<posy>605</posy>
+				<posy>607</posy>
 				<width>636</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1754,9 +1754,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1767,9 +1767,9 @@
 			<control type="textbox">
 				<description>plot description used by addons</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -2017,9 +2017,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -2030,9 +2030,9 @@
 			<control type="textbox">
 				<description>plot description used by addons</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font-19</font>
 				<align>justify</align>

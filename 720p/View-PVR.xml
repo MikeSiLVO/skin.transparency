@@ -119,9 +119,9 @@
 			<control type="textbox">
 				<description>Description Value</description>
 				<posx>225</posx>
-				<posy>605</posy>
+				<posy>607</posy>
 				<width>636</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -421,9 +421,9 @@
 			</control>
 			<control type="textbox">
 				<posx>140</posx>
-				<posy>656</posy>
+				<posy>658</posy>
 				<width>880</width>
-				<height>46</height>
+				<height>44</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="3000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(EpgLegend)</visible>
@@ -1232,9 +1232,9 @@
 			<control type="textbox">
 				<description>Description Value</description>
 				<posx>225</posx>
-				<posy>625</posy>
+				<posy>627</posy>
 				<width>636</width>
-				<height>65</height>
+				<height>63</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
