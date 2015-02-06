@@ -99,7 +99,7 @@
 	</variable>
 	<variable name="DialogVideoInfoLabel">
 		<value condition="!Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</value>
-		<value condition="Control.HasFocus(50)">[B]$INFO[Container(50).Listitem.Label][/B]</value>
+		<value condition="Control.HasFocus(50)">[B]$INFO[Container(50).Listitem.Label]$INFO[Container(50).Listitem.Label2, (,)][/B]</value>
 	</variable>
 	<variable name="HomePowerButton">
 		<value condition="!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)">home-power.png</value>
