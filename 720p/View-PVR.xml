@@ -1149,7 +1149,7 @@
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>335</width>
+					<width>310</width>
 					<height>30</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
@@ -1157,6 +1157,14 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
+				</control>
+				<control type="image">
+					<posx>325</posx>
+					<posy>0</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout width="355" height="29">
@@ -1181,7 +1189,7 @@
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>335</width>
+					<width>310</width>
 					<height>30</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
@@ -1189,6 +1197,14 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
+				</control>
+				<control type="image">
+					<posx>325</posx>
+					<posy>0</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 			</focusedlayout>
 		</control>
