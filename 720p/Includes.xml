@@ -1731,7 +1731,7 @@
 	<include name="PVR-Menu">
 		<control type="group">
 			<animation effect="slide" end="0,-45" time="0" condition="[Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)] + !Control.IsVisible(6)">Conditional</animation>
-			<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+			<animation effect="slide" end="0,45" time="0" condition="[Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)] + Control.IsVisible(7)">Conditional</animation>
 			<control type="button" id="901">
 				<description>Channels</description>
 				<posx>0</posx>
