@@ -1731,6 +1731,7 @@
 	<include name="PVR-Menu">
 		<control type="group">
 			<animation effect="slide" end="0,-45" time="0" condition="[Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)] + !Control.IsVisible(6)">Conditional</animation>
+			<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
 			<control type="button" id="901">
 				<description>Channels</description>
 				<posx>0</posx>
@@ -1749,7 +1750,7 @@
 				<onup condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">6</onup>
 				<onup condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">28</onup>
 				<onup condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)]">3</onup>
-				<onup condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">5</onup>
+				<onup condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">7</onup>
 				<ondown>902</ondown>
 				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
 				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>

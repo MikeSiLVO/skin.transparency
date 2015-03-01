@@ -106,8 +106,19 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>3</onup>
+					<ondown>7</ondown>
+					<visible>!Skin.HasSetting(KioskMode)</visible>
+				</control>
+				<control type="radiobutton" id="7">
+					<description>Show deleted recordings</description>
+					<posx>0</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[19184]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
 					<ondown>901</ondown>
-					<visible>[Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)] + !Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<include>PVR-Menu</include>
 				<control type="image">
