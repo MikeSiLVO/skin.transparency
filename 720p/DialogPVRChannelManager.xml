@@ -179,7 +179,7 @@
 				<texture>separator2.png</texture>
 			</control>
 			<control type="group" id="9001">
-				<posx>440</posx>
+				<posx>340</posx>
 				<posy>580</posy>
 				<control type="button" id="30">
 					<description>Groups</description>
@@ -199,11 +199,31 @@
 					<onup>7</onup>
 					<ondown>9000</ondown>
 					<onleft>32</onleft>
+					<onright>31</onright>
+				</control>
+				<control type="button" id="31">
+					<description>Add Channel</description>
+					<posx>200</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>19204</label>
+					<onup>7</onup>
+					<ondown>9000</ondown>
+					<onleft>30</onleft>
 					<onright>34</onright>
 				</control>
 				<control type="button" id="34">
 					<description>Channels</description>
-					<posx>200</posx>
+					<posx>400</posx>
 					<posy>0</posy>
 					<width>200</width>
 					<height>35</height>
@@ -218,7 +238,7 @@
 					<label>$VAR[DialogPVRChannelManagerButton]</label>
 					<onup>7</onup>
 					<ondown>9000</ondown>
-					<onleft>30</onleft>
+					<onleft>31</onleft>
 					<onright>33</onright>
 				</control>
 				<control type="image">
@@ -227,8 +247,9 @@
 					<width>200</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>
-					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(34)">Conditional</animation>
-					<visible>Control.HasFocus(30) | Control.HasFocus(34)</visible>
+					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(31)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(34)">Conditional</animation>
+					<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(34)</visible>
 				</control>
 			</control>
 			<control type="image">
