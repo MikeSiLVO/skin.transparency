@@ -9,133 +9,89 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/xbmc-skins/language/id/)\n"
+"Language-Team: Armenian (http://www.transifex.com/projects/p/xbmc-skins/language/hy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hy\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31001"
 msgid "Working..."
-msgstr "Mengerjakan..."
+msgstr "Ընթացքում է ..."
 
 msgctxt "#31002"
 msgid "Enabled"
-msgstr "Aktifkan"
+msgstr "Միացված"
 
 msgctxt "#31003"
 msgid "Change mode"
-msgstr "Rubah Modus"
+msgstr "Փոխել ռեժիմը"
 
 msgctxt "#31004"
 msgid "Watch as 2D"
-msgstr "Tonton sebagai 2D"
-
-msgctxt "#31005"
-msgid "Local subtitle available"
-msgstr "Subtitle lokal tersedia"
+msgstr "Դիտել որպես 2D"
 
 msgctxt "#31024"
 msgid "Page"
-msgstr "Halaman"
+msgstr "Էջ"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "Item"
-
-msgctxt "#31030"
-msgid "Fanart"
-msgstr "Fanart"
-
-msgctxt "#31035"
-msgid "Slide"
-msgstr "Slide"
-
-msgctxt "#31038"
-msgid "Wall"
-msgstr "Ikon"
+msgstr "Պիտույք"
 
 msgctxt "#31042"
 msgid "PLAYING"
-msgstr "Mainkan"
+msgstr "ՆՎԱԳԱՐԿԵԼ"
 
 msgctxt "#31043"
 msgid "PAUSED"
-msgstr "JEDA"
+msgstr "ԴԱԴԱՐ"
 
 msgctxt "#31044"
 msgid "FAST FORWARD"
-msgstr "MAJU CEPAT"
+msgstr "ԱՌԱՋ"
 
 msgctxt "#31045"
 msgid "REWIND"
-msgstr "PUTAR ULANG"
-
-msgctxt "#31048"
-msgid "Timers"
-msgstr "Timer"
-
-msgctxt "#31052"
-msgid "IMDB"
-msgstr "IMDB"
+msgstr "ՀԵՏԴԱՐՁ"
 
 msgctxt "#31055"
 msgid "Open playlist"
-msgstr "Buka daftar putar"
+msgstr "Բացել նվագացանկը"
 
 msgctxt "#31056"
 msgid "Save playlist"
-msgstr "Simpan daftar putar"
+msgstr "Հիշել նվագացանկը"
 
 msgctxt "#31057"
 msgid "Close playlist"
-msgstr "Tutup daftar putar"
+msgstr "Փակել նվագացանկը"
 
 msgctxt "#31058"
 msgid "System music files"
-msgstr "Berkas sistem musik"
+msgstr "Համակարգի երաժշտական ֆայլեր"
 
 msgctxt "#31059"
 msgid "Current playlist"
-msgstr "Daftar putar saat ini"
+msgstr "Ընթացիկ նվագացանկ"
 
 msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
-msgstr "Berkas ini sudah ditumpuk, pilih bagian yang ingin anda mainkan"
+msgstr "Այս ֆայլը կտրատված է: Ընտրեք հատված՝ նվագարկելու համար:"
 
 msgctxt "#31101"
 msgid "Home screen options"
-msgstr "Opsi Home Screen"
-
-msgctxt "#31102"
-msgid "Backgrounds"
-msgstr "Latar belakang"
+msgstr "Հիմնական էկրանի տարբերակներ"
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
-msgstr "Opsi Lainnya"
-
-msgctxt "#31175"
-msgid "Random"
-msgstr "Acak"
-
-msgctxt "#31193"
-msgid "TV recordings"
-msgstr "Rekaman TV"
-
-msgctxt "#31216"
-msgid "Extras"
-msgstr "Ekstra"
+msgstr "Այլ տարբերակներ"
 
 msgctxt "#31410"
 msgid "Recently Added"
-msgstr "yang baru saja ditambahkan"
-
-msgctxt "#31601"
-msgid "Maps"
-msgstr "Map "
+msgstr "Վերջերս ավելացված"
 
 msgctxt "#31701"
 msgid "Default"
-msgstr "Standar"
+msgstr "Նախնական"
