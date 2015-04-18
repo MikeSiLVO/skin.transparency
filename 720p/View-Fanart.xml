@@ -2027,19 +2027,19 @@
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
-			<control type="textbox">
-				<description>plot description used by addons</description>
-				<posx>245</posx>
-				<posy>606</posy>
+			<control type="label">
+				<description>textarea</description>
+				<posx>247</posx>
+				<posy>602</posy>
 				<width>600</width>
 				<height>83</height>
-				<label>$INFO[ListItem.Plot]</label>
+				<label>[B]$LOCALIZE[31061] $INFO[Window.Property(Updated)][/B]</label>
 				<font>font-19</font>
-				<align>justify</align>
+				<align>center</align>
+				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Plot)</visible>
+				<visible>StringCompare(ListItem.Path,addons://)</visible>
 			</control>
 		</control>
 		<control type="group">
