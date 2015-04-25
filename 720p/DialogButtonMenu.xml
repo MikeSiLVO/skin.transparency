@@ -222,7 +222,7 @@
 					<height>60</height>
 					<texturefocus>shut-filemanager-focus.png</texturefocus>
 					<texturenofocus>shut-filemanager-nofocus.png</texturenofocus>
-					<onclick>ActivateWindow(MyFiles,autodetect)</onclick>
+					<onclick>ActivateWindow(FileManager)</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<font>-</font>
 					<label>-</label>
