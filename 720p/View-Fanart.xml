@@ -1385,7 +1385,7 @@
 			<control type="label">
 				<posx>262</posx>
 				<posy>667</posy>
-				<width>613</width>
+				<width>130</width>
 				<height>30</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1397,7 +1397,7 @@
 			<control type="label">
 				<posx>390</posx>
 				<posy>667</posy>
-				<width>613</width>
+				<width>480</width>
 				<height>30</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
