@@ -430,6 +430,7 @@
 				<onright>409</onright>
 				<onup>408</onup>
 				<ondown>408</ondown>
+				<onclick>Close</onclick>
 				<onclick>FullScreen</onclick>
 			</control>
 			<control type="button" id="409">
