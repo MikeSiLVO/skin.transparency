@@ -56,7 +56,6 @@
 				<posy>0</posy>
 				<width>173</width>
 				<height>156</height>
-				<aligny>bottom</aligny>
 				<visible>!Window.IsVisible(FullScreenVideo)</visible>
 			</control>
 			<control type="label">

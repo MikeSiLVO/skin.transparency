@@ -106,10 +106,10 @@
 					<aspectratio>keep</aspectratio>
 					<texture diffuse="video-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 					<animation type="focus">
-						<effect type="zoom" start="100" end="123" center="auto" time="200" reversible="false"/>
+						<effect type="zoom" start="100" end="123" center="auto" time="200"/>
 					</animation>
 					<animation type="unfocus">
-						<effect type="zoom" start="123" end="100" center="auto" time="200" reversible="false"/>
+						<effect type="zoom" start="123" end="100" center="auto" time="200"/>
 					</animation>
 				</control>
 				<control type="label">
