@@ -95,26 +95,6 @@
 					<visible>Control.HasFocus(13)</visible>
 				</control>
 				<control type="label">
-					<label>20147</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(30)</visible>
-				</control>
-				<control type="label">
-					<label>20148</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(31)</visible>
-				</control>
-				<control type="label">
-					<label>31051</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(32)</visible>
-				</control>
-				<control type="label">
-					<label>20149</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(33)</visible>
-				</control>
-				<control type="label">
 					<label>20150</label>
 					<include>ShutdownMenuLabel</include>
 					<visible>Control.HasFocus(34)</visible>
