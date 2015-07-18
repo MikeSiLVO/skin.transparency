@@ -404,8 +404,37 @@
 		<value condition="substring(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
-		<value condition="[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] | [Container.Content(Episodes) + Control.IsVisible(598)]">flags/movies/studio/$INFO[ListItem.Studio,,.png]</value>
-		<value condition="Container.Content(MusicVideos)">flags/music/recordlabel/$INFO[ListItem.Studio,,.png]</value>
+		<value condition="IsEmpty(Skin.String(resource.images.studios.path))">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[ListItem.Studio,,.png]</value>
+	</variable>
+
+
+
+	<variable name="IncludesMediaFlagsRecorLabel">
+		<value condition="IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Skin.String(resource.recordlabels.studios.path)]$INFO[ListItem.Property(Album_Label),,.png]</value>
+	</variable>
+	<variable name="IncludesMediaFlagsRecorLabelList">
+		<value condition="IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Listitem.label,resource://resource.images.recordlabels.white/,.png]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Skin.String(resource.recordlabels.studios.path)]$INFO[Listitem.label,,.png]</value>
+	</variable>
+	<variable name="IncludesMediaFlagsRecorLabelFullScreen">
+		<value condition="IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[MusicPlayer.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Skin.String(resource.recordlabels.studios.path)]$INFO[MusicPlayer.Property(Album_Label),,.png]</value>
+	</variable>
+
+
+	<variable name="IncludesMediaFlagsVideoStudioBig">
+		<value condition="[[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] | [Container.Content(Episodes) + Control.IsVisible(598)]] + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
+		<value condition="[[Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] | [Container.Content(Episodes) + Control.IsVisible(598)]] + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[ListItem.Studio,,.png]</value>
+		<value condition="Container.Content(MusicVideos) + IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[ListItem.Studio,resource://resource.images.recordlabels.white/,.png]</value>
+		<value condition="Container.Content(MusicVideos) + !IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Skin.String(resource.images.recorlabels.path)]$INFO[ListItem.Studio,,.png]</value>
+	</variable>
+	<variable name="IncludesMediaFlagsVideoFullScreenStudio">
+		<value condition="!Container.Content(MusicVideos) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[VideoPlayer.Studio,resource://resource.images.studios.white/,.png]</value>
+		<value condition="!Container.Content(MusicVideos) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[VideoPlayer.Studio,,.png]</value>
+		<value condition="Container.Content(MusicVideos) + IsEmpty(Skin.String(resource.images.recordlabels.path))">INFO[VideoPlayer.Studio,resource://resource.images.recordlabels.white/,.png]</value>
+		<value condition="Container.Content(MusicVideos) + IsEmpty(Skin.String(resource.images.recordlabels.path))">$INFO[Skin.String(resource.images.recorlabels.path)]$INFO[VideoPlayer.Studio,,.png]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoFullScreenAudioCodec">
 		<value condition="[stringcompare(VideoPlayer.AudioCodec,ac3) | stringcompare(VideoPlayer.AudioCodec,ac-3)] + stringcompare(VideoPlayer.AudioChannels,1)">flags/movies/audiocodec/dd10.png</value>
@@ -479,10 +508,6 @@
 		<value condition="substring(VideoPlayer.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
 		<value condition="substring(VideoPlayer.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
 		<value condition="substring(VideoPlayer.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
-	</variable>
-	<variable name="IncludesMediaFlagsVideoFullScreenStudio">
-		<value condition="!Container.Content(MusicVideos)">flags/movies/studio/$INFO[VideoPlayer.Studio,,.png]</value>
-		<value condition="Container.Content(MusicVideos)">flags/music/recordlabel/$INFO[VideoPlayer.Studio,,.png]</value>
 	</variable>
 	<variable name="MusicVisualisation">
 		<value condition="!IsEmpty(MusicPlayer.Property(Artist_Description))">[CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR][B]$INFO[MusicPlayer.Property(Artist_Description)][CR] [CR] [CR]$INFO[MusicPlayer.Property(Album_Description)][/B][CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] [CR] </value>
@@ -588,13 +613,20 @@
 		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Path),,logo.png]</value>
 	</variable>
 	<variable name="NextAiredImage4">
-		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Network),flags/movies/studio/,.png]</value>
-		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Network),flags/movies/studio/,.png]</value>
+		<value condition="Control.HasFocus(200) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(200).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(201) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(201).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(202) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(202).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(203) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(203).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(204) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(204).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(205) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(205).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(206) + IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Container(206).ListItem.Property(Network),resource://resource.images.studios.white/,.png]</value>
+		<value condition="Control.HasFocus(200) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(200).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(201) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(201).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(202) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(202).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(203) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(203).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(204) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(204).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(205) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(205).ListItem.Property(Network),,.png]</value>
+		<value condition="Control.HasFocus(206) + !IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[Container(206).ListItem.Property(Network),,.png]</value>
 	</variable>
 	<variable name="NextAiredImage5">
 		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Art(banner))]</value>

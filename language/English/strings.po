@@ -550,7 +550,13 @@ msgctxt "#31200"
 msgid "Custom add-on options"
 msgstr ""
 
-#empty strings from id 31201 to 31209
+msgctxt "#31201"
+msgid "Select studio icons"
+msgstr ""
+
+msgctxt "#31202"
+msgid "Select recordlabel icons"
+msgstr ""
 
 msgctxt "#31210"
 msgid "Enable TvTunes add-on"

@@ -1266,6 +1266,16 @@
 						<height>2</height>
 						<texture>separator.png</texture>
 					</control>
+					<control type="button" id="519">
+						<label>31201</label>
+						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.studios)</onclick>
+					</control>
+					<control type="button" id="520">
+						<label>31202</label>
+						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels)</onclick>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>

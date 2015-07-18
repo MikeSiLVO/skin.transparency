@@ -29,7 +29,7 @@
 				<posy>6</posy>
 				<width>52</width>
 				<height>35</height>
-				<texture fallback="mediaflag-recordlabel.png">flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
+				<texture fallback="mediaflag-recordlabel.png">$VAR[IncludesMediaFlagsRecorLabelFullScreen]</texture>
 			</control>
 		</control>
 	</include>

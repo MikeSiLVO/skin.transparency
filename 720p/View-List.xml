@@ -373,7 +373,7 @@
 				<width>161</width>
 				<height>109</height>
 				<aspectratio>keep</aspectratio>
-				<texture>flags/movies/studio/$INFO[Listitem.label,,.png]</texture>
+				<texture>$VAR[IncludesMediaFlagsVideoStudio]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + !stringcompare(Container.FolderPath,videodb://musicvideos/directors/)</visible>
 			</control>
 			<control type="image">
@@ -382,7 +382,7 @@
 				<width>161</width>
 				<height>109</height>
 				<aspectratio>keep</aspectratio>
-				<texture>flags/music/recordlabel/$INFO[Listitem.label,,.png]</texture>
+				<texture>$VAR[IncludesMediaFlagsRecorLabelList]</texture>
 				<visible>!stringcompare(ListItem.Label,..) + Container.Content(Studios) + stringcompare(Container.FolderPath,videodb://musicvideos/directors/)</visible>
 			</control>
 			<control type="image">

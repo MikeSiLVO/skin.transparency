@@ -263,7 +263,7 @@
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
 						<animation effect="zoom" start="87,-15,80,54" end="94,10,66,45" time="250">UnFocus</animation>
-						<texture>flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[IncludesMediaFlagsVideoStudio]</texture>
 						<colordiffuse>FF7C7063</colordiffuse>
 						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
@@ -274,7 +274,7 @@
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
 						<animation effect="zoom" start="87,-15,80,54" end="94,10,66,45" time="250">UnFocus</animation>
-						<texture>flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[IncludesMediaFlagsVideoStudio]</texture>
 						<colordiffuse>FF4EA3F8</colordiffuse>
 						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
@@ -285,7 +285,7 @@
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
 						<animation effect="zoom" start="87,-15,80,54" end="94,10,66,45" time="250">UnFocus</animation>
-						<texture>flags/movies/studio/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[IncludesMediaFlagsVideoStudio]</texture>
 						<colordiffuse>FFCF474B</colordiffuse>
 						<visible>Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
