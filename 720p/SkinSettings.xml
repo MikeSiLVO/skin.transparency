@@ -1276,6 +1276,16 @@
 						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels)</onclick>
 					</control>
+					<control type="button" id="521">
+						<label>31203</label>
+						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons)</onclick>
+					</control>
+					<control type="button" id="522">
+						<label>31204</label>
+						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons)</onclick>
+					</control>
 				</control>
 				<control type="group" id="601">
 					<visible>Skin.String(SkinSettings,6)</visible>

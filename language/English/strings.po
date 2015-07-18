@@ -558,6 +558,14 @@ msgctxt "#31202"
 msgid "Select recordlabel icons"
 msgstr ""
 
+msgctxt "#31203"
+msgid "Select movie genre icons"
+msgstr ""
+
+msgctxt "#31204"
+msgid "Select music genre icons"
+msgstr ""
+
 msgctxt "#31210"
 msgid "Enable TvTunes add-on"
 msgstr ""

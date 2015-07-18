@@ -400,7 +400,8 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-movies-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-movies-icon.jpg">$VAR[MovieGenreIcon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + stringcompare(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
@@ -438,7 +439,8 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-tvshows-icon.jpg">foldericons/genre/videos/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-tvshows-icon.jpg">$VAR[MovieGenreIcon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + stringcompare(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
@@ -476,7 +478,8 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-music-icon.jpg">$VAR[MusicGenreIcon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + stringcompare(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 			</control>
 			<control type="image">
@@ -848,7 +851,8 @@
 				<posy>120</posy>
 				<width>231</width>
 				<height>286</height>
-				<texture fallback="genre-music-icon.jpg">foldericons/genre/music/$INFO[Listitem.label,,.jpg]</texture>
+				<texture fallback="genre-music-icon.jpg">$VAR[MusicGenreIcon]</texture>
+				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + stringcompare(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="image">
