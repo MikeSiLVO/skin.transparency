@@ -1269,22 +1269,22 @@
 					<control type="button" id="519">
 						<label>31201</label>
 						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.studios)</onclick>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=resource.images.studios)</onclick>
 					</control>
 					<control type="button" id="520">
 						<label>31202</label>
 						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels)</onclick>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels&amp;property=resource.images.recordlabels)</onclick>
 					</control>
 					<control type="button" id="521">
 						<label>31203</label>
 						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons)</onclick>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
 					</control>
 					<control type="button" id="522">
 						<label>31204</label>
 						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons)</onclick>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
 					</control>
 				</control>
 				<control type="group" id="601">

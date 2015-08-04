@@ -2990,26 +2990,12 @@
 				<ondown>308</ondown>
 				<visible>[Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds)]</visible>
 			</control>
-			<control type="radiobutton" id="308">
+			<control type="button" id="309">
 				<posx>10</posx>
 				<posy>110</posy>
 				<width>505</width>
 				<height>30</height>
-				<label>$LOCALIZE[33071]</label>
-				<onclick>Skin.ToggleSetting(Home_Weather_Custom_Conditional_Backgrounds)</onclick>
-				<selected>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</selected>
-				<onup>307</onup>
-				<ondown>309</ondown>
-				<onleft>302</onleft>
-				<onright>399</onright>
-				<visible>Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
-			</control>
-			<control type="button" id="309">
-				<posx>10</posx>
-				<posy>140</posy>
-				<width>505</width>
-				<height>30</height>
-				<label>- $LOCALIZE[15311]</label>
+				<label>- $LOCALIZE[24000]</label>
 				<label2>[COLOR=blue]$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)][/COLOR]</label2>
 				<onclick>Skin.SetPath(Home_Back_Weather_Custom_Conditional_Folder)</onclick>
 				<onup>308</onup>
@@ -3021,10 +3007,10 @@
 			</control>
 			<control type="button" id="308">
 				<posx>10</posx>
-				<posy>140</posy>
+				<posy>110</posy>
 				<width>505</width>
 				<height>30</height>
-				<label>- $LOCALIZE[15311]</label>
+				<label>- $LOCALIZE[24000]</label>
 				<label2>[COLOR=blue]$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)][/COLOR]</label2>
 				<onclick>Skin.SetPath(Custom_Back_Weather_Conditional_Folder)</onclick>
 				<onup>307</onup>
