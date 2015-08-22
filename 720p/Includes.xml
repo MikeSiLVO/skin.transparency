@@ -741,7 +741,7 @@
 				<width>29</width>
 				<height>30</height>
 				<texture>dot.png</texture>
-				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(MyTV)</visible>
+				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<description>Item Count Label</description>
@@ -751,7 +751,7 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
-				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(MyTV)</visible>
+				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(LiveTV)</visible>
 			</control>
 		</control>
 	</include>
