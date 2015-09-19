@@ -521,6 +521,35 @@
 					</control>
 				</control>
 			</control>
+			<control type="group">
+				<visible>Control.IsVisible(313)</visible>
+				<control type="image">
+					<posx>220</posx>
+					<posy>350</posy>
+					<width>838</width>
+					<height>110</height>
+					<texture border="50">keyboard.png</texture>
+					<texture>keyboard.png</texture>
+				</control>
+				<control type="label" id="313">
+					<description>coding text input</description>
+					<posx>240</posx>
+					<posy>375</posy>
+					<width>798</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<include>WindowTitleCommons</include>
+				</control>
+				<control type="label" id="314">
+					<description>coding text choices</description>
+					<posx>240</posx>
+					<posy>390</posy>
+					<width>798</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+			</control>
 		</control>
 	</controls>
 </window>

@@ -1269,7 +1269,7 @@
 	</include>
 	<include name="Fanart-AlbumsSongs_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | [Window.IsVisible(MusicFiles) + !Container.Content(AddOns)] | Window.IsVisible(MusicPlaylist)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay111</include>
 			<control type="image">
@@ -1279,7 +1279,7 @@
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
-			<include condition="!Window.IsVisible(MusicFiles) + !Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
+			<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			<control type="label">
 				<posx>262</posx>
 				<posy>577</posy>
@@ -1291,7 +1291,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Listitem.Artist]</label>
-				<visible>Container.Content(Albums) + !Window.IsVisible(MusicFiles)</visible>
+				<visible>Container.Content(Albums)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1355,32 +1355,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$VAR[ViewFanartLabel7]</label>
-			</control>
-			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
-				<width>450</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
-				<visible>Window.IsVisible(MusicFiles) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist)</visible>
-			</control>
-			<control type="label">
-				<posx>865</posx>
-				<posy>577</posy>
-				<width>150</width>
-				<height>30</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label2]</label>
-				<visible>Window.IsVisible(MusicFiles) + !ListItem.IsPlaying + !Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
 				<posx>262</posx>
@@ -1505,7 +1479,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | [Window.IsVisible(MusicFiles) + !Container.Content(AddOns)] | Window.IsVisible(MusicPlaylist)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
 				<posx>34</posx>
@@ -1521,19 +1495,9 @@
 				<posy>499</posy>
 				<width>208</width>
 				<height>208</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + Window.IsVisible(MusicFiles)</visible>
-			</control>
-			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
-				<width>208</width>
-				<height>208</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="image">
 				<posx>8</posx>
@@ -1542,7 +1506,7 @@
 				<height>225</height>
 				<texture>cdcase-shadow.png</texture>
 				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>12</posx>
@@ -1551,7 +1515,7 @@
 				<height>214</height>
 				<texture>cdcase.png</texture>
 				<description>music fanart view</description>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>!stringcompare(ListItem.Label,..) + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">100</defaultcontrol>
+	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
@@ -1936,7 +1937,7 @@
 					<height>562</height>
 					<itemgap>-2</itemgap>
 					<pagecontrol>-</pagecontrol>
-					<onleft>830</onleft>
+					<onleft>801</onleft>
 					<onright>8100</onright>
 					<onup>801</onup>
 					<ondown>801</ondown>
@@ -2060,49 +2061,6 @@
 						<onfocus>Skin.SetString(SettingsMenu,16)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom3)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom3)</selected>
-					</control>
-				</control>
-				<control type="grouplist" id="830">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,6)</visible>
-					<posx>0</posx>
-					<posy>285</posy>
-					<width>182</width>
-					<height>60</height>
-					<itemgap>-2</itemgap>
-					<pagecontrol>-</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>801</onright>
-					<onup>830</onup>
-					<ondown>830</ondown>
-					<control type="radiobutton" id="831">
-						<description>Music FileMode</description>
-						<label>[B]$LOCALIZE[744][/B]</label>
-						<width>182</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<focusedcolor>blue</focusedcolor>
-						<shadowcolor>black</shadowcolor>
-						<textoffsetx>18</textoffsetx>
-						<radioposx>142</radioposx>
-						<texturefocus border="10">Button_Side_Focus3.png</texturefocus>
-						<texturenofocus border="10">Button_Side_NoFocus2.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(Menu_Music_FileMode)</onclick>
-						<selected>Skin.HasSetting(Menu_Music_FileMode)</selected>
-					</control>
-					<control type="radiobutton" id="832">
-						<description>Music LibraryMode</description>
-						<label>[B]$LOCALIZE[14022][/B]</label>
-						<width>182</width>
-						<height>30</height>
-						<font>font-20c</font>
-						<focusedcolor>blue</focusedcolor>
-						<shadowcolor>black</shadowcolor>
-						<textoffsetx>18</textoffsetx>
-						<radioposx>142</radioposx>
-						<texturefocus border="10">Button_Side_Focus3.png</texturefocus>
-						<texturenofocus border="10">Button_Side_NoFocus2.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(Menu_Music_FileMode)</onclick>
-						<selected>!Skin.HasSetting(Menu_Music_FileMode)</selected>
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
@@ -2919,15 +2877,6 @@
 						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub)</onclick>
 						<selected>!Skin.HasSetting(Menu_Music_Sub)</selected>
-					</control>
-					<control type="radiobutton" id="8102">
-						<description>Menu Music Sub Files</description>
-						<label>[B]$LOCALIZE[744][/B]</label>
-						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Files)</onclick>
-						<selected>!Skin.HasSetting(Menu_Music_Sub_Files)</selected>
-						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Music Sub Library</description>

@@ -15,7 +15,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>800</width>
-				<height>165</height>
+				<height>195</height>
 				<texture border="30">panel.png</texture>
 				<bordertexture border="45">panel-shadow.png</bordertexture>
 				<bordersize>22</bordersize>
@@ -43,11 +43,12 @@
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>78</posy>
-				<width>720</width>
-				<height>2</height>
-				<texture>separator.png</texture>
+				<posx>45</posx>
+				<posy>90</posy>
+				<width>710</width>
+				<height>30</height>
+				<texture border="7">list-nofocus.png</texture>
+				<visible>!Control.HasFocus(888)</visible>
 			</control>
 			<control type="image">
 				<posx>45</posx>
@@ -55,6 +56,7 @@
 				<width>710</width>
 				<height>30</height>
 				<texture border="7">list-focus.png</texture>
+				<visible>Control.HasFocus(888)</visible>
 			</control>
 			<control type="label">
 				<posx>55</posx>
@@ -75,6 +77,22 @@
 				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
 				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 				<action>volume</action>
+				<onup>889</onup>
+				<ondown>889</ondown>
+			</control>
+			<control type="button" id="889">
+				<posx>45</posx>
+				<posy>124</posy>
+				<width>710</width>
+				<height>30</height>
+				<label>15047</label>
+				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+				<texturefocus border="7">list-focus.png</texturefocus>
+				<onclick>Dialog.Close(1114)</onclick>
+				<onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
+				<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
+				<onup>888</onup>
+				<ondown>888</ondown>
 			</control>
 		</control>
 	</controls>

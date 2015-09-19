@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">903</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<animation effect="fade" time="400">WindowOpen</animation>
 	<animation effect="fade" time="300">WindowClose</animation>
 	<controls>
@@ -203,9 +202,9 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<posx>902</posx>
+				<posx>862</posx>
 				<posy>678</posy>
-				<width>360</width>
+				<width>400</width>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<align>right</align>
@@ -309,6 +308,17 @@
 					<texturefocus>osd-ban-focus.png</texturefocus>
 					<onclick>RunScript(service.scrobbler.lastfm,action=LastFM.Ban)</onclick>
 					<visible>!IsEmpty(Window(Home).Property(LastFM.CanBan))</visible>
+				</control>
+				<control type="button" id="921">
+					<description>rds</description>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>osd-rds-nofocus.png</texturenofocus>
+					<texturefocus>osd-rds-focus.png</texturefocus>
+					<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
+					<visible>MusicPlayer.Content(LiveTV) + RDS.HasRadiotextPlus</visible>
 				</control>
 			</control>
 		</control>

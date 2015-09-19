@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">10</defaultcontrol>
+	<defaultcontrol always="true">7</defaultcontrol>
 	<controls>
 		<control type="image">
 			<posx>0</posx>
@@ -15,9 +15,9 @@
 			<include>DialogFade5</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>560</posy>
+				<posy>550</posy>
 				<width>1280</width>
-				<height>148</height>
+				<height>158</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
@@ -30,6 +30,10 @@
 				<bordersize>6</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
+		</control>
+		<control type="group">
+			<include>DialogFade5</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="label">
 				<posx>225</posx>
 				<posy>572</posy>
@@ -72,6 +76,7 @@
 		</control>
 		<control type="group">
 			<include>dialogeffect4</include>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="button">
 				<posx>1240</posx>
 				<posy>20</posy>
@@ -92,7 +97,7 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<label>$LOCALIZE[19053]</label>
+				<label>$INFO[ListItem.Title]</label>
 				<font>font-32</font>
 			</control>
 			<control type="image">
@@ -238,15 +243,37 @@
 				<posy>699</posy>
 				<subtype>page</subtype>
 				<font>font-19</font>
-				<onleft>61</onleft>
-				<onright>61</onright>
+				<onleft>1114</onleft>
+				<onright>1114</onright>
 				<ondown>49</ondown>
-				<onup>10</onup>
+				<onup>7</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
 			</control>
+			<control type="button" id="1114">
+				<posx>1250</posx>
+				<posy>701</posy>
+				<width>20</width>
+				<height>20</height>
+				<label>-</label>
+				<font>-</font>
+				<texturefocus>magnifier-small-focus.png</texturefocus>
+				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<ondown>49</ondown>
+				<onup>7</onup>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGTitle,$ESCINFO[ListItem.Title],10000)</onclick>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGDate,$ESCINFO[ListItem.Date],10000)</onclick>
+				<onclick condition="VideoPlayer.Content(LiveTV)">SetProperty(Transparency.EPGPlot,$ESCINFO[ListItem.Plot],10000)</onclick>
+				<onclick>ActivateWindow(1113)</onclick>
+			</control>
 			<control type="group" id="9000">
-				<control type="button" id="10">
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Control.IsVisible(4)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Control.IsVisible(5)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Control.IsVisible(7)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Control.IsVisible(8)">Conditional</animation>
+				<control type="button" id="7">
 					<description>Ok button</description>
 					<posx>540</posx>
 					<posy>453</posy>
@@ -258,13 +285,110 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>186</label>
-					<onleft>10</onleft>
-					<onright>10</onright>
+					<onleft>8</onleft>
+					<onright>6</onright>
 					<onup>49</onup>
 					<ondown>61</ondown>
+				</control>
+				<control type="button" id="6">
+					<description>Record button</description>
+					<posx>740</posx>
+					<posy>453</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>-</label>
+					<onleft>7</onleft>
+					<onright>5</onright>
+					<onup>49</onup>
+					<ondown>61</ondown>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="button" id="5">
+					<description>Switch button</description>
+					<posx>940</posx>
+					<posy>453</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>19165</label>
+					<onleft>6</onleft>
+					<onright>4</onright>
+					<onup>49</onup>
+					<ondown>61</ondown>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="button" id="4">
+					<description>Similar button</description>
+					<posx>1140</posx>
+					<posy>453</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>19003</label>
+					<onleft>5</onleft>
+					<onright>8</onright>
+					<onup>49</onup>
+					<ondown>61</ondown>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="button" id="8">
+					<description>Play button</description>
+					<posx>1340</posx>
+					<posy>453</posy>
+					<width>200</width>
+					<height>35</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>19687</label>
+					<onleft>4</onleft>
+					<onright>7</onright>
+					<onup>49</onup>
+					<ondown>61</ondown>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
+				<control type="image">
+					<posx>540</posx>
+					<posy>453</posy>
+					<width>200</width>
+					<height>35</height>
+					<texture border="7">button-focus.png</texture>
+					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(6)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(5)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="800,0" time="200" condition="Control.HasFocus(8)">Conditional</animation>
+					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+					<visible>Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 				</control>
 			</control>
 		</control>

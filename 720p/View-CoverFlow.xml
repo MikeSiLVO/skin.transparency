@@ -1430,7 +1430,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1463,7 +1463,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-4).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1492,7 +1492,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1525,7 +1525,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1554,7 +1554,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1587,7 +1587,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1618,7 +1618,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1651,7 +1651,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1680,7 +1680,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1713,7 +1713,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1742,7 +1742,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1775,7 +1775,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1809,7 +1809,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -1842,7 +1842,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(0).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -1872,7 +1872,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -1905,7 +1905,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -1945,7 +1945,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -1978,7 +1978,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(4).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2007,7 +2007,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2040,7 +2040,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2069,7 +2069,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2102,7 +2102,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2133,7 +2133,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2166,7 +2166,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2195,7 +2195,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2228,7 +2228,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2257,7 +2257,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2290,7 +2290,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2324,7 +2324,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -2357,7 +2357,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(0).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -2387,7 +2387,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -2420,7 +2420,7 @@
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(1).Icon]</texture>
-						<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -2457,7 +2457,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2490,7 +2490,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2520,7 +2520,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2553,7 +2553,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2583,7 +2583,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2616,7 +2616,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(-1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2646,7 +2646,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2679,7 +2679,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(3).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2709,7 +2709,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2742,7 +2742,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(2).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2772,7 +2772,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2805,7 +2805,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(1).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2834,7 +2834,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="thumb-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2867,7 +2867,7 @@
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture flipy="true" diffuse="Icon-diffuse-mirror.png" background="true">$INFO[ListItem(0).Icon]</texture>
-					<visible>Container.Content(Artists) | Window.IsVisible(MusicFiles)</visible>
+					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
 					<posx>34</posx>
@@ -2890,7 +2890,7 @@
 		<control type="wraplist" id="55">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Window.IsVisible(MusicFiles) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
+			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 			<posx>-473</posx>
 			<posy>345</posy>
 			<width>2226</width>

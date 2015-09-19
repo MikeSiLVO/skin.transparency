@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
-		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
-	<zorder>1</zorder>
 	<defaultcontrol>120</defaultcontrol>
 	<include>dialogeffect</include>
 	<controls>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include condition="!Skin.HasSetting(HideHomeVideoBackground)">home-videowindow</include>
 		<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + Skin.HasSetting(Home_Movies_Fanart_Background)">Home_Movies_Fanart</include>

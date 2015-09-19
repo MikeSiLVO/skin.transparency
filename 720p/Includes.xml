@@ -436,6 +436,38 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
+	<include name="Breadcrumbs-Settings-Logging">
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings</description>
+			<label>$LOCALIZE[10004]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>Catagory</description>
+			<label>$LOCALIZE[13000]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+		<control type="image">
+			<width>29</width>
+			<height>30</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>Catagory</description>
+			<label>$LOCALIZE[14111]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+	</include>
 	<include name="Breadcrumbs-Settings-Profile">
 		<control type="image">
 			<width>29</width>

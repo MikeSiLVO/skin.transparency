@@ -77,6 +77,8 @@
 		<textureradioonnofocus>radiobutton-on.png</textureradioonnofocus>
 		<textureradioofffocus>radiobutton-off.png</textureradioofffocus>
 		<textureradiooffnofocus>radiobutton-off.png</textureradiooffnofocus>
+		<textureradioondisabled colordiffuse="40FFFFFF">radiobutton_on.png</textureradioondisabled>
+		<textureradiooffdisabled colordiffuse="40FFFFFF">radiobutton_off.png</textureradiooffdisabled>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		<label>-</label>
@@ -138,6 +140,8 @@
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+		<textureupdisabled colordiffuse="40FFFFFF">scroll-up-2.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="40FFFFFF">scroll-down-2.png</texturedowndisabled>
 		<align>right</align>
 		<width>33</width>
 		<height>22</height>
@@ -163,6 +167,8 @@
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+		<textureupdisabled colordiffuse="40FFFFFF">scroll-up-2.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="40FFFFFF">scroll-down-2.png</texturedowndisabled>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>

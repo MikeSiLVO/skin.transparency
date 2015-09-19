@@ -14,7 +14,7 @@
 				<height>76</height>
 				<animation effect="zoom" start="0" end="65" time="0" condition="Control.IsVisible(56) | Control.IsVisible(592)">Conditional</animation>
 				<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsMusic]</texture>
-				<visible>[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio] + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio] + !stringcompare(ListItem.Label,..)</visible>
 			</control>
 		<!-- Audio Codec (MusicPlayer) -->
 			<control type="image">

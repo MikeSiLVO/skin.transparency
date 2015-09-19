@@ -155,7 +155,6 @@
 			<onright>31</onright>
 			<onup>10</onup>
 			<ondown>999</ondown>
-			<onback>9000</onback>
 			<viewtype label="19069">list</viewtype>
 			<pagecontrol>10</pagecontrol>
 			<scrolltime>350</scrolltime>

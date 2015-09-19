@@ -2445,8 +2445,7 @@
 				<include condition="!Skin.HasSetting(Menu_TVShows)">HomeTVShowsButton</include>
 				<include condition="Skin.HasSetting(Menu_MusicVideos)">HomeMusicVideosButton</include>
 				<include condition="!Skin.HasSetting(Menu_TV) + System.GetBool(pvrmanager.enabled)">HomeTVButton</include>
-				<include condition="!Skin.HasSetting(Menu_Music) + Library.HasContent(Music) + !Skin.HasSetting(Menu_Music_FileMode)">HomeMusicButton</include>
-				<include condition="!Skin.HasSetting(Menu_Music) + [!Library.HasContent(Music) | Skin.HasSetting(Menu_Music_FileMode)]">HomeMusicFilesButton</include>
+				<include condition="!Skin.HasSetting(Menu_Music)">HomeMusicButton</include>
 				<include condition="!Skin.HasSetting(Menu_Pictures)">HomePicturesButton</include>
 				<include condition="!Skin.HasSetting(Menu_Programs)">HomeProgramsButton</include>
 				<include condition="!Skin.HasSetting(Menu_Weather)">HomeWeatherButton</include>
@@ -2662,8 +2661,7 @@
 			<content>
 				<include condition="!Skin.HasSetting(Menu_Settings)">HomeSettingsButton</include>
 				<include condition="!Skin.HasSetting(Menu_Pictures)">HomePicturesButton</include>
-				<include condition="!Skin.HasSetting(Menu_Music) + Library.HasContent(Music) + !Skin.HasSetting(Menu_Music_FileMode)">HomeMusicButton</include>
-				<include condition="!Skin.HasSetting(Menu_Music) + [!Library.HasContent(Music) | Skin.HasSetting(Menu_Music_FileMode)]">HomeMusicFilesButton</include>
+				<include condition="!Skin.HasSetting(Menu_Music)">HomeMusicButton</include>
 				<include condition="!Skin.HasSetting(Menu_Videos)">HomeVideosButton</include>
 				<include condition="!Skin.HasSetting(Menu_Movies)">HomeMoviesButton</include>
 				<include condition="!Skin.HasSetting(Menu_TVShows)">HomeTVShowsButton</include>
@@ -2744,14 +2742,6 @@
 		<item id="6">
 			<label>2</label>
 			<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
-			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
-			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
-		</item>
-	</include>
-	<include name="HomeMusicFilesButton">
-		<item id="6">
-			<label>2</label>
-			<onclick>ActivateWindow(MusicFiles)</onclick>
 			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
 		</item>
@@ -3356,12 +3346,6 @@
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 			<content>
-				<item id="8102">
-					<description>Menu Music Sub Files</description>
-					<label>$LOCALIZE[744]</label>
-					<onclick>ActivateWindow(MusicFiles)</onclick>
-					<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
-				</item>
 				<item id="8103">
 					<description>Menu Music Sub Library</description>
 					<label>$LOCALIZE[15100]</label>

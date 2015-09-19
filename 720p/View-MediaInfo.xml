@@ -787,7 +787,7 @@
 	</include>
 	<include name="MediaInfo-Music">
 		<control type="list" id="59">
-			<visible>[Window.IsVisible(MusicFiles) + !Container.Content(AddOns)] | Window.IsVisible(MusicPlaylist) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
+			<visible>Window.IsVisible(MusicPlaylist) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
 			<posx>450</posx>
 			<posy>142</posy>
 			<width>630</width>
@@ -882,7 +882,7 @@
 		<control type="group">
 			<posx>175</posx>
 			<posy>110</posy>
-			<visible>Control.IsVisible(59) + [Container.Content(Artists) | Window.IsVisible(MusicFiles)]</visible>
+			<visible>Control.IsVisible(59) + Container.Content(Artists)</visible>
 			<control type="image">
 				<posx>47</posx>
 				<posy>87</posy>
@@ -905,7 +905,7 @@
 				<width>235</width>
 				<height>235</height>
 				<texture>thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -913,7 +913,7 @@
 				<width>235</width>
 				<height>235</height>
 				<texture flipy="true" diffuse="thumb-diffuse-mirror.png">thumb-shadow.png</texture>
-				<visible>!stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles)</visible>
+				<visible>!stringcompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -1151,7 +1151,7 @@
 		<control type="group">
 			<posx>125</posx>
 			<posy>490</posy>
-			<visible>Control.IsVisible(59) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles)]</visible>
+			<visible>Control.IsVisible(59) + [Container.Content(Albums) | Container.Content(Songs)]</visible>
 			<control type="label">
 				<posx>190</posx>
 				<posy>0</posy>

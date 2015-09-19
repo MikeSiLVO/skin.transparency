@@ -803,12 +803,12 @@
 		<value condition="Skin.String(player2score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] $LOCALIZE[31309] !!![/B]</value>
 	</variable>
 	<variable name="ViewCoverFlowLabel1">
-		<value condition="Container.Content(Albums) + !Window.IsVisible(MusicFiles)">$INFO[ListItem.Label2]</value>
-		<value condition="Container.Content(Songs) + !Window.IsVisible(MusicFiles)">$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Label2]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ViewCoverFlowLabel2">
-		<value condition="Container.Content(Albums) + !Window.IsVisible(MusicFiles)">[B]$INFO[ListItem.Label][/B]</value>
-		<value condition="Container.Content(Songs) + !Window.IsVisible(MusicFiles)">[B]$INFO[ListItem.Label2][/B]</value>
+		<value condition="Container.Content(Albums)">[B]$INFO[ListItem.Label][/B]</value>
+		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Label2][/B]</value>
 	</variable>
 	<variable name="ViewFanartLabel1">
 		<value condition="!substring(ListItem.Duration,min)">$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</value>
@@ -840,8 +840,8 @@
 		<value condition="Window.IsVisible(MusicPlaylist) + !Player.HasAudio">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel7">
-		<value condition="Container.Content(Albums) + !stringcompare(ListItem.Label,..) + !Window.IsVisible(MusicFiles)">$INFO[ListItem.Label]</value>
-		<value condition="[Container.Content(Songs) | Window.IsVisible(MusicFiles)] + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Albums) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Artist]</value>
 		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Artist]</value>
 	</variable>
 	<variable name="ViewFanartLabel8">
@@ -1082,63 +1082,63 @@
 	</variable>
 	<variable name="ViewMediaInfoLabel15">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[557]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[557]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel16">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Artist]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel17">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[175]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[558]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[558]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel18">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Mood)]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.Album]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel19">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[176]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[369]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[369]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel20">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Style)]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.Title]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel21">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[21895]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel22">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Theme)]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel23">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[562]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[554]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[554]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel24">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Year]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.TrackNumber]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.TrackNumber]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel25">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[21899]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[562]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[562]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel26">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Label)]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Year]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel27">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[564]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[180]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[180]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel28">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Type)]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">$INFO[Container.Totaltime]</value>
+		<value condition="Container.Content(Songs)">$INFO[Container.Totaltime]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel29">
 		<value condition="Container.Content(Albums)">[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Songs) | Window.IsVisible(MusicFiles)">[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewIconsLabel1">
 		<value condition="Container.Content(Albums)">[B]$INFO[ListItem.Label2][/B]</value>

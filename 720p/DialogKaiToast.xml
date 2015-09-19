@@ -21,37 +21,6 @@
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
-				<texture>kai-warning.png</texture>
-			</control>
-			<control type="image" id="403">
-				<description>avatar</description>
-				<posx>20</posx>
-				<posy>2</posy>
-				<width>30</width>
-				<height>30</height>
-				<aspectratio>keep</aspectratio>
-				<texture>kai-information.png</texture>
-				<visible>false</visible>
-			</control>
-			<control type="image" id="404">
-				<description>avatar</description>
-				<posx>20</posx>
-				<posy>2</posy>
-				<width>30</width>
-				<height>30</height>
-				<aspectratio>keep</aspectratio>
-				<texture>kai-warning.png</texture>
-				<visible>false</visible>
-			</control>
-			<control type="image" id="405">
-				<description>avatar</description>
-				<posx>20</posx>
-				<posy>2</posy>
-				<width>30</width>
-				<height>30</height>
-				<aspectratio>keep</aspectratio>
-				<texture>kai-error.png</texture>
-				<visible>false</visible>
 			</control>
 			<control type="label" id="401">
 				<description>Line 1 Label</description>

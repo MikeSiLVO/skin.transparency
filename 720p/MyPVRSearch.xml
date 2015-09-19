@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>52</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<views>52</views>
+	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
