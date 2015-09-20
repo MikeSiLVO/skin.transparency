@@ -879,23 +879,30 @@
 							<item id="9">
 								<label>$LOCALIZE[10000] - $LOCALIZE[8]</label>
 								<onclick>noop</onclick>
-								<icon>special://skin/backgrounds/weather.jpg</icon>
-								<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Weather.FanartCode]</thumb>
-								<visible>!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + !Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</visible>
+								<icon>special://skin/backgrounds/background-weather.jpg</icon>
+								<thumb>resource://resource.images.weatherfanart.prairie/$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</thumb>
+								<visible>IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + IsEmpty(Skin.String(HomeWeatherPath))</visible>
 							</item>
 							<item id="9">
 								<label>$LOCALIZE[10000] - $LOCALIZE[8]</label>
 								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/background-weather.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
-								<visible>!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</visible>
+								<thumb>$INFO[Skin.String(HomeWeatherPath)]</thumb>
+								<visible>!IsEmpty(Skin.String(HomeWeatherPath))</visible>
 							</item>
 							<item id="9">
 								<label>$LOCALIZE[10000] - $LOCALIZE[8]</label>
 								<onclick>noop</onclick>
-								<icon>special://skin/backgrounds/weather.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
-								<visible>Skin.HasSetting(Home_Weather_Conditional_Backgrounds)</visible>
+								<icon>special://skin/backgrounds/background-weather.jpg</icon>
+								<thumb>$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
+								<visible>!IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + Skin.HasSetting(resource.images.homeweatherfanart.multi)</visible>
+							</item>
+							<item id="9">
+								<label>$LOCALIZE[10000] - $LOCALIZE[8]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/background-weather.jpg</icon>
+								<thumb>$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</thumb>
+								<visible>!IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + !Skin.HasSetting(resource.images.homeweatherfanart.multi)</visible>
 							</item>
 							<item id="10">
 								<label>$LOCALIZE[10000] - $LOCALIZE[1036]</label>
@@ -985,15 +992,29 @@
 								<label>$LOCALIZE[8]</label>
 								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/background-weather.jpg</icon>
-								<thumb>$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)]$INFO[Weather.FanartCode]</thumb>
-								<visible>Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+								<thumb>resource://resource.images.weatherfanart.multi/$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
+								<visible>IsEmpty(Skin.String(resource.images.weatherfanart.path)) + IsEmpty(Skin.String(WeatherPath))</visible>
 							</item>
 							<item id="24">
 								<label>$LOCALIZE[8]</label>
 								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/background-weather.jpg</icon>
-								<thumb>$INFO[Skin.String(Custom_Back_Weather_Folder)]</thumb>
-								<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds)</visible>
+								<thumb>$INFO[Skin.String(WeatherPath)]</thumb>
+								<visible>!IsEmpty(Skin.String(WeatherPath))</visible>
+							</item>
+							<item id="24">
+								<label>$LOCALIZE[8]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/background-weather.jpg</icon>
+								<thumb>$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
+								<visible>!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + Skin.HasSetting(resource.images.weatherfanart.multi)</visible>
+							</item>
+							<item id="24">
+								<label>$LOCALIZE[8]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/background-weather.jpg</icon>
+								<thumb>$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</thumb>
+								<visible>!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + !Skin.HasSetting(resource.images.weatherfanart.multi)</visible>
 							</item>
 							<item id="25">
 								<label>$LOCALIZE[5]</label>
@@ -1029,7 +1050,6 @@
 					</control>
 					<include>SkinSettingsImageButtonGroup</include>
 					<include>SkinSettingsImageFanartButtonGroup</include>
-					<include>SkinSettingsImageWeatherButtonGroup</include>
 					<control type="label">
 						<posx>565</posx>
 						<posy>583</posy>
@@ -1051,7 +1071,7 @@
 						<timeperimage>6000</timeperimage>
 						<randomize>true</randomize>
 						<fadetime>400</fadetime>
-						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)] | [Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Conditional_Options)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds) + Skin.HasSetting(Weather_Conditional_Options)]">conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options) + Skin.HasSetting(Home_Music_Fanart_Background)]">conditional</animation>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
@@ -1082,20 +1102,40 @@
 					<onright>499</onright>
 					<onup>401</onup>
 					<ondown>401</ondown>
+					<control type="button" id="519">
+						<label>31201</label>
+						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=resource.images.studios)</onclick>
+					</control>
+					<control type="button" id="520">
+						<label>31202</label>
+						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels&amp;property=resource.images.recordlabels)</onclick>
+					</control>
+					<control type="button" id="521">
+						<label>31203</label>
+						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
+					</control>
+					<control type="button" id="522">
+						<label>31204</label>
+						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
+					</control>
+					<control type="button" id="523">
+						<label>31205</label>
+						<label2>$INFO[Skin.String(resource.images.weathericons.name)]</label2>
+						<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=resource.images.weathericons)</onclick>
+					</control>
+					<control type="image" id="518">
+						<width>880</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
 					<control type="radiobutton" id="402">
 						<label>$LOCALIZE[10000] - $LOCALIZE[31153]</label>
 						<onclick>Skin.ToggleSetting(Home_Weather_Icon)</onclick>
 						<selected>!Skin.HasSetting(Home_Weather_Icon)</selected>
-					</control>
-					<control type="radiobutton" id="403">
-						<label>$LOCALIZE[10000] - $LOCALIZE[31135]</label>
-						<onclick>Skin.ToggleSetting(Animate_Home_Weather_Icon)</onclick>
-						<selected>!Skin.HasSetting(Animate_Home_Weather_Icon)</selected>
-					</control>
-					<control type="radiobutton" id="404">
-						<label>$LOCALIZE[8] - $LOCALIZE[31135]</label>
-						<onclick>Skin.ToggleSetting(Animate_Weather_Page_Icons)</onclick>
-						<selected>!Skin.HasSetting(Animate_Weather_Page_Icons)</selected>
 					</control>
 					<control type="image" id="405">
 						<width>880</width>
@@ -1261,31 +1301,6 @@
 						<label>31215</label>
 						<onclick>Skin.ToggleSetting(HideSearch)</onclick>
 						<selected>Skin.HasSetting(HideSearch)</selected>
-					</control>
-					<control type="image" id="518">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="button" id="519">
-						<label>31201</label>
-						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=resource.images.studios)</onclick>
-					</control>
-					<control type="button" id="520">
-						<label>31202</label>
-						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels&amp;property=resource.images.recordlabels)</onclick>
-					</control>
-					<control type="button" id="521">
-						<label>31203</label>
-						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
-					</control>
-					<control type="button" id="522">
-						<label>31204</label>
-						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
-						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
 					</control>
 				</control>
 				<control type="group" id="601">

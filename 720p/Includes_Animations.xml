@@ -205,11 +205,6 @@
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(120).OnPrevious">focus</animation>
 		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 	</include>
-	<include name="ListFocusScroll11">
-		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(2).OnNext">focus</animation>
-		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(2).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-	</include>
 	<include name="ListFocusScroll12">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnPrevious">focus</animation>

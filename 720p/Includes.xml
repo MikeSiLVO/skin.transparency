@@ -266,32 +266,6 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
-	<include name="Breadcrumbs-Music-Files">
-		<control type="image">
-			<width>29</width>
-			<height>30</height>
-			<texture>dot.png</texture>
-		</control>
-		<control type="label">
-			<description>Music Files</description>
-			<label>$LOCALIZE[31022]</label>
-			<include>WindowTitleCommons</include>
-		</control>
-		<control type="image">
-			<width>29</width>
-			<height>30</height>
-			<texture>dot.png</texture>
-			<animation effect="fade" start="0" end="100" center="0,15" time="400">Visible</animation>
-			<animation effect="fade" start="100" end="0" center="0,15" time="400">Hidden</animation>
-			<visible>Control.IsVisible(1101)</visible>
-		</control>
-		<control type="label" id="1101">
-			<description>Music Plugins</description>
-			<label>$LOCALIZE[1038]</label>
-			<include>WindowTitleCommons</include>
-			<visible>Substring(Container.FolderPath,addons://,Left) | Substring(Container.FolderPath,plugin://,Left)</visible>
-		</control>
-	</include>
 	<include name="Breadcrumbs-Music-Library">
 		<control type="image">
 			<width>29</width>
@@ -1133,41 +1107,6 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[Container(11).NumItems] $LOCALIZE[31025]</label>
-			</control>
-		</control>
-	</include>
-	<include name="CommonFileCount12">
-		<control type="grouplist">
-			<posx>254</posx>
-			<posy>470</posy>
-			<width>500</width>
-			<height>30</height>
-			<align>right</align>
-			<orientation>horizontal</orientation>
-			<itemgap>0</itemgap>
-			<animation effect="slide" time="0" end="-75,0" condition="Control.IsVisible(61)">Conditional</animation>
-			<control type="label">
-				<description>Page Count Label</description>
-				<width min="10" max="250">auto</width>
-				<height>30</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[31024] $INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages]</label>
-			</control>
-			<control type="image">
-				<width>29</width>
-				<height>30</height>
-				<texture>dot.png</texture>
-			</control>
-			<control type="label">
-				<description>Item Count Label</description>
-				<width min="10" max="250">auto</width>
-				<height>30</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[Container(2).NumItems] $LOCALIZE[31025]</label>
 			</control>
 		</control>
 	</include>
@@ -2680,7 +2619,7 @@
 	</include>
 	<include name="SkinSettingsImageButtonGroup">
 		<control type="group">
-			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(25) | Container(302).HasFocus(26)</visible>
+			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26)</visible>
 			<posx>555</posx>
 			<posy>215</posy>
 			<control type="button" id="303">
@@ -2698,6 +2637,8 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetImage(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">Skin.SetImage(HomeWeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.SetImage(Home_Custom_Back_Favourites_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(11)">Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(12)">Skin.SetImage(Home_Custom_Back_PlayDisc_Folder)</onclick>
@@ -2712,6 +2653,8 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.SetImage(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.SetImage(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.SetImage(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(resource.images.weatherfanart.path)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.SetImage(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetImage(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.SetImage(Custom_Back_Login_Folder)</onclick>
 				<onleft>302</onleft>
@@ -2725,7 +2668,7 @@
 				<posy>0</posy>
 				<width>165</width>
 				<height>35</height>
-				<label>31114</label>
+				<label>31111</label>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
 				<texturefocus border="7">button-nofocus.png</texturefocus>
@@ -2734,6 +2677,8 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetPath(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">Skin.SetPath(HomeWeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.SetPath(Home_Custom_Back_Favourites_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(11)">Skin.SetPath(Home_Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(12)">Skin.SetPath(Home_Custom_Back_PlayDisc_Folder)</onclick>
@@ -2748,6 +2693,8 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.SetPath(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.SetPath(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.SetPath(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(resource.images.weatherfanart.path)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.SetPath(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetPath(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.SetPath(Custom_Back_Login_Folder)</onclick>
 				<onleft>303</onleft>
@@ -2770,6 +2717,8 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.Reset(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(HomeWeatherPath)</onclick>
+				<onclick condition="Container(302).HasFocus(9)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.homeweatherfanart)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.Reset(Home_Custom_Back_Favourites_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(11)">Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(12)">Skin.Reset(Home_Custom_Back_PlayDisc_Folder)</onclick>
@@ -2784,6 +2733,8 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.Reset(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.Reset(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.Reset(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(WeatherPath)</onclick>
+				<onclick condition="Container(302).HasFocus(24)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.Reset(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.Reset(Custom_Back_Login_Folder)</onclick>
 				<onleft>304</onleft>
@@ -2926,133 +2877,6 @@
 				<onleft>302</onleft>
 				<onright>309</onright>
 				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
-			</control>
-			<include>ButtonScroll4</include>
-		</control>
-	</include>
-	<include name="SkinSettingsImageWeatherButtonGroup">
-		<control type="group">
-			<posx>555</posx>
-			<posy>215</posy>
-			<visible>Container(302).HasFocus(9) | Container(302).HasFocus(24)</visible>
-			<control type="button" id="304">
-				<description>Single Image button</description>
-				<posx>10</posx>
-				<posy>0</posy>
-				<width>165</width>
-				<height>35</height>
-				<label>31113</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(9)">Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(24)">Skin.SetImage(Custom_Back_Weather_Folder)</onclick>
-				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
-				<onleft>302</onleft>
-				<onright>305</onright>
-				<onup>304</onup>
-				<ondown>304</ondown>
-			</control>
-			<control type="button" id="305">
-				<description>Multi Image button</description>
-				<posx>180</posx>
-				<posy>0</posy>
-				<width>165</width>
-				<height>35</height>
-				<label>31114</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(9)">Skin.SetPath(Home_Custom_Back_Weather_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(24)">Skin.SetPath(Custom_Back_Weather_Folder)</onclick>
-				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
-				<onleft>304</onleft>
-				<onright>306</onright>
-				<onup>305</onup>
-				<ondown>305</ondown>
-			</control>
-			<control type="button" id="306">
-				<description>Default Image button</description>
-				<posx>350</posx>
-				<posy>0</posy>
-				<width>165</width>
-				<height>35</height>
-				<label>571</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(Custom_Back_Weather_Folder)</onclick>
-				<enable>[Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + !Skin.HasSetting(Weather_Conditional_Backgrounds)]</enable>
-				<onleft>305</onleft>
-				<onright>399</onright>
-				<onup>306</onup>
-				<ondown>303</ondown>
-			</control>
-			<control type="radiobutton" id="303">
-				<description>Conditional Image button</description>
-				<posx>350</posx>
-				<posy>40</posy>
-				<width>165</width>
-				<height>35</height>
-				<label>31122</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(9)">Skin.ToggleSetting(Home_Weather_Conditional_Backgrounds)</onclick>
-				<onclick condition="Container(302).HasFocus(24)">Skin.ToggleSetting(Weather_Conditional_Backgrounds)</onclick>
-				<selected>[Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds)]</selected>
-				<onleft>307</onleft>
-				<onright>399</onright>
-				<onup>306</onup>
-				<ondown>308</ondown>
-			</control>
-			<control type="button" id="307">
-				<description>Options Image button</description>
-				<posx>180</posx>
-				<posy>40</posy>
-				<width>165</width>
-				<height>35</height>
-				<label>33063</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(9)">Skin.ToggleSetting(Home_Weather_Conditional_Options)</onclick>
-				<onclick condition="Container(302).HasFocus(24)">Skin.ToggleSetting(Weather_Conditional_Options)</onclick>
-				<onleft>302</onleft>
-				<onright>303</onright>
-				<onup>307</onup>
-				<ondown>308</ondown>
-				<visible>[Container(302).HasFocus(9) + !Skin.HasSetting(Home_Weather_Conditional_Backgrounds)] | [Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Backgrounds)]</visible>
-			</control>
-			<control type="button" id="309">
-				<posx>10</posx>
-				<posy>110</posy>
-				<width>505</width>
-				<height>30</height>
-				<label>- $LOCALIZE[24000]</label>
-				<label2>[COLOR=blue]$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)][/COLOR]</label2>
-				<onclick>Skin.SetPath(Home_Back_Weather_Custom_Conditional_Folder)</onclick>
-				<onup>308</onup>
-				<ondown>308</ondown>
-				<onleft>302</onleft>
-				<onright>399</onright>
-				<enable>Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)</enable>
-				<visible>Container(302).HasFocus(9) + Skin.HasSetting(Home_Weather_Conditional_Options)</visible>
-			</control>
-			<control type="button" id="308">
-				<posx>10</posx>
-				<posy>110</posy>
-				<width>505</width>
-				<height>30</height>
-				<label>- $LOCALIZE[24000]</label>
-				<label2>[COLOR=blue]$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)][/COLOR]</label2>
-				<onclick>Skin.SetPath(Custom_Back_Weather_Conditional_Folder)</onclick>
-				<onup>307</onup>
-				<ondown>307</ondown>
-				<onleft>302</onleft>
-				<onright>308</onright>
-				<visible>Container(302).HasFocus(24) + Skin.HasSetting(Weather_Conditional_Options)</visible>
 			</control>
 			<include>ButtonScroll4</include>
 		</control>

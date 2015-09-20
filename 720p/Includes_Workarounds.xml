@@ -183,20 +183,6 @@
 			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 	</include>
-	<include name="fanart-mymusicsongs">
-		<control type="image">
-			<description>dirty hack for fanart in album and song view</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
-		</control>
 		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
 			<posx>0</posx>
@@ -330,21 +316,6 @@
 			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 	</include>
-	<include name="fanart-extra-music-files">
-		<control type="multiimage" id="6111">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[ListItem.FileNameAndPath,,extrafanart/]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
-		</control>
 		<control type="multiimage" id="6112">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -423,28 +394,6 @@
 			<width>230</width>
 			<height>89</height>
 			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/logo.png]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(595)] + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-	</include>
-	<include name="logo-artists-files">
-		<control type="image">
-			<posx>10</posx>
-			<posy>30</posy>
-			<width>230</width>
-			<height>89</height>
-			<texture background="true">$INFO[ListItem.FileNameAndPath,,logo.png]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(595)] + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<posx>10</posx>
-			<posy>30</posy>
-			<width>230</width>
-			<height>89</height>
-			<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
 			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(595)] + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>

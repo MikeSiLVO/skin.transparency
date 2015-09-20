@@ -103,18 +103,6 @@
 		<icon>special://skin/backgrounds/music.png</icon>
 		<thumb>special://skin/backgrounds/music.png</thumb>
 	</include>
-	<include name="home-weather-background-conditional">
-		<icon>special://skin/backgrounds/weather.jpg</icon>
-		<thumb>special://skin/backgrounds/home-weather-conditional/$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
-	</include>
-	<include name="home-weather-custom-background-conditional">
-		<icon>special://skin/backgrounds/weather.jpg</icon>
-		<thumb>$INFO[Skin.String(Home_Back_Weather_Custom_Conditional_Folder)]$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
-	</include>
-	<include name="home-weather-background">
-		<icon>special://skin/backgrounds/weather.jpg</icon>
-		<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
-	</include>
 	<include name="Home_Movies_Fanart">
 		<control type="multiimage">
 			<posx>315</posx>
@@ -283,8 +271,8 @@
 	<include name="Home_Top_Weather_Icon">
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
-			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icon_Top</include>
-			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icon_Top</include>
+			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Home_Weather_Icon_Top</include>
+			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icon_Top</include>
 			<control type="label">
 				<description>Conditions Label</description>
 				<posx>1139</posx>
@@ -306,10 +294,10 @@
 			<posy>50</posy>
 			<width>72</width>
 			<height>72</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>
@@ -320,7 +308,7 @@
 			<posy>50</posy>
 			<width>72</width>
 			<height>72</height>
-			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
 			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>
@@ -340,8 +328,8 @@
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
-			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icon</include>
-			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icon</include>
+			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Home_Weather_Icon</include>
+			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icon</include>
 			<control type="label">
 				<description>Weather label</description>
 				<posx>875</posx>
@@ -400,10 +388,10 @@
 			<posy>7</posy>
 			<width>136</width>
 			<height>136</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 	</include>
 	<include name="Home_Weather_Icon">
@@ -413,7 +401,7 @@
 			<posy>7</posy>
 			<width>136</width>
 			<height>136</height>
-			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="WeatherExtendedInfo">
@@ -432,8 +420,8 @@
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
-			<include condition="Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Weather_Icons</include>
-			<include condition="!Skin.HasSetting(Animate_Home_Weather_Icon)">Home_Animated_Weather_Icons</include>
+			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Home_Weather_Icons</include>
+			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icons</include>
 			<control type="label">
 				<description>location label</description>
 				<posx>895</posx>
@@ -641,10 +629,10 @@
 			<posy>0</posy>
 			<width>86</width>
 			<height>86</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -652,10 +640,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -663,10 +651,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -674,10 +662,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -685,10 +673,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -696,10 +684,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -707,10 +695,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
@@ -718,10 +706,10 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<imagepath>weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
-			<fadetime>0</fadetime>
+			<fadetime>1</fadetime>
 		</control>
 	</include>
 	<include name="Home_Weather_Icons">
@@ -731,7 +719,7 @@
 			<posy>0</posy>
 			<width>86</width>
 			<height>86</height>
-			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -739,7 +727,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -747,7 +735,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -755,7 +743,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -763,7 +751,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -771,7 +759,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -779,7 +767,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
@@ -787,7 +775,7 @@
 			<posy>109</posy>
 			<width>40</width>
 			<height>40</height>
-			<texture>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
 		</control>
 	</include>
 	<include name="SystemInfo">
@@ -2766,9 +2754,8 @@
 		<item id="10">
 			<label>8</label>
 			<onclick>ActivateWindow(Weather)</onclick>
-			<include condition="Skin.HasSetting(Home_Weather_Conditional_Backgrounds)">home-weather-background</include>
-			<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + !Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-background-conditional</include>
-			<include condition="!Skin.HasSetting(Home_Weather_Conditional_Backgrounds) + Skin.HasSetting(Home_Weather_Custom_Conditional_Backgrounds)">home-weather-custom-background-conditional</include>
+			<icon>special://skin/backgrounds/weather.jpg</icon>
+			<thumb>$VAR[HomeWeatherFanartPath]</thumb>
 		</item>
 	</include>
 	<include name="HomeFavouritesButton">

@@ -9,26 +9,13 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/background-weather.jpg" background="true">$INFO[Skin.String(Custom_Back_Weather_Folder)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/background-weather.jpg" background="true">$VAR[WeatherFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>!Skin.HasSetting(Weather_Conditional_Backgrounds) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
-		</control>
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath background="true">$INFO[Skin.String(Custom_Back_Weather_Conditional_Folder)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Skin.HasSetting(Weather_Conditional_Backgrounds) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

@@ -403,6 +403,22 @@
 		<value condition="substring(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
 		<value condition="substring(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 	</variable>
+	<variable name="HomeWeatherFanartPath">
+		<value condition="IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + IsEmpty(Skin.String(HomeWeatherPath))">resource://resource.images.weatherfanart.prairie/$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+		<value condition="!IsEmpty(Skin.String(HomeWeatherPath))">$INFO[Skin.String(HomeWeatherPath)]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + Skin.HasSetting(resource.images.homeweatherfanart.multi)">$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + !Skin.HasSetting(resource.images.homeweatherfanart.multi)">$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+	</variable>
+	<variable name="WeatherFanartPath">
+		<value condition="IsEmpty(Skin.String(resource.images.weatherfanart.path)) + IsEmpty(Skin.String(WeatherPath))">resource://resource.images.weatherfanart.multi/$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+		<value condition="!IsEmpty(Skin.String(WeatherPath))">$INFO[Skin.String(WeatherPath)]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.weatherfanart.path)) + !Skin.HasSetting(resource.images.weatherfanart.multi)">$INFO[Skin.String(resource.images.weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
+	</variable>
+	<variable name="WeatherIconPath">
+		<value condition="IsEmpty(Skin.String(resource.images.weathericons.path))">resource://resource.images.weathericons.animated/</value>
+		<value condition="!IsEmpty(Skin.String(resource.images.weathericons.path))">$INFO[Skin.String(resource.images.weathericons.path)]</value>
+	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
 		<value condition="IsEmpty(Skin.String(resource.images.studios.path))">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
 		<value condition="!IsEmpty(Skin.String(resource.images.studios.path))">$INFO[Skin.String(resource.images.studios.path)]$INFO[ListItem.Studio,,.png]</value>
