@@ -476,7 +476,7 @@
 			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<visible>Control.IsVisible(50) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
+			<visible>Control.IsVisible(50) + [Player.HasVideo + !!Skin.HasSetting(HideVideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>

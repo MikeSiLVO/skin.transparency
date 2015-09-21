@@ -4,7 +4,7 @@
 	<views>50,51,52,58</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,7 +15,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!IsEmpty(Fanart.Image) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>!IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -27,7 +27,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -41,9 +41,9 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>

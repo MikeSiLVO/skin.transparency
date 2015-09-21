@@ -235,9 +235,7 @@ msgctxt "#31111"
 msgid "Image Folder"
 msgstr ""
 
-msgctxt "#31112"
-msgid "Use visualisation background"
-msgstr ""
+#empty string with id 31112
 
 msgctxt "#31113"
 msgid "Single Image"
@@ -459,9 +457,7 @@ msgctxt "#31179"
 msgid "Next Episode:"
 msgstr ""
 
-msgctxt "#31180"
-msgid "Use video background"
-msgstr ""
+#empty string with id 31180
 
 msgctxt "#31181"
 msgid "Show banners in list"

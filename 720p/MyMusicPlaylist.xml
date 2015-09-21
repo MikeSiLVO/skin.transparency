@@ -4,7 +4,7 @@
 	<menucontrol>9000</menucontrol>
 	<views>50,51,52,59</views>
 	<controls>
-		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<description>fallback if no playing or list fanart is available</description>
 			<posx>0</posx>
@@ -18,7 +18,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(MusicPlayer.Property(Fanart_Image)) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(MusicPlayer.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>song fanart</description>
@@ -31,7 +31,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!Player.HasAudio | [Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image))] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>!Player.HasAudio | [Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image))] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>song playing fanart</description>
@@ -46,7 +46,7 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Player.HasAudio</visible>
 		</control>
-		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<control type="group">

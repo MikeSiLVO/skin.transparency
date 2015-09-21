@@ -25,13 +25,7 @@
 		<include condition="Skin.HasSetting(Menu_MusicVideos) + [!Skin.HasSetting(HomeRecentMusicvideos) | Skin.HasSetting(HomeRandomMusicvideos) | Skin.HasSetting(HomeWatchlistMusicvideos)]">recentlyfanartmusicvideos</include>
 		<include condition="!Skin.HasSetting(Menu_Music) + [!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeWatchlistAlbums)]">recentlyfanartalbums</include>
 		<include condition="!Skin.HasSetting(Menu_Programs) + !Skin.HasSetting(HomeRandomAddons)">randomfanartaddons</include>
-		<include condition="!Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization)">home-visualisation1</include>
-		<include condition="!Skin.HasSetting(HideHomeVizBackground) + Skin.HasSetting(Vis-ArtistSlide)">home-artistslideshow</include>
-		<include condition="Skin.HasSetting(Vis-Slideshow) + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
-		<include condition="!Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-fanart-fallback</include>
-		<include condition="!Skin.HasSetting(HideHomeVizBackground) + [!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-musicplayer-fanart</include>
-		<include condition="Skin.HasSetting(Vis-CDWall) + !Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
-		<include condition="!Skin.HasSetting(HideHomeVizBackground) + !Skin.HasSetting(Vis-Visualization)">home-visualisation2</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<include condition="Window.Previous(Startup)">Splash</include>
 		<control type="group">
 			<include>ContentFade</include>

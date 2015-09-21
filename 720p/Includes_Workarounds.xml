@@ -154,7 +154,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
@@ -167,7 +167,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
@@ -180,7 +180,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 		<control type="image">
@@ -194,7 +194,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
@@ -207,7 +207,7 @@
 			<include>VisibleFadeEffect</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-Programs_Pictures">
@@ -222,7 +222,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,androidapp://) | substring(Container.FolderPath,androidapp://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,androidapp://) | substring(Container.FolderPath,androidapp://) | substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for (inside folder) fanart in programs pictures</description>
@@ -235,7 +235,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,androidapp://) | substring(Container.FolderPath,androidapp://) | substring(ListItem.FolderPath,addons://) | substring(ListItem.Path,special://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,androidapp://) | substring(Container.FolderPath,androidapp://) | substring(ListItem.FolderPath,addons://) | substring(ListItem.Path,special://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-movies">
@@ -251,7 +251,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-tvshows">
@@ -267,7 +267,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage" id="6106">
 			<posx>0</posx>
@@ -281,7 +281,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-musicvideos">
@@ -297,7 +297,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(MusicVideos) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>[Container.Content(MusicVideos) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-music">
@@ -313,7 +313,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 		<control type="multiimage" id="6112">
@@ -328,7 +328,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage" id="6113">
 			<posx>0</posx>
@@ -342,7 +342,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://musicplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-programs">
@@ -358,7 +358,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!stringcompare(ListItem.Label,..) + !IsEmpty(ListItem.Path) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>!stringcompare(ListItem.Label,..) + !IsEmpty(ListItem.Path) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-seasons">
@@ -372,7 +372,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -384,7 +384,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="logo-artists">

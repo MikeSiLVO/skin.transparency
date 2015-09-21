@@ -16,7 +16,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,opengl spectrum) | StringCompare(Visualisation.Name,directx spectrum)] + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasAudio + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum)] + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 		</control>
 	</include>
 	<include name="home-visualisation2">
@@ -26,7 +26,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + [StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,opengl spectrum) | StringCompare(Visualisation.Name,directx spectrum)] + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasAudio + [StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum)] + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 		</control>
 	</include>
 	<include name="home-artistslideshow">
@@ -40,7 +40,7 @@
 			<timeperimage>5000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,opengl spectrum) | StringCompare(Visualisation.Name,directx spectrum)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
@@ -59,7 +59,7 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,opengl spectrum) | StringCompare(Visualisation.Name,directx spectrum)]+ !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)]+ !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
@@ -74,7 +74,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,opengl spectrum) | StringCompare(Visualisation.Name,directx spectrum)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>

@@ -63,7 +63,7 @@
 					<width>960</width>
 					<height>321</height>
 					<animation effect="fade" start="0" end="100" time="250" delay="900">Visible</animation>
-					<visible>!Skin.HasSetting(Fullscreen_Trailer) + [Player.HasVideo + !Skin.HasSetting(VideoBackgrounds)]</visible>
+					<visible>!Skin.HasSetting(Fullscreen_Trailer) + [Player.HasVideo + !!Skin.HasSetting(HideVideoBackgrounds)]</visible>
 				</control>
 			</control>
 		</control>

@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">100</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,7 +15,7 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>175</posx>
@@ -28,9 +28,9 @@
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(SkinSettings) + [Skin.String(SkinSettings,8) | Skin.String(SkinSettings,9)]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
 			<include>ContentFade</include>
-			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include>ContentPanel</include>
@@ -503,23 +503,6 @@
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
 						<selected>Skin.HasSetting(WideHomeMenu)</selected>
 					</control>
-					<control type="image" id="205">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="radiobutton" id="206">
-						<description>Hide Home Video Background</description>
-						<label>31123</label>
-						<onclick>Skin.ToggleSetting(HideHomeVideoBackground)</onclick>
-						<selected>Skin.HasSetting(HideHomeVideoBackground)</selected>
-					</control>
-					<control type="radiobutton" id="207">
-						<description>Hide Home Visualization Background</description>
-						<label>31119</label>
-						<onclick>Skin.ToggleSetting(HideHomeVizBackground)</onclick>
-						<selected>Skin.HasSetting(HideHomeVizBackground)</selected>
-					</control>
 					<control type="image" id="208">
 						<width>880</width>
 						<height>2</height>
@@ -697,9 +680,9 @@
 						<posy>185</posy>
 						<width>325</width>
 						<height>35</height>
-						<label>31180</label>
-						<onclick>Skin.ToggleSetting(VideoBackgrounds)</onclick>
-						<selected>Skin.HasSetting(VideoBackgrounds)</selected>
+						<label>31123</label>
+						<onclick>Skin.ToggleSetting(HideVideoBackgrounds)</onclick>
+						<selected>Skin.HasSetting(HideVideoBackgrounds)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
 						<onup>302</onup>
@@ -711,9 +694,9 @@
 						<posy>220</posy>
 						<width>325</width>
 						<height>35</height>
-						<label>31112</label>
-						<onclick>Skin.ToggleSetting(VizBackgrounds)</onclick>
-						<selected>Skin.HasSetting(VizBackgrounds)</selected>
+						<label>31119</label>
+						<onclick>Skin.ToggleSetting(HideVisBackgrounds)</onclick>
+						<selected>Skin.HasSetting(HideVisBackgrounds)</selected>
 						<onleft>9000</onleft>
 						<onright>399</onright>
 						<onup>301</onup>

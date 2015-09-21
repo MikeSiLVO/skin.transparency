@@ -3,7 +3,7 @@
 	<defaultcontrol>3</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,9 +15,9 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + !Control.HasFocus(90) + !ControlGroup(5).HasFocus">Conditional</animation>
 			<control type="image">
@@ -29,7 +29,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(VideosSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(VideosSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -40,7 +40,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(PVRSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(PVRSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -51,7 +51,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(MusicSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(MusicSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -62,7 +62,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(PicturesSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(PicturesSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -73,7 +73,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(WeatherSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(WeatherSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -84,7 +84,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(SystemSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(SystemSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -95,7 +95,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(NetworkSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(NetworkSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<posx>175</posx>
@@ -106,7 +106,7 @@
 				<animation effect="zoom" start="530,309,220,130" end="175,110,932,501" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="175,110,932,501" end="530,309,220,130" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(AppearanceSettings) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(AppearanceSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 		</control>
 		<control type="group">

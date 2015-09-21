@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">6000</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include condition="Skin.HasSetting(VideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -15,9 +15,9 @@
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(VizBackgrounds)">CommonVisualizationBackground</include>
+		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<include condition="IsEmpty(Window(Weather).Property(Daily.IsFetched))">weather</include>

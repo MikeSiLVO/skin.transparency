@@ -15,7 +15,7 @@
 			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(FileManager) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(FileManager) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -30,7 +30,7 @@
 			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Videos) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Videos) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -45,7 +45,7 @@
 			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Music) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Music) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -60,7 +60,7 @@
 			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Pictures) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Pictures) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -69,7 +69,7 @@
 			<height>720</height>
 			<texture>black.png</texture>
 			<colordiffuse>B0000000</colordiffuse>
-			<visible>Window.IsVisible(NetworkSetup) + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(NetworkSetup) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
