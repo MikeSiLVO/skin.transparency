@@ -40,7 +40,7 @@
 			<timeperimage>5000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
@@ -59,7 +59,7 @@
 			<fadetime>2000</fadetime>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)]+ !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)]+ !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
@@ -74,7 +74,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideHomeVizBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
@@ -118,7 +118,7 @@
 			<animation effect="rotatey" center="320" start="20" end="20" time="0" condition="true">Conditional</animation>
 			<animation effect="rotate" center="320,220" start="-10" end="-10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Movies_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(2) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Container(5040).HasFocus(2) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_TVShows_Fanart">
@@ -135,7 +135,7 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="200">Visible</animation>
 			<animation effect="rotatey" center="333" start="-6" end="-6" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Music_Fanart">
@@ -153,7 +153,7 @@
 			<animation effect="rotatey" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 			<animation effect="rotatex" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 			<include condition="!Skin.HasSetting(Animate_Home_Music_Fanart_Background)">backgroundanimation2</include>
-			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="HomeButtonNormal">
@@ -209,7 +209,7 @@
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Control.HasFocus(5044) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Control.HasFocus(5044) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartepisodes">
@@ -223,7 +223,7 @@
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Control.HasFocus(5045) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Control.HasFocus(5045) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartmusicvideos">
@@ -237,7 +237,7 @@
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Control.HasFocus(5048) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Control.HasFocus(5048) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="recentlyfanartalbums">
@@ -251,7 +251,7 @@
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Control.HasFocus(5046) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Control.HasFocus(5046) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="randomfanartaddons">
@@ -265,7 +265,7 @@
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Control.HasFocus(5047) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideHomeVizBackground)]</visible>
+			<visible>Control.HasFocus(5047) + ![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 		</control>
 	</include>
 	<include name="Home_Top_Weather_Icon">
