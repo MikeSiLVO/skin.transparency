@@ -18,7 +18,7 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>380</posy>
-				<include condition="Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes) + !Skin.HasSetting(SafeMode)">clearart-dialogfullscreeninfo</include>
+				<include condition="Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes)">clearart-dialogfullscreeninfo</include>
 				<control type="image">
 					<description>cover image</description>
 					<posx>10</posx>

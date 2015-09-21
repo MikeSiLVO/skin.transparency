@@ -482,7 +482,7 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="group">
-				<include condition="Skin.HasSetting(MoviesExtraThumbs) + !Skin.HasSetting(SafeMode)">thumbs-extra-movies</include>
+				<include condition="Skin.HasSetting(MoviesExtraThumbs)">thumbs-extra-movies</include>
 			</control>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">

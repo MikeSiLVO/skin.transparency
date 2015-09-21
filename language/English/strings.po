@@ -241,11 +241,7 @@ msgctxt "#31113"
 msgid "Single Image"
 msgstr ""
 
-#empty string with id 31114
-
-msgctxt "#31115"
-msgid "Safe Mode"
-msgstr ""
+#empty strings from id 31114 to 31115
 
 msgctxt "#31116"
 msgid "Wide side menu buttons"

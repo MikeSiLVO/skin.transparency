@@ -30,8 +30,8 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanart-Programs_Pictures</include>
-		<include condition="Skin.HasSetting(ProgramsExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-programs</include>
+		<include>fanart-Programs_Pictures</include>
+		<include condition="Skin.HasSetting(ProgramsExtraFanart)">fanart-extra-programs</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>

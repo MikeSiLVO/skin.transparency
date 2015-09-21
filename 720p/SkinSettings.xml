@@ -277,12 +277,6 @@
 						<onclick>Skin.ToggleSetting(KioskMode)</onclick>
 						<selected>Skin.HasSetting(KioskMode)</selected>
 					</control>
-					<control type="radiobutton" id="140">
-						<description>SafeMode</description>
-						<label>31115</label>
-						<onclick>Skin.ToggleSetting(SafeMode)</onclick>
-						<selected>Skin.HasSetting(SafeMode)</selected>
-					</control>
 					<control type="radiobutton" id="141">
 						<description>DebugMode</description>
 						<label>654</label>

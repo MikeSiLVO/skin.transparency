@@ -32,7 +32,7 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>![Skin.HasSetting(MusicExtraFanart) + !IsEmpty(Control.GetLabel(6110))] + !IsEmpty(Container.Art(artist.fanart)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(MusicExtraFanart) + !Skin.HasSetting(SafeMode)">fanart-extra-music</include>
+		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
 		<control type="image">
 			<description>artist level fanart</description>
 			<posx>0</posx>
@@ -58,7 +58,7 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<include condition="Skin.HasSetting(ArtistLogo) + !Skin.HasSetting(SafeMode)">logo-artists</include>
+		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>

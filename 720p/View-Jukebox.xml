@@ -65,7 +65,7 @@
 				<include>VisibleFadeEffect4</include>
 				<visible>Player.HasAudio</visible>
 			</control>
-			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-jukebox</include>
+			<include condition="!Skin.HasSetting(CDArt)">cdart-jukebox</include>
 			<control type="image">
 				<posx>540</posx>
 				<posy>390</posy>
@@ -74,7 +74,7 @@
 				<texture diffuse="disc_mask.png" background="true">disc.png</texture>
 				<aspectratio>keep</aspectratio>
 				<include>cdartspinjukebox</include>
-				<visible>Player.HasAudio + [Skin.HasSetting(CDArt) | Skin.HasSetting(SafeMode)]</visible>
+				<visible>Player.HasAudio + Skin.HasSetting(CDArt)</visible>
 			</control>
 			<control type="image">
 				<posx>434</posx>

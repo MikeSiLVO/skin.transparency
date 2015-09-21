@@ -25,7 +25,7 @@
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
 			<visible>Player.HasAudio + Skin.HasSetting(Vis-ArtistSlide)</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">fanartslideshow-musicvisualisation</include>
+		<include>fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
 			<posx>0</posx>
@@ -54,8 +54,8 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
-		<include condition="!Skin.HasSetting(SafeMode)">cdwall-musicvisualisation</include>
-		<include condition="Skin.HasSetting(ArtistLogo) + !Skin.HasSetting(SafeMode)">logo-artists-visualisation</include>
+		<include>cdwall-musicvisualisation</include>
+		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists-visualisation</include>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
 			<posx>0</posx>
@@ -316,7 +316,7 @@
 				<animation effect="slide" start="0,0" end="-320,0" time="300">Hidden</animation>
 				<animation effect="slide" start="-320,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-320,0" time="300" delay="1200">WindowClose</animation>
-				<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-musicvisualisation</include>
+				<include condition="!Skin.HasSetting(CDArt)">cdart-musicvisualisation</include>
 				<control type="image">
 					<description>default cd image</description>
 					<posx>35</posx>
@@ -326,7 +326,7 @@
 					<texture diffuse="disc_mask.png">disc.png</texture>
 					<aspectratio>keep</aspectratio>
 					<include>cdartspin</include>
-					<visible>Skin.HasSetting(CDArt) | Skin.HasSetting(SafeMode)</visible>
+					<visible>Skin.HasSetting(CDArt)</visible>
 				</control>
 				<control type="image">
 					<description>cover image</description>

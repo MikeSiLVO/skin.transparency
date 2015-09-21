@@ -1206,9 +1206,9 @@
 				<height>142</height>
 				<texture diffuse="disc_mask.png">disc.png</texture>
 				<include>cdartspinhome</include>
-				<visible>Skin.HasSetting(CDArt) | Skin.HasSetting(SafeMode)</visible>
+				<visible>Skin.HasSetting(CDArt)</visible>
 			</control>
-			<include condition="!Skin.HasSetting(CDArt) + !Skin.HasSetting(SafeMode)">cdart-home</include>
+			<include condition="!Skin.HasSetting(CDArt)">cdart-home</include>
 			<control type="image">
 				<description>Cover image</description>
 				<posx>816</posx>

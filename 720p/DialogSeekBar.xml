@@ -99,7 +99,7 @@
 			<animation effect="slide" start="280,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">Hidden</animation>
-			<include condition="Skin.HasSetting(ClearArt) + !Skin.HasSetting(SafeMode)">clearart-dialogseekbar</include>
+			<include condition="Skin.HasSetting(ClearArt)">clearart-dialogseekbar</include>
 			<visible>Player.Paused</visible>
 			<control type="group">
 				<posx>30</posx>
