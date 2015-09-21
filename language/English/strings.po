@@ -46,14 +46,8 @@ msgctxt "#31006"
 msgid "Video Extras"
 msgstr ""
 
-#empty strings from id 31007 to 31021
+#empty strings from id 31007 to 31023
 #Page labels
-
-msgctxt "#31022"
-msgid "Music Files"
-msgstr ""
-
-#empty string with id 31023
 
 msgctxt "#31024"
 msgid "Page"

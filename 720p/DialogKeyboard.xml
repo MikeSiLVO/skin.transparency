@@ -529,7 +529,6 @@
 					<width>838</width>
 					<height>110</height>
 					<texture border="50">keyboard.png</texture>
-					<texture>keyboard.png</texture>
 				</control>
 				<control type="label" id="313">
 					<description>coding text input</description>
