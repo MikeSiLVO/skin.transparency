@@ -2775,7 +2775,7 @@
 				<posy>0</posy>
 				<width>165</width>
 				<height>35</height>
-				<label>31114</label>
+				<label>31111</label>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
 				<texturefocus border="7">button-nofocus.png</texturefocus>

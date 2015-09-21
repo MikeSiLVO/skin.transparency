@@ -724,9 +724,16 @@
 						<onup>312</onup>
 						<ondown>302</ondown>
 					</control>
-					<control type="list" id="302">
+					<control type="image" id="314">
 						<posx>200</posx>
 						<posy>325</posy>
+						<width>325</width>
+						<height>2</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="list" id="302">
+						<posx>200</posx>
+						<posy>327</posy>
 						<width>345</width>
 						<height>280</height>
 						<onleft>9000</onleft>
@@ -7511,54 +7518,6 @@
 						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
 				</control>
-				<control type="group">
-					<visible>Skin.String(SkinSettings,10)</visible>
-					<posx>130</posx>
-					<posy>76</posy>
-					<control type="label">
-						<posx>50</posx>
-						<posy>108</posy>
-						<width>910</width>
-						<height>400</height>
-						<label>[B]![/B]</label>
-						<textcolor>white</textcolor>
-						<font>font-480</font>
-						<align>center</align>
-						<aligny>center</aligny>
-						<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
-					</control>
-					<control type="scrollbar" id="1001">
-						<posx>950</posx>
-						<posy>100</posy>
-						<width>20</width>
-						<height>420</height>
-						<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-						<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-						<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-						<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-						<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-						<onleft>1000</onleft>
-						<onright>1000</onright>
-						<ondown>61</ondown>
-						<onup>61</onup>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
-					</control>
-					<control type="textbox" id="5">
-						<description>textarea</description>
-						<posx>50</posx>
-						<posy>117</posy>
-						<width>910</width>
-						<height>398</height>
-						<font>font-23</font>
-						<align>center</align>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<pagecontrol>1001</pagecontrol>
-						<autoscroll time="1000" delay="5000" repeat="7500">true</autoscroll>
-						<label>[CR][CR][CR][CR][CR][COLOR=darkblue][B]Transparency![/B][/COLOR][CR][CR][B]Would Like To Thank:[/B][CR][CR][CR][CR][CR][COLOR=darkblue]Graphics:[/COLOR][CR]Burncycle [COLOR=lightblue]- partial home menu button design[/COLOR][CR][CR][CR][COLOR=darkblue]Fonts:[/COLOR][CR]tikkiew [COLOR=lightblue]- bigger font sizes[/COLOR][CR][CR][CR][COLOR=darkblue]Custom Menu Items:[/COLOR][CR]nuzela10[CR][CR][CR][COLOR=darkblue]Media Flagging:[/COLOR][CR]krypt2nite[CR]Imaginos[CR]ccMatrix[CR][CR][CR][COLOR=darkblue]Weather Fanart:[/COLOR][CR]Silverxxx [COLOR=lightblue]- Home Weather Fanart[/COLOR][CR][CR][CR][COLOR=darkblue]Animated Weather Icons:[/COLOR][CR]Silverxxx[CR][CR][CR][COLOR=darkblue]ClearArt:[/COLOR][CR]reaven[CR][CR][CR][COLOR=darkblue]cdArt:[/COLOR][CR]reaven[CR][CR][CR][COLOR=darkblue]Record Label Logo's:[/COLOR][CR]Ninjamawwe[CR][CR][CR][COLOR=darkblue]Studio Logo's:[/COLOR][CR]ccMatrix[CR]Cosmor[CR][CR][CR][COLOR=darkblue]Background Animation:[/COLOR][CR]CF2009[CR][CR][CR][COLOR=darkblue]Trailer Preview:[/COLOR][CR]anoobie[CR][CR][CR][COLOR=darkblue]Recently Added Script:[/COLOR][CR]Nuka1195[CR][CR][CR][COLOR=darkblue]Random Items Script:[/COLOR][CR]Hitcher[CR][CR][CR][COLOR=darkblue]Favourites Script:[/COLOR][CR]CF2009[CR][CR][CR][COLOR=darkblue]Blu-ray, DVD, HDDVD &amp; HDTV cases:[/COLOR][CR]DR. Stranger[CR][CR][CR][COLOR=darkblue]OSD Subtitle Script skin code:[/COLOR][CR]Amet[CR][CR][CR][COLOR=darkblue]Home Fanart Backdrops:[/COLOR][CR]francyboy [COLOR=lightblue]- for the idea[/COLOR][CR]Steveb [COLOR=lightblue]- for the TV Shows &amp; Music backdrops[/COLOR][CR]Spider_mp3 [COLOR=lightblue]- for the Movies backdrop &amp; code[/COLOR][CR][CR][CR][COLOR=darkblue]Now playing video background:[/COLOR][CR]Stile[CR][CR][CR][COLOR=darkblue]Translations:[/COLOR][CR]taxigps [COLOR=lightblue]- Chinese (Simple)[/COLOR][CR]perfecblue [COLOR=lightblue]- Chinese (Traditional)[/COLOR][CR]bignjato [COLOR=lightblue]- Croatian[/COLOR][CR]ezechiel1917 [COLOR=lightblue]- Czech[/COLOR][CR]Dannermax [COLOR=lightblue]- Danish[/COLOR][CR]dynamix [COLOR=lightblue]- Dutch[/COLOR][CR]Verberzerk [COLOR=lightblue]- Dutch[/COLOR][CR]Mika Pirinen [COLOR=lightblue]- Finnish[/COLOR][CR]darknoir [COLOR=lightblue]- French[/COLOR][CR]Shalashaska [COLOR=lightblue]- French[/COLOR][CR]jpf55 [COLOR=lightblue]- French[/COLOR][CR]willynuisance [COLOR=lightblue]- French[/COLOR][CR]macchina [COLOR=lightblue]- German[/COLOR][CR]davidw [COLOR=lightblue]- German[/COLOR][CR]WaxWorm [COLOR=lightblue]- German[/COLOR][CR]ydatografida [COLOR=lightblue]- Greek[/COLOR][CR]LinarSavion [COLOR=lightblue]- Hebrew[/COLOR][CR]r1ctus [COLOR=lightblue]- Hungarian[/COLOR][CR]francyboy [COLOR=lightblue]- Italian[/COLOR][CR]kyouhei [COLOR=lightblue]- Japanese[/COLOR][CR]airplanez [COLOR=lightblue]- Korean[/COLOR][CR]xbmc-korea.com [COLOR=lightblue]- Korean[/COLOR][CR]YOkerman [COLOR=lightblue]- Norwegian[/COLOR][CR]Requiem [COLOR=lightblue]- Norwegian[/COLOR][CR]Jokkvahl [COLOR=lightblue]- Norwegian[/COLOR][CR]T.smurf [COLOR=lightblue]- Norwegian[/COLOR][CR]dml7 [COLOR=lightblue]- Polish[/COLOR][CR]Rafał Wójcik [COLOR=lightblue]- Polish[/COLOR][CR]xbs08 [COLOR=lightblue]- Portuguese[/COLOR][CR]gugahoi [COLOR=lightblue]- Portuguese (Brazil)[/COLOR][CR]rbonon [COLOR=lightblue]- Portuguese (Brazil)[/COLOR][CR]Alexey Sannikov [COLOR=lightblue]- Rusian[/COLOR][CR]medvedic [COLOR=lightblue]- Serbian[/COLOR][CR]Ifffko [COLOR=lightblue]- Sloval[/COLOR][CR]bardenas [COLOR=lightblue]- Spanish[/COLOR][CR]xbmcero [COLOR=lightblue]- Spanish[/COLOR][CR]Marg [COLOR=lightblue]- Spanish[/COLOR][CR]ffws [COLOR=lightblue]- Spanish (Mexico)[/COLOR][CR]bsoriano [COLOR=lightblue]- Spanish (Mexico)[/COLOR][CR]junk [COLOR=lightblue]- Swedish[/COLOR][CR]blittan [COLOR=lightblue]- Swedish[/COLOR][CR]sekarud [COLOR=lightblue]- Swedish[/COLOR][CR]queeup [COLOR=lightblue]- Turkish[/COLOR][CR][CR]and everyone else who helped out translating Transparency![CR][CR][CR][COLOR=darkblue]Credits:[/COLOR][CR]djh_[COLOR=lightblue] - Aeon[/COLOR][CR]digitalhigh[COLOR=lightblue] - Serenity[/COLOR][CR]ekim232[COLOR=lightblue] - The Operation MOD[/COLOR][CR]scarfa[COLOR=lightblue] - Rapier[/COLOR][CR]Sharpe &amp; djdafreund[COLOR=lightblue] - Back-Row[/COLOR][CR][CR]i'm sure i've borrowed a few lines of &lt;code&gt; from all of you.  ;-)[CR][CR][CR][CR][CR][COLOR=darkblue]Each and Everyone of You:[/COLOR][CR]For Submitting Bug Reports[CR]Making Feature Request[CR]Posting New Idea's[CR][CR]...And All The Thanx I've Received![CR][CR][CR][CR][CR][CR][CR][COLOR=darkblue]LAST BUT NOT LEAST:[/COLOR][CR]Jezz_X[COLOR=lightblue] - For the great PM3.HD skin![/COLOR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR=darkblue][B]Transparency![/B][/COLOR][CR]A FanArt Skin by ronie[CR][CR][CR][CR][CR][CR][CR][CR] [CR]</label>
-					</control>
-				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -7587,7 +7546,7 @@
 					<onfocus>Skin.SetString(SkinSettings,1)</onfocus>
 					<onleft>199</onleft>
 					<onright>101</onright>
-					<onup>1000</onup>
+					<onup>900</onup>
 					<ondown>200</ondown>
 					<onback>SetFocus(101)</onback>
 				</control>
@@ -7694,21 +7653,8 @@
 					<onleft>900</onleft>
 					<onright>71</onright>
 					<onup>800</onup>
-					<ondown>1000</ondown>
-					<onback>SetFocus(901)</onback>
-				</control>
-				<control type="button" id="1000">
-					<description>Transparency! Thanx button</description>
-					<posx>0</posx>
-					<posy>405</posy>
-					<include>ButtonCommonValues</include>
-					<label>Transparency!</label>
-					<onfocus>Skin.SetString(SkinSettings,10)</onfocus>
-					<onleft>1001</onleft>
-					<onright>1001</onright>
-					<onup>900</onup>
 					<ondown>100</ondown>
-					<onback>SetFocus(1001)</onback>
+					<onback>SetFocus(901)</onback>
 				</control>
 			</control>
 		</control>
