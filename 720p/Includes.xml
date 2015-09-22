@@ -2502,10 +2502,10 @@
 			<include condition="Skin.HasSetting(HateTransparency)">T-Footer1</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>66r</posy>
+				<posy>74r</posy>
 				<width>1280</width>
-				<height>66</height>
-				<texture>Footer.png</texture>
+				<height>74</height>
+				<texture flipy="true" border="1">Header.png</texture>
 			</control>
 			<control type="rss">
 				<description>rss feed</description>

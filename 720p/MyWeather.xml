@@ -230,7 +230,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>74</height>
-				<texture>Header.png</texture>
+				<texture border="1">Header.png</texture>
 			</control>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
