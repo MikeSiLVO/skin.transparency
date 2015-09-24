@@ -1,3 +1,9 @@
+Transparency! v9.0.3
+- graphic changes
+
+Transparency! v9.0.2
+- remove musicfiles button
+
 Transparency! v9.0.1
 - support for image resource addons
 

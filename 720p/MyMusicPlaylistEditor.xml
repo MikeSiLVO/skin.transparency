@@ -485,8 +485,8 @@
 					<focusedcolor>white</focusedcolor>
 					<shadowcolor>black</shadowcolor>
 					<pulseonselect>true</pulseonselect>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>8</onup>
@@ -505,8 +505,8 @@
 					<focusedcolor>white</focusedcolor>
 					<shadowcolor>black</shadowcolor>
 					<pulseonselect>true</pulseonselect>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>6</onup>
@@ -525,8 +525,8 @@
 					<focusedcolor>white</focusedcolor>
 					<shadowcolor>black</shadowcolor>
 					<pulseonselect>true</pulseonselect>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>7</onup>
@@ -537,7 +537,7 @@
 					<posy>4</posy>
 					<height>44</height>
 					<width>320</width>
-					<texture border="7">button-focus.png</texture>
+					<texture border="2">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="0,43" time="200" condition="Control.HasFocus(7)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,86" time="200" condition="Control.HasFocus(8)">Conditional</animation>
 					<visible>Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
@@ -546,7 +546,6 @@
 			<control type="group">
 				<include>ContentFade</include>
 				<include>Window_OpenClose_Header_Animation</include>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>

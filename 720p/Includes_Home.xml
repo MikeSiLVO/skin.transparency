@@ -319,7 +319,6 @@
 			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] + IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -411,7 +410,6 @@
 			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] + !IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -785,7 +783,6 @@
 			<visible>Container(5040).HasFocus(12) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -872,7 +869,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<visible>Player.HasVideo</visible>
 			<control type="image">
 				<description>gradient</description>
@@ -1054,7 +1050,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -1188,7 +1183,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<visible>Player.HasAudio</visible>
 			<control type="image">
 				<description>gradient</description>
@@ -1322,7 +1316,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>[Container(5040).HasFocus(1) | Container(5040).HasFocus(2)] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -1512,7 +1505,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -1702,7 +1694,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(4) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -1892,7 +1883,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -2082,7 +2072,6 @@
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(8) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Gradient1</include>
 			<control type="image">
 				<description>gradient</description>
 				<posx>430</posx>
@@ -2354,7 +2343,6 @@
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom2)">Conditional</animation>
 			<animation effect="slide" end="0,-20" time="0" condition="Skin.HasSetting(Menu_Custom3)">Conditional</animation>
 			<itemlayout width="251" height="40">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2377,7 +2365,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout width="251" height="40">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus2</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2387,7 +2374,6 @@
 					<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonWide</include>
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_Focus1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2505,7 +2491,6 @@
 			<include condition="Skin.HasSetting(WideHomeMenu)">Home_Hor_Hitrect_Wide</include>
 			<animation effect="slide" start="0,0" end="-85,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
 			<itemlayout width="237" height="40" condition="Skin.HasSetting(WideHomeMenu)">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus_Hor_Wide1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2527,7 +2512,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout width="237" height="40" condition="Skin.HasSetting(WideHomeMenu)">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus_Hor_Wide2</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2536,7 +2520,6 @@
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_Focus_Hor_Wide1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2576,7 +2559,6 @@
 				</control>
 			</focusedlayout>
 			<itemlayout width="213" height="40" condition="!Skin.HasSetting(WideHomeMenu)">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus_Hor1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2598,7 +2580,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout width="213" height="40" condition="!Skin.HasSetting(WideHomeMenu)">
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_NoFocus_Hor2</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2607,7 +2588,6 @@
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
-				<include condition="Skin.HasSetting(HateTransparency)">T-Button_Home_Focus_Hor1</include>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -4157,7 +4137,6 @@
 	</include>
 	<include name="Home_Ver_Sub">
 		<include>Window_OpenClose_Home_Panel_Animation</include>
-		<include condition="Skin.HasSetting(HateTransparency)">T-Home_Ver_Sub</include>
 		<control type="image">
 			<posx>199</posx>
 			<posy>219</posy>
@@ -4172,7 +4151,6 @@
 	</include>
 	<include name="Home_Hor_Sub">
 		<include>Window_OpenClose_Home_Panel_Hor_Animation</include>
-		<include condition="Skin.HasSetting(HateTransparency)">T-Home_Hor_Sub</include>
 		<control type="image">
 			<posx>115</posx>
 			<posy>566</posy>

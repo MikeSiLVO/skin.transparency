@@ -7,16 +7,14 @@
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
-		<include condition="Skin.HasSetting(HateTransparency)">T-Panel7</include>
 		<control type="image">
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>800</width>
 			<height>525</height>
-			<texture border="30">panel.png</texture>
-			<bordertexture border="45">panel-shadow.png</bordertexture>
-			<bordersize>22</bordersize>
+			<texture border="17">panel.png</texture>
+			<bordersize>11</bordersize>
 		</control>
 		<control type="button">
 			<posx>744</posx>
@@ -152,8 +150,8 @@
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-			<texturefocus border="7">button-nofocus.png</texturefocus>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<texturefocus border="2">button-nofocus.png</texturefocus>
+			<texturenofocus border="2">button-nofocus.png</texturenofocus>
 			<onleft>4</onleft>
 			<onright>3</onright>
 			<ondown>11</ondown>
@@ -171,8 +169,8 @@
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-			<texturefocus border="7">button-nofocus.png</texturefocus>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<texturefocus border="2">button-nofocus.png</texturefocus>
+			<texturenofocus border="2">button-nofocus.png</texturenofocus>
 			<onleft>2</onleft>
 			<onright>4</onright>
 			<ondown>11</ondown>
@@ -190,8 +188,8 @@
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-			<texturefocus border="7">button-nofocus.png</texturefocus>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<texturefocus border="2">button-nofocus.png</texturefocus>
+			<texturenofocus border="2">button-nofocus.png</texturenofocus>
 			<onleft>3</onleft>
 			<onright>2</onright>
 			<ondown>11</ondown>
@@ -203,7 +201,7 @@
 			<posy>455</posy>
 			<width>235</width>
 			<height>35</height>
-			<texture border="7">button-focus.png</texture>
+			<texture border="2">button-focus.png</texture>
 			<animation effect="slide" start="0,0" end="120,0" time="0" condition="!VideoPlayer.Content(Episodes)">conditional</animation>
 			<animation effect="slide" start="0,0" end="240,0" time="100" condition="Control.HasFocus(3)">conditional</animation>
 			<animation effect="slide" start="0,0" end="480,0" time="100" condition="Control.HasFocus(4)">conditional</animation>

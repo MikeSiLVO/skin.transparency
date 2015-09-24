@@ -82,8 +82,8 @@
 					<height>35</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>186</label>
 					<onup>17</onup>
 					<onleft>19</onleft>
@@ -98,8 +98,8 @@
 					<height>35</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>1024</label>
 					<font>font-20</font>
 					<onup>17</onup>
@@ -115,8 +115,8 @@
 					<height>35</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>222</label>
 					<onup>17</onup>
 					<onleft>20</onleft>

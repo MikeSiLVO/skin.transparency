@@ -13,7 +13,7 @@
 			<posy>0</posy>
 			<width>810</width>
 			<height>650</height>
-			<texture border="50">dialog.png</texture>
+			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
 			<posx>600</posx>
@@ -138,8 +138,8 @@
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="2">button-nofocus.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>29</onright>
 				<onup>5</onup>
@@ -156,8 +156,8 @@
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="2">button-nofocus.png</texturenofocus>
 				<onleft>28</onleft>
 				<onright>50</onright>
 				<onup>5</onup>
@@ -174,8 +174,8 @@
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<align>center</align>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="2">button-nofocus.png</texturenofocus>
 				<onleft>29</onleft>
 				<onright>28</onright>
 				<onup>5</onup>
@@ -187,7 +187,7 @@
 			<posy>570</posy>
 			<width>200</width>
 			<height>35</height>
-			<texture border="7">button-focus.png</texture>
+			<texture border="2">button-focus.png</texture>
 			<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(29)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(50)">Conditional</animation>
 			<visible>Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(50)</visible>

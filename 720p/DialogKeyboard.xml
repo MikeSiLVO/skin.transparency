@@ -10,7 +10,6 @@
 		<control type="group">
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(NumericInput)</visible>
-			<include condition="Skin.HasSetting(HateTransparency)">T-KeyboardInput1</include>
 			<control type="image">
 				<posx>337</posx>
 				<posy>30</posy>

@@ -33,20 +33,12 @@
 			<visible>MusicPlayer.HasNext + !IntegerGreaterThan(Player.TimeRemaining,20)</visible>
 			<control type="image">
 				<description>media info background image</description>
-				<posx>320</posx>
-				<posy>23</posy>
-				<width>1102</width>
-				<height>220</height>
-				<texture border="42">panel-shadow-reverse.png</texture>
-			</control>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Panel5</include>
-			<control type="image">
-				<description>media info background image</description>
-				<posx>340</posx>
-				<posy>43</posy>
-				<width>1070</width>
-				<height>200</height>
-				<texture border="30">panel.png</texture>
+				<posx>-28</posx>
+				<posy>32</posy>
+				<width>1336</width>
+				<height>222</height>
+				<texture border="17">panel.png</texture>
+				<bordersize>11</bordersize>
 			</control>
 			<control type="label" id="402">
 				<description>Next Song Name</description>

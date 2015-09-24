@@ -7,7 +7,6 @@
 		<posy>165</posy>
 	</coordinates>
 	<controls>
-		<include condition="Skin.HasSetting(HateTransparency)">T-KeyboardInput2</include>
 		<control type="image">
 			<posx>498</posx>
 			<posy>20</posy>

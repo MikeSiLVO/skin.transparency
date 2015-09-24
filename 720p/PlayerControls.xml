@@ -8,7 +8,6 @@
 		<posy>155</posy>
 	</coordinates>
 	<controls>
-		<include condition="Skin.HasSetting(HateTransparency)">T-KeyboardInputReverse1</include>
 		<control type="image">
 			<posx>50</posx>
 			<posy>298</posy>

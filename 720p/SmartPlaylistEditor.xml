@@ -180,8 +180,8 @@
 					<label>15019</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<onup>10</onup>
 					<onleft>15</onleft>
 					<onright>14</onright>
@@ -196,8 +196,8 @@
 					<label>1210</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<onup>10</onup>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -212,8 +212,8 @@
 					<label>21435</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<onup>10</onup>
 					<onleft>14</onleft>
 					<onright>13</onright>
@@ -395,8 +395,8 @@
 					<height>35</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>186</label>
 					<onup>24</onup>
 					<onleft>21</onleft>
@@ -411,8 +411,8 @@
 					<height>35</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>222</label>
 					<onup>24</onup>
 					<onleft>20</onleft>

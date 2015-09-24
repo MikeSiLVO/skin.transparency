@@ -677,6 +677,10 @@ msgctxt "#31411"
 msgid "Recently Played"
 msgstr ""
 
+msgctxt "#31412"
+msgid "Sort:"
+msgstr ""
+
 #empty strings from id 31412 to 31500
 #Temp PVR labels
 

@@ -285,8 +285,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>186</label>
 					<onleft>8</onleft>
 					<onright>6</onright>
@@ -305,8 +305,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>-</label>
 					<onleft>7</onleft>
 					<onright>5</onright>
@@ -326,8 +326,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>19165</label>
 					<onleft>6</onleft>
 					<onright>4</onright>
@@ -347,8 +347,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>19003</label>
 					<onleft>5</onleft>
 					<onright>8</onright>
@@ -368,8 +368,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="7">button-nofocus.png</texturefocus>
-					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<texturefocus border="2">button-nofocus.png</texturefocus>
+					<texturenofocus border="2">button-nofocus.png</texturenofocus>
 					<label>19687</label>
 					<onleft>4</onleft>
 					<onright>7</onright>
@@ -382,7 +382,7 @@
 					<posy>453</posy>
 					<width>200</width>
 					<height>35</height>
-					<texture border="7">button-focus.png</texture>
+					<texture border="2">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(6)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(5)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(4)">Conditional</animation>

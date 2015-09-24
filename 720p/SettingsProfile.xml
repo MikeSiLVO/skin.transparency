@@ -217,7 +217,6 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
-			<include condition="Skin.HasSetting(HateTransparency)">T-Header1</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
