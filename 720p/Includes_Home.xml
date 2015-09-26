@@ -4142,7 +4142,7 @@
 			<posy>219</posy>
 			<width>210</width>
 			<height>280</height>
-			<texture border="0,30,30,30">submenu-ver.png</texture>
+			<texture border="2,10,12,10">submenu-ver.png</texture>
 			<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnim</include>
 			<include condition="Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnimWide</include>
 			<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
@@ -4156,7 +4156,7 @@
 			<posy>566</posy>
 			<width>1050</width>
 			<height>35</height>
-			<texture border="30,0,30,0">submenu-hor.png</texture>
+			<texture border="12,12,12,2">submenu-hor.png</texture>
 			<animation effect="zoom" start="115,601,1050,1" end="115,566,1050,35" time="200">Visible</animation>
 			<animation effect="zoom" start="115,566,1050,35" end="115,601,1050,1" time="200">Hidden</animation>
 			<visible>ControlGroup(8000).HasFocus</visible>

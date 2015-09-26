@@ -1439,7 +1439,7 @@
 						<posy>262</posy>
 						<width>528</width>
 						<height>40</height>
-						<texture>label-back-focus.png</texture>
+						<texture border="7">button-focus.png</texture>
 					</control>
 					<control type="group">
 						<posx>184</posx>

@@ -30,9 +30,9 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="700,257" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,116" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,262" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,-127" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<include>ContentPanel</include>
 				<include>Fanart-PVRRecordings</include>
 				<include>ScrollOffsetLabel</include>

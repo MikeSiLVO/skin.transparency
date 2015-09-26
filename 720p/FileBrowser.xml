@@ -167,8 +167,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>186</label>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>416</onleft>
 					<onright>414</onright>
 					<onup>450</onup>
@@ -187,8 +187,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>222</label>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>413</onleft>
 					<onright>415</onright>
 					<onup>450</onup>
@@ -207,8 +207,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>119</label>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>414</onleft>
 					<onright>416</onright>
 					<onup>450</onup>
@@ -227,8 +227,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>749</label>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>415</onleft>
 					<onright>413</onright>
 					<onup>450</onup>
@@ -240,7 +240,7 @@
 					<posy>647</posy>
 					<width>200</width>
 					<height>35</height>
-					<texture border="2">button-focus.png</texture>
+					<texture border="7">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(414)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(415)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(416)">Conditional</animation>
@@ -264,8 +264,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>186</label>
-					<texturefocus border="2">button-focus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>416</onleft>
 					<onright>414</onright>
 					<onup>450</onup>
@@ -284,8 +284,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>222</label>
-					<texturefocus border="2">button-focus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>413</onleft>
 					<onright>415</onright>
 					<onup>450</onup>
@@ -304,8 +304,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>119</label>
-					<texturefocus border="2">button-focus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>414</onleft>
 					<onright>416</onright>
 					<onup>450</onup>
@@ -324,8 +324,8 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>749</label>
-					<texturefocus border="2">button-focus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<onleft>415</onleft>
 					<onright>413</onright>
 					<onup>450</onup>

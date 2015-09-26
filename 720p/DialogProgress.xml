@@ -82,8 +82,8 @@
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-			<texturenofocus border="2">button-nofocus.png</texturenofocus>
-			<texturefocus border="2">button-focus.png</texturefocus>
+			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<texturefocus border="7">button-focus.png</texturefocus>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>10</onup>

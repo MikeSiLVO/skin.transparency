@@ -2483,11 +2483,11 @@
 			<width>76</width>
 			<height>76</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>76</width>
-				<height>76</height>
-				<texture border="8">sort.png</texture>
+				<posx>-16</posx>
+				<posy>-16</posy>
+				<width>108</width>
+				<height>108</height>
+				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="label">
 				<posx>1</posx>
@@ -2571,8 +2571,8 @@
 				<height>35</height>
 				<label>31113</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(1)">Skin.SetImage(Home_Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(4)">Skin.SetImage(Home_Custom_Back_MusicVideos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetImage(Home_Custom_Back_TV_Folder)</onclick>
@@ -2611,8 +2611,8 @@
 				<height>35</height>
 				<label>31111</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(1)">Skin.SetPath(Home_Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(4)">Skin.SetPath(Home_Custom_Back_MusicVideos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetPath(Home_Custom_Back_TV_Folder)</onclick>
@@ -2651,8 +2651,8 @@
 				<height>35</height>
 				<label>571</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(1)">Skin.Reset(Home_Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(4)">Skin.Reset(Home_Custom_Back_MusicVideos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(5)">Skin.Reset(Home_Custom_Back_TV_Folder)</onclick>
@@ -2699,8 +2699,8 @@
 				<height>35</height>
 				<label>31113</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(2)">Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(3)">Skin.SetImage(Home_Custom_Back_TVShows_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
@@ -2718,8 +2718,8 @@
 				<height>35</height>
 				<label>31111</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Home_Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Home_Custom_Back_TVShows_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Home_Custom_Back_Music_Folder)</onclick>
@@ -2737,8 +2737,8 @@
 				<height>35</height>
 				<label>571</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(2)">Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(3)">Skin.Reset(Home_Custom_Back_TVShows_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
@@ -2756,8 +2756,8 @@
 				<height>35</height>
 				<label>31030</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Background)</onclick>
 				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Background)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Background)</onclick>
@@ -2775,8 +2775,8 @@
 				<height>35</height>
 				<label>33063</label>
 				<align>center</align>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
-				<texturefocus border="2">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Options)</onclick>
 				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Options)</onclick>
 				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Options)</onclick>

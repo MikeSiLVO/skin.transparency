@@ -194,8 +194,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>19205</label>
 					<onup>7</onup>
 					<ondown>9000</ondown>
@@ -214,8 +214,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>$VAR[DialogPVRChannelManagerButton]</label>
 					<onup>7</onup>
 					<ondown>9000</ondown>
@@ -234,8 +234,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>19204</label>
 					<onup>7</onup>
 					<ondown>9000</ondown>
@@ -247,7 +247,7 @@
 					<posy>0</posy>
 					<width>200</width>
 					<height>35</height>
-					<texture border="2">button-focus.png</texture>
+					<texture border="7">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(34)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(31)">Conditional</animation>
 					<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(34)</visible>
@@ -275,8 +275,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>186</label>
 					<onup>9001</onup>
 					<ondown>7</ondown>
@@ -295,8 +295,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>222</label>
 					<onup>9001</onup>
 					<ondown>7</ondown>
@@ -315,8 +315,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>14070</label>
 					<onup>9001</onup>
 					<ondown>7</ondown>
@@ -328,7 +328,7 @@
 					<posy>0</posy>
 					<width>200</width>
 					<height>35</height>
-					<texture border="2">button-focus.png</texture>
+					<texture border="7">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(6)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(5)">Conditional</animation>
 					<visible>Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(6)</visible>

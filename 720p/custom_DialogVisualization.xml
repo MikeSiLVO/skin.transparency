@@ -185,8 +185,8 @@
 				<label>$LOCALIZE[186]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus border="2">button-focus.png</texturefocus>
-				<texturenofocus border="2">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
 				<label>186</label>
 				<onleft>1001</onleft>
 				<onright>1001</onright>

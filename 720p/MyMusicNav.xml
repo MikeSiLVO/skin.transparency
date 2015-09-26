@@ -73,9 +73,9 @@
 			<include>ContentFade</include>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="1105,0" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(595)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="700,111" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="700,257" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="700,-122" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,116" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,262" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="700,-127" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(595)]">Conditional</animation>
 				<include>ContentPanel</include>
 				<include condition="!Skin.HasSetting(Hide-Music-FullList)">FullList-Music</include>	<!-- view id=52 -->

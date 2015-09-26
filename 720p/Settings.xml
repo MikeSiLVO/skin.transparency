@@ -22,15 +22,15 @@
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
 				<control type="image">
-					<posx>240</posx>
-					<posy>72</posy>
-					<width>800</width>
-					<height>52</height>
-					<texture border="20">settings-header.png</texture>
+					<posx>200</posx>
+					<posy>45</posy>
+					<width>880</width>
+					<height>65</height>
+					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 				</control>
 				<control type="label">
 					<posx>240</posx>
-					<posy>80</posy>
+					<posy>60</posy>
 					<width>800</width>
 					<height>35</height>
 					<align>center</align>

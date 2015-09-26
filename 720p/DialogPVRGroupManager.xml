@@ -424,8 +424,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>186</label>
 					<onleft>25</onleft>
 					<onright>26</onright>
@@ -444,8 +444,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>15019</label>
 					<onleft>29</onleft>
 					<onright>27</onright>
@@ -464,8 +464,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>118</label>
 					<onleft>26</onleft>
 					<onright>28</onright>
@@ -484,8 +484,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>117</label>
 					<onleft>27</onleft>
 					<onright>25</onright>
@@ -504,8 +504,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="2">button-nofocus.png</texturefocus>
-					<texturenofocus border="2">button-nofocus.png</texturenofocus>
+					<texturefocus border="7">button-nofocus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>$LOCALIZE[19289]</label>
 					<onleft>28</onleft>
 					<onright>29</onright>
@@ -517,7 +517,7 @@
 					<posy>670</posy>
 					<width>200</width>
 					<height>35</height>
-					<texture border="2">button-focus.png</texture>
+					<texture border="7">button-focus.png</texture>
 					<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(26)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="400,0" time="200" condition="Control.HasFocus(27)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="600,0" time="200" condition="Control.HasFocus(28)">Conditional</animation>
