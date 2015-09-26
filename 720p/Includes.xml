@@ -2443,9 +2443,9 @@
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Window_OpenClose_Home_Panel_Hor_Animation</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>74r</posy>
+				<posy>55r</posy>
 				<width>1280</width>
-				<height>74</height>
+				<height>55</height>
 				<texture flipy="true" border="1">Header.png</texture>
 			</control>
 			<control type="rss">

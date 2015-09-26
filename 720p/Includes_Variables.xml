@@ -1031,14 +1031,6 @@
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Comment]</value>
 	</variable>
-	<variable name="ViewListLabel1">
-		<value condition="![Container.Content(Albums) + Skin.HasSetting(Artist_Album_Order)]">$INFO[ListItem.Label]</value>
-		<value condition="Container.Content(Albums) + Skin.HasSetting(Artist_Album_Order)">$INFO[ListItem.Label2]</value>
-	</variable>
-	<variable name="ViewListLabel2">
-		<value condition="![Container.Content(Albums) + Skin.HasSetting(Artist_Album_Order)]">$INFO[ListItem.Label2]</value>
-		<value condition="Container.Content(Albums) + Skin.HasSetting(Artist_Album_Order)">$INFO[ListItem.Label]</value>
-	</variable>
 	<variable name="ViewMediaInfoLabel1">
 		<value condition="Container.Content(Episodes) + !stringcompare(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
 		<value condition="Container.Content(MusicVideos) + !stringcompare(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>

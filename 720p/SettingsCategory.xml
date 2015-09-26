@@ -215,7 +215,7 @@
 				<posy>110</posy>
 				<width>250</width>
 				<height>450</height>
-				<itemgap>-2</itemgap>
+				<itemgap>-1</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
@@ -322,7 +322,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>74</height>
+				<height>55</height>
 				<texture border="1">Header.png</texture>
 			</control>
 			<control type="label" id="2">

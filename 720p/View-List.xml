@@ -738,7 +738,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[ViewListLabel1]</label>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<posx>10</posx>
@@ -750,7 +750,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$VAR[ViewListLabel2]</label>
+					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="470" height="29">
@@ -782,7 +782,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[ViewListLabel1]</label>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
 					<posx>10</posx>
@@ -794,7 +794,7 @@
 					<selectedcolor>blue</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$VAR[ViewListLabel2]</label>
+					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
 		</control>

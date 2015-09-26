@@ -1439,7 +1439,7 @@
 						<posy>262</posy>
 						<width>528</width>
 						<height>40</height>
-						<texture border="7">button-focus.png</texture>
+						<texture border="7">button-nofocus.png</texture>
 					</control>
 					<control type="group">
 						<posx>184</posx>
@@ -1543,16 +1543,6 @@
 						<selected>Skin.HasSetting(WallShowPlot)</selected>
 					</control>
 					<control type="image" id="716">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="radiobutton" id="717">
-						<label>$LOCALIZE[535] - $LOCALIZE[2] - $LOCALIZE[31133]</label>
-						<onclick>Skin.ToggleSetting(Artist_Album_Order)</onclick>
-						<selected>Skin.HasSetting(Artist_Album_Order)</selected>
-					</control>
-					<control type="image" id="718">
 						<width>880</width>
 						<height>2</height>
 						<texture>separator.png</texture>
@@ -7352,126 +7342,85 @@
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
 			<include>ContentFade</include>
-			<control type="group" id="9000">
+			<control type="grouplist" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim2</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>-16</posy>
-					<height>16</height>
-					<texture border="0,0,10,0">shadow-top2.png</texture>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-				</control>
+				<itemgap>-1</itemgap>
 				<control type="button" id="100">
 					<description>General Options</description>
-					<posx>0</posx>
-					<posy>0</posy>
 					<include>ButtonCommonValues</include>
 					<label>128</label>
 					<onfocus>Skin.SetString(SkinSettings,1)</onfocus>
 					<onleft>199</onleft>
 					<onright>101</onright>
-					<onup>900</onup>
-					<ondown>200</ondown>
 					<onback>SetFocus(101)</onback>
 				</control>
 				<control type="button" id="200">
 					<description>Home Window Options</description>
-					<posx>0</posx>
-					<posy>45</posy>
 					<include>ButtonCommonValues</include>
 					<label>513</label>
 					<onfocus>Skin.SetString(SkinSettings,2)</onfocus>
 					<onleft>299</onleft>
 					<onright>201</onright>
-					<onup>100</onup>
-					<ondown>300</ondown>
 					<onback>SetFocus(201)</onback>
 				</control>
 				<control type="button" id="300">
 					<description>Backgrounds Options</description>
-					<posx>0</posx>
-					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>31102</label>
 					<onfocus>Skin.SetString(SkinSettings,3)</onfocus>
 					<onleft>399</onleft>
 					<onright>301</onright>
-					<onup>200</onup>
-					<ondown>400</ondown>
 					<onback>SetFocus(301)</onback>
 				</control>
 				<control type="button" id="400">
 					<description>Icons Options</description>
-					<posx>0</posx>
-					<posy>135</posy>
 					<include>ButtonCommonValues</include>
 					<label>536</label>
 					<onfocus>Skin.SetString(SkinSettings,4)</onfocus>
 					<onleft>499</onleft>
 					<onright>401</onright>
-					<onup>300</onup>
-					<ondown>500</ondown>
 					<onback>SetFocus(401)</onback>
 				</control>
 				<control type="button" id="500">
 					<description>Scripts Options</description>
-					<posx>0</posx>
-					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>24001</label>
 					<onfocus>Skin.SetString(SkinSettings,5)</onfocus>
 					<onleft>501</onleft>
 					<onright>501</onright>
-					<onup>400</onup>
 					<onback>SetFocus(501)</onback>
-					<ondown>600</ondown>
 				</control>
 				<control type="button" id="600">
 					<description>Shutdown Options</description>
-					<posx>0</posx>
-					<posy>225</posy>
 					<include>ButtonCommonValues</include>
 					<label>13005</label>
 					<onfocus>Skin.SetString(SkinSettings,6)</onfocus>
 					<onleft>601</onleft>
 					<onright>601</onright>
-					<onup>500</onup>
-					<ondown>700</ondown>
 					<onback>SetFocus(601)</onback>
 				</control>
 				<control type="button" id="700">
 					<description>Views Options</description>
-					<posx>0</posx>
-					<posy>270</posy>
 					<include>ButtonCommonValues</include>
 					<label>14018</label>
 					<onfocus>Skin.SetString(SkinSettings,7)</onfocus>
 					<onleft>701</onleft>
 					<onright>701</onright>
-					<onup>600</onup>
-					<ondown>800</ondown>
 					<onback>SetFocus(701)</onback>
 				</control>
 				<control type="button" id="800">
 					<description>Menu Options</description>
-					<posx>0</posx>
-					<posy>315</posy>
 					<include>ButtonCommonValues</include>
 					<label>33061</label>
 					<onfocus>Skin.SetString(SkinSettings,8)</onfocus>
 					<onleft>801</onleft>
 					<onright>801</onright>
-					<onup>700</onup>
-					<ondown>900</ondown>
 					<onback>SetFocus(801)</onback>
 				</control>
 				<control type="button" id="900">
 					<description>Reload Skin button</description>
-					<posx>0</posx>
-					<posy>360</posy>
 					<include>ButtonCommonValues</include>
 					<label>20183</label>
 					<onfocus>Skin.SetString(SkinSettings,9)</onfocus>
@@ -7479,8 +7428,6 @@
 					<onclick>SetFocus(900)</onclick>
 					<onleft>900</onleft>
 					<onright>71</onright>
-					<onup>800</onup>
-					<ondown>100</ondown>
 					<onback>SetFocus(901)</onback>
 				</control>
 			</control>
@@ -7492,7 +7439,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>74</height>
+				<height>55</height>
 				<texture border="1">Header.png</texture>
 			</control>
 			<control type="grouplist">

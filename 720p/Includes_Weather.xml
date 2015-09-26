@@ -1270,7 +1270,7 @@
 							<width>600</width>
 							<height>350</height>
 							<texture diffuse="weather-diffuse.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio scalediffuse="false">scale</aspectratio>
 						</control>
 						<control type="image">
 							<description>area image</description>
@@ -1279,7 +1279,7 @@
 							<width>600</width>
 							<height>350</height>
 							<texture diffuse="weather-diffuse.png">$INFO[ListItem.Property(Layer)]</texture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio scalediffuse="false">scale</aspectratio>
 							<colordiffuse>70FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
@@ -1299,7 +1299,7 @@
 							<width>600</width>
 							<height>350</height>
 							<texture diffuse="weather-diffuse.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio scalediffuse="false">scale</aspectratio>
 						</control>
 						<control type="image">
 							<description>area image</description>
@@ -1309,7 +1309,7 @@
 							<height>350</height>
 							<texture diffuse="weather-diffuse.png">$INFO[ListItem.Property(Layer)]</texture>
 							<aspectratio>scale</aspectratio>
-							<colordiffuse>70FFFFFF</colordiffuse>
+							<colordiffuse scalediffuse="false">70FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
 							<description>legend image</description>

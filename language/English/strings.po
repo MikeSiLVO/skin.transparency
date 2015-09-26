@@ -275,11 +275,7 @@ msgctxt "#31127"
 msgid "Music folder path"
 msgstr ""
 
-#empty strings from id 31128 to 31132
-
-msgctxt "#31133"
-msgid "Use Artist-Album order for albums"
-msgstr ""
+#empty strings from id 31128 to 31133
 
 msgctxt "#31134"
 msgid "Animated backgrounds"
