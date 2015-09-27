@@ -4123,7 +4123,7 @@
 	<include name="Home_Ver_Sub">
 		<include>Window_OpenClose_Home_Panel_Animation</include>
 		<control type="image">
-			<posx>199</posx>
+			<posx>249</posx>
 			<posy>219</posy>
 			<width>210</width>
 			<height>280</height>
@@ -4149,7 +4149,7 @@
 	</include>
 	<include name="VerticalSubMenuLayout">
 		<orientation>vertical</orientation>
-		<posx>199</posx>
+		<posx>249</posx>
 		<posy>248</posy>
 		<width>200</width>
 		<height>242</height>
@@ -4287,18 +4287,18 @@
 		</focusedlayout>
 	</include>
 	<include name="VerticalSubMenuButtonAnim">
-		<animation effect="zoom" start="199,219,1,288" end="199,219,210,288" time="200">Visible</animation>
-		<animation effect="zoom" start="199,219,210,288" end="199,219,1,288" time="200">Hidden</animation>
-	</include>
-	<include name="VerticalSubMenuButtonAnimWide">
 		<animation effect="zoom" start="249,219,1,288" end="249,219,210,288" time="200">Visible</animation>
 		<animation effect="zoom" start="249,219,210,288" end="249,219,1,288" time="200">Hidden</animation>
 	</include>
+	<include name="VerticalSubMenuButtonAnimWide">
+		<animation effect="zoom" start="299,219,1,288" end="299,219,210,288" time="200">Visible</animation>
+		<animation effect="zoom" start="299,219,210,288" end="299,219,1,288" time="200">Hidden</animation>
+	</include>
 	<include name="VerticalSubMenuLayoutAnim">
-		<animation effect="zoom" start="199,248,5,242" end="199,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="249,248,5,242" end="249,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 	<include name="VerticalSubMenuLayoutAnimWide">
-		<animation effect="zoom" start="249,248,5,242" end="249,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="299,248,5,242" end="299,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 	<include name="SearchButton">
 		<control type="button" id="10">

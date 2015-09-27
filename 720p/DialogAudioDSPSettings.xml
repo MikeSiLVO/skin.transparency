@@ -107,7 +107,7 @@
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="button" id="12">
+		<control type="edit" id="12">
 			<description>Default Edit</description>
 			<height>30</height>
 			<font>font-20</font>
