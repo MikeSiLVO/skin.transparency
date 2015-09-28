@@ -2694,6 +2694,15 @@
 						<onclick>Skin.ToggleSetting(Menu_Music_Sub)</onclick>
 						<selected>!Skin.HasSetting(Menu_Music_Sub)</selected>
 					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Music Sub Files</description>
+						<label>[B]$LOCALIZE[744][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(MusicCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Music_Sub_Files)</onclick>
+						<selected>!Skin.HasSetting(Menu_Music_Sub_Files)</selected>
+						<enable>!Skin.HasSetting(Menu_Music_Sub)</enable>
+					</control>
 					<control type="radiobutton" id="8103">
 						<description>Menu Music Sub Library</description>
 						<label>[B]$LOCALIZE[15100][/B]</label>
