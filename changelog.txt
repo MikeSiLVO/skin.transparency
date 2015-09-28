@@ -1,5 +1,9 @@
+Transparency! v9.1.1
+- graphic redesign
+
 Transparency! v9.0.3
-- graphic changes
+- fix custom pvr submenu
+- fix flip image button
 
 Transparency! v9.0.2
 - remove musicfiles button
