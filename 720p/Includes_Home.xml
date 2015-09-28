@@ -2729,7 +2729,8 @@
 	<include name="HomeMusicButton">
 		<item id="6">
 			<label>2</label>
-			<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
+			<onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,artists,return)</onclick>
+			<onclick condition="!Library.HasContent(Music)">ActivateWindow(Music,Files,return)</onclick>
 			<include condition="!Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background</include>
 			<include condition="Skin.HasSetting(Home_Music_Fanart_Background)">home-music-background-fanart</include>
 		</item>
@@ -3333,6 +3334,12 @@
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 			<content>
+				<item id="8102">
+					<description>Menu Music Sub Files</description>
+					<label>$LOCALIZE[744]</label>
+					<onclick>ActivateWindow(MusicFiles)</onclick>
+					<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
+				</item>
 				<item id="8103">
 					<description>Menu Music Sub Library</description>
 					<label>$LOCALIZE[15100]</label>
