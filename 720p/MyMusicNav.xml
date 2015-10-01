@@ -58,6 +58,7 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
+		<include>fanart-mymusicsongs</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

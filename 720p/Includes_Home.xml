@@ -3337,7 +3337,7 @@
 				<item id="8102">
 					<description>Menu Music Sub Files</description>
 					<label>$LOCALIZE[744]</label>
-					<onclick>ActivateWindow(MusicFiles)</onclick>
+					<onclick>ActivateWindow(Music,Files,return)</onclick>
 					<visible>!Skin.HasSetting(Menu_Music_Sub_Files)</visible>
 				</item>
 				<item id="8103">
