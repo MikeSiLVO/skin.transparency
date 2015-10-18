@@ -253,9 +253,7 @@ msgctxt "#31119"
 msgid "Hide visualisation background"
 msgstr ""
 
-#empty strings from id 31120 to 31121
-
-#empty string with id 31122
+#empty strings from id 31120 to 31122
 
 msgctxt "#31123"
 msgid "Hide video background"
@@ -582,9 +580,7 @@ msgctxt "#31221"
 msgid "Extra Fanart"
 msgstr ""
 
-msgctxt "#31222"
-msgid "TV Tune"
-msgstr ""
+#empty string with id 31222
 
 msgctxt "#31223"
 msgid "Update rating"

@@ -60,7 +60,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Current_Icon</include>
-			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Current_Icon</include>
+			<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Current_Icon</include>
 			<control type="label">
 				<description>current condition label</description>
 				<posx>20</posx>
@@ -226,7 +226,7 @@
 				<textcolor>white</textcolor>
 			</control>
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Day0_Icon</include>
-			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Day0_Icon</include>
+			<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Day0_Icon</include>
 			<control type="label">
 				<description>high label</description>
 				<posx>40</posx>
@@ -288,7 +288,7 @@
 				<textcolor>white</textcolor>
 			</control>
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Day1_Icon</include>
-			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Day1_Icon</include>
+			<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Day1_Icon</include>
 			<control type="label">
 				<description>high label</description>
 				<posx>40</posx>
@@ -350,7 +350,7 @@
 				<textcolor>white</textcolor>
 			</control>
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Day2_Icon</include>
-			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Day2_Icon</include>
+			<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Day2_Icon</include>
 			<control type="label">
 				<description>high label</description>
 				<posx>40</posx>
@@ -412,7 +412,7 @@
 				<textcolor>white</textcolor>
 			</control>
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Day3_Icon</include>
-			<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Day3_Icon</include>
+			<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Day3_Icon</include>
 			<control type="label">
 				<description>high label</description>
 				<posx>40</posx>
@@ -627,7 +627,7 @@
 						<label>$INFO[Window.Property(Updated)]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Current_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Current_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Current_Icon</include>
 					<control type="label">
 						<posx>188</posx>
 						<posy>50</posy>
@@ -820,7 +820,7 @@
 							<label fallback="-">$VAR[Weather03]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day1_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day1_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day1_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -883,7 +883,7 @@
 							<label fallback="-">$VAR[Weather05]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day2_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day2_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day2_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -946,7 +946,7 @@
 							<label fallback="-">$VAR[Weather07]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day3_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day3_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day3_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1009,7 +1009,7 @@
 							<label fallback="-">$VAR[Weather09]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day4_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day4_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day4_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1072,7 +1072,7 @@
 							<label fallback="-">$VAR[Weather11]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day5_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day5_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day5_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1135,7 +1135,7 @@
 							<label fallback="-">$VAR[Weather13]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day6_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day6_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day6_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1198,7 +1198,7 @@
 							<label fallback="-">$VAR[Weather15]</label>
 						</control>
 						<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">WeatherExtended_Animated_Day7_Icon</include>
-						<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">WeatherExtended_Day7_Icon</include>
+						<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">WeatherExtended_Day7_Icon</include>
 						<control type="label">
 							<posx>0</posx>
 							<posy>190</posy>
@@ -1404,7 +1404,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly1_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly1_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly1_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1476,7 +1476,7 @@
 					<texture border="2">gradient-down.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly2_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly2_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly2_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1548,7 +1548,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly3_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly3_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly3_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1620,7 +1620,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly4_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly4_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly4_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1692,7 +1692,7 @@
 					<texture border="2">gradient-down.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly5_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly5_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly5_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1764,7 +1764,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly6_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly6_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly6_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1836,7 +1836,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly7_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly7_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly7_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1908,7 +1908,7 @@
 					<texture border="2">gradient-down.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly8_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly8_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly8_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -1980,7 +1980,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly9_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly9_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly9_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2052,7 +2052,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly10_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly10_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly10_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2124,7 +2124,7 @@
 					<texture border="2">gradient-down.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly11_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly11_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly11_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2196,7 +2196,7 @@
 					<texture border="2">gradient-up.png</texture>
 				</control>
 				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Hourly12_Icon</include>
-				<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Hourly12_Icon</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Hourly12_Icon</include>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>43</posy>
@@ -2327,7 +2327,7 @@
 						<texture>white.png</texture>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_36Hour1_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_36Hour1_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_36Hour1_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>260</posy>
@@ -2514,7 +2514,7 @@
 						<texture>white.png</texture>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_36Hour2_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_36Hour2_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_36Hour2_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>260</posy>
@@ -2701,7 +2701,7 @@
 						<texture>white.png</texture>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_36Hour3_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_36Hour3_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_36Hour3_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>260</posy>
@@ -2941,7 +2941,7 @@
 						<label>[B]$INFO[Window.Property(Weekend.1.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Weekend1_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Weekend1_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Weekend1_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>190</posy>
@@ -3117,7 +3117,7 @@
 						<label>[B]$INFO[Window.Property(Weekend.2.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Weekend2_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Weekend2_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Weekend2_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>190</posy>
@@ -3404,7 +3404,7 @@
 						<label>[B]$INFO[Window.Property(Daily.1.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily1_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily1_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily1_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3480,7 +3480,7 @@
 						<label>[B]$INFO[Window.Property(Daily.2.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily2_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily2_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily2_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3556,7 +3556,7 @@
 						<label>[B]$INFO[Window.Property(Daily.3.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily3_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily3_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily3_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3632,7 +3632,7 @@
 						<label>[B]$INFO[Window.Property(Daily.4.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily4_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily4_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily4_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3708,7 +3708,7 @@
 						<label>[B]$INFO[Window.Property(Daily.5.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily5_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily5_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily5_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3784,7 +3784,7 @@
 						<label>[B]$INFO[Window.Property(Daily.6.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily6_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily6_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily6_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3860,7 +3860,7 @@
 						<label>[B]$INFO[Window.Property(Daily.7.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily7_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily7_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily7_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -3936,7 +3936,7 @@
 						<label>[B]$INFO[Window.Property(Daily.8.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily8_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily8_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily8_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -4012,7 +4012,7 @@
 						<label>[B]$INFO[Window.Property(Daily.9.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily9_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily9_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily9_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
@@ -4088,7 +4088,7 @@
 						<label>[B]$INFO[Window.Property(Daily.10.LongDate)][/B]</label>
 					</control>
 					<include condition="Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))">Weather_Animated_Daily10_Icon</include>
-					<include condition="!Skin.HasSetting(resource.images.weathericons.multi)">Weather_Daily10_Icon</include>
+					<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]">Weather_Daily10_Icon</include>
 					<control type="label">
 						<posx>0</posx>
 						<posy>206</posy>
