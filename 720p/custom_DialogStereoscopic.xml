@@ -80,7 +80,7 @@
 				<label>$LOCALIZE[31004]</label>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
-				<selected>StringCompare(System.StereoscopicMode,7)</selected>
+				<selected>StringCompare(System.StereoscopicMode,9)</selected>
 				<onup>412</onup>
 				<ondown>411</ondown>
 				<onclick>StereoModeToMono</onclick>

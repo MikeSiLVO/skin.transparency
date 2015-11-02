@@ -368,7 +368,7 @@ msgid "[B]CONFIGURE TV SETTINGS[/B][CR]Change fullscreen info - Manage EPG data 
 msgstr ""
 
 msgctxt "#31161"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR]Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission"
 msgstr ""
 
 msgctxt "#31162"
