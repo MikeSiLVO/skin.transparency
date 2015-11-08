@@ -1067,25 +1067,6 @@
 					<onright>9000</onright>
 					<onup>501</onup>
 					<ondown>501</ondown>
-					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[31213]</label>
-						<selected>Skin.HasSetting(CinemaScript_MovieInfo)</selected>
-						<enable>System.HasAddon(script.cinema.experience)</enable>
-						<onclick>Skin.ToggleSetting(CinemaScript_MovieInfo)</onclick>
-						<onclick>Skin.Reset(CinemaScript_HomeMenu)</onclick>
-					</control>
-					<control type="radiobutton" id="510">
-						<label>$LOCALIZE[31214]</label>
-						<selected>Skin.HasSetting(CinemaScript_HomeMenu)</selected>
-						<enable>System.HasAddon(script.cinema.experience)</enable>
-						<onclick>Skin.ToggleSetting(CinemaScript_HomeMenu)</onclick>
-						<onclick>Skin.Reset(CinemaScript_MovieInfo)</onclick>
-					</control>
-					<control type="image" id="511">
-						<width>880</width>
-						<height>2</height>
-						<texture>separator.png</texture>
-					</control>
 					<control type="radiobutton" id="513">
 						<label>31211</label>
 						<selected>Skin.HasSetting(NextAired)</selected>

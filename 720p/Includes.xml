@@ -657,6 +657,7 @@
 		<include>ButtonCommonValues1</include>
 		<pulseonselect>true</pulseonselect>
 		<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
+		<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
 		<onback>50</onback>
 	</include>
 	<include name="ButtonCommonValues1">

@@ -215,11 +215,8 @@
 		<control type="togglebutton" id="10">
 			<description>Default Category Button</description>
 			<include>ButtonCommonValues</include>
-			<texturefocus border="10">Button_Side_Focus.png</texturefocus>
-			<texturenofocus border="10">Button_Side_NoFocus.png</texturenofocus>
-			<alttexturefocus border="10">Button_Side_Focus.png</alttexturefocus>
-			<alttexturenofocus border="10">Button_Side_NoFocus.png</alttexturenofocus>
 			<onback>SetFocus(5)</onback>
+			<usealttexture>false</usealttexture>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>

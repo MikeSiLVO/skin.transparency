@@ -550,14 +550,6 @@ msgctxt "#31212"
 msgid "Enable Qlock add-on"
 msgstr ""
 
-msgctxt "#31213"
-msgid "Show Cinema Experience button in movie info dialog"
-msgstr ""
-
-msgctxt "#31214"
-msgid "Integrate Cinema Experience in home movie menu buttons"
-msgstr ""
-
 msgctxt "#31215"
 msgid "Hide GlobalSearch button"
 msgstr ""
