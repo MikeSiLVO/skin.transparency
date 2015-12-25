@@ -530,9 +530,11 @@
 			<height>30</height>
 			<texture>dot.png</texture>
 		</control>
-		<control type="label" id="29">
-			<description>Category</description>
+		<control type="label">
+			<description>Channels</description>
+			<label>$LOCALIZE[19019]</label>
 			<include>WindowTitleCommons</include>
+			<visible>Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)</visible>
 		</control>
 		<control type="label">
 			<description>Guide</description>
@@ -557,16 +559,6 @@
 			<label>$LOCALIZE[31048]</label>
 			<include>WindowTitleCommons</include>
 			<visible>Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)</visible>
-		</control>
-		<control type="image">
-			<width>29</width>
-			<height>30</height>
-			<texture>dot.png</texture>
-			<visible>!IsEmpty(Control.GetLabel(30))</visible>
-		</control>
-		<control type="label" id="30">
-			<description>Group</description>
-			<include>WindowTitleCommons</include>
 		</control>
 	</include>
 	<include name="Breadcrumbs-TVGuide">
@@ -741,7 +733,7 @@
 				<width>29</width>
 				<height>30</height>
 				<texture>dot.png</texture>
-				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(LiveTV)</visible>
+				<visible>!IsEmpty(Container.TotalTime)</visible>
 			</control>
 			<control type="label">
 				<description>Item Count Label</description>
@@ -751,7 +743,7 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
-				<visible>!IsEmpty(Container.TotalTime) + !Window.IsVisible(LiveTV)</visible>
+				<visible>!IsEmpty(Container.TotalTime)</visible>
 			</control>
 		</control>
 	</include>
