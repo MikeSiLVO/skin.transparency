@@ -168,11 +168,6 @@
 			<filename>teen-normal.ttf</filename>
 			<size>160</size>
 		</font>
-		<font>
-			<name>font-480</name>
-			<filename>teen-normal.ttf</filename>
-			<size>480</size>
-		</font>
 	</fontset>
 	<fontset id="Arial" idlock="31702">
 	<!-- needed for OnScreen debug info -->
@@ -342,11 +337,6 @@
 			<filename>arial.ttf</filename>
 			<size>160</size>
 		</font>
-		<font>
-			<name>font-480</name>
-			<filename>arial.ttf</filename>
-			<size>480</size>
-		</font>
 	</fontset>
 	<fontset id="Default Big" idlock="31703">
 	<!-- needed for OnScreen debug info -->
@@ -514,11 +504,6 @@
 			<name>font-160</name>
 			<filename>teen-normal.ttf</filename>
 			<size>160</size>
-		</font>
-		<font>
-			<name>font-480</name>
-			<filename>teen-normal.ttf</filename>
-			<size>480</size>
 		</font>
 	</fontset>
 	<fontset id="Arial Big" idlock="31704">
@@ -695,11 +680,6 @@
 			<name>font-160</name>
 			<filename>arial.ttf</filename>
 			<size>160</size>
-		</font>
-		<font>
-			<name>font-480</name>
-			<filename>arial.ttf</filename>
-			<size>480</size>
 		</font>
 	</fontset>
 </fonts>

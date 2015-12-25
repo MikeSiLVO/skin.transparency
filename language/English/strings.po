@@ -295,11 +295,7 @@ msgctxt "#31139"
 msgid "Use posters"
 msgstr ""
 
-msgctxt "#31140"
-msgid "I hate Transparency!"
-msgstr ""
-
-#empty string with id 31141
+#empty strings from id 31140 to 31141
 
 msgctxt "#31142"
 msgid "Fanart - Medium list"

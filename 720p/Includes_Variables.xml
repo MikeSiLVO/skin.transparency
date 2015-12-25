@@ -685,10 +685,6 @@
 		<value condition="Skin.String(SkinSettings,7)">$LOCALIZE[14018]</value>
 		<value condition="Skin.String(SkinSettings,10)">Transparency!</value>
 	</variable>
-	<variable name="SkinSettingsSlider">
-		<value condition="!ControlGroup(141).HasFocus">list-nofocus.png</value>
-		<value condition="ControlGroup(141).HasFocus">list-focus.png</value>
-	</variable>
 	<variable name="SkinSettingsFanartPath">
 		<value condition="Container(302).HasFocus(2)">[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</value>
 		<value condition="Container(302).HasFocus(3)">[COLOR=blue]$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)][/COLOR]</value>
