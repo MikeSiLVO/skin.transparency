@@ -17,7 +17,7 @@
 			<posy>0</posy>
 			<width>610</width>
 			<height>650</height>
-			<texture border="50">dialog.png</texture>
+			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
 			<posx>550</posx>
@@ -153,12 +153,6 @@
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,dbid=$INFO[ListItem.DBID],extrafanart)</onclick>
 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
-				</item>
-				<item>
-					<label>31222</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[Window(Home).Property(TVShowPath)]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-					<visible>System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(movies)]</visible>
 				</item>
 				<item>
 					<label>31223</label>
