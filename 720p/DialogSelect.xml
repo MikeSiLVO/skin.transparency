@@ -242,23 +242,53 @@
 		</control>
 		<include>CommonFileCount3</include>
 		<include>CommonFileCount13</include>
-		<control type="button" id="5">
-			<description>Get more button</description>
-			<posx>205</posx>
-			<posy>570</posy>
-			<width>200</width>
-			<height>35</height>
-			<label>-</label>
-			<font>font-23</font>
-			<textcolor>lightgrey</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<align>center</align>
-			<texturefocus border="7">button-focus.png</texturefocus>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
-			<onleft>62</onleft>
-			<onright>62</onright>
-			<onup>6</onup>
-			<ondown>6</ondown>
+		<control type="group" id="9001">
+			<control type="button" id="5">
+				<description>Get more button</description>
+				<posx>105</posx>
+				<posy>570</posy>
+				<width>200</width>
+				<height>35</height>
+				<label>-</label>
+				<font>font-23</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<onleft>7</onleft>
+				<onright>7</onright>
+				<onup>6</onup>
+				<ondown>6</ondown>
+			</control>
+			<control type="button" id="7">
+				<description>Cancel button</description>
+				<posx>305</posx>
+				<posy>570</posy>
+				<width>200</width>
+				<height>35</height>
+				<label>-</label>
+				<font>font-23</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturefocus border="7">button-nofocus.png</texturefocus>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>6</onup>
+				<ondown>6</ondown>
+			</control>
+			<control type="image">
+				<posx>105</posx>
+				<posy>570</posy>
+				<width>200</width>
+				<height>35</height>
+				<texture border="7">button-focus.png</texture>
+				<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(7)">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+				<visible>Control.HasFocus(5) | Control.HasFocus(7)</visible>
+			</control>
 		</control>
 	</controls>
 </window>
