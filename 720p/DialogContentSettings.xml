@@ -43,7 +43,7 @@
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="spincontrolex" id="20">
+			<control type="button" id="20">
 				<description>Content Picker</description>
 				<posx>200</posx>
 				<posy>80</posy>
@@ -52,135 +52,33 @@
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
 				<font>font-20</font>
-				<label>[B]$LOCALIZE[20344][/B]</label>
+				<label>-</label>
 				<aligny>center</aligny>
-				<reverse>yes</reverse>
 				<onup>28</onup>
 				<ondown>21</ondown>
 				<onleft>20</onleft>
 				<onright>20</onright>
 			</control>
-			<control type="list" id="21">
+			<control type="button" id="21">
+				<description>Scaper Picker</description>
 				<posx>200</posx>
-				<posy>143</posy>
-				<width>450</width>
-				<height>300</height>
+				<posy>110</posy>
+				<width>880</width>
+				<height>30</height>
+				<texturefocus border="7">list-focus.png</texturefocus>
+				<texturenofocus border="7">list-nofocus.png</texturenofocus>
+				<font>font-20</font>
+				<label>-</label>
+				<aligny>center</aligny>
 				<onup>20</onup>
-				<onleft>5</onleft>
-				<onright>61</onright>
 				<ondown>5</ondown>
-				<pagecontrol>61</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout width="450" height="30">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>30</height>
-						<texture border="7">list-nofocus.png</texture>
-					</control>
-					<control type="image">
-						<posx>5</posx>
-						<posy>4</posy>
-						<width>35</width>
-						<height>27</height>
-						<texture>$INFO[Listitem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="label">
-						<posx>50</posx>
-						<posy>0</posy>
-						<width>340</width>
-						<height>30</height>
-						<font>font-20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>lightgrey</textcolor>
-						<selectedcolor>lightblue</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout width="450" height="30">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>30</height>
-						<texture border="7">list-nofocus.png</texture>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>400</width>
-						<height>30</height>
-						<visible>Control.HasFocus(21)</visible>
-						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll13</include>
-					</control>
-					<control type="image">
-						<posx>5</posx>
-						<posy>4</posy>
-						<width>35</width>
-						<height>27</height>
-						<texture>$INFO[Listitem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="label">
-						<posx>50</posx>
-						<posy>0</posy>
-						<width>340</width>
-						<height>30</height>
-						<font>font-20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>lightgrey</textcolor>
-						<selectedcolor>lightblue</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!Control.HasFocus(21)</visible>
-					</control>
-					<control type="label">
-						<posx>50</posx>
-						<posy>0</posy>
-						<width>340</width>
-						<height>30</height>
-						<font>font-20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<selectedcolor>lightblue</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>Control.HasFocus(21)</visible>
-					</control>
-				</focusedlayout>
-			</control>
-			<control type="scrollbar" id="61">
-				<posx>630</posx>
-				<posy>150</posy>
-				<width>20</width>
-				<height>302</height>
-				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 				<onleft>21</onleft>
-				<onright>5</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<description>scraper image</description>
-				<posx>725</posx>
-				<posy>143</posy>
-				<width>300</width>
-				<height>300</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Container(21).ListItem.Icon]</texture>
+				<onright>21</onright>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
 				<posx>200</posx>
-				<posy>473</posy>
+				<posy>140</posy>
 				<width>880</width>
 				<height>150</height>
 				<itemgap>0</itemgap>
