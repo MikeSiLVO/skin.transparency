@@ -64,6 +64,11 @@
 					<altlabel>$LOCALIZE[31412] $LOCALIZE[585]</altlabel>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
+				<control type="radiobutton" id="8">
+					<description>Hidden disabled timers</description>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[19077]</label>
+				</control>
 				<include>PVR-Menu</include>
 			</control>
 		</control>

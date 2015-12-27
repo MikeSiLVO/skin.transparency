@@ -556,9 +556,15 @@
 		</control>
 		<control type="label">
 			<description>Timers</description>
-			<label>$LOCALIZE[31048]</label>
+			<label>$LOCALIZE[19040]</label>
 			<include>WindowTitleCommons</include>
 			<visible>Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)</visible>
+		</control>
+		<control type="label">
+			<description>Timers</description>
+			<label>$LOCALIZE[19138]</label>
+			<include>WindowTitleCommons</include>
+			<visible>Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)</visible>
 		</control>
 	</include>
 	<include name="Breadcrumbs-TVGuide">
@@ -1684,8 +1690,8 @@
 			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
 			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
 		</control>
@@ -1697,8 +1703,8 @@
 			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
 			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
 		</control>
@@ -1710,8 +1716,8 @@
 			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
 			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
 		</control>
@@ -1723,23 +1729,36 @@
 			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
 			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
 		</control>
 		<control type="button" id="905">
 			<description>Timers</description>
 			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31048]</label>
+			<label>$LOCALIZE[19040]</label>
 			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
 			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
 			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+		</control>
+		<control type="button" id="906">
+			<description>Rules</description>
+			<include>ButtonCommonValues</include>
+			<label>$LOCALIZE[19138]</label>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
+			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onright>
+			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
 		</control>
 	</include>
 	<include name="QlockHome">

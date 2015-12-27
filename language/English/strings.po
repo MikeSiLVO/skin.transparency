@@ -139,11 +139,7 @@ msgctxt "#31047"
 msgid "Last logged in"
 msgstr ""
 
-msgctxt "#31048"
-msgid "Timers"
-msgstr ""
-
-#empty string with id 31049
+#empty strings from id 31048 to 31049
 
 msgctxt "#31050"
 msgid "Finish Time"
@@ -447,7 +443,9 @@ msgctxt "#31182"
 msgid "Hide info panel"
 msgstr ""
 
-#empty string with id 31183
+msgctxt "#31183"
+msgid "TV timer rules"
+msgstr ""
 
 msgctxt "#31184"
 msgid "Customize visualization background"
@@ -509,7 +507,10 @@ msgctxt "#31198"
 msgid "Radio timers"
 msgstr ""
 
-#empty string with id 31199
+msgctxt "#31199"
+msgid "Radio timer rules"
+msgstr ""
+
 #Script Settings labels
 
 msgctxt "#31200"

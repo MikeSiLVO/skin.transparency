@@ -2579,6 +2579,15 @@
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8106">
+						<description>Menu TV Sub TVTimerRules</description>
+						<label>[B]$LOCALIZE[31183][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TV_Sub_TVTimerRules)</onclick>
+						<selected>!Skin.HasSetting(Menu_TV_Sub_TVTimerRules)</selected>
+						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8107">
 						<description>Menu TV Sub RadioChannels</description>
 						<label>[B]$LOCALIZE[19024][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2587,7 +2596,7 @@
 						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioChannels)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8107">
+					<control type="radiobutton" id="8108">
 						<description>Menu TV Sub RadioGuide</description>
 						<label>[B]$LOCALIZE[31192][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2596,7 +2605,7 @@
 						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioGuide)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8108">
+					<control type="radiobutton" id="8109">
 						<description>Menu TV Sub RadioRecordings</description>
 						<label>[B]$LOCALIZE[31194][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2605,7 +2614,7 @@
 						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioRecordings)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8109">
+					<control type="radiobutton" id="8110">
 						<description>Menu TV Sub RadioSearch</description>
 						<label>[B]$LOCALIZE[31196][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2614,7 +2623,7 @@
 						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioSearch)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8110">
+					<control type="radiobutton" id="8111">
 						<description>Menu TV Sub RadioTimers</description>
 						<label>[B]$LOCALIZE[31198][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2623,7 +2632,16 @@
 						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioTimers)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8111">
+					<control type="radiobutton" id="8112">
+						<description>Menu TV Sub RadioTimerRules</description>
+						<label>[B]$LOCALIZE[31199][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(TVCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_TV_Sub_RadioTimerRules)</onclick>
+						<selected>!Skin.HasSetting(Menu_TV_Sub_RadioTimerRules)</selected>
+						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8113">
 						<description>Menu TV Sub Custom1</description>
 						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_TV_Sub_Custom1.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2632,7 +2650,7 @@
 						<selected>Skin.HasSetting(Menu_TV_Sub_Custom1)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8112">
+					<control type="radiobutton" id="8114">
 						<description>Menu TV Sub Custom2</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_TV_Sub_Custom2.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
@@ -2641,7 +2659,7 @@
 						<selected>Skin.HasSetting(Menu_TV_Sub_Custom2)</selected>
 						<enable>!Skin.HasSetting(Menu_TV_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8113">
+					<control type="radiobutton" id="8115">
 						<description>Menu TV Sub Custom3</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_TV_Sub_Custom3.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>

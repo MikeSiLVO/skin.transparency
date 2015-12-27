@@ -3234,48 +3234,60 @@
 					<visible>!Skin.HasSetting(Menu_TV_Sub_TVTimers)</visible>
 				</item>
 				<item id="8106">
+					<description>Menu TV Sub TVTimerRules</description>
+					<label>$LOCALIZE[31183]</label>
+					<onclick>ActivateWindow(TVTimerRules)</onclick>
+					<visible>!Skin.HasSetting(Menu_TV_Sub_TVTimerRules)</visible>
+				</item>
+				<item id="8107">
 					<description>Menu TV Sub RadioChannels</description>
 					<label>$LOCALIZE[19024]</label>
 					<onclick>ActivateWindow(RadioChannels)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioChannels)</visible>
 				</item>
-				<item id="8107">
+				<item id="8108">
 					<description>Menu TV Sub RadioGuide</description>
 					<label>$LOCALIZE[31192]</label>
 					<onclick>ActivateWindow(RadioGuide)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioGuide)</visible>
 				</item>
-				<item id="8108">
+				<item id="8109">
 					<description>Menu TV Sub RadioRecordings</description>
 					<label>$LOCALIZE[31194]</label>
 					<onclick>ActivateWindow(RadioRecordings)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioRecordings)</visible>
 				</item>
-				<item id="8109">
+				<item id="8110">
 					<description>Menu TV Sub RadioSearch</description>
 					<label>$LOCALIZE[31196]</label>
 					<onclick>ActivateWindow(RadioSearch)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioSearch)</visible>
 				</item>
-				<item id="8110">
+				<item id="8111">
 					<description>Menu TV Sub RadioTimers</description>
 					<label>$LOCALIZE[31198]</label>
 					<onclick>ActivateWindow(RadioTimers)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioTimers)</visible>
 				</item>
-				<item id="8111">
+				<item id="8112">
+					<description>Menu TV Sub RadioTimerRules</description>
+					<label>$LOCALIZE[31199]</label>
+					<onclick>ActivateWindow(RadioTimerRules)</onclick>
+					<visible>!Skin.HasSetting(Menu_TV_Sub_RadioTimerRules)</visible>
+				</item>
+				<item id="8113">
 					<description>Menu TV Sub Custom1</description>
 					<label>$INFO[Skin.String(Menu_TV_Sub_Custom1.Label)]</label>
 					<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom1.Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_TV_Sub_Custom1)</visible>
 				</item>
-				<item id="8112">
+				<item id="8114">
 					<description>Menu TV Sub Custom2</description>
 					<label>$INFO[Skin.String(Menu_TV_Sub_Custom2.Label)]</label>
 					<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom2.Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_TV_Sub_Custom2)</visible>
 				</item>
-				<item id="8113">
+				<item id="8115">
 					<description>Menu TV Sub Custom3</description>
 					<label>$INFO[Skin.String(Menu_TV_Sub_Custom3.Label)]</label>
 					<onclick>$INFO[Skin.String(Menu_TV_Sub_Custom3.Path)]</onclick>
