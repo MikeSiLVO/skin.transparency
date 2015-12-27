@@ -1310,9 +1310,20 @@
 			<control type="image">
 				<posx>795</posx>
 				<posy>75</posy>
-				<width>125</width>
+				<width>175</width>
 				<height>25</height>
-				<texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
+				<aspectratio>keep</aspectratio>
+				<texture fallback="rating0.png">$INFO[ListItem.Property(Album_Rating),rating,.png]</texture>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+			<control type="image">
+				<posx>795</posx>
+				<posy>75</posy>
+				<width>175</width>
+				<height>25</height>
+				<aspectratio>keep</aspectratio>
+				<texture fallback="rating0.png">$INFO[ListItem.UserRating,rating,.png]</texture>
+				<visible>Container.Content(Songs)</visible>
 			</control>
 		</control>
 	</include>
@@ -1532,26 +1543,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-			</control>
-			<control type="label">
-				<description>Rating txt</description>
-				<posx>190</posx>
-				<posy>75</posy>
-				<width>140</width>
-				<height>25</height>
-				<label>[UPPERCASE][B]$LOCALIZE[563]:[/UPPERCASE][/B]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font-20c</font>
-				<textcolor>lightblue</textcolor>
-			</control>
-			<control type="image">
-				<description>Rating value</description>
-				<posx>200</posx>
-				<posy>75</posy>
-				<width>125</width>
-				<height>25</height>
-				<texture fallback="rating0.png">$INFO[ListItem.Property(Addon.StarRating)]</texture>
 			</control>
 			<control type="textbox">
 				<description>Description Value</description>

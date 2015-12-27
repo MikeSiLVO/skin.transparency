@@ -590,7 +590,7 @@
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
 						<posx>80</posx>
-						<posy>115</posy>
+						<posy>100</posy>
 						<width>1200</width>
 						<height>300</height>
 						<onleft>49</onleft>
@@ -701,6 +701,11 @@
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Property(Album_Rating)]</label2>
+								<onclick>noop</onclick>
+							</item>
+							<item>
+								<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+								<label2>$INFO[ListItem.UserRating]</label2>
 								<onclick>noop</onclick>
 							</item>
 							<item>

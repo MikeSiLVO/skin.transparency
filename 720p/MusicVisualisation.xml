@@ -382,8 +382,8 @@
 					<posx>1020</posx>
 					<posy>55</posy>
 					<width>125</width>
-					<height>25</height>
-					<texture>$INFO[Player.StarRating]</texture>
+					<height>30</height>
+					<texture>$INFO[MusicPlayer.UserRating,rating,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 				<control type="label">

@@ -226,12 +226,12 @@
 			</control>
 			<control type="image">
 				<description>Rating value</description>
-				<posx>1088</posx>
+				<posx>950</posx>
 				<posy>660</posy>
-				<width>160</width>
+				<width>320</width>
 				<height>25</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.StarRating]</texture>
+				<texture>$INFO[ListItem.UserRating,rating,.png]</texture>
 			</control>
 			<control type="button" id="1112">
 				<posx>1250</posx>
@@ -252,7 +252,7 @@
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="49">
 					<posx>100</posx>
-					<posy>115</posy>
+					<posy>100</posy>
 					<width>1080</width>
 					<height>315</height>
 					<onleft>49</onleft>
@@ -373,6 +373,11 @@
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
 							<label2>$INFO[ListItem.Rating]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.UserRating]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
