@@ -120,11 +120,11 @@
 					<include condition="Skin.HasSetting(WideSideMenuButtons)">ToggleButtonWide</include>
 				</control>
 				<control type="button" id="5">
-					<description>Enable auto-updates</description>
+					<description>Addon settings</description>
 					<posx>0</posx>
 					<posy>90</posy>
 					<include>ButtonCommonValues</include>
-					<label>24063</label>
+					<label>10004</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>4</onup>
@@ -139,34 +139,23 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>5</onup>
-					<ondown>6</ondown>
-				</control>
-				<control type="radiobutton" id="6">
-					<description>No notifications</description>
-					<posx>0</posx>
-					<posy>180</posy>
-					<include>ButtonCommonValues</include>
-					<label>25000</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>9</onup>
 					<ondown>7</ondown>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
 					<posx>0</posx>
-					<posy>225</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
 					<label>25001</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>6</onup>
+					<onup>9</onup>
 					<ondown>8</ondown>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide broken</description>
 					<posx>0</posx>
-					<posy>270</posy>
+					<posy>225</posy>
 					<include>ButtonCommonValues</include>
 					<label>24999</label>
 					<onleft>50</onleft>
