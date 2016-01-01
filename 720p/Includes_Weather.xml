@@ -1288,7 +1288,7 @@
 							<posy>310</posy>
 							<width>224</width>
 							<height>35</height>
-							<texture>$VAR[WeatherIconPath]$INFO[ListItem.Label2]</texture>
+							<texture>$INFO[ListItem.Label2]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="350" width="600">
@@ -1317,7 +1317,7 @@
 							<posy>310</posy>
 							<width>224</width>
 							<height>35</height>
-							<texture>$VAR[WeatherIconPath]$INFO[ListItem.Label2]</texture>
+							<texture>$INFO[ListItem.Label2]</texture>
 						</control>
 					</focusedlayout>
 					<content>
