@@ -2423,7 +2423,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.1.Humidity)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.1.Humidity))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -2471,7 +2471,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[387]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.1.Cloudiness)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.1.Cloudiness))</visible>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -2483,7 +2483,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[402]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.1.FeelsLike)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.1.FeelsLike))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -2628,7 +2628,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.2.Humidity)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.2.Humidity))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -2676,7 +2676,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[387]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.2.Cloudiness)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.2.Cloudiness))</visible>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -2688,7 +2688,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[402]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.2.FeelsLike)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.2.FeelsLike))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -2833,7 +2833,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[406]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.3.Humidity)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.3.Humidity))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -2881,7 +2881,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[387]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.3.Cloudiness)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.3.Cloudiness))</visible>
 					</control>
 					<control type="label">
 						<posx>193</posx>
@@ -2893,7 +2893,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[402]</label>
-						<visible>!IsEmpty(Window.Property(36Hour.3.FeelsLike)</visible>
+						<visible>!IsEmpty(Window.Property(36Hour.3.FeelsLike))</visible>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -3134,7 +3134,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[387]: [B][COLOR=white]$INFO[Window.Property(Weekend.1.Cloudiness)][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.1.Cloudiness)</visible>
+						<visible>!IsEmpty(Window.Property(Weekend.1.Cloudiness))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -3311,7 +3311,7 @@
 						<textcolor>lightblue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$LOCALIZE[387]: [B][COLOR=white]$INFO[Window.Property(Weekend.2.Cloudiness)][/COLOR][/B]</label>
-						<visible>!IsEmpty(Window.Property(Weekend.2.Cloudiness)</visible>
+						<visible>!IsEmpty(Window.Property(Weekend.2.Cloudiness))</visible>
 					</control>
 				</control>
 			</control>
