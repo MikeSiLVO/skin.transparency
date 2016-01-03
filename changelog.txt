@@ -1,5 +1,5 @@
 Transparency! v10.0.0
-- bump for k***
+- bump for krypton
 
 Transparency! v9.1.1
 - graphic redesign
