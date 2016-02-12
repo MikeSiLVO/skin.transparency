@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>10</defaultcontrol>
 	<coordinates>
 		<posx>290</posx>
 		<posy>210</posy>
@@ -63,7 +62,7 @@
 			<font>font-20</font>
 			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>
-		<control type="progress">
+		<control type="progress" id="20">
 			<description>Progressbar</description>
 			<posx>37</posx>
 			<posy>181</posy>
@@ -71,23 +70,51 @@
 			<height>15</height>
 			<info>System.Progressbar</info>
 		</control>
-		<control type="button" id="10">
-			<description>Cancel button</description>
-			<posx>250</posx>
+		<control type="button" id="11">
+			<description>Yes button</description>
+			<posx>150</posx>
 			<posy>215</posy>
 			<width>200</width>
 			<height>35</height>
-			<label>222</label>
+			<label>-</label>
 			<font>font-23</font>
 			<textcolor>lightgrey</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
 			<texturenofocus border="7">button-nofocus.png</texturenofocus>
-			<texturefocus border="7">button-focus.png</texturefocus>
+			<texturefocus border="7">button-nofocus.png</texturefocus>
 			<onleft>10</onleft>
 			<onright>10</onright>
+			<onup>11</onup>
+			<ondown>11</ondown>
+		</control>
+		<control type="button" id="10">
+			<description>No button</description>
+			<posx>350</posx>
+			<posy>215</posy>
+			<width>200</width>
+			<height>35</height>
+			<label>-</label>
+			<font>font-23</font>
+			<textcolor>lightgrey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<align>center</align>
+			<texturenofocus border="7">button-nofocus.png</texturenofocus>
+			<texturefocus border="7">button-nofocus.png</texturefocus>
+			<onleft>11</onleft>
+			<onright>11</onright>
 			<onup>10</onup>
 			<ondown>10</ondown>
+		</control>
+		<control type="image">
+			<posx>150</posx>
+			<posy>215</posy>
+			<width>200</width>
+			<height>35</height>
+			<texture border="7">button-focus.png</texture>
+			<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
+			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+			<visible>Control.HasFocus(11) | Control.HasFocus(10)</visible>
 		</control>
 	</controls>
 </window>
