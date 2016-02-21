@@ -179,7 +179,7 @@
 	<!-- end -->
 	 	<font>
 			<name>font-16d</name>
-			<filename>digital-readout.ttf</filename>
+			<filename>digital-7.ttf</filename>
 			<style>bold</style>
 			<size>16</size>
 		</font>
@@ -348,7 +348,7 @@
 	<!-- end -->
 	 	<font>
 			<name>font-16d</name>
-			<filename>digital-readout.ttf</filename>
+			<filename>digital-7.ttf</filename>
 			<style>bold</style>
 			<size>16</size>
 		</font>
@@ -516,7 +516,7 @@
 	<!-- end -->
 	 	<font>
 			<name>font-16d</name>
-			<filename>digital-readout.ttf</filename>
+			<filename>digital-7.ttf</filename>
 			<style>bold</style>
 			<size>16</size>
 		</font>
