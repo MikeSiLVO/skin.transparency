@@ -70,51 +70,50 @@
 			<height>15</height>
 			<info>System.Progressbar</info>
 		</control>
-		<control type="button" id="11">
-			<description>Yes button</description>
-			<posx>150</posx>
+		<control type="grouplist">
+			<posx>50</posx>
 			<posy>215</posy>
-			<width>200</width>
+			<width>600</width>
 			<height>35</height>
-			<label>-</label>
-			<font>font-23</font>
-			<textcolor>lightgrey</textcolor>
-			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
-			<texturefocus border="7">button-nofocus.png</texturefocus>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>11</onup>
-			<ondown>11</ondown>
-		</control>
-		<control type="button" id="10">
-			<description>No button</description>
-			<posx>350</posx>
-			<posy>215</posy>
-			<width>200</width>
-			<height>35</height>
-			<label>-</label>
-			<font>font-23</font>
-			<textcolor>lightgrey</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<align>center</align>
-			<texturenofocus border="7">button-nofocus.png</texturenofocus>
-			<texturefocus border="7">button-nofocus.png</texturefocus>
-			<onleft>11</onleft>
-			<onright>11</onright>
-			<onup>10</onup>
-			<ondown>10</ondown>
-		</control>
-		<control type="image">
-			<posx>150</posx>
-			<posy>215</posy>
-			<width>200</width>
-			<height>35</height>
-			<texture border="7">button-focus.png</texture>
-			<animation effect="slide" start="0,0" end="200,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
-			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-			<visible>Control.HasFocus(11) | Control.HasFocus(10)</visible>
+			<orientation>horizontal</orientation>
+			<itemgap>0</itemgap>
+			<control type="button" id="11">
+				<description>Yes button</description>
+				<width>200</width>
+				<height>35</height>
+				<label>-</label>
+				<font>font-23</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
+			</control>
+			<control type="button" id="10">
+				<description>No button</description>
+				<width>200</width>
+				<height>35</height>
+				<label>-</label>
+				<font>font-23</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
+			</control>
+			<control type="button" id="12">
+				<description>Custom button</description>
+				<width>200</width>
+				<height>35</height>
+				<label>-</label>
+				<font>font-23</font>
+				<textcolor>lightgrey</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
+			</control>
 		</control>
 	</controls>
 </window>
