@@ -152,9 +152,6 @@
 	<include name="DialogFade7">
 		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser) | Window.IsVisible(DialogPVRGroupManager.xml)">Conditional</animation>
 	</include>
-	<include name="DialogFade8">
-		<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(FileBrowser)">Conditional</animation>
-	</include>
 	<include name="ListFocusScroll">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container.OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container.OnPrevious">focus</animation>
@@ -208,11 +205,6 @@
 	<include name="ListFocusScroll12">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
-	</include>
-	<include name="ListFocusScroll13">
-		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(4).OnNext">focus</animation>
-		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(4).OnPrevious">focus</animation>
 		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll14">

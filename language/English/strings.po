@@ -18,10 +18,6 @@ msgstr ""
 
 #Dialog labels
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr ""
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr ""
