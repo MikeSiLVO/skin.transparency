@@ -7,7 +7,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + ![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum)]</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -19,7 +19,7 @@
 			<timeperimage>5000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
-			<animation effect="fade" start="100" end="20" time="0" condition="![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
@@ -38,8 +38,8 @@
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]] + IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]] + String.IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -51,8 +51,8 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="![StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum) | IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + IsEmpty(Control.GetLabel(6101))]]</visible>
+			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 		<include>cdwall-musicvisualisation</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists-visualisation</include>
@@ -62,7 +62,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + [StringCompare(Visualisation.Name,waveform) | StringCompare(Visualisation.Name,spectrum)]</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + [String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(Vis-ScrollTitles)</visible>
@@ -80,7 +80,7 @@
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>
-				<visible>!IntegerGreaterThan(System.Time(ss),21)</visible>
+				<visible>!Integer.IsGreater(System.Time(ss),21)</visible>
 				<control type="group">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -126,7 +126,7 @@
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>
-				<visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),41)</visible>
+				<visible>Integer.IsGreater(System.Time(ss),19) + !Integer.IsGreater(System.Time(ss),41)</visible>
 				<control type="group">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -172,7 +172,7 @@
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>
-				<visible>IntegerGreaterThan(System.Time(ss),39) | !IntegerGreaterThan(System.Time(ss),01)</visible>
+				<visible>Integer.IsGreater(System.Time(ss),39) | !Integer.IsGreater(System.Time(ss),01)</visible>
 				<control type="group">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -376,7 +376,7 @@
 					<aligny>center</aligny>
 					<font>font-15</font>
 					<textcolor>lightblue</textcolor>
-					<visible>!IsEmpty(MusicPlayer.samplerate)</visible>
+					<visible>!String.IsEmpty(MusicPlayer.samplerate)</visible>
 				</control>
 				<control type="label">
 					<posx>1255</posx>
@@ -388,7 +388,7 @@
 					<aligny>center</aligny>
 					<font>font-15</font>
 					<textcolor>lightblue</textcolor>
-					<visible>!IsEmpty(MusicPlayer.bitrate)</visible>
+					<visible>!String.IsEmpty(MusicPlayer.bitrate)</visible>
 				</control>
 				<control type="label">
 					<description>Playlist Pos No</description>
