@@ -75,7 +75,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[[Container.Content(Seasons) | Container.Content(Episodes)] + String.IsEqual(ListItem.Label,..)] + ![Container.Content(Seasons) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6105)) + !String.IsEqual(ListItem.Label,..)] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6106)) + !String.IsEqual(ListItem.Label,..)] + !String.IsEmpty(Fanart.Image) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>[[Container.Content(Seasons) | Container.Content(Episodes)] + ListItem.IsParentFolder] + ![Container.Content(Seasons) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6105)) + !ListItem.IsParentFolder] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6106)) + !ListItem.IsParentFolder] + !String.IsEmpty(Fanart.Image) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>

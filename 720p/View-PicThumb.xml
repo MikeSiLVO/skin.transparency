@@ -76,7 +76,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="picture-diffuse.png" background="true">black.png</texture>
 					<bordersize>12</bordersize>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>30</posx>

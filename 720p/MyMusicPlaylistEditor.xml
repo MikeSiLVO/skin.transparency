@@ -85,7 +85,7 @@
 						<width>170</width>
 						<height>170</height>
 						<texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
-						<visible>String.IsEqual(ListItem.Label,..)</visible>
+						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
 						<posx>550</posx>
@@ -94,7 +94,7 @@
 						<height>170</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<texture diffuse="thumb-diffuse.png" background="true">$INFO[Container(50).ListItem.Icon]</texture>
-						<visible>![String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !String.IsEqual(ListItem.Label,..)</visible>
+						<visible>![String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
 						<posx>562</posx>
@@ -102,7 +102,7 @@
 						<width>165</width>
 						<height>165</height>
 						<texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
-						<visible>[String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !String.IsEqual(ListItem.Label,..)</visible>
+						<visible>[String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
 						<posx>547</posx>
@@ -110,7 +110,7 @@
 						<width>186</width>
 						<height>170</height>
 						<texture>cdcase.png</texture>
-						<visible>[String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !String.IsEqual(ListItem.Label,..) + !Skin.HasSetting(HideMusicCase)</visible>
+						<visible>[String.Contains(Container.FolderPath,musicdb://albums/) | String.Contains(Container.FolderPath,musicdb://songs/) | String.Contains(Container.FolderPath,musicdb://recentlyaddedalbums/) | String.Contains(Container.FolderPath,musicdb://recentlyplayedalbums/) | String.Contains(Container.FolderPath,musicdb://compilations/)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="textbox">
 						<posx>488</posx>

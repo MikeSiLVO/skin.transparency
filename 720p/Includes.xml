@@ -1586,7 +1586,7 @@
 			<animation effect="slide" start="0,0" end="385,-165" condition="Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-200,90" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="150" condition="Control.IsVisible(55) + Control.IsVisible(7031)">Conditional</animation>
-			<visible>!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !String.IsEqual(ListItem.Label,..) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + [Control.IsVisible(50) | Control.IsVisible(590)]]] + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			<visible>!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !ListItem.IsParentFolder + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + [Control.IsVisible(50) | Control.IsVisible(590)]]] + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

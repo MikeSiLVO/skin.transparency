@@ -327,7 +327,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !String.IsEqual(ListItem.Label,..) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !ListItem.IsParentFolder + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-programs">
@@ -343,7 +343,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!String.IsEqual(ListItem.Label,..) + !String.IsEmpty(ListItem.Path) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Path) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-seasons">
@@ -433,22 +433,22 @@
 	</include>
 	<include name="moviedisc-dvd-View_Icons">
 		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
-		<visible>!String.IsEqual(ListItem.Label,..)</visible>
+		<visible>!ListItem.IsParentFolder</visible>
 	</include>
 	<include name="moviedisc-bluray-View_Icons">
 		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
-		<visible>!String.IsEqual(ListItem.Label,..)</visible>
+		<visible>!ListItem.IsParentFolder</visible>
 	</include>
 	<include name="movienodisc-View_Icons">
 		<texture>disc.png</texture>
 	</include>
 	<include name="moviedisc-dvd-View_Item">
 		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
-		<visible>!String.IsEqual(ListItem.Label,..)</visible>
+		<visible>!ListItem.IsParentFolder</visible>
 	</include>
 	<include name="moviedisc-bluray-View_Item">
 		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
-		<visible>!String.IsEqual(ListItem.Label,..)</visible>
+		<visible>!ListItem.IsParentFolder</visible>
 	</include>
 	<include name="movienodisc-View_Item">
 		<texture diffuse="disc_mask.png">disc-dvd.png</texture>
@@ -485,7 +485,7 @@
 			<timeperimage>4000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>!String.IsEqual(ListItem.Label,..) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
+			<visible>!ListItem.IsParentFolder + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
 </includes>

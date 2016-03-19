@@ -831,28 +831,28 @@
 		<value condition="String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="ViewFanartLabel2">
-		<value condition="Skin.HasSetting(TVShowsPosters) + String.IsEmpty(ListItem.Title) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Skin.HasSetting(TVShowsPosters) + String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 		<value condition="Skin.HasSetting(TVShowsPosters) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel3">
-		<value condition="!Skin.HasSetting(TVShowsPosters) + String.IsEmpty(ListItem.Title) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="!Skin.HasSetting(TVShowsPosters) + String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 		<value condition="!Skin.HasSetting(TVShowsPosters) | ![String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,special://)]">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel4">
 		<value condition="Container.Content(Episodes)">$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(Episodes) + String.IsEmpty(ListItem.Title) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(Episodes) + String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ViewFanartLabel5">
 		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Title]</value>
-		<value condition="Container.Content(MusicVideos) + String.IsEmpty(ListItem.Title) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(MusicVideos) + String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ViewFanartLabel6">
-		<value condition="Container.Content(Songs) + !String.IsEqual(ListItem.Label,..) + !Window.IsVisible(MusicPlaylist)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
+		<value condition="Container.Content(Songs) + !ListItem.IsParentFolder + !Window.IsVisible(MusicPlaylist)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
 		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Title]</value>
 		<value condition="Window.IsVisible(MusicPlaylist) + !Player.HasAudio">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel7">
-		<value condition="Container.Content(Albums) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Label]</value>
+		<value condition="Container.Content(Albums) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 		<value condition="Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Artist]</value>
 		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Artist]</value>
 	</variable>
@@ -1028,29 +1028,29 @@
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Comment]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel1">
-		<value condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(MusicVideos) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel2">
-		<value condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Date]</value>
-		<value condition="Container.Content(MusicVideos) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder">$INFO[ListItem.Date]</value>
+		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel3">
-		<value condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[2050]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(MusicVideos) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[2050]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel4">
-		<value condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..) + !String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-		<value condition="Container.Content(Episodes) + !String.IsEqual(ListItem.Label,..) + String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
-		<value condition="Container.Content(MusicVideos) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Date]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder + !String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder + String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">$INFO[ListItem.Date]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel5">
-		<value condition="Container.Content(TVShows) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[20416]:[/UPPERCASE][/B]</value>
-		<value condition="Container.Content(Seasons) + !String.IsEqual(ListItem.Label,..)">[UPPERCASE][B]$LOCALIZE[572]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(TVShows) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[20416]:[/UPPERCASE][/B]</value>
+		<value condition="Container.Content(Seasons) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[572]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel6">
-		<value condition="Container.Content(TVShows) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Date]</value>
-		<value condition="Container.Content(Seasons) + !String.IsEqual(ListItem.Label,..)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(TVShows) + !ListItem.IsParentFolder">$INFO[ListItem.Date]</value>
+		<value condition="Container.Content(Seasons) + !ListItem.IsParentFolder">$INFO[ListItem.Studio]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel7">
 		<value condition="Container.Content(Artists)">[UPPERCASE][B]$LOCALIZE[515]:[/UPPERCASE][/B]</value>
@@ -1162,14 +1162,14 @@
 		<value condition="!String.IsEmpty(ListItem.TagLine)">$INFO[ListItem.TagLine]</value>
 	</variable>
 	<variable name="ViewWallLabel1">
-		<value condition="Container.Content(Artists) + !String.IsEqual(ListItem.Label,..)">[B]$INFO[ListItem.Label][/B]</value>
-		<value condition="Container.Content(Albums) + !String.IsEqual(ListItem.Label,..)">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</value>
+		<value condition="Container.Content(Artists) + !ListItem.IsParentFolder">[B]$INFO[ListItem.Label][/B]</value>
+		<value condition="Container.Content(Albums) + !ListItem.IsParentFolder">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label][/B]</value>
 		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</value>
 	</variable>
 	<variable name="ViewWallLabel2">
 		<value condition="Container.Content(Artists)">[B]$INFO[ListItem.Property(Artist_Genre)][/B]</value>
 		<value condition="Container.Content(Albums)">[B]$INFO[ListItem.Genre][CR]$INFO[ListItem.Year][/B]</value>
-		<value condition="Container.Content(Songs) + !String.IsEqual(ListItem.Label,..)">[B]$INFO[ListItem.Label][CR]$INFO[ListItem.Duration][/B]</value>
+		<value condition="Container.Content(Songs) + !ListItem.IsParentFolder">[B]$INFO[ListItem.Label][CR]$INFO[ListItem.Duration][/B]</value>
 	</variable>
 	<variable name="ViewWallText">
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>

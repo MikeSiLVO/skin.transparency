@@ -630,7 +630,7 @@
 					<animation type="WindowClose">
 						<effect type="fade" start="100" end="0" time="1000"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>410</posx>
@@ -648,7 +648,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="3250"/>
 						<effect type="rotatey" center="auto" start="0" end="60" time="500" delay="3250"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>598</posx>
@@ -659,7 +659,7 @@
 					<animation effect="fade" reversible="false" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" reversible="false" start="0" end="100" time="300" delay="2000">WindowOpen</animation>
 					<animation effect="fade" reversible="false" start="100" end="0" time="300">WindowClose</animation>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !String.IsEqual(ListItem.Label,..) + String.StartsWith(Container.Folderpath,videodb://)</visible>
+					<visible>Container.Content(Movies) + ListItem.IsFolder + !ListItem.IsParentFolder + String.StartsWith(Container.Folderpath,videodb://)</visible>
 				</control>
 				<control type="image">
 					<posx>410</posx>
@@ -669,7 +669,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$VAR[Icon(-1)Poster]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
-					<visible>Control.IsVisible(7013) + !String.IsEqual(ListItem(-1).Label,..)</visible>
+					<visible>Control.IsVisible(7013) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>410</posx>
@@ -679,7 +679,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$VAR[Icon(1)Poster]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
-					<visible>Control.IsVisible(7014) + !String.IsEqual(ListItem(1).Label,..)</visible>
+					<visible>Control.IsVisible(7014) + !ListItem(1).IsParentFolder</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -697,7 +697,7 @@
 					<height>30</height>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<font>font-30</font>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
 					<posx>40</posx>
@@ -1293,7 +1293,7 @@
 					<animation type="WindowClose">
 						<effect type="fade" start="100" end="0" time="1000"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>400</posx>
@@ -1311,7 +1311,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="3250"/>
 						<effect type="rotatey" center="auto" start="0" end="60" time="500" delay="3250"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>400</posx>
@@ -1321,7 +1321,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7027)">Conditional</animation>
-					<visible>Control.IsVisible(7027) + !String.IsEqual(ListItem(-1).Label,..)</visible>
+					<visible>Control.IsVisible(7027) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>400</posx>
@@ -1331,7 +1331,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="cover-diffuse2.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7028)">Conditional</animation>
-					<visible>Control.IsVisible(7028) + !String.IsEqual(ListItem(1).Label,..)</visible>
+					<visible>Control.IsVisible(7028) + !ListItem(1).IsParentFolder</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1349,7 +1349,7 @@
 					<height>30</height>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<font>font-30</font>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
 					<posx>40</posx>
@@ -1890,7 +1890,7 @@
 					<animation type="WindowClose">
 						<effect type="fade" start="100" end="0" time="1000"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -1908,7 +1908,7 @@
 						<effect type="fade" start="100" end="0" time="500" delay="3250"/>
 						<effect type="rotatey" center="auto" start="0" end="-60" time="500" delay="3250"/>
 					</animation>
-					<visible>!String.IsEqual(ListItem.Label,..)</visible>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -1918,7 +1918,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7013)">Conditional</animation>
-					<visible>Control.IsVisible(7013) + !String.IsEqual(ListItem(-1).Label,..)</visible>
+					<visible>Control.IsVisible(7013) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<posx>409</posx>
@@ -1928,7 +1928,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="cover-diffuse3.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="fade" start="100" end="0" time="200" delay="200" condition="Control.IsVisible(7014)">Conditional</animation>
-					<visible>Control.IsVisible(7014) + !String.IsEqual(ListItem(1).Label,..)</visible>
+					<visible>Control.IsVisible(7014) + !ListItem(1).IsParentFolder</visible>
 				</control>
 			</control>
 			<control type="group">
