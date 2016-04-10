@@ -65,7 +65,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<left>150</left>
+				<left>80</left>
 				<top>51</top>
 				<width>70</width>
 				<height>20</height>

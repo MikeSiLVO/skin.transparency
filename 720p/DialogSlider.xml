@@ -29,7 +29,7 @@
 			</control>
 			<control type="label" id="12">
 				<description>Slider Value</description>
-				<left>380</left>
+				<left>200</left>
 				<top>0</top>
 				<width>180</width>
 				<height>16</height>

@@ -16,7 +16,7 @@
 			</control>
 			<control type="label">
 				<description>Time Label</description>
-				<left>93</left>
+				<left>3</left>
 				<top>4</top>
 				<width>90</width>
 				<height>25</height>

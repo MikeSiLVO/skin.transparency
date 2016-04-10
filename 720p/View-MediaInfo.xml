@@ -598,7 +598,7 @@
 			<animation effect="slide" start="0,0" end="0,252" time="0" condition="[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
 				<description>Seasons txt</description>
-				<left>225</left>
+				<left>-15</left>
 				<top>130</top>
 				<width>240</width>
 				<height>20</height>
@@ -623,7 +623,7 @@
 			</control>
 			<control type="label">
 				<description>Episodes txt</description>
-				<left>225</left>
+				<left>-15</left>
 				<top>150</top>
 				<width>240</width>
 				<height>20</height>
@@ -647,7 +647,7 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<left>225</left>
+				<left>-15</left>
 				<top>170</top>
 				<width>240</width>
 				<height>20</height>
@@ -669,7 +669,7 @@
 			</control>
 			<control type="label">
 				<description>Genre txt</description>
-				<left>225</left>
+				<left>-15</left>
 				<top>190</top>
 				<width>240</width>
 				<height>20</height>
@@ -1061,7 +1061,7 @@
 			<top>490</top>
 			<visible>Control.IsVisible(59) + [Container.Content(Artists) | Container.Content(MusicVideos)]</visible>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>0</top>
 				<width>140</width>
 				<height>25</height>
@@ -1082,7 +1082,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>25</top>
 				<width>140</width>
 				<height>25</height>
@@ -1103,7 +1103,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>50</top>
 				<width>140</width>
 				<height>25</height>
@@ -1124,7 +1124,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>75</top>
 				<width>140</width>
 				<height>25</height>
@@ -1150,7 +1150,7 @@
 			<top>490</top>
 			<visible>Control.IsVisible(59) + [Container.Content(Albums) | Container.Content(Songs)]</visible>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>0</top>
 				<width>140</width>
 				<height>25</height>
@@ -1171,7 +1171,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>25</top>
 				<width>140</width>
 				<height>25</height>
@@ -1192,7 +1192,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>50</top>
 				<width>140</width>
 				<height>25</height>
@@ -1213,7 +1213,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>190</left>
+				<left>50</left>
 				<top>75</top>
 				<width>140</width>
 				<height>25</height>
@@ -1234,7 +1234,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>785</left>
+				<left>645</left>
 				<top>0</top>
 				<width>140</width>
 				<height>25</height>
@@ -1255,7 +1255,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>785</left>
+				<left>645</left>
 				<top>25</top>
 				<width>140</width>
 				<height>25</height>
@@ -1276,7 +1276,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>785</left>
+				<left>645</left>
 				<top>50</top>
 				<width>140</width>
 				<height>25</height>
@@ -1297,7 +1297,7 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<left>785</left>
+				<left>645</left>
 				<top>75</top>
 				<width>140</width>
 				<height>25</height>
@@ -1477,7 +1477,7 @@
 			<visible>Control.IsVisible(599) + !String.IsEmpty(ListItem.Property(Addon.Name))</visible>
 			<control type="label">
 				<description>Author txt</description>
-				<left>190</left>
+				<left>50</left>
 				<top>0</top>
 				<width>140</width>
 				<height>25</height>
@@ -1500,7 +1500,7 @@
 			</control>
 			<control type="label">
 				<description>Type txt</description>
-				<left>190</left>
+				<left>50</left>
 				<top>25</top>
 				<width>140</width>
 				<height>25</height>
@@ -1523,7 +1523,7 @@
 			</control>
 			<control type="label">
 				<description>Version txt</description>
-				<left>190</left>
+				<left>50</left>
 				<top>50</top>
 				<width>140</width>
 				<height>25</height>

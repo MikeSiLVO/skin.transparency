@@ -325,7 +325,7 @@
 				</control>
 				<control type="label">
 					<description>System Time Label</description>
-					<left>1255</left>
+					<left>1055</left>
 					<top>58</top>
 					<width>200</width>
 					<height>25</height>
@@ -345,7 +345,7 @@
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 				<control type="label">
-					<left>1215</left>
+					<left>1135</left>
 					<top>82</top>
 					<width>80</width>
 					<height>15</height>
@@ -356,7 +356,7 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
-					<left>1215</left>
+					<left>1135</left>
 					<top>96</top>
 					<width>80</width>
 					<height>15</height>
@@ -367,7 +367,7 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
-					<left>1255</left>
+					<left>1205</left>
 					<top>82</top>
 					<width>50</width>
 					<height>15</height>
@@ -379,7 +379,7 @@
 					<visible>!String.IsEmpty(MusicPlayer.samplerate)</visible>
 				</control>
 				<control type="label">
-					<left>1255</left>
+					<left>1205</left>
 					<top>96</top>
 					<width>50</width>
 					<height>15</height>
@@ -392,7 +392,7 @@
 				</control>
 				<control type="label">
 					<description>Playlist Pos No</description>
-					<left>1255</left>
+					<left>755</left>
 					<top>110</top>
 					<width>500</width>
 					<height>25</height>
@@ -405,7 +405,7 @@
 				</control>
 				<control type="label">
 					<description>Party Mode Label</description>
-					<left>1255</left>
+					<left>755</left>
 					<top>110</top>
 					<width>500</width>
 					<height>25</height>
@@ -445,7 +445,7 @@
 				</control>
 				<control type="label">
 					<description>time label</description>
-					<left>1255</left>
+					<left>975</left>
 					<top>134</top>
 					<width>280</width>
 					<height>25</height>
@@ -457,7 +457,7 @@
 				</control>
 				<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">FullScreenMusicMediaFlags</include>
 				<control type="label">
-					<left>1255</left>
+					<left>555</left>
 					<top>164</top>
 					<width>700</width>
 					<height>25</height>

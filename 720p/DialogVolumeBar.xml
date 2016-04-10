@@ -17,7 +17,7 @@
 			</control>
 			<control type="label">
 				<description>Volume Label</description>
-				<left>93</left>
+				<left>-32</left>
 				<top>4</top>
 				<width>125</width>
 				<height>25</height>

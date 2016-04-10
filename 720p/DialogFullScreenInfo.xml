@@ -52,7 +52,7 @@
 				</control>
 				<control type="label">
 					<description>System Time Label</description>
-					<left>1255</left>
+					<left>1055</left>
 					<top>58</top>
 					<width>200</width>
 					<height>25</height>
@@ -74,7 +74,7 @@
 				</control>
 				<control type="label">
 					<description>Video End Time</description>
-					<left>1255</left>
+					<left>955</left>
 					<top>110</top>
 					<width>300</width>
 					<height>25</height>
@@ -123,7 +123,7 @@
 				</control>
 				<control type="label">
 					<description>time label</description>
-					<left>1255</left>
+					<left>975</left>
 					<top>134</top>
 					<width>280</width>
 					<height>25</height>
@@ -135,7 +135,7 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<left>1255</left>
+					<left>765</left>
 					<top>164</top>
 					<width>490</width>
 					<height>25</height>
@@ -149,7 +149,7 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<left>1255</left>
+					<left>765</left>
 					<top>155</top>
 					<width>490</width>
 					<height>25</height>
@@ -163,7 +163,7 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<left>1255</left>
+					<left>765</left>
 					<top>175</top>
 					<width>490</width>
 					<height>25</height>

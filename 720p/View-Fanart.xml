@@ -1294,7 +1294,7 @@
 				<label>$VAR[ViewFanartLabel6]</label>
 			</control>
 			<control type="label">
-				<left>865</left>
+				<left>665</left>
 				<top>577</top>
 				<width>200</width>
 				<height>30</height>
@@ -1308,7 +1308,7 @@
 			</control>
 			<control type="label">
 				<description>time label</description>
-				<left>865</left>
+				<left>715</left>
 				<top>577</top>
 				<width>150</width>
 				<height>30</height>

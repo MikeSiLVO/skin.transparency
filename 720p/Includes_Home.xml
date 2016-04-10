@@ -184,20 +184,6 @@
 		<animation effect="slide" start="0,150" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="0,150" time="400" tween="quadratic" easing="out">WindowClose</animation>
 	</include>
-	<include name="HomeInfoAnimation">
-		<animation type="Visible">
-			<effect type="fade" start="0" end="100" time="300"/>
-			<effect type="zoom" start="50" end="100" time="300"/>
-			<effect type="slide" start="0,-100" end="0,0" time="300"/>
-		</animation>
-		<animation type="Hidden">
-			<effect type="fade" start="100" end="0" time="300"/>
-			<effect type="zoom" start="100" end="50" time="300"/>
-			<effect type="slide" start="0," end="0,-100" time="300"/>
-		</animation>
-		<animation effect="slide" time="400" start="1000,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
-		<animation effect="slide" time="400" start="0,0" end="1000,0" acceleration="-1.3" delay="0">WindowClose</animation>
-	</include>
 	<include name="recentlyfanartmovies">
 		<control type="image" id="7021">
 			<left>0</left>
@@ -331,7 +317,7 @@
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icon</include>
 			<control type="label">
 				<description>Weather label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>15</top>
 				<height>30</height>
 				<width>770</width>
@@ -344,7 +330,7 @@
 			</control>
 			<control type="label">
 				<description>location label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>60</top>
 				<height>30</height>
 				<width>770</width>
@@ -356,7 +342,7 @@
 			</control>
 			<control type="label">
 				<description>Conditions Label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>85</top>
 				<height>30</height>
 				<width>770</width>
@@ -368,7 +354,7 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>110</top>
 				<height>30</height>
 				<width>770</width>
@@ -422,7 +408,7 @@
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icons</include>
 			<control type="label">
 				<description>location label</description>
-				<left>895</left>
+				<left>125</left>
 				<top>5</top>
 				<height>30</height>
 				<width>770</width>
@@ -435,7 +421,7 @@
 			</control>
 			<control type="label">
 				<description>Conditions Label</description>
-				<left>895</left>
+				<left>125</left>
 				<top>28</top>
 				<height>30</height>
 				<width>770</width>
@@ -447,7 +433,7 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<left>895</left>
+				<left>125</left>
 				<top>48</top>
 				<height>30</height>
 				<width>770</width>
@@ -801,7 +787,7 @@
 			</control>
 			<control type="label">
 				<description>Settings label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>15</top>
 				<width>770</width>
 				<height>30</height>
@@ -814,7 +800,7 @@
 			</control>
 			<control type="label">
 				<description>CPU Speed Label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>50</top>
 				<width>770</width>
 				<height>30</height>
@@ -826,7 +812,7 @@
 			</control>
 			<control type="label">
 				<description>Free Memory Label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>70</top>
 				<width>770</width>
 				<height>30</height>
@@ -838,7 +824,7 @@
 			</control>
 			<control type="label">
 				<description>GPU Make Label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>90</top>
 				<width>770</width>
 				<height>30</height>
@@ -850,7 +836,7 @@
 			</control>
 			<control type="label">
 				<description>IP Address label</description>
-				<left>875</left>
+				<left>105</left>
 				<top>110</top>
 				<width>770</width>
 				<height>30</height>
@@ -916,7 +902,7 @@
 			</control>
 			<control type="label">
 				<description>Year label</description>
-				<left>870</left>
+				<left>100</left>
 				<top>15</top>
 				<width>770</width>
 				<height>30</height>
@@ -930,7 +916,7 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<left>770</left>
+				<left>0</left>
 				<top>15</top>
 				<width>770</width>
 				<height>30</height>
@@ -944,7 +930,7 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<left>870</left>
+				<left>100</left>
 				<top>54</top>
 				<width>770</width>
 				<height>30</height>
@@ -958,7 +944,7 @@
 			</control>
 			<control type="label">
 				<description>Genre label</description>
-				<left>870</left>
+				<left>100</left>
 				<top>88</top>
 				<width>770</width>
 				<height>30</height>
@@ -971,7 +957,7 @@
 				<visible>!VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<left>770</left>
+				<left>100</left>
 				<top>88</top>
 				<width>770</width>
 				<height>30</height>
@@ -986,8 +972,8 @@
 				<left>100</left>
 				<top>125</top>
 				<height>30</height>
-				<align>right</align>
 				<width>770</width>
+				<align>right</align>
 				<orientation>horizontal</orientation>
 				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)">Conditional</animation>
 				<control type="label">
@@ -1070,7 +1056,7 @@
 				</control>
 				<control type="label">
 					<description>Recording label</description>
-					<left>875</left>
+					<left>105</left>
 					<top>15</top>
 					<height>30</height>
 					<width>770</width>
@@ -1082,7 +1068,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>60</top>
 					<height>30</height>
 					<width>770</width>
@@ -1094,7 +1080,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>85</top>
 					<height>30</height>
 					<width>770</width>
@@ -1105,7 +1091,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>110</top>
 					<height>30</height>
 					<width>770</width>
@@ -1128,7 +1114,7 @@
 				</control>
 				<control type="label">
 					<description>Recording label</description>
-					<left>875</left>
+					<left>105</left>
 					<top>15</top>
 					<height>30</height>
 					<width>770</width>
@@ -1140,7 +1126,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>60</top>
 					<height>30</height>
 					<width>770</width>
@@ -1152,7 +1138,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>85</top>
 					<height>30</height>
 					<width>770</width>
@@ -1163,7 +1149,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<left>875</left>
+					<left>105</left>
 					<top>110</top>
 					<height>30</height>
 					<width>770</width>
@@ -1223,7 +1209,7 @@
 			</control>
 			<control type="label">
 				<description>Artist label</description>
-				<left>790</left>
+				<left>20</left>
 				<top>15</top>
 				<height>30</height>
 				<width>770</width>
@@ -1236,7 +1222,7 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<left>790</left>
+				<left>20</left>
 				<top>54</top>
 				<height>30</height>
 				<width>770</width>
@@ -1249,7 +1235,7 @@
 			</control>
 			<control type="label">
 				<description>Album Label</description>
-				<left>790</left>
+				<left>20</left>
 				<top>88</top>
 				<height>30</height>
 				<width>770</width>
@@ -1485,7 +1471,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<left>914</left>
+				<left>414</left>
 				<top>127</top>
 				<height>20</height>
 				<width>500</width>
@@ -1674,7 +1660,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<left>805</left>
+				<left>305</left>
 				<top>127</top>
 				<height>20</height>
 				<width>500</width>
@@ -1863,7 +1849,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<left>805</left>
+				<left>305</left>
 				<top>127</top>
 				<height>20</height>
 				<width>500</width>
@@ -2052,7 +2038,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<left>864</left>
+				<left>364</left>
 				<top>127</top>
 				<height>20</height>
 				<width>500</width>
@@ -2273,7 +2259,7 @@
 				</content>
 			</control>
 			<control type="label">
-				<left>874</left>
+				<left>374</left>
 				<top>127</top>
 				<height>20</height>
 				<width>500</width>

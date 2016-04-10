@@ -36,7 +36,7 @@
 			</control>
 			<control type="label">
 				<description>update time label</description>
-				<left>440</left>
+				<left>195</left>
 				<top>0</top>
 				<width>245</width>
 				<height>35</height>
@@ -83,7 +83,7 @@
 			</control>
 			<control type="label">
 				<description>current feels like label</description>
-				<left>164</left>
+				<left>-2</left>
 				<top>340</top>
 				<width>166</width>
 				<height>35</height>
@@ -95,7 +95,7 @@
 			</control>
 			<control type="label">
 				<description>current dew label</description>
-				<left>164</left>
+				<left>-2</left>
 				<top>370</top>
 				<width>166</width>
 				<height>35</height>
@@ -107,7 +107,7 @@
 			</control>
 			<control type="label">
 				<description>current humidity label</description>
-				<left>164</left>
+				<left>-2</left>
 				<top>400</top>
 				<width>166</width>
 				<height>35</height>
@@ -119,7 +119,7 @@
 			</control>
 			<control type="label">
 				<description>current UV Index label</description>
-				<left>164</left>
+				<left>-2</left>
 				<top>430</top>
 				<width>166</width>
 				<height>35</height>
@@ -131,7 +131,7 @@
 			</control>
 			<control type="label">
 				<description>current Wind label</description>
-				<left>164</left>
+				<left>-2</left>
 				<top>460</top>
 				<width>166</width>
 				<height>35</height>
@@ -617,7 +617,7 @@
 						<label>[B]$INFO[Window.Property(Location)][/B]</label>
 					</control>
 					<control type="label">
-						<left>390</left>
+						<left>-10</left>
 						<top>15</top>
 						<width>400</width>
 						<height>20</height>
@@ -649,7 +649,7 @@
 						<label fallback="-">$INFO[Window.Property(Current.Condition)]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>200</top>
 						<width>150</width>
 						<height>25</height>
@@ -659,7 +659,7 @@
 						<label>$LOCALIZE[33021]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>225</top>
 						<width>150</width>
 						<height>25</height>
@@ -669,7 +669,7 @@
 						<label>$LOCALIZE[402]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>250</top>
 						<width>150</width>
 						<height>25</height>
@@ -679,7 +679,7 @@
 						<label>$LOCALIZE[406]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>275</top>
 						<width>150</width>
 						<height>25</height>
@@ -689,7 +689,7 @@
 						<label>$VAR[Weather85]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>300</top>
 						<width>150</width>
 						<height>25</height>
@@ -699,7 +699,7 @@
 						<label>$LOCALIZE[405]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
+						<left>-10</left>
 						<top>325</top>
 						<width>150</width>
 						<height>25</height>

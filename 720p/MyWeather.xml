@@ -114,7 +114,7 @@
 			</control>
 			<control type="label">
 				<description>weather location label</description>
-				<left>1268</left>
+				<left>768</left>
 				<top>5</top>
 				<width>500</width>
 				<height>20</height>
@@ -127,7 +127,7 @@
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<control type="label">
-			<left>1268</left>
+			<left>68</left>
 			<top>696</top>
 			<width>1200</width>
 			<height>20</height>
