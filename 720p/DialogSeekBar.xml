@@ -5,19 +5,19 @@
 		<control type="group">
 			<include>dialogeffect</include>
 			<visible>![Window.IsVisible(Notification) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
-			<posx>440</posx>
-			<posy>0</posy>
+			<left>440</left>
+			<top>0</top>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>400</width>
 				<height>35</height>
 				<texture border="16,0,16,0">popup-small.png</texture>
 			</control>
 			<control type="label">
 				<description>Time Label</description>
-				<posx>93</posx>
-				<posy>4</posy>
+				<left>93</left>
+				<top>4</top>
 				<width>90</width>
 				<height>25</height>
 				<font>font-18</font>
@@ -29,8 +29,8 @@
 			</control>
 			<control type="progress">
 				<description>Progressbar Cache</description>
-				<posx>100</posx>
-				<posy>9</posy>
+				<left>100</left>
+				<top>9</top>
 				<width>205</width>
 				<height>15</height>
 				<info>Player.ProgressCache</info>
@@ -38,8 +38,8 @@
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>100</posx>
-				<posy>9</posy>
+				<left>100</left>
+				<top>9</top>
 				<width>205</width>
 				<height>15</height>
 				<info>Player.Progress</info>
@@ -47,8 +47,8 @@
 			</control>
 			<control type="progress">
 				<description>Player Caching Progress Bar</description>
-				<posx>100</posx>
-				<posy>9</posy>
+				<left>100</left>
+				<top>9</top>
 				<width>205</width>
 				<height>15</height>
 				<midtexture border="10,0,10,0">ProgressBuffer.png</midtexture>
@@ -57,8 +57,8 @@
 			</control>
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
-				<posx>104</posx>
-				<posy>12</posy>
+				<left>104</left>
+				<top>12</top>
 				<width>198</width>
 				<height>9</height>
 				<texturesliderbar>seekslider.png</texturesliderbar>
@@ -68,8 +68,8 @@
 			</control>
 			<control type="label">
 				<description>Label</description>
-				<posx>100</posx>
-				<posy>3</posy>
+				<left>100</left>
+				<top>3</top>
 				<width>205</width>
 				<height>25</height>
 				<align>center</align>
@@ -81,8 +81,8 @@
 			</control>
 			<control type="label">
 				<description>Duration Label</description>
-				<posx>312</posx>
-				<posy>4</posy>
+				<left>312</left>
+				<top>4</top>
 				<width>90</width>
 				<height>25</height>
 				<font>font-18</font>
@@ -94,54 +94,54 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>1000</posx>
-			<posy>500</posy>
+			<left>1000</left>
+			<top>500</top>
 			<animation effect="slide" start="280,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="280,0" time="300" tween="quadratic" easing="in">Hidden</animation>
 			<include condition="Skin.HasSetting(ClearArt)">clearart-dialogseekbar</include>
 			<visible>Player.Paused</visible>
 			<control type="group">
-				<posx>30</posx>
-				<posy>-25</posy>
+				<left>30</left>
+				<top>-25</top>
 				<width>370</width>
 				<height>190</height>
 				<camera x="150" y="80"/>
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
 				<visible>[VideoPlayer.Content(Episodes) + [!Skin.HasSetting(ClearArt) | [String.IsEmpty(Control.GetLabel(7019)) + String.IsEmpty(Control.GetLabel(7020))] | Skin.HasSetting(Safemode) | String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)] + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD)] | [VideoPlayer.Content(Movies) + [String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]]</visible>
 				<control type="image">
-					<posx>-52</posx>
-					<posy>44</posy>
+					<left>-52</left>
+					<top>44</top>
 					<width>279</width>
 					<height>157</height>
 					<texture>$INFO[Player.Art(thumb)]</texture>
 				</control>
 				<control type="image">
-					<posx>-100</posx>
-					<posy>30</posy>
+					<left>-100</left>
+					<top>30</top>
 					<width>370</width>
 					<height>190</height>
 					<texture>movie-frame.png</texture>
 				</control>
 			</control>
 			<control type="group">
-				<posx>30</posx>
-				<posy>-25</posy>
+				<left>30</left>
+				<top>-25</top>
 				<width>157</width>
 				<height>206</height>
 				<camera x="150" y="80"/>
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
 				<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
 				<control type="image">
-					<posx>138</posx>
-					<posy>18</posy>
+					<left>138</left>
+					<top>18</top>
 					<width>140</width>
 					<height>200</height>
 					<texture>$INFO[Player.Art(thumb)]</texture>
 				</control>
 				<control type="image">
-					<posx>138</posx>
-					<posy>0</posy>
+					<left>138</left>
+					<top>0</top>
 					<width>150</width>
 					<height>232</height>
 					<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>
@@ -149,23 +149,23 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>30</posx>
-				<posy>-30</posy>
+				<left>30</left>
+				<top>-30</top>
 				<width>228</width>
 				<height>208</height>
 				<camera x="150" y="80"/>
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
 				<control type="image">
-					<posx>76</posx>
-					<posy>16</posy>
+					<left>76</left>
+					<top>16</top>
 					<width>200</width>
 					<height>200</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
 					<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
 				</control>
 				<control type="image">
-					<posx>44</posx>
-					<posy>2</posy>
+					<left>44</left>
+					<top>2</top>
 					<width>248</width>
 					<height>228</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>

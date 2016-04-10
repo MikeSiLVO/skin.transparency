@@ -3,8 +3,8 @@
 	<defaultcontrol>5</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -13,22 +13,22 @@
 		</control>
 		<control type="group">
 			<control type="image">
-				<posx>0</posx>
-				<posy>585</posy>
+				<left>0</left>
+				<top>585</top>
 				<width>1280</width>
 				<height>115</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
-				<posx>50</posx>
-				<posy>510</posy>
+				<left>50</left>
+				<top>510</top>
 				<width>156</width>
 				<height>210</height>
 				<texture>$VAR[DialogPictureInfoImage]</texture>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>597</posy>
+				<left>247</left>
+				<top>597</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -39,8 +39,8 @@
 				<label>[B]$INFO[ListItem.label][/B]</label>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>622</posy>
+				<left>247</left>
+				<top>622</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -51,8 +51,8 @@
 				<label>$INFO[ListItem.PictureResolution,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21805]: [/COLOR][/UPPERCASE]]</label>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>642</posy>
+				<left>247</left>
+				<top>642</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -63,8 +63,8 @@
 				<label>$INFO[ListItem.PictureDateTime,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21820]: [/COLOR][/UPPERCASE]]</label>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>662</posy>
+				<left>247</left>
+				<top>662</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -78,8 +78,8 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -89,8 +89,8 @@
 			</control>
 			<control type="label">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>45</posy>
+				<left>40</left>
+				<top>45</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -101,15 +101,15 @@
 				<label>$LOCALIZE[13406]</label>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>84</posy>
+				<left>40</left>
+				<top>84</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="list" id="5">
-				<posx>280</posx>
-				<posy>108</posy>
+				<left>280</left>
+				<top>108</top>
 				<width>1200</width>
 				<height>350</height>
 				<onleft>49</onleft>
@@ -120,15 +120,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="1200" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>720</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>190</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -139,8 +139,8 @@
 						<label>[UPPERCASE][B]$INFO[ListItem.Label]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>210</posx>
-						<posy>0</posy>
+						<left>210</left>
+						<top>0</top>
 						<width>500</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -152,16 +152,16 @@
 				</itemlayout>
 				<focusedlayout width="1200" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>720</width>
 						<height>30</height>
 						<colordiffuse>FFFFFFFF</colordiffuse>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>720</width>
 						<height>30</height>
 						<colordiffuse>FFFFFFFF</colordiffuse>
@@ -170,8 +170,8 @@
 						<include>ListFocusScroll9</include>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>190</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -182,8 +182,8 @@
 						<label>[UPPERCASE][B]$INFO[ListItem.Label]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>210</posx>
-						<posy>0</posy>
+						<left>210</left>
+						<top>0</top>
 						<width>500</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -196,8 +196,8 @@
 			</control>
 			<control type="spincontrol" id="61">
 				<description>Next page button</description>
-				<posx>1180</posx>
-				<posy>699</posy>
+				<left>1180</left>
+				<top>699</top>
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onleft>5</onleft>
@@ -208,8 +208,8 @@
 				<showonepage>true</showonepage>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>480</posy>
+				<left>40</left>
+				<top>480</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>

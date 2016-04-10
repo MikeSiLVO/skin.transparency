@@ -3,8 +3,8 @@
 	<include name="WideIcon">
 		<control type="panel" id="54">
 			<visible>Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)</visible>
-			<posx>200</posx>
-			<posy>135</posy>
+			<left>200</left>
+			<top>135</top>
 			<width>880</width>
 			<height>448</height>
 			<onleft>9000</onleft>
@@ -17,8 +17,8 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="440" height="112">
 				<control type="image">
-					<posx>-8</posx>
-					<posy>-5</posy>
+					<left>-8</left>
+					<top>-5</top>
 					<width>446</width>
 					<height>102</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -26,8 +26,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>-8</posx>
-					<posy>-5</posy>
+					<left>-8</left>
+					<top>-5</top>
 					<width>446</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -37,8 +37,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>389</posx>
-					<posy>46</posy>
+					<left>389</left>
+					<top>46</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -46,8 +46,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
-					<posx>389</posx>
-					<posy>46</posy>
+					<left>389</left>
+					<top>46</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -55,8 +55,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>86</posy>
+					<left>0</left>
+					<top>86</top>
 					<width>430</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -69,8 +69,8 @@
 			</itemlayout>
 			<focusedlayout width="440" height="112">
 				<control type="image">
-					<posx>-8</posx>
-					<posy>-5</posy>
+					<left>-8</left>
+					<top>-5</top>
 					<width>446</width>
 					<height>102</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -86,8 +86,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>-8</posx>
-					<posy>-5</posy>
+					<left>-8</left>
+					<top>-5</top>
 					<width>446</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -105,8 +105,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>389</posx>
-					<posy>46</posy>
+					<left>389</left>
+					<top>46</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -122,8 +122,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
-					<posx>389</posx>
-					<posy>46</posy>
+					<left>389</left>
+					<top>46</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -139,8 +139,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>86</posy>
+					<left>0</left>
+					<top>86</top>
 					<width>430</width>
 					<height>25</height>
 					<font>font-20</font>

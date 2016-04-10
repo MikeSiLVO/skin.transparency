@@ -2,14 +2,14 @@
 <includes>
 	<include name="MusicMediaFlags">
 		<control type="group">
-			<posx>770</posx>
-			<posy>630</posy>
+			<left>770</left>
+			<top>630</top>
 			<width>103</width>
 			<height>76</height>
 		<!-- Audio Codec (ListItem) -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>103</width>
 				<height>76</height>
 				<animation effect="zoom" start="0" end="65" time="0" condition="Control.IsVisible(56) | Control.IsVisible(592)">Conditional</animation>
@@ -18,8 +18,8 @@
 			</control>
 		<!-- Audio Codec (MusicPlayer) -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>103</width>
 				<height>76</height>
 				<animation effect="zoom" start="0" end="65" time="0" condition="Control.IsVisible(56) | Control.IsVisible(592)">Conditional</animation>
@@ -28,8 +28,8 @@
 			</control>
 		<!-- Record Label -->
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>103</width>
 				<height>76</height>
 				<texture>mediaflag.png</texture>
@@ -37,8 +37,8 @@
 				<visible>Container.Content(Albums) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>10</posy>
+				<left>10</left>
+				<top>10</top>
 				<width>83</width>
 				<height>56</height>
 				<animation effect="zoom" start="0" end="65" time="0" condition="Control.IsVisible(56) | Control.IsVisible(592)">Conditional</animation>

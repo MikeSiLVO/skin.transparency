@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<default type="button">
-		<posx>0</posx>
-		<posy>0</posy>
 		<width>880</width>
 		<height>35</height>
 		<label>-</label>
@@ -18,8 +16,8 @@
 		<pulseonselect>true</pulseonselect>
 	</default>
 	<default type="edit">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>300</width>
 		<height>30</height>
 		<texturefocus border="7">list-focus.png</texturefocus>
@@ -33,33 +31,31 @@
 		<pulseonselect>true</pulseonselect>
 	</default>
 	<default type="fadelabel">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 	</default>
 	<default type="image">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texture>-</texture>
 	</default>
 	<default type="label">
-		<posx>0</posx>
-		<posy>0</posy>
 		<label>-</label>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<scrollsuffix>     -     </scrollsuffix>
 	</default>
 	<default type="mover">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 	</default>
 	<default type="progress">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texturebg border="10,0,10,0">Progress-Back.png</texturebg>
 		<lefttexture>-</lefttexture>
 		<midtexture border="10,0,10,0">Progress-Mid.png</midtexture>
@@ -67,8 +63,8 @@
 		<overlaytexture/>
 	</default>
 	<default type="radiobutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>880</width>
 		<height>35</height>
 		<radiowidth>24</radiowidth>
@@ -90,14 +86,14 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="resize">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 	</default>
 	<default type="selectbutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>300</width>
 		<height>35</height>
 		<label>-</label>
@@ -134,8 +130,8 @@
 		<disabledcolor>darkgrey</disabledcolor>
 	</default>
 	<default type="spincontrol">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<textureup>scroll-up-2.png</textureup>
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
@@ -155,8 +151,8 @@
 		<pulseonselect>true</pulseonselect>
 	</default>
 	<default type="spincontrolex">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>300</width>
 		<height>30</height>
 		<spinwidth>33</spinwidth>
@@ -178,16 +174,16 @@
 		<pulseonselect>true</pulseonselect>
 	</default>
 	<default type="textbox">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>410</width>
 		<height>213</height>
 		<textcolor>white</textcolor>
 		<font>font-20</font>
 	</default>
 	<default type="togglebutton">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>20</width>
 		<height>20</height>
 		<texturefocus>scroll-up-focus.png</texturefocus>

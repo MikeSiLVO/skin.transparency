@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
-		<posx>290</posx>
-		<posy>210</posy>
+		<left>290</left>
+		<top>210</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>700</width>
 			<height>300</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
-			<posx>638</posx>
-			<posy>35</posy>
+			<left>638</left>
+			<top>35</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -26,8 +26,8 @@
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>0</width>
 			<height>0</height>
 			<font>-</font>
@@ -35,8 +35,8 @@
 		</control>
 		<control type="label">
 			<description>heading label</description>
-			<posx>40</posx>
-			<posy>40</posy>
+			<left>40</left>
+			<top>40</top>
 			<width>620</width>
 			<height>30</height>
 			<align>center</align>
@@ -46,15 +46,15 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>40</posx>
-			<posy>78</posy>
+			<left>40</left>
+			<top>78</top>
 			<width>620</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="textbox" id="9">
-			<posx>40</posx>
-			<posy>102</posy>
+			<left>40</left>
+			<top>102</top>
 			<width>620</width>
 			<height>95</height>
 			<align>center</align>
@@ -64,15 +64,15 @@
 		</control>
 		<control type="progress" id="20">
 			<description>Progressbar</description>
-			<posx>37</posx>
-			<posy>181</posy>
+			<left>37</left>
+			<top>181</top>
 			<width>624</width>
 			<height>15</height>
 			<info>System.Progressbar</info>
 		</control>
 		<control type="grouplist">
-			<posx>50</posx>
-			<posy>215</posy>
+			<left>50</left>
+			<top>215</top>
 			<width>600</width>
 			<height>35</height>
 			<align>center</align>

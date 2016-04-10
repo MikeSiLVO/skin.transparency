@@ -2,24 +2,24 @@
 <window>
 	<defaultcontrol always="false">101</defaultcontrol>
 	<coordinates>
-		<posx>240</posx>
-		<posy>20</posy>
+		<left>240</left>
+		<top>20</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
 			<include>DialogFade4</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>800</width>
 				<height>525</height>
 				<texture border="17">panel.png</texture>
 				<bordersize>11</bordersize>
 			</control>
 			<control type="button">
-				<posx>744</posx>
-				<posy>32</posy>
+				<left>744</left>
+				<top>32</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -29,8 +29,8 @@
 			</control>
 			<control type="label">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>40</posy>
+				<left>40</left>
+				<top>40</top>
 				<width>720</width>
 				<height>30</height>
 				<label>$ADDON[script.cu.lrclyrics 32199]</label>
@@ -44,15 +44,15 @@
 				<visible>false</visible>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>78</posy>
+				<left>40</left>
+				<top>78</top>
 				<width>720</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="list" id="110">
-				<posx>45</posx>
-				<posy>90</posy>
+				<left>45</left>
+				<top>90</top>
 				<width>710</width>
 				<height>380</height>
 				<onleft>111</onleft>
@@ -63,15 +63,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -83,15 +83,15 @@
 				</itemlayout>
 				<focusedlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<visible>Control.HasFocus(110)</visible>
@@ -99,8 +99,8 @@
 						<include>ListFocusScroll15</include>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -115,8 +115,8 @@
 			</control>
 			<control type="spincontrol" id="111">
 				<description>Next page button</description>
-				<posx>690</posx>
-				<posy>475</posy>
+				<left>690</left>
+				<top>475</top>
 				<subtype>page</subtype>
 				<font>font-20</font>
 				<onleft>110</onleft>
@@ -128,8 +128,8 @@
 				<visible>Control.IsVisible(110)</visible>
 			</control>
 			<control type="list" id="120">
-				<posx>45</posx>
-				<posy>120</posy>
+				<left>45</left>
+				<top>120</top>
 				<width>710</width>
 				<height>350</height>
 				<onleft>121</onleft>
@@ -141,15 +141,15 @@
 				<animation effect="slide" start="0,0" end="20,0" time="0" condition="!Control.IsVisible(121)">Conditional</animation>
 				<itemlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -161,15 +161,15 @@
 				</itemlayout>
 				<focusedlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<visible>Control.HasFocus(120)</visible>
@@ -177,8 +177,8 @@
 						<include>ListFocusScroll10</include>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>690</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -191,8 +191,8 @@
 			</control>
 			<control type="spincontrol" id="121">
 				<description>Next page button</description>
-				<posx>690</posx>
-				<posy>475</posy>
+				<left>690</left>
+				<top>475</top>
 				<subtype>page</subtype>
 				<font>font-20</font>
 				<onleft>120</onleft>

@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -21,8 +21,8 @@
 		</control>
 		<control type="image">
 			<description>album and song level fanart</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container.Art(artist.fanart)]</texture>
@@ -35,8 +35,8 @@
 		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
 		<control type="image">
 			<description>artist level fanart</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -47,8 +47,8 @@
 			<visible>![Skin.HasSetting(MusicExtraFanart) + !String.IsEmpty(Control.GetLabel(6110))] + !String.IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Skin.String(Music_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
@@ -96,7 +96,7 @@
 			<include>Fanart-AlbumsSongs_Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -186,8 +186,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(591) | Control.IsVisible(595)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

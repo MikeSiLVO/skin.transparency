@@ -5,15 +5,15 @@
 	<controls>
 		<control type="image" id="999">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>380</width>
 			<height>720</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
-			<posx>325</posx>
-			<posy>40</posy>
+			<left>325</left>
+			<top>40</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -23,8 +23,8 @@
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<posx>40</posx>
-			<posy>45</posy>
+			<left>40</left>
+			<top>45</top>
 			<width>300</width>
 			<height>30</height>
 			<font>font-30c</font>
@@ -34,22 +34,22 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>85</posx>
-			<posy>75</posy>
+			<left>85</left>
+			<top>75</top>
 			<width>210</width>
 			<height>2</height>
 			<texture border="30,0,30,0">separator.png</texture>
 		</control>
 		<control type="grouplist" id="996">
 			<description>grouplist for context buttons</description>
-			<posx>40</posx>
-			<posy>85</posy>
+			<left>40</left>
+			<top>85</top>
 			<width>300</width>
 			<height min="10" max="595">auto</height>
 			<itemgap>0</itemgap>
 			<control type="button" id="1245">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>300</width>
 				<height>35</height>
 				<label>$VAR[ContextMenu]</label>
@@ -65,8 +65,8 @@
 		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>300</width>
 			<height>35</height>
 			<font>font-20</font>

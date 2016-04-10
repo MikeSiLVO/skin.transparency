@@ -4,8 +4,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
@@ -17,8 +17,8 @@
 			<visible>!Window.IsVisible(Programs) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-programs.jpg" background="true">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
@@ -31,8 +31,8 @@
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -41,8 +41,8 @@
 		</control>
 		<control type="group">
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -52,8 +52,8 @@
 			</control>
 			<control type="label" id="2">
 				<description>header label</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -63,16 +63,16 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label" id="3">
 				<description>List label</description>
-				<posx>200</posx>
-				<posy>100</posy>
+				<left>200</left>
+				<top>100</top>
 				<width>880</width>
 				<height>30</height>
 				<align>left</align>
@@ -82,8 +82,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="10">
-				<posx>200</posx>
-				<posy>140</posy>
+				<left>200</left>
+				<top>140</top>
 				<width>880</width>
 				<height>465</height>
 				<onup>9001</onup>
@@ -94,15 +94,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="880" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>860</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -114,15 +114,15 @@
 				</itemlayout>
 				<focusedlayout width="880" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<colordiffuse>FFFFFFFF</colordiffuse>
@@ -131,8 +131,8 @@
 						<include>ListFocusScroll12</include>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>860</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -144,8 +144,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1090</posx>
-				<posy>140</posy>
+				<left>1090</left>
+				<top>140</top>
 				<width>20</width>
 				<height>467</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -159,20 +159,20 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>640</posy>
+				<left>0</left>
+				<top>640</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="group" id="9001">
-				<posx>140</posx>
-				<posy>665</posy>
+				<left>140</left>
+				<top>665</top>
 				<height>35</height>
 				<control type="button" id="18">
 					<description>Ok Button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -191,8 +191,8 @@
 				</control>
 				<control type="button" id="19">
 					<description>Cancel Button</description>
-					<posx>200</posx>
-					<posy>0</posy>
+					<left>200</left>
+					<top>0</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -211,13 +211,13 @@
 				</control>
 			</control>
 			<control type="group" id="9000">
-				<posx>140</posx>
-				<posy>665</posy>
+				<left>140</left>
+				<top>665</top>
 				<height>35</height>
 				<control type="button" id="13">
 					<description>Add Button</description>
-					<posx>400</posx>
-					<posy>0</posy>
+					<left>400</left>
+					<top>0</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -236,8 +236,8 @@
 				</control>
 				<control type="button" id="14">
 					<description>Remove Button</description>
-					<posx>600</posx>
-					<posy>0</posy>
+					<left>600</left>
+					<top>0</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -256,8 +256,8 @@
 				</control>
 				<control type="button" id="11">
 					<description>Change Set Button</description>
-					<posx>800</posx>
-					<posy>0</posy>
+					<left>800</left>
+					<top>0</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -276,8 +276,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>140</posx>
-				<posy>665</posy>
+				<left>140</left>
+				<top>665</top>
 				<width>200</width>
 				<height>35</height>
 				<texture border="7">button-focus.png</texture>

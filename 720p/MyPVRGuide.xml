@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-tv.jpg" background="true">$INFO[Skin.String(Custom_Back_TV_Folder)]</imagepath>
@@ -38,7 +38,7 @@
 			<include>Grid-PVRGuideEPG_Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<control type="grouplist" id="9000">
@@ -80,8 +80,8 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

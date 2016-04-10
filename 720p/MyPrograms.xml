@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-programs.jpg" background="true">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
@@ -19,8 +19,8 @@
 			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -54,7 +54,7 @@
 			<include>Fanart-Programs-Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -106,8 +106,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

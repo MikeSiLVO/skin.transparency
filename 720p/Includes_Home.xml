@@ -2,8 +2,8 @@
 <includes>
 	<include name="home-videowindow">
 		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasVideo</visible>
@@ -12,8 +12,8 @@
 	<include name="home-visualisation1">
 		<control type="visualisation">
 			<description>visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasAudio + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
@@ -22,8 +22,8 @@
 	<include name="home-visualisation2">
 		<control type="visualisation">
 			<description>visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasAudio + [String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
@@ -31,8 +31,8 @@
 	</include>
 	<include name="home-artistslideshow">
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</imagepath>
@@ -50,8 +50,8 @@
 	<include name="home-fanart-fallback">
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -66,8 +66,8 @@
 	</include>
 	<include name="home-musicplayer-fanart">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
@@ -105,8 +105,8 @@
 	</include>
 	<include name="Home_Movies_Fanart">
 		<control type="multiimage">
-			<posx>315</posx>
-			<posy>20</posy>
+			<left>315</left>
+			<top>20</top>
 			<width>745</width>
 			<height>390</height>
 			<imagepath background="true">$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)]</imagepath>
@@ -123,8 +123,8 @@
 	</include>
 	<include name="Home_TVShows_Fanart">
 		<control type="multiimage">
-			<posx>320</posx>
-			<posy>40</posy>
+			<left>320</left>
+			<top>40</top>
 			<width>900</width>
 			<height>535</height>
 			<imagepath background="true">$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)]</imagepath>
@@ -140,8 +140,8 @@
 	</include>
 	<include name="Home_Music_Fanart">
 		<control type="multiimage">
-			<posx>390</posx>
-			<posy>170</posy>
+			<left>390</left>
+			<top>170</top>
 			<width>530</width>
 			<height>370</height>
 			<imagepath background="true">$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)]</imagepath>
@@ -163,11 +163,11 @@
 		<width>301</width>
 	</include>
 	<include name="HomeButtonLabelNormal">
-		<posx>14</posx>
+		<left>14</left>
 		<width>222</width>
 	</include>
 	<include name="HomeButtonLabelWide">
-		<posx>14</posx>
+		<left>14</left>
 		<width>272</width>
 	</include>
 	<include name="Home_Hor_Hitrect">
@@ -200,8 +200,8 @@
 	</include>
 	<include name="recentlyfanartmovies">
 		<control type="image" id="7021">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5044).ListItem.Property(FanartImage)]</texture>
@@ -214,8 +214,8 @@
 	</include>
 	<include name="recentlyfanartepisodes">
 		<control type="image" id="7022">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5045).ListItem.Property(FanartImage)]</texture>
@@ -228,8 +228,8 @@
 	</include>
 	<include name="recentlyfanartmusicvideos">
 		<control type="image" id="7025">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5048).ListItem.Property(FanartImage)]</texture>
@@ -242,8 +242,8 @@
 	</include>
 	<include name="recentlyfanartalbums">
 		<control type="image" id="7023">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5046).ListItem.Property(FanartImage)]</texture>
@@ -256,8 +256,8 @@
 	</include>
 	<include name="randomfanartaddons">
 		<control type="image" id="7024">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(5047).ListItem.Property(FanartImage)]</texture>
@@ -275,8 +275,8 @@
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icon_Top</include>
 			<control type="label">
 				<description>Conditions Label</description>
-				<posx>1139</posx>
-				<posy>52</posy>
+				<left>1139</left>
+				<top>52</top>
 				<width>172</width>
 				<height>72</height>
 				<label>[B]$INFO[Weather.Temperature][/B]</label>
@@ -290,8 +290,8 @@
 	<include name="Home_Animated_Weather_Icon_Top">
 		<control type="multiimage">
 			<description>Top Weather image</description>
-			<posx>1192</posx>
-			<posy>50</posy>
+			<left>1192</left>
+			<top>50</top>
 			<width>72</width>
 			<height>72</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -304,8 +304,8 @@
 	<include name="Home_Weather_Icon_Top">
 		<control type="image">
 			<description>Top Weather image</description>
-			<posx>1192</posx>
-			<posy>50</posy>
+			<left>1192</left>
+			<top>50</top>
 			<width>72</width>
 			<height>72</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
@@ -314,15 +314,15 @@
 	</include>
 	<include name="WeatherInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] + String.IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
@@ -331,8 +331,8 @@
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icon</include>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>875</posx>
-				<posy>15</posy>
+				<left>875</left>
+				<top>15</top>
 				<height>30</height>
 				<width>770</width>
 				<label>[B]$LOCALIZE[12600]:[/B]</label>
@@ -344,8 +344,8 @@
 			</control>
 			<control type="label">
 				<description>location label</description>
-				<posx>875</posx>
-				<posy>60</posy>
+				<left>875</left>
+				<top>60</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
@@ -356,8 +356,8 @@
 			</control>
 			<control type="label">
 				<description>Conditions Label</description>
-				<posx>875</posx>
-				<posy>85</posy>
+				<left>875</left>
+				<top>85</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
@@ -368,8 +368,8 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<posx>875</posx>
-				<posy>110</posy>
+				<left>875</left>
+				<top>110</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[Weather.Temperature]</label>
@@ -383,8 +383,8 @@
 	<include name="Home_Animated_Weather_Icon">
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>885</posx>
-			<posy>7</posy>
+			<left>885</left>
+			<top>7</top>
 			<width>136</width>
 			<height>136</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -396,8 +396,8 @@
 	<include name="Home_Weather_Icon">
 		<control type="image">
 			<description>Weather image</description>
-			<posx>885</posx>
-			<posy>7</posy>
+			<left>885</left>
+			<top>7</top>
 			<width>136</width>
 			<height>136</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
@@ -405,15 +405,15 @@
 	</include>
 	<include name="WeatherExtendedInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<visible>Container(5040).HasFocus(10) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] + !String.IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
@@ -422,8 +422,8 @@
 			<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icons</include>
 			<control type="label">
 				<description>location label</description>
-				<posx>895</posx>
-				<posy>5</posy>
+				<left>895</left>
+				<top>5</top>
 				<height>30</height>
 				<width>770</width>
 				<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
@@ -435,8 +435,8 @@
 			</control>
 			<control type="label">
 				<description>Conditions Label</description>
-				<posx>895</posx>
-				<posy>28</posy>
+				<left>895</left>
+				<top>28</top>
 				<height>30</height>
 				<width>770</width>
 				<label>[COLOR=lightblue]$LOCALIZE[33020]: [/COLOR]$INFO[Window(Weather).Property(Current.Condition)]   [COLOR=lightblue]$LOCALIZE[404]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.WindSpeed)] $INFO[Window(Weather).Property(Daily.1.ShortWindDirection)]</label>
@@ -447,8 +447,8 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<posx>895</posx>
-				<posy>48</posy>
+				<left>895</left>
+				<top>48</top>
 				<height>30</height>
 				<width>770</width>
 				<label>[COLOR=lightblue]$LOCALIZE[401]: [/COLOR]$INFO[Weather.Temperature]   [COLOR=lightblue]$LOCALIZE[419]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]   [COLOR=lightblue]$LOCALIZE[418]: [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)]</label>
@@ -459,8 +459,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>590</posx>
-				<posy>78</posy>
+				<left>590</left>
+				<top>78</top>
 				<width>80</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -471,8 +471,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>660</posx>
-				<posy>78</posy>
+				<left>660</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -483,8 +483,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>720</posx>
-				<posy>78</posy>
+				<left>720</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -495,8 +495,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>780</posx>
-				<posy>78</posy>
+				<left>780</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -507,8 +507,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>840</posx>
-				<posy>78</posy>
+				<left>840</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -519,8 +519,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>900</posx>
-				<posy>78</posy>
+				<left>900</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -531,8 +531,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>960</posx>
-				<posy>78</posy>
+				<left>960</left>
+				<top>78</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -543,8 +543,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>590</posx>
-				<posy>92</posy>
+				<left>590</left>
+				<top>92</top>
 				<width>80</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -554,8 +554,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>660</posx>
-				<posy>92</posy>
+				<left>660</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -565,8 +565,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>720</posx>
-				<posy>92</posy>
+				<left>720</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -576,8 +576,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>780</posx>
-				<posy>92</posy>
+				<left>780</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -587,8 +587,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>840</posx>
-				<posy>92</posy>
+				<left>840</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -598,8 +598,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>900</posx>
-				<posy>92</posy>
+				<left>900</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -609,8 +609,8 @@
 			</control>
 			<control type="label">
 				<description>Day label</description>
-				<posx>960</posx>
-				<posy>92</posy>
+				<left>960</left>
+				<top>92</top>
 				<width>60</width>
 				<height>20</height>
 				<font>font-15c</font>
@@ -623,8 +623,8 @@
 	<include name="Home_Animated_Weather_Icons">
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>920</posx>
-			<posy>0</posy>
+			<left>920</left>
+			<top>0</top>
 			<width>86</width>
 			<height>86</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -634,8 +634,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>610</posx>
-			<posy>109</posy>
+			<left>610</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
@@ -645,8 +645,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>670</posx>
-			<posy>109</posy>
+			<left>670</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
@@ -656,8 +656,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>730</posx>
-			<posy>109</posy>
+			<left>730</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
@@ -667,8 +667,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>790</posx>
-			<posy>109</posy>
+			<left>790</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
@@ -678,8 +678,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>850</posx>
-			<posy>109</posy>
+			<left>850</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
@@ -689,8 +689,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>910</posx>
-			<posy>109</posy>
+			<left>910</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
@@ -700,8 +700,8 @@
 		</control>
 		<control type="multiimage">
 			<description>Weather image</description>
-			<posx>970</posx>
-			<posy>109</posy>
+			<left>970</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
@@ -713,64 +713,64 @@
 	<include name="Home_Weather_Icons">
 		<control type="image">
 			<description>Weather image</description>
-			<posx>920</posx>
-			<posy>0</posy>
+			<left>920</left>
+			<top>0</top>
 			<width>86</width>
 			<height>86</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>610</posx>
-			<posy>109</posy>
+			<left>610</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>670</posx>
-			<posy>109</posy>
+			<left>670</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>730</posx>
-			<posy>109</posy>
+			<left>730</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>790</posx>
-			<posy>109</posy>
+			<left>790</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>850</posx>
-			<posy>109</posy>
+			<left>850</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>910</posx>
-			<posy>109</posy>
+			<left>910</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
 		</control>
 		<control type="image">
 			<description>Weather image</description>
-			<posx>970</posx>
-			<posy>109</posy>
+			<left>970</left>
+			<top>109</top>
 			<width>40</width>
 			<height>40</height>
 			<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
@@ -778,31 +778,31 @@
 	</include>
 	<include name="SystemInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<visible>Container(5040).HasFocus(12) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
 				<description>settings image</description>
-				<posx>885</posx>
-				<posy>3</posy>
+				<left>885</left>
+				<top>3</top>
 				<width>136</width>
 				<height>148</height>
 				<texture>homeinfo-system.png</texture>
 			</control>
 			<control type="label">
 				<description>Settings label</description>
-				<posx>875</posx>
-				<posy>15</posy>
+				<left>875</left>
+				<top>15</top>
 				<width>770</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[13000]:[/B]</label>
@@ -814,8 +814,8 @@
 			</control>
 			<control type="label">
 				<description>CPU Speed Label</description>
-				<posx>875</posx>
-				<posy>50</posy>
+				<left>875</left>
+				<top>50</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$LOCALIZE[13284] $INFO[System.cpufrequency]</label>
@@ -826,8 +826,8 @@
 			</control>
 			<control type="label">
 				<description>Free Memory Label</description>
-				<posx>875</posx>
-				<posy>70</posy>
+				<left>875</left>
+				<top>70</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$LOCALIZE[158]: $INFO[System.FreeMemory] / $INFO[System.Memory(total)]</label>
@@ -838,8 +838,8 @@
 			</control>
 			<control type="label">
 				<description>GPU Make Label</description>
-				<posx>875</posx>
-				<posy>90</posy>
+				<left>875</left>
+				<top>90</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$INFO[System.videoencoderinfo]</label>
@@ -850,8 +850,8 @@
 			</control>
 			<control type="label">
 				<description>IP Address label</description>
-				<posx>875</posx>
-				<posy>110</posy>
+				<left>875</left>
+				<top>110</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$LOCALIZE[150]: $INFO[Network.IPAddress]</label>
@@ -864,24 +864,24 @@
 	</include>
 	<include name="VideoInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<visible>Player.HasVideo</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
 				<description>Cover image</description>
-				<posx>882</posx>
-				<posy>6</posy>
+				<left>882</left>
+				<top>6</top>
 				<width>136</width>
 				<height>136</height>
 				<texture diffuse="thumb-diffuse.png">$INFO[Player.Art(thumb)]</texture>
@@ -889,16 +889,16 @@
 			</control>
 			<control type="image">
 				<description>Cover image</description>
-				<posx>900</posx>
-				<posy>16</posy>
+				<left>900</left>
+				<top>16</top>
 				<width>86</width>
 				<height>122</height>
 				<texture>$INFO[Player.Art(thumb)]</texture>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>900</posx>
-				<posy>5</posy>
+				<left>900</left>
+				<top>5</top>
 				<width>92</width>
 				<height>142</height>
 				<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>
@@ -906,8 +906,8 @@
 			</control>
 			<control type="image">
 				<description>Cover image</description>
-				<posx>775</posx>
-				<posy>4</posy>
+				<left>775</left>
+				<top>4</top>
 				<width>250</width>
 				<height>141</height>
 				<aspectratio align="center" scalediffuse="true">keep</aspectratio>
@@ -916,8 +916,8 @@
 			</control>
 			<control type="label">
 				<description>Year label</description>
-				<posx>870</posx>
-				<posy>15</posy>
+				<left>870</left>
+				<top>15</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$INFO[VideoPlayer.Year]</label>
@@ -930,8 +930,8 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>770</posx>
-				<posy>15</posy>
+				<left>770</left>
+				<top>15</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$VAR[IncludesHomeVideoInfoLabel1]</label>
@@ -944,8 +944,8 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>870</posx>
-				<posy>54</posy>
+				<left>870</left>
+				<top>54</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$INFO[VideoPlayer.Title]</label>
@@ -958,8 +958,8 @@
 			</control>
 			<control type="label">
 				<description>Genre label</description>
-				<posx>870</posx>
-				<posy>88</posy>
+				<left>870</left>
+				<top>88</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$INFO[VideoPlayer.Genre]</label>
@@ -971,8 +971,8 @@
 				<visible>!VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>770</posx>
-				<posy>88</posy>
+				<left>770</left>
+				<top>88</top>
 				<width>770</width>
 				<height>30</height>
 				<label>$VAR[IncludesHomeVideoInfoLabel2]</label>
@@ -983,8 +983,8 @@
 				<visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<control type="grouplist">
-				<posx>100</posx>
-				<posy>125</posy>
+				<left>100</left>
+				<top>125</top>
 				<height>30</height>
 				<align>right</align>
 				<width>770</width>
@@ -1005,8 +1005,8 @@
 					<height>15</height>
 					<control type="progress">
 						<description>Progressbar Cache</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>175</width>
 						<height>15</height>
 						<info>Player.ProgressCache</info>
@@ -1014,16 +1014,16 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>175</width>
 						<height>15</height>
 						<info>Player.Progress</info>
 					</control>
 					<control type="slider" id="888">
 						<description>Slider</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>175</width>
 						<height>15</height>
 						<action>seek</action>
@@ -1044,16 +1044,16 @@
 	</include>
 	<include name="TVInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<visible>Container(5040).HasFocus(5) + [PVR.IsRecording | PVR.HasTimer] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
@@ -1062,16 +1062,16 @@
 				<visible>!PVR.IsRecording + PVR.HasTimer</visible>
 				<control type="image">
 					<description>settings image</description>
-					<posx>885</posx>
-					<posy>10</posy>
+					<left>885</left>
+					<top>10</top>
 					<width>136</width>
 					<height>136</height>
 					<texture>homeinfo-pvrtimer.png</texture>
 				</control>
 				<control type="label">
 					<description>Recording label</description>
-					<posx>875</posx>
-					<posy>15</posy>
+					<left>875</left>
+					<top>15</top>
 					<height>30</height>
 					<width>770</width>
 					<label>[B]$LOCALIZE[19157][/B]</label>
@@ -1082,8 +1082,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>60</posy>
+					<left>875</left>
+					<top>60</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NextRecordingTitle]</label>
@@ -1094,8 +1094,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>85</posy>
+					<left>875</left>
+					<top>85</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NextRecordingChannel]</label>
@@ -1105,8 +1105,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>110</posy>
+					<left>875</left>
+					<top>110</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NextRecordingDateTime]</label>
@@ -1120,16 +1120,16 @@
 				<visible>PVR.IsRecording</visible>
 				<control type="image">
 					<description>settings image</description>
-					<posx>885</posx>
-					<posy>10</posy>
+					<left>885</left>
+					<top>10</top>
 					<width>136</width>
 					<height>136</height>
 					<texture>homeinfo-pvrrecord.png</texture>
 				</control>
 				<control type="label">
 					<description>Recording label</description>
-					<posx>875</posx>
-					<posy>15</posy>
+					<left>875</left>
+					<top>15</top>
 					<height>30</height>
 					<width>770</width>
 					<label>[B]$LOCALIZE[19158][/B]</label>
@@ -1140,8 +1140,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>60</posy>
+					<left>875</left>
+					<top>60</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NowRecordingTitle]</label>
@@ -1152,8 +1152,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>85</posy>
+					<left>875</left>
+					<top>85</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NowRecordingChannel]</label>
@@ -1163,8 +1163,8 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<posx>875</posx>
-					<posy>110</posy>
+					<left>875</left>
+					<top>110</top>
 					<height>30</height>
 					<width>770</width>
 					<label>$INFO[PVR.NowRecordingDateTime]</label>
@@ -1178,24 +1178,24 @@
 	</include>
 	<include name="MusicInfo">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<visible>Player.HasAudio</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
 				<description>cd image</description>
-				<posx>816</posx>
-				<posy>4</posy>
+				<left>816</left>
+				<top>4</top>
 				<width>142</width>
 				<height>142</height>
 				<texture diffuse="disc_mask.png">disc.png</texture>
@@ -1205,8 +1205,8 @@
 			<include condition="!Skin.HasSetting(CDArt)">cdart-home</include>
 			<control type="image">
 				<description>Cover image</description>
-				<posx>816</posx>
-				<posy>4</posy>
+				<left>816</left>
+				<top>4</top>
 				<width>142</width>
 				<height>142</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
@@ -1214,8 +1214,8 @@
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="image">
-				<posx>800</posx>
-				<posy>2</posy>
+				<left>800</left>
+				<top>2</top>
 				<width>160</width>
 				<height>146</height>
 				<texture>cdcase.png</texture>
@@ -1223,8 +1223,8 @@
 			</control>
 			<control type="label">
 				<description>Artist label</description>
-				<posx>790</posx>
-				<posy>15</posy>
+				<left>790</left>
+				<top>15</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[MusicPlayer.Artist]</label>
@@ -1236,8 +1236,8 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>790</posx>
-				<posy>54</posy>
+				<left>790</left>
+				<top>54</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[MusicPlayer.Title]</label>
@@ -1249,8 +1249,8 @@
 			</control>
 			<control type="label">
 				<description>Album Label</description>
-				<posx>790</posx>
-				<posy>88</posy>
+				<left>790</left>
+				<top>88</top>
 				<height>30</height>
 				<width>770</width>
 				<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
@@ -1260,8 +1260,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist">
-				<posx>20</posx>
-				<posy>122</posy>
+				<left>20</left>
+				<top>122</top>
 				<height>30</height>
 				<width>770</width>
 				<align>right</align>
@@ -1281,16 +1281,16 @@
 					<height>15</height>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>175</width>
 						<height>15</height>
 						<info>Player.Progress</info>
 					</control>
 					<control type="slider" id="888">
 						<description>Slider</description>
-						<posx>0</posx>
-						<posy>2</posy>
+						<left>0</left>
+						<top>2</top>
 						<width>175</width>
 						<height>15</height>
 						<action>seek</action>
@@ -1311,29 +1311,29 @@
 	</include>
 	<include name="RecentlyAddedMovies">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>[Container(5040).HasFocus(1) | Container(5040).HasFocus(2)] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<posx>927</posx>
-				<posy>25</posy>
+				<left>927</left>
+				<top>25</top>
 				<width>90</width>
 				<height>124</height>
 				<texture>gamecase-shadow.png</texture>
 			</control>
 			<control type="image">
-				<posx>933</posx>
-				<posy>31</posy>
+				<left>933</left>
+				<top>31</top>
 				<width>78</width>
 				<height>112</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1341,8 +1341,8 @@
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
-				<posx>922</posx>
-				<posy>5</posy>
+				<left>922</left>
+				<top>5</top>
 				<height>20</height>
 				<width>100</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31400][/B][/UPPERCASE]</label>
@@ -1354,8 +1354,8 @@
 				<visible>!Skin.HasSetting(HomeRecentMovies)</visible>
 			</control>
 			<control type="label">
-				<posx>917</posx>
-				<posy>5</posy>
+				<left>917</left>
+				<top>5</top>
 				<height>20</height>
 				<width>110</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
@@ -1367,8 +1367,8 @@
 				<visible>Skin.HasSetting(HomeRandomMovies)</visible>
 			</control>
 			<control type="label">
-				<posx>917</posx>
-				<posy>5</posy>
+				<left>917</left>
+				<top>5</top>
 				<height>20</height>
 				<width>110</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
@@ -1381,8 +1381,8 @@
 			</control>
 			<control type="list" id="5044">
 				<orientation>vertical</orientation>
-				<posx>144</posx>
-				<posy>10</posy>
+				<left>144</left>
+				<top>10</top>
 				<height>120</height>
 				<width>770</width>
 				<onup>20</onup>
@@ -1392,8 +1392,8 @@
 				<onright>9000</onright>
 				<itemlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1406,8 +1406,8 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1422,8 +1422,8 @@
 				</itemlayout>
 				<focusedlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1436,8 +1436,8 @@
 						<visible>!Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1450,8 +1450,8 @@
 						<visible>Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1464,8 +1464,8 @@
 						<visible>!Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1485,8 +1485,8 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>914</posx>
-				<posy>127</posy>
+				<left>914</left>
+				<top>127</top>
 				<height>20</height>
 				<width>500</width>
 				<label>[UPPERCASE][B]$LOCALIZE[342]: $INFO[Window.Property(Movies.Count)][/B][/UPPERCASE]</label>
@@ -1500,29 +1500,29 @@
 	</include>
 	<include name="RecentlyAddedTVShows">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(3) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<posx>811</posx>
-				<posy>24</posy>
+				<left>811</left>
+				<top>24</top>
 				<width>213</width>
 				<height>127</height>
 				<texture border="10">video-shadow.png</texture>
 			</control>
 			<control type="image">
-				<posx>820</posx>
-				<posy>32</posy>
+				<left>820</left>
+				<top>32</top>
 				<width>195</width>
 				<height>110</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1530,8 +1530,8 @@
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31400][/B][/UPPERCASE]</label>
@@ -1543,8 +1543,8 @@
 				<visible>!Skin.HasSetting(HomeRecentTVShows)</visible>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
@@ -1556,8 +1556,8 @@
 				<visible>Skin.HasSetting(HomeRandomTVShows)</visible>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
@@ -1570,8 +1570,8 @@
 			</control>
 			<control type="list" id="5045">
 				<orientation>vertical</orientation>
-				<posx>35</posx>
-				<posy>10</posy>
+				<left>35</left>
+				<top>10</top>
 				<height>120</height>
 				<width>770</width>
 				<onup>20</onup>
@@ -1581,8 +1581,8 @@
 				<onright>9000</onright>
 				<itemlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1595,8 +1595,8 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1611,8 +1611,8 @@
 				</itemlayout>
 				<focusedlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1625,8 +1625,8 @@
 						<visible>!Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1639,8 +1639,8 @@
 						<visible>Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1653,8 +1653,8 @@
 						<visible>!Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1674,8 +1674,8 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>805</posx>
-				<posy>127</posy>
+				<left>805</left>
+				<top>127</top>
 				<height>20</height>
 				<width>500</width>
 				<label>[UPPERCASE][B]$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]  $LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)][/B][/UPPERCASE]</label>
@@ -1689,29 +1689,29 @@
 	</include>
 	<include name="RecentlyAddedMusicVideos">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(4) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<posx>811</posx>
-				<posy>24</posy>
+				<left>811</left>
+				<top>24</top>
 				<width>213</width>
 				<height>127</height>
 				<texture border="10">video-shadow.png</texture>
 			</control>
 			<control type="image">
-				<posx>820</posx>
-				<posy>32</posy>
+				<left>820</left>
+				<top>32</top>
 				<width>195</width>
 				<height>110</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1719,8 +1719,8 @@
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31400][/B][/UPPERCASE]</label>
@@ -1732,8 +1732,8 @@
 				<visible>!Skin.HasSetting(HomeRecentMusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
@@ -1745,8 +1745,8 @@
 				<visible>Skin.HasSetting(HomeRandomMusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>820</posx>
-				<posy>5</posy>
+				<left>820</left>
+				<top>5</top>
 				<height>20</height>
 				<width>195</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
@@ -1759,8 +1759,8 @@
 			</control>
 			<control type="list" id="5048">
 				<orientation>vertical</orientation>
-				<posx>35</posx>
-				<posy>10</posy>
+				<left>35</left>
+				<top>10</top>
 				<height>120</height>
 				<width>770</width>
 				<onup>20</onup>
@@ -1770,8 +1770,8 @@
 				<onright>9000</onright>
 				<itemlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1784,8 +1784,8 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1800,8 +1800,8 @@
 				</itemlayout>
 				<focusedlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1814,8 +1814,8 @@
 						<visible>!Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1828,8 +1828,8 @@
 						<visible>Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1842,8 +1842,8 @@
 						<visible>!Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>16</posy>
+						<left>0</left>
+						<top>16</top>
 						<height>16</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1863,8 +1863,8 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>805</posx>
-				<posy>127</posy>
+				<left>805</left>
+				<top>127</top>
 				<height>20</height>
 				<width>500</width>
 				<label>[UPPERCASE][B]$LOCALIZE[20389]: $INFO[Window.Property(MusicVideos.Count)][/B][/UPPERCASE]</label>
@@ -1878,38 +1878,38 @@
 	</include>
 	<include name="RecentlyAddedAlbums">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(6) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<posx>896</posx>
-				<posy>31</posy>
+				<left>896</left>
+				<top>31</top>
 				<width>112</width>
 				<height>112</height>
 				<texture fallback="DefaultAlbum.png" background="true">$INFO[Container(5046).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="image">
-				<posx>884</posx>
-				<posy>29</posy>
+				<left>884</left>
+				<top>29</top>
 				<width>128</width>
 				<height>116</height>
 				<texture>cdcase.png</texture>
 				<visible>!Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="label">
-				<posx>884</posx>
-				<posy>5</posy>
+				<left>884</left>
+				<top>5</top>
 				<height>20</height>
 				<width>128</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31400][/B][/UPPERCASE]</label>
@@ -1921,8 +1921,8 @@
 				<visible>!Skin.HasSetting(HomeRecentAlbums)</visible>
 			</control>
 			<control type="label">
-				<posx>884</posx>
-				<posy>5</posy>
+				<left>884</left>
+				<top>5</top>
 				<height>20</height>
 				<width>128</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
@@ -1934,8 +1934,8 @@
 				<visible>Skin.HasSetting(HomeRandomAlbums)</visible>
 			</control>
 			<control type="label">
-				<posx>884</posx>
-				<posy>5</posy>
+				<left>884</left>
+				<top>5</top>
 				<height>20</height>
 				<width>128</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31189][/B][/UPPERCASE]</label>
@@ -1948,8 +1948,8 @@
 			</control>
 			<control type="list" id="5046">
 				<orientation>vertical</orientation>
-				<posx>95</posx>
-				<posy>10</posy>
+				<left>95</left>
+				<top>10</top>
 				<height>120</height>
 				<width>770</width>
 				<onup>20</onup>
@@ -1959,8 +1959,8 @@
 				<onright>9000</onright>
 				<itemlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -1973,8 +1973,8 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -1989,8 +1989,8 @@
 				</itemlayout>
 				<focusedlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -2003,8 +2003,8 @@
 						<visible>!Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -2017,8 +2017,8 @@
 						<visible>Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -2031,8 +2031,8 @@
 						<visible>!Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -2052,8 +2052,8 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>864</posx>
-				<posy>127</posy>
+				<left>864</left>
+				<top>127</top>
 				<height>20</height>
 				<width>500</width>
 				<label>[UPPERCASE][B]$LOCALIZE[133]: $INFO[Window.Property(Music.ArtistsCount)]  $LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]  $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)][/B][/UPPERCASE]</label>
@@ -2067,30 +2067,30 @@
 	</include>
 	<include name="RandomAddons">
 		<control type="group">
-			<posx>250</posx>
-			<posy>490</posy>
+			<left>250</left>
+			<top>490</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-68" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
 			<visible>Container(5040).HasFocus(8) + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<control type="image">
 				<description>gradient</description>
-				<posx>430</posx>
-				<posy>0</posy>
+				<left>430</left>
+				<top>0</top>
 				<width>600</width>
 				<height>150</height>
 				<texture border="2">gradient.png</texture>
 			</control>
 			<control type="image">
-				<posx>896</posx>
-				<posy>31</posy>
+				<left>896</left>
+				<top>31</top>
 				<width>112</width>
 				<height>112</height>
 				<texture fallback="DefaultAddon.png" background="true" diffuse="thumb-diffuse.png">$INFO[Container(5047).ListItem.Thumb]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
-				<posx>888</posx>
-				<posy>5</posy>
+				<left>888</left>
+				<top>5</top>
 				<height>20</height>
 				<width>128</width>
 				<label>[UPPERCASE][B]$LOCALIZE[31175][/B][/UPPERCASE]</label>
@@ -2102,8 +2102,8 @@
 			</control>
 			<control type="list" id="5047">
 				<orientation>vertical</orientation>
-				<posx>105</posx>
-				<posy>10</posy>
+				<left>105</left>
+				<top>10</top>
 				<height>120</height>
 				<width>770</width>
 				<onup>20</onup>
@@ -2113,8 +2113,8 @@
 				<onright>9000</onright>
 				<itemlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -2127,8 +2127,8 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -2143,8 +2143,8 @@
 				</itemlayout>
 				<focusedlayout width="770" height="40">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -2157,8 +2157,8 @@
 						<visible>!Control.HasFocus(5047)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-19</font>
@@ -2171,8 +2171,8 @@
 						<visible>Control.HasFocus(5047)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -2185,8 +2185,8 @@
 						<visible>!Control.HasFocus(5047)</visible>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>17</posy>
+						<left>0</left>
+						<top>17</top>
 						<height>17</height>
 						<width>770</width>
 						<font>font-17</font>
@@ -2273,8 +2273,8 @@
 				</content>
 			</control>
 			<control type="label">
-				<posx>874</posx>
-				<posy>127</posy>
+				<left>874</left>
+				<top>127</top>
 				<height>20</height>
 				<width>500</width>
 				<label>[UPPERCASE][B]$LOCALIZE[24001]: $INFO[Window.Property(RandomAddon.Count)][/B][/UPPERCASE]</label>
@@ -2289,8 +2289,8 @@
 	<include name="VerticalMenu">
 		<include>Window_OpenClose_Home_Panel_Animation</include>
 		<control type="group">
-			<posx>12</posx>
-			<posy>318</posy>
+			<left>12</left>
+			<top>318</top>
 			<width>301</width>
 			<height>13</height>
 			<animation effect="slide" end="0,-29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,1)">Conditional</animation>
@@ -2304,8 +2304,8 @@
 			<animation effect="slide" end="0,-29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,9)">Conditional</animation>
 			<animation effect="slide" end="0,-29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,10)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>13</height>
 				<texture border="30,0,30,0">shadow-home-top.png</texture>
 				<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
@@ -2314,8 +2314,8 @@
 		</control>
 		<control type="list" id="5040">
 			<orientation>vertical</orientation>
-			<posx>12</posx>
-			<posy>331</posy>
+			<left>12</left>
+			<top>331</top>
 			<width>301</width>
 			<height>638</height>
 			<onup>5040</onup>
@@ -2334,15 +2334,15 @@
 			<animation effect="slide" end="0,-29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,10)">Conditional</animation>
 			<itemlayout width="251" height="58">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>58</height>
 					<texture border="15">Button_Home_NoFocus.png</texture>
 					<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
 					<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonWide</include>
 				</control>
 				<control type="label">
-					<posy>1</posy>
+					<top>1</top>
 					<height>58</height>
 					<font>font-28c</font>
 					<textcolor>white</textcolor>
@@ -2356,8 +2356,8 @@
 			</itemlayout>
 			<focusedlayout width="251" height="58">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>58</height>
 					<texture border="15">Button_Home_NoFocus.png</texture>
 					<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
@@ -2365,8 +2365,8 @@
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<height>58</height>
 					<texture border="15">Button_Home_Focus.png</texture>
 					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
@@ -2375,7 +2375,7 @@
 					<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonWide</include>
 				</control>
 				<control type="label">
-					<posy>1</posy>
+					<top>1</top>
 					<height>58</height>
 					<font>font-28c</font>
 					<textcolor>lightblue</textcolor>
@@ -2389,7 +2389,7 @@
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
-					<posy>1</posy>
+					<top>1</top>
 					<height>58</height>
 					<font>font-28c</font>
 					<textcolor>blue</textcolor>
@@ -2422,8 +2422,8 @@
 			</content>
 		</control>
 		<control type="group">
-			<posx>12</posx>
-			<posy>389</posy>
+			<left>12</left>
+			<top>389</top>
 			<width>301</width>
 			<height>13</height>
 			<animation effect="slide" end="0,29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,1)">Conditional</animation>
@@ -2437,8 +2437,8 @@
 			<animation effect="slide" end="0,29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,9)">Conditional</animation>
 			<animation effect="slide" end="0,29" time="0" condition="Integer.IsGreater(Container(5040).NumItems,10)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<height>13</height>
 				<texture border="30,0,30,0">shadow-home-bottom.png</texture>
 				<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
@@ -2449,13 +2449,13 @@
 	<include name="HorizontalMenu">
 		<include>Window_OpenClose_Home_Panel_Hor_Animation</include>
 		<control type="group">
-			<posx>0</posx>
-			<posy>10</posy>
+			<left>0</left>
+			<top>10</top>
 			<width>1280</width>
 			<height>720</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>585</posy>
+				<left>0</left>
+				<top>585</top>
 				<width>1280</width>
 				<height>16</height>
 				<texture>shadow-top.png</texture>
@@ -2463,8 +2463,8 @@
 		</control>
 		<control type="wraplist" id="5040">
 			<orientation>horizontal</orientation>
-			<posx>-104</posx>
-			<posy>611</posy>
+			<left>-104</left>
+			<top>611</top>
 			<width>1722</width>
 			<height>60</height>
 			<onup>8000</onup>
@@ -2477,15 +2477,15 @@
 			<animation effect="slide" start="0,0" end="-260,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
 			<itemlayout width="287" height="60" condition="Skin.HasSetting(WideHomeMenu)">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>287</width>
 					<height>60</height>
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>269</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2498,16 +2498,16 @@
 			</itemlayout>
 			<focusedlayout width="287" height="60" condition="Skin.HasSetting(WideHomeMenu)">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>287</width>
 					<height>60</height>
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>287</width>
 					<height>60</height>
 					<texture border="15">Button_Home_Focus_Hor.png</texture>
@@ -2515,8 +2515,8 @@
 					<visible>Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>269</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2529,8 +2529,8 @@
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>269</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2545,15 +2545,15 @@
 			</focusedlayout>
 			<itemlayout width="213" height="60" condition="!Skin.HasSetting(WideHomeMenu)">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>213</width>
 					<height>60</height>
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>194</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2566,16 +2566,16 @@
 			</itemlayout>
 			<focusedlayout width="213" height="60" condition="!Skin.HasSetting(WideHomeMenu)">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>213</width>
 					<height>60</height>
 					<texture border="15">Button_Home_NoFocus_Hor.png</texture>
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>213</width>
 					<height>60</height>
 					<texture border="15">Button_Home_Focus_Hor.png</texture>
@@ -2583,8 +2583,8 @@
 					<visible>Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>194</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2597,8 +2597,8 @@
 					<visible>!Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
-					<posx>9</posx>
-					<posy>0</posy>
+					<left>9</left>
+					<top>0</top>
 					<width>194</width>
 					<height>60</height>
 					<font>font-38c</font>
@@ -2630,20 +2630,20 @@
 			</content>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>611</posy>
+			<left>0</left>
+			<top>611</top>
 			<height>60</height>
 			<width>1280</width>
 			<texture>menu-fade.png</texture>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>10</posy>
+			<left>0</left>
+			<top>10</top>
 			<width>1280</width>
 			<height>720</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>661</posy>
+				<left>0</left>
+				<top>661</top>
 				<width>1280</width>
 				<height>16</height>
 				<texture>shadow-bottom.png</texture>
@@ -4139,8 +4139,8 @@
 	<include name="Home_Ver_Sub">
 		<include>Window_OpenClose_Home_Panel_Animation</include>
 		<control type="image">
-			<posx>249</posx>
-			<posy>219</posy>
+			<left>249</left>
+			<top>219</top>
 			<width>210</width>
 			<height>280</height>
 			<texture border="2,10,12,10">submenu-ver.png</texture>
@@ -4153,8 +4153,8 @@
 	<include name="Home_Hor_Sub">
 		<include>Window_OpenClose_Home_Panel_Hor_Animation</include>
 		<control type="image">
-			<posx>115</posx>
-			<posy>566</posy>
+			<left>115</left>
+			<top>566</top>
 			<width>1050</width>
 			<height>45</height>
 			<texture border="12,12,12,2">submenu-hor.png</texture>
@@ -4165,8 +4165,8 @@
 	</include>
 	<include name="VerticalSubMenuLayout">
 		<orientation>vertical</orientation>
-		<posx>249</posx>
-		<posy>248</posy>
+		<left>249</left>
+		<top>248</top>
 		<width>200</width>
 		<height>242</height>
 		<hitrect x="170" y="0" w="250" h="720"/>
@@ -4182,15 +4182,15 @@
 		<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
 		<itemlayout width="198" height="30">
 			<control type="image">
-				<posx>15</posx>
-				<posy>0</posy>
+				<left>15</left>
+				<top>0</top>
 				<width>170</width>
 				<height>32</height>
 				<texture border="3">submenu-ver-button.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<font>font-18</font>
@@ -4205,23 +4205,23 @@
 		</itemlayout>
 		<focusedlayout width="198" height="30">
 			<control type="image">
-				<posx>15</posx>
-				<posy>0</posy>
+				<left>15</left>
+				<top>0</top>
 				<width>170</width>
 				<height>32</height>
 				<texture border="3">submenu-ver-button.png</texture>
 			</control>
 			<control type="image">
-				<posx>15</posx>
-				<posy>0</posy>
+				<left>15</left>
+				<top>0</top>
 				<width>170</width>
 				<height>32</height>
 				<texture border="7">list-focus2.png</texture>
 				<animation effect="fade" start="30" end="60" time="750" pulse="true" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<font>font-18</font>
@@ -4236,8 +4236,8 @@
 	</include>
 	<include name="HorizontalSubMenuLayout">
 		<orientation>horizontal</orientation>
-		<posx>144</posx>
-		<posy>578</posy>
+		<left>144</left>
+		<top>578</top>
 		<width>993</width>
 		<height>30</height>
 		<hitrect x="144" y="540" w="992" h="60"/>
@@ -4252,15 +4252,15 @@
 		<animation effect="zoom" start="144,598,992,5" end="144,578,992,30" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 		<itemlayout width="198" height="30">
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<texture border="3">submenu-hor-button.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<font>font-18</font>
@@ -4273,23 +4273,23 @@
 		</itemlayout>
 		<focusedlayout width="198" height="30">
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<texture border="3">submenu-hor-button.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<texture border="7">list-focus2.png</texture>
 				<animation effect="fade" start="40" end="70" time="750" pulse="true" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>30</height>
 				<font>font-18</font>
@@ -4319,8 +4319,8 @@
 	<include name="SearchButton">
 		<control type="button" id="10">
 			<description>Search push button</description>
-			<posx>1199</posx>
-			<posy>7</posy>
+			<left>1199</left>
+			<top>7</top>
 			<width>20</width>
 			<height>20</height>
 			<label>-</label>
@@ -4335,8 +4335,8 @@
 			<onclick>RunScript(script.globalsearch)</onclick>
 		</control>
 		<control type="image">
-			<posx>1219</posx>
-			<posy>0</posy>
+			<left>1219</left>
+			<top>0</top>
 			<width>29</width>
 			<height>30</height>
 			<texture>dot.png</texture>

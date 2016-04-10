@@ -2,22 +2,22 @@
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
 	<coordinates>
-		<posx>335</posx>
-		<posy>35</posy>
+		<left>335</left>
+		<top>35</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>610</width>
 			<height>650</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
-			<posx>550</posx>
-			<posy>35</posy>
+			<left>550</left>
+			<top>35</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -27,8 +27,8 @@
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
-			<posx>40</posx>
-			<posy>40</posy>
+			<left>40</left>
+			<top>40</top>
 			<width>510</width>
 			<height>30</height>
 			<align>center</align>
@@ -38,15 +38,15 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>40</posx>
-			<posy>78</posy>
+			<left>40</left>
+			<top>78</top>
 			<width>510</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="list" id="3">
-			<posx>45</posx>
-			<posy>90</posy>
+			<left>45</left>
+			<top>90</top>
 			<width>500</width>
 			<height>441</height>
 			<onup>3</onup>
@@ -57,15 +57,15 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout width="500" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>480</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -77,15 +77,15 @@
 			</itemlayout>
 			<focusedlayout width="500" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<visible>Control.HasFocus(3)</visible>
@@ -93,8 +93,8 @@
 					<include>ListFocusScroll14</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>480</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -106,8 +106,8 @@
 			</focusedlayout>
 		</control>
 		<control type="list" id="6">
-			<posx>45</posx>
-			<posy>90</posy>
+			<left>45</left>
+			<top>90</top>
 			<width>500</width>
 			<height>414</height>
 			<onup>6</onup>
@@ -118,23 +118,23 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout width="500" height="59">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>60</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>5</posy>
+					<left>10</left>
+					<top>5</top>
 					<width>50</width>
 					<height>50</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>70</posx>
-					<posy>4</posy>
+					<left>70</left>
+					<top>4</top>
 					<width>420</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -144,8 +144,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>80</posx>
-					<posy>26</posy>
+					<left>80</left>
+					<top>26</top>
 					<width>410</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -157,15 +157,15 @@
 			</itemlayout>
 			<focusedlayout width="500" height="59">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>60</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>500</width>
 					<height>60</height>
 					<visible>Control.HasFocus(6)</visible>
@@ -173,16 +173,16 @@
 					<include>ListFocusScroll30</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>5</posy>
+					<left>10</left>
+					<top>5</top>
 					<width>50</width>
 					<height>50</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>70</posx>
-					<posy>4</posy>
+					<left>70</left>
+					<top>4</top>
 					<width>420</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -192,8 +192,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>80</posx>
-					<posy>26</posy>
+					<left>80</left>
+					<top>26</top>
 					<width>410</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -205,8 +205,8 @@
 			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="61">
-			<posx>552</posx>
-			<posy>87</posy>
+			<left>552</left>
+			<top>87</top>
 			<width>20</width>
 			<height>446</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -223,8 +223,8 @@
 			<visible>Control.IsVisible(3)</visible>
 		</control>
 		<control type="scrollbar" id="62">
-			<posx>552</posx>
-			<posy>87</posy>
+			<left>552</left>
+			<top>87</top>
 			<width>20</width>
 			<height>419</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -243,8 +243,8 @@
 		<include>CommonFileCount3</include>
 		<include>CommonFileCount13</include>
 		<control type="grouplist" id="9001">
-			<posx>105</posx>
-			<posy>570</posy>
+			<left>105</left>
+			<top>570</top>
 			<width>400</width>
 			<height>35</height>
 			<align>center</align>

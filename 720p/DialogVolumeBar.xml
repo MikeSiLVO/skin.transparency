@@ -2,23 +2,23 @@
 <window>
 	<include>dialogeffect</include>
 	<coordinates>
-		<posx>440</posx>
-		<posy>0</posy>
+		<left>440</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<visible>![Window.IsVisible(Notification) | Window.IsVisible(MuteBug)]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>400</width>
 				<height>35</height>
 				<texture border="16,0,16,0">popup-small.png</texture>
 			</control>
 			<control type="label">
 				<description>Volume Label</description>
-				<posx>93</posx>
-				<posy>4</posy>
+				<left>93</left>
+				<top>4</top>
 				<width>125</width>
 				<height>25</height>
 				<label>$INFO[Player.Volume]</label>
@@ -29,39 +29,39 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="image">
-				<posx>98</posx>
-				<posy>2</posy>
+				<left>98</left>
+				<top>2</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIcon.png</texture>
 			</control>
 			<control type="image">
-				<posx>98</posx>
-				<posy>2</posy>
+				<left>98</left>
+				<top>2</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel1.png</texture>
 				<visible>Integer.IsGreater(player.volume,33)</visible>
 			</control>
 			<control type="image">
-				<posx>98</posx>
-				<posy>2</posy>
+				<left>98</left>
+				<top>2</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel2.png</texture>
 				<visible>Integer.IsGreater(player.volume,66)</visible>
 			</control>
 			<control type="image">
-				<posx>98</posx>
-				<posy>2</posy>
+				<left>98</left>
+				<top>2</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIconLevel3.png</texture>
 				<visible>Integer.IsGreater(player.volume,99)</visible>
 			</control>
 			<control type="image">
-				<posx>98</posx>
-				<posy>2</posy>
+				<left>98</left>
+				<top>2</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>VolumeIcon-Mute.png</texture>
@@ -69,8 +69,8 @@
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>131</posx>
-				<posy>9</posy>
+				<left>131</left>
+				<top>9</top>
 				<width>256</width>
 				<height>15</height>
 				<info>Player.Volume</info>
@@ -79,8 +79,8 @@
 			</control>
 			<control type="label">
 				<description>Passthrough Label</description>
-				<posx>128</posx>
-				<posy>3</posy>
+				<left>128</left>
+				<top>3</top>
 				<width>262</width>
 				<height>25</height>
 				<label>[UPPERCASE][B]$LOCALIZE[29802][/B][/UPPERCASE]</label>

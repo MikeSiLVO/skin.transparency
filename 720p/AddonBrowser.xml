@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
@@ -20,8 +20,8 @@
 			<visible>[String.IsEmpty(Control.GetLabel(987)) | String.IsEmpty(ListItem.Property(Fanart_Image))] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image" id="987">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -32,8 +32,8 @@
 			<visible>!String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>175</posx>
-			<posy>110</posy>
+			<left>175</left>
+			<top>110</top>
 			<width>932</width>
 			<height>501</height>
 			<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/addons.jpg</texture>
@@ -69,7 +69,7 @@
 			<include>Fanart-Addons-Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<control type="group" id="9000">
@@ -77,8 +77,8 @@
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim</include>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-16</posy>
+					<left>0</left>
+					<top>-16</top>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-top2.png</texture>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
@@ -86,8 +86,8 @@
 				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 					<onleft>50</onleft>
@@ -97,8 +97,8 @@
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
 					<onleft>50</onleft>
@@ -108,7 +108,7 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posy>63</posy>
+					<top>63</top>
 					<width>15</width>
 					<height>15</height>
 					<label>-</label>
@@ -121,8 +121,8 @@
 				</control>
 				<control type="button" id="5">
 					<description>Addon settings</description>
-					<posx>0</posx>
-					<posy>90</posy>
+					<left>0</left>
+					<top>90</top>
 					<include>ButtonCommonValues</include>
 					<label>10004</label>
 					<onleft>50</onleft>
@@ -132,8 +132,8 @@
 				</control>
 				<control type="button" id="9">
 					<description>Manual update</description>
-					<posx>0</posx>
-					<posy>135</posy>
+					<left>0</left>
+					<top>135</top>
 					<include>ButtonCommonValues</include>
 					<label>24034</label>
 					<onleft>50</onleft>
@@ -143,8 +143,8 @@
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<include>ButtonCommonValues</include>
 					<label>25001</label>
 					<onleft>50</onleft>
@@ -154,8 +154,8 @@
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide broken</description>
-					<posx>0</posx>
-					<posy>225</posy>
+					<left>0</left>
+					<top>225</top>
 					<include>ButtonCommonValues</include>
 					<label>24999</label>
 					<onleft>50</onleft>
@@ -165,8 +165,8 @@
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
-					<posx>0</posx>
-					<posy>270</posy>
+					<left>0</left>
+					<top>270</top>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onleft>50</onleft>
@@ -185,15 +185,15 @@
 			<animation effect="slide" start="0,0" end="-140,-620" time="0" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<visible>!String.IsEmpty(ListItem.Property(Addon.Broken))</visible>
 			<control type="image">
-				<posx>240</posx>
-				<posy>630</posy>
+				<left>240</left>
+				<top>630</top>
 				<width>800</width>
 				<height>82</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>644</posy>
+				<left>40</left>
+				<top>644</top>
 				<width>1200</width>
 				<height>60</height>
 				<align>center</align>
@@ -204,8 +204,8 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>674</posy>
+				<left>40</left>
+				<top>674</top>
 				<width>1200</width>
 				<height>60</height>
 				<align>center</align>
@@ -221,8 +221,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

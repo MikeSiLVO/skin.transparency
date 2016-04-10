@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-pictures.jpg" background="true">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
@@ -20,8 +20,8 @@
 			<visible>[String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Container(597).ListItem(0).Thumb)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -33,8 +33,8 @@
 		</control>
 		<include>fanart-Programs_Pictures</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Container(597).Listitem(0).Icon]</texture>
@@ -45,8 +45,8 @@
 			<visible>Control.IsVisible(597) + !String.IsEmpty(Container(597).ListItem(0).Thumb)</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -56,8 +56,8 @@
 			<visible>Control.IsVisible(597)</visible>
 		</control>
 		<control type="image">
-			<posx>-14</posx>
-			<posy>-14</posy>
+			<left>-14</left>
+			<top>-14</top>
 			<width>1308</width>
 			<height>748</height>
 			<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
@@ -69,8 +69,8 @@
 			<visible>[Control.IsVisible(594) | Control.IsVisible(50)] + !Skin.HasSetting(Picture_Fullscreen)</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
@@ -107,7 +107,7 @@
 			<include>Fanart-Pictures-Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -120,16 +120,16 @@
 				<itemgap>-1</itemgap>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
@@ -144,38 +144,38 @@
 				</control>
 				<control type="edit" id="19">
 					<description>Filter</description>
-					<posx>0</posx>
-					<posy>90</posy>
+					<left>0</left>
+					<top>90</top>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="6">
 					<description>Slideshow</description>
-					<posx>0</posx>
-					<posy>135</posy>
+					<left>0</left>
+					<top>135</top>
 					<include>ButtonCommonValues</include>
 					<label>108</label>
 				</control>
 				<control type="button" id="7">
 					<description>Recursive Slideshow</description>
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<include>ButtonCommonValues</include>
 					<label>361</label>
 				</control>
 				<control type="radiobutton" id="9">
 					<description>Randomize Toggle</description>
-					<posx>0</posx>
-					<posy>225</posy>
+					<left>0</left>
+					<top>225</top>
 					<include>ButtonCommonValues</include>
 					<label>13319</label>
 					<visible>!Control.IsVisible(597)</visible>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
-					<posx>0</posx>
-					<posy>270</posy>
+					<left>0</left>
+					<top>270</top>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onclick>ActivateWindow(playercontrols)</onclick>
@@ -188,8 +188,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(594) | Control.IsVisible(50)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

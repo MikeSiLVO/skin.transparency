@@ -2,13 +2,13 @@
 <window>
 	<defaultcontrol always="true">901</defaultcontrol>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -18,8 +18,8 @@
 		<control type="group">
 			<include>dialogeffect</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -29,8 +29,8 @@
 			</control>
 			<control type="label" id="1">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -40,16 +40,16 @@
 				<label>Audio Mixer</label>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="17">
 				<description>control settings area</description>
-				<posx>200</posx>
-				<posy>80</posy>
+				<left>200</left>
+				<top>80</top>
 				<width>880</width>
 				<height>540</height>
 				<itemgap>-1</itemgap>
@@ -68,8 +68,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="901">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -90,8 +90,8 @@
 					</control>
 					<control type="label" id="1900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -102,8 +102,8 @@
 					</control>
 					<control type="slider" id="1902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturesliderbar>osd_slider_bg_3.png</texturesliderbar>
@@ -114,8 +114,8 @@
 					</control>
 					<control type="label" id="1903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -126,8 +126,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -144,8 +144,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="902">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -166,8 +166,8 @@
 					</control>
 					<control type="label" id="2900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -178,8 +178,8 @@
 					</control>
 					<control type="slider" id="2902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -192,8 +192,8 @@
 					</control>
 					<control type="label" id="2903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -204,8 +204,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -222,8 +222,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="903">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -244,8 +244,8 @@
 					</control>
 					<control type="label" id="3900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -256,8 +256,8 @@
 					</control>
 					<control type="slider" id="3902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -270,8 +270,8 @@
 					</control>
 					<control type="label" id="3903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -282,8 +282,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -300,8 +300,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="904">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -322,8 +322,8 @@
 					</control>
 					<control type="label" id="4900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -334,8 +334,8 @@
 					</control>
 					<control type="slider" id="4902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -348,8 +348,8 @@
 					</control>
 					<control type="label" id="4903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -360,8 +360,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -378,8 +378,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="905">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -400,8 +400,8 @@
 					</control>
 					<control type="label" id="5900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -412,8 +412,8 @@
 					</control>
 					<control type="slider" id="5902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -426,8 +426,8 @@
 					</control>
 					<control type="label" id="5903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -438,8 +438,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -456,8 +456,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="906">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -478,8 +478,8 @@
 					</control>
 					<control type="label" id="6900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -490,8 +490,8 @@
 					</control>
 					<control type="slider" id="6902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -504,8 +504,8 @@
 					</control>
 					<control type="label" id="6903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -516,8 +516,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -534,8 +534,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="907">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -556,8 +556,8 @@
 					</control>
 					<control type="label" id="7900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -568,8 +568,8 @@
 					</control>
 					<control type="slider" id="7902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -582,8 +582,8 @@
 					</control>
 					<control type="label" id="7903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -594,8 +594,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -612,8 +612,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="908">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -634,8 +634,8 @@
 					</control>
 					<control type="label" id="8900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -646,8 +646,8 @@
 					</control>
 					<control type="slider" id="8902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -660,8 +660,8 @@
 					</control>
 					<control type="label" id="8903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -672,8 +672,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -690,8 +690,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="909">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -712,8 +712,8 @@
 					</control>
 					<control type="label" id="9900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -724,8 +724,8 @@
 					</control>
 					<control type="slider" id="9902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -738,8 +738,8 @@
 					</control>
 					<control type="label" id="9903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -750,8 +750,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -768,8 +768,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="910">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -790,8 +790,8 @@
 					</control>
 					<control type="label" id="10900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -802,8 +802,8 @@
 					</control>
 					<control type="slider" id="10902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -816,8 +816,8 @@
 					</control>
 					<control type="label" id="10903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -828,8 +828,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -846,8 +846,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="911">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -868,8 +868,8 @@
 					</control>
 					<control type="label" id="11900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -880,8 +880,8 @@
 					</control>
 					<control type="slider" id="11902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -894,8 +894,8 @@
 					</control>
 					<control type="label" id="11903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -906,8 +906,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -924,8 +924,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="912">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -946,8 +946,8 @@
 					</control>
 					<control type="label" id="12900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -958,8 +958,8 @@
 					</control>
 					<control type="slider" id="12902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -972,8 +972,8 @@
 					</control>
 					<control type="label" id="12903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -984,8 +984,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1002,8 +1002,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="913">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1024,8 +1024,8 @@
 					</control>
 					<control type="label" id="13900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1036,8 +1036,8 @@
 					</control>
 					<control type="slider" id="13902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1050,8 +1050,8 @@
 					</control>
 					<control type="label" id="13903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1062,8 +1062,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1080,8 +1080,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="914">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1102,8 +1102,8 @@
 					</control>
 					<control type="label" id="14900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1114,8 +1114,8 @@
 					</control>
 					<control type="slider" id="14902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1128,8 +1128,8 @@
 					</control>
 					<control type="label" id="14903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1140,8 +1140,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1158,8 +1158,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="915">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1180,8 +1180,8 @@
 					</control>
 					<control type="label" id="15900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1192,8 +1192,8 @@
 					</control>
 					<control type="slider" id="15902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1206,8 +1206,8 @@
 					</control>
 					<control type="label" id="15903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1218,8 +1218,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1236,8 +1236,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="916">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1258,8 +1258,8 @@
 					</control>
 					<control type="label" id="16900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1270,8 +1270,8 @@
 					</control>
 					<control type="slider" id="16902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1284,8 +1284,8 @@
 					</control>
 					<control type="label" id="16903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1296,8 +1296,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1314,8 +1314,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="917">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1336,8 +1336,8 @@
 					</control>
 					<control type="label" id="17900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1348,8 +1348,8 @@
 					</control>
 					<control type="slider" id="17902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1362,8 +1362,8 @@
 					</control>
 					<control type="label" id="17903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1374,8 +1374,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1392,8 +1392,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="918">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1414,8 +1414,8 @@
 					</control>
 					<control type="label" id="18900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1426,8 +1426,8 @@
 					</control>
 					<control type="slider" id="18902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1440,8 +1440,8 @@
 					</control>
 					<control type="label" id="18903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1452,8 +1452,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1470,8 +1470,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="919">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1492,8 +1492,8 @@
 					</control>
 					<control type="label" id="19900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1504,8 +1504,8 @@
 					</control>
 					<control type="slider" id="19902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1518,8 +1518,8 @@
 					</control>
 					<control type="label" id="19903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1530,8 +1530,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1548,8 +1548,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="920">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1570,8 +1570,8 @@
 					</control>
 					<control type="label" id="20900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1582,8 +1582,8 @@
 					</control>
 					<control type="slider" id="20902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1596,8 +1596,8 @@
 					</control>
 					<control type="label" id="20903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1608,8 +1608,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1626,8 +1626,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="921">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1648,8 +1648,8 @@
 					</control>
 					<control type="label" id="21900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1660,8 +1660,8 @@
 					</control>
 					<control type="slider" id="21902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1674,8 +1674,8 @@
 					</control>
 					<control type="label" id="21903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1686,8 +1686,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1704,8 +1704,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="922">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1726,8 +1726,8 @@
 					</control>
 					<control type="label" id="22900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1738,8 +1738,8 @@
 					</control>
 					<control type="slider" id="22902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1752,8 +1752,8 @@
 					</control>
 					<control type="label" id="22903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1764,8 +1764,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1782,8 +1782,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="923">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1804,8 +1804,8 @@
 					</control>
 					<control type="label" id="23900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1816,8 +1816,8 @@
 					</control>
 					<control type="slider" id="23902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1830,8 +1830,8 @@
 					</control>
 					<control type="label" id="23903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1842,8 +1842,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1860,8 +1860,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="924">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1882,8 +1882,8 @@
 					</control>
 					<control type="label" id="24900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1894,8 +1894,8 @@
 					</control>
 					<control type="slider" id="24902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1908,8 +1908,8 @@
 					</control>
 					<control type="label" id="24903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1920,8 +1920,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -1938,8 +1938,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="925">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -1960,8 +1960,8 @@
 					</control>
 					<control type="label" id="25900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1972,8 +1972,8 @@
 					</control>
 					<control type="slider" id="25902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -1986,8 +1986,8 @@
 					</control>
 					<control type="label" id="25903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -1998,8 +1998,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2016,8 +2016,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="926">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -2038,8 +2038,8 @@
 					</control>
 					<control type="label" id="26900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2050,8 +2050,8 @@
 					</control>
 					<control type="slider" id="26902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -2064,8 +2064,8 @@
 					</control>
 					<control type="label" id="26903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2076,8 +2076,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2094,8 +2094,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="927">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -2116,8 +2116,8 @@
 					</control>
 					<control type="label" id="27900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2128,8 +2128,8 @@
 					</control>
 					<control type="slider" id="27902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -2142,8 +2142,8 @@
 					</control>
 					<control type="label" id="27903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2154,8 +2154,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2172,8 +2172,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="928">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -2194,8 +2194,8 @@
 					</control>
 					<control type="label" id="28900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2206,8 +2206,8 @@
 					</control>
 					<control type="slider" id="28902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -2220,8 +2220,8 @@
 					</control>
 					<control type="label" id="28903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2232,8 +2232,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2250,8 +2250,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="929">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -2272,8 +2272,8 @@
 					</control>
 					<control type="label" id="19900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2284,8 +2284,8 @@
 					</control>
 					<control type="slider" id="29902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -2298,8 +2298,8 @@
 					</control>
 					<control type="label" id="29903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2310,8 +2310,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2328,8 +2328,8 @@
 					<onright>121</onright>
 					<control type="radiobutton" id="930">
 						<description>mute button</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>400</width>
 						<height>45</height>
 						<visible>true</visible>
@@ -2350,8 +2350,8 @@
 					</control>
 					<control type="label" id="30900">
 						<description>ControlName</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>300</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2362,8 +2362,8 @@
 					</control>
 					<control type="slider" id="30902">
 						<description>Slider</description>
-						<posx>410</posx>
-						<posy>10</posy>
+						<left>410</left>
+						<top>10</top>
 						<width>404</width>
 						<height>25</height>
 						<texturefocus>-</texturefocus>
@@ -2376,8 +2376,8 @@
 					</control>
 					<control type="label" id="30903">
 						<description>ControlPercentage</description>
-						<posx>880</posx>
-						<posy>0</posy>
+						<left>880</left>
+						<top>0</top>
 						<width>90</width>
 						<height>45</height>
 						<font>font-20</font>
@@ -2388,8 +2388,8 @@
 					</control>
 					<control type="image">
 						<description>separator</description>
-						<posx>0</posx>
-						<posy>44</posy>
+						<left>0</left>
+						<top>44</top>
 						<width>880</width>
 						<height>1</height>
 						<texture>separator.png</texture>
@@ -2397,8 +2397,8 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="121">
-				<posx>1090</posx>
-				<posy>80</posy>
+				<left>1090</left>
+				<top>80</top>
 				<width>20</width>
 				<height>537</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -2414,8 +2414,8 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>645</posy>
+				<left>0</left>
+				<top>645</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>

@@ -2,8 +2,8 @@
 <includes>
 	<include name="Thumbnail">
 		<control type="panel" id="53">
-			<posx>177</posx>
-			<posy>114</posy>
+			<left>177</left>
+			<top>114</top>
 			<width>906</width>
 			<height>495</height>
 			<onleft>9000</onleft>
@@ -16,16 +16,16 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="181" height="165" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<texture border="45">thumb-nofocus.png</texture>
 					<visible>!Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -33,8 +33,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -42,8 +42,8 @@
 					<visible>!Container.Content(Addons) + !Container.Content(Artists) + !Window.IsVisible(Programs) + ![!Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)] | ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -51,8 +51,8 @@
 					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<aspectratio scalediffuse="true">keep</aspectratio>
@@ -61,8 +61,8 @@
 					<visible>[Container.Content(Artists) + ListItem.IsParentFolder] | Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -72,8 +72,8 @@
 					<visible>Container.Content(Artists) + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>130</posy>
+					<left>10</left>
+					<top>130</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -86,8 +86,8 @@
 			</itemlayout>
 			<focusedlayout width="181" height="165" condition="!Container.Content(Albums) + !Container.Content(Songs) + !Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<texture border="7">thumb-focus.png</texture>
@@ -102,8 +102,8 @@
 					<visible>!Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -119,8 +119,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -136,8 +136,8 @@
 					<visible>!Container.Content(Addons) + !Container.Content(Artists) + !Window.IsVisible(Programs) + ![!Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)] | ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>35</posx>
-					<posy>16</posy>
+					<left>35</left>
+					<top>16</top>
 					<width>110</width>
 					<height>110</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -153,8 +153,8 @@
 					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<aspectratio scalediffuse="true">keep</aspectratio>
@@ -171,8 +171,8 @@
 					<visible>[Container.Content(Artists) + ListItem.IsParentFolder] | Window.IsVisible(Programs)</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>11</posy>
+					<left>30</left>
+					<top>11</top>
 					<width>120</width>
 					<height>120</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -190,8 +190,8 @@
 					<visible>Container.Content(Artists) + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>130</posy>
+					<left>10</left>
+					<top>130</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -204,16 +204,16 @@
 			</focusedlayout>
 			<itemlayout width="181" height="165" condition="Container.Content(Albums) | Container.Content(Songs)">
 				<control type="image">
-					<posx>40</posx>
-					<posy>17</posy>
+					<left>40</left>
+					<top>17</top>
 					<width>116</width>
 					<height>116</height>
 					<aspectratio>stretch</aspectratio>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>26</posx>
-					<posy>15</posy>
+					<left>26</left>
+					<top>15</top>
 					<width>134</width>
 					<height>120</height>
 					<aspectratio>stretch</aspectratio>
@@ -221,8 +221,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="label">
-					<posx>13</posx>
-					<posy>138</posy>
+					<left>13</left>
+					<top>138</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -235,8 +235,8 @@
 			</itemlayout>
 			<focusedlayout width="181" height="165" condition="Container.Content(Albums) | Container.Content(Songs)">
 				<control type="image">
-					<posx>40</posx>
-					<posy>17</posy>
+					<left>40</left>
+					<top>17</top>
 					<width>116</width>
 					<height>116</height>
 					<aspectratio>stretch</aspectratio>
@@ -251,8 +251,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>26</posx>
-					<posy>15</posy>
+					<left>26</left>
+					<top>15</top>
 					<width>134</width>
 					<height>120</height>
 					<aspectratio>stretch</aspectratio>
@@ -268,8 +268,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="label">
-					<posx>13</posx>
-					<posy>138</posy>
+					<left>13</left>
+					<top>138</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -282,8 +282,8 @@
 			</focusedlayout>
 			<itemlayout width="176" height="156" condition="Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>28</posx>
-					<posy>5</posy>
+					<left>28</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio>keep</aspectratio>
@@ -292,8 +292,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>28</posx>
-					<posy>5</posy>
+					<left>28</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -303,8 +303,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>29</posx>
-					<posy>107</posy>
+					<left>29</left>
+					<top>107</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -315,8 +315,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>155</posx>
-					<posy>65</posy>
+					<left>155</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -324,8 +324,8 @@
 					<visible>!Skin.HasSetting(Enable_MusicVideos_Watched_Flags)</visible>
 				</control>
 				<control type="image">
-					<posx>155</posx>
-					<posy>65</posy>
+					<left>155</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -335,8 +335,8 @@
 			</itemlayout>
 			<focusedlayout width="176" height="156" condition="Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>28</posx>
-					<posy>5</posy>
+					<left>28</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio>keep</aspectratio>
@@ -351,8 +351,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>28</posx>
-					<posy>5</posy>
+					<left>28</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -368,8 +368,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>29</posx>
-					<posy>107</posy>
+					<left>29</left>
+					<top>107</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -380,8 +380,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>155</posx>
-					<posy>65</posy>
+					<left>155</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -397,8 +397,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>155</posx>
-					<posy>65</posy>
+					<left>155</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -419,8 +419,8 @@
 	<include name="Thumbnail-Videos">
 		<control type="panel" id="53">
 			<visible>![Container.Content(TVShows) + Skin.HasSetting(TVShowsPosters)]</visible>
-			<posx>200</posx>
-			<posy>135</posy>
+			<left>200</left>
+			<top>135</top>
 			<width>880</width>
 			<height>470</height>
 			<onleft>9000</onleft>
@@ -433,15 +433,15 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="176" height="235" condition="!Container.Content(Movies) + !Container.Content(Sets) + ![Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>14</posx>
-					<posy>11</posy>
+					<left>14</left>
+					<top>11</top>
 					<width>148</width>
 					<height>148</height>
 					<texture border="7">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -449,8 +449,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -458,8 +458,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -467,8 +467,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -476,8 +476,8 @@
 					<visible>ListItem.IsParentFolder | [!ListItem.IsParentFolder + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
-					<posx>6</posx>
-					<posy>180</posy>
+					<left>6</left>
+					<top>180</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -488,8 +488,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>125</posy>
+					<left>128</left>
+					<top>125</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -497,8 +497,8 @@
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>125</posy>
+					<left>128</left>
+					<top>125</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -508,8 +508,8 @@
 			</itemlayout>
 			<focusedlayout width="176" height="235" condition="!Container.Content(Movies) + !Container.Content(Sets) + ![Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>14</posx>
-					<posy>11</posy>
+					<left>14</left>
+					<top>11</top>
 					<width>148</width>
 					<height>148</height>
 					<texture border="7">thumb-focus.png</texture>
@@ -523,8 +523,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -540,8 +540,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -557,8 +557,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -574,8 +574,8 @@
 					<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)</visible>
 				</control>
 				<control type="image">
-					<posx>19</posx>
-					<posy>16</posy>
+					<left>19</left>
+					<top>16</top>
 					<width>138</width>
 					<height>138</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -591,8 +591,8 @@
 					<visible>ListItem.IsParentFolder | [!ListItem.IsParentFolder + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 				</control>
 				<control type="label">
-					<posx>6</posx>
-					<posy>180</posy>
+					<left>6</left>
+					<top>180</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -603,8 +603,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>125</posy>
+					<left>128</left>
+					<top>125</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -612,8 +612,8 @@
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>128</posx>
-					<posy>125</posy>
+					<left>128</left>
+					<top>125</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -623,8 +623,8 @@
 			</focusedlayout>
 			<itemlayout width="176" height="156" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>3</posx>
-					<posy>5</posy>
+					<left>3</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio>keep</aspectratio>
@@ -633,8 +633,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>3</posx>
-					<posy>5</posy>
+					<left>3</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -644,8 +644,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>4</posx>
-					<posy>107</posy>
+					<left>4</left>
+					<top>107</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -656,8 +656,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>130</posx>
-					<posy>65</posy>
+					<left>130</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -665,8 +665,8 @@
 					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>130</posx>
-					<posy>65</posy>
+					<left>130</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -676,8 +676,8 @@
 			</itemlayout>
 			<focusedlayout width="176" height="156" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
 				<control type="image">
-					<posx>3</posx>
-					<posy>5</posy>
+					<left>3</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio>keep</aspectratio>
@@ -692,8 +692,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>3</posx>
-					<posy>5</posy>
+					<left>3</left>
+					<top>5</top>
 					<width>168</width>
 					<height>102</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -709,8 +709,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>4</posx>
-					<posy>107</posy>
+					<left>4</left>
+					<top>107</top>
 					<width>166</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -721,8 +721,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>130</posx>
-					<posy>65</posy>
+					<left>130</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -738,8 +738,8 @@
 					<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>130</posx>
-					<posy>65</posy>
+					<left>130</left>
+					<top>65</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -757,8 +757,8 @@
 			</focusedlayout>
 			<itemlayout width="176" height="235" condition="Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
-					<posx>18</posx>
-					<posy>17</posy>
+					<left>18</left>
+					<top>17</top>
 					<width>130</width>
 					<height>184</height>
 					<aspectratio>stretch</aspectratio>
@@ -766,8 +766,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>17</posy>
+					<left>18</left>
+					<top>17</top>
 					<width>130</width>
 					<height>184</height>
 					<aspectratio>stretch</aspectratio>
@@ -775,8 +775,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
+					<left>18</left>
+					<top>4</top>
 					<width>140</width>
 					<height>210</height>
 					<aspectratio>stretch</aspectratio>
@@ -784,8 +784,8 @@
 					<visible>![[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
+					<left>18</left>
+					<top>4</top>
 					<width>140</width>
 					<height>210</height>
 					<aspectratio>stretch</aspectratio>
@@ -793,8 +793,8 @@
 					<visible>[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="label">
-					<posx>5</posx>
-					<posy>206</posy>
+					<left>5</left>
+					<top>206</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -805,8 +805,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>120</posx>
-					<posy>169</posy>
+					<left>120</left>
+					<top>169</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -814,8 +814,8 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>120</posx>
-					<posy>169</posy>
+					<left>120</left>
+					<top>169</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -825,8 +825,8 @@
 			</itemlayout>
 			<focusedlayout width="176" height="235" condition="Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)">
 				<control type="image">
-					<posx>18</posx>
-					<posy>17</posy>
+					<left>18</left>
+					<top>17</top>
 					<width>130</width>
 					<height>184</height>
 					<aspectratio>stretch</aspectratio>
@@ -842,8 +842,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>17</posy>
+					<left>18</left>
+					<top>17</top>
 					<width>130</width>
 					<height>184</height>
 					<aspectratio>stretch</aspectratio>
@@ -859,8 +859,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
+					<left>18</left>
+					<top>4</top>
 					<width>140</width>
 					<height>210</height>
 					<aspectratio>stretch</aspectratio>
@@ -876,8 +876,8 @@
 					<visible>![[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>18</posx>
-					<posy>4</posy>
+					<left>18</left>
+					<top>4</top>
 					<width>140</width>
 					<height>210</height>
 					<aspectratio>stretch</aspectratio>
@@ -893,8 +893,8 @@
 					<visible>[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>112</posx>
-					<posy>176</posy>
+					<left>112</left>
+					<top>176</top>
 					<width>44</width>
 					<height>28</height>
 					<texture>movieset.png</texture>
@@ -903,8 +903,8 @@
 					<visible>Container.Content(Movies) + ListItem.IsFolder + !ListItem.IsParentFolder + String.StartsWith(Container.Folderpath,videodb://)</visible>
 				</control>
 				<control type="label">
-					<posx>5</posx>
-					<posy>206</posy>
+					<left>5</left>
+					<top>206</top>
 					<width>160</width>
 					<height>25</height>
 					<font>font-20</font>
@@ -915,8 +915,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>120</posx>
-					<posy>169</posy>
+					<left>120</left>
+					<top>169</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -932,8 +932,8 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 				</control>
 				<control type="image">
-					<posx>120</posx>
-					<posy>169</posy>
+					<left>120</left>
+					<top>169</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -956,48 +956,48 @@
 			<visible>Control.IsVisible(53) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<control type="image">
-				<posx>330</posx>
-				<posy>618</posy>
+				<left>330</left>
+				<top>618</top>
 				<width>626</width>
 				<height>42</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
 				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>330</posx>
-				<posy>618</posy>
+				<left>330</left>
+				<top>618</top>
 				<width>626</width>
 				<height>42</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
 				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="image">
-				<posx>330</posx>
-				<posy>618</posy>
+				<left>330</left>
+				<top>618</top>
 				<width>626</width>
 				<height>42</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
 				<visible>!Skin.HasSetting(Enable_MusicVideos_Media_Flags) + Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="group">
-				<posx>370</posx>
-				<posy>615</posy>
+				<left>370</left>
+				<top>615</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Movies)</visible>
 			</control>
 			<control type="group">
-				<posx>370</posx>
-				<posy>615</posy>
+				<left>370</left>
+				<top>615</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
 				<visible>Container.Content(Episodes)</visible>
 			</control>
 			<control type="group">
-				<posx>370</posx>
-				<posy>615</posy>
+				<left>370</left>
+				<top>615</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_MusicVideos_Media_Flags)">VideoMediaFlags</include>

@@ -3,8 +3,8 @@
 	<defaultcontrol>29</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -15,8 +15,8 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -26,8 +26,8 @@
 			</control>
 			<control type="label">
 				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -37,8 +37,8 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -47,8 +47,8 @@
 				<description>Channels</description>
 				<control type="label">
 					<description>name label</description>
-					<posx>140</posx>
-					<posy>60</posy>
+					<left>140</left>
+					<top>60</top>
 					<width>450</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -58,8 +58,8 @@
 					<textcolor>lightblue</textcolor>
 				</control>
 				<control type="list" id="11">
-					<posx>140</posx>
-					<posy>98</posy>
+					<left>140</left>
+					<top>98</top>
 					<width>450</width>
 					<height>291</height>
 					<onup>11</onup>
@@ -70,23 +70,23 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>4</posy>
+							<left>0</left>
+							<top>4</top>
 							<width>22</width>
 							<height>22</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -96,8 +96,8 @@
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="label">
-							<posx>70</posx>
-							<posy>0</posy>
+							<left>70</left>
+							<top>0</top>
 							<width>360</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -109,15 +109,15 @@
 					</itemlayout>
 					<focusedlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<include>ListFocusScroll26</include>
@@ -125,16 +125,16 @@
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>4</posy>
+							<left>0</left>
+							<top>4</top>
 							<width>22</width>
 							<height>22</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -144,8 +144,8 @@
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="label">
-							<posx>70</posx>
-							<posy>0</posy>
+							<left>70</left>
+							<top>0</top>
 							<width>360</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -157,8 +157,8 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>600</posx>
-					<posy>98</posy>
+					<left>600</left>
+					<top>98</top>
 					<width>20</width>
 					<height>293</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -177,8 +177,8 @@
 			<control type="group">
 				<description>Channels in Group</description>
 				<control type="label">
-					<posx>690</posx>
-					<posy>60</posy>
+					<left>690</left>
+					<top>60</top>
 					<width>450</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -188,8 +188,8 @@
 					<textcolor>lightblue</textcolor>
 				</control>
 				<control type="list" id="12">
-					<posx>690</posx>
-					<posy>98</posy>
+					<left>690</left>
+					<top>98</top>
 					<width>450</width>
 					<height>291</height>
 					<onup>12</onup>
@@ -200,23 +200,23 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>4</posy>
+							<left>0</left>
+							<top>4</top>
 							<width>22</width>
 							<height>22</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -226,8 +226,8 @@
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="label">
-							<posx>70</posx>
-							<posy>0</posy>
+							<left>70</left>
+							<top>0</top>
 							<width>360</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -239,15 +239,15 @@
 					</itemlayout>
 					<focusedlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<include>ListFocusScroll27</include>
@@ -255,16 +255,16 @@
 							<visible>Control.HasFocus(12)</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>4</posy>
+							<left>0</left>
+							<top>4</top>
 							<width>22</width>
 							<height>22</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>60</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -274,8 +274,8 @@
 							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						</control>
 						<control type="label">
-							<posx>70</posx>
-							<posy>0</posy>
+							<left>70</left>
+							<top>0</top>
 							<width>360</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -287,8 +287,8 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="61">
-					<posx>1150</posx>
-					<posy>98</posy>
+					<left>1150</left>
+					<top>98</top>
 					<width>20</width>
 					<height>293</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -305,8 +305,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>420</posy>
+				<left>0</left>
+				<top>420</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -315,8 +315,8 @@
 				<description>Groups</description>
 				<control type="label">
 					<description>name label</description>
-					<posx>415</posx>
-					<posy>440</posy>
+					<left>415</left>
+					<top>440</top>
 					<width>450</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -326,8 +326,8 @@
 					<textcolor>lightblue</textcolor>
 				</control>
 				<control type="list" id="13">
-					<posx>415</posx>
-					<posy>478</posy>
+					<left>415</left>
+					<top>478</top>
 					<width>450</width>
 					<height>146</height>
 					<onup>13</onup>
@@ -338,15 +338,15 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="label">
-							<posx>10</posx>
-							<posy>0</posy>
+							<left>10</left>
+							<top>0</top>
 							<width>430</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -358,15 +358,15 @@
 					</itemlayout>
 					<focusedlayout width="450" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>450</width>
 							<height>30</height>
 							<include>ListFocusScroll28</include>
@@ -374,8 +374,8 @@
 							<visible>Control.HasFocus(13)</visible>
 						</control>
 						<control type="label">
-							<posx>10</posx>
-							<posy>0</posy>
+							<left>10</left>
+							<top>0</top>
 							<width>430</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -387,8 +387,8 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="62">
-					<posx>875</posx>
-					<posy>475</posy>
+					<left>875</left>
+					<top>475</top>
 					<width>20</width>
 					<height>148</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -405,8 +405,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>650</posy>
+				<left>0</left>
+				<top>650</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -414,8 +414,8 @@
 			<control type="group">
 				<control type="button" id="29">
 					<description>Ok button</description>
-					<posx>140</posx>
-					<posy>670</posy>
+					<left>140</left>
+					<top>670</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -433,8 +433,8 @@
 					<ondown>11</ondown>
 				</control>
 				<control type="button" id="26">
-					<posx>340</posx>
-					<posy>670</posy>
+					<left>340</left>
+					<top>670</top>
 					<description>Add button</description>
 					<width>200</width>
 					<height>35</height>
@@ -454,8 +454,8 @@
 				</control>
 				<control type="button" id="27">
 					<description>Rename button</description>
-					<posx>540</posx>
-					<posy>670</posy>
+					<left>540</left>
+					<top>670</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -474,8 +474,8 @@
 				</control>
 				<control type="button" id="28">
 					<description>Delete button</description>
-					<posx>740</posx>
-					<posy>670</posy>
+					<left>740</left>
+					<top>670</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -494,8 +494,8 @@
 				</control>
 				<control type="radiobutton" id="25">
 					<description>Hide button</description>
-					<posx>940</posx>
-					<posy>670</posy>
+					<left>940</left>
+					<top>670</top>
 					<width>200</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -513,8 +513,8 @@
 					<ondown>11</ondown>
 				</control>
 				<control type="image">
-					<posx>140</posx>
-					<posy>670</posy>
+					<left>140</left>
+					<top>670</top>
 					<width>200</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>

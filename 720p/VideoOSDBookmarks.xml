@@ -2,23 +2,23 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
-		<posx>240</posx>
-		<posy>20</posy>
+		<left>240</left>
+		<top>20</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>800</width>
 			<height>525</height>
 			<texture border="17">panel.png</texture>
 			<bordersize>11</bordersize>
 		</control>
 		<control type="button">
-			<posx>744</posx>
-			<posy>32</posy>
+			<left>744</left>
+			<top>32</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -28,8 +28,8 @@
 		</control>
 		<control type="label">
 			<description>heading label</description>
-			<posx>40</posx>
-			<posy>40</posy>
+			<left>40</left>
+			<top>40</top>
 			<width>720</width>
 			<height>30</height>
 			<align>center</align>
@@ -39,15 +39,15 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>40</posx>
-			<posy>78</posy>
+			<left>40</left>
+			<top>78</top>
 			<width>720</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="panel" id="11">
-			<posx>38</posx>
-			<posy>88</posy>
+			<left>38</left>
+			<top>88</top>
 			<width>720</width>
 			<height>360</height>
 			<onleft>11</onleft>
@@ -61,23 +61,23 @@
 			<orientation>vertical</orientation>
 			<itemlayout width="180" height="180">
 				<control type="image">
-					<posx>2</posx>
-					<posy>2</posy>
+					<left>2</left>
+					<top>2</top>
 					<width>170</width>
 					<height>170</height>
 					<texture border="7">thumb-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<posx>7</posx>
-					<posy>7</posy>
+					<left>7</left>
+					<top>7</top>
 					<width>160</width>
 					<height>160</height>
 					<aspectratio>keep</aspectratio>
 					<texture diffuse="video-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>2</posx>
-					<posy>140</posy>
+					<left>2</left>
+					<top>140</top>
 					<width>170</width>
 					<height>22</height>
 					<font>font-20</font>
@@ -90,15 +90,15 @@
 			</itemlayout>
 			<focusedlayout width="180" height="180">
 				<control type="image">
-					<posx>2</posx>
-					<posy>2</posy>
+					<left>2</left>
+					<top>2</top>
 					<width>170</width>
 					<height>170</height>
 					<texture border="7">thumb-focus.png</texture>
 				</control>
 				<control type="image">
-					<posx>7</posx>
-					<posy>7</posy>
+					<left>7</left>
+					<top>7</top>
 					<width>160</width>
 					<height>160</height>
 					<aspectratio>keep</aspectratio>
@@ -111,8 +111,8 @@
 					</animation>
 				</control>
 				<control type="label">
-					<posx>2</posx>
-					<posy>140</posy>
+					<left>2</left>
+					<top>140</top>
 					<width>170</width>
 					<height>22</height>
 					<font>font-20</font>
@@ -125,8 +125,8 @@
 			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="61">
-			<posx>755</posx>
-			<posy>88</posy>
+			<left>755</left>
+			<top>88</top>
 			<width>20</width>
 			<height>355</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -141,8 +141,8 @@
 		<include>CommonFileCount11</include>
 		<control type="button" id="2">
 			<description>Create Bookmark button</description>
-			<posx>40</posx>
-			<posy>455</posy>
+			<left>40</left>
+			<top>455</top>
 			<width>235</width>
 			<height>35</height>
 			<label>294</label>
@@ -160,8 +160,8 @@
 		</control>
 		<control type="button" id="3">
 			<description>Clear Bookmark button</description>
-			<posx>280</posx>
-			<posy>455</posy>
+			<left>280</left>
+			<top>455</top>
 			<width>235</width>
 			<height>35</height>
 			<label>296</label>
@@ -179,8 +179,8 @@
 		</control>
 		<control type="button" id="4">
 			<description>Set Episode Thumb button</description>
-			<posx>520</posx>
-			<posy>455</posy>
+			<left>520</left>
+			<top>455</top>
 			<width>235</width>
 			<height>35</height>
 			<label>20406</label>
@@ -197,8 +197,8 @@
 			<visible>VideoPlayer.Content(Episodes)</visible>
 		</control>
 		<control type="image">
-			<posx>40</posx>
-			<posy>455</posy>
+			<left>40</left>
+			<top>455</top>
 			<width>235</width>
 			<height>35</height>
 			<texture border="7">button-focus.png</texture>

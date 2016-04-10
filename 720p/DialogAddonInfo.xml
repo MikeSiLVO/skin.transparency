@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -15,23 +15,23 @@
 			<include>DialogFade6</include>
 			<visible>!Window.IsVisible(TextViewer)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>1280</width>
 				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -45,8 +45,8 @@
 			<include>dialogeffect4</include>
 			<include>DialogFade5</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -56,8 +56,8 @@
 			</control>
 			<control type="label">
 				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>45</posy>
+				<left>40</left>
+				<top>45</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -68,26 +68,26 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>84</posy>
+				<left>40</left>
+				<top>84</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>425</posy>
+				<left>40</left>
+				<top>425</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="group" id="9000">
-				<posx>3</posx>
-				<posy>420</posy>
+				<left>3</left>
+				<top>420</top>
 				<control type="button" id="6">
 					<description>Enable</description>
-					<posx>0</posx>
-					<posy>33</posy>
+					<left>0</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>24022</label>
@@ -106,8 +106,8 @@
 				</control>
 				<control type="button" id="7">
 					<description>Disable</description>
-					<posx>182</posx>
-					<posy>33</posy>
+					<left>182</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>24021</label>
@@ -126,8 +126,8 @@
 				</control>
 				<control type="button" id="8">
 					<description>Update</description>
-					<posx>364</posx>
-					<posy>33</posy>
+					<left>364</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>24069</label>
@@ -146,8 +146,8 @@
 				</control>
 				<control type="button" id="9">
 					<description>Settings</description>
-					<posx>546</posx>
-					<posy>33</posy>
+					<left>546</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>5</label>
@@ -166,8 +166,8 @@
 				</control>
 				<control type="button" id="10">
 					<description>Changelog</description>
-					<posx>728</posx>
-					<posy>33</posy>
+					<left>728</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>24054</label>
@@ -186,8 +186,8 @@
 				</control>
 				<control type="button" id="12">
 					<description>Run</description>
-					<posx>910</posx>
-					<posy>33</posy>
+					<left>910</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>518</label>
@@ -206,8 +206,8 @@
 				</control>
 				<control type="radiobutton" id="13">
 					<description>update</description>
-					<posx>1092</posx>
-					<posy>33</posy>
+					<left>1092</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<label>21340</label>
@@ -225,8 +225,8 @@
 					<onright>6</onright>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>33</posy>
+					<left>0</left>
+					<top>33</top>
 					<width>182</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>
@@ -242,8 +242,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>265</posx>
-				<posy>579</posy>
+				<left>265</left>
+				<top>579</top>
 				<width>975</width>
 				<height>103</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -256,8 +256,8 @@
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
-				<posx>1180</posx>
-				<posy>699</posy>
+				<left>1180</left>
+				<top>699</top>
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onup>9000</onup>
@@ -270,8 +270,8 @@
 			<control type="group">
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="49">
-					<posx>100</posx>
-					<posy>120</posy>
+					<left>100</left>
+					<top>120</top>
 					<width>1080</width>
 					<height>265</height>
 					<onleft>49</onleft>
@@ -282,16 +282,16 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="1080" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
-							<posx>10</posx>
-							<posy>0</posy>
+							<left>10</left>
+							<top>0</top>
 							<width>210</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -302,8 +302,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<posx>235</posx>
-							<posy>0</posy>
+							<left>235</left>
+							<top>0</top>
 							<width>835</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -316,16 +316,16 @@
 					</itemlayout>
 					<focusedlayout width="1080" height="29">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-nofocus.png</texture>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1080</width>
 							<height>30</height>
 							<texture border="7">list-focus2.png</texture>
@@ -334,8 +334,8 @@
 							<include>ListFocusScroll22</include>
 						</control>
 						<control type="label">
-							<posx>10</posx>
-							<posy>0</posy>
+							<left>10</left>
+							<top>0</top>
 							<width>210</width>
 							<height>30</height>
 							<font>font-20</font>
@@ -346,8 +346,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<posx>235</posx>
-							<posy>0</posy>
+							<left>235</left>
+							<top>0</top>
 							<width>835</width>
 							<height>30</height>
 							<font>font-20</font>

@@ -7,8 +7,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -21,8 +21,8 @@
 			<visible>[String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + !String.Contains(Container.FolderPath,videodb://movies/) + !String.Contains(Container.FolderPath,videodb://tvshows/) + !String.Contains(Container.FolderPath,videodb://musicvideos/) + !String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/) + !String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -35,8 +35,8 @@
 			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -49,8 +49,8 @@
 			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -66,8 +66,8 @@
 		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
 		<include condition="Skin.HasSetting(MusicVideosExtraFanart)">fanart-extra-musicvideos</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Fanart.Image]</texture>
@@ -78,8 +78,8 @@
 			<visible>[[Container.Content(Seasons) | Container.Content(Episodes)] + ListItem.IsParentFolder] + ![Container.Content(Seasons) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6105)) + !ListItem.IsParentFolder] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6106)) + !ListItem.IsParentFolder] + !String.IsEmpty(Fanart.Image) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -90,8 +90,8 @@
 			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !String.IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons)] + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6105))] + ![Container.Content(Episodes) + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6106))] + ![Container.Content(MusicVideos) + Skin.HasSetting(MusicVideosExtraFanart) + !String.IsEmpty(Control.GetLabel(6107))] + !String.IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Skin.String(Video_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
@@ -148,7 +148,7 @@
 			<include>Fanart-Videos_Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -251,8 +251,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(589) | Control.IsVisible(590) | Control.IsVisible(596)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

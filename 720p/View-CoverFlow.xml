@@ -3,8 +3,8 @@
 	<include name="CoverFlow-Movies">
 		<control type="videowindow">
 			<description>trailer preview</description>
-			<posx>351</posx>
-			<posy>120</posy>
+			<left>351</left>
+			<top>120</top>
 			<width>578</width>
 			<height>155</height>
 			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
@@ -14,8 +14,8 @@
 			<visible>Control.IsVisible(55) + [Player.HasVideo + !!Skin.HasSetting(HideVideoBackgrounds)] + !Skin.HasSetting(Fullscreen_Trailer)</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>580</posy>
+			<left>0</left>
+			<top>580</top>
 			<width>1280</width>
 			<height>240</height>
 			<visible>Control.IsVisible(55)</visible>
@@ -24,55 +24,55 @@
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
-			<posy>260</posy>
+			<top>260</top>
 			<visible>Control.IsVisible(55) + Container.OnNext</visible>
 			<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
-				<posx>80</posx>
+				<left>80</left>
 				<visible>Container.OnNext</visible>
 				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -80,49 +80,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>180</posx>
+				<left>180</left>
 				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -130,49 +130,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>280</posx>
+				<left>280</left>
 				<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -180,51 +180,51 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>1000</posx>
+				<left>1000</left>
 				<visible>!Container.OnNext</visible>
 				<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
 				<animation effect="rotatey" center="1320" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -232,49 +232,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -282,49 +282,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -335,51 +335,51 @@
 				<visible>Container.OnNext</visible>
 				<animation effect="slide" end="-110,0" time="250" reversible="false">Hidden</animation>
 				<control type="group">
-					<posx>700</posx>
+					<left>700</left>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="1020" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 					<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<control type="image">
-						<posx>20</posx>
-						<posy>430</posy>
+						<left>20</left>
+						<top>430</top>
 						<width>260</width>
 						<height>370</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>44</posy>
+						<left>20</left>
+						<top>44</top>
 						<width>260</width>
 						<height>370</height>
 						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture>case-tv.png</texture>
@@ -387,50 +387,50 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>490</posx>
+					<left>490</left>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="470" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 					<control type="image">
-						<posx>20</posx>
-						<posy>430</posy>
+						<left>20</left>
+						<top>430</top>
 						<width>260</width>
 						<height>370</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>44</posy>
+						<left>20</left>
+						<top>44</top>
 						<width>260</width>
 						<height>370</height>
 						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture>case-tv.png</texture>
@@ -441,55 +441,55 @@
 		</control>
 		<control type="group" id="7002">
 			<include>Window_OpenClose_Animation</include>
-			<posy>260</posy>
+			<top>260</top>
 			<visible>Control.IsVisible(55) + Container.OnPrevious</visible>
 			<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<visible>Container.OnPrevious</visible>
 				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -497,49 +497,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -547,49 +547,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>700</posx>
+				<left>700</left>
 				<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -597,51 +597,51 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>-20</posx>
+				<left>-20</left>
 				<visible>!Container.OnPrevious</visible>
 				<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -649,49 +649,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>80</posx>
+				<left>80</left>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -699,49 +699,49 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>180</posx>
+				<left>180</left>
 				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -752,51 +752,51 @@
 				<visible>Container.OnPrevious</visible>
 				<animation effect="slide" end="110,0" time="250" reversible="false">Hidden</animation>
 				<control type="group">
-					<posx>280</posx>
+					<left>280</left>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="260" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 					<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<control type="image">
-						<posx>20</posx>
-						<posy>430</posy>
+						<left>20</left>
+						<top>430</top>
 						<width>260</width>
 						<height>370</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>44</posy>
+						<left>20</left>
+						<top>44</top>
 						<width>260</width>
 						<height>370</height>
 						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture>case-tv.png</texture>
@@ -804,50 +804,50 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>490</posx>
+					<left>490</left>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="810" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 					<control type="image">
-						<posx>20</posx>
-						<posy>430</posy>
+						<left>20</left>
+						<top>430</top>
 						<width>260</width>
 						<height>370</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>404</posy>
+						<left>20</left>
+						<top>404</top>
 						<width>278</width>
 						<height>428</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>44</posy>
+						<left>20</left>
+						<top>44</top>
 						<width>260</width>
 						<height>370</height>
 						<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 						<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>12</posy>
+						<left>20</left>
+						<top>12</top>
 						<width>278</width>
 						<height>428</height>
 						<texture>case-tv.png</texture>
@@ -857,53 +857,53 @@
 			</control>
 		</control>
 		<control type="group" id="7000">
-			<posy>260</posy>
+			<top>260</top>
 			<visible>Control.IsVisible(55) + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 			<control type="group">
-				<posx>80</posx>
+				<left>80</left>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -911,50 +911,50 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>180</posx>
+				<left>180</left>
 				<include>Window_OpenClose_Visible_Coverflow(-2)_Animation</include>
 				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -962,50 +962,50 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>280</posx>
+				<left>280</left>
 				<include>Window_OpenClose_Visible_Coverflow(-1)_Animation</include>
 				<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -1013,50 +1013,50 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<include>Window_OpenClose_Visible_Coverflow(3)_Animation</include>
 				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -1064,50 +1064,50 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<include>Window_OpenClose_Visible_Coverflow(2)_Animation</include>
 				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -1115,50 +1115,50 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>700</posx>
+				<left>700</left>
 				<include>Window_OpenClose_Visible_Coverflow(1)_Animation</include>
 				<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
@@ -1166,57 +1166,57 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>490</posx>
+				<left>490</left>
 				<include>Window_OpenClose_Visible_Coverflow(0)_Animation</include>
 				<control type="image">
-					<posx>20</posx>
-					<posy>430</posy>
+					<left>20</left>
+					<top>430</top>
 					<width>260</width>
 					<height>370</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png" fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>404</posy>
+					<left>20</left>
+					<top>404</top>
 					<width>278</width>
 					<height>428</height>
 					<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>44</posy>
+					<left>20</left>
+					<top>44</top>
 					<width>260</width>
 					<height>370</height>
 					<texture diffuse="poster-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
-					<posy>12</posy>
+					<left>20</left>
+					<top>12</top>
 					<width>278</width>
 					<height>428</height>
 					<texture>case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>133</posx>
-					<posy>21</posy>
+					<left>133</left>
+					<top>21</top>
 					<width>37</width>
 					<height>22</height>
 					<texture>movieset.png</texture>
@@ -1228,8 +1228,8 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Movies) | Container.Content(Sets) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
-			<posx>-410</posx>
-			<posy>260</posy>
+			<left>-410</left>
+			<top>260</top>
 			<width>2100</width>
 			<height>428</height>
 			<onleft>55</onleft>
@@ -1246,8 +1246,8 @@
 			<itemlayout width="300" height="440"/>
 			<focusedlayout width="300" height="440">
 				<control type="image">
-					<posx>0</posx>
-					<posy>12</posy>
+					<left>0</left>
+					<top>12</top>
 					<width>300</width>
 					<height>440</height>
 					<texture/>
@@ -1255,29 +1255,29 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>15</posy>
+			<left>0</left>
+			<top>15</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>81</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 				<visible>Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 				<visible>[[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1285,8 +1285,8 @@
 				<visible>[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1294,8 +1294,8 @@
 				<visible>[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1303,8 +1303,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1312,8 +1312,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 			</control>
 			<control type="label">
-				<posx>140</posx>
-				<posy>27</posy>
+				<left>140</left>
+				<top>27</top>
 				<width>1000</width>
 				<height>35</height>
 				<font>font-30</font>
@@ -1324,8 +1324,8 @@
 				<label>[B]$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)][/B]</label>
 			</control>
 			<control type="label">
-				<posx>355</posx>
-				<posy>60</posy>
+				<left>355</left>
+				<top>60</top>
 				<width>577</width>
 				<height>40</height>
 				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : ]$INFO[ListItem.Property(TotalEpisodes), - $LOCALIZE[20360] : ][/B]</label>
@@ -1336,8 +1336,8 @@
 				<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
 			<control type="group">
-				<posx>370</posx>
-				<posy>60</posy>
+				<left>370</left>
+				<top>60</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
@@ -1345,13 +1345,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>15</posy>
+			<left>0</left>
+			<top>15</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
 			<control type="button" id="7024">
-				<posx>1147</posx>
-				<posy>60</posy>
+				<left>1147</left>
+				<top>60</top>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -1368,8 +1368,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(55) + !Skin.HasSetting(HideInfoPanelCoverView) + !Container.Content(Sets)</visible>
 			<control type="group" id="7031">
@@ -1377,15 +1377,15 @@
 				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>
 				<visible>Control.IsVisible(55) + ![Container.Content(Movies) + String.IsEmpty(ListItem.Plot)] + !ListItem.IsParentFolder + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 				<control type="image">
-					<posx>160</posx>
-					<posy>125</posy>
+					<left>160</left>
+					<top>125</top>
 					<width>960</width>
 					<height>150</height>
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>300</posx>
-					<posy>137</posy>
+					<left>300</left>
+					<top>137</top>
 					<width>680</width>
 					<height>128</height>
 					<font>font-20</font>
@@ -1400,8 +1400,8 @@
 	</include>
 	<include name="CoverFlow-Music">
 		<control type="image">
-			<posx>0</posx>
-			<posy>520</posy>
+			<left>0</left>
+			<top>520</top>
 			<width>1280</width>
 			<height>300</height>
 			<texture>white-reflect.png</texture>
@@ -1410,19 +1410,19 @@
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>
-			<posx>2</posx>
-			<posy>345</posy>
+			<left>2</left>
+			<top>345</top>
 			<visible>Control.IsVisible(55) + Container.OnNext</visible>
 			<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<control type="group">
-				<posx>20</posx>
+				<left>20</left>
 				<visible>Container.OnNext</visible>
 				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 				<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1430,32 +1430,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-4).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-4).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1463,16 +1463,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1480,11 +1480,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>120</posx>
+				<left>120</left>
 				<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1492,32 +1492,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1525,16 +1525,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1542,11 +1542,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>220</posx>
+				<left>220</left>
 				<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1554,32 +1554,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1587,16 +1587,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1604,13 +1604,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>1000</posx>
+				<left>1000</left>
 				<visible>!Container.OnNext</visible>
 				<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
 				<animation effect="rotatey" center="1380" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1618,32 +1618,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1651,16 +1651,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1668,11 +1668,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<animation effect="rotatey" center="1280" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1680,32 +1680,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1713,16 +1713,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1730,11 +1730,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<animation effect="rotatey" center="1180" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1742,32 +1742,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1775,16 +1775,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1795,13 +1795,13 @@
 				<visible>Container.OnNext</visible>
 				<animation effect="slide" end="-140,0" time="250" reversible="false">Hidden</animation>
 				<control type="group">
-					<posx>700</posx>
+					<left>700</left>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="1080" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 					<animation effect="rotatey" center="1080" start="65" end="65" time="0" condition="true">Conditional</animation>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1809,32 +1809,32 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(0).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>23</posy>
+						<left>0</left>
+						<top>23</top>
 						<width>360</width>
 						<height>327</height>
 						<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>346</posy>
+						<left>34</left>
+						<top>346</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1842,16 +1842,16 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>355</posy>
+						<left>34</left>
+						<top>355</top>
 						<width>318</width>
 						<height>318</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>350</posy>
+						<left>0</left>
+						<top>350</top>
 						<width>360</width>
 						<height>327</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1859,12 +1859,12 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>460</posx>
+					<left>460</left>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="450" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1872,32 +1872,32 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-1).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture background="true">$INFO[ListItem(-1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>23</posy>
+						<left>0</left>
+						<top>23</top>
 						<width>360</width>
 						<height>327</height>
 						<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>346</posy>
+						<left>34</left>
+						<top>346</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1905,16 +1905,16 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>355</posy>
+						<left>34</left>
+						<top>355</top>
 						<width>318</width>
 						<height>318</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>350</posy>
+						<left>0</left>
+						<top>350</top>
 						<width>360</width>
 						<height>327</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1925,19 +1925,19 @@
 		</control>
 		<control type="group" id="7002">
 			<include>Window_OpenClose_Animation</include>
-			<posx>2</posx>
-			<posy>345</posy>
+			<left>2</left>
+			<top>345</top>
 			<visible>Control.IsVisible(55) + Container.OnPrevious</visible>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<visible>Container.OnPrevious</visible>
 				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 				<animation effect="rotatey" center="1280" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1945,32 +1945,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(4).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(4).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1978,16 +1978,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -1995,11 +1995,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<animation effect="rotatey" center="1180" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2007,32 +2007,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2040,16 +2040,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2057,11 +2057,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>700</posx>
+				<left>700</left>
 				<animation effect="rotatey" center="1080" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2069,32 +2069,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2102,16 +2102,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2119,13 +2119,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>-80</posx>
+				<left>-80</left>
 				<visible>!Container.OnPrevious</visible>
 				<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
 				<animation effect="rotatey" center="-100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2133,32 +2133,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2166,16 +2166,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2183,11 +2183,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>20</posx>
+				<left>20</left>
 				<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2195,32 +2195,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2228,16 +2228,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2245,11 +2245,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>120</posx>
+				<left>120</left>
 				<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2257,32 +2257,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2290,16 +2290,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2310,13 +2310,13 @@
 				<visible>Container.OnPrevious</visible>
 				<animation effect="slide" end="140,0" time="250" reversible="false">Hidden</animation>
 				<control type="group">
-					<posx>220</posx>
+					<left>220</left>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="200" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
 					<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2324,32 +2324,32 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(0).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>23</posy>
+						<left>0</left>
+						<top>23</top>
 						<width>360</width>
 						<height>327</height>
 						<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>346</posy>
+						<left>34</left>
+						<top>346</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2357,16 +2357,16 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>355</posy>
+						<left>34</left>
+						<top>355</top>
 						<width>318</width>
 						<height>318</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>350</posy>
+						<left>0</left>
+						<top>350</top>
 						<width>360</width>
 						<height>327</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2374,12 +2374,12 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>460</posx>
+					<left>460</left>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="840" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2387,32 +2387,32 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(1).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>28</posy>
+						<left>34</left>
+						<top>28</top>
 						<width>318</width>
 						<height>318</height>
 						<texture background="true">$INFO[ListItem(1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>23</posy>
+						<left>0</left>
+						<top>23</top>
 						<width>360</width>
 						<height>327</height>
 						<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>346</posy>
+						<left>34</left>
+						<top>346</top>
 						<width>318</width>
 						<height>318</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2420,16 +2420,16 @@
 						<visible>Container.Content(Artists)</visible>
 					</control>
 					<control type="image">
-						<posx>34</posx>
-						<posy>355</posy>
+						<left>34</left>
+						<top>355</top>
 						<width>318</width>
 						<height>318</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
 						<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>350</posy>
+						<left>0</left>
+						<top>350</top>
 						<width>360</width>
 						<height>327</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2439,17 +2439,17 @@
 			</control>
 		</control>
 		<control type="group" id="7000">
-			<posx>2</posx>
-			<posy>345</posy>
+			<left>2</left>
+			<top>345</top>
 			<animation effect="slide" start="0,0" end="-19,0" time="0" condition="Container.Content(Artists)">Conditional</animation>
 			<visible>Control.IsVisible(55) + !Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 			<control type="group">
-				<posx>20</posx>
+				<left>20</left>
 				<include>Window_OpenClose_Visible_Coverflow(-3)_Animation</include>
 				<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2457,32 +2457,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2490,16 +2490,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2507,12 +2507,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>120</posx>
+				<left>120</left>
 				<include>Window_OpenClose_Visible_Coverflow(-2)_Animation</include>
 				<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2520,32 +2520,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2553,16 +2553,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2570,12 +2570,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>220</posx>
+				<left>220</left>
 				<include>Window_OpenClose_Visible_Coverflow(-1)_Animation</include>
 				<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2583,32 +2583,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2616,16 +2616,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2633,12 +2633,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>900</posx>
+				<left>900</left>
 				<include>Window_OpenClose_Visible_Coverflow(3)_Animation</include>
 				<animation effect="rotatey" center="1280" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2646,32 +2646,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2679,16 +2679,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2696,12 +2696,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>800</posx>
+				<left>800</left>
 				<include>Window_OpenClose_Visible_Coverflow(2)_Animation</include>
 				<animation effect="rotatey" center="1180" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2709,32 +2709,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2742,16 +2742,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2759,12 +2759,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>700</posx>
+				<left>700</left>
 				<include>Window_OpenClose_Visible_Coverflow(1)_Animation</include>
 				<animation effect="rotatey" center="1080" start="65" end="65" time="0" condition="true">Conditional</animation>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2772,32 +2772,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2805,16 +2805,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2822,11 +2822,11 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>460</posx>
+				<left>460</left>
 				<include>Window_OpenClose_Visible_Coverflow(0)_Animation</include>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2834,32 +2834,32 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture diffuse="poster-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + ListItem(0).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture background="true">$INFO[ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>23</posy>
+					<left>0</left>
+					<top>23</top>
 					<width>360</width>
 					<height>327</height>
 					<texture diffuse="cdcase-diffuse.png">cdcase.png</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>346</posy>
+					<left>34</left>
+					<top>346</top>
 					<width>318</width>
 					<height>318</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -2867,16 +2867,16 @@
 					<visible>Container.Content(Artists)</visible>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>355</posy>
+					<left>34</left>
+					<top>355</top>
 					<width>318</width>
 					<height>318</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png" background="true">$INFO[ListItem(0).Icon]</texture>
 					<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>360</width>
 					<height>327</height>
 					<texture flipy="true" diffuse="diffuse_mirror2.png">cdcase.png</texture>
@@ -2888,8 +2888,8 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
 			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
-			<posx>-473</posx>
-			<posy>345</posy>
+			<left>-473</left>
+			<top>345</top>
 			<width>2226</width>
 			<height>318</height>
 			<onleft>55</onleft>
@@ -2907,8 +2907,8 @@
 			<itemlayout width="318" height="318"/>
 			<focusedlayout width="318" height="318">
 				<control type="image">
-					<posx>34</posx>
-					<posy>28</posy>
+					<left>34</left>
+					<top>28</top>
 					<width>318</width>
 					<height>318</height>
 					<texture/>
@@ -2916,20 +2916,20 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>15</posy>
+			<left>0</left>
+			<top>15</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>91</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>39</posy>
+				<left>40</left>
+				<top>39</top>
 				<width>1200</width>
 				<height>35</height>
 				<font>font-30</font>
@@ -2941,8 +2941,8 @@
 				<visible>![Container.Content(Albums) | Container.Content(Songs)]</visible>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>28</posy>
+				<left>40</left>
+				<top>28</top>
 				<width>1200</width>
 				<height>35</height>
 				<font>font-30</font>
@@ -2953,8 +2953,8 @@
 				<label>$VAR[ViewCoverFlowLabel1]</label>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>58</posy>
+				<left>40</left>
+				<top>58</top>
 				<width>1200</width>
 				<height>35</height>
 				<font>font-23</font>

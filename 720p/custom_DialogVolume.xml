@@ -2,8 +2,8 @@
 <window type="dialog" id="1114">
 	<defaultcontrol>888</defaultcontrol>
 	<coordinates>
-		<posx>240</posx>
-		<posy>200</posy>
+		<left>240</left>
+		<top>200</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -11,16 +11,16 @@
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 			<control type="image">
 				<description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>800</width>
 				<height>195</height>
 				<texture border="17">panel.png</texture>
 				<bordersize>11</bordersize>
 			</control>
 			<control type="button">
-				<posx>744</posx>
-				<posy>32</posy>
+				<left>744</left>
+				<top>32</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -30,8 +30,8 @@
 			</control>
 			<control type="label">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>40</posy>
+				<left>40</left>
+				<top>40</top>
 				<width>720</width>
 				<height>30</height>
 				<align>center</align>
@@ -41,24 +41,24 @@
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="image">
-				<posx>45</posx>
-				<posy>90</posy>
+				<left>45</left>
+				<top>90</top>
 				<width>710</width>
 				<height>30</height>
 				<texture border="7">list-nofocus.png</texture>
 				<visible>!Control.HasFocus(888)</visible>
 			</control>
 			<control type="image">
-				<posx>45</posx>
-				<posy>90</posy>
+				<left>45</left>
+				<top>90</top>
 				<width>710</width>
 				<height>30</height>
 				<texture border="7">list-focus.png</texture>
 				<visible>Control.HasFocus(888)</visible>
 			</control>
 			<control type="label">
-				<posx>55</posx>
-				<posy>95</posy>
+				<left>55</left>
+				<top>95</top>
 				<width>710</width>
 				<height>30</height>
 				<label>$LOCALIZE[13376]</label>
@@ -67,8 +67,8 @@
 			</control>
 			<control type="slider" id="888">
 				<description>Default Slider</description>
-				<posx>545</posx>
-				<posy>95</posy>
+				<left>545</left>
+				<top>95</top>
 				<width>200</width>
 				<height>20</height>
 				<texturesliderbar>osd_slider_bg.png</texturesliderbar>
@@ -79,8 +79,8 @@
 				<ondown>889</ondown>
 			</control>
 			<control type="button" id="889">
-				<posx>45</posx>
-				<posy>124</posy>
+				<left>45</left>
+				<top>124</top>
 				<width>710</width>
 				<height>30</height>
 				<label>15047</label>

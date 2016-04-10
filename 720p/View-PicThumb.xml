@@ -2,20 +2,20 @@
 <includes>
 	<include name="PicThumb">
 		<control type="group">
-			<posx>0</posx>
-			<posy>15</posy>
+			<left>0</left>
+			<top>15</top>
 			<visible>Control.IsVisible(594)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>91</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>28</posy>
+				<left>0</left>
+				<top>28</top>
 				<width>1280</width>
 				<height>35</height>
 				<font>font-30</font>
@@ -25,8 +25,8 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>58</posy>
+				<left>0</left>
+				<top>58</top>
 				<width>1280</width>
 				<height>35</height>
 				<font>font-23</font>
@@ -36,8 +36,8 @@
 				<label>$INFO[ListItem.Date,]$INFO[ListItem.PictureResolution, - ]$INFO[ListItem.size, - ]</label>
 			</control>
 			<control type="button" id="7009">
-				<posx>1030</posx>
-				<posy>54</posy>
+				<left>1030</left>
+				<top>54</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>fullscreen-focus.png</texturefocus>
@@ -51,8 +51,8 @@
 			</control>
 		</control>
 		<control type="wraplist" id="594">
-			<posx>0</posx>
-			<posy>578</posy>
+			<left>0</left>
+			<top>578</top>
 			<width>1280</width>
 			<height>180</height>
 			<onleft>594</onleft>
@@ -69,8 +69,8 @@
 			<visible>!Container.Content(AddOns) + Container.Content(Images)</visible>
 			<itemlayout width="256" height="130">
 				<control type="image">
-					<posx>30</posx>
-					<posy>-2</posy>
+					<left>30</left>
+					<top>-2</top>
 					<width>194</width>
 					<height>151</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -79,8 +79,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>30</posx>
-					<posy>-2</posy>
+					<left>30</left>
+					<top>-2</top>
 					<width>194</width>
 					<height>151</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -90,8 +90,8 @@
 					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>177</posx>
-					<posy>90</posy>
+					<left>177</left>
+					<top>90</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -100,8 +100,8 @@
 			</itemlayout>
 			<focusedlayout width="256" height="130">
 				<control type="image">
-					<posx>30</posx>
-					<posy>-2</posy>
+					<left>30</left>
+					<top>-2</top>
 					<width>194</width>
 					<height>151</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -112,8 +112,8 @@
 					<bordersize>12</bordersize>
 				</control>
 				<control type="image">
-					<posx>177</posx>
-					<posy>90</posy>
+					<left>177</left>
+					<top>90</top>
 					<width>35</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>

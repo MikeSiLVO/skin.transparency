@@ -2,22 +2,22 @@
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<posx>235</posx>
-		<posy>35</posy>
+		<left>235</left>
+		<top>35</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>810</width>
 			<height>650</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
-			<posx>600</posx>
-			<posy>35</posy>
+			<left>600</left>
+			<top>35</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -27,8 +27,8 @@
 		</control>
 		<control type="label" id="1">
 			<description>heading label</description>
-			<posx>45</posx>
-			<posy>40</posy>
+			<left>45</left>
+			<top>40</top>
 			<width>710</width>
 			<height>30</height>
 			<align>center</align>
@@ -38,15 +38,15 @@
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
-			<posx>45</posx>
-			<posy>78</posy>
+			<left>45</left>
+			<top>78</top>
 			<width>710</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="grouplist" id="5">
-			<posx>45</posx>
-			<posy>90</posy>
+			<left>45</left>
+			<top>90</top>
 			<width>710</width>
 			<height>441</height>
 			<pagecontrol>60</pagecontrol>
@@ -57,8 +57,8 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -68,8 +68,8 @@
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -79,8 +79,8 @@
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -101,8 +101,8 @@
 		</control>
 		<control type="edit" id="12">
 			<description>Default Edit</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -111,8 +111,8 @@
 			<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>762</posx>
-			<posy>87</posy>
+			<left>762</left>
+			<top>87</top>
 			<width>20</width>
 			<height>446</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -128,11 +128,11 @@
 			<orientation>vertical</orientation>
 		</control>
 		<control type="group" id="9000">
-			<posx>205</posx>
+			<left>205</left>
 			<control type="button" id="28">
 				<description>OK button</description>
-				<posx>0</posx>
-				<posy>570</posy>
+				<left>0</left>
+				<top>570</top>
 				<width>200</width>
 				<height>35</height>
 				<label>186</label>
@@ -149,8 +149,8 @@
 			</control>
 			<control type="button" id="27">
 				<description>Cancel button</description>
-				<posx>200</posx>
-				<posy>570</posy>
+				<left>200</left>
+				<top>570</top>
 				<width>200</width>
 				<height>35</height>
 				<label>192</label>
@@ -167,8 +167,8 @@
 			</control>
 		</control>
 		<control type="image">
-			<posx>205</posx>
-			<posy>570</posy>
+			<left>205</left>
+			<top>570</top>
 			<width>200</width>
 			<height>35</height>
 			<texture border="7">button-focus.png</texture>

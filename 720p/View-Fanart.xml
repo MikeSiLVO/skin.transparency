@@ -2,7 +2,7 @@
 <includes>
 	<include name="Fanart-Videos">
 		<control type="list" id="50">
-			<posx>200</posx>
+			<left>200</left>
 			<width>355</width>
 			<onleft>7005</onleft>
 			<onright>60</onright>
@@ -20,16 +20,16 @@
 			<include condition="Skin.HasSetting(Fanart_Show_Banners) + Skin.HasSetting(FanartLong)">FanartLongBanners</include>
 			<itemlayout width="355" height="29" condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)]">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>305</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -40,8 +40,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -49,8 +49,8 @@
 					<visible>[[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)]</visible>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -60,16 +60,16 @@
 			</itemlayout>
 			<focusedlayout width="355" height="29" condition="![Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)]">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -78,8 +78,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>305</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -90,8 +90,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -99,8 +99,8 @@
 					<visible>[[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)]</visible>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -110,8 +110,8 @@
 			</focusedlayout>
 			<itemlayout width="355" height="87" condition="Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)">
 				<control type="image">
-					<posx>-8</posx>
-					<posy>0</posy>
+					<left>-8</left>
+					<top>0</top>
 					<width>355</width>
 					<height>87</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -119,8 +119,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>-8</posx>
-					<posy>0</posy>
+					<left>-8</left>
+					<top>0</top>
 					<width>355</width>
 					<height>87</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -130,8 +130,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>300</posx>
-					<posy>44</posy>
+					<left>300</left>
+					<top>44</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -139,8 +139,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
-					<posx>300</posx>
-					<posy>44</posy>
+					<left>300</left>
+					<top>44</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -150,8 +150,8 @@
 			</itemlayout>
 			<focusedlayout width="355" height="87" condition="Container.Content(TVShows) + Skin.HasSetting(Fanart_Show_Banners)">
 				<control type="image">
-					<posx>-8</posx>
-					<posy>0</posy>
+					<left>-8</left>
+					<top>0</top>
 					<width>355</width>
 					<height>87</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
@@ -167,8 +167,8 @@
 					<visible>ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>-8</posx>
-					<posy>0</posy>
+					<left>-8</left>
+					<top>0</top>
 					<width>355</width>
 					<height>87</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -186,8 +186,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>300</posx>
-					<posy>44</posy>
+					<left>300</left>
+					<top>44</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -203,8 +203,8 @@
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
 				<control type="image">
-					<posx>300</posx>
-					<posy>44</posy>
+					<left>300</left>
+					<top>44</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -227,15 +227,15 @@
 			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>875</width>
 				<height>158</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>614</posy>
+				<left>257</left>
+				<top>614</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -251,8 +251,8 @@
 			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>10</posx>
-				<posy>480</posy>
+				<left>10</left>
+				<top>480</top>
 				<width>214</width>
 				<height>214</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
@@ -261,8 +261,8 @@
 				<visible>ListItem.IsParentFolder | [!ListItem.IsParentFolder + [[Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)] | [Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)] | [Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)]]] | !Container.Content(Genres)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<texture>thumb-shadow.png</texture>
@@ -270,8 +270,8 @@
 [!Skin.HasSetting(Enable_Foldericons_MusicVideos_Genre) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)]]</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -281,8 +281,8 @@
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Movies_Genre) + String.IsEqual(Container.FolderPath,videodb://movies/genres/)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -292,8 +292,8 @@
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_TVShows_Genre) + String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -310,24 +310,24 @@
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>875</width>
 				<height>158</height>
 				<texture border="10">underlay.png</texture>
 				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>875</width>
 				<height>123</height>
 				<texture border="10">underlay.png</texture>
 				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>568</posy>
+				<left>257</left>
+				<top>568</top>
 				<width>617</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -338,8 +338,8 @@
 				<label>$INFO[ListItem.Title]</label>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>568</posy>
+				<left>257</left>
+				<top>568</top>
 				<width>617</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -353,8 +353,8 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(FanartShowPlot)</visible>
 				<control type="label">
-					<posx>257</posx>
-					<posy>593</posy>
+					<left>257</left>
+					<top>593</top>
 					<width>610</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -365,8 +365,8 @@
 					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<posx>257</posx>
-					<posy>613</posy>
+					<left>257</left>
+					<top>613</top>
 					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -377,8 +377,8 @@
 					<label>$VAR[ViewFanartLabel1]</label>
 				</control>
 				<control type="label">
-					<posx>257</posx>
-					<posy>633</posy>
+					<left>257</left>
+					<top>633</top>
 					<width>160</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -389,8 +389,8 @@
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<posx>420</posx>
-					<posy>633</posy>
+					<left>420</left>
+					<top>633</top>
 					<width>160</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -401,8 +401,8 @@
 					<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<posx>582</posx>
-					<posy>633</posy>
+					<left>582</left>
+					<top>633</top>
 					<width>170</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -417,8 +417,8 @@
 				<visible>Skin.HasSetting(FanartShowPlot)</visible>
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
-					<posx>257</posx>
-					<posy>597</posy>
+					<left>257</left>
+					<top>597</top>
 					<width>490</width>
 					<height>60</height>
 					<font>font-19</font>
@@ -432,8 +432,8 @@
 			<control type="group">
 				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
 				<control type="group">
-					<posx>252</posx>
-					<posy>655</posy>
+					<left>252</left>
+					<top>655</top>
 					<width>472</width>
 					<height>48</height>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
@@ -446,8 +446,8 @@
 			<include>Window_OpenClose_Visible_FanartButton_Animation</include>
 			<animation effect="slide" end="-401,0" time="0" condition="Skin.HasSetting(FanartLong)">Conditional</animation>
 			<control type="button" id="7005">
-				<posx>1222</posx>
-				<posy>14</posy>
+				<left>1222</left>
+				<top>14</top>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -465,8 +465,8 @@
 		</control>
 		<control type="videowindow">
 			<description>trailer preview</description>
-			<posx>270</posx>
-			<posy>200</posy>
+			<left>270</left>
+			<top>200</top>
 			<width>578</width>
 			<height>325</height>
 			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
@@ -483,8 +483,8 @@
 			</control>
 			<animation effect="slide" end="0,40" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -492,8 +492,8 @@
 				<visible>ListItem.IsParentFolder + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture background="true">$VAR[IconPoster]</texture>
@@ -502,8 +502,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
+				<left>18</left>
+				<top>368</top>
 				<width>234</width>
 				<height>360</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
@@ -511,8 +511,8 @@
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>112</posx>
-				<posy>375</posy>
+				<left>112</left>
+				<top>375</top>
 				<width>30</width>
 				<height>18</height>
 				<texture>movieset.png</texture>
@@ -520,8 +520,8 @@
 				<visible>!ListItem.IsParentFolder + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + String.StartsWith(Container.Folderpath,videodb://)</visible>
 			</control>
 			<control type="image">
-				<posx>30</posx>
-				<posy>378</posy>
+				<left>30</left>
+				<top>378</top>
 				<width>33</width>
 				<height>12</height>
 				<texture>3d-logo.png</texture>
@@ -533,15 +533,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>875</width>
 				<height>186</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>535</posy>
+				<left>40</left>
+				<top>535</top>
 				<width>785</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -552,8 +552,8 @@
 				<label>$VAR[ViewFanartLabel2]</label>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>535</posy>
+				<left>257</left>
+				<top>535</top>
 				<width>600</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -564,8 +564,8 @@
 				<label>$VAR[ViewFanartLabel3]</label>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>565</posy>
+				<left>40</left>
+				<top>565</top>
 				<width>785</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -577,8 +577,8 @@
 				<visible>Skin.HasSetting(TVShowsPosters) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,special://)]</visible>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>565</posy>
+				<left>257</left>
+				<top>565</top>
 				<width>600</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -591,8 +591,8 @@
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
-				<posx>40</posx>
-				<posy>602</posy>
+				<left>40</left>
+				<top>602</top>
 				<width>785</width>
 				<height>83</height>
 				<font>font-19</font>
@@ -605,8 +605,8 @@
 			</control>
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
-				<posx>257</posx>
-				<posy>602</posy>
+				<left>257</left>
+				<top>602</top>
 				<width>600</width>
 				<height>83</height>
 				<font>font-19</font>
@@ -622,16 +622,16 @@
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
+				<left>38</left>
+				<top>418</top>
 				<width>198</width>
 				<height>288</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>480</posy>
+				<left>18</left>
+				<top>480</top>
 				<width>218</width>
 				<height>218</height>
 				<aspectratio align="left" aligny="center">keep</aspectratio>
@@ -644,8 +644,8 @@
 				<visible>![String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,special://)] + Skin.HasSetting(TVShowsPosters) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture background="true">$VAR[IconPoster]</texture>
@@ -653,8 +653,8 @@
 				<visible>!Skin.HasSetting(TVShowsPosters) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
+				<left>18</left>
+				<top>368</top>
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
@@ -665,23 +665,23 @@
 			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>875</width>
 				<height>186</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="image">
-				<posx>273</posx>
-				<posy>555</posy>
+				<left>273</left>
+				<top>555</top>
 				<width>567</width>
 				<height>126</height>
 				<texture border="14">banner-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="image">
-				<posx>286</posx>
-				<posy>568</posy>
+				<left>286</left>
+				<top>568</top>
 				<width>541</width>
 				<height>100</height>
 				<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
@@ -689,8 +689,8 @@
 				<visible>!ListItem.IsParentFolder + Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
-				<posx>240</posx>
-				<posy>535</posy>
+				<left>240</left>
+				<top>535</top>
 				<width>633</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -702,8 +702,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<posx>240</posx>
-				<posy>580</posy>
+				<left>240</left>
+				<top>580</top>
 				<width>633</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -715,8 +715,8 @@
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(TVShowsPosters)</visible>
 			</control>
 			<control type="label">
-				<posx>240</posx>
-				<posy>667</posy>
+				<left>240</left>
+				<top>667</top>
 				<width>633</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -729,8 +729,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<posx>240</posx>
-				<posy>660</posy>
+				<left>240</left>
+				<top>660</top>
 				<width>633</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -746,16 +746,16 @@
 			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
@@ -763,8 +763,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
+				<left>18</left>
+				<top>368</top>
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
@@ -776,24 +776,24 @@
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>875</width>
 				<height>186</height>
 				<texture border="10">underlay.png</texture>
 				<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>875</width>
 				<height>151</height>
 				<texture border="10">underlay.png</texture>
 				<visible>[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>535</posy>
+				<left>317</left>
+				<top>535</top>
 				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -804,8 +804,8 @@
 				<label>$VAR[ViewFanartLabel4]</label>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>535</posy>
+				<left>317</left>
+				<top>535</top>
 				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -816,8 +816,8 @@
 				<label>$VAR[ViewFanartLabel5]</label>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>563</posy>
+				<left>317</left>
+				<top>563</top>
 				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -830,8 +830,8 @@
 			</control>
 			<control type="textbox">
 				<description>Common Plot Value for all Content types</description>
-				<posx>317</posx>
-				<posy>570</posy>
+				<left>317</left>
+				<top>570</top>
 				<width>540</width>
 				<height>83</height>
 				<font>font-19</font>
@@ -843,8 +843,8 @@
 				<visible>Container.Content(Episodes)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>595</posy>
+				<left>317</left>
+				<top>595</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -856,8 +856,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>615</posy>
+				<left>317</left>
+				<top>615</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -869,8 +869,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>635</posy>
+				<left>317</left>
+				<top>635</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -882,16 +882,16 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="group">
-				<posx>311</posx>
-				<posy>655</posy>
+				<left>311</left>
+				<top>655</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
 				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="group">
-				<posx>311</posx>
-				<posy>655</posy>
+				<left>311</left>
+				<top>655</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
@@ -902,16 +902,16 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>38</posx>
-				<posy>418</posy>
+				<left>38</left>
+				<top>418</top>
 				<width>198</width>
 				<height>288</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>531</posy>
+				<left>10</left>
+				<top>531</top>
 				<width>298</width>
 				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
@@ -926,15 +926,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>875</width>
 				<height>158</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -947,8 +947,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>247</posx>
-				<posy>602</posy>
+				<left>247</left>
+				<top>602</top>
 				<width>600</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -963,24 +963,24 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -994,15 +994,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(LiveTV)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>875</width>
 				<height>158</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1015,8 +1015,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>247</posx>
-				<posy>602</posy>
+				<left>247</left>
+				<top>602</top>
 				<width>600</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
@@ -1031,16 +1031,16 @@
 			<visible>Control.IsVisible(50) + Container.Content(LiveTV)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1053,8 +1053,8 @@
 	</include>
 	<include name="Fanart-Music">
 		<control type="list" id="50">
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>355</width>
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
@@ -1069,16 +1069,16 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>335</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1091,16 +1091,16 @@
 			</itemlayout>
 			<focusedlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1109,8 +1109,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>335</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1128,15 +1128,15 @@
 			<visible>Control.IsVisible(50) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Container.Content(AddOns)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>257</posx>
-				<posy>614</posy>
+				<left>257</left>
+				<top>614</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1152,8 +1152,8 @@
 			<visible>Control.IsVisible(50) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Container.Content(AddOns)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>10</posx>
-				<posy>480</posy>
+				<left>10</left>
+				<top>480</top>
 				<width>214</width>
 				<height>214</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
@@ -1162,16 +1162,16 @@
 				<visible>ListItem.IsParentFolder | ![!Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)]</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(Enable_Foldericons_Music_Genre) + Container.Content(Genres) + String.IsEqual(Container.FolderPath,musicdb://genres/)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>452</posy>
+				<left>10</left>
+				<top>452</top>
 				<width>214</width>
 				<height>265</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1187,15 +1187,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1208,8 +1208,8 @@
 			</control>
 			<control type="textbox">
 				<description>Description Value for Artist</description>
-				<posx>225</posx>
-				<posy>607</posy>
+				<left>225</left>
+				<top>607</top>
 				<width>636</width>
 				<height>83</height>
 				<font>font-19</font>
@@ -1226,8 +1226,8 @@
 			<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="keep">scale</aspectratio>
@@ -1236,16 +1236,16 @@
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1261,16 +1261,16 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
+				<left>262</left>
+				<top>577</top>
 				<width>613</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1282,8 +1282,8 @@
 				<visible>Container.Content(Albums)</visible>
 			</control>
 			<control type="label">
-				<posx>262</posx>
-				<posy>577</posy>
+				<left>262</left>
+				<top>577</top>
 				<width>510</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1294,8 +1294,8 @@
 				<label>$VAR[ViewFanartLabel6]</label>
 			</control>
 			<control type="label">
-				<posx>865</posx>
-				<posy>577</posy>
+				<left>865</left>
+				<top>577</top>
 				<width>200</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1308,8 +1308,8 @@
 			</control>
 			<control type="label">
 				<description>time label</description>
-				<posx>865</posx>
-				<posy>577</posy>
+				<left>865</left>
+				<top>577</top>
 				<width>150</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1321,8 +1321,8 @@
 				<visible>ListItem.IsPlaying | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="label">
-				<posx>262</posx>
-				<posy>606</posy>
+				<left>262</left>
+				<top>606</top>
 				<width>613</width>
 				<height>30</height>
 				<font>font-25</font>
@@ -1333,8 +1333,8 @@
 				<label>$VAR[ViewFanartLabel10]</label>
 			</control>
 			<control type="label">
-				<posx>262</posx>
-				<posy>632</posy>
+				<left>262</left>
+				<top>632</top>
 				<width>613</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1345,8 +1345,8 @@
 				<label>$VAR[ViewFanartLabel7]</label>
 			</control>
 			<control type="label">
-				<posx>262</posx>
-				<posy>667</posy>
+				<left>262</left>
+				<top>667</top>
 				<width>130</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -1357,8 +1357,8 @@
 				<label>$VAR[ViewFanartLabel9]</label>
 			</control>
 			<control type="label">
-				<posx>390</posx>
-				<posy>667</posy>
+				<left>390</left>
+				<top>667</top>
 				<width>480</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -1371,8 +1371,8 @@
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>390</posx>
-				<posy>674</posy>
+				<left>390</left>
+				<top>674</top>
 				<width>380</width>
 				<height>20</height>
 				<info>Player.Progress</info>
@@ -1380,8 +1380,8 @@
 			</control>
 			<control type="slider" id="888">
 				<description>Slider</description>
-				<posx>390</posx>
-				<posy>674</posy>
+				<left>390</left>
+				<top>674</top>
 				<width>380</width>
 				<height>20</height>
 				<action>seek</action>
@@ -1392,16 +1392,16 @@
 			<visible>Control.IsVisible(50) + Container.Content(MusicVideos)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>875</width>
 				<height>186</height>
 				<texture border="10">underlay.png</texture>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>535</posy>
+				<left>317</left>
+				<top>535</top>
 				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1413,8 +1413,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>563</posy>
+				<left>317</left>
+				<top>563</top>
 				<width>540</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1426,8 +1426,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>595</posy>
+				<left>317</left>
+				<top>595</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -1439,8 +1439,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>615</posy>
+				<left>317</left>
+				<top>615</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -1452,8 +1452,8 @@
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="label">
-				<posx>317</posx>
-				<posy>635</posy>
+				<left>317</left>
+				<top>635</top>
 				<width>540</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -1469,8 +1469,8 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
+				<left>34</left>
+				<top>499</top>
 				<width>208</width>
 				<height>208</height>
 				<aspectratio scalediffuse="keep">scale</aspectratio>
@@ -1478,8 +1478,8 @@
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>34</posx>
-				<posy>499</posy>
+				<left>34</left>
+				<top>499</top>
 				<width>208</width>
 				<height>208</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -1487,8 +1487,8 @@
 				<visible>!ListItem.IsParentFolder + !Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>492</posy>
+				<left>8</left>
+				<top>492</top>
 				<width>245</width>
 				<height>225</height>
 				<texture>cdcase-shadow.png</texture>
@@ -1496,8 +1496,8 @@
 				<visible>!ListItem.IsParentFolder + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
-				<posx>12</posx>
-				<posy>496</posy>
+				<left>12</left>
+				<top>496</top>
 				<width>236</width>
 				<height>214</height>
 				<texture>cdcase.png</texture>
@@ -1505,8 +1505,8 @@
 				<visible>!ListItem.IsParentFolder + !Container.Content(MusicVideos) + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>531</posy>
+				<left>10</left>
+				<top>531</top>
 				<width>298</width>
 				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
@@ -1521,15 +1521,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1542,8 +1542,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>225</posx>
-				<posy>607</posy>
+				<left>225</left>
+				<top>607</top>
 				<width>636</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -1558,24 +1558,24 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1589,8 +1589,8 @@
 	<include name="Fanart-ProgramsPicturesAddons">
 		<control type="list" id="50">
 			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(AddonBrowser)</visible>
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>355</width>
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
@@ -1606,16 +1606,16 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>305</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1626,8 +1626,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -1636,16 +1636,16 @@
 			</itemlayout>
 			<focusedlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1654,8 +1654,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>305</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1666,8 +1666,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -1681,15 +1681,15 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1702,8 +1702,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>245</posx>
-				<posy>606</posy>
+				<left>245</left>
+				<top>606</top>
 				<width>600</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -1715,8 +1715,8 @@
 			</control>
 			<control type="textbox">
 				<description>plot description used by addons</description>
-				<posx>245</posx>
-				<posy>606</posy>
+				<left>245</left>
+				<top>606</top>
 				<width>600</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
@@ -1732,8 +1732,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>498</posy>
+				<left>8</left>
+				<top>498</top>
 				<width>220</width>
 				<height>220</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -1741,8 +1741,8 @@
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>498</posy>
+				<left>8</left>
+				<top>498</top>
 				<width>220</width>
 				<height>220</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
@@ -1755,8 +1755,8 @@
 				<visible>!ListItem.IsParentFolder + !Container.Content(Addons)</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>498</posy>
+				<left>8</left>
+				<top>498</top>
 				<width>220</width>
 				<height>220</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
@@ -1775,15 +1775,15 @@
 			<visible>Control.IsVisible(50) + !Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>585</posy>
+				<left>0</left>
+				<top>585</top>
 				<width>875</width>
 				<height>115</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>597</posy>
+				<left>247</left>
+				<top>597</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1795,8 +1795,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>622</posy>
+				<left>247</left>
+				<top>622</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -1807,8 +1807,8 @@
 				<label>$INFO[ListItem.PictureResolution,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21805]: [/COLOR][/UPPERCASE]]</label>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>642</posy>
+				<left>247</left>
+				<top>642</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -1819,8 +1819,8 @@
 				<label>$INFO[ListItem.PictureDateTime,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21820]: [/COLOR][/UPPERCASE]]</label>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>662</posy>
+				<left>247</left>
+				<top>662</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-20</font>
@@ -1831,8 +1831,8 @@
 				<label>$INFO[ListItem.Label2,[UPPERCASE][COLOR=lightblue]$LOCALIZE[21802]: [/COLOR][/UPPERCASE]]</label>
 			</control>
 			<control type="button" id="7009">
-				<posx>830</posx>
-				<posy>594</posy>
+				<left>830</left>
+				<top>594</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>fullscreen-focus.png</texturefocus>
@@ -1849,16 +1849,16 @@
 			<visible>Control.IsVisible(50) + !Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image" id="7010">
-				<posx>50</posx>
-				<posy>510</posy>
+				<left>50</left>
+				<top>510</top>
 				<width>156</width>
 				<height>210</height>
 				<texture>$VAR[DialogPictureInfoImage]</texture>
 				<visible>!String.IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="image">
-				<posx>16</posx>
-				<posy>491</posy>
+				<left>16</left>
+				<top>491</top>
 				<width>218</width>
 				<height>218</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -1870,15 +1870,15 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>585</posy>
+				<left>0</left>
+				<top>585</top>
 				<width>875</width>
 				<height>115</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>597</posy>
+				<left>247</left>
+				<top>597</top>
 				<width>550</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1890,8 +1890,8 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<posx>247</posx>
-				<posy>636</posy>
+				<left>247</left>
+				<top>636</top>
 				<width>550</width>
 				<height>40</height>
 				<font>font-20</font>
@@ -1908,24 +1908,24 @@
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1941,15 +1941,15 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1962,8 +1962,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>245</posx>
-				<posy>606</posy>
+				<left>245</left>
+				<top>606</top>
 				<width>600</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -1975,8 +1975,8 @@
 			</control>
 			<control type="label">
 				<description>textarea</description>
-				<posx>247</posx>
-				<posy>602</posy>
+				<left>247</left>
+				<top>602</top>
 				<width>600</width>
 				<height>83</height>
 				<label>[B]$LOCALIZE[31061] $INFO[Window.Property(Updated)][/B]</label>
@@ -1992,8 +1992,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -2001,16 +2001,16 @@
 				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder + !ListItem.IsFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>

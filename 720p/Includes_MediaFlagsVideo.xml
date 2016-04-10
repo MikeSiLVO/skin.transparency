@@ -3,65 +3,65 @@
 	<include name="VideoMediaFlags">
 		<visible>!ListItem.IsParentFolder + !String.StartsWith(ListItem.Path,videodb://movies/sets/)</visible>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-resolution.png">flags/movies/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 		</control>
 		<control type="image">
-			<posx>68</posx>
-			<posy>0</posy>
+			<left>68</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-aspectratio.png">flags/movies/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 		</control>
 		<control type="image">
-			<posx>136</posx>
-			<posy>0</posy>
+			<left>136</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-videocodec.png">flags/movies/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
 		</control>
 		<control type="image">
-			<posx>204</posx>
-			<posy>0</posy>
+			<left>204</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec]</texture>
 		</control>
 		<control type="image">
-			<posx>272</posx>
-			<posy>0</posy>
+			<left>272</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-source.png">$VAR[IncludesMediaFlagsVideoSource]</texture>
 		</control>
 		<control type="image">
-			<posx>340</posx>
-			<posy>0</posy>
+			<left>340</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture>$VAR[IncludesMediaFlagsVideoSubtitles]</texture>
 		</control>
 		<control type="image">
-			<posx>408</posx>
-			<posy>0</posy>
+			<left>408</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
 		</control>
 		<control type="image">
-			<posx>476</posx>
-			<posy>0</posy>
+			<left>476</left>
+			<top>0</top>
 			<width>64</width>
 			<height>48</height>
 			<texture>mediaflag.png</texture>
 			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !ListItem.IsParentFolder</visible>
 		</control>
 		<control type="image">
-			<posx>484</posx>
-			<posy>6</posy>
+			<left>484</left>
+			<top>6</top>
 			<width>52</width>
 			<height>35</height>
 			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudio]</texture>
@@ -72,8 +72,8 @@
 	<include name="MovieStudioFlag">
 		<visible>!ListItem.IsParentFolder + !String.StartsWith(ListItem.Path,videodb://movies/sets/)</visible>
 		<control type="image">
-			<posx>751</posx>
-			<posy>622</posy>
+			<left>751</left>
+			<top>622</top>
 			<width>115</width>
 			<height>85</height>
 			<texture>mediaflag.png</texture>
@@ -81,8 +81,8 @@
 			<visible>!ListItem.IsParentFolder</visible>
 		</control>
 		<control type="image">
-			<posx>762</posx>
-			<posy>633</posy>
+			<left>762</left>
+			<top>633</top>
 			<width>93</width>
 			<height>63</height>
 			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudioBig]</texture>

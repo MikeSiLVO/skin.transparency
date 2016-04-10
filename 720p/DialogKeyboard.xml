@@ -3,23 +3,23 @@
 	<defaultcontrol always="true">300</defaultcontrol>
 	<include>dialogeffect7</include>
 	<coordinates>
-		<posx>0</posx>
-		<posy>165</posy>
+		<left>0</left>
+		<top>165</top>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(NumericInput)</visible>
 			<control type="image">
-				<posx>220</posx>
-				<posy>6</posy>
+				<left>220</left>
+				<top>6</top>
 				<width>838</width>
 				<height>112</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="button">
-				<posx>902</posx>
-				<posy>44</posy>
+				<left>902</left>
+				<top>44</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -29,8 +29,8 @@
 			</control>
 			<control type="label" id="311">
 				<description>dialog Heading</description>
-				<posx>342</posx>
-				<posy>34</posy>
+				<left>342</left>
+				<top>34</top>
 				<width>600</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -40,8 +40,8 @@
 			</control>
 			<control type="edit" id="312">
 				<description>Edit Text</description>
-				<posx>342</posx>
-				<posy>58</posy>
+				<left>342</left>
+				<top>58</top>
 				<width>600</width>
 				<height>30</height>
 				<texturefocus border="7">-</texturefocus>
@@ -51,15 +51,15 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="image">
-				<posx>220</posx>
-				<posy>64</posy>
+				<left>220</left>
+				<top>64</top>
 				<width>838</width>
 				<height>318</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="group">
-				<posx>252</posx>
-				<posy>105</posy>
+				<left>252</left>
+				<top>105</top>
 				<control type="grouplist">
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -150,7 +150,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<posy>48</posy>
+					<top>48</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="300">
@@ -240,7 +240,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<posy>96</posy>
+					<top>96</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="radiobutton" id="303">
@@ -333,7 +333,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<posy>144</posy>
+					<top>144</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="radiobutton" id="302">
@@ -426,7 +426,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<posy>192</posy>
+					<top>192</top>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button" id="309">
@@ -515,16 +515,16 @@
 			<control type="group">
 				<visible>Control.IsVisible(313)</visible>
 				<control type="image">
-					<posx>220</posx>
-					<posy>328</posy>
+					<left>220</left>
+					<top>328</top>
 					<width>838</width>
 					<height>110</height>
 					<texture border="32">dialog.png</texture>
 				</control>
 				<control type="label" id="313">
 					<description>coding text input</description>
-					<posx>240</posx>
-					<posy>355</posy>
+					<left>240</left>
+					<top>355</top>
 					<width>798</width>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -532,8 +532,8 @@
 				</control>
 				<control type="label" id="314">
 					<description>coding text choices</description>
-					<posx>240</posx>
-					<posy>364</posy>
+					<left>240</left>
+					<top>364</top>
 					<width>798</width>
 					<height>60</height>
 					<align>center</align>

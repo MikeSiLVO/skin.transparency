@@ -2,8 +2,8 @@
 <includes>
 	<include name="Fanart-PVRChannels">
 		<control type="list" id="50">
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>355</width>
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
@@ -19,8 +19,8 @@
 			<itemlayout width="355" height="29">
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>29</height>
 					<colordiffuse>60FFFFFF</colordiffuse>
@@ -29,16 +29,16 @@
 					<info>ListItem.Progress</info>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>335</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -52,8 +52,8 @@
 			<focusedlayout width="355" height="29">
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>29</height>
 					<colordiffuse>60FFFFFF</colordiffuse>
@@ -62,16 +62,16 @@
 					<info>ListItem.Progress</info>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -80,8 +80,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>335</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -99,15 +99,15 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -119,8 +119,8 @@
 			</control>
 			<control type="textbox">
 				<description>Description Value</description>
-				<posx>225</posx>
-				<posy>607</posy>
+				<left>225</left>
+				<top>607</top>
 				<width>636</width>
 				<height>83</height>
 				<font>font-19</font>
@@ -134,8 +134,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
@@ -148,8 +148,8 @@
 	<include name="Grid-PVRGuideEPG">
 		<control type="epggrid" id="10">
 			<description>EPG Grid</description>
-			<posx>41</posx>
-			<posy>60</posy>
+			<left>41</left>
+			<top>60</top>
 			<width>1195</width>
 			<height>510</height>
 			<onleft>31</onleft>
@@ -164,15 +164,15 @@
 			<progresstexture border="0,3,8,3">epg-marker.png</progresstexture>
 			<rulerlayout height="29" width="40">
 				<control type="image" id="1">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>40</width>
 					<height>29</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="label" id="2">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>34</width>
 					<height>29</height>
 					<font>font-19</font>
@@ -182,8 +182,8 @@
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>28</height>
 					<visible>ListItem.Property(DateLabel)</visible>
@@ -191,8 +191,8 @@
 					<colordiffuse>77AAD9FF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>1</width>
 					<height>29</height>
 					<visible>!ListItem.Property(DateLabel)</visible>
@@ -201,30 +201,30 @@
 			</rulerlayout>
 			<channellayout height="60" width="210">
 				<control type="image" id="1">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>60</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>60</posy>
+					<left>0</left>
+					<top>60</top>
 					<width>210</width>
 					<height>1</height>
 					<texture>ruler-side-horiz.png</texture>
 				</control>
 				<control type="image">
-					<posx>2</posx>
-					<posy>10</posy>
+					<left>2</left>
+					<top>10</top>
 					<width>40</width>
 					<height>40</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label" id="1">
-					<posx>48</posx>
-					<posy>1</posy>
+					<left>48</left>
+					<top>1</top>
 					<width>160</width>
 					<height>60</height>
 					<font>font-20bc</font>
@@ -237,39 +237,39 @@
 			</channellayout>
 			<focusedchannellayout height="60" width="210">
 				<control type="image" id="1">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>60</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>60</posy>
+					<left>0</left>
+					<top>60</top>
 					<width>210</width>
 					<height>1</height>
 					<texture>ruler-side-horiz.png</texture>
 					<colordiffuse>AAFFFFFF</colordiffuse>
 				</control>
 				<control type="image" id="1">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>60</height>
 					<texture border="3">list-focus2.png</texture>
 					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>2</posx>
-					<posy>10</posy>
+					<left>2</left>
+					<top>10</top>
 					<width>40</width>
 					<height>40</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label" id="1">
-					<posx>48</posx>
-					<posy>1</posy>
+					<left>48</left>
+					<top>1</top>
 					<width>160</width>
 					<height>60</height>
 					<font>font-20bc</font>
@@ -284,14 +284,14 @@
 				<control type="image" id="2">
 					<width>40</width>
 					<height>60</height>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<aspectratio>stretch</aspectratio>
 					<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 				</control>
 				<control type="label" id="1">
-					<posx>6</posx>
-					<posy>0</posy>
+					<left>6</left>
+					<top>0</top>
 					<width>30</width>
 					<height>60</height>
 					<font>font-20</font>
@@ -302,16 +302,16 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>39</posy>
+					<left>5</left>
+					<top>39</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>39</posy>
+					<left>5</left>
+					<top>39</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>pvr_schedule.png</texture>
@@ -322,22 +322,22 @@
 				<control type="image" id="2">
 					<width>40</width>
 					<height>60</height>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<aspectratio>stretch</aspectratio>
 					<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 				</control>
 				<control type="image" id="2">
 					<width>40</width>
 					<height>60</height>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<texture border="7">guide-focus.png</texture>
 					<animation effect="fade" start="100" end="70" time="750" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="label" id="1">
-					<posx>6</posx>
-					<posy>0</posy>
+					<left>6</left>
+					<top>0</top>
 					<width>30</width>
 					<height>60</height>
 					<font>font-20</font>
@@ -348,16 +348,16 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>39</posy>
+					<left>5</left>
+					<top>39</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>5</posx>
-					<posy>39</posy>
+					<left>5</left>
+					<top>39</top>
 					<width>20</width>
 					<height>20</height>
 					<texture>pvr_schedule.png</texture>
@@ -368,8 +368,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(10)</visible>
 			<control type="label">
-				<posx>40</posx>
-				<posy>577</posy>
+				<left>40</left>
+				<top>577</top>
 				<width>1200</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -379,8 +379,8 @@
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 			</control>
 			<control type="label">
-				<posx>40</posx>
-				<posy>599</posy>
+				<left>40</left>
+				<top>599</top>
 				<width>1200</width>
 				<height>30</height>
 				<font>font-23</font>
@@ -392,19 +392,19 @@
 	</include>
 	<include name="Grid-PVRGuideEPG_Extras">
 		<control type="group">
-			<posx>60</posx>
+			<left>60</left>
 			<visible>Control.IsVisible(10)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>-60</posx>
-				<posy>640</posy>
+				<left>-60</left>
+				<top>640</top>
 				<width>1280</width>
 				<height>80</height>
 				<texture border="10">underlay4.png</texture>
 			</control>
 			<control type="button" id="999">
-				<posx>80</posx>
-				<posy>663</posy>
+				<left>80</left>
+				<top>663</top>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -419,8 +419,8 @@
 				<ondown>10</ondown>
 			</control>
 			<control type="textbox">
-				<posx>140</posx>
-				<posy>658</posy>
+				<left>140</left>
+				<top>658</top>
 				<width>880</width>
 				<height>44</height>
 				<label>$INFO[ListItem.Plot]</label>
@@ -430,16 +430,16 @@
 			<control type="group">
 				<visible>Skin.HasSetting(EpgLegend)</visible>
 				<control type="image">
-					<posx>140</posx>
-					<posy>653</posy>
+					<left>140</left>
+					<top>653</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-32.png</texture>
 				</control>
 				<control type="label">
 					<description>News Genre</description>
-					<posx>160</posx>
-					<posy>652</posy>
+					<left>160</left>
+					<top>652</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -449,16 +449,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>653</posy>
+					<left>390</left>
+					<top>653</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-16.png</texture>
 				</control>
 				<control type="label">
 					<description>Movie Genre</description>
-					<posx>410</posx>
-					<posy>652</posy>
+					<left>410</left>
+					<top>652</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -468,16 +468,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>653</posy>
+					<left>640</left>
+					<top>653</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-176.png</texture>
 				</control>
 				<control type="label">
 					<description>Special Genre</description>
-					<posx>660</posx>
-					<posy>652</posy>
+					<left>660</left>
+					<top>652</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -487,16 +487,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>890</posx>
-					<posy>653</posy>
+					<left>890</left>
+					<top>653</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-48.png</texture>
 				</control>
 				<control type="label">
 					<description>News Genre</description>
-					<posx>910</posx>
-					<posy>652</posy>
+					<left>910</left>
+					<top>652</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -506,16 +506,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>140</posx>
-					<posy>672</posy>
+					<left>140</left>
+					<top>672</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-64.png</texture>
 				</control>
 				<control type="label">
 					<description>Sports Genre</description>
-					<posx>160</posx>
-					<posy>671</posy>
+					<left>160</left>
+					<top>671</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -525,16 +525,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>672</posy>
+					<left>390</left>
+					<top>672</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-80.png</texture>
 				</control>
 				<control type="label">
 					<description>Children Genre</description>
-					<posx>410</posx>
-					<posy>671</posy>
+					<left>410</left>
+					<top>671</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -544,16 +544,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>672</posy>
+					<left>640</left>
+					<top>672</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-144.png</texture>
 				</control>
 				<control type="label">
 					<description>Educational/Science Genre</description>
-					<posx>660</posx>
-					<posy>671</posy>
+					<left>660</left>
+					<top>671</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -563,16 +563,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>890</posx>
-					<posy>672</posy>
+					<left>890</left>
+					<top>672</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-96.png</texture>
 				</control>
 				<control type="label">
 					<description>Music Genre</description>
-					<posx>910</posx>
-					<posy>671</posy>
+					<left>910</left>
+					<top>671</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -582,16 +582,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>140</posx>
-					<posy>691</posy>
+					<left>140</left>
+					<top>691</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-112.png</texture>
 				</control>
 				<control type="label">
 					<description>Arts Genre</description>
-					<posx>160</posx>
-					<posy>690</posy>
+					<left>160</left>
+					<top>690</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -601,16 +601,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>390</posx>
-					<posy>691</posy>
+					<left>390</left>
+					<top>691</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-160.png</texture>
 				</control>
 				<control type="label">
 					<description>Leisure/Hobbies Genre</description>
-					<posx>410</posx>
-					<posy>690</posy>
+					<left>410</left>
+					<top>690</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -620,16 +620,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>691</posy>
+					<left>640</left>
+					<top>691</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-128.png</texture>
 				</control>
 				<control type="label">
 					<description>Social Genre</description>
-					<posx>660</posx>
-					<posy>690</posy>
+					<left>660</left>
+					<top>690</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -639,16 +639,16 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<posx>890</posx>
-					<posy>691</posy>
+					<left>890</left>
+					<top>691</top>
 					<width>15</width>
 					<height>15</height>
 					<texture>epg-0.png</texture>
 				</control>
 				<control type="label">
 					<description>Other/Unknown Genre</description>
-					<posx>910</posx>
-					<posy>690</posy>
+					<left>910</left>
+					<top>690</top>
 					<width>230</width>
 					<height>15</height>
 					<font>font-19</font>
@@ -663,8 +663,8 @@
 	<include name="FullList-PVRGuideNow">
 		<control type="list" id="11">
 			<description>TV Guide Now</description>
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>880</width>
 			<height>436</height>
 			<onup>11</onup>
@@ -677,24 +677,24 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>0</posy>
+					<left>40</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -705,8 +705,8 @@
 					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>340</posx>
-					<posy>0</posy>
+					<left>340</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -717,16 +717,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -735,16 +735,16 @@
 			</itemlayout>
 			<focusedlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -753,16 +753,16 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>0</posy>
+					<left>40</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -773,8 +773,8 @@
 					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>340</posx>
-					<posy>0</posy>
+					<left>340</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -785,16 +785,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -806,8 +806,8 @@
 	<include name="FullList-PVRGuideNext">
 		<control type="list" id="12">
 			<description>TV Guide Next</description>
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>880</width>
 			<height>436</height>
 			<onup>12</onup>
@@ -820,24 +820,24 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>0</posy>
+					<left>40</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -848,8 +848,8 @@
 					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>340</posx>
-					<posy>0</posy>
+					<left>340</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -860,16 +860,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -878,16 +878,16 @@
 			</itemlayout>
 			<focusedlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -896,16 +896,16 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>0</posy>
+					<left>40</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -916,8 +916,8 @@
 					<label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>340</posx>
-					<posy>0</posy>
+					<left>340</left>
+					<top>0</top>
 					<width>500</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -928,16 +928,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -949,8 +949,8 @@
 	<include name="FullList-PVRGuideChannel">
 		<control type="list" id="13">
 			<description>TV Guide Channel</description>
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>880</width>
 			<height>436</height>
 			<onup>13</onup>
@@ -962,16 +962,16 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>810</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -982,8 +982,8 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<width>810</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -994,16 +994,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -1012,16 +1012,16 @@
 			</itemlayout>
 			<focusedlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1030,8 +1030,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>810</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1042,8 +1042,8 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 				<control type="label">
-					<posx>30</posx>
-					<posy>0</posy>
+					<left>30</left>
+					<top>0</top>
 					<width>810</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1054,16 +1054,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -1074,8 +1074,8 @@
 	</include>
 	<include name="Fanart-PVRRecordings">
 		<control type="list" id="50">
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>355</width>
 			<include condition="!Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">FanartNormal</include>
 			<include condition="Skin.HasSetting(FanartShort)">FanartShort</include>
@@ -1090,16 +1090,16 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>310</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1110,8 +1110,8 @@
 					<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -1120,16 +1120,16 @@
 			</itemlayout>
 			<focusedlayout width="355" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>355</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1138,8 +1138,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>310</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1150,8 +1150,8 @@
 					<label>$INFO[ListItem.Label][COLOR=blue]$INFO[ListItem.Date, (,)][/COLOR]</label>
 				</control>
 				<control type="image">
-					<posx>325</posx>
-					<posy>0</posy>
+					<left>325</left>
+					<top>0</top>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -1165,15 +1165,15 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>875</width>
 				<height>148</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>572</posy>
+				<left>225</left>
+				<top>572</top>
 				<width>636</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -1184,8 +1184,8 @@
 				<label>[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</label>
 			</control>
 			<control type="label">
-				<posx>225</posx>
-				<posy>603</posy>
+				<left>225</left>
+				<top>603</top>
 				<width>636</width>
 				<height>20</height>
 				<font>font-23</font>
@@ -1197,8 +1197,8 @@
 			</control>
 			<control type="textbox">
 				<description>Description Value</description>
-				<posx>225</posx>
-				<posy>627</posy>
+				<left>225</left>
+				<top>627</top>
 				<width>636</width>
 				<height>63</height>
 				<font>font-19</font>
@@ -1212,8 +1212,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartIcon_Animation</include>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="true">keep</aspectratio>
@@ -1225,8 +1225,8 @@
 	</include>
 	<include name="FullList-PVRSearch">
 		<control type="list" id="52">
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>880</width>
 			<height>436</height>
 			<onup>52</onup>
@@ -1239,24 +1239,24 @@
 			<preloaditems>2</preloaditems>
 			<itemlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>40</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>60</posx>
-					<posy>0</posy>
+					<left>60</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1267,8 +1267,8 @@
 					<label>$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>250</posx>
-					<posy>0</posy>
+					<left>250</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1279,8 +1279,8 @@
 					<label>$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
-					<posx>440</posx>
-					<posy>0</posy>
+					<left>440</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1291,16 +1291,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -1309,16 +1309,16 @@
 			</itemlayout>
 			<focusedlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1327,16 +1327,16 @@
 					<visible>Control.HasFocus(52)</visible>
 				</control>
 				<control type="image">
-					<posx>10</posx>
-					<posy>4</posy>
+					<left>10</left>
+					<top>4</top>
 					<width>40</width>
 					<height>22</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>60</posx>
-					<posy>0</posy>
+					<left>60</left>
+					<top>0</top>
 					<width>180</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1347,8 +1347,8 @@
 					<label>$INFO[ListItem.ChannelName]</label>
 				</control>
 				<control type="label">
-					<posx>250</posx>
-					<posy>0</posy>
+					<left>250</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1359,8 +1359,8 @@
 					<label>$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
-					<posx>440</posx>
-					<posy>0</posy>
+					<left>440</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1371,16 +1371,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<posx>850</posx>
-					<posy>4</posy>
+					<left>850</left>
+					<top>4</top>
 					<width>22</width>
 					<height>22</height>
 					<texture>pvr_schedule.png</texture>
@@ -1391,8 +1391,8 @@
 	</include>
 	<include name="FullList-PVRTimers">
 		<control type="list" id="52">
-			<posx>200</posx>
-			<posy>142</posy>
+			<left>200</left>
+			<top>142</top>
 			<width>880</width>
 			<height>436</height>
 			<onup>52</onup>
@@ -1404,16 +1404,16 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>260</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1424,8 +1424,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>270</posx>
-					<posy>0</posy>
+					<left>270</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1436,8 +1436,8 @@
 					<label>$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
-					<posx>670</posx>
-					<posy>0</posy>
+					<left>670</left>
+					<top>0</top>
 					<width>200</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1450,16 +1450,16 @@
 			</itemlayout>
 			<focusedlayout width="880" height="29">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-nofocus.png</texture>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<height>30</height>
 					<texture border="7">list-focus2.png</texture>
@@ -1468,8 +1468,8 @@
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
+					<left>10</left>
+					<top>0</top>
 					<width>260</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1480,8 +1480,8 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>270</posx>
-					<posy>0</posy>
+					<left>270</left>
+					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1492,8 +1492,8 @@
 					<label>$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
-					<posx>670</posx>
-					<posy>0</posy>
+					<left>670</left>
+					<top>0</top>
 					<width>200</width>
 					<height>30</height>
 					<font>font-20</font>
@@ -1511,8 +1511,8 @@
 			<visible>Control.IsVisible(52)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<control type="image">
-				<posx>330</posx>
-				<posy>618</posy>
+				<left>330</left>
+				<top>618</top>
 				<width>626</width>
 				<height>42</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
@@ -1520,8 +1520,8 @@
 			</control>
 			<control type="label">
 				<description>Next timer date</description>
-				<posx>300</posx>
-				<posy>623</posy>
+				<left>300</left>
+				<top>623</top>
 				<width>680</width>
 				<height>35</height>
 				<font>font-20</font>

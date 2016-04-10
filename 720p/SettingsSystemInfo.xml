@@ -5,8 +5,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
@@ -27,8 +27,8 @@
 			<onclick>noop</onclick>
 		</control>
 		<control type="image">
-			<posx>175</posx>
-			<posy>110</posy>
+			<left>175</left>
+			<top>110</top>
 			<width>932</width>
 			<height>501</height>
 			<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/systeminfo.jpg</texture>
@@ -46,8 +46,8 @@
 			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<control type="label" id="40">
 				<description>fake filter text label</description>
-				<posx>200</posx>
-				<posy>135</posy>
+				<left>200</left>
+				<top>135</top>
 				<width>880</width>
 				<height>30</height>
 				<align>center</align>
@@ -57,99 +57,99 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>200</posx>
-				<posy>175</posy>
+				<left>200</left>
+				<top>175</top>
 				<width>880</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="group">
-				<posx>200</posx>
-				<posy>200</posy>
+				<left>200</left>
+				<top>200</top>
 				<control type="label" id="2">
 					<description>Label 2</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="3">
 					<description>Label 3</description>
-					<posx>0</posx>
-					<posy>35</posy>
+					<left>0</left>
+					<top>35</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="4">
 					<description>Label 4</description>
-					<posx>0</posx>
-					<posy>70</posy>
+					<left>0</left>
+					<top>70</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="5">
 					<description>Label 5</description>
-					<posx>0</posx>
-					<posy>105</posy>
+					<left>0</left>
+					<top>105</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="6">
 					<description>Label 6</description>
-					<posx>0</posx>
-					<posy>140</posy>
+					<left>0</left>
+					<top>140</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="7">
 					<description>Label 7</description>
-					<posx>0</posx>
-					<posy>175</posy>
+					<left>0</left>
+					<top>175</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="8">
 					<description>Label 8</description>
-					<posx>0</posx>
-					<posy>210</posy>
+					<left>0</left>
+					<top>210</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="9">
 					<description>Label 9</description>
-					<posx>0</posx>
-					<posy>245</posy>
+					<left>0</left>
+					<top>245</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="10">
 					<description>Label 10</description>
-					<posx>0</posx>
-					<posy>280</posy>
+					<left>0</left>
+					<top>280</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="11">
 					<description>Label 11</description>
-					<posx>0</posx>
-					<posy>315</posy>
+					<left>0</left>
+					<top>315</top>
 					<width>880</width>
 					<label>-</label>
 					<font>font-20</font>
 				</control>
 				<control type="label" id="52">
 					<description>Kodi Build Version</description>
-					<posx>0</posx>
-					<posy>350</posy>
+					<left>0</left>
+					<top>350</top>
 					<width>880</width>
 					<label>144</label>
 					<textcolor>blue</textcolor>
@@ -158,8 +158,8 @@
 				</control>
 				<control type="label">
 					<description>Transparency! Version</description>
-					<posx>0</posx>
-					<posy>370</posy>
+					<left>0</left>
+					<top>370</top>
 					<width>880</width>
 					<label>$INFO[System.AddonTitle(skin.transparency)]  $INFO[System.AddonVersion(skin.transparency)]</label>
 					<textcolor>blue</textcolor>
@@ -169,13 +169,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
 			<include>ContentFade</include>
 			<control type="image">
-				<posx>-250</posx>
-				<posy>94</posy>
+				<left>-250</left>
+				<top>94</top>
 				<height>16</height>
 				<texture border="0,0,10,0">shadow-top2.png</texture>
 				<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">Conditional</animation>
@@ -232,8 +232,8 @@
 		<control type="group">
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

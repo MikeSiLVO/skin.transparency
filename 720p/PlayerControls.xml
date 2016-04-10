@@ -4,27 +4,27 @@
 	<include>dialogeffect7</include>
 	<visible>[System.HasMediaDVD | Player.HasMedia] + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
 	<coordinates>
-		<posx>375</posx>
-		<posy>155</posy>
+		<left>375</left>
+		<top>155</top>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>265</posy>
+			<left>0</left>
+			<top>265</top>
 			<width>530</width>
 			<height>100</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>92</posy>
+			<left>0</left>
+			<top>92</top>
 			<width>530</width>
 			<height>226</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
-			<posx>476</posx>
-			<posy>122</posy>
+			<left>476</left>
+			<top>122</top>
 			<width>20</width>
 			<height>20</height>
 			<texturefocus>close-window-focus.png</texturefocus>
@@ -33,8 +33,8 @@
 			<visible>Skin.HasSetting(TouchScreenMode)</visible>
 		</control>
 		<control type="label">
-			<posx>220</posx>
-			<posy>122</posy>
+			<left>220</left>
+			<top>122</top>
 			<width>280</width>
 			<height>30</height>
 			<label>13350</label>
@@ -45,19 +45,19 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>127</posy>
+			<left>0</left>
+			<top>127</top>
 			<visible>Player.HasVideo</visible>
 			<control type="videowindow">
-				<posx>34</posx>
-				<posy>0</posy>
+				<left>34</left>
+				<top>0</top>
 				<width>173</width>
 				<height>156</height>
 				<visible>!Window.IsVisible(FullScreenVideo)</visible>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>30</posy>
+				<left>220</left>
+				<top>30</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.Title]</label>
@@ -68,8 +68,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>55</posy>
+				<left>220</left>
+				<top>55</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$VAR[PlayerControlsLabel]</label>
@@ -80,8 +80,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>80</posy>
+				<left>220</left>
+				<top>80</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$INFO[VideoPlayer.Year]</label>
@@ -92,8 +92,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist">
-				<posx>220</posx>
-				<posy>110</posy>
+				<left>220</left>
+				<top>110</top>
 				<width>285</width>
 				<height>30</height>
 				<orientation>horizontal</orientation>
@@ -111,8 +111,8 @@
 					<height>15</height>
 					<control type="progress">
 						<description>Progressbar Cache</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>120</width>
 						<height>15</height>
 						<info>Player.ProgressCache</info>
@@ -120,16 +120,16 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>120</width>
 						<height>15</height>
 						<info>Player.Progress</info>
 					</control>
 					<control type="slider" id="888">
 						<description>Slider</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>120</width>
 						<height>15</height>
 						<action>seek</action>
@@ -147,26 +147,26 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>127</posy>
+			<left>0</left>
+			<top>127</top>
 			<visible>Player.HasAudio</visible>
 			<control type="image">
-				<posx>52</posx>
-				<posy>3</posy>
+				<left>52</left>
+				<top>3</top>
 				<width>150</width>
 				<height>150</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
 			</control>
 			<control type="image">
-				<posx>34</posx>
-				<posy>0</posy>
+				<left>34</left>
+				<top>0</top>
 				<width>173</width>
 				<height>156</height>
 				<texture>cdcase.png</texture>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>60</posy>
+				<left>220</left>
+				<top>60</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]</label>
@@ -177,8 +177,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>85</posy>
+				<left>220</left>
+				<top>85</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Title]</label>
@@ -189,8 +189,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<posx>220</posx>
-				<posy>110</posy>
+				<left>220</left>
+				<top>110</top>
 				<width>280</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Album]</label>
@@ -201,8 +201,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist">
-				<posx>220</posx>
-				<posy>140</posy>
+				<left>220</left>
+				<top>140</top>
 				<width>285</width>
 				<height>30</height>
 				<orientation>horizontal</orientation>
@@ -220,16 +220,16 @@
 					<height>15</height>
 					<control type="progress">
 						<description>Progressbar</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>120</width>
 						<height>15</height>
 						<info>Player.Progress</info>
 					</control>
 					<control type="slider" id="888">
 						<description>Slider</description>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>120</width>
 						<height>15</height>
 						<action>seek</action>
@@ -247,14 +247,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>84</posx>
-			<posy>295</posy>
+			<left>84</left>
+			<top>295</top>
 			<width>400</width>
 			<height>40</height>
 			<animation effect="slide" start="0,0" end="-20,0" time="0" condition="System.HasMediaDVD">Conditional</animation>
 			<control type="button" id="400">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-previous-focus.png</texturefocus>
@@ -266,8 +266,8 @@
 				<onclick>PlayerControl(Previous)</onclick>
 			</control>
 			<control type="button" id="401">
-				<posx>40</posx>
-				<posy>0</posy>
+				<left>40</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-rewind-focus.png</texturefocus>
@@ -279,8 +279,8 @@
 				<onclick>PlayerControl(Rewind)</onclick>
 			</control>
 			<control type="button" id="402">
-				<posx>80</posx>
-				<posy>0</posy>
+				<left>80</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-stop-focus.png</texturefocus>
@@ -292,8 +292,8 @@
 				<onclick>PlayerControl(Stop)</onclick>
 			</control>
 			<control type="togglebutton" id="403">
-				<posx>120</posx>
-				<posy>0</posy>
+				<left>120</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-pause-focus.png</texturefocus>
@@ -308,8 +308,8 @@
 				<onclick>PlayerControl(Play)</onclick>
 			</control>
 			<control type="button" id="404">
-				<posx>160</posx>
-				<posy>0</posy>
+				<left>160</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-forward-focus.png</texturefocus>
@@ -321,8 +321,8 @@
 				<onclick>PlayerControl(Forward)</onclick>
 			</control>
 			<control type="button" id="405">
-				<posx>200</posx>
-				<posy>0</posy>
+				<left>200</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-next-focus.png</texturefocus>
@@ -334,8 +334,8 @@
 				<onclick>PlayerControl(Next)</onclick>
 			</control>
 			<control type="button" id="406">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>-</texturefocus>
@@ -347,56 +347,56 @@
 				<ondown>406</ondown>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeat-nofocus.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + !Control.HasFocus(406)</visible>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeat-focus.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne + Control.HasFocus(406)</visible>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeatone-nofocus.png</texture>
 				<visible>Playlist.IsRepeatOne + !Control.HasFocus(406)</visible>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeatone-focus.png</texture>
 				<visible>Playlist.IsRepeatOne + Control.HasFocus(406)</visible>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeatall-nofocus.png</texture>
 				<visible>Playlist.IsRepeat + !Control.HasFocus(406)</visible>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>0</posy>
+				<left>240</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texture>osdplayer-repeatall-focus.png</texture>
 				<visible>Playlist.IsRepeat + Control.HasFocus(406)</visible>
 			</control>
 			<control type="togglebutton" id="407">
-				<posx>280</posx>
-				<posy>0</posy>
+				<left>280</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-random-focus.png</texturefocus>
@@ -411,8 +411,8 @@
 				<ondown>407</ondown>
 			</control>
 			<control type="button" id="408">
-				<posx>320</posx>
-				<posy>0</posy>
+				<left>320</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-fullscreen-focus.png</texturefocus>
@@ -425,8 +425,8 @@
 				<onclick>FullScreen</onclick>
 			</control>
 			<control type="button" id="409">
-				<posx>360</posx>
-				<posy>0</posy>
+				<left>360</left>
+				<top>0</top>
 				<width>40</width>
 				<height>40</height>
 				<texturefocus>osdplayer-disc-focus.png</texturefocus>

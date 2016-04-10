@@ -2,200 +2,200 @@
 <includes>
 	<include name="Wall-Movies">
 		<control type="group">
-			<posx>130</posx>
-			<posy>-1</posy>
+			<left>130</left>
+			<top>-1</top>
 			<visible>Control.IsVisible(592)</visible>
 			<control type="group" id="7013">
 				<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="-164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-10)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>0</posy>
+					<left>164</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>0</posy>
+					<left>328</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>0</posy>
+					<left>656</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>0</posy>
+					<left>820</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1148</posx>
-					<posy>0</posy>
+					<left>1148</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
+					<left>0</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>240</posy>
+					<left>164</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>240</posy>
+					<left>328</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>240</posy>
+					<left>492</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>240</posy>
+					<left>656</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>240</posy>
+					<left>820</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>240</posy>
+					<left>984</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1148</posx>
-					<posy>240</posy>
+					<left>1148</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
+					<left>0</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>480</posy>
+					<left>164</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>480</posy>
+					<left>328</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>480</posy>
+					<left>492</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>480</posy>
+					<left>656</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>480</posy>
+					<left>820</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>480</posy>
+					<left>984</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(10)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1148</posx>
-					<posy>480</posy>
+					<left>1148</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -207,192 +207,192 @@
 				<animation reversible="false" effect="slide" start="0,0" end="164,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
-					<posx>-164</posx>
-					<posy>0</posy>
+					<left>-164</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>0</posy>
+					<left>164</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>0</posy>
+					<left>328</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>0</posy>
+					<left>656</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>0</posy>
+					<left>820</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>-164</posx>
-					<posy>240</posy>
+					<left>-164</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
+					<left>0</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>240</posy>
+					<left>164</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>240</posy>
+					<left>328</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>240</posy>
+					<left>492</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>240</posy>
+					<left>656</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>240</posy>
+					<left>820</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>240</posy>
+					<left>984</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>-164</posx>
-					<posy>480</posy>
+					<left>-164</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
+					<left>0</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>480</posy>
+					<left>164</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>480</posy>
+					<left>328</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>480</posy>
+					<left>492</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>480</posy>
+					<left>656</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(10)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>480</posy>
+					<left>820</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(11)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>480</posy>
+					<left>984</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -410,168 +410,168 @@
 				</animation>
 				<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>0</posy>
+					<left>164</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>0</posy>
+					<left>328</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>0</posy>
+					<left>492</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>0</posy>
+					<left>656</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>0</posy>
+					<left>820</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>0</posy>
+					<left>984</left>
+					<top>0</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>240</posy>
+					<left>0</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>240</posy>
+					<left>164</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>240</posy>
+					<left>328</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>240</posy>
+					<left>492</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>240</posy>
+					<left>656</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>240</posy>
+					<left>820</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>240</posy>
+					<left>984</left>
+					<top>240</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>480</posy>
+					<left>0</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>164</posx>
-					<posy>480</posy>
+					<left>164</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>328</posx>
-					<posy>480</posy>
+					<left>328</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>492</posx>
-					<posy>480</posy>
+					<left>492</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(8)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>656</posx>
-					<posy>480</posy>
+					<left>656</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(9)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>820</posx>
-					<posy>480</posy>
+					<left>820</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$VAR[Icon(10)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>984</posx>
-					<posy>480</posy>
+					<left>984</left>
+					<top>480</top>
 					<width>164</width>
 					<height>242</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -580,8 +580,8 @@
 			</control>
 		</control>
 		<control type="wraplist" id="592">
-			<posx>-335</posx>
-			<posy>195</posy>
+			<left>-335</left>
+			<top>195</top>
 			<width>1736</width>
 			<height>362</height>
 			<onleft>592</onleft>
@@ -599,8 +599,8 @@
 			<itemlayout width="248" height="362"/>
 			<focusedlayout width="248" height="362">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>248</width>
 					<height>362</height>
 					<texture>-</texture>
@@ -610,8 +610,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(592)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>720</height>
 				<texture>wall-mask.png</texture>
@@ -619,8 +619,8 @@
 			<control type="group">
 				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7013) | Control.IsVisible(7014)">Conditional</animation>
 				<control type="image">
-					<posx>370</posx>
-					<posy>136</posy>
+					<left>370</left>
+					<top>136</top>
 					<width>328</width>
 					<height>446</height>
 					<texture border="40" diffuse="cover-diffuse2.png">cover-glow.png</texture>
@@ -633,8 +633,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>410</posx>
-					<posy>176</posy>
+					<left>410</left>
+					<top>176</top>
 					<width>248</width>
 					<height>366</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -651,8 +651,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>598</posx>
-					<posy>500</posy>
+					<left>598</left>
+					<top>500</top>
 					<width>44</width>
 					<height>26</height>
 					<texture>movieset.png</texture>
@@ -662,8 +662,8 @@
 					<visible>Container.Content(Movies) + ListItem.IsFolder + !ListItem.IsParentFolder + String.StartsWith(Container.Folderpath,videodb://)</visible>
 				</control>
 				<control type="image">
-					<posx>410</posx>
-					<posy>176</posy>
+					<left>410</left>
+					<top>176</top>
 					<width>248</width>
 					<height>366</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -672,8 +672,8 @@
 					<visible>Control.IsVisible(7013) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>410</posx>
-					<posy>176</posy>
+					<left>410</left>
+					<top>176</top>
 					<width>248</width>
 					<height>366</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -691,8 +691,8 @@
 					<effect type="fade" start="100" end="0" time="500" delay="2250"/>
 				</animation>
 				<control type="label">
-					<posx>40</posx>
-					<posy>80</posy>
+					<left>40</left>
+					<top>80</top>
 					<width>1200</width>
 					<height>30</height>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -700,8 +700,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
+					<left>40</left>
+					<top>115</top>
 					<width>1200</width>
 					<height>60</height>
 					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
@@ -710,8 +710,8 @@
 					<visible>!Container.Content(Seasons) + !String.Contains(ListItem.Duration,min)</visible>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
+					<left>40</left>
+					<top>115</top>
 					<width>1200</width>
 					<height>60</height>
 					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - ][/B]</label>
@@ -720,8 +720,8 @@
 					<visible>!Container.Content(Seasons) + String.Contains(ListItem.Duration,min)</visible>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
+					<left>40</left>
+					<top>115</top>
 					<width>1200</width>
 					<height>60</height>
 					<label>[B]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ][/B]</label>
@@ -731,8 +731,8 @@
 				</control>
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
-					<posx>40</posx>
-					<posy>182</posy>
+					<left>40</left>
+					<top>182</top>
 					<width>335</width>
 					<height>344</height>
 					<font>font-19</font>
@@ -753,15 +753,15 @@
 				<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 				<visible>Container.Content(Movies)</visible>
 				<control type="group">
-					<posx>706</posx>
-					<posy>664</posy>
+					<left>706</left>
+					<top>664</top>
 					<width>472</width>
 					<height>48</height>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags) + Skin.HasSetting(WallShowPlot)">VideoMediaFlags</include>
 				</control>
 				<control type="group">
-					<posx>578</posx>
-					<posy>148</posy>
+					<left>578</left>
+					<top>148</top>
 					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
 				</control>
 			</control>
@@ -769,168 +769,168 @@
 	</include>
 	<include name="Wall-Episodes">
 		<control type="group">
-			<posx>130</posx>
-			<posy>0</posy>
+			<left>130</left>
+			<top>0</top>
 			<visible>Control.IsVisible(598)</visible>
 			<control type="group" id="7027">
 				<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
 				<animation reversible="false" effect="slide" start="0,0" end="-320,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>7</posy>
+					<left>0</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>7</posy>
+					<left>320</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>7</posy>
+					<left>640</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>7</posy>
+					<left>960</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1280</posx>
-					<posy>7</posy>
+					<left>1280</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>183</posy>
+					<left>0</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>183</posy>
+					<left>320</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>183</posy>
+					<left>640</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>183</posy>
+					<left>960</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1280</posx>
-					<posy>183</posy>
+					<left>1280</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>359</posy>
+					<left>0</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>359</posy>
+					<left>320</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>359</posy>
+					<left>640</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>359</posy>
+					<left>960</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1280</posx>
-					<posy>359</posy>
+					<left>1280</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>535</posy>
+					<left>0</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>535</posy>
+					<left>320</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>535</posy>
+					<left>640</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>535</posy>
+					<left>960</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>1280</posx>
-					<posy>535</posy>
+					<left>1280</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -942,160 +942,160 @@
 				<animation reversible="false" effect="slide" start="0,0" end="320,0" time="400" tween="quadratic" easing="out">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
-					<posx>-320</posx>
-					<posy>7</posy>
+					<left>-320</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>7</posy>
+					<left>0</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>7</posy>
+					<left>320</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>7</posy>
+					<left>640</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>7</posy>
+					<left>960</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>-320</posx>
-					<posy>183</posy>
+					<left>-320</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>183</posy>
+					<left>0</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>183</posy>
+					<left>320</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>183</posy>
+					<left>640</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>183</posy>
+					<left>960</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>-320</posx>
-					<posy>359</posy>
+					<left>-320</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>359</posy>
+					<left>0</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>359</posy>
+					<left>320</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>359</posy>
+					<left>640</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>359</posy>
+					<left>960</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>-320</posx>
-					<posy>535</posy>
+					<left>-320</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>535</posy>
+					<left>0</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>535</posy>
+					<left>320</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>535</posy>
+					<left>640</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(10).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>535</posy>
+					<left>960</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1113,128 +1113,128 @@
 				</animation>
 				<visible>!Control.IsVisible(7027) + !Control.IsVisible(7028)</visible>
 				<control type="image">
-					<posx>0</posx>
-					<posy>7</posy>
+					<left>0</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>7</posy>
+					<left>320</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>7</posy>
+					<left>640</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>7</posy>
+					<left>960</left>
+					<top>7</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>183</posy>
+					<left>0</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>183</posy>
+					<left>320</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>183</posy>
+					<left>640</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>183</posy>
+					<left>960</left>
+					<top>183</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>359</posy>
+					<left>0</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>359</posy>
+					<left>320</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>359</posy>
+					<left>640</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>359</posy>
+					<left>960</left>
+					<top>359</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>535</posy>
+					<left>0</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>535</posy>
+					<left>320</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>640</posx>
-					<posy>535</posy>
+					<left>640</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(9).Icon]</texture>
 				</control>
 				<control type="image">
-					<posx>960</posx>
-					<posy>535</posy>
+					<left>960</left>
+					<top>535</top>
 					<width>320</width>
 					<height>178</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1243,8 +1243,8 @@
 			</control>
 		</control>
 		<control type="wraplist" id="598">
-			<posx>-560</posx>
-			<posy>178</posy>
+			<left>-560</left>
+			<top>178</top>
 			<width>1280</width>
 			<height>178</height>
 			<onleft>592</onleft>
@@ -1262,8 +1262,8 @@
 			<itemlayout width="320" height="178"/>
 			<focusedlayout width="320" height="178">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>320</width>
 					<height>178</height>
 					<texture>-</texture>
@@ -1273,8 +1273,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(598)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>720</height>
 				<texture>wall-mask.png</texture>
@@ -1282,8 +1282,8 @@
 			<control type="group">
 				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7027) | Control.IsVisible(7028)">Conditional</animation>
 				<control type="image">
-					<posx>360</posx>
-					<posy>50</posy>
+					<left>360</left>
+					<top>50</top>
 					<width>560</width>
 					<height>350</height>
 					<texture border="40" diffuse="cover-diffuse2.png">cover-glow.png</texture>
@@ -1296,8 +1296,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>400</posx>
-					<posy>90</posy>
+					<left>400</left>
+					<top>90</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1314,8 +1314,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>400</posx>
-					<posy>90</posy>
+					<left>400</left>
+					<top>90</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1324,8 +1324,8 @@
 					<visible>Control.IsVisible(7027) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>400</posx>
-					<posy>90</posy>
+					<left>400</left>
+					<top>90</top>
 					<width>480</width>
 					<height>270</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -1343,8 +1343,8 @@
 					<effect type="fade" start="100" end="0" time="500" delay="2250"/>
 				</animation>
 				<control type="label">
-					<posx>40</posx>
-					<posy>80</posy>
+					<left>40</left>
+					<top>80</top>
 					<width>1200</width>
 					<height>30</height>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -1352,8 +1352,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
+					<left>40</left>
+					<top>115</top>
 					<width>1200</width>
 					<height>60</height>
 					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
@@ -1362,8 +1362,8 @@
 				</control>
 				<control type="textbox">
 					<description>Plot Value for Episodes</description>
-					<posx>40</posx>
-					<posy>182</posy>
+					<left>40</left>
+					<top>182</top>
 					<width>335</width>
 					<height>344</height>
 					<font>font-19</font>
@@ -1382,15 +1382,15 @@
 					<effect type="fade" start="100" end="0" time="3000"/>
 				</animation>
 				<control type="group">
-					<posx>578</posx>
-					<posy>148</posy>
+					<left>578</left>
+					<top>148</top>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">MovieStudioFlag</include>
 					<visible>Container.Content(Episodes)</visible>
 				</control>
 				<control type="group">
-					<posx>578</posx>
-					<posy>148</posy>
+					<left>578</left>
+					<top>148</top>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_MusicVideos_Media_Flags)">MovieStudioFlag</include>
 					<visible>Container.Content(MusicVideos)</visible>
@@ -1400,8 +1400,8 @@
 	</include>
 	<include name="Wall-Music">
 		<control type="group">
-			<posx>218</posx>
-			<posy>-1</posy>
+			<left>218</left>
+			<top>-1</top>
 			<visible>Control.IsVisible(592)</visible>
 			<control type="group" id="7013">
 				<animation effect="rotatey" center="1280" start="-15" end="-15" time="0" condition="true">Conditional</animation>
@@ -1409,144 +1409,144 @@
 				<visible>Container.OnNext</visible>
 				<control type="group">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-7).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>0</posy>
+						<left>242</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>0</posy>
+						<left>484</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>0</posy>
+						<left>726</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>0</posy>
+						<left>968</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>1210</posx>
-						<posy>0</posy>
+						<left>1210</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>240</posy>
+						<left>0</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>240</posy>
+						<left>242</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>240</posy>
+						<left>484</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>240</posy>
+						<left>726</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>240</posy>
+						<left>968</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>1210</posx>
-						<posy>240</posy>
+						<left>1210</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>480</posy>
+						<left>0</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>480</posy>
+						<left>242</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>480</posy>
+						<left>484</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>480</posy>
+						<left>726</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>480</posy>
+						<left>968</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>1210</posx>
-						<posy>480</posy>
+						<left>1210</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1560,144 +1560,144 @@
 				<visible>Container.OnPrevious</visible>
 				<control type="group">
 					<control type="image">
-						<posx>-242</posx>
-						<posy>0</posy>
+						<left>-242</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>0</posy>
+						<left>242</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>0</posy>
+						<left>484</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>0</posy>
+						<left>726</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>0</posy>
+						<left>968</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>-242</posx>
-						<posy>240</posy>
+						<left>-242</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>240</posy>
+						<left>0</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>240</posy>
+						<left>242</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>240</posy>
+						<left>484</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>240</posy>
+						<left>726</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>240</posy>
+						<left>968</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>-242</posx>
-						<posy>480</posy>
+						<left>-242</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>480</posy>
+						<left>0</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>480</posy>
+						<left>242</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>480</posy>
+						<left>484</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>480</posy>
+						<left>726</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(8).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>480</posy>
+						<left>968</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1717,120 +1717,120 @@
 				<visible>!Control.IsVisible(7013) + !Control.IsVisible(7014)</visible>
 				<control type="group">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>0</posy>
+						<left>242</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>0</posy>
+						<left>484</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>0</posy>
+						<left>726</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>0</posy>
+						<left>968</left>
+						<top>0</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>240</posy>
+						<left>0</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>240</posy>
+						<left>242</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(0).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>240</posy>
+						<left>484</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(1).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>240</posy>
+						<left>726</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(2).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>240</posy>
+						<left>968</left>
+						<top>240</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(3).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>480</posy>
+						<left>0</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(4).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>242</posx>
-						<posy>480</posy>
+						<left>242</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(5).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>480</posy>
+						<left>484</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(6).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>726</posx>
-						<posy>480</posy>
+						<left>726</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="cover-diffuse.png" background="true">$INFO[ListItem(7).Icon]</texture>
 					</control>
 					<control type="image">
-						<posx>968</posx>
-						<posy>480</posy>
+						<left>968</left>
+						<top>480</top>
 						<width>242</width>
 						<height>242</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1840,8 +1840,8 @@
 			</control>
 		</control>
 		<control type="wraplist" id="592">
-			<posx>-360</posx>
-			<posy>166</posy>
+			<left>-360</left>
+			<top>166</top>
 			<width>1925</width>
 			<height>385</height>
 			<onleft>592</onleft>
@@ -1859,8 +1859,8 @@
 			<itemlayout width="385" height="385"/>
 			<focusedlayout width="385" height="385">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>385</width>
 					<height>385</height>
 					<texture>-</texture>
@@ -1870,8 +1870,8 @@
 		<control type="group">
 			<visible>Control.IsVisible(592)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>720</height>
 				<texture>wall-mask.png</texture>
@@ -1879,8 +1879,8 @@
 			<control type="group">
 				<animation reversible="true" effect="zoom" start="100" end="95" center="auto" time="300" tween="quadratic" easing="in" condition="Control.IsVisible(7013) | Control.IsVisible(7014)">Conditional</animation>
 				<control type="image">
-					<posx>369</posx>
-					<posy>126</posy>
+					<left>369</left>
+					<top>126</top>
 					<width>465</width>
 					<height>465</height>
 					<texture border="40" diffuse="cover-diffuse2.png">cover-glow.png</texture>
@@ -1893,8 +1893,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>409</posx>
-					<posy>166</posy>
+					<left>409</left>
+					<top>166</top>
 					<width>385</width>
 					<height>385</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1911,8 +1911,8 @@
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>409</posx>
-					<posy>166</posy>
+					<left>409</left>
+					<top>166</top>
 					<width>385</width>
 					<height>385</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1921,8 +1921,8 @@
 					<visible>Control.IsVisible(7013) + !ListItem(-1).IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>409</posx>
-					<posy>166</posy>
+					<left>409</left>
+					<top>166</top>
 					<width>385</width>
 					<height>385</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1940,16 +1940,16 @@
 					<effect type="fade" start="100" end="0" time="500" delay="2250"/>
 				</animation>
 				<control type="label">
-					<posx>40</posx>
-					<posy>80</posy>
+					<left>40</left>
+					<top>80</top>
 					<width>1200</width>
 					<height>30</height>
 					<label>$VAR[ViewWallLabel1]</label>
 					<font>font-30</font>
 				</control>
 				<control type="label">
-					<posx>40</posx>
-					<posy>115</posy>
+					<left>40</left>
+					<top>115</top>
 					<width>1200</width>
 					<height>60</height>
 					<label>$VAR[ViewWallLabel2]</label>
@@ -1957,8 +1957,8 @@
 					<font>font-21</font>
 				</control>
 				<control type="textbox">
-					<posx>40</posx>
-					<posy>182</posy>
+					<left>40</left>
+					<top>182</top>
 					<width>335</width>
 					<height>344</height>
 					<font>font-19</font>
@@ -1977,8 +1977,8 @@
 					<effect type="fade" start="100" end="0" time="3000"/>
 				</animation>
 				<control type="group">
-					<posx>440</posx>
-					<posy>31</posy>
+					<left>440</left>
+					<top>31</top>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
 					<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 					<visible>!Container.Content(Artists)</visible>

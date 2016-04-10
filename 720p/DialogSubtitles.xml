@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
-		<posx>240</posx>
-		<posy>20</posy>
+		<left>240</left>
+		<top>20</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group" id="250">
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>800</width>
 				<height>525</height>
 				<texture border="17">panel.png</texture>
 				<bordersize>11</bordersize>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>35</posy>
+				<left>0</left>
+				<top>35</top>
 				<control type="button">
-					<posx>744</posx>
-					<posy>-2</posy>
+					<left>744</left>
+					<top>-2</top>
 					<width>20</width>
 					<height>20</height>
 					<texturefocus>close-window-focus.png</texturefocus>
@@ -30,16 +30,16 @@
 				</control>
 				<control type="image" id="110">
 					<description>logo icon</description>
-					<posx>45</posx>
-					<posy>2</posy>
+					<left>45</left>
+					<top>2</top>
 					<width>250</width>
 					<height>40</height>
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="group" id="130">
 					<control type="grouplist">
-						<posx>315</posx>
-						<posy>2</posy>
+						<left>315</left>
+						<top>2</top>
 						<width>445</width>
 						<height>40</height>
 						<align>right</align>
@@ -62,16 +62,16 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>40</posx>
-					<posy>46</posy>
+					<left>40</left>
+					<top>46</top>
 					<width>720</width>
 					<height>2</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
 					<description>textarea</description>
-					<posx>40</posx>
-					<posy>47</posy>
+					<left>40</left>
+					<top>47</top>
 					<width>710</width>
 					<height>40</height>
 					<label>$INFO[Player.Filename]</label>
@@ -82,16 +82,16 @@
 					<wrapmultiline>false</wrapmultiline>
 				</control>
 				<control type="image">
-					<posx>40</posx>
-					<posy>86</posy>
+					<left>40</left>
+					<top>86</top>
 					<width>720</width>
 					<height>2</height>
 					<texture>separator.png</texture>
 				</control>
 			</control>
 			<control type="list" id="120">
-				<posx>45</posx>
-				<posy>130</posy>
+				<left>45</left>
+				<top>130</top>
 				<width>710</width>
 				<height>323</height>
 				<onleft>150</onleft>
@@ -103,23 +103,23 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>6</posx>
-						<posy>6</posy>
+						<left>6</left>
+						<top>6</top>
 						<width>27</width>
 						<height>18</height>
 						<texture>countries/$INFO[ListItem.Thumb,,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>40</posx>
-						<posy>0</posy>
+						<left>40</left>
+						<top>0</top>
 						<width>100</width>
 						<height>30</height>
 						<font>font-18</font>
@@ -130,16 +130,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>145</posx>
-						<posy>10</posy>
+						<left>145</left>
+						<top>10</top>
 						<width>40</width>
 						<height>12</height>
 						<texture>icon_sync.png</texture>
 						<visible>ListItem.Property(sync)</visible>
 					</control>
 					<control type="label">
-						<posx>190</posx>
-						<posy>0</posy>
+						<left>190</left>
+						<top>0</top>
 						<width>425</width>
 						<height>30</height>
 						<font>font-18</font>
@@ -150,16 +150,16 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>620</posx>
-						<posy>5</posy>
+						<left>620</left>
+						<top>5</top>
 						<width>20</width>
 						<height>20</height>
 						<texture>icon_hearing-impaired.png</texture>
 						<visible>ListItem.Property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<posx>645</posx>
-						<posy>11</posy>
+						<left>645</left>
+						<top>11</top>
 						<width>61</width>
 						<height>9</height>
 						<texture>icon_rating_$INFO[ListItem.ActualIcon].png</texture>
@@ -168,15 +168,15 @@
 				</itemlayout>
 				<focusedlayout width="710" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>710</width>
 						<height>30</height>
 						<texture border="7">list-focus2.png</texture>
@@ -184,16 +184,16 @@
 						<visible>Control.HasFocus(120)</visible>
 					</control>
 					<control type="image">
-						<posx>6</posx>
-						<posy>6</posy>
+						<left>6</left>
+						<top>6</top>
 						<width>27</width>
 						<height>18</height>
 						<texture>countries/$INFO[ListItem.Thumb,,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<posx>40</posx>
-						<posy>0</posy>
+						<left>40</left>
+						<top>0</top>
 						<width>100</width>
 						<height>30</height>
 						<font>font-18</font>
@@ -204,16 +204,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<posx>145</posx>
-						<posy>10</posy>
+						<left>145</left>
+						<top>10</top>
 						<width>40</width>
 						<height>12</height>
 						<texture>icon_sync.png</texture>
 						<visible>ListItem.Property(sync)</visible>
 					</control>
 					<control type="label">
-						<posx>190</posx>
-						<posy>0</posy>
+						<left>190</left>
+						<top>0</top>
 						<width>425</width>
 						<height>30</height>
 						<font>font-18</font>
@@ -224,16 +224,16 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>620</posx>
-						<posy>5</posy>
+						<left>620</left>
+						<top>5</top>
 						<width>20</width>
 						<height>20</height>
 						<texture>icon_hearing-impaired.png</texture>
 						<visible>ListItem.Property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<posx>645</posx>
-						<posy>11</posy>
+						<left>645</left>
+						<top>11</top>
 						<width>61</width>
 						<height>9</height>
 						<texture>icon_rating_$INFO[ListItem.ActualIcon].png</texture>
@@ -243,20 +243,20 @@
 			</control>
 		</control>
 		<control type="group" id="250">
-			<posx>-562</posx>
-			<posy>0</posy>
+			<left>-562</left>
+			<top>0</top>
 			<animation effect="slide" start="0,0" end="300,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(160) | Control.HasFocus(122)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>20</posy>
+				<left>0</left>
+				<top>20</top>
 				<width>300</width>
 				<height>450</height>
 				<texture border="17">panel.png</texture>
 				<bordersize>11</bordersize>
 			</control>
 			<control type="label">
-				<posx>35</posx>
-				<posy>55</posy>
+				<left>35</left>
+				<top>55</top>
 				<width>230</width>
 				<height>20</height>
 				<label>[B]$LOCALIZE[24018][/B]</label>
@@ -266,15 +266,15 @@
 			</control>
 			<control type="image">
 				<description>separator</description>
-				<posx>35</posx>
-				<posy>80</posy>
+				<left>35</left>
+				<top>80</top>
 				<width>230</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="button" id="160">
-				<posx>35</posx>
-				<posy>90</posy>
+				<left>35</left>
+				<top>90</top>
 				<width>220</width>
 				<height>35</height>
 				<label>$LOCALIZE[24120]</label>
@@ -291,8 +291,8 @@
 				<ondown>150</ondown>
 			</control>
 			<control type="list" id="150">
-				<posx>0</posx>
-				<posy>125</posy>
+				<left>0</left>
+				<top>125</top>
 				<width>325</width>
 				<height>315</height>
 				<onleft>120</onleft>
@@ -304,15 +304,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="265" height="34">
 					<control type="image">
-						<posx>35</posx>
-						<posy>0</posy>
+						<left>35</left>
+						<top>0</top>
 						<width>220</width>
 						<height>35</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font13</font>
@@ -325,15 +325,15 @@
 				</itemlayout>
 				<focusedlayout width="265" height="34">
 					<control type="image">
-						<posx>35</posx>
-						<posy>0</posy>
+						<left>35</left>
+						<top>0</top>
 						<width>220</width>
 						<height>35</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>35</posx>
-						<posy>0</posy>
+						<left>35</left>
+						<top>0</top>
 						<width>220</width>
 						<height>35</height>
 						<texture border="7">list-focus2.png</texture>
@@ -341,8 +341,8 @@
 						<visible>Control.HasFocus(150)</visible>
 					</control>
 					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
+						<left>45</left>
+						<top>0</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font13</font>
@@ -356,8 +356,8 @@
 			</control>
 		</control>
 		<control type="scrollbar" id="121">
-			<posx>755</posx>
-			<posy>130</posy>
+			<left>755</left>
+			<top>130</top>
 			<width>20</width>
 			<height>323</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -372,8 +372,8 @@
 			<visible>Control.IsVisible(120)</visible>
 		</control>
 		<control type="scrollbar" id="122">
-			<posx>-305</posx>
-			<posy>90</posy>
+			<left>-305</left>
+			<top>90</top>
 			<width>20</width>
 			<height>346</height>
 			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -389,8 +389,8 @@
 			<visible>Control.IsVisible(150)</visible>
 		</control>
 		<control type="label" id="140">
-			<posx>50</posx>
-			<posy>460</posy>
+			<left>50</left>
+			<top>460</top>
 			<width>400</width>
 			<height>30</height>
 			<font>font-20</font>
@@ -399,8 +399,8 @@
 		<include>CommonFileCount14</include>
 		<control type="button" id="8999">
 			<description>Fake button for mouse control</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1</width>
 			<height>1</height>
 			<label>-</label>

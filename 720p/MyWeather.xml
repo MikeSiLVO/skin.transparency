@@ -5,8 +5,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-weather.jpg" background="true">$VAR[WeatherFanartPath]</imagepath>
@@ -24,7 +24,7 @@
 			<include condition="!String.IsEmpty(Window(Weather).Property(Daily.IsFetched))">weatherextended</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include condition="String.IsEmpty(Window(Weather).Property(Daily.IsFetched))">CommonNowPlaying</include>
@@ -102,8 +102,8 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>
@@ -114,8 +114,8 @@
 			</control>
 			<control type="label">
 				<description>weather location label</description>
-				<posx>1268</posx>
-				<posy>5</posy>
+				<left>1268</left>
+				<top>5</top>
 				<width>500</width>
 				<height>20</height>
 				<font>font-20</font>
@@ -127,8 +127,8 @@
 		</control>
 		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 		<control type="label">
-			<posx>1268</posx>
-			<posy>696</posy>
+			<left>1268</left>
+			<top>696</top>
 			<width>1200</width>
 			<height>20</height>
 			<label>[B]$LOCALIZE[31605] $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>

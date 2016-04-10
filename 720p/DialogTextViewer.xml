@@ -3,8 +3,8 @@
 	<defaultcontrol>61</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -14,15 +14,15 @@
 		</control>
 		<control type="group">
 			<control type="image">
-				<posx>0</posx>
-				<posy>560</posy>
+				<left>0</left>
+				<top>560</top>
 				<width>1280</width>
 				<height>140</height>
 				<texture border="10">underlay.png</texture>
 			</control>
 			<control type="label">
-				<posx>265</posx>
-				<posy>572</posy>
+				<left>265</left>
+				<top>572</top>
 				<width>975</width>
 				<height>30</height>
 				<font>font-30</font>
@@ -35,8 +35,8 @@
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
-				<posx>265</posx>
-				<posy>606</posy>
+				<left>265</left>
+				<top>606</top>
 				<width>975</width>
 				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -48,16 +48,16 @@
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<texture>thumb-shadow.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
-				<posx>8</posx>
-				<posy>505</posy>
+				<left>8</left>
+				<top>505</top>
 				<width>210</width>
 				<height>210</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
@@ -70,8 +70,8 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -81,8 +81,8 @@
 			</control>
 			<control type="label" id="1">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>45</posy>
+				<left>40</left>
+				<top>45</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -93,16 +93,16 @@
 				<label>-</label>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>84</posy>
+				<left>40</left>
+				<top>84</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox" id="5">
 				<description>textarea</description>
-				<posx>200</posx>
-				<posy>110</posy>
+				<left>200</left>
+				<top>110</top>
 				<width>880</width>
 				<height>348</height>
 				<label>-</label>
@@ -114,8 +114,8 @@
 			</control>
 			<control type="spincontrol" id="61">
 				<description>Next page button</description>
-				<posx>1180</posx>
-				<posy>699</posy>
+				<left>1180</left>
+				<top>699</top>
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onleft>61</onleft>
@@ -126,8 +126,8 @@
 				<showonepage>true</showonepage>
 			</control>
 			<control type="image">
-				<posx>40</posx>
-				<posy>480</posy>
+				<left>40</left>
+				<top>480</top>
 				<width>1200</width>
 				<height>2</height>
 				<texture>separator.png</texture>

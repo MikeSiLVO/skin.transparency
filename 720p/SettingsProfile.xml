@@ -5,8 +5,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
@@ -18,8 +18,8 @@
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>175</posx>
-			<posy>110</posy>
+			<left>175</left>
+			<top>110</top>
 			<width>932</width>
 			<height>501</height>
 			<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/background-login.jpg</texture>
@@ -37,8 +37,8 @@
 			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<control type="panel" id="2">
-				<posx>200</posx>
-				<posy>135</posy>
+				<left>200</left>
+				<top>135</top>
 				<width>880</width>
 				<height>340</height>
 				<onleft>9000</onleft>
@@ -51,8 +51,8 @@
 				<preloaditems>2</preloaditems>
 				<itemlayout width="220" height="170">
 					<control type="image">
-						<posx>37</posx>
-						<posy>0</posy>
+						<left>37</left>
+						<top>0</top>
 						<width>145</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -61,8 +61,8 @@
 						<bordersize>7</bordersize>
 					</control>
 					<control type="label">
-						<posx>26</posx>
-						<posy>145</posy>
+						<left>26</left>
+						<top>145</top>
 						<width>178</width>
 						<height>25</height>
 						<font>font-20</font>
@@ -75,8 +75,8 @@
 				</itemlayout>
 				<focusedlayout width="220" height="170">
 					<control type="image">
-						<posx>37</posx>
-						<posy>0</posy>
+						<left>37</left>
+						<top>0</top>
 						<width>145</width>
 						<height>145</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -93,8 +93,8 @@
 						</animation>
 					</control>
 					<control type="label">
-						<posx>26</posx>
-						<posy>145</posy>
+						<left>26</left>
+						<top>145</top>
 						<width>178</width>
 						<height>25</height>
 						<font>font-20</font>
@@ -107,8 +107,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1083</posx>
-				<posy>132</posy>
+				<left>1083</left>
+				<top>132</top>
 				<width>20</width>
 				<height>342</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -122,23 +122,23 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
-				<posx>200</posx>
-				<posy>495</posy>
+				<left>200</left>
+				<top>495</top>
 				<width>880</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
-				<posx>200</posx>
-				<posy>505</posy>
+				<left>200</left>
+				<top>505</top>
 				<width>95</width>
 				<height>95</height>
 				<aspectratio>keep</aspectratio>
 				<texture diffuse="thumb-diffuse.png">$INFO[Container(2).Listitem.Icon]</texture>
 			</control>
 			<control type="label">
-				<posx>200</posx>
-				<posy>520</posy>
+				<left>200</left>
+				<top>520</top>
 				<width>880</width>
 				<height>30</height>
 				<font>font-25</font>
@@ -148,8 +148,8 @@
 				<label>$INFO[Container(2).ListItem.Label,[COLOR=blue]$LOCALIZE[20093] : [/COLOR]]</label>
 			</control>
 			<control type="label">
-				<posx>200</posx>
-				<posy>554</posy>
+				<left>200</left>
+				<top>554</top>
 				<width>880</width>
 				<height>30</height>
 				<font>font-25</font>
@@ -160,7 +160,7 @@
 			</control>
 		</control>
 		<control type="group" id="9000">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -170,8 +170,8 @@
 				<include>SideMenuAnim</include>
 				<control type="radiobutton" id="4">
 					<description>Enable Login screen</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<label>20096</label>
 					<onup>5</onup>
@@ -182,8 +182,8 @@
 				</control>
 				<control type="button" id="5">
 					<description>Auto Login screen</description>
-					<posx>0</posx>
-					<posy>46</posy>
+					<left>0</left>
+					<top>46</top>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[33084]</label>
 					<onup>4</onup>
@@ -195,8 +195,8 @@
 				</control>
 				<control type="label">
 					<description>Auto Login screen</description>
-					<posx>10</posx>
-					<posy>75</posy>
+					<left>10</left>
+					<top>75</top>
 					<width>163</width>
 					<height>47</height>
 					<textcolor>white</textcolor>
@@ -210,8 +210,8 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

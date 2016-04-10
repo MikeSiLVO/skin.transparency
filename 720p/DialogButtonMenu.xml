@@ -5,8 +5,8 @@
 	<controls>
 		<control type="image">
 			<description>shutdown</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">special://skin/backgrounds/shutdown.jpg</texture>
@@ -15,13 +15,13 @@
 			<animation effect="fade" start="70" end="0" time="400">WindowClose</animation>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>280</posy>
+			<left>0</left>
+			<top>280</top>
 			<animation effect="zoom" start="400" center="640,360" time="400">WindowOpen</animation>
 			<animation effect="slide" end="0,-400" acceleration="2" time="400">WindowClose</animation>
 			<control type="image">
-				<posx>190</posx>
-				<posy>-11</posy>
+				<left>190</left>
+				<top>-11</top>
 				<width>900</width>
 				<height>85</height>
 				<texture border="32">dialog.png</texture>
@@ -29,8 +29,8 @@
 			</control>
 			<control type="label">
 				<description>Label control</description>
-				<posx>360</posx>
-				<posy>8</posy>
+				<left>360</left>
+				<top>8</top>
 				<width>560</width>
 				<height>45</height>
 				<label>$LOCALIZE[20125] $INFO[System.ProfileName]</label>
@@ -41,15 +41,15 @@
 				<visible>System.HasLoginScreen + System.LoggedOn</visible>
 			</control>
 			<control type="image">
-				<posx>190</posx>
-				<posy>86</posy>
+				<left>190</left>
+				<top>86</top>
 				<width>900</width>
 				<height>85</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="group">
-				<posx>360</posx>
-				<posy>105</posy>
+				<left>360</left>
+				<top>105</top>
 				<control type="label">
 					<label>20046</label>
 					<include>ShutdownMenuLabel</include>
@@ -132,15 +132,15 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>190</posx>
-				<posy>20</posy>
+				<left>190</left>
+				<top>20</top>
 				<width>900</width>
 				<height>120</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="grouplist" id="999">
-				<posx>250</posx>
-				<posy>50</posy>
+				<left>250</left>
+				<top>50</top>
 				<width>780</width>
 				<height>60</height>
 				<itemgap>0</itemgap>
@@ -225,8 +225,8 @@
 				</control>
 				<control type="button" id="36">
 					<description>Shutdown button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>60</width>
 					<height>60</height>
 					<texturefocus>shut-shutdown-focus.png</texturefocus>
@@ -239,8 +239,8 @@
 				</control>
 				<control type="button" id="34">
 					<description>Custom shutdowntimer button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>60</width>
 					<height>60</height>
 					<texturefocus>shut-timer-focus.png</texturefocus>
@@ -253,8 +253,8 @@
 				</control>
 				<control type="button" id="35">
 					<description>Cancel shutdowntimer button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>60</width>
 					<height>60</height>
 					<texturefocus>shut-timer-focus.png</texturefocus>
@@ -341,8 +341,8 @@
 				</control>
 			</control>
 			<control type="button">
-				<posx>902</posx>
-				<posy>12</posy>
+				<left>902</left>
+				<top>12</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>

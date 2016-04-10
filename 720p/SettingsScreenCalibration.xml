@@ -4,15 +4,15 @@
 	<controls>
 		<control type="videowindow" id="20">
 			<description>videowindow</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 		</control>
 		<control type="mover" id="8">
 			<description>top left mover</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>128</width>
 			<height>128</height>
 			<texturefocus>calibrate-topleft-focus.png</texturefocus>
@@ -20,8 +20,8 @@
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
-			<posx>1152</posx>
-			<posy>592</posy>
+			<left>1152</left>
+			<top>592</top>
 			<width>128</width>
 			<height>128</height>
 			<texturefocus>calibrate-bottomright-focus.png</texturefocus>
@@ -29,8 +29,8 @@
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
-			<posx>348</posx>
-			<posy>650</posy>
+			<left>348</left>
+			<top>650</top>
 			<width>584</width>
 			<height>128</height>
 			<texturefocus>calibrate-subtitles-focus.png</texturefocus>
@@ -38,20 +38,20 @@
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
-			<posx>512</posx>
-			<posy>232</posy>
+			<left>512</left>
+			<top>232</top>
 			<width>256</width>
 			<height>256</height>
 			<texturefocus>calibrate-pixelratio-focus.png</texturefocus>
 			<texturenofocus>calibrate-pixelratio.png</texturenofocus>
 		</control>
 		<control type="group">
-			<posx>40</posx>
-			<posy>60</posy>
+			<left>40</left>
+			<top>60</top>
 			<control type="label" id="2">
 				<description>coordinates label</description>
-				<posx>0</posx>
-				<posy>10</posy>
+				<left>0</left>
+				<top>10</top>
 				<width>1200</width>
 				<height>25</height>
 				<label>-</label>
@@ -60,8 +60,8 @@
 			</control>
 			<control type="label" id="3">
 				<description>help information</description>
-				<posx>0</posx>
-				<posy>40</posy>
+				<left>0</left>
+				<top>40</top>
 				<width>1200</width>
 				<height>25</height>
 				<label>-</label>

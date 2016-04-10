@@ -3,8 +3,8 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -15,8 +15,8 @@
 		<control type="group">
 			<include>dialogeffect4</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -26,8 +26,8 @@
 			</control>
 			<control type="label">
 				<description>Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -37,15 +37,15 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>100</posy>
+				<left>0</left>
+				<top>100</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="list" id="9000">
-				<posx>15</posx>
-				<posy>60</posy>
+				<left>15</left>
+				<top>60</top>
 				<width>1250</width>
 				<height>35</height>
 				<scrolltime>200</scrolltime>
@@ -61,8 +61,8 @@
 						<texture border="7">button-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
+						<left>5</left>
+						<top>0</top>
 						<width>240</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -91,8 +91,8 @@
 						<visible>Control.HasFocus(9000)</visible>
 					</control>
 					<control type="label">
-						<posx>5</posx>
-						<posy>0</posy>
+						<left>5</left>
+						<top>0</top>
 						<width>240</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -142,15 +142,15 @@
 				</content>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label">
-				<posx>15</posx>
-				<posy>120</posy>
+				<left>15</left>
+				<top>120</top>
 				<width>620</width>
 				<height>30</height>
 				<align>center</align>
@@ -161,8 +161,8 @@
 			</control>
 			<control type="group" id="200">
 				<control type="list" id="20">
-					<posx>10</posx>
-					<posy>160</posy>
+					<left>10</left>
+					<top>160</top>
 					<width>610</width>
 					<height>400</height>
 					<onup>9000</onup>
@@ -173,23 +173,23 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="610" height="80">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>5</posx>
-							<posy>5</posy>
+							<left>5</left>
+							<top>5</top>
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="DefaultAddonAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>0</posy>
+							<left>85</left>
+							<top>0</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -198,8 +198,8 @@
 							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>38</posy>
+							<left>85</left>
+							<top>38</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -209,15 +209,15 @@
 					</itemlayout>
 					<focusedlayout width="610" height="80">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<include>ListFocusScroll26</include>
@@ -225,16 +225,16 @@
 							<visible>Control.HasFocus(20)</visible>
 						</control>
 						<control type="image">
-							<posx>5</posx>
-							<posy>5</posy>
+							<left>5</left>
+							<top>5</top>
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="DefaultAddonAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>0</posy>
+							<left>85</left>
+							<top>0</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -243,8 +243,8 @@
 							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>38</posy>
+							<left>85</left>
+							<top>38</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -254,8 +254,8 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>620</posx>
-					<posy>160</posy>
+					<left>620</left>
+					<top>160</top>
 					<width>20</width>
 					<height>400</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -271,8 +271,8 @@
 					<orientation>vertical</orientation>
 				</control>
 				<control type="label">
-					<posx>660</posx>
-					<posy>120</posy>
+					<left>660</left>
+					<top>120</top>
 					<width>620</width>
 					<height>30</height>
 					<align>center</align>
@@ -282,8 +282,8 @@
 					<font>font-25</font>
 				</control>
 				<control type="list" id="21">
-					<posx>650</posx>
-					<posy>160</posy>
+					<left>650</left>
+					<top>160</top>
 					<width>610</width>
 					<height>400</height>
 					<onup>9000</onup>
@@ -294,23 +294,23 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout width="610" height="80">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>5</posx>
-							<posy>5</posy>
+							<left>5</left>
+							<top>5</top>
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="DefaultAddonAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>0</posy>
+							<left>85</left>
+							<top>0</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -319,8 +319,8 @@
 							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>38</posy>
+							<left>85</left>
+							<top>38</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -330,15 +330,15 @@
 					</itemlayout>
 					<focusedlayout width="610" height="80">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<texture border="7">list-nofocus.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>610</width>
 							<height>80</height>
 							<include>ListFocusScroll26</include>
@@ -346,16 +346,16 @@
 							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="image">
-							<posx>5</posx>
-							<posy>5</posy>
+							<left>5</left>
+							<top>5</top>
 							<width>70</width>
 							<height>70</height>
 							<texture fallback="DefaultAddonAudioDSP.png">$INFO[ListItem.Property(Icon)]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>0</posy>
+							<left>85</left>
+							<top>0</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -364,8 +364,8 @@
 							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
-							<posx>85</posx>
-							<posy>38</posy>
+							<left>85</left>
+							<top>38</top>
 							<width>515</width>
 							<height>40</height>
 							<font>font-18</font>
@@ -375,8 +375,8 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="61">
-					<posx>1260</posx>
-					<posy>160</posy>
+					<left>1260</left>
+					<top>160</top>
 					<width>20</width>
 					<height>400</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -393,16 +393,16 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>600</posy>
+				<left>0</left>
+				<top>600</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
 				<description>current mode description label</description>
-				<posx>40</posx>
-				<posy>600</posy>
+				<left>40</left>
+				<top>600</top>
 				<width>1200</width>
 				<height>60</height>
 				<font>font-20</font>
@@ -412,8 +412,8 @@
 			</control>
 			<control type="group">
 				<control type="radiobutton" id="22">
-					<posx>190</posx>
-					<posy>670</posy>
+					<left>190</left>
+					<top>670</top>
 					<description>Add button</description>
 					<width>300</width>
 					<height>35</height>
@@ -432,8 +432,8 @@
 					<ondown>9000</ondown>
 				</control>
 				<control type="button" id="23">
-					<posx>490</posx>
-					<posy>670</posy>
+					<left>490</left>
+					<top>670</top>
 					<width>300</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -451,8 +451,8 @@
 					<ondown>9000</ondown>
 				</control>
 				<control type="button" id="24">
-					<posx>790</posx>
-					<posy>670</posy>
+					<left>790</left>
+					<top>670</top>
 					<width>300</width>
 					<height>35</height>
 					<font>font-20</font>
@@ -470,8 +470,8 @@
 					<ondown>9000</ondown>
 				</control>
 				<control type="image">
-					<posx>190</posx>
-					<posy>670</posy>
+					<left>190</left>
+					<top>670</top>
 					<width>300</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>

@@ -5,8 +5,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
@@ -21,8 +21,8 @@
 		<control type="group">
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + !Control.HasFocus(90) + !ControlGroup(5).HasFocus">Conditional</animation>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/videos.jpg</texture>
@@ -32,8 +32,8 @@
 				<visible>Window.IsVisible(VideosSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/tv.jpg</texture>
@@ -43,8 +43,8 @@
 				<visible>Window.IsVisible(PVRSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/music.jpg</texture>
@@ -54,8 +54,8 @@
 				<visible>Window.IsVisible(MusicSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/pictures.jpg</texture>
@@ -65,8 +65,8 @@
 				<visible>Window.IsVisible(PicturesSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/weather.jpg</texture>
@@ -76,8 +76,8 @@
 				<visible>Window.IsVisible(WeatherSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/settings.jpg</texture>
@@ -87,8 +87,8 @@
 				<visible>Window.IsVisible(SystemSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/network.jpg</texture>
@@ -98,8 +98,8 @@
 				<visible>Window.IsVisible(NetworkSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
-				<posx>175</posx>
-				<posy>110</posy>
+				<left>175</left>
+				<top>110</top>
 				<width>932</width>
 				<height>501</height>
 				<texture diffuse="settings-button-diffuse.png">special://skin/backgrounds/appearance.jpg</texture>
@@ -115,22 +115,22 @@
 			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<control type="image">
-				<posx>200</posx>
-				<posy>45</posy>
+				<left>200</left>
+				<top>45</top>
 				<width>880</width>
 				<height>65</height>
 				<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 			</control>
 			<control type="button" id="20">
-				<posx>-10</posx>
-				<posy>-10</posy>
+				<left>-10</left>
+				<top>-10</top>
 				<width>1</width>
 				<height>1</height>
 				<visible>false</visible>
 			</control>
 			<control type="button" id="99">
-				<posx>440</posx>
-				<posy>60</posy>
+				<left>440</left>
+				<top>60</top>
 				<width>400</width>
 				<height>35</height>
 				<label>$LOCALIZE[31100] $INFO[Control.GetLabel(20)]</label>
@@ -146,8 +146,8 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>200</posx>
-				<posy>135</posy>
+				<left>200</left>
+				<top>135</top>
 				<width>880</width>
 				<height>455</height>
 				<itemgap>-1</itemgap>
@@ -158,8 +158,8 @@
 				<ondown>5</ondown>
 			</control>
 			<control type="scrollbar" id="90">
-				<posx>1083</posx>
-				<posy>130</posy>
+				<left>1083</left>
+				<top>130</top>
 				<width>20</width>
 				<height>473</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -175,7 +175,7 @@
 			<animation effect="slide" start="0,0" end="75,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + !Control.HasFocus(90) + !ControlGroup(5).HasFocus">Conditional</animation>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<control type="group">
@@ -183,8 +183,8 @@
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim3</include>
 				<control type="image">
-					<posx>0</posx>
-					<posy>-16</posy>
+					<left>0</left>
+					<top>-16</top>
 					<height>16</height>
 					<texture border="0,0,10,0">shadow-top2.png</texture>
 					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
@@ -193,7 +193,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
@@ -201,8 +201,8 @@
 			<include>SideMenuAnim3</include>
 			<control type="grouplist" id="3">
 				<description>button area</description>
-				<posx>0</posx>
-				<posy>110</posy>
+				<left>0</left>
+				<top>110</top>
 				<width>250</width>
 				<height>450</height>
 				<itemgap>-1</itemgap>
@@ -220,8 +220,8 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -231,8 +231,8 @@
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -242,8 +242,8 @@
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -255,8 +255,8 @@
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Sliderex</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -266,8 +266,8 @@
 		</control>
 		<control type="label" id="14">
 			<description>Default Label</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>35</height>
 			<font>font-20</font>
 			<textcolor>white</textcolor>
@@ -282,15 +282,15 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Settings_Bottom_Animation</include>
 			<control type="image">
-				<posx>240</posx>
-				<posy>640</posy>
+				<left>240</left>
+				<top>640</top>
 				<width>800</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 			</control>
 			<control type="textbox" id="6">
-				<posx>240</posx>
-				<posy>654</posy>
+				<left>240</left>
+				<top>654</top>
 				<width>800</width>
 				<height>64</height>
 				<align>center</align>
@@ -306,16 +306,16 @@
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>
 			</control>
 			<control type="label" id="2">
 				<description>Fake Label so we can pass it's value down to the one below</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>0</width>
 				<height>0</height>
 				<font>-</font>

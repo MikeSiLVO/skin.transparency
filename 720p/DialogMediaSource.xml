@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">11</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -15,8 +15,8 @@
 			<include>dialogeffect</include>
 			<include>DialogFade3</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -26,8 +26,8 @@
 			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -37,16 +37,16 @@
 				<label>-</label>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label">
 				<description>path label</description>
-				<posx>200</posx>
-				<posy>85</posy>
+				<left>200</left>
+				<top>85</top>
 				<width>880</width>
 				<height>30</height>
 				<align>left</align>
@@ -56,8 +56,8 @@
 				<textcolor>lightblue</textcolor>
 			</control>
 			<control type="list" id="10">
-				<posx>200</posx>
-				<posy>120</posy>
+				<left>200</left>
+				<top>120</top>
 				<width>880</width>
 				<height>320</height>
 				<onup>19</onup>
@@ -68,15 +68,15 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout width="880" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>860</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -88,15 +88,15 @@
 				</itemlayout>
 				<focusedlayout width="880" height="29">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>880</width>
 						<height>30</height>
 						<visible>Control.HasFocus(10)</visible>
@@ -104,8 +104,8 @@
 						<include>ListFocusScroll12</include>
 					</control>
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>860</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -117,8 +117,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>1090</posx>
-				<posy>120</posy>
+				<left>1090</left>
+				<top>120</top>
 				<width>20</width>
 				<height>322</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -134,8 +134,8 @@
 			<control type="group" id="9000">
 				<control type="button" id="11">
 					<description>Browse Button</description>
-					<posx>340</posx>
-					<posy>475</posy>
+					<left>340</left>
+					<top>475</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -150,8 +150,8 @@
 				</control>
 				<control type="button" id="13">
 					<description>Add Path Button</description>
-					<posx>540</posx>
-					<posy>475</posy>
+					<left>540</left>
+					<top>475</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -166,8 +166,8 @@
 				</control>
 				<control type="button" id="14">
 					<description>Remove Path Button</description>
-					<posx>740</posx>
-					<posy>475</posy>
+					<left>740</left>
+					<top>475</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -181,8 +181,8 @@
 					<ondown>12</ondown>
 				</control>
 				<control type="image">
-					<posx>340</posx>
-					<posy>475</posy>
+					<left>340</left>
+					<top>475</top>
 					<width>200</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>
@@ -193,16 +193,16 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>528</posy>
+				<left>0</left>
+				<top>528</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label">
 				<description>Name label</description>
-				<posx>200</posx>
-				<posy>550</posy>
+				<left>200</left>
+				<top>550</top>
 				<width>880</width>
 				<height>30</height>
 				<align>left</align>
@@ -213,8 +213,8 @@
 			</control>
 			<control type="edit" id="12">
 				<description>Name Button</description>
-				<posx>200</posx>
-				<posy>585</posy>
+				<left>200</left>
+				<top>585</top>
 				<width>880</width>
 				<height>30</height>
 				<align>left</align>
@@ -229,8 +229,8 @@
 				<ondown>9001</ondown>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>645</posy>
+				<left>0</left>
+				<top>645</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -238,8 +238,8 @@
 			<control type="group" id="9001">
 				<control type="button" id="18">
 					<description>Ok Button</description>
-					<posx>440</posx>
-					<posy>665</posy>
+					<left>440</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -254,8 +254,8 @@
 				</control>
 				<control type="button" id="19">
 					<description>Cancel Button</description>
-					<posx>640</posx>
-					<posy>665</posy>
+					<left>640</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -269,8 +269,8 @@
 					<ondown>10</ondown>
 				</control>
 				<control type="image">
-					<posx>440</posx>
-					<posy>665</posy>
+					<left>440</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>

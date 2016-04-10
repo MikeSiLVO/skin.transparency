@@ -7,8 +7,8 @@
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
 			<description>fallback if no playing or list fanart is available</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -22,8 +22,8 @@
 		</control>
 		<control type="image">
 			<description>song fanart</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -35,8 +35,8 @@
 		</control>
 		<control type="image">
 			<description>song playing fanart</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
@@ -47,8 +47,8 @@
 			<visible>Window.IsVisible(MusicPlaylist) + Player.HasAudio</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[Fanart.Image]</texture>
@@ -59,8 +59,8 @@
 			<visible>Window.IsVisible(VideoPlaylist) + !String.IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -71,8 +71,8 @@
 			<visible>Window.IsVisible(VideoPlaylist) + !String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<timeperimage>5000</timeperimage>
@@ -112,7 +112,7 @@
 			<include condition="Window.IsVisible(VideoPlaylist)">Fanart-Videos_Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
@@ -126,40 +126,40 @@
 				<itemgap>-1</itemgap>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="20">
 					<description>Shuffle button</description>
-					<posx>0</posx>
-					<posy>45</posy>
+					<left>0</left>
+					<top>45</top>
 					<include>ButtonCommonValues</include>
 					<label>191</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="26">
 					<description>Repeat button</description>
-					<posx>0</posx>
-					<posy>90</posy>
+					<left>0</left>
+					<top>90</top>
 					<include>ButtonCommonValues</include>
 					<label>-</label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="21">
 					<description>Save button</description>
-					<posx>0</posx>
-					<posy>135</posy>
+					<left>0</left>
+					<top>135</top>
 					<label>190</label>
 					<include>ButtonCommonValues</include>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
-					<posx>0</posx>
-					<posy>180</posy>
+					<left>0</left>
+					<top>180</top>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onclick>ActivateWindow(playercontrols)</onclick>
@@ -172,8 +172,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<animation effect="slide" start="0,0" end="0,-55" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50)">Conditional</animation>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

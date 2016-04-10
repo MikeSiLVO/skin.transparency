@@ -2,13 +2,13 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -20,8 +20,8 @@
 			<include>dialogeffect</include>
 			<include>DialogFade2</include>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -31,8 +31,8 @@
 			</control>
 			<control type="label" id="20">
 				<description>heading label</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -42,16 +42,16 @@
 				<label>-</label>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="2">
 				<description>control settings area</description>
-				<posx>200</posx>
-				<posy>80</posy>
+				<left>200</left>
+				<top>80</top>
 				<width>880</width>
 				<height>524</height>
 				<itemgap>-1</itemgap>
@@ -63,8 +63,8 @@
 			</control>
 			<control type="grouplist" id="9">
 				<description>control section area</description>
-				<posx>0</posx>
-				<posy>80</posy>
+				<left>0</left>
+				<top>80</top>
 				<width>200</width>
 				<height>535</height>
 				<itemgap>-1</itemgap>
@@ -74,8 +74,8 @@
 				<onright>2</onright>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>1090</posx>
-				<posy>80</posy>
+				<left>1090</left>
+				<top>80</top>
 				<width>20</width>
 				<height>526</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
@@ -140,8 +140,8 @@
 				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>645</posy>
+				<left>0</left>
+				<top>645</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -149,8 +149,8 @@
 			<control type="group" id="9001">
 				<control type="button" id="10">
 					<description>OK Button</description>
-					<posx>340</posx>
-					<posy>665</posy>
+					<left>340</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -165,8 +165,8 @@
 				</control>
 				<control type="button" id="11">
 					<description>Cancel Button</description>
-					<posx>540</posx>
-					<posy>665</posy>
+					<left>540</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -181,8 +181,8 @@
 				</control>
 				<control type="button" id="12">
 					<description>Defaults Button</description>
-					<posx>740</posx>
-					<posy>665</posy>
+					<left>740</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<align>center</align>
@@ -196,8 +196,8 @@
 					<ondown>2</ondown>
 				</control>
 				<control type="image">
-					<posx>340</posx>
-					<posy>665</posy>
+					<left>340</left>
+					<top>665</top>
 					<width>200</width>
 					<height>35</height>
 					<texture border="7">button-focus.png</texture>

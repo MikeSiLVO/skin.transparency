@@ -5,21 +5,21 @@
 			<include>ContentFade</include>
 			<visible>!Window.IsVisible(VideoOSD)</visible>
 			<control type="group">
-				<posy>520</posy>
+				<top>520</top>
 				<animation effect="slide" start="0,180" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,180" time="300">WindowClose</animation>
 				<control type="image">
 					<description>media info background image</description>
-					<posx>-28</posx>
-					<posy>32</posy>
+					<left>-28</left>
+					<top>32</top>
 					<width>1336</width>
 					<height>222</height>
 					<texture border="17">panel.png</texture>
 					<bordersize>11</bordersize>
 				</control>
 				<control type="label">
-					<posx>325</posx>
-					<posy>58</posy>
+					<left>325</left>
+					<top>58</top>
 					<width>710</width>
 					<height>25</height>
 					<label>$VAR[DialogFullScreenInfoLabel1]</label>
@@ -29,8 +29,8 @@
 					<textcolor>blue</textcolor>
 				</control>
 				<control type="label">
-					<posx>325</posx>
-					<posy>84</posy>
+					<left>325</left>
+					<top>84</top>
 					<width>925</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.Title]</label>
@@ -40,8 +40,8 @@
 					<textcolor>lightblue</textcolor>
 				</control>
 				<control type="label">
-					<posx>325</posx>
-					<posy>110</posy>
+					<left>325</left>
+					<top>110</top>
 					<width>625</width>
 					<height>25</height>
 					<label>$VAR[DialogFullScreenInfoLabel2]</label>
@@ -52,8 +52,8 @@
 				</control>
 				<control type="label">
 					<description>System Time Label</description>
-					<posx>1255</posx>
-					<posy>58</posy>
+					<left>1255</left>
+					<top>58</top>
 					<width>200</width>
 					<height>25</height>
 					<textcolor>blue</textcolor>
@@ -63,8 +63,8 @@
 					<font>font-23</font>
 				</control>
 				<control type="button">
-					<posx>1258</posx>
-					<posy>62</posy>
+					<left>1258</left>
+					<top>62</top>
 					<width>20</width>
 					<height>20</height>
 					<texturefocus>close-window-focus.png</texturefocus>
@@ -74,8 +74,8 @@
 				</control>
 				<control type="label">
 					<description>Video End Time</description>
-					<posx>1255</posx>
-					<posy>110</posy>
+					<left>1255</left>
+					<top>110</top>
 					<width>300</width>
 					<height>25</height>
 					<textcolor>white</textcolor>
@@ -86,8 +86,8 @@
 				</control>
 				<control type="label">
 					<description>time label</description>
-					<posx>325</posx>
-					<posy>134</posy>
+					<left>325</left>
+					<top>134</top>
 					<width>280</width>
 					<height>25</height>
 					<textcolor>lightblue</textcolor>
@@ -98,8 +98,8 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar Cache</description>
-					<posx>420</posx>
-					<posy>140</posy>
+					<left>420</left>
+					<top>140</top>
 					<width>741</width>
 					<height>15</height>
 					<info>Player.ProgressCache</info>
@@ -107,24 +107,24 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>420</posx>
-					<posy>140</posy>
+					<left>420</left>
+					<top>140</top>
 					<width>741</width>
 					<height>15</height>
 					<info>Player.Progress</info>
 				</control>
 				<control type="slider" id="888">
 					<description>Slider</description>
-					<posx>420</posx>
-					<posy>140</posy>
+					<left>420</left>
+					<top>140</top>
 					<width>741</width>
 					<height>15</height>
 					<action>seek</action>
 				</control>
 				<control type="label">
 					<description>time label</description>
-					<posx>1255</posx>
-					<posy>134</posy>
+					<left>1255</left>
+					<top>134</top>
 					<width>280</width>
 					<height>25</height>
 					<textcolor>lightblue</textcolor>
@@ -135,8 +135,8 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<posx>1255</posx>
-					<posy>164</posy>
+					<left>1255</left>
+					<top>164</top>
 					<width>490</width>
 					<height>25</height>
 					<textcolor>lightgrey</textcolor>
@@ -149,8 +149,8 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<posx>1255</posx>
-					<posy>155</posy>
+					<left>1255</left>
+					<top>155</top>
 					<width>490</width>
 					<height>25</height>
 					<textcolor>lightgrey</textcolor>
@@ -163,8 +163,8 @@
 				</control>
 				<control type="label">
 					<description>Chapter Pos No</description>
-					<posx>1255</posx>
-					<posy>175</posy>
+					<left>1255</left>
+					<top>175</top>
 					<width>490</width>
 					<height>25</height>
 					<textcolor>lightgrey</textcolor>
@@ -176,8 +176,8 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="group">
-					<posx>320</posx>
-					<posy>156</posy>
+					<left>320</left>
+					<top>156</top>
 					<width>404</width>
 					<height>48</height>
 					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
@@ -188,15 +188,15 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>380</posy>
+				<left>0</left>
+				<top>380</top>
 				<animation effect="slide" start="-280,0" end="0,0" time="300">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="-280,0" time="300">WindowClose</animation>
 				<include condition="Skin.HasSetting(ClearArt) + VideoPlayer.Content(Episodes)">clearart-dialogfullscreeninfo</include>
 				<control type="image">
 					<description>cover image</description>
-					<posx>10</posx>
-					<posy>183</posy>
+					<left>10</left>
+					<top>183</top>
 					<width>279</width>
 					<height>157</height>
 					<aspectratio align="center" aligny="center" scalediffuse="true">keep</aspectratio>
@@ -205,8 +205,8 @@
 				</control>
 				<control type="image">
 					<description>cover image</description>
-					<posx>10</posx>
-					<posy>183</posy>
+					<left>10</left>
+					<top>183</top>
 					<width>279</width>
 					<height>157</height>
 					<aspectratio align="center" aligny="center" scalediffuse="true">keep</aspectratio>
@@ -215,16 +215,16 @@
 				</control>
 				<control type="image">
 					<description>cover image</description>
-					<posx>44</posx>
-					<posy>40</posy>
+					<left>44</left>
+					<top>40</top>
 					<width>206</width>
 					<height>292</height>
 					<texture>$INFO[Player.Art(thumb)]</texture>
 					<visible>VideoPlayer.Content(Movies) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
 				</control>
 				<control type="image">
-					<posx>44</posx>
-					<posy>16</posy>
+					<left>44</left>
+					<top>16</top>
 					<width>222</width>
 					<height>338</height>
 					<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>

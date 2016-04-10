@@ -2,14 +2,14 @@
 <includes>
 	<include name="Slide">
 		<control type="group" id="7003">
-			<posx>0</posx>
-			<posy>489</posy>
+			<left>0</left>
+			<top>489</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + Container.OnNext</visible>
 			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<control type="image">
-				<posx>-35</posx>
-				<posy>129</posy>
+				<left>-35</left>
+				<top>129</top>
 				<width>71</width>
 				<height>100</height>
 				<texture background="true">$VAR[Icon(-8)Poster]</texture>
@@ -17,8 +17,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>-35</posx>
-				<posy>120</posy>
+				<left>-35</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-8).VideoResolution].png</texture>
@@ -26,8 +26,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-8).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>		
 			<control type="image">
-				<posx>-35</posx>
-				<posy>120</posy>
+				<left>-35</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture>case-tv.png</texture>
@@ -35,8 +35,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-8).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>127</posy>
+				<left>37</left>
+				<top>127</top>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$VAR[Icon(-7)Poster]</texture>
@@ -44,8 +44,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>118</posy>
+				<left>37</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
@@ -53,8 +53,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>118</posy>
+				<left>37</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture>case-tv.png</texture>
@@ -62,8 +62,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>124</posy>
+				<left>111</left>
+				<top>124</top>
 				<width>74</width>
 				<height>105</height>
 				<texture background="true">$VAR[Icon(-6)Poster]</texture>
@@ -71,8 +71,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>115</posy>
+				<left>111</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
@@ -80,8 +80,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>115</posy>
+				<left>111</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture>case-tv.png</texture>
@@ -89,8 +89,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>120</posy>
+				<left>187</left>
+				<top>120</top>
 				<width>76</width>
 				<height>109</height>
 				<texture background="true">$VAR[Icon(-5)Poster]</texture>
@@ -98,8 +98,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>110</posy>
+				<left>187</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
@@ -107,8 +107,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>110</posy>
+				<left>187</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture>case-tv.png</texture>
@@ -116,8 +116,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>112</posy>
+				<left>265</left>
+				<top>112</top>
 				<width>82</width>
 				<height>116</height>
 				<texture background="true">$VAR[Icon(-4)Poster]</texture>
@@ -125,8 +125,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>102</posy>
+				<left>265</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
@@ -134,8 +134,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>102</posy>
+				<left>265</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture>case-tv.png</texture>
@@ -143,8 +143,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>96</posy>
+				<left>349</left>
+				<top>96</top>
 				<width>93</width>
 				<height>132</height>
 				<texture background="true">$VAR[Icon(-3)Poster]</texture>
@@ -152,8 +152,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>84</posy>
+				<left>349</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
@@ -161,8 +161,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>84</posy>
+				<left>349</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture>case-tv.png</texture>
@@ -170,8 +170,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>65</posy>
+				<left>444</left>
+				<top>65</top>
 				<width>114</width>
 				<height>162</height>
 				<texture background="true">$VAR[Icon(-2)Poster]</texture>
@@ -179,8 +179,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>50</posy>
+				<left>444</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
@@ -188,8 +188,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>50</posy>
+				<left>444</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture>case-tv.png</texture>
@@ -197,8 +197,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>12</posy>
+				<left>560</left>
+				<top>12</top>
 				<width>150</width>
 				<height>214</height>
 				<texture background="true">$VAR[Icon(-1)Poster]</texture>
@@ -206,8 +206,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>-6</posy>
+				<left>560</left>
+				<top>-6</top>
 				<width>160</width>
 				<height>248</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
@@ -215,8 +215,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>-6</posy>
+				<left>560</left>
+				<top>-6</top>
 				<width>160</width>
 				<height>248</height>
 				<texture>case-tv.png</texture>
@@ -224,8 +224,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>65</posy>
+				<left>712</left>
+				<top>65</top>
 				<width>114</width>
 				<height>162</height>
 				<texture background="true">$VAR[Icon(0)Poster]</texture>
@@ -233,8 +233,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>50</posy>
+				<left>712</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
@@ -242,8 +242,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>50</posy>
+				<left>712</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture>case-tv.png</texture>
@@ -251,8 +251,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>96</posy>
+				<left>828</left>
+				<top>96</top>
 				<width>93</width>
 				<height>132</height>
 				<texture background="true">$VAR[Icon(1)Poster]</texture>
@@ -260,8 +260,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>84</posy>
+				<left>828</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
@@ -269,8 +269,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>84</posy>
+				<left>828</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture>case-tv.png</texture>
@@ -278,8 +278,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>112</posy>
+				<left>924</left>
+				<top>112</top>
 				<width>82</width>
 				<height>116</height>
 				<texture background="true">$VAR[Icon(2)Poster]</texture>
@@ -287,8 +287,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>102</posy>
+				<left>924</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
@@ -296,8 +296,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>102</posy>
+				<left>924</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture>case-tv.png</texture>
@@ -305,8 +305,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>120</posy>
+				<left>1008</left>
+				<top>120</top>
 				<width>76</width>
 				<height>109</height>
 				<texture background="true">$VAR[Icon(3)Poster]</texture>
@@ -314,8 +314,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>110</posy>
+				<left>1008</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
@@ -323,8 +323,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>110</posy>
+				<left>1008</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture>case-tv.png</texture>
@@ -332,8 +332,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>124</posy>
+				<left>1087</left>
+				<top>124</top>
 				<width>74</width>
 				<height>105</height>
 				<texture background="true">$VAR[Icon(4)Poster]</texture>
@@ -341,8 +341,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>115</posy>
+				<left>1087</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
@@ -350,8 +350,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>115</posy>
+				<left>1087</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture>case-tv.png</texture>
@@ -359,8 +359,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>127</posy>
+				<left>1164</left>
+				<top>127</top>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$VAR[Icon(5)Poster]</texture>
@@ -368,8 +368,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>118</posy>
+				<left>1164</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
@@ -377,8 +377,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>118</posy>
+				<left>1164</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture>case-tv.png</texture>
@@ -386,8 +386,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>129</posy>
+				<left>1239</left>
+				<top>129</top>
 				<width>71</width>
 				<height>100</height>
 				<texture background="true">$VAR[Icon(6)Poster]</texture>
@@ -395,8 +395,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>120</posy>
+				<left>1239</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
@@ -404,8 +404,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>120</posy>
+				<left>1239</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture>case-tv.png</texture>
@@ -413,8 +413,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1312</posx>
-				<posy>129</posy>
+				<left>1312</left>
+				<top>129</top>
 				<width>70</width>
 				<height>99</height>
 				<texture background="true">$VAR[Icon(7)Poster]</texture>
@@ -422,8 +422,8 @@
 				<visible>Container(596).OnNext</visible>
 			</control>
 			<control type="image">
-				<posx>1312</posx>
-				<posy>120</posy>
+				<left>1312</left>
+				<top>120</top>
 				<width>75</width>
 				<height>115</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
@@ -431,8 +431,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1312</posx>
-				<posy>120</posy>
+				<left>1312</left>
+				<top>120</top>
 				<width>75</width>
 				<height>115</height>
 				<texture>case-tv.png</texture>
@@ -441,14 +441,14 @@
 			</control>
 		</control>
 		<control type="group" id="7004">
-			<posx>0</posx>
-			<posy>489</posy>
+			<left>0</left>
+			<top>489</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + Container.OnPrevious</visible>
 			<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 			<control type="image">
-				<posx>-107</posx>
-				<posy>129</posy>
+				<left>-107</left>
+				<top>129</top>
 				<width>70</width>
 				<height>99</height>
 				<texture background="true">$VAR[Icon(-7)Poster]</texture>
@@ -456,8 +456,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>-107</posx>
-				<posy>120</posy>
+				<left>-107</left>
+				<top>120</top>
 				<width>75</width>
 				<height>115</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
@@ -465,8 +465,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>-107</posx>
-				<posy>120</posy>
+				<left>-107</left>
+				<top>120</top>
 				<width>75</width>
 				<height>115</height>
 				<texture>case-tv.png</texture>
@@ -474,8 +474,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>-35</posx>
-				<posy>129</posy>
+				<left>-35</left>
+				<top>129</top>
 				<width>71</width>
 				<height>100</height>
 				<texture background="true">$VAR[Icon(-6)Poster]</texture>
@@ -483,8 +483,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>-35</posx>
-				<posy>120</posy>
+				<left>-35</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
@@ -492,8 +492,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>-35</posx>
-				<posy>120</posy>
+				<left>-35</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture>case-tv.png</texture>
@@ -501,8 +501,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>127</posy>
+				<left>37</left>
+				<top>127</top>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$VAR[Icon(-5)Poster]</texture>
@@ -510,8 +510,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>118</posy>
+				<left>37</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
@@ -519,8 +519,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>37</posx>
-				<posy>118</posy>
+				<left>37</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture>case-tv.png</texture>
@@ -528,8 +528,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>124</posy>
+				<left>111</left>
+				<top>124</top>
 				<width>74</width>
 				<height>105</height>
 				<texture background="true">$VAR[Icon(-4)Poster]</texture>
@@ -537,8 +537,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>115</posy>
+				<left>111</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
@@ -546,8 +546,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>111</posx>
-				<posy>115</posy>
+				<left>111</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture>case-tv.png</texture>
@@ -555,8 +555,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>120</posy>
+				<left>187</left>
+				<top>120</top>
 				<width>76</width>
 				<height>109</height>
 				<texture background="true">$VAR[Icon(-3)Poster]</texture>
@@ -564,8 +564,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>110</posy>
+				<left>187</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
@@ -573,8 +573,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>187</posx>
-				<posy>110</posy>
+				<left>187</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture>case-tv.png</texture>
@@ -582,8 +582,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>112</posy>
+				<left>265</left>
+				<top>112</top>
 				<width>82</width>
 				<height>116</height>
 				<texture background="true">$VAR[Icon(-2)Poster]</texture>
@@ -591,8 +591,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>102</posy>
+				<left>265</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
@@ -600,8 +600,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>265</posx>
-				<posy>102</posy>
+				<left>265</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture>case-tv.png</texture>
@@ -609,8 +609,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>96</posy>
+				<left>349</left>
+				<top>96</top>
 				<width>93</width>
 				<height>132</height>
 				<texture background="true">$VAR[Icon(-1)Poster]</texture>
@@ -618,8 +618,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>84</posy>
+				<left>349</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
@@ -627,8 +627,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>349</posx>
-				<posy>84</posy>
+				<left>349</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture>case-tv.png</texture>
@@ -636,8 +636,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>65</posy>
+				<left>444</left>
+				<top>65</top>
 				<width>114</width>
 				<height>162</height>
 				<texture background="true">$VAR[Icon(0)Poster]</texture>
@@ -645,8 +645,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>50</posy>
+				<left>444</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
@@ -654,8 +654,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>444</posx>
-				<posy>50</posy>
+				<left>444</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture>case-tv.png</texture>
@@ -663,8 +663,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>12</posy>
+				<left>560</left>
+				<top>12</top>
 				<width>150</width>
 				<height>214</height>
 				<texture background="true">$VAR[Icon(1)Poster]</texture>
@@ -672,8 +672,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>-6</posy>
+				<left>560</left>
+				<top>-6</top>
 				<width>160</width>
 				<height>248</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
@@ -681,8 +681,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>560</posx>
-				<posy>-6</posy>
+				<left>560</left>
+				<top>-6</top>
 				<width>160</width>
 				<height>248</height>
 				<texture>case-tv.png</texture>
@@ -690,8 +690,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>65</posy>
+				<left>712</left>
+				<top>65</top>
 				<width>114</width>
 				<height>162</height>
 				<texture background="true">$VAR[Icon(2)Poster]</texture>
@@ -699,8 +699,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>50</posy>
+				<left>712</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
@@ -708,8 +708,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>712</posx>
-				<posy>50</posy>
+				<left>712</left>
+				<top>50</top>
 				<width>122</width>
 				<height>189</height>
 				<texture>case-tv.png</texture>
@@ -717,8 +717,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>96</posy>
+				<left>828</left>
+				<top>96</top>
 				<width>93</width>
 				<height>132</height>
 				<texture background="true">$VAR[Icon(3)Poster]</texture>
@@ -726,8 +726,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>84</posy>
+				<left>828</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
@@ -735,8 +735,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>828</posx>
-				<posy>84</posy>
+				<left>828</left>
+				<top>84</top>
 				<width>100</width>
 				<height>154</height>
 				<texture>case-tv.png</texture>
@@ -744,8 +744,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>112</posy>
+				<left>924</left>
+				<top>112</top>
 				<width>82</width>
 				<height>116</height>
 				<texture background="true">$VAR[Icon(4)Poster]</texture>
@@ -753,8 +753,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>102</posy>
+				<left>924</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
@@ -762,8 +762,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>924</posx>
-				<posy>102</posy>
+				<left>924</left>
+				<top>102</top>
 				<width>88</width>
 				<height>135</height>
 				<texture>case-tv.png</texture>
@@ -771,8 +771,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>120</posy>
+				<left>1008</left>
+				<top>120</top>
 				<width>76</width>
 				<height>109</height>
 				<texture background="true">$VAR[Icon(5)Poster]</texture>
@@ -780,8 +780,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>110</posy>
+				<left>1008</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
@@ -789,8 +789,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>110</posy>
+				<left>1008</left>
+				<top>110</top>
 				<width>82</width>
 				<height>127</height>
 				<texture>case-tv.png</texture>
@@ -798,8 +798,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>124</posy>
+				<left>1087</left>
+				<top>124</top>
 				<width>74</width>
 				<height>105</height>
 				<texture background="true">$VAR[Icon(6)Poster]</texture>
@@ -807,8 +807,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>115</posy>
+				<left>1087</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
@@ -816,8 +816,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1087</posx>
-				<posy>115</posy>
+				<left>1087</left>
+				<top>115</top>
 				<width>80</width>
 				<height>122</height>
 				<texture>case-tv.png</texture>
@@ -825,8 +825,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>127</posy>
+				<left>1164</left>
+				<top>127</top>
 				<width>73</width>
 				<height>102</height>
 				<texture background="true">$VAR[Icon(7)Poster]</texture>
@@ -834,8 +834,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>118</posy>
+				<left>1164</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
@@ -843,8 +843,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1164</posx>
-				<posy>118</posy>
+				<left>1164</left>
+				<top>118</top>
 				<width>78</width>
 				<height>118</height>
 				<texture>case-tv.png</texture>
@@ -852,8 +852,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>129</posy>
+				<left>1239</left>
+				<top>129</top>
 				<width>71</width>
 				<height>100</height>
 				<texture background="true">$VAR[Icon(8)Poster]</texture>
@@ -861,8 +861,8 @@
 				<visible>Container(596).OnPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>120</posy>
+				<left>1239</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem(8).VideoResolution].png</texture>
@@ -870,8 +870,8 @@
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(8).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>1239</posx>
-				<posy>120</posy>
+				<left>1239</left>
+				<top>120</top>
 				<width>76</width>
 				<height>116</height>
 				<texture>case-tv.png</texture>
@@ -880,29 +880,29 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>489</posy>
+			<left>0</left>
+			<top>489</top>
 			<visible>Control.IsVisible(596) + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-7)_Animation</include>
 				<control type="image">
-					<posx>-35</posx>
-					<posy>129</posy>
+					<left>-35</left>
+					<top>129</top>
 					<width>71</width>
 					<height>100</height>
 					<texture background="true">$VAR[Icon(-7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>-35</posx>
-					<posy>120</posy>
+					<left>-35</left>
+					<top>120</top>
 					<width>76</width>
 					<height>116</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>-35</posx>
-					<posy>120</posy>
+					<left>-35</left>
+					<top>120</top>
 					<width>76</width>
 					<height>116</height>
 					<texture>case-tv.png</texture>
@@ -912,23 +912,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-6)_Animation</include>
 				<control type="image">
-					<posx>37</posx>
-					<posy>127</posy>
+					<left>37</left>
+					<top>127</top>
 					<width>73</width>
 					<height>102</height>
 					<texture background="true">$VAR[Icon(-6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>37</posx>
-					<posy>118</posy>
+					<left>37</left>
+					<top>118</top>
 					<width>78</width>
 					<height>118</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>37</posx>
-					<posy>118</posy>
+					<left>37</left>
+					<top>118</top>
 					<width>78</width>
 					<height>118</height>
 					<texture>case-tv.png</texture>
@@ -938,23 +938,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-5)_Animation</include>
 				<control type="image">
-					<posx>111</posx>
-					<posy>124</posy>
+					<left>111</left>
+					<top>124</top>
 					<width>74</width>
 					<height>105</height>
 					<texture background="true">$VAR[Icon(-5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>111</posx>
-					<posy>115</posy>
+					<left>111</left>
+					<top>115</top>
 					<width>80</width>
 					<height>122</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>111</posx>
-					<posy>115</posy>
+					<left>111</left>
+					<top>115</top>
 					<width>80</width>
 					<height>122</height>
 					<texture>case-tv.png</texture>
@@ -964,23 +964,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-4)_Animation</include>
 				<control type="image">
-					<posx>187</posx>
-					<posy>120</posy>
+					<left>187</left>
+					<top>120</top>
 					<width>76</width>
 					<height>109</height>
 					<texture background="true">$VAR[Icon(-4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>187</posx>
-					<posy>110</posy>
+					<left>187</left>
+					<top>110</top>
 					<width>82</width>
 					<height>127</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>187</posx>
-					<posy>110</posy>
+					<left>187</left>
+					<top>110</top>
 					<width>82</width>
 					<height>127</height>
 					<texture>case-tv.png</texture>
@@ -990,23 +990,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-3)_Animation</include>
 				<control type="image">
-					<posx>265</posx>
-					<posy>112</posy>
+					<left>265</left>
+					<top>112</top>
 					<width>82</width>
 					<height>116</height>
 					<texture background="true">$VAR[Icon(-3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>265</posx>
-					<posy>102</posy>
+					<left>265</left>
+					<top>102</top>
 					<width>88</width>
 					<height>135</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>265</posx>
-					<posy>102</posy>
+					<left>265</left>
+					<top>102</top>
 					<width>88</width>
 					<height>135</height>
 					<texture>case-tv.png</texture>
@@ -1016,23 +1016,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-2)_Animation</include>
 				<control type="image">
-					<posx>349</posx>
-					<posy>96</posy>
+					<left>349</left>
+					<top>96</top>
 					<width>93</width>
 					<height>132</height>
 					<texture background="true">$VAR[Icon(-2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>349</posx>
-					<posy>84</posy>
+					<left>349</left>
+					<top>84</top>
 					<width>100</width>
 					<height>154</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>349</posx>
-					<posy>84</posy>
+					<left>349</left>
+					<top>84</top>
 					<width>100</width>
 					<height>154</height>
 					<texture>case-tv.png</texture>
@@ -1042,23 +1042,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(-1)_Animation</include>
 				<control type="image">
-					<posx>444</posx>
-					<posy>65</posy>
+					<left>444</left>
+					<top>65</top>
 					<width>114</width>
 					<height>162</height>
 					<texture background="true">$VAR[Icon(-1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>444</posx>
-					<posy>50</posy>
+					<left>444</left>
+					<top>50</top>
 					<width>122</width>
 					<height>189</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>444</posx>
-					<posy>50</posy>
+					<left>444</left>
+					<top>50</top>
 					<width>122</width>
 					<height>189</height>
 					<texture>case-tv.png</texture>
@@ -1068,31 +1068,31 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(0)_Animation</include>
 				<control type="image">
-					<posx>560</posx>
-					<posy>12</posy>
+					<left>560</left>
+					<top>12</top>
 					<width>150</width>
 					<height>214</height>
 					<texture background="true">$VAR[Icon(0)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>560</posx>
-					<posy>-6</posy>
+					<left>560</left>
+					<top>-6</top>
 					<width>160</width>
 					<height>248</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + Container.Content(Movies) + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>560</posx>
-					<posy>-6</posy>
+					<left>560</left>
+					<top>-6</top>
 					<width>160</width>
 					<height>248</height>
 					<texture>case-tv.png</texture>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 				<control type="image">
-					<posx>658</posx>
-					<posy>194</posy>
+					<left>658</left>
+					<top>194</top>
 					<width>44</width>
 					<height>26</height>
 					<texture>movieset.png</texture>
@@ -1102,23 +1102,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(1)_Animation</include>
 				<control type="image">
-					<posx>712</posx>
-					<posy>65</posy>
+					<left>712</left>
+					<top>65</top>
 					<width>114</width>
 					<height>162</height>
 					<texture background="true">$VAR[Icon(1)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>712</posx>
-					<posy>50</posy>
+					<left>712</left>
+					<top>50</top>
 					<width>122</width>
 					<height>189</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>712</posx>
-					<posy>50</posy>
+					<left>712</left>
+					<top>50</top>
 					<width>122</width>
 					<height>189</height>
 					<texture>case-tv.png</texture>
@@ -1128,23 +1128,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(2)_Animation</include>
 				<control type="image">
-					<posx>828</posx>
-					<posy>96</posy>
+					<left>828</left>
+					<top>96</top>
 					<width>93</width>
 					<height>132</height>
 					<texture background="true">$VAR[Icon(2)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>828</posx>
-					<posy>84</posy>
+					<left>828</left>
+					<top>84</top>
 					<width>100</width>
 					<height>154</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>828</posx>
-					<posy>84</posy>
+					<left>828</left>
+					<top>84</top>
 					<width>100</width>
 					<height>154</height>
 					<texture>case-tv.png</texture>
@@ -1154,23 +1154,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(3)_Animation</include>
 				<control type="image">
-					<posx>924</posx>
-					<posy>112</posy>
+					<left>924</left>
+					<top>112</top>
 					<width>82</width>
 					<height>116</height>
 					<texture background="true">$VAR[Icon(3)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>924</posx>
-					<posy>102</posy>
+					<left>924</left>
+					<top>102</top>
 					<width>88</width>
 					<height>135</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>924</posx>
-					<posy>102</posy>
+					<left>924</left>
+					<top>102</top>
 					<width>88</width>
 					<height>135</height>
 					<texture>case-tv.png</texture>
@@ -1180,23 +1180,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(4)_Animation</include>
 				<control type="image">
-					<posx>1008</posx>
-					<posy>120</posy>
+					<left>1008</left>
+					<top>120</top>
 					<width>76</width>
 					<height>109</height>
 					<texture background="true">$VAR[Icon(4)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1008</posx>
-					<posy>110</posy>
+					<left>1008</left>
+					<top>110</top>
 					<width>82</width>
 					<height>127</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>1008</posx>
-					<posy>110</posy>
+					<left>1008</left>
+					<top>110</top>
 					<width>82</width>
 					<height>127</height>
 					<texture>case-tv.png</texture>
@@ -1206,23 +1206,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(5)_Animation</include>
 				<control type="image">
-					<posx>1087</posx>
-					<posy>124</posy>
+					<left>1087</left>
+					<top>124</top>
 					<width>74</width>
 					<height>105</height>
 					<texture background="true">$VAR[Icon(5)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1087</posx>
-					<posy>115</posy>
+					<left>1087</left>
+					<top>115</top>
 					<width>80</width>
 					<height>122</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>1087</posx>
-					<posy>115</posy>
+					<left>1087</left>
+					<top>115</top>
 					<width>80</width>
 					<height>122</height>
 					<texture>case-tv.png</texture>
@@ -1232,23 +1232,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(6)_Animation</include>
 				<control type="image">
-					<posx>1164</posx>
-					<posy>127</posy>
+					<left>1164</left>
+					<top>127</top>
 					<width>73</width>
 					<height>102</height>
 					<texture background="true">$VAR[Icon(6)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1164</posx>
-					<posy>118</posy>
+					<left>1164</left>
+					<top>118</top>
 					<width>78</width>
 					<height>118</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>1164</posx>
-					<posy>118</posy>
+					<left>1164</left>
+					<top>118</top>
 					<width>78</width>
 					<height>118</height>
 					<texture>case-tv.png</texture>
@@ -1258,23 +1258,23 @@
 			<control type="group">
 				<include>Window_OpenClose_Visible_Slide(7)_Animation</include>
 				<control type="image">
-					<posx>1239</posx>
-					<posy>129</posy>
+					<left>1239</left>
+					<top>129</top>
 					<width>71</width>
 					<height>100</height>
 					<texture background="true">$VAR[Icon(7)Poster]</texture>
 				</control>
 				<control type="image">
-					<posx>1239</posx>
-					<posy>120</posy>
+					<left>1239</left>
+					<top>120</top>
 					<width>76</width>
 					<height>116</height>
 					<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
 					<visible>Container.Content(Movies) + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
-					<posx>1239</posx>
-					<posy>120</posy>
+					<left>1239</left>
+					<top>120</top>
 					<width>76</width>
 					<height>116</height>
 					<texture>case-tv.png</texture>
@@ -1286,8 +1286,8 @@
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list</description>
 			<visible>Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)</visible>
-			<posx>-635</posx>
-			<posy>487</posy>
+			<left>-635</left>
+			<top>487</top>
 			<width>2550</width>
 			<height>233</height>
 			<onleft>596</onleft>
@@ -1304,8 +1304,8 @@
 			<itemlayout width="190" height="233"/>
 			<focusedlayout width="190" height="233">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>190</width>
 					<height>233</height>
 					<texture/>
@@ -1313,29 +1313,29 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>15</posy>
+			<left>0</left>
+			<top>15</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(596)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>81</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>13</posy>
+				<left>0</left>
+				<top>13</top>
 				<width>1280</width>
 				<height>100</height>
 				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1343,8 +1343,8 @@
 				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="image">
-				<posx>1156</posx>
-				<posy>27</posy>
+				<left>1156</left>
+				<top>27</top>
 				<width>30</width>
 				<height>30</height>
 				<aspectratio>keep</aspectratio>
@@ -1352,8 +1352,8 @@
 				<visible>!Skin.HasSetting(Enable_Movies_Watched_Flags)</visible>
 			</control>
 			<control type="label">
-				<posx>140</posx>
-				<posy>27</posy>
+				<left>140</left>
+				<top>27</top>
 				<width>1000</width>
 				<height>35</height>
 				<font>font-30</font>
@@ -1364,8 +1364,8 @@
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 			</control>
 			<control type="label">
-				<posx>355</posx>
-				<posy>60</posy>
+				<left>355</left>
+				<top>60</top>
 				<width>577</width>
 				<height>40</height>
 				<label>[B]$INFO[ListItem.Property(TotalSeasons),$LOCALIZE[33054] : , - ]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] : ][/B]</label>
@@ -1376,8 +1376,8 @@
 				<visible>[Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			</control>
 			<control type="button" id="7008">
-				<posx>1147</posx>
-				<posy>60</posy>
+				<left>1147</left>
+				<top>60</top>
 				<width>48</width>
 				<height>48</height>
 				<label>-</label>
@@ -1393,8 +1393,8 @@
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !String.IsEmpty(Listitem.Trailer)</visible>
 			</control>
 			<control type="group">
-				<posx>370</posx>
-				<posy>60</posy>
+				<left>370</left>
+				<top>60</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
@@ -1402,8 +1402,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>6</posy>
+			<left>0</left>
+			<top>6</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596)</visible>
 			<control type="group">
@@ -1420,16 +1420,16 @@
 					<effect type="rotatey" center="640" start="-90" end="0" time="450" delay="450" tween="cubic" easing="out"/>
 				</animation>
 				<control type="image">
-					<posx>160</posx>
-					<posy>127</posy>
+					<left>160</left>
+					<top>127</top>
 					<width>960</width>
 					<height>339</height>
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 				</control>
 				<control type="videowindow">
 					<description>trailer preview</description>
-					<posx>160</posx>
-					<posy>136</posy>
+					<left>160</left>
+					<top>136</top>
 					<width>960</width>
 					<height>321</height>
 					<animation effect="fade" start="0" end="100" time="250" delay="900">Visible</animation>
@@ -1438,8 +1438,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>6</posy>
+			<left>0</left>
+			<top>6</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(596) + !Skin.HasSetting(HideInfoPanelSlideView)</visible>
 			<control type="group">
@@ -1459,16 +1459,16 @@
 				</animation>
 				<visible>Control.IsVisible(596) + ![Container.Content(TVShows) + !String.IsEqual(Container.FolderPath,videodb://tvshows/titles/)] + !Container.Content(Seasons) + !ListItem.IsParentFolder + !Control.IsVisible(7003) + !Control.IsVisible(7004)</visible>
 				<control type="image">
-					<posx>160</posx>
-					<posy>127</posy>
+					<left>160</left>
+					<top>127</top>
 					<width>960</width>
 					<height>339</height>
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 				</control>
 				<control type="group">
 					<control type="label">
-						<posx>257</posx>
-						<posy>145</posy>
+						<left>257</left>
+						<top>145</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1479,8 +1479,8 @@
 						<label>[UPPERCASE][B]$LOCALIZE[572]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>165</posy>
+						<left>257</left>
+						<top>165</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1491,8 +1491,8 @@
 						<label>$INFO[ListItem.Studio]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
+						<left>257</left>
+						<top>195</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1504,8 +1504,8 @@
 						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
+						<left>257</left>
+						<top>215</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1517,8 +1517,8 @@
 						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>195</posy>
+						<left>257</left>
+						<top>195</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1530,8 +1530,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>215</posy>
+						<left>257</left>
+						<top>215</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1543,8 +1543,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
+						<left>257</left>
+						<top>245</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1556,8 +1556,8 @@
 						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
+						<left>257</left>
+						<top>265</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1569,8 +1569,8 @@
 						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>245</posy>
+						<left>257</left>
+						<top>245</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1582,8 +1582,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>265</posy>
+						<left>257</left>
+						<top>265</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1595,8 +1595,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>195</posy>
+						<left>407</left>
+						<top>195</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1608,8 +1608,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>215</posy>
+						<left>407</left>
+						<top>215</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1621,8 +1621,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>245</posy>
+						<left>407</left>
+						<top>245</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1634,8 +1634,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>265</posy>
+						<left>407</left>
+						<top>265</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1647,8 +1647,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>295</posy>
+						<left>257</left>
+						<top>295</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1659,8 +1659,8 @@
 						<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>315</posy>
+						<left>257</left>
+						<top>315</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1671,8 +1671,8 @@
 						<label>$INFO[ListItem.Genre]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
+						<left>257</left>
+						<top>345</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1684,8 +1684,8 @@
 						<visible>!Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
+						<left>257</left>
+						<top>365</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1696,8 +1696,8 @@
 						<label>$VAR[ViewSlideLabel1]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>345</posy>
+						<left>257</left>
+						<top>345</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1709,8 +1709,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>365</posy>
+						<left>257</left>
+						<top>365</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1722,8 +1722,8 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>395</posy>
+						<left>257</left>
+						<top>395</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1734,8 +1734,8 @@
 						<label>[UPPERCASE][B]$LOCALIZE[345]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>257</posx>
-						<posy>415</posy>
+						<left>257</left>
+						<top>415</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1746,8 +1746,8 @@
 						<label>$INFO[ListItem.Year]</label>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>395</posy>
+						<left>407</left>
+						<top>395</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1758,8 +1758,8 @@
 						<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>407</posx>
-						<posy>415</posy>
+						<left>407</left>
+						<top>415</top>
 						<width>150</width>
 						<height>30</height>
 						<font>font-20</font>
@@ -1770,15 +1770,15 @@
 						<label>$INFO[ListItem.Rating]</label>
 					</control>
 					<control type="image">
-						<posx>566</posx>
-						<posy>160</posy>
+						<left>566</left>
+						<top>160</top>
 						<width>2</width>
 						<height>270</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label">
-						<posx>588</posx>
-						<posy>145</posy>
+						<left>588</left>
+						<top>145</top>
 						<width>300</width>
 						<height>30</height>
 						<font>font-20c</font>
@@ -1789,8 +1789,8 @@
 						<label>[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</label>
 					</control>
 					<control type="textbox">
-						<posx>588</posx>
-						<posy>182</posy>
+						<left>588</left>
+						<top>182</top>
 						<width>440</width>
 						<height>254</height>
 						<font>font-20</font>

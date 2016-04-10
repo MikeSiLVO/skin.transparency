@@ -6,8 +6,8 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<imagepath fallback="special://skin/backgrounds/background-tv.jpg" background="true">$INFO[Skin.String(Custom_Back_TV_Folder)]</imagepath>
@@ -19,8 +19,8 @@
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="videowindow">
-			<posx>25</posx>
-			<posy>22</posy>
+			<left>25</left>
+			<top>22</top>
 			<width>825</width>
 			<height>505</height>
 			<visible>Player.HasVideo + !!Skin.HasSetting(HideVideoBackgrounds)</visible>
@@ -44,7 +44,7 @@
 			<include>Fanart-PVRChannels_Extras</include>
 		</control>
 		<control type="group">
-			<posy>23</posy>
+			<top>23</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<control type="grouplist" id="9000">
@@ -96,8 +96,8 @@
 			<include>Window_OpenClose_Header_Animation</include>
 			<visible>!Skin.HasSetting(FanartLong)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>55</height>
 				<texture border="1">Header.png</texture>

@@ -2,8 +2,8 @@
 <includes>
 	<include name="Polaroid">
 		<control type="list" id="597">
-			<posx>16</posx>
-			<posy>240</posy>
+			<left>16</left>
+			<top>240</top>
 			<width>1134</width>
 			<height>345</height>
 			<onleft>597</onleft>
@@ -20,8 +20,8 @@
 			<itemlayout width="378" height="345"/>
 			<focusedlayout width="378" height="345">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>378</width>
 					<height>345</height>
 					<texture/>
@@ -32,8 +32,8 @@
 			<visible>Control.IsVisible(597)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
-				<posx>468</posx>
-				<posy>144</posy>
+				<left>468</left>
+				<top>144</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -42,8 +42,8 @@
 				<fadetime>50</fadetime>
 			</control>
 			<control type="image">
-				<posx>468</posx>
-				<posy>144</posy>
+				<left>468</left>
+				<top>144</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -53,8 +53,8 @@
 				<visible>String.IsEmpty(ListItem(2).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>460</posx>
-				<posy>145</posy>
+				<left>460</left>
+				<top>145</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -63,8 +63,8 @@
 				<fadetime>50</fadetime>
 			</control>
 			<control type="image">
-				<posx>460</posx>
-				<posy>145</posy>
+				<left>460</left>
+				<top>145</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -74,8 +74,8 @@
 				<visible>String.IsEmpty(ListItem(1).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>392</posx>
-				<posy>240</posy>
+				<left>392</left>
+				<top>240</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -84,8 +84,8 @@
 				<fadetime>50</fadetime>
 			</control>
 			<control type="image">
-				<posx>392</posx>
-				<posy>240</posy>
+				<left>392</left>
+				<top>240</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -95,24 +95,24 @@
 				<visible>String.IsEmpty(ListItem(0).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>347</posx>
-				<posy>50</posy>
+				<left>347</left>
+				<top>50</top>
 				<width>587</width>
 				<height>655</height>
 				<texture>polaroid-frames-shadow.png</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="image">
-				<posx>347</posx>
-				<posy>50</posy>
+				<left>347</left>
+				<top>50</top>
 				<width>587</width>
 				<height>655</height>
 				<texture>polaroid-frames.png</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
-				<posx>401</posx>
-				<posy>590</posy>
+				<left>401</left>
+				<top>590</top>
 				<width>400</width>
 				<height>35</height>
 				<font>font-23</font>
@@ -123,8 +123,8 @@
 				<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>403</posx>
-				<posy>625</posy>
+				<left>403</left>
+				<top>625</top>
 				<width>400</width>
 				<height>35</height>
 				<font>font-23</font>
@@ -142,8 +142,8 @@
 				<visible>Container.OnNext</visible>
 				<animation effect="rotate" start="0" end="60" center="auto" time="800" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>392</posx>
-					<posy>240</posy>
+					<left>392</left>
+					<top>240</top>
 					<width>378</width>
 					<height>345</height>
 					<aspectratio>scale</aspectratio>
@@ -151,8 +151,8 @@
 					<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>392</posx>
-					<posy>240</posy>
+					<left>392</left>
+					<top>240</top>
 					<width>378</width>
 					<height>345</height>
 					<aspectratio>scale</aspectratio>
@@ -161,16 +161,16 @@
 					<visible>String.IsEmpty(ListItem(-1).Thumb)</visible>
 				</control>
 				<control type="image">
-					<posx>347</posx>
-					<posy>50</posy>
+					<left>347</left>
+					<top>50</top>
 					<width>587</width>
 					<height>655</height>
 					<texture>polaroid-frame.png</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>401</posx>
-					<posy>590</posy>
+					<left>401</left>
+					<top>590</top>
 					<width>400</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -181,8 +181,8 @@
 					<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>403</posx>
-					<posy>625</posy>
+					<left>403</left>
+					<top>625</top>
 					<width>400</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -198,8 +198,8 @@
 			<visible>Control.IsVisible(597) + Container.OnPrevious</visible>
 			<animation effect="rotate" start="0" end="0" center="auto" time="600" reversible="false">Hidden</animation>
 			<control type="image">
-				<posx>468</posx>
-				<posy>144</posy>
+				<left>468</left>
+				<top>144</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -207,8 +207,8 @@
 				<animation effect="rotate" end="-24" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<posx>468</posx>
-				<posy>144</posy>
+				<left>468</left>
+				<top>144</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -217,8 +217,8 @@
 				<visible>String.IsEmpty(ListItem(3).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>460</posx>
-				<posy>145</posy>
+				<left>460</left>
+				<top>145</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -226,8 +226,8 @@
 				<animation effect="rotate" end="-11" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<posx>460</posx>
-				<posy>145</posy>
+				<left>460</left>
+				<top>145</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -236,8 +236,8 @@
 				<visible>String.IsEmpty(ListItem(2).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>392</posx>
-				<posy>240</posy>
+				<left>392</left>
+				<top>240</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -245,8 +245,8 @@
 				<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<posx>392</posx>
-				<posy>240</posy>
+				<left>392</left>
+				<top>240</top>
 				<width>378</width>
 				<height>345</height>
 				<aspectratio>scale</aspectratio>
@@ -255,16 +255,16 @@
 				<visible>String.IsEmpty(ListItem(1).Thumb)</visible>
 			</control>
 			<control type="image">
-				<posx>347</posx>
-				<posy>50</posy>
+				<left>347</left>
+				<top>50</top>
 				<width>587</width>
 				<height>655</height>
 				<texture>polaroid-frames.png</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
-				<posx>401</posx>
-				<posy>590</posy>
+				<left>401</left>
+				<top>590</top>
 				<width>400</width>
 				<height>35</height>
 				<font>font-23</font>
@@ -275,8 +275,8 @@
 				<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>403</posx>
-				<posy>625</posy>
+				<left>403</left>
+				<top>625</top>
 				<width>400</width>
 				<height>35</height>
 				<font>font-23</font>
@@ -294,8 +294,8 @@
 				<visible>Container.OnPrevious</visible>
 				<animation effect="rotate" start="20" end="0" center="auto" time="600" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>-608</posx>
-					<posy>490</posy>
+					<left>-608</left>
+					<top>490</top>
 					<width>378</width>
 					<height>345</height>
 					<aspectratio>scale</aspectratio>
@@ -303,8 +303,8 @@
 					<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>-608</posx>
-					<posy>490</posy>
+					<left>-608</left>
+					<top>490</top>
 					<width>378</width>
 					<height>345</height>
 					<aspectratio>scale</aspectratio>
@@ -313,8 +313,8 @@
 					<visible>String.IsEmpty(ListItem(0).Thumb)</visible>
 				</control>
 				<control type="image">
-					<posx>-653</posx>
-					<posy>300</posy>
+					<left>-653</left>
+					<top>300</top>
 					<width>587</width>
 					<height>655</height>
 					<texture>polaroid-frame.png</texture>
@@ -322,8 +322,8 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>-599</posx>
-					<posy>840</posy>
+					<left>-599</left>
+					<top>840</top>
 					<width>400</width>
 					<height>35</height>
 					<font>font-23</font>
@@ -334,8 +334,8 @@
 					<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>-597</posx>
-					<posy>875</posy>
+					<left>-597</left>
+					<top>875</top>
 					<width>400</width>
 					<height>35</height>
 					<font>font-23</font>

@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">8</defaultcontrol>
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
@@ -15,48 +15,48 @@
 		<control type="group">
 			<include>DialogFade</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>550</posy>
+				<left>0</left>
+				<top>550</top>
 				<width>1280</width>
 				<height>158</height>
 				<texture border="10">underlay.png</texture>
 				<visible>Container.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>522</posy>
+				<left>0</left>
+				<top>522</top>
 				<width>1280</width>
 				<height>186</height>
 				<texture border="10">underlay.png</texture>
 				<visible>!Container.Content(Movies)</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>396</posy>
+				<left>18</left>
+				<top>396</top>
 				<width>218</width>
 				<height>310</height>
 				<texture>$VAR[IconPoster]</texture>
 				<visible>Container.Content(Movies) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)]</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
+				<left>18</left>
+				<top>368</top>
 				<width>234</width>
 				<height>360</height>
 				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
 				<visible>Container.Content(Movies) + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
-				<posx>18</posx>
-				<posy>368</posy>
+				<left>18</left>
+				<top>368</top>
 				<width>234</width>
 				<height>360</height>
 				<texture>case-tv.png</texture>
 				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>531</posy>
+				<left>10</left>
+				<top>531</top>
 				<width>298</width>
 				<height>168</height>
 				<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
@@ -71,8 +71,8 @@
 			<include>DialogFade</include>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
 			<control type="button">
-				<posx>1240</posx>
-				<posy>20</posy>
+				<left>1240</left>
+				<top>20</top>
 				<width>20</width>
 				<height>20</height>
 				<texturefocus>close-window-focus.png</texturefocus>
@@ -82,8 +82,8 @@
 			</control>
 			<control type="label">
 				<description>Item Title value</description>
-				<posx>40</posx>
-				<posy>15</posy>
+				<left>40</left>
+				<top>15</top>
 				<width>1200</width>
 				<height>30</height>
 				<align>center</align>
@@ -93,15 +93,15 @@
 				<font>font-32</font>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>54</posy>
+				<left>0</left>
+				<top>54</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>360</posy>
+				<left>0</left>
+				<top>360</top>
 				<width>1280</width>
 				<height>2</height>
 				<texture>separator.png</texture>
@@ -110,16 +110,16 @@
 			</control>
 			<control type="group" id="9001">
 				<control type="group" id="9000">
-					<posx>140</posx>
-					<posy>382</posy>
+					<left>140</left>
+					<top>382</top>
 					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(Movies)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="-0,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
 					<control type="button" id="5">
 						<description>Cast/Review</description>
-						<posx>0</posx>
-						<posy>33</posy>
+						<left>0</left>
+						<top>33</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -138,8 +138,8 @@
 					</control>
 					<control type="togglebutton" id="8">
 						<description>Play/browse to Show</description>
-						<posx>200</posx>
-						<posy>33</posy>
+						<left>200</left>
+						<top>33</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -162,8 +162,8 @@
 					</control>
 					<control type="button" id="6">
 						<description>Refresh</description>
-						<posx>400</posx>
-						<posy>33</posy>
+						<left>400</left>
+						<top>33</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -182,8 +182,8 @@
 					</control>
 					<control type="button" id="1113">
 						<description>Extras</description>
-						<posx>600</posx>
-						<posy>33</posy>
+						<left>600</left>
+						<top>33</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -207,8 +207,8 @@
 					</control>
 					<control type="button" id="7">
 						<description>Rating button</description>
-						<posx>800</posx>
-						<posy>33</posy>
+						<left>800</left>
+						<top>33</top>
 						<width>200</width>
 						<height>35</height>
 						<font>font-20</font>
@@ -228,8 +228,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>140</posx>
-				<posy>415</posy>
+				<left>140</left>
+				<top>415</top>
 				<width>200</width>
 				<height>35</height>
 				<texture border="7">button-focus.png</texture>
@@ -245,8 +245,8 @@
 				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(1113) | Control.HasFocus(7)</visible>
 			</control>
 			<control type="group">
-				<posx>480</posx>
-				<posy>471</posy>
+				<left>480</left>
+				<top>471</top>
 				<width>540</width>
 				<height>48</height>
 				<include condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
@@ -256,8 +256,8 @@
 			<control type="group" id="1110">
 				<ondown>50</ondown>
 				<control type="button" id="11">
-					<posx>1195</posx>
-					<posy>471</posy>
+					<left>1195</left>
+					<top>471</top>
 					<width>48</width>
 					<height>48</height>
 					<label>-</label>
@@ -270,8 +270,8 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>355</posx>
-				<posy>530</posy>
+				<left>355</left>
+				<top>530</top>
 				<width>800</width>
 				<height>30</height>
 				<font>font-20c</font>
@@ -283,8 +283,8 @@
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
-				<posx>255</posx>
-				<posy>579</posy>
+				<left>255</left>
+				<top>579</top>
 				<width>990</width>
 				<height>103</height>
 				<label>-</label>
@@ -299,8 +299,8 @@
 			</control>
 			<control type="textbox" id="4">
 				<description>textarea</description>
-				<posx>330</posx>
-				<posy>579</posy>
+				<left>330</left>
+				<top>579</top>
 				<width>915</width>
 				<height>103</height>
 				<label>-</label>
@@ -313,8 +313,8 @@
 				<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)] + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="wraplist" id="50">
-				<posx>265</posx>
-				<posy>574</posy>
+				<left>265</left>
+				<top>574</top>
 				<width>990</width>
 				<height>110</height>
 				<onleft>50</onleft>
@@ -331,8 +331,8 @@
 				<animation effect="slide" start="0,0" end="29,0" time="0" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">Conditional</animation>
 				<itemlayout width="110" height="110">
 					<control type="image">
-						<posx>5</posx>
-						<posy>5</posy>
+						<left>5</left>
+						<top>5</top>
 						<width>100</width>
 						<height>100</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -341,8 +341,8 @@
 				</itemlayout>
 				<focusedlayout width="110" height="110">
 					<control type="image">
-						<posx>2</posx>
-						<posy>2</posy>
+						<left>2</left>
+						<top>2</top>
 						<width>106</width>
 						<height>106</height>
 						<texture border="4">thumb-shadow2.png</texture>
@@ -351,8 +351,8 @@
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
-						<posx>5</posx>
-						<posy>5</posy>
+						<left>5</left>
+						<top>5</top>
 						<width>100</width>
 						<height>100</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -364,8 +364,8 @@
 			</control>
 			<control type="spincontrol" id="61">
 				<description>Next page button</description>
-				<posx>1180</posx>
-				<posy>699</posy>
+				<left>1180</left>
+				<top>699</top>
 				<subtype>page</subtype>
 				<font>font-19</font>
 				<onleft>1114</onleft>
@@ -376,8 +376,8 @@
 				<showonepage>true</showonepage>
 			</control>
 			<control type="button" id="1114">
-				<posx>1250</posx>
-				<posy>700</posy>
+				<left>1250</left>
+				<top>700</top>
 				<width>20</width>
 				<height>20</height>
 				<label>-</label>
@@ -395,8 +395,8 @@
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
-						<posx>57</posx>
-						<posy>57</posy>
+						<left>57</left>
+						<top>57</top>
 						<width>1200</width>
 						<height>330</height>
 						<onleft>49</onleft>
@@ -407,16 +407,16 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1200" height="23">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>23</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>23</height>
 								<font>font-20c</font>
@@ -427,8 +427,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>23</height>
 								<font>font-20</font>
@@ -441,16 +441,16 @@
 						</itemlayout>
 						<focusedlayout width="1200" height="23">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>23</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>23</height>
 								<texture border="7">list-focus2.png</texture>
@@ -459,8 +459,8 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>23</height>
 								<font>font-20c</font>
@@ -471,8 +471,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>23</height>
 								<font>font-20</font>
@@ -564,8 +564,8 @@
 				<visible>Container.Content(TVShows)</visible>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>40</posx>
-					<posy>70</posy>
+					<left>40</left>
+					<top>70</top>
 					<width>1200</width>
 					<height>140</height>
 					<texture diffuse="banner-diffuse.png">$VAR[IconBanner]</texture>
@@ -574,8 +574,8 @@
 				</control>
 				<control type="image">
 					<description>Cover image</description>
-					<posx>40</posx>
-					<posy>210</posy>
+					<left>40</left>
+					<top>210</top>
 					<width>1200</width>
 					<height>140</height>
 					<texture flipy="true" diffuse="banner-diffuse-mirror.png">$VAR[IconBanner]</texture>
@@ -585,8 +585,8 @@
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
-						<posx>57</posx>
-						<posy>211</posy>
+						<left>57</left>
+						<top>211</top>
 						<width>1200</width>
 						<height>240</height>
 						<onleft>49</onleft>
@@ -598,16 +598,16 @@
 						<animation effect="slide" start="0,0" end="0,-110" time="0" condition="!Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 						<itemlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -618,8 +618,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>
@@ -632,16 +632,16 @@
 						</itemlayout>
 						<focusedlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-focus2.png</texture>
@@ -650,8 +650,8 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -662,8 +662,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>
@@ -730,8 +730,8 @@
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
-						<posx>57</posx>
-						<posy>58</posy>
+						<left>57</left>
+						<top>58</top>
 						<width>1200</width>
 						<height>380</height>
 						<onleft>49</onleft>
@@ -742,16 +742,16 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -762,8 +762,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>
@@ -776,16 +776,16 @@
 						</itemlayout>
 						<focusedlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-focus2.png</texture>
@@ -794,8 +794,8 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -806,8 +806,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>
@@ -895,8 +895,8 @@
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
-						<posx>57</posx>
-						<posy>63</posy>
+						<left>57</left>
+						<top>63</top>
 						<width>1200</width>
 						<height>300</height>
 						<onleft>49</onleft>
@@ -907,16 +907,16 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -927,8 +927,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>
@@ -941,16 +941,16 @@
 						</itemlayout>
 						<focusedlayout width="1200" height="29">
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-nofocus.png</texture>
 								<include>VisibleFadeEffect</include>
 							</control>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>1166</width>
 								<height>30</height>
 								<texture border="7">list-focus2.png</texture>
@@ -959,8 +959,8 @@
 								<include>ListFocusScroll22</include>
 							</control>
 							<control type="label">
-								<posx>0</posx>
-								<posy>0</posy>
+								<left>0</left>
+								<top>0</top>
 								<width>160</width>
 								<height>30</height>
 								<font>font-20c</font>
@@ -971,8 +971,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>175</posx>
-								<posy>0</posy>
+								<left>175</left>
+								<top>0</top>
 								<width>980</width>
 								<height>30</height>
 								<font>font-20</font>

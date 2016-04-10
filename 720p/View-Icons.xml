@@ -3,8 +3,8 @@
 	<include name="Icons-Movies">
 		<control type="videowindow">
 			<description>trailer preview</description>
-			<posx>351</posx>
-			<posy>90</posy>
+			<left>351</left>
+			<top>90</top>
 			<width>578</width>
 			<height>282</height>
 			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
@@ -18,16 +18,16 @@
 			<animation effect="rotatex" center="720,0" start="0" end="-70" time="500" reversible="true">WindowClose</animation>
 			<visible>Control.IsVisible(57)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>660</posy>
+				<left>0</left>
+				<top>660</top>
 				<width>1280</width>
 				<height>80</height>
 				<texture>floor.png</texture>
 			</control>
 			<control type="wraplist" id="57">
 				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(Seasons)</visible>
-				<posx>0</posx>
-				<posy>370</posy>
+				<left>0</left>
+				<top>370</top>
 				<width>1280</width>
 				<height>450</height>
 				<onleft>57</onleft>
@@ -43,16 +43,16 @@
 				<preloaditems>2</preloaditems>
 				<itemlayout width="256" height="310">
 					<control type="image">
-						<posx>30</posx>
-						<posy>302</posy>
+						<left>30</left>
+						<top>302</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="diffuse_mirror.png">$VAR[IconPoster]</texture>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -60,16 +60,16 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>24</posy>
+						<left>30</left>
+						<top>24</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
@@ -77,8 +77,8 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -86,16 +86,16 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<texture>case-tv-inside.png</texture>
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>24</posy>
+						<left>30</left>
+						<top>24</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
@@ -103,8 +103,8 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -112,16 +112,16 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<texture>case-tv.png</texture>
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>254</posy>
+						<left>185</left>
+						<top>254</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -129,8 +129,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>254</posy>
+						<left>185</left>
+						<top>254</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -138,8 +138,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>304</posy>
+						<left>185</left>
+						<top>304</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -148,8 +148,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>304</posy>
+						<left>185</left>
+						<top>304</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -160,8 +160,8 @@
 				</itemlayout>
 				<focusedlayout width="256" height="310">
 					<control type="image">
-						<posx>30</posx>
-						<posy>302</posy>
+						<left>30</left>
+						<top>302</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
@@ -170,8 +170,8 @@
 						<include condition="Skin.HasSetting(Hide-Video-Icons-CaseAnimation) | Skin.HasSetting(HideMovieCase)">Video-Icons-CaseNoAnimation1</include>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -181,8 +181,8 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror_case.png">case-tv.png</texture>
@@ -191,8 +191,8 @@
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>24</posy>
+						<left>30</left>
+						<top>24</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
@@ -202,8 +202,8 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -213,8 +213,8 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<texture>case-tv-inside.png</texture>
@@ -223,8 +223,8 @@
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>39</posx>
-						<posy>63</posy>
+						<left>39</left>
+						<top>63</top>
 						<width>173</width>
 						<height>173</height>
 						<aspectratio>stretch</aspectratio>
@@ -235,8 +235,8 @@
 						<visible>![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !ListItem.IsParentFolder + !ListItem.IsFolder</visible>
 					</control>
 					<control type="image">
-						<posx>39</posx>
-						<posy>63</posy>
+						<left>39</left>
+						<top>63</top>
 						<width>173</width>
 						<height>173</height>
 						<aspectratio>stretch</aspectratio>
@@ -247,8 +247,8 @@
 						<visible>[String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>39</posx>
-						<posy>63</posy>
+						<left>39</left>
+						<top>63</top>
 						<width>173</width>
 						<height>173</height>
 						<texture>disc.png</texture>
@@ -257,8 +257,8 @@
 						<visible>[Container.Content(Seasons) | [!Container.Content(Seasons) + ListItem.IsFolder]] + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>94</posx>
-						<posy>10</posy>
+						<left>94</left>
+						<top>10</top>
 						<width>66</width>
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
@@ -268,8 +268,8 @@
 						<visible>![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>94</posx>
-						<posy>10</posy>
+						<left>94</left>
+						<top>10</top>
 						<width>66</width>
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
@@ -279,8 +279,8 @@
 						<visible>[String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>94</posx>
-						<posy>10</posy>
+						<left>94</left>
+						<top>10</top>
 						<width>66</width>
 						<height>45</height>
 						<animation effect="zoom" start="94,10,66,45" end="87,-15,80,54" time="250">Focus</animation>
@@ -290,8 +290,8 @@
 						<visible>Container.Content(Seasons) + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="label">
-						<posx>135</posx>
-						<posy>255</posy>
+						<left>135</left>
+						<top>255</top>
 						<width>83</width>
 						<height>17</height>
 						<align>center</align>
@@ -304,8 +304,8 @@
 						<visible>![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)]</visible>
 					</control>
 					<control type="label">
-						<posx>135</posx>
-						<posy>255</posy>
+						<left>135</left>
+						<top>255</top>
 						<width>83</width>
 						<height>17</height>
 						<align>center</align>
@@ -318,16 +318,16 @@
 						<visible>[String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)]</visible>
 					</control>
 					<control type="image">
-						<posx>105</posx>
-						<posy>205</posy>
+						<left>105</left>
+						<top>205</top>
 						<width>44</width>
 						<height>26</height>
 						<texture>movieset.png</texture>
 						<visible>Container.Content(Movies) + ListItem.IsFolder + !ListItem.IsParentFolder + String.StartsWith(Container.Folderpath,videodb://)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -337,8 +337,8 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>283</posy>
+						<left>30</left>
+						<top>283</top>
 						<width>202</width>
 						<height>310</height>
 						<texture flipy="true" diffuse="diffuse_mirror.png">case-tv-inside.png</texture>
@@ -347,8 +347,8 @@
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>24</posy>
+						<left>30</left>
+						<top>24</top>
 						<width>188</width>
 						<height>267</height>
 						<aspectratio>stretch</aspectratio>
@@ -358,8 +358,8 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<aspectratio>stretch</aspectratio>
@@ -369,8 +369,8 @@
 						<visible>!Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 					</control>
 					<control type="image">
-						<posx>30</posx>
-						<posy>0</posy>
+						<left>30</left>
+						<top>0</top>
 						<width>202</width>
 						<height>310</height>
 						<texture>case-tv.png</texture>
@@ -379,8 +379,8 @@
 						<visible>Container.Content(Seasons) + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>254</posy>
+						<left>185</left>
+						<top>254</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -390,8 +390,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>254</posy>
+						<left>185</left>
+						<top>254</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -401,8 +401,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>304</posy>
+						<left>185</left>
+						<top>304</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -413,8 +413,8 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)]</visible>
 					</control>
 					<control type="image">
-						<posx>185</posx>
-						<posy>304</posy>
+						<left>185</left>
+						<top>304</top>
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
@@ -431,8 +431,8 @@
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(57)</visible>
 			<control type="label">
-				<posx>40</posx>
-				<posy>60</posy>
+				<left>40</left>
+				<top>60</top>
 				<width>1200</width>
 				<height>20</height>
 				<font>font-35</font>
@@ -443,8 +443,8 @@
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>90</posy>
+				<left>240</left>
+				<top>90</top>
 				<width>800</width>
 				<height>1</height>
 				<texture>separator.png</texture>
@@ -464,8 +464,8 @@
 			<visible>Control.IsVisible(57) + Container.OnPrevious</visible>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>Control.IsVisible(57) + !Skin.HasSetting(HideInfoPanelIcons) + !Container.Content(Sets)</visible>
 			<control type="group">
@@ -473,15 +473,15 @@
 				<animation effect="zoom" start="0,0,1280,720" end="0,200,1280,1" time="200">Hidden</animation>
 				<visible>Control.IsVisible(57) + ![Container.Content(Movies) + String.IsEmpty(ListItem.Plot)] + !ListItem.IsParentFolder + !Control.IsVisible(7029) + !Control.IsVisible(7030)</visible>
 				<control type="image">
-					<posx>160</posx>
-					<posy>125</posy>
+					<left>160</left>
+					<top>125</top>
 					<width>960</width>
 					<height>150</height>
 					<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
 				</control>
 				<control type="textbox">
-					<posx>300</posx>
-					<posy>137</posy>
+					<left>300</left>
+					<top>137</top>
 					<width>680</width>
 					<height>128</height>
 					<font>font-20</font>
@@ -497,8 +497,8 @@
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(57)</visible>
 			<control type="button" id="7025">
-				<posx>1222</posx>
-				<posy>52</posy>
+				<left>1222</left>
+				<top>52</top>
 				<width>40</width>
 				<height>40</height>
 				<label>-</label>
@@ -520,8 +520,8 @@
 			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<control type="group">
-				<posx>792</posx>
-				<posy>675</posy>
+				<left>792</left>
+				<top>675</top>
 				<width>472</width>
 				<height>48</height>
 				<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
@@ -536,8 +536,8 @@
 			<animation effect="rotatex" center="720,0" start="0" end="-70" time="500" reversible="true">WindowClose</animation>
 			<visible>Control.IsVisible(56)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>660</posy>
+				<left>0</left>
+				<top>660</top>
 				<width>1280</width>
 				<height>80</height>
 				<texture>floor.png</texture>
@@ -546,8 +546,8 @@
 				<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnNext</visible>
 				<control type="image">
-					<posx>546</posx>
-					<posy>479</posy>
+					<left>546</left>
+					<top>479</top>
 					<width>213</width>
 					<height>213</height>
 					<aspectratio>stretch</aspectratio>
@@ -561,8 +561,8 @@
 				<animation effect="fade" start="100" end="100" time="250">Hidden</animation>
 				<visible>Container.OnPrevious</visible>
 				<control type="image">
-					<posx>546</posx>
-					<posy>479</posy>
+					<left>546</left>
+					<top>479</top>
 					<width>213</width>
 					<height>213</height>
 					<aspectratio>stretch</aspectratio>
@@ -576,8 +576,8 @@
 				<animation effect="fade" start="100" end="0" time="35">Hidden</animation>
 				<visible>!Control.IsVisible(7015) + !Control.IsVisible(7016)</visible>
 				<control type="image">
-					<posx>546</posx>
-					<posy>479</posy>
+					<left>546</left>
+					<top>479</top>
 					<width>213</width>
 					<height>213</height>
 					<aspectratio>stretch</aspectratio>
@@ -591,8 +591,8 @@
 			</control>
 			<control type="wraplist" id="56">
 				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
-				<posx>0</posx>
-				<posy>460</posy>
+				<left>0</left>
+				<top>460</top>
 				<width>1280</width>
 				<height>450</height>
 				<onleft>57</onleft>
@@ -608,8 +608,8 @@
 				<preloaditems>2</preloaditems>
 				<itemlayout width="256" height="310">
 					<control type="image">
-						<posx>50</posx>
-						<posy>43</posy>
+						<left>50</left>
+						<top>43</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -617,16 +617,16 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>40</posy>
+						<left>32</left>
+						<top>40</top>
 						<width>192</width>
 						<height>168</height>
 						<texture>case-cd-inside.png</texture>
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>43</posy>
+						<left>50</left>
+						<top>43</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -634,16 +634,16 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>40</posy>
+						<left>32</left>
+						<top>40</top>
 						<width>192</width>
 						<height>168</height>
 						<texture>case-cd.png</texture>
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>211</posy>
+						<left>50</left>
+						<top>211</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -651,16 +651,16 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>208</posy>
+						<left>32</left>
+						<top>208</top>
 						<width>192</width>
 						<height>168</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd-inside.png</texture>
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>211</posy>
+						<left>50</left>
+						<top>211</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -668,8 +668,8 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>208</posy>
+						<left>32</left>
+						<top>208</top>
 						<width>192</width>
 						<height>168</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd.png</texture>
@@ -678,8 +678,8 @@
 				</itemlayout>
 				<focusedlayout width="256" height="310">
 					<control type="image">
-						<posx>50</posx>
-						<posy>43</posy>
+						<left>50</left>
+						<top>43</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -689,8 +689,8 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>40</posy>
+						<left>32</left>
+						<top>40</top>
 						<width>192</width>
 						<height>168</height>
 						<aspectratio>stretch</aspectratio>
@@ -700,8 +700,8 @@
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>62</posx>
-						<posy>49</posy>
+						<left>62</left>
+						<top>49</top>
 						<width>152</width>
 						<height>152</height>
 						<aspectratio>stretch</aspectratio>
@@ -712,8 +712,8 @@
 						<visible>Container.Content(Songs) + !ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>211</posy>
+						<left>50</left>
+						<top>211</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -723,8 +723,8 @@
 						<visible>ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>208</posy>
+						<left>32</left>
+						<top>208</top>
 						<width>192</width>
 						<height>168</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd-inside.png</texture>
@@ -733,8 +733,8 @@
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>211</posy>
+						<left>50</left>
+						<top>211</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -744,8 +744,8 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>208</posy>
+						<left>32</left>
+						<top>208</top>
 						<width>192</width>
 						<height>168</height>
 						<texture flipy="true" diffuse="diffuse_mirror2.png">case-cd.png</texture>
@@ -754,8 +754,8 @@
 						<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMusicCase)</visible>
 					</control>
 					<control type="image">
-						<posx>50</posx>
-						<posy>43</posy>
+						<left>50</left>
+						<top>43</top>
 						<width>168</width>
 						<height>162</height>
 						<aspectratio>stretch</aspectratio>
@@ -765,8 +765,8 @@
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
-						<posx>32</posx>
-						<posy>40</posy>
+						<left>32</left>
+						<top>40</top>
 						<width>192</width>
 						<height>168</height>
 						<texture>case-cd.png</texture>
@@ -777,8 +777,8 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<posx>411</posx>
-				<posy>40</posy>
+				<left>411</left>
+				<top>40</top>
 				<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			</control>
 		</control>
@@ -786,8 +786,8 @@
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(56)</visible>
 			<control type="label">
-				<posx>20</posx>
-				<posy>50</posy>
+				<left>20</left>
+				<top>50</top>
 				<width>1240</width>
 				<height>20</height>
 				<font>font-30</font>
@@ -798,8 +798,8 @@
 				<label>$VAR[ViewIconsLabel1]</label>
 			</control>
 			<control type="label">
-				<posx>20</posx>
-				<posy>80</posy>
+				<left>20</left>
+				<top>80</top>
 				<width>1240</width>
 				<height>20</height>
 				<font>font-35</font>
@@ -810,8 +810,8 @@
 				<label>$VAR[ViewIconsLabel2]</label>
 			</control>
 			<control type="image">
-				<posx>240</posx>
-				<posy>110</posy>
+				<left>240</left>
+				<top>110</top>
 				<width>800</width>
 				<height>1</height>
 				<texture>separator.png</texture>
