@@ -3,14 +3,14 @@
 	<include>dialogeffect7</include>
 	<coordinates>
 		<left>0</left>
-		<top>248</top>
+		<top>319</top>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<left>686</left>
 			<top>21</top>
 			<width>549</width>
-			<height>165</height>
+			<height>400</height>
 			<texture border="32">dialog.png</texture>
 		</control>
 		<control type="button">
@@ -46,11 +46,11 @@
 			<disabledcolor>grey</disabledcolor>
 		</control>
 		<control type="image">
-			<left>686</left>
-			<top>105</top>
-			<width>549</width>
-			<height>327</height>
-			<texture border="32">dialog.png</texture>
+			<left>726</left>
+			<top>146</top>
+			<width>469</width>
+			<height>2</height>
+			<texture>separator.png</texture>
 		</control>
 		<control type="group">
 			<left>736</left>

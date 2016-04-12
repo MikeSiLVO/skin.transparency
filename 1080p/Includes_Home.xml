@@ -2393,7 +2393,7 @@
 				<include condition="!Skin.HasSetting(Menu_Movies)">HomeMoviesButton</include>
 				<include condition="!Skin.HasSetting(Menu_TVShows)">HomeTVShowsButton</include>
 				<include condition="Skin.HasSetting(Menu_MusicVideos)">HomeMusicVideosButton</include>
-				<include condition="!Skin.HasSetting(Menu_TV) + [PVR.HasTVChannels | PVR.HasRadioChannels]">HomeTVButton</include>
+				<include condition="!Skin.HasSetting(Menu_TV)">HomeTVButton</include>
 				<include condition="!Skin.HasSetting(Menu_Music)">HomeMusicButton</include>
 				<include condition="!Skin.HasSetting(Menu_Pictures)">HomePicturesButton</include>
 				<include condition="!Skin.HasSetting(Menu_Programs)">HomeProgramsButton</include>
@@ -2604,7 +2604,7 @@
 				<include condition="!Skin.HasSetting(Menu_Movies)">HomeMoviesButton</include>
 				<include condition="!Skin.HasSetting(Menu_TVShows)">HomeTVShowsButton</include>
 				<include condition="Skin.HasSetting(Menu_MusicVideos)">HomeMusicVideosButton</include>
-				<include condition="!Skin.HasSetting(Menu_TV) + [PVR.HasTVChannels | PVR.HasRadioChannels]">HomeTVButton</include>
+				<include condition="!Skin.HasSetting(Menu_TV)">HomeTVButton</include>
 				<include condition="!Skin.HasSetting(Menu_Programs)">HomeProgramsButton</include>
 				<include condition="!Skin.HasSetting(Menu_Weather)">HomeWeatherButton</include>
 				<include condition="Skin.HasSetting(Menu_Favourites)">HomeFavouritesButton</include>

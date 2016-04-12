@@ -3,7 +3,7 @@
 	<include>dialogeffect7</include>
 	<coordinates>
 		<left>0</left>
-		<top>248</top>
+		<top>200</top>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -13,7 +13,7 @@
 				<left>330</left>
 				<top>9</top>
 				<width>1257</width>
-				<height>168</height>
+				<height>560</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="button">
@@ -50,11 +50,11 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="image">
-				<left>330</left>
-				<top>96</top>
-				<width>1257</width>
-				<height>477</height>
-				<texture border="32">dialog.png</texture>
+				<left>380</left>
+				<top>142</top>
+				<width>1157</width>
+				<height>2</height>
+				<texture>separator.png</texture>
 			</control>
 			<control type="group">
 				<left>378</left>
@@ -512,6 +512,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<top>24</top>
 				<visible>Control.IsVisible(313)</visible>
 				<control type="image">
 					<left>330</left>
@@ -519,6 +520,13 @@
 					<width>1257</width>
 					<height>165</height>
 					<texture border="32">dialog.png</texture>
+				</control>
+				<control type="image">
+					<left>380</left>
+					<top>522</top>
+					<width>1157</width>
+					<height>2</height>
+					<texture>separator.png</texture>
 				</control>
 				<control type="label" id="313">
 					<description>coding text input</description>
