@@ -194,7 +194,7 @@
 							<font>font-18</font>
 							<textcolor>blue</textcolor>
 							<selectedcolor>blue</selectedcolor>
-							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
+							<label>[B]$INFO[ListItem.AddonName]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
 							<left>128</left>
@@ -239,7 +239,7 @@
 							<font>font-18</font>
 							<textcolor>blue</textcolor>
 							<selectedcolor>blue</selectedcolor>
-							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
+							<label>[B]$INFO[ListItem.AddonName]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
 							<left>128</left>
@@ -315,7 +315,7 @@
 							<font>font-18</font>
 							<textcolor>blue</textcolor>
 							<selectedcolor>blue</selectedcolor>
-							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
+							<label>[B]$INFO[ListItem.AddonName]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
 							<left>128</left>
@@ -360,7 +360,7 @@
 							<font>font-18</font>
 							<textcolor>blue</textcolor>
 							<selectedcolor>blue</selectedcolor>
-							<label>[B]$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)][/B]</label>
+							<label>[B]$INFO[ListItem.AddonName]: $INFO[ListItem.Property(Name)][/B]</label>
 						</control>
 						<control type="textbox">
 							<left>128</left>

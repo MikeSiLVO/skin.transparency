@@ -38,7 +38,7 @@
 				<top>909</top>
 				<width>1462</width>
 				<height>124</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

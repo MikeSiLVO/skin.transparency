@@ -1473,7 +1473,7 @@
 		<control type="group">
 			<left>188</left>
 			<top>735</top>
-			<visible>Control.IsVisible(599) + !String.IsEmpty(ListItem.Property(Addon.Name))</visible>
+			<visible>Control.IsVisible(599) + !String.IsEmpty(ListItem.AddonName)</visible>
 			<control type="label">
 				<description>Author txt</description>
 				<left>75</left>
@@ -1492,7 +1492,7 @@
 				<top>0</top>
 				<width>375</width>
 				<height>38</height>
-				<label>$INFO[ListItem.Property(Addon.Creator)]</label>
+				<label>$INFO[ListItem.AddonCreator]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1515,7 +1515,7 @@
 				<top>38</top>
 				<width>375</width>
 				<height>38</height>
-				<label>$INFO[ListItem.Property(Addon.Type)]</label>
+				<label>$INFO[ListItem.AddonType]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1538,7 +1538,7 @@
 				<top>75</top>
 				<width>375</width>
 				<height>38</height>
-				<label>$INFO[ListItem.Property(Addon.Version)]</label>
+				<label>$INFO[ListItem.AddonVersion]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -1549,7 +1549,7 @@
 				<top>3</top>
 				<width>758</width>
 				<height>154</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>center</align>
 				<textcolor>white</textcolor>

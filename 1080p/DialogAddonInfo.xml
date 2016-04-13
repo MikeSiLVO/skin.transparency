@@ -245,7 +245,7 @@
 				<top>868</top>
 				<width>1462</width>
 				<height>154</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -360,27 +360,27 @@
 					<content>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[21863]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Creator)]</label2>
+							<label2>$INFO[ListItem.AddonCreator]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[24051][/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Version)]</label2>
+							<label2>$INFO[ListItem.AddonVersion]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[20037]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Summary)]</label2>
+							<label2>$INFO[ListItem.AddonSummary]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[564]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Type)]</label2>
+							<label2>$INFO[ListItem.AddonType]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[126]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Status)]</label2>
+							<label2>$INFO[ListItem.AddonStatus]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
@@ -390,17 +390,17 @@
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[24052]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Disclaimer)]</label2>
+							<label2>$INFO[ListItem.AddonDisclaimer]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[560]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.ID)]</label2>
+							<label2>$INFO[ListItem.AddonID]</label2>
 							<onclick>noop</onclick>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[573]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Addon.Path)]</label2>
+							<label2>$INFO[ListItem.AddonPath]</label2>
 							<onclick>noop</onclick>
 						</item>
 					</content>

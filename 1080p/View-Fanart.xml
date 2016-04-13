@@ -950,7 +950,7 @@
 				<top>903</top>
 				<width>900</width>
 				<height>124</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -1545,7 +1545,7 @@
 				<top>910</top>
 				<width>954</width>
 				<height>124</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -1705,7 +1705,7 @@
 				<top>909</top>
 				<width>900</width>
 				<height>124</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -1724,7 +1724,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEmpty(ListItem.Property(Addon.Description)) + !String.IsEmpty(ListItem.Plot)</visible>
+				<visible>String.IsEmpty(ListItem.AddonDescription) + !String.IsEmpty(ListItem.Plot)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1898,7 +1898,7 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Property(Addon.Summary)]</label>
+				<label>$INFO[ListItem.AddonSummary]</label>
 				<wrapmultiline>true</wrapmultiline>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
@@ -1965,7 +1965,7 @@
 				<top>909</top>
 				<width>900</width>
 				<height>124</height>
-				<label>$INFO[ListItem.Property(Addon.Description)]</label>
+				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
