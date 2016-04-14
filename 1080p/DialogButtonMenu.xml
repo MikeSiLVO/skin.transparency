@@ -20,16 +20,16 @@
 			<animation effect="slide" end="0,-600" acceleration="2" time="400">WindowClose</animation>
 			<control type="image">
 				<left>285</left>
-				<top>-16</top>
+				<top>-10</top>
 				<width>1350</width>
-				<height>128</height>
+				<height>104</height>
 				<texture border="32">dialog.png</texture>
 				<visible>System.HasLoginScreen + System.LoggedOn</visible>
 			</control>
 			<control type="label">
 				<description>Label control</description>
 				<left>540</left>
-				<top>12</top>
+				<top>6</top>
 				<width>840</width>
 				<height>68</height>
 				<label>$LOCALIZE[20125] $INFO[System.ProfileName]</label>
@@ -41,100 +41,9 @@
 			</control>
 			<control type="image">
 				<left>285</left>
-				<top>129</top>
+				<top>40</top>
 				<width>1350</width>
-				<height>128</height>
-				<texture border="32">dialog.png</texture>
-			</control>
-			<control type="group">
-				<left>540</left>
-				<top>158</top>
-				<control type="label">
-					<label>20046</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(21) + System.IsMaster</visible>
-				</control>
-				<control type="label">
-					<label>20045</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(21) + !System.IsMaster</visible>
-				</control>
-				<control type="label">
-					<label>$LOCALIZE[20126] $INFO[System.ProfileName]</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(22)</visible>
-				</control>
-				<control type="label">
-					<label>130</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(23)</visible>
-				</control>
-				<control type="label">
-					<label>7</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(10)</visible>
-				</control>
-				<control type="label">
-					<label>$LOCALIZE[13012] Kodi</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(11)</visible>
-				</control>
-				<control type="label">
-					<label>$LOCALIZE[13313] Kodi</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(13)</visible>
-				</control>
-				<control type="label">
-					<label>20150</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(34)</visible>
-				</control>
-				<control type="label">
-					<label>20151</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(35)</visible>
-				</control>
-				<control type="label">
-					<label>13005</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(36) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
-				</control>
-				<control type="label">
-					<label>13011</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(15)</visible>
-				</control>
-				<control type="label">
-					<label>13010</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(16)</visible>
-				</control>
-				<control type="label">
-					<label>1036</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(17)</visible>
-				</control>
-				<control type="label">
-					<label>13013</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(18)</visible>
-				</control>
-				<control type="label">
-					<label>5</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(19)</visible>
-				</control>
-				<control type="label">
-					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
-					<include>ShutdownMenuLabel</include>
-					<visible>Control.HasFocus(20)</visible>
-				</control>
-			</control>
-			<control type="image">
-				<left>285</left>
-				<top>30</top>
-				<width>1350</width>
-				<height>180</height>
+				<height>220</height>
 				<texture border="32">dialog.png</texture>
 			</control>
 			<control type="grouplist" id="999">
@@ -348,6 +257,105 @@
 				<texturenofocus>close-window-nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(buttonmenu)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
+			</control>
+			<control type="image">
+				<left>325</left>
+				<top>66</top>
+				<width>1270</width>
+				<height>2</height>
+				<texture>separator.png</texture>
+				<visible>System.HasLoginScreen + System.LoggedOn</visible>
+			</control>
+			<control type="image">
+				<left>325</left>
+				<top>180</top>
+				<width>1270</width>
+				<height>2</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="group">
+				<left>540</left>
+				<top>170</top>
+				<control type="label">
+					<label>20046</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(21) + System.IsMaster</visible>
+				</control>
+				<control type="label">
+					<label>20045</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(21) + !System.IsMaster</visible>
+				</control>
+				<control type="label">
+					<label>$LOCALIZE[20126] $INFO[System.ProfileName]</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(22)</visible>
+				</control>
+				<control type="label">
+					<label>130</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(23)</visible>
+				</control>
+				<control type="label">
+					<label>7</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(10)</visible>
+				</control>
+				<control type="label">
+					<label>$LOCALIZE[13012] Kodi</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(11)</visible>
+				</control>
+				<control type="label">
+					<label>$LOCALIZE[13313] Kodi</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(13)</visible>
+				</control>
+				<control type="label">
+					<label>20150</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(34)</visible>
+				</control>
+				<control type="label">
+					<label>20151</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(35)</visible>
+				</control>
+				<control type="label">
+					<label>13005</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(36) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
+				</control>
+				<control type="label">
+					<label>13011</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(15)</visible>
+				</control>
+				<control type="label">
+					<label>13010</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(16)</visible>
+				</control>
+				<control type="label">
+					<label>1036</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(17)</visible>
+				</control>
+				<control type="label">
+					<label>13013</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(18)</visible>
+				</control>
+				<control type="label">
+					<label>5</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(19)</visible>
+				</control>
+				<control type="label">
+					<label>$LOCALIZE[13391] $LOCALIZE[155]</label>
+					<include>ShutdownMenuLabel</include>
+					<visible>Control.HasFocus(20)</visible>
+				</control>
 			</control>
 		</control>
 	</controls>

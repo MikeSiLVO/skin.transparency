@@ -1775,7 +1775,6 @@
 						<onfocus>Skin.SetString(SettingsMenu,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TV)</onclick>
 						<selected>!Skin.HasSetting(Menu_TV)</selected>
-						<enable>PVR.HasTVChannels | PVR.HasRadioChannels</enable>
 					</control>
 					<control type="radiobutton" id="807">
 						<description>Menu Music</description>
