@@ -79,7 +79,7 @@
 					<description>alerts button</description>
 					<include>ButtonCommonValues</include>
 					<label>33050</label>
-					<onfocus>Skin.SetString(WeatherMenu,7)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,6)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))</visible>
 				</control>
 				<control type="button" id="2">
