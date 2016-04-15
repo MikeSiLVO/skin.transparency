@@ -19,8 +19,7 @@
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
 			<include>ContentFade</include>
-			<include condition="String.IsEmpty(Window(Weather).Property(Daily.IsFetched))">weather</include>
-			<include condition="!String.IsEmpty(Window(Weather).Property(Daily.IsFetched))">weatherextended</include>
+			<include>weather</include>
 		</control>
 		<control type="group">
 			<top>34</top>
@@ -45,42 +44,42 @@
 					<description>Current button</description>
 					<include>ButtonCommonValues</include>
 					<label>33006</label>
-					<onfocus>Skin.SetString(WeatherExtended,1)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,1)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Current.IsFetched))</visible>
 				</control>
 				<control type="button" id="102">
 					<description>Hourly button</description>
 					<include>ButtonCommonValues</include>
 					<label>33036</label>
-					<onfocus>Skin.SetString(WeatherExtended,2)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,2)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Hourly.IsFetched))</visible>
 				</control>
 				<control type="button" id="103">
 					<description>36 hour button</description>
 					<include>ButtonCommonValues</include>
 					<label>33034</label>
-					<onfocus>Skin.SetString(WeatherExtended,3)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,3)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(36Hour.IsFetched))</visible>
 				</control>
 				<control type="button" id="104">
 					<description>weekend button</description>
 					<include>ButtonCommonValues</include>
 					<label>33037</label>
-					<onfocus>Skin.SetString(WeatherExtended,4)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,4)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Weekend.IsFetched))</visible>
 				</control>
 				<control type="button" id="105">
 					<description>daily button</description>
 					<include>ButtonCommonValues</include>
 					<label>31600</label>
-					<onfocus>Skin.SetString(WeatherExtended,5)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,5)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Daily.IsFetched))</visible>
 				</control>
 				<control type="button" id="106">
 					<description>alerts button</description>
 					<include>ButtonCommonValues</include>
 					<label>33050</label>
-					<onfocus>Skin.SetString(WeatherExtended,7)</onfocus>
+					<onfocus>Skin.SetString(WeatherMenu,7)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))</visible>
 				</control>
 				<control type="button" id="2">

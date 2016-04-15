@@ -678,7 +678,15 @@ msgctxt "#31605"
 msgid "Weather forecast provided by:"
 msgstr ""
 
-#empty strings from id 31606 to 31700
+msgctxt "#31606"
+msgid "Visibility"
+msgstr ""
+
+msgctxt "#31607"
+msgid "WindChill"
+msgstr ""
+
+#empty strings from id 31608 to 31700
 #Font labels
 
 msgctxt "#31701"

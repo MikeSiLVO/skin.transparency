@@ -1399,12 +1399,4 @@
 	<variable name="Weather84">
 		<value condition="!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
-	<variable name="Weather85">
-		<value condition="!String.IsEmpty(Window(Weather).Property(Current.UVIndex))">$LOCALIZE[403]</value>
-		<value>$LOCALIZE[387]</value>
-	</variable>
-	<variable name="Weather86">
-		<value condition="!String.IsEmpty(Window(Weather).Property(Current.UVIndex))">$INFO[Window.Property(Current.UVIndex)]</value>
-		<value>$INFO[Window.Property(Current.Cloudiness)]</value>
-	</variable>
 </includes>
