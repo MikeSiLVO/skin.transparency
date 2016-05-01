@@ -28,7 +28,7 @@
 				<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(VideosSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(PlayerSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<left>266</left>
@@ -50,29 +50,7 @@
 				<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(MusicSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-			</control>
-			<control type="image">
-				<left>266</left>
-				<top>169</top>
-				<width>1391</width>
-				<height>744</height>
-				<texture diffuse="panel-diffuse.png">special://skin/backgrounds/pictures.jpg</texture>
-				<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
-				<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
-				<include>ContentFade</include>
-				<visible>Window.IsVisible(PicturesSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-			</control>
-			<control type="image">
-				<left>266</left>
-				<top>169</top>
-				<width>1391</width>
-				<height>744</height>
-				<texture diffuse="panel-diffuse.png">special://skin/backgrounds/weather.jpg</texture>
-				<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
-				<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
-				<include>ContentFade</include>
-				<visible>Window.IsVisible(WeatherSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(LibrarySettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 			<control type="image">
 				<left>266</left>
@@ -105,7 +83,7 @@
 				<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
 				<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
 				<include>ContentFade</include>
-				<visible>Window.IsVisible(AppearanceSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+				<visible>Window.IsVisible(InterfaceSettings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			</control>
 		</control>
 		<control type="group">

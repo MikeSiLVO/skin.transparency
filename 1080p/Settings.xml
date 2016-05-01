@@ -98,7 +98,7 @@
 					<height>90</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31162]</label>
+					<label>$LOCALIZE[31164]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font-20</font>
@@ -112,7 +112,7 @@
 					<height>90</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31163]</label>
+					<label>$LOCALIZE[31165]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font-20</font>
@@ -258,19 +258,19 @@
 						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(2)">Conditional</animation>
 					</control>
 					<control type="button" id="2">
-						<description>Video push button</description>
+						<description>Player push button</description>
 						<left>0</left>
 						<top>0</top>
 						<width>375</width>
 						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[3][/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[14200][/B][/UPPERCASE]</label>
 						<align>center</align>
 						<aligny>bottom</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-25c</font>
-						<onclick>ActivateWindow(VideosSettings)</onclick>
+						<onclick>ActivateWindow(PlayerSettings)</onclick>
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -332,7 +332,7 @@
 						<onleft>2</onleft>
 						<onright>4</onright>
 						<onup>11</onup>
-						<ondown>7</ondown>
+						<ondown>11</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -366,19 +366,19 @@
 						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(4)">Conditional</animation>
 					</control>
 					<control type="button" id="4">
-						<description>Music push button</description>
+						<description>Library push button</description>
 						<left>0</left>
 						<top>0</top>
 						<width>375</width>
 						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[2][/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[14202][/B][/UPPERCASE]</label>
 						<align>center</align>
 						<aligny>bottom</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-25c</font>
-						<onclick>ActivateWindow(MusicSettings)</onclick>
+						<onclick>ActivateWindow(LibrarySettings)</onclick>
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -386,7 +386,7 @@
 						<onleft>3</onleft>
 						<onright>5</onright>
 						<onup>12</onup>
-						<ondown>8</ondown>
+						<ondown>12</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -416,23 +416,23 @@
 						<top>22</top>
 						<width>331</width>
 						<height>194</height>
-						<texture diffuse="settings-button-diffuse.png">settings-pictures.jpg</texture>
+						<texture diffuse="settings-button-diffuse.png">settings-settings.jpg</texture>
 						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(5)">Conditional</animation>
 					</control>
 					<control type="button" id="5">
-						<description>Pics push button</description>
+						<description>System push button</description>
 						<left>0</left>
 						<top>0</top>
 						<width>375</width>
 						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[1][/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[13000][/B][/UPPERCASE]</label>
 						<align>center</align>
 						<aligny>bottom</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-25c</font>
-						<onclick>ActivateWindow(PicturesSettings)</onclick>
+						<onclick>ActivateWindow(SystemSettings)</onclick>
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -470,119 +470,11 @@
 						<top>22</top>
 						<width>331</width>
 						<height>194</height>
-						<texture diffuse="settings-button-diffuse.png">settings-weather.jpg</texture>
+						<texture diffuse="settings-button-diffuse.png">settings-network.jpg</texture>
 						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(6)">Conditional</animation>
 					</control>
 					<control type="button" id="6">
-						<description>Weather push button</description>
-						<left>0</left>
-						<top>0</top>
-						<width>375</width>
-						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[8][/B][/UPPERCASE]</label>
-						<align>center</align>
-						<aligny>bottom</aligny>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<focusedcolor>blue</focusedcolor>
-						<font>font-25c</font>
-						<onclick>ActivateWindow(WeatherSettings)</onclick>
-						<texturefocus border="25">settings-button-focus.png</texturefocus>
-						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
-						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
-						<onleft>5</onleft>
-						<onright>7</onright>
-						<onup>2</onup>
-						<ondown>10</ondown>
-						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
-					</control>
-				</control>
-				<control type="group">
-					<left>555</left>
-					<top>240</top>
-					<animation effect="slide" start="218,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(7)">
-						<effect type="slide" start="0,0" end="218,0" time="400" tween="quadratic" easing="in" />
-						<effect type="fade" start="100" end="0" time="400" />
-					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(7)">
-						<effect type="slide" start="0,0" end="218,0" time="400" tween="quadratic" easing="in" />
-					</animation>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>375</width>
-						<height>238</height>
-						<texture border="25">settings-button-back.png</texture>
-						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>22</top>
-						<width>331</width>
-						<height>194</height>
-						<texture diffuse="settings-button-diffuse.png">settings-settings.jpg</texture>
-						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(7)">Conditional</animation>
-					</control>
-					<control type="button" id="7">
-						<description>System push button</description>
-						<left>0</left>
-						<top>0</top>
-						<width>375</width>
-						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[13000][/B][/UPPERCASE]</label>
-						<align>center</align>
-						<aligny>bottom</aligny>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<focusedcolor>blue</focusedcolor>
-						<font>font-25c</font>
-						<onclick>ActivateWindow(SystemSettings)</onclick>
-						<texturefocus border="25">settings-button-focus.png</texturefocus>
-						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
-						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
-						<onleft>6</onleft>
-						<onright>8</onright>
-						<onup>3</onup>
-						<ondown>11</ondown>
-						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
-					</control>
-				</control>
-				<control type="group">
-					<left>990</left>
-					<top>240</top>
-					<animation effect="slide" start="-218,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-					<animation type="WindowClose" condition="!Control.HasFocus(8)">
-						<effect type="slide" start="0,0" end="-218,0" time="400" tween="quadratic" easing="in" />
-						<effect type="fade" start="100" end="0" time="400" />
-					</animation>
-					<animation type="WindowClose" condition="Control.HasFocus(8)">
-						<effect type="slide" start="0,0" end="-218,0" time="400" tween="quadratic" easing="in" />
-					</animation>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>375</width>
-						<height>238</height>
-						<texture border="25">settings-button-back.png</texture>
-						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
-					</control>
-					<control type="image">
-						<left>22</left>
-						<top>22</top>
-						<width>331</width>
-						<height>194</height>
-						<texture diffuse="settings-button-diffuse.png">settings-network.jpg</texture>
-						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(8)">Conditional</animation>
-					</control>
-					<control type="button" id="8">
-						<description>Service push button</description>
+						<description>Services push button</description>
 						<left>0</left>
 						<top>0</top>
 						<width>375</width>
@@ -599,10 +491,10 @@
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
 						<textoffsety>171</textoffsety>
-						<onleft>7</onleft>
+						<onleft>5</onleft>
 						<onright>9</onright>
-						<onup>4</onup>
-						<ondown>12</ondown>
+						<onup>2</onup>
+						<ondown>10</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -653,7 +545,7 @@
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
 						<textoffsety>171</textoffsety>
-						<onleft>8</onleft>
+						<onleft>6</onleft>
 						<onright>10</onright>
 						<onup>5</onup>
 						<ondown>13</ondown>
@@ -690,19 +582,19 @@
 						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(10)">Conditional</animation>
 					</control>
 					<control type="button" id="10">
-						<description>Appearance button</description>
+						<description>Interface button</description>
 						<left>0</left>
 						<top>0</top>
 						<width>375</width>
 						<height>238</height>
-						<label>[UPPERCASE][B]$LOCALIZE[480][/B][/UPPERCASE]</label>
+						<label>[UPPERCASE][B]$LOCALIZE[14206][/B][/UPPERCASE]</label>
 						<align>center</align>
 						<aligny>bottom</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<focusedcolor>blue</focusedcolor>
 						<font>font-25c</font>
-						<onclick>ActivateWindow(AppearanceSettings)</onclick>
+						<onclick>ActivateWindow(InterfaceSettings)</onclick>
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
@@ -763,7 +655,7 @@
 						<textoffsety>171</textoffsety>
 						<onleft>10</onleft>
 						<onright>12</onright>
-						<onup>7</onup>
+						<onup>3</onup>
 						<ondown>3</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
@@ -817,7 +709,7 @@
 						<textoffsety>171</textoffsety>
 						<onleft>11</onleft>
 						<onright>13</onright>
-						<onup>8</onup>
+						<onup>4</onup>
 						<ondown>4</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>

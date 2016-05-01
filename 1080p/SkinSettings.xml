@@ -3473,12 +3473,12 @@
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8103">
-						<description>Menu Settings Sub Videos</description>
-						<label>[B]$LOCALIZE[3][/B]</label>
+						<description>Menu Settings Sub Player</description>
+						<label>[B]$LOCALIZE[14200][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Videos)</onclick>
-						<selected>Skin.HasSetting(Menu_Settings_Sub_Videos)</selected>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Player)</onclick>
+						<selected>Skin.HasSetting(Menu_Settings_Sub_Player)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8104">
@@ -3491,30 +3491,12 @@
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8105">
-						<description>Menu Settings Sub Music</description>
-						<label>[B]$LOCALIZE[2][/B]</label>
+						<description>Menu Settings Sub Library</description>
+						<label>[B]$LOCALIZE[14202][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Music)</onclick>
-						<selected>Skin.HasSetting(Menu_Settings_Sub_Music)</selected>
-						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
-					</control>
-					<control type="radiobutton" id="8106">
-						<description>Menu Settings Sub Pictures</description>
-						<label>[B]$LOCALIZE[1][/B]</label>
-						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Pictures)</onclick>
-						<selected>Skin.HasSetting(Menu_Settings_Sub_Pictures)</selected>
-						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
-					</control>
-					<control type="radiobutton" id="8107">
-						<description>Menu Settings Sub Weather</description>
-						<label>[B]$LOCALIZE[8][/B]</label>
-						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Weather)</onclick>
-						<selected>Skin.HasSetting(Menu_Settings_Sub_Weather)</selected>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Library)</onclick>
+						<selected>Skin.HasSetting(Menu_Settings_Sub_Library)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8108">
@@ -3546,11 +3528,11 @@
 					</control>
 					<control type="radiobutton" id="8111">
 						<description>Menu Settings Sub Appearance</description>
-						<label>[B]$LOCALIZE[480][/B]</label>
+						<label>[B]$LOCALIZE[14206][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(SettingsCustom,0)</onfocus>
-						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Appearance)</onclick>
-						<selected>Skin.HasSetting(Menu_Settings_Sub_Appearance)</selected>
+						<onclick>Skin.ToggleSetting(Menu_Settings_Sub_Interface)</onclick>
+						<selected>Skin.HasSetting(Menu_Settings_Sub_Interface)</selected>
 						<enable>!Skin.HasSetting(Menu_Settings_Sub)</enable>
 					</control>
 					<control type="radiobutton" id="8112">
