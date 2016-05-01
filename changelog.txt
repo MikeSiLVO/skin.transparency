@@ -1,3 +1,6 @@
+Transparency! v10.2.1
+- fix line endings
+
 Transparency! v10.2.0
 - convert to 1080p
 
