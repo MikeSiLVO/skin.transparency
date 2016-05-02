@@ -59,7 +59,7 @@
 		<lefttexture>-</lefttexture>
 		<midtexture border="10,0,10,0">Progress-Mid.png</midtexture>
 		<righttexture>-</righttexture>
-		<overlaytexture />
+		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="radiobutton">
 		<left>0</left>
