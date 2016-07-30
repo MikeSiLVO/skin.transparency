@@ -813,6 +813,10 @@
 		<value condition="Skin.String(player1score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player1name)] $LOCALIZE[31309] !!![/B]</value>
 		<value condition="Skin.String(player2score,5)">[B]GAME OVER:[CR]$INFO[Skin.String(player2name)] $LOCALIZE[31309] !!![/B]</value>
 	</variable>
+	<variable name="VideoDecoder">
+		<value condition="Player.Process(videohwdecoder)">HW</value>
+		<value>SW</value>
+	</variable>
 	<variable name="ViewCoverFlowLabel1">
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Label2]</value>
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Label]</value>
@@ -851,7 +855,6 @@
 		<value condition="Window.IsVisible(MusicPlaylist) + !Player.HasAudio">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="ViewFanartLabel7">
-		<value condition="Container.Content(Albums) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
 		<value condition="Container.Content(Songs) + ![Window.IsVisible(MusicPlaylist) + Player.HasAudio]">$INFO[ListItem.Artist]</value>
 		<value condition="Window.IsVisible(MusicPlaylist)">$INFO[MusicPlayer.Artist]</value>
 	</variable>
