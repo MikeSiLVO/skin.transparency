@@ -1,3 +1,7 @@
+Transparency! v10.2.4
+- fix movieset fanart
+- rename library settings to media settings
+
 Transparency! v10.2.3
 - addon.xml updates
 - codec info
