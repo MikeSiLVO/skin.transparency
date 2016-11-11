@@ -8,7 +8,7 @@
 			<top>30</top>
 			<width>1845</width>
 			<height>60</height>
-			<label>$INFO[Player.SeekNumeric]</label>
+			<label>$INFO[Player.SeekNumeric(hh:mm:ss)]</label>
 			<align>left</align>
 			<font>font-19</font>
 			<shadowcolor>black</shadowcolor>
