@@ -40,7 +40,7 @@
 				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<bordertexture>thumb-shadow.png</bordertexture>
 				<bordersize>6</bordersize>
-				<visible>Container.Content(Artists)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
 			</control>
 			<control type="image">
 				<left>51</left>
@@ -48,7 +48,7 @@
 				<width>312</width>
 				<height>312</height>
 				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
+				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)]</visible>
 			</control>
 			<control type="image">
 				<left>18</left>
@@ -56,7 +56,7 @@
 				<width>354</width>
 				<height>321</height>
 				<texture>cdcase.png</texture>
-				<visible>[Container.Content(Albums) | Container.Content(Songs)] + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 			<control type="image">
 				<left>12</left>
@@ -64,7 +64,7 @@
 				<width>368</width>
 				<height>338</height>
 				<texture>cdcase-shadow.png</texture>
-				<visible>[Container.Content(Albums) | Container.Content(Songs)] + !Skin.HasSetting(HideMusicCase)</visible>
+				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + !Skin.HasSetting(HideMusicCase)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -136,7 +136,7 @@
 						<usealttexture>!String.IsEmpty(Window.Property(ShowAlbumList))</usealttexture>
 						<onclick condition="String.IsEmpty(Window.Property(ShowAlbumList))">SetProperty(ShowAlbumList, show)</onclick>
 						<onclick condition="!String.IsEmpty(Window.Property(ShowAlbumList))">ClearProperty(ShowAlbumList)</onclick>
-						<visible>Container.Content(Artists)</visible>
+						<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
 					</control>
 					<control type="togglebutton" id="901">
 						<description>list / info button</description>
@@ -157,7 +157,7 @@
 						<usealttexture>!String.IsEmpty(Window.Property(ShowSongList))</usealttexture>
 						<onclick condition="String.IsEmpty(Window.Property(ShowSongList))">SetProperty(ShowSongList, show)</onclick>
 						<onclick condition="!String.IsEmpty(Window.Property(ShowSongList))">ClearProperty(ShowSongList)</onclick>
-						<visible>Container.Content(Albums)</visible>
+						<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
 					</control>
 					<control type="button" id="6">
 						<description>Refresh</description>
@@ -215,7 +215,7 @@
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label>20342</label>
 						<onclick>RunScript(script.metadata.actors,$INFO[Listitem.Artist])</onclick>
-						<visible>Container.Content(Artists) + System.HasAddon(script.metadata.actors)</visible>
+						<visible>String.IsEqual(ListItem.DBTYPE,artist) + System.HasAddon(script.metadata.actors)</visible>
 					</control>
 				</control>
 			</control>
@@ -228,7 +228,7 @@
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
 				<label>$VAR[DialogAlbumInfoLabel]</label>
-				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
@@ -243,7 +243,7 @@
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="textbox">
 				<description>textarea</description>
@@ -258,12 +258,12 @@
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Container.Content(Albums) + !Control.IsVisible(50)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,album) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="group">
 				<include>DialogFade5</include>
 				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
-				<visible>Container.Content(Songs)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
 				<control type="label">
 					<left>393</left>
 					<top>866</top>
@@ -322,7 +322,7 @@
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
 				<label>[B]$INFO[Container(50).Listitem.Label][/B]</label>
-				<visible>Container.Content(Artists) + Control.HasFocus(50)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist) + Control.HasFocus(50)</visible>
 			</control>
 			<control type="wraplist" id="50">
 				<left>340</left>
@@ -339,7 +339,7 @@
 				<focusposition>4</focusposition>
 				<orientation>horizontal</orientation>
 				<hitrect x="1005" y="848" w="210" h="202" />
-				<visible>Container.Content(Artists) + !String.IsEmpty(Window.Property(ShowAlbumList))</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEmpty(Window.Property(ShowAlbumList))</visible>
 				<itemlayout width="172" height="165">
 					<control type="image">
 						<left>24</left>
@@ -392,7 +392,7 @@
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
-				<visible>Container.Content(Albums) + !String.IsEmpty(Window.Property(ShowSongList))</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,album) + !String.IsEmpty(Window.Property(ShowSongList))</visible>
 				<itemlayout width="735" height="44">
 					<control type="image">
 						<left>0</left>
@@ -495,7 +495,7 @@
 				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Artists)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
@@ -638,7 +638,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Albums)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
@@ -786,7 +786,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Songs)</visible>
+				<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="49">
