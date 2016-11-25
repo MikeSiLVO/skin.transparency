@@ -117,6 +117,8 @@
 					<align>center</align>
 					<orientation>horizontal</orientation>
 					<itemgap>0</itemgap>
+					<onup>49</onup>
+					<ondown>50</ondown>
 					<control type="togglebutton" id="900">
 						<description>list / info button</description>
 						<width>300</width>
@@ -331,7 +333,7 @@
 				<height>165</height>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5</onup>
+				<onup>9000</onup>
 				<ondown>61</ondown>
 				<viewtype label="">list</viewtype>
 				<pagecontrol>61</pagecontrol>
@@ -386,7 +388,7 @@
 				<height>180</height>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5</onup>
+				<onup>9000</onup>
 				<ondown>61</ondown>
 				<viewtype label="">list</viewtype>
 				<pagecontrol>61</pagecontrol>
@@ -473,7 +475,7 @@
 				<font>font-19</font>
 				<onleft>61</onleft>
 				<onright>1112</onright>
-				<ondown>5</ondown>
+				<ondown>9000</ondown>
 				<onup>50</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
@@ -491,7 +493,7 @@
 				<onleft>61</onleft>
 				<onright>61</onright>
 				<onup>11</onup>
-				<ondown>5</ondown>
+				<ondown>9000</ondown>
 				<onclick>ActivateWindow(1113)</onclick>
 			</control>
 			<control type="group">
@@ -505,8 +507,8 @@
 						<height>450</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
-						<onup>5</onup>
-						<ondown>5</ondown>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
@@ -648,8 +650,8 @@
 						<height>450</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
-						<onup>5</onup>
-						<ondown>5</ondown>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
