@@ -11,6 +11,7 @@
 	<variable name="DialogAlbumInfoTitle">
 		<value condition="Container.Content(Artists)">$INFO[Listitem.Artist]</value>
 		<value condition="Container.Content(Albums)">$INFO[Listitem.Album]</value>
+		<value condition="Container.Content(Songs)">$INFO[Listitem.Title]</value>
 	</variable>
 	<variable name="DialogAlbumInfoLabel">
 		<value condition="Container.Content(Artists) + !Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</value>
