@@ -344,10 +344,10 @@
 				<font>font-20</font>
 				<textcolor>lightblue</textcolor>
 				<align>center</align>
-				<label>[B]$INFO[Container(50).Listitem.Label][/B]</label>
-				<visible>String.IsEqual(ListItem.DBTYPE,artist) + Control.HasFocus(50)</visible>
+				<label fallback="..">$INFO[Container(50).Listitem.Label,[B],[/B]]</label>
+				<visible>String.IsEqual(ListItem.DBTYPE,artist) + Control.IsVisible(50)</visible>
 			</control>
-			<control type="wraplist" id="50">
+			<control type="fixedlist" id="50">
 				<left>340</left>
 				<top>870</top>
 				<width>1552</width>
@@ -360,6 +360,7 @@
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
+				<movement>4</movement>
 				<orientation>horizontal</orientation>
 				<hitrect x="1005" y="848" w="210" h="202" />
 				<visible>String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEmpty(Window.Property(ShowAlbumList))</visible>
