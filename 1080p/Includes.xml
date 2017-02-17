@@ -196,54 +196,6 @@
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!Control.HasFocus(60)">Conditional</animation>
 			<visible>Control.IsVisible(589)</visible>
 		</control>
-		<control type="scrollbar" id="60">
-			<left>1624</left>
-			<top>207</top>
-			<width>30</width>
-			<height>666</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>11</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Control.IsVisible(11)</visible>
-		</control>
-		<control type="scrollbar" id="60">
-			<left>1624</left>
-			<top>207</top>
-			<width>30</width>
-			<height>666</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>12</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Control.IsVisible(12)</visible>
-		</control>
-		<control type="scrollbar" id="60">
-			<left>1624</left>
-			<top>207</top>
-			<width>30</width>
-			<height>666</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>13</onleft>
-			<onright>9000</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<visible>Control.IsVisible(13)</visible>
-		</control>
 	</include>
 	<include name="Breadcrumbs">
 		<left>0</left>

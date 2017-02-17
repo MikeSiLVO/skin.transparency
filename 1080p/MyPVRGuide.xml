@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol>10</defaultcontrol>
-	<views>10,11,12,13</views>
+	<views>10</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
@@ -26,9 +26,6 @@
 				<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + !Control.IsVisible(10)">Conditional</animation>
 				<include>ContentPanel</include>
 				<include>Grid-PVRGuideEPG</include>
-				<include>FullList-PVRGuideNow</include>
-				<include>FullList-PVRGuideNext</include>
-				<include>FullList-PVRGuideChannel</include>
 				<include>ScrollOffsetLabel</include>
 				<include>AllViewCommonPageControls</include>
 			</control>
