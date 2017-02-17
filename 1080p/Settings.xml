@@ -333,7 +333,7 @@
 						<onleft>2</onleft>
 						<onright>4</onright>
 						<onup>11</onup>
-						<ondown>11</ondown>
+						<ondown>14</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -387,7 +387,7 @@
 						<onleft>3</onleft>
 						<onright>5</onright>
 						<onup>12</onup>
-						<ondown>12</ondown>
+						<ondown>14</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -493,9 +493,58 @@
 						<textoffsetx>0</textoffsetx>
 						<textoffsety>171</textoffsety>
 						<onleft>5</onleft>
-						<onright>9</onright>
+						<onright>14</onright>
 						<onup>2</onup>
 						<ondown>10</ondown>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
+					</control>
+				</control>
+				<control type="group">
+					<left>772</left>
+					<top>240</top>
+					<animation type="WindowClose" condition="!Control.HasFocus(14)">
+						<effect type="fade" start="100" end="0" time="400" />
+					</animation>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>375</width>
+						<height>238</height>
+						<texture border="25">settings-button-back.png</texture>
+						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
+					</control>
+					<control type="image">
+						<left>22</left>
+						<top>22</top>
+						<width>331</width>
+						<height>194</height>
+						<texture diffuse="settings-button-diffuse.png">settings-games.jpg</texture>
+						<animation effect="zoom" start="22,22,331,194" end="15,15,345,208" time="200" center="auto" condition="Control.HasFocus(14)">Conditional</animation>
+					</control>
+					<control type="button" id="14">
+						<description>Games push button</description>
+						<left>0</left>
+						<top>0</top>
+						<width>375</width>
+						<height>238</height>
+						<label>[UPPERCASE][B]$LOCALIZE[15016][/B][/UPPERCASE]</label>
+						<align>center</align>
+						<aligny>bottom</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<focusedcolor>blue</focusedcolor>
+						<font>font-25c</font>
+						<onclick>ActivateWindow(GameSettings)</onclick>
+						<texturefocus border="25">settings-button-focus.png</texturefocus>
+						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
+						<textoffsetx>0</textoffsetx>
+						<textoffsety>171</textoffsety>
+						<onleft>6</onleft>
+						<onright>9</onright>
+						<onup>3</onup>
+						<ondown>11</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
 					</control>
@@ -546,7 +595,7 @@
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
 						<textoffsety>171</textoffsety>
-						<onleft>6</onleft>
+						<onleft>14</onleft>
 						<onright>10</onright>
 						<onup>5</onup>
 						<ondown>13</ondown>
@@ -656,7 +705,7 @@
 						<textoffsety>171</textoffsety>
 						<onleft>10</onleft>
 						<onright>12</onright>
-						<onup>3</onup>
+						<onup>14</onup>
 						<ondown>3</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>
@@ -710,7 +759,7 @@
 						<textoffsety>171</textoffsety>
 						<onleft>11</onleft>
 						<onright>13</onright>
-						<onup>4</onup>
+						<onup>14</onup>
 						<ondown>4</ondown>
 						<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 						<animation effect="fade" start="100" end="0" time="200" delay="200">WindowClose</animation>

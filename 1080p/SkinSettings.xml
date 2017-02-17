@@ -687,6 +687,12 @@
 								<icon>special://skin/backgrounds/programs.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 							</item>
+							<item id="27">
+								<label>$LOCALIZE[10000] - $LOCALIZE[15016]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/games.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</thumb>
+							</item>
 							<item id="9">
 								<label>$LOCALIZE[10000] - $LOCALIZE[8]</label>
 								<onclick>noop</onclick>
@@ -798,6 +804,12 @@
 								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/background-programs.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Programs_Folder)]</thumb>
+							</item>
+							<item id="28">
+								<label>$LOCALIZE[15016]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/background-games.jpg</icon>
+								<thumb>$INFO[Skin.String(Custom_Back_Games_Folder)]</thumb>
 							</item>
 							<item id="24">
 								<label>$LOCALIZE[8]</label>

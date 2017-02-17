@@ -2524,7 +2524,7 @@
 	</include>
 	<include name="SkinSettingsImageButtonGroup">
 		<control type="group">
-			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26)</visible>
+			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26) | Container(302).HasFocus(27) | Container(302).HasFocus(28)</visible>
 			<left>832</left>
 			<top>322</top>
 			<control type="button" id="303">
@@ -2542,6 +2542,7 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetImage(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(27)">Skin.SetImage(Home_Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">Skin.SetImage(HomeWeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.SetImage(Home_Custom_Back_Favourites_Folder)</onclick>
@@ -2558,6 +2559,7 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.SetImage(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.SetImage(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.SetImage(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(28)">Skin.SetImage(Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(resource.images.weatherfanart.path)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">Skin.SetImage(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetImage(Custom_Back_Settings_Folder)</onclick>
@@ -2582,6 +2584,7 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.SetPath(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(27)">Skin.SetPath(Home_Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">Skin.SetPath(HomeWeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.SetPath(Home_Custom_Back_Favourites_Folder)</onclick>
@@ -2598,6 +2601,7 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.SetPath(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.SetPath(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.SetPath(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(28)">Skin.SetPath(Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(resource.images.weatherfanart.path)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">Skin.SetPath(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetPath(Custom_Back_Settings_Folder)</onclick>
@@ -2622,6 +2626,7 @@
 				<onclick condition="Container(302).HasFocus(5)">Skin.Reset(Home_Custom_Back_TV_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(7)">Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(8)">Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(27)">Skin.Reset(Home_Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(HomeWeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(9)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.homeweatherfanart)</onclick>
 				<onclick condition="Container(302).HasFocus(10)">Skin.Reset(Home_Custom_Back_Favourites_Folder)</onclick>
@@ -2638,6 +2643,7 @@
 				<onclick condition="Container(302).HasFocus(21)">Skin.Reset(Custom_Back_Music_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(22)">Skin.Reset(Custom_Back_Pictures_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(23)">Skin.Reset(Custom_Back_Programs_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(28)">Skin.Reset(Custom_Back_Games_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">Skin.Reset(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(24)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.Reset(Custom_Back_Settings_Folder)</onclick>
