@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<controls>
 		<control type="group">
 			<include>dialogeffect</include>
-			<visible>![Window.IsVisible(Notification) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
+			<visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+			<left>660</left>
+			<top>0</top>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>600</width>
+				<height>52</height>
+				<texture border="16,0,16,0">popup-small.png</texture>
+			</control>
+			<control type="label">
+				<description>Time Label</description>
+				<left>4</left>
+				<top>6</top>
+				<width>135</width>
+				<height>38</height>
+				<font>font-18</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[PVR.ChannelNumberInput]</label>
+			</control>
+		</control>
+		<control type="group">
+			<include>dialogeffect</include>
+			<visible>String.IsEmpty(PVR.ChannelNumberInput) + ![Window.IsVisible(Notification) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<left>660</left>
 			<top>0</top>
 			<control type="image">
@@ -100,7 +126,7 @@
 			<animation effect="slide" start="0,0" end="420,0" time="300" tween="quadratic" easing="in">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="420,0" time="300" tween="quadratic" easing="in">Hidden</animation>
 			<include condition="Skin.HasSetting(ClearArt)">clearart-dialogseekbar</include>
-			<visible>Player.Paused</visible>
+			<visible>String.IsEmpty(PVR.ChannelNumberInput) + Player.Paused</visible>
 			<control type="group">
 				<left>45</left>
 				<top>-38</top>
@@ -131,7 +157,7 @@
 				<height>309</height>
 				<camera x="225" y="120" />
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
-				<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
+				<visible>String.IsEmpty(PVR.ChannelNumberInput) + VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
 				<control type="image">
 					<left>207</left>
 					<top>27</top>
@@ -155,6 +181,7 @@
 				<height>312</height>
 				<camera x="225" y="120" />
 				<animation effect="rotatey" start="0" end="30" condition="true" center="auto">Conditional</animation>
+				<visible>String.IsEmpty(PVR.ChannelNumberInput)</visible>
 				<control type="image">
 					<left>114</left>
 					<top>24</top>
