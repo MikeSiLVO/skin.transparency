@@ -110,21 +110,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</label>
-					<visible>!String.Contains(ListItem.Duration,min)</visible>
-				</control>
-				<control type="label">
-					<left>386</left>
-					<top>915</top>
-					<width>780</width>
-					<height>45</height>
-					<font>font-20</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>left</align>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</label>
-					<visible>String.Contains(ListItem.Duration,min)</visible>
 				</control>
 				<control type="label">
 					<left>386</left>

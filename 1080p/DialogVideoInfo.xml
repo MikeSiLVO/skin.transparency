@@ -516,15 +516,8 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
-								<onclick>noop</onclick>
-								<visible>!String.Contains(ListItem.Duration,min)</visible>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration]</label2>
 								<onclick>noop</onclick>
-								<visible>String.Contains(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
@@ -855,15 +848,8 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
-								<onclick>noop</onclick>
-								<visible>!String.Contains(ListItem.Duration,min)</visible>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration]</label2>
 								<onclick>noop</onclick>
-								<visible>String.Contains(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
@@ -1015,15 +1001,8 @@
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label2>
-								<onclick>noop</onclick>
-								<visible>!String.Contains(ListItem.Duration,min)</visible>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
 								<label2>$INFO[ListItem.Duration]</label2>
 								<onclick>noop</onclick>
-								<visible>String.Contains(ListItem.Duration,min)</visible>
 							</item>
 							<item>
 								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>

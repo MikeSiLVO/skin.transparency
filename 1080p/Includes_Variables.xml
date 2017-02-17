@@ -827,8 +827,7 @@
 		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Label2][/B]</value>
 	</variable>
 	<variable name="ViewFanartLabel1">
-		<value condition="!String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE], $LOCALIZE[12391]]</value>
-		<value condition="String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</value>
+		<value>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</value>
 	</variable>
 	<variable name="ViewFanartText">
 		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
@@ -898,8 +897,7 @@
 		<value condition="Container.Content(Episodes)">$INFO[ListItem.Date]</value>
 	</variable>
 	<variable name="ViewItemLabel7">
-		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">$INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="ViewItemLabel8">
 		<value condition="!Container.Content(Seasons)">[UPPERCASE][B]$LOCALIZE[345]:[/B][/UPPERCASE]</value>
@@ -924,8 +922,7 @@
 		<value condition="String.IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Label][/B]</value>
 	</variable>
 	<variable name="ViewItemLabel13">
-		<value condition="![Container.Content(Seasons) | Container.Content(Episodes)] + !String.Contains(ListItem.Duration,min)">[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</value>
-		<value condition="![Container.Content(Seasons) | Container.Content(Episodes)] + String.Contains(ListItem.Duration,min)">[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</value>
+		<value condition="![Container.Content(Seasons) | Container.Content(Episodes)]">[B]$INFO[ListItem.Year] $INFO[ListItem.Duration, - ][/B]</value>
 		<value condition="Container.Content(Episodes)">[B]$INFO[ListItem.Date] $INFO[ListItem.Duration, - ][/B]</value>
 		<value condition="Container.Content(Seasons)">[B]$INFO[ListItem.Mpaa][/B]</value>
 	</variable>
@@ -1043,8 +1040,7 @@
 		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">[UPPERCASE][B]$LOCALIZE[552]:[/UPPERCASE][/B]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel4">
-		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder + !String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder + String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(Episodes) + !ListItem.IsParentFolder">$INFO[ListItem.Duration]</value>
 		<value condition="Container.Content(MusicVideos) + !ListItem.IsParentFolder">$INFO[ListItem.Date]</value>
 	</variable>
 	<variable name="ViewMediaInfoLabel5">
@@ -1156,8 +1152,7 @@
 		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Label2][/B]</value>
 	</variable>
 	<variable name="ViewSlideLabel1">
-		<value condition="!Container.Content(TVShows) + !String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-		<value condition="!Container.Content(TVShows) + String.Contains(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="!Container.Content(TVShows)">$INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="ViewSlideLabel2">
 		<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>

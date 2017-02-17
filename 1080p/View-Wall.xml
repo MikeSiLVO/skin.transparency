@@ -704,20 +704,9 @@
 					<top>172</top>
 					<width>1800</width>
 					<height>90</height>
-					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - , $LOCALIZE[12391]][/B]</label>
-					<textcolor>lightblue</textcolor>
-					<font>font-21</font>
-					<visible>!Container.Content(Seasons) + !String.Contains(ListItem.Duration,min)</visible>
-				</control>
-				<control type="label">
-					<left>60</left>
-					<top>172</top>
-					<width>1800</width>
-					<height>90</height>
 					<label>[B]$INFO[ListItem.Studio][CR]$INFO[ListItem.Year]$INFO[ListItem.Duration, - ][/B]</label>
 					<textcolor>lightblue</textcolor>
 					<font>font-21</font>
-					<visible>!Container.Content(Seasons) + String.Contains(ListItem.Duration,min)</visible>
 				</control>
 				<control type="label">
 					<left>60</left>
