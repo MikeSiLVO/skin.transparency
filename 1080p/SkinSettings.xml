@@ -1813,6 +1813,14 @@
 						<onclick>Skin.ToggleSetting(Menu_Programs)</onclick>
 						<selected>!Skin.HasSetting(Menu_Programs)</selected>
 					</control>
+					<control type="radiobutton" id="818">
+						<description>Menu Games</description>
+						<label>[B]$LOCALIZE[15016][/B]</label>
+						<include>ButtonMenuSettings1</include>
+						<onfocus>Skin.SetString(SettingsMenu,17)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games)</onclick>
+						<selected>Skin.HasSetting(Menu_Games)</selected>
+					</control>
 					<control type="radiobutton" id="811">
 						<description>Menu Weather</description>
 						<label>[B]$LOCALIZE[8][/B]</label>
@@ -3304,9 +3312,79 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8100">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games)</visible>
+					<left>690</left>
+					<top>600</top>
+					<width>525</width>
+					<height>297</height>
+					<itemgap>-3</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>801</onleft>
+					<onright>8200</onright>
+					<onup>8100</onup>
+					<ondown>8100</ondown>
+					<include>VisibleFadeEffect</include>
+					<control type="radiobutton" id="8101">
+						<description>Menu Games Sub</description>
+						<label>[B]$LOCALIZE[1034][/B]</label>
+						<font>font-20c</font>
+						<textcolor>darkblue</textcolor>
+						<focusedcolor>darkblue</focusedcolor>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,0)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub)</selected>
+					</control>
+					<control type="radiobutton" id="8102">
+						<description>Menu Games Sub Custom1</description>
+						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Games_Sub_Custom1.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom1)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Custom1)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Games Sub Custom2</description>
+						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Games_Sub_Custom2.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,2)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom2)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Custom2)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8104">
+						<description>Menu Games Sub Custom3</description>
+						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Games_Sub_Custom3.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,3)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom3)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Custom3)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8105">
+						<description>Menu Games Sub Custom4</description>
+						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_Games_Sub_Custom4.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,4)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom4)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Custom4)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8106">
+						<description>Menu Games Sub Custom5</description>
+						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_Games_Sub_Custom5.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,5)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom5)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Custom5)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+				</control>
+				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather)</visible>
 					<left>690</left>
-					<top>596</top>
+					<top>641</top>
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
@@ -3385,7 +3463,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites)</visible>
 					<left>690</left>
-					<top>645</top>
+					<top>690</top>
 					<width>525</width>
 					<height>297</height>
 					<itemgap>-3</itemgap>
@@ -3455,7 +3533,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings)</visible>
 					<left>690</left>
-					<top>310</top>
+					<top>355</top>
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
@@ -3606,7 +3684,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc)</visible>
 					<left>690</left>
-					<top>694</top>
+					<top>739</top>
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
@@ -3694,7 +3772,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1)</visible>
 					<left>690</left>
-					<top>794</top>
+					<top>839</top>
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
@@ -3818,7 +3896,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2)</visible>
 					<left>690</left>
-					<top>843</top>
+					<top>888</top>
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
@@ -3942,7 +4020,7 @@
 				<control type="grouplist" id="8100">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3)</visible>
 					<left>690</left>
-					<top>892</top>
+					<top>937</top>
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
@@ -5391,8 +5469,68 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,1)</visible>
+					<top>639</top>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Games Sub Custom1 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Games_Sub_Custom1.Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>RunScript(script.Games,changetitle=true&amp;property=Menu_Games_Sub_Custom1)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,2)</visible>
+					<top>681</top>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Games Sub Custom2 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Games_Sub_Custom2.Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>RunScript(script.Games,changetitle=true&amp;property=Menu_Games_Sub_Custom2)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,3)</visible>
+					<top>723</top>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Games Sub Custom3 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Games_Sub_Custom3.Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>RunScript(script.Games,changetitle=true&amp;property=Menu_Games_Sub_Custom3)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,4)</visible>
+					<top>765</top>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Games Sub Custom4 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Games_Sub_Custom4.Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>RunScript(script.Games,changetitle=true&amp;property=Menu_Games_Sub_Custom4)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,5)</visible>
+					<top>808</top>
+					<include>SettingsMenuList3</include>
+					<control type="button" id="8201">
+						<description>Menu Games Sub Custom5 Path</description>
+						<label>[B]- $LOCALIZE[31157][/B]</label>
+						<label2>[COLOR=lightblue]$INFO[Skin.String(Menu_Games_Sub_Custom5.Label)][/COLOR]</label2>
+						<include>ButtonMenuSettings3</include>
+						<onclick>RunScript(script.Games,changetitle=true&amp;property=Menu_Games_Sub_Custom5)</onclick>
+					</control>
+				</control>
+				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom1) + Skin.String(WeatherCustom,1)</visible>
-					<top>638</top>
+					<top>680</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom1 Path</description>
@@ -5411,7 +5549,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom2) + Skin.String(WeatherCustom,2)</visible>
-					<top>680</top>
+					<top>722</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom2 Path</description>
@@ -5430,7 +5568,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom3) + Skin.String(WeatherCustom,3)</visible>
-					<top>722</top>
+					<top>764</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom3 Path</description>
@@ -5449,7 +5587,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom4) + Skin.String(WeatherCustom,4)</visible>
-					<top>764</top>
+					<top>806</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom4 Path</description>
@@ -5461,7 +5599,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom5) + Skin.String(WeatherCustom,5)</visible>
-					<top>806</top>
+					<top>848</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom5 Path</description>
@@ -5473,7 +5611,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,10) + !Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub) + Skin.HasSetting(Menu_Weather_Sub_Custom6) + Skin.String(WeatherCustom,6)</visible>
-					<top>848</top>
+					<top>890</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Weather Sub Custom6 Path</description>
@@ -5485,7 +5623,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom1) + Skin.String(FavouritesCustom,1)</visible>
-					<top>687</top>
+					<top>729</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Favourites Sub Custom1 Path</description>
@@ -5497,7 +5635,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom2) + Skin.String(FavouritesCustom,2)</visible>
-					<top>729</top>
+					<top>771</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Favourites Sub Custom2 Path</description>
@@ -5509,7 +5647,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom3) + Skin.String(FavouritesCustom,3)</visible>
-					<top>771</top>
+					<top>813</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Favourites Sub Custom3 Path</description>
@@ -5521,7 +5659,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom4) + Skin.String(FavouritesCustom,4)</visible>
-					<top>813</top>
+					<top>855</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Favourites Sub Custom4 Path</description>
@@ -5533,7 +5671,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,11) + Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub) + Skin.HasSetting(Menu_Favourites_Sub_Custom5) + Skin.String(FavouritesCustom,5)</visible>
-					<top>855</top>
+					<top>898</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Favourites Sub Custom5 Path</description>
@@ -5545,7 +5683,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom1) + Skin.String(SettingsCustom,1)</visible>
-					<top>898</top>
+					<top>860</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Settings Sub Custom1 Path</description>
@@ -5557,7 +5695,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom2) + Skin.String(SettingsCustom,2)</visible>
-					<top>940</top>
+					<top>902</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Settings Sub Custom2 Path</description>
@@ -5569,7 +5707,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,12) + !Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub) + Skin.HasSetting(Menu_Settings_Sub_Custom3) + Skin.String(SettingsCustom,3)</visible>
-					<top>982</top>
+					<top>944</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Settings Sub Custom3 Path</description>
@@ -5581,7 +5719,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom1) + Skin.String(PlayDiscCustom,1)</visible>
-					<top>820</top>
+					<top>862</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom1 Path</description>
@@ -5600,7 +5738,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom2) + Skin.String(PlayDiscCustom,2)</visible>
-					<top>862</top>
+					<top>904</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom2 Path</description>
@@ -5619,7 +5757,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom3) + Skin.String(PlayDiscCustom,3)</visible>
-					<top>904</top>
+					<top>946</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom3 Path</description>
@@ -5631,7 +5769,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom4) + Skin.String(PlayDiscCustom,4)</visible>
-					<top>946</top>
+					<top>988</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom4 Path</description>
@@ -5643,7 +5781,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,13) + Skin.HasSetting(Menu_PlayDisc) + !Skin.HasSetting(Menu_PlayDisc_Sub) + Skin.HasSetting(Menu_PlayDisc_Sub_Custom5) + Skin.String(PlayDiscCustom,5)</visible>
-					<top>988</top>
+					<top>1030</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu PlayDisc Sub Custom5 Path</description>
@@ -5655,7 +5793,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom1) + Skin.String(Custom1Custom,1)</visible>
-					<top>458</top>
+					<top>500</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom1 Path</description>
@@ -5667,7 +5805,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom2) + Skin.String(Custom1Custom,2)</visible>
-					<top>500</top>
+					<top>542</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom2 Path</description>
@@ -5679,7 +5817,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom3) + Skin.String(Custom1Custom,3)</visible>
-					<top>542</top>
+					<top>584</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom3 Path</description>
@@ -5691,7 +5829,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom4) + Skin.String(Custom1Custom,4)</visible>
-					<top>584</top>
+					<top>626</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom4 Path</description>
@@ -5703,7 +5841,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom5) + Skin.String(Custom1Custom,5)</visible>
-					<top>626</top>
+					<top>668</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom5 Path</description>
@@ -5715,7 +5853,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom6) + Skin.String(Custom1Custom,6)</visible>
-					<top>668</top>
+					<top>710</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom6 Path</description>
@@ -5727,7 +5865,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom7) + Skin.String(Custom1Custom,7)</visible>
-					<top>710</top>
+					<top>752</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom7 Path</description>
@@ -5739,7 +5877,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom8) + Skin.String(Custom1Custom,8)</visible>
-					<top>752</top>
+					<top>794</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom8 Path</description>
@@ -5751,7 +5889,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom9) + Skin.String(Custom1Custom,9)</visible>
-					<top>794</top>
+					<top>836</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom9 Path</description>
@@ -5763,7 +5901,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,14) + Skin.HasSetting(Menu_Custom1) + Skin.HasSetting(Menu_Custom1_Sub) + Skin.HasSetting(Menu_Custom1_Sub_Custom10) + Skin.String(Custom1Custom,10)</visible>
-					<top>836</top>
+					<top>878</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom1 Sub Custom10 Path</description>
@@ -5775,7 +5913,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom1) + Skin.String(Custom2Custom,1)</visible>
-					<top>507</top>
+					<top>549</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom1 Path</description>
@@ -5787,7 +5925,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom2) + Skin.String(Custom2Custom,2)</visible>
-					<top>549</top>
+					<top>591</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom2 Path</description>
@@ -5799,7 +5937,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom3) + Skin.String(Custom2Custom,3)</visible>
-					<top>591</top>
+					<top>633</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom3 Path</description>
@@ -5811,7 +5949,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom4) + Skin.String(Custom2Custom,4)</visible>
-					<top>633</top>
+					<top>675</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom4 Path</description>
@@ -5823,7 +5961,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom5) + Skin.String(Custom2Custom,5)</visible>
-					<top>675</top>
+					<top>717</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom5 Path</description>
@@ -5835,7 +5973,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom6) + Skin.String(Custom2Custom,6)</visible>
-					<top>717</top>
+					<top>759</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom6 Path</description>
@@ -5847,7 +5985,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom7) + Skin.String(Custom2Custom,7)</visible>
-					<top>759</top>
+					<top>801</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom7 Path</description>
@@ -5859,7 +5997,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom8) + Skin.String(Custom2Custom,8)</visible>
-					<top>801</top>
+					<top>843</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom8 Path</description>
@@ -5871,7 +6009,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom9) + Skin.String(Custom2Custom,9)</visible>
-					<top>843</top>
+					<top>885</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom9 Path</description>
@@ -5883,7 +6021,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,15) + Skin.HasSetting(Menu_Custom2) + Skin.HasSetting(Menu_Custom2_Sub) + Skin.HasSetting(Menu_Custom2_Sub_Custom10) + Skin.String(Custom2Custom,10)</visible>
-					<top>885</top>
+					<top>927</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom2 Sub Custom10 Path</description>
@@ -5895,7 +6033,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom1) + Skin.String(Custom3Custom,1)</visible>
-					<top>556</top>
+					<top>598</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom1 Path</description>
@@ -5907,7 +6045,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom2) + Skin.String(Custom3Custom,2)</visible>
-					<top>598</top>
+					<top>640</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom2 Path</description>
@@ -5919,7 +6057,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom3) + Skin.String(Custom3Custom,3)</visible>
-					<top>640</top>
+					<top>682</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom3 Path</description>
@@ -5931,7 +6069,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom4) + Skin.String(Custom3Custom,4)</visible>
-					<top>682</top>
+					<top>724</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom4 Path</description>
@@ -5943,7 +6081,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom5) + Skin.String(Custom3Custom,5)</visible>
-					<top>724</top>
+					<top>766</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom5 Path</description>
@@ -5955,7 +6093,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom6) + Skin.String(Custom3Custom,6)</visible>
-					<top>766</top>
+					<top>808</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom6 Path</description>
@@ -5967,7 +6105,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom7) + Skin.String(Custom3Custom,7)</visible>
-					<top>808</top>
+					<top>850</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom7 Path</description>
@@ -5979,7 +6117,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom8) + Skin.String(Custom3Custom,8)</visible>
-					<top>850</top>
+					<top>892</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom8 Path</description>
@@ -5991,7 +6129,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom9) + Skin.String(Custom3Custom,9)</visible>
-					<top>892</top>
+					<top>934</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom9 Path</description>
@@ -6003,7 +6141,7 @@
 				</control>
 				<control type="grouplist" id="8200">
 					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,16) + Skin.HasSetting(Menu_Custom3) + Skin.HasSetting(Menu_Custom3_Sub) + Skin.HasSetting(Menu_Custom3_Sub_Custom10) + Skin.String(Custom3Custom,10)</visible>
-					<top>934</top>
+					<top>976</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Custom3 Sub Custom10 Path</description>
@@ -6026,13 +6164,14 @@
 					<animation effect="slide" start="0,0" end="0,248" time="100" tween="linear" condition="Skin.String(SettingsMenu,6)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,297" time="100" tween="linear" condition="Skin.String(SettingsMenu,7)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,346" time="100" tween="linear" condition="Skin.String(SettingsMenu,8)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,396" time="100" tween="linear" condition="Skin.String(SettingsMenu,10)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,446" time="100" tween="linear" condition="Skin.String(SettingsMenu,11)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,495" time="100" tween="linear" condition="Skin.String(SettingsMenu,12)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,544" time="100" tween="linear" condition="Skin.String(SettingsMenu,13)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,594" time="100" tween="linear" condition="Skin.String(SettingsMenu,14)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,644" time="100" tween="linear" condition="Skin.String(SettingsMenu,15)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,693" time="100" tween="linear" condition="Skin.String(SettingsMenu,16)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,396" time="100" tween="linear" condition="Skin.String(SettingsMenu,17)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,446" time="100" tween="linear" condition="Skin.String(SettingsMenu,10)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,495" time="100" tween="linear" condition="Skin.String(SettingsMenu,11)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,544" time="100" tween="linear" condition="Skin.String(SettingsMenu,12)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,594" time="100" tween="linear" condition="Skin.String(SettingsMenu,13)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,644" time="100" tween="linear" condition="Skin.String(SettingsMenu,14)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,693" time="100" tween="linear" condition="Skin.String(SettingsMenu,15)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,743" time="100" tween="linear" condition="Skin.String(SettingsMenu,16)">Conditional</animation>
 					<visible>Skin.String(SkinSettings,8)</visible>
 				</control>
 				<control type="image">
@@ -6171,7 +6310,19 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>646</top>
+					<top>651</top>
+					<width>38</width>
+					<height>28</height>
+					<texture>nav-right.png</texture>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + [[Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,1)] | [Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,2)] | [Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,3)] | [Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,4)] | [Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,5)]]</visible>
+					<animation effect="slide" start="0,0" end="0,42" time="100" tween="linear" condition="Skin.String(GamesCustom,2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(GamesCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,126" time="100" tween="linear" condition="Skin.String(GamesCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,168" time="100" tween="linear" condition="Skin.String(GamesCustom,5)">Conditional</animation>
+				</control>
+				<control type="image">
+					<left>1215</left>
+					<top>691</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6184,7 +6335,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>696</top>
+					<top>741</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6196,7 +6347,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>906</top>
+					<top>867</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6206,7 +6357,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>830</top>
+					<top>875</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6221,7 +6372,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>466</top>
+					<top>510</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6238,7 +6389,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>516</top>
+					<top>561</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
@@ -6255,7 +6406,7 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>566</top>
+					<top>611</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
