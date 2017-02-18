@@ -1706,16 +1706,36 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="766">
+						<label>$LOCALIZE[24021] - $LOCALIZE[15016] - $LOCALIZE[31031]</label>
+						<onclick>Skin.ToggleSetting(Hide-Games-FullList)</onclick>
+						<selected>Skin.HasSetting(Hide-Games-FullList)</selected>
+					</control>
+					<control type="radiobutton" id="767">
+						<label>$LOCALIZE[24021] - $LOCALIZE[15016] - $LOCALIZE[535]</label>
+						<onclick>Skin.ToggleSetting(Hide-Games-List)</onclick>
+						<selected>Skin.HasSetting(Hide-Games-List)</selected>
+					</control>
+					<control type="radiobutton" id="768">
+						<label>$LOCALIZE[24021] - $LOCALIZE[15016] - $LOCALIZE[21371]</label>
+						<onclick>Skin.ToggleSetting(Hide-Programs-Thumbnail)</onclick>
+						<selected>Skin.HasSetting(Hide-Games-Thumbnail)</selected>
+					</control>
+					<control type="image" id="769">
+						<width>1320</width>
+						<height>3</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="770">
 						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-FullList)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-FullList)</selected>
 					</control>
-					<control type="radiobutton" id="767">
+					<control type="radiobutton" id="771">
 						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[535]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-List)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-List)</selected>
 					</control>
-					<control type="radiobutton" id="768">
+					<control type="radiobutton" id="772">
 						<label>$LOCALIZE[24021] - $LOCALIZE[10040] - $LOCALIZE[21371]</label>
 						<onclick>Skin.ToggleSetting(Hide-Addons-Thumbnail)</onclick>
 						<selected>Skin.HasSetting(Hide-Addons-Thumbnail)</selected>
@@ -3337,45 +3357,54 @@
 					</control>
 					<control type="radiobutton" id="8102">
 						<description>Menu Games Sub Custom1</description>
-						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Games_Sub_Custom1.Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[35049][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(GamesCustom,1)</onfocus>
+						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Addons)</onclick>
+						<selected>Skin.HasSetting(Menu_Games_Sub_Addons)</selected>
+						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
+					</control>
+					<control type="radiobutton" id="8103">
+						<description>Menu Games Sub Custom1</description>
+						<label>[B]$LOCALIZE[31156] 1$INFO[Skin.String(Menu_Games_Sub_Custom1.Label), - ][/B]</label>
+						<include>ButtonMenuSettings2</include>
+						<onfocus>Skin.SetString(GamesCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom1)</onclick>
 						<selected>Skin.HasSetting(Menu_Games_Sub_Custom1)</selected>
 						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8103">
+					<control type="radiobutton" id="8104">
 						<description>Menu Games Sub Custom2</description>
 						<label>[B]$LOCALIZE[31156] 2$INFO[Skin.String(Menu_Games_Sub_Custom2.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(GamesCustom,2)</onfocus>
+						<onfocus>Skin.SetString(GamesCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom2)</onclick>
 						<selected>Skin.HasSetting(Menu_Games_Sub_Custom2)</selected>
 						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8104">
+					<control type="radiobutton" id="8105">
 						<description>Menu Games Sub Custom3</description>
 						<label>[B]$LOCALIZE[31156] 3$INFO[Skin.String(Menu_Games_Sub_Custom3.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(GamesCustom,3)</onfocus>
+						<onfocus>Skin.SetString(GamesCustom,4)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom3)</onclick>
 						<selected>Skin.HasSetting(Menu_Games_Sub_Custom3)</selected>
 						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8105">
+					<control type="radiobutton" id="8106">
 						<description>Menu Games Sub Custom4</description>
 						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_Games_Sub_Custom4.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(GamesCustom,4)</onfocus>
+						<onfocus>Skin.SetString(GamesCustom,5)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom4)</onclick>
 						<selected>Skin.HasSetting(Menu_Games_Sub_Custom4)</selected>
 						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
 					</control>
-					<control type="radiobutton" id="8106">
+					<control type="radiobutton" id="8107">
 						<description>Menu Games Sub Custom5</description>
 						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_Games_Sub_Custom5.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
-						<onfocus>Skin.SetString(GamesCustom,5)</onfocus>
+						<onfocus>Skin.SetString(GamesCustom,6)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Games_Sub_Custom5)</onclick>
 						<selected>Skin.HasSetting(Menu_Games_Sub_Custom5)</selected>
 						<enable>Skin.HasSetting(Menu_Games_Sub)</enable>
@@ -5469,8 +5498,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,1)</visible>
-					<top>639</top>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,2)</visible>
+					<top>684</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Games Sub Custom1 Path</description>
@@ -5481,8 +5510,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,2)</visible>
-					<top>681</top>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,3)</visible>
+					<top>726</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Games Sub Custom2 Path</description>
@@ -5493,8 +5522,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,3)</visible>
-					<top>723</top>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,4)</visible>
+					<top>768</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Games Sub Custom3 Path</description>
@@ -5505,8 +5534,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,4)</visible>
-					<top>765</top>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,5)</visible>
+					<top>811</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Games Sub Custom4 Path</description>
@@ -5517,8 +5546,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="8200">
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,5)</visible>
-					<top>808</top>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,6)</visible>
+					<top>853</top>
 					<include>SettingsMenuList3</include>
 					<control type="button" id="8201">
 						<description>Menu Games Sub Custom5 Path</description>
@@ -6310,15 +6339,15 @@
 				</control>
 				<control type="image">
 					<left>1215</left>
-					<top>651</top>
+					<top>696</top>
 					<width>38</width>
 					<height>28</height>
 					<texture>nav-right.png</texture>
-					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + [[Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,1)] | [Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,2)] | [Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,3)] | [Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,4)] | [Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,5)]]</visible>
-					<animation effect="slide" start="0,0" end="0,42" time="100" tween="linear" condition="Skin.String(GamesCustom,2)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(GamesCustom,3)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,126" time="100" tween="linear" condition="Skin.String(GamesCustom,4)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,168" time="100" tween="linear" condition="Skin.String(GamesCustom,5)">Conditional</animation>
+					<visible>Skin.String(SkinSettings,8) + Skin.String(SettingsMenu,17) + Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub) + [[Skin.HasSetting(Menu_Games_Sub_Custom1) + Skin.String(GamesCustom,2)] | [Skin.HasSetting(Menu_Games_Sub_Custom2) + Skin.String(GamesCustom,3)] | [Skin.HasSetting(Menu_Games_Sub_Custom3) + Skin.String(GamesCustom,4)] | [Skin.HasSetting(Menu_Games_Sub_Custom4) + Skin.String(GamesCustom,5)] | [Skin.HasSetting(Menu_Games_Sub_Custom5) + Skin.String(GamesCustom,6)]]</visible>
+					<animation effect="slide" start="0,0" end="0,42" time="100" tween="linear" condition="Skin.String(GamesCustom,3)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,84" time="100" tween="linear" condition="Skin.String(GamesCustom,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,126" time="100" tween="linear" condition="Skin.String(GamesCustom,5)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,168" time="100" tween="linear" condition="Skin.String(GamesCustom,6)">Conditional</animation>
 				</control>
 				<control type="image">
 					<left>1215</left>

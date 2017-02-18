@@ -2307,6 +2307,7 @@
 				<include condition="!Skin.HasSetting(Menu_Music)">HomeMusicButton</include>
 				<include condition="!Skin.HasSetting(Menu_Pictures)">HomePicturesButton</include>
 				<include condition="!Skin.HasSetting(Menu_Programs)">HomeProgramsButton</include>
+				<include condition="Skin.HasSetting(Menu_Games)">HomeGamesButton</include>
 				<include condition="!Skin.HasSetting(Menu_Weather)">HomeWeatherButton</include>
 				<include condition="Skin.HasSetting(Menu_Favourites)">HomeFavouritesButton</include>
 				<include condition="!Skin.HasSetting(Menu_Settings)">HomeSettingsButton</include>
@@ -2516,6 +2517,7 @@
 				<include condition="Skin.HasSetting(Menu_MusicVideos)">HomeMusicVideosButton</include>
 				<include condition="!Skin.HasSetting(Menu_TV)">HomeTVButton</include>
 				<include condition="!Skin.HasSetting(Menu_Programs)">HomeProgramsButton</include>
+				<include condition="Skin.HasSetting(Menu_Games)">HomeProgramsButton</include>
 				<include condition="!Skin.HasSetting(Menu_Weather)">HomeWeatherButton</include>
 				<include condition="Skin.HasSetting(Menu_Favourites)">HomeFavouritesButton</include>
 				<include condition="Skin.HasSetting(Menu_PlayDisc)">HomePlayDiscButton</include>
@@ -2610,6 +2612,14 @@
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 		</item>
 	</include>
+	<include name="HomeGamesButton">
+		<item id="17">
+			<label>15016</label>
+			<onclick>ActivateWindow(Games)</onclick>
+			<icon>special://skin/backgrounds/games.jpg</icon>
+			<thumb>$INFO[Skin.String(Home_Custom_Back_Games_Folder)]</thumb>
+		</item>
+	</include>
 	<include name="HomeWeatherButton">
 		<item id="10">
 			<label>8</label>
@@ -2681,6 +2691,7 @@
 			<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(Menu_Music_Sub)">HomeSubMusic</include>
 			<include condition="!Skin.HasSetting(Menu_Pictures) + Skin.HasSetting(Menu_Pictures_Sub)">HomeSubPictures</include>
 			<include condition="!Skin.HasSetting(Menu_Programs) + Skin.HasSetting(Menu_Programs_Sub)">HomeSubPrograms</include>
+			<include condition="Skin.HasSetting(Menu_Games) + Skin.HasSetting(Menu_Games_Sub)">HomeSubGames</include>
 			<include condition="!Skin.HasSetting(Menu_Weather) + Skin.HasSetting(Menu_Weather_Sub)">HomeSubWeather</include>
 			<include condition="Skin.HasSetting(Menu_Favourites) + Skin.HasSetting(Menu_Favourites_Sub)">HomeSubFavourites</include>
 			<include condition="!Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(Menu_Settings_Sub)">HomeSubSettings</include>
@@ -3580,6 +3591,51 @@
 					<label>$INFO[Skin.String(Menu_Programs_Sub_Custom22.Label)]</label>
 					<onclick>$INFO[Skin.String(Menu_Programs_Sub_Custom22.Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Programs_Sub_Custom22)</visible>
+				</item>
+			</content>
+		</control>
+	</include>
+	<include name="HomeSubGames">
+		<control type="fixedlist" id="8001">
+			<visible>Container(5040).HasFocus(17)</visible>
+			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
+			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
+			<content>
+				<item id="8102">
+					<description>Menu Games Sub Addons</description>
+					<label>$LOCALIZE[35049]</label>
+					<onclick>ActivateWindow(Games,Addons,return)</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Addons)</visible>
+				</item>
+				<item id="8103">
+					<description>Menu Games Sub Custom1</description>
+					<label>$INFO[Skin.String(Menu_Games_Sub_Custom1.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Games_Sub_Custom1.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Custom1)</visible>
+				</item>
+				<item id="8104">
+					<description>Menu Games Sub Custom2</description>
+					<label>$INFO[Skin.String(Menu_Games_Sub_Custom2.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Games_Sub_Custom2.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Custom2)</visible>
+				</item>
+				<item id="8105">
+					<description>Menu Games Sub Custom3</description>
+					<label>$INFO[Skin.String(Menu_Games_Sub_Custom3.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Games_Sub_Custom3.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Custom3)</visible>
+				</item>
+				<item id="8106">
+					<description>Menu Games Sub Custom4</description>
+					<label>$INFO[Skin.String(Menu_Games_Sub_Custom4.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Games_Sub_Custom4.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Custom4)</visible>
+				</item>
+				<item id="8107">
+					<description>Menu Games Sub Custom5</description>
+					<label>$INFO[Skin.String(Menu_Games_Sub_Custom5.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_Games_Sub_Custom5.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_Games_Sub_Custom5)</visible>
 				</item>
 			</content>
 		</control>

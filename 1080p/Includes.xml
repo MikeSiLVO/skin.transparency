@@ -305,6 +305,18 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
+	<include name="Breadcrumbs-Games">
+		<control type="image">
+			<width>44</width>
+			<height>45</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>Programs</description>
+			<label>$LOCALIZE[15016]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+	</include>
 	<include name="Breadcrumbs-Settings">
 		<control type="image">
 			<width>44</width>

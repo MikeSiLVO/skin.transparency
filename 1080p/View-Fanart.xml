@@ -1587,7 +1587,7 @@
 	</include>
 	<include name="Fanart-ProgramsPicturesAddons">
 		<control type="list" id="50">
-			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(AddonBrowser)</visible>
+			<visible>Window.IsVisible(Programs) | Window.IsVisible(Pictures) | Window.IsVisible(AddonBrowser) | Window.IsVisible(Games)</visible>
 			<left>300</left>
 			<top>213</top>
 			<width>532</width>

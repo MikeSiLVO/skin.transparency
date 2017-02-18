@@ -1,3 +1,6 @@
+Transparency! v11.0.1
+- games support
+
 Transparency! v11.0.0
 - bump for leia
 
