@@ -200,7 +200,7 @@
 					<height>45</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$VAR[PartlyWatched]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Container.Content(Videos) | Container.Content(Files)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 				<control type="image">
 					<left>645</left>
@@ -278,7 +278,7 @@
 					<height>45</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$VAR[PartlyWatched]</texture>
-					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [Container.Content(Files) + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(Enable_Movies_Watched_Flags)] | [Container.Content(TVShows) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Seasons) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Watched_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Watched_Flags)] | [[Container.Content(Videos) | Container.Content(Files)] + !Skin.HasSetting(Enable_Videos_Watched_Flags)] | Window.IsVisible(VideoPlaylist)</visible>
 				</control>
 				<control type="image">
 					<left>645</left>
