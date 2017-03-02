@@ -1,3 +1,6 @@
+Transparency! v11.0.2
+- fix partly watched icon for videos
+
 Transparency! v11.0.1
 - games support
 
