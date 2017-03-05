@@ -52,10 +52,10 @@
 					<top>75</top>
 					<width>375</width>
 					<height>930</height>
-					<label>-</label>
-					<font>-</font>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<label></label>
+					<font></font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
 					<onfocus>SetFocus(8001)</onfocus>
 					<onclick>SetFocus(8001)</onclick>
 					<visible>Skin.HasSetting(TouchScreenMode) + !Skin.HasSetting(HorizontalHomeMenu)</visible>
@@ -66,10 +66,10 @@
 					<top>840</top>
 					<width>1920</width>
 					<height>90</height>
-					<label>-</label>
-					<font>-</font>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<label></label>
+					<font></font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
 					<onfocus>SetFocus(8001)</onfocus>
 					<onclick>SetFocus(8001)</onclick>
 					<visible>Skin.HasSetting(TouchScreenMode) + Skin.HasSetting(HorizontalHomeMenu)</visible>
@@ -137,11 +137,11 @@
 					<top>10</top>
 					<width>30</width>
 					<height>30</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
 					<pulseonselect>true</pulseonselect>
 					<onleft>10</onleft>
 					<onright>10</onright>

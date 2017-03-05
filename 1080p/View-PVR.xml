@@ -422,8 +422,8 @@
 				<top>994</top>
 				<width>60</width>
 				<height>60</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<onclick>Skin.ToggleSetting(EpgLegend)</onclick>
 				<texturefocus>osd-info-focus.png</texturefocus>
 				<texturenofocus>osd-info-nofocus.png</texturenofocus>

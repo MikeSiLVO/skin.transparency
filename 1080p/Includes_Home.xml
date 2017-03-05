@@ -4262,8 +4262,8 @@
 			<top>10</top>
 			<width>30</width>
 			<height>30</height>
-			<label>-</label>
-			<font>-</font>
+			<label></label>
+			<font></font>
 			<texturefocus>SearchFocus.png</texturefocus>
 			<texturenofocus>SearchNoFocus.png</texturenofocus>
 			<pulseonselect>true</pulseonselect>

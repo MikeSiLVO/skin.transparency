@@ -260,8 +260,8 @@
 					<top>706</top>
 					<width>72</width>
 					<height>72</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>trailer-focus.png</texturefocus>
 					<texturenofocus>trailer-nofocus.png</texturenofocus>
 					<onup>9000</onup>
@@ -287,7 +287,7 @@
 				<top>868</top>
 				<width>1485</width>
 				<height>154</height>
-				<label>-</label>
+				<label></label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -303,7 +303,7 @@
 				<top>868</top>
 				<width>1372</width>
 				<height>154</height>
-				<label>-</label>
+				<label></label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -380,8 +380,8 @@
 				<top>1050</top>
 				<width>30</width>
 				<height>30</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<texturefocus>magnifier-small-focus.png</texturefocus>
 				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
 				<onleft>61</onleft>
@@ -403,7 +403,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="34">
 							<control type="image">
@@ -586,7 +586,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<animation effect="slide" start="0,0" end="0,-165" time="0" condition="!Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 						<itemlayout width="1800" height="44">
@@ -730,7 +730,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
 							<control type="image">
@@ -888,7 +888,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
 							<control type="image">

@@ -501,8 +501,8 @@
 				<top>78</top>
 				<width>60</width>
 				<height>60</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<texturefocus>trailer-focus.png</texturefocus>
 				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onup>9000</onup>

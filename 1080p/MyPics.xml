@@ -123,7 +123,7 @@
 					<left>0</left>
 					<top>0</top>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="3">

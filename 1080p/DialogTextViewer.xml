@@ -90,7 +90,7 @@
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font-32</font>
-				<label>-</label>
+				<label></label>
 			</control>
 			<control type="image">
 				<left>60</left>
@@ -105,7 +105,7 @@
 				<top>165</top>
 				<width>1320</width>
 				<height>522</height>
-				<label>-</label>
+				<label></label>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

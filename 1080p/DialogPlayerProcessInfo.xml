@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol>-</defaultcontrol>
+	<defaultcontrol></defaultcontrol>
 	<controls>
 		<!-- codec infos -->
 		<control type="group">
@@ -205,7 +205,7 @@
 				<top>180</top>
 				<width>225</width>
 				<height>22</height>
-				<overlaytexture>-</overlaytexture>
+				<overlaytexture></overlaytexture>
 				<info>PVR.ActStreamProgrSNR</info>
 			</control>
 			<control type="label">

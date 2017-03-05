@@ -34,7 +34,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font-30</font>
-			<label>-</label>
+			<label></label>
 			<textcolor>blue</textcolor>
 		</control>
 		<control type="image">
@@ -258,7 +258,7 @@
 				<description>Get more button</description>
 				<width>300</width>
 				<height>52</height>
-				<label>-</label>
+				<label></label>
 				<font>font-23</font>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -270,7 +270,7 @@
 				<description>Cancel button</description>
 				<width>300</width>
 				<height>52</height>
-				<label>-</label>
+				<label></label>
 				<font>font-23</font>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>

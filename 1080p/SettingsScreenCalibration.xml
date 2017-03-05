@@ -54,7 +54,7 @@
 				<top>15</top>
 				<width>1800</width>
 				<height>38</height>
-				<label>-</label>
+				<label></label>
 				<align>center</align>
 				<font>font-23</font>
 			</control>
@@ -64,7 +64,7 @@
 				<top>60</top>
 				<width>1800</width>
 				<height>38</height>
-				<label>-</label>
+				<label></label>
 				<align>center</align>
 				<font>font-23</font>
 			</control>

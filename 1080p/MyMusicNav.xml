@@ -121,7 +121,7 @@
 				<control type="button" id="2">
 					<description>View As button</description>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="3">
@@ -166,7 +166,7 @@
 					<label>653</label>
 					<altlabel>13353</altlabel>
 					<alttexturefocus border="5">button-focus.png</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturenofocus></alttexturenofocus>
 					<usealttexture>library.isscanningmusic</usealttexture>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>

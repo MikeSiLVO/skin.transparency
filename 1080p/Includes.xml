@@ -1444,8 +1444,8 @@
 		<height>522</height>
 	</include>
 	<include name="game-button">
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
+		<texturenofocus></texturenofocus>
+		<texturefocus></texturefocus>
 		<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 		<onfocus>Skin.Reset(cross1)</onfocus>
 		<onfocus>Skin.Reset(cross2)</onfocus>
@@ -1472,8 +1472,8 @@
 		<top>-15</top>
 		<width>1</width>
 		<height>1</height>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
+		<texturenofocus></texturenofocus>
+		<texturefocus></texturefocus>
 		<onfocus>Skin.ToggleSetting(switchplayer)</onfocus>
 		<onfocus>Skin.Reset(cross1)</onfocus>
 		<onfocus>Skin.Reset(cross2)</onfocus>
@@ -1768,8 +1768,8 @@
 					<textcolor>darkblue</textcolor>
 					<disabledcolor>darkgrey</disabledcolor>
 					<label>[B]°[/B]</label>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>-</texturefocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
 					<enable>String.IsEqual(System.Time(mm),01) | String.IsEqual(System.Time(mm),11) | String.IsEqual(System.Time(mm),21) | String.IsEqual(System.Time(mm),31) | String.IsEqual(System.Time(mm),41) | String.IsEqual(System.Time(mm),51) | String.IsEqual(System.Time(mm),06) | String.IsEqual(System.Time(mm),16) | String.IsEqual(System.Time(mm),26) | String.IsEqual(System.Time(mm),36) | String.IsEqual(System.Time(mm),46) | String.IsEqual(System.Time(mm),56) | Control.isEnabled(5097)</enable>
 				</control>
 				<control type="button" id="5097">
@@ -1783,8 +1783,8 @@
 					<textcolor>darkblue</textcolor>
 					<disabledcolor>darkgrey</disabledcolor>
 					<label>[B]°[/B]</label>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>-</texturefocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
 					<enable>String.IsEqual(System.Time(mm),02) | String.IsEqual(System.Time(mm),12) | String.IsEqual(System.Time(mm),22) | String.IsEqual(System.Time(mm),32) | String.IsEqual(System.Time(mm),42) | String.IsEqual(System.Time(mm),52) | String.IsEqual(System.Time(mm),07) | String.IsEqual(System.Time(mm),17) | String.IsEqual(System.Time(mm),27) | String.IsEqual(System.Time(mm),37) | String.IsEqual(System.Time(mm),47) | String.IsEqual(System.Time(mm),57) | Control.isEnabled(5098)</enable>
 				</control>
 				<control type="button" id="5098">
@@ -1798,8 +1798,8 @@
 					<textcolor>darkblue</textcolor>
 					<disabledcolor>darkgrey</disabledcolor>
 					<label>[B]°[/B]</label>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>-</texturefocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
 					<enable>String.IsEqual(System.Time(mm),03) | String.IsEqual(System.Time(mm),13) | String.IsEqual(System.Time(mm),23) | String.IsEqual(System.Time(mm),33) | String.IsEqual(System.Time(mm),43) | String.IsEqual(System.Time(mm),53) | String.IsEqual(System.Time(mm),08) | String.IsEqual(System.Time(mm),18) | String.IsEqual(System.Time(mm),28) | String.IsEqual(System.Time(mm),38) | String.IsEqual(System.Time(mm),48) | String.IsEqual(System.Time(mm),58) | Control.isEnabled(5099)</enable>
 				</control>
 				<control type="button" id="5099">
@@ -1813,8 +1813,8 @@
 					<textcolor>darkblue</textcolor>
 					<disabledcolor>darkgrey</disabledcolor>
 					<label>[B]°[/B]</label>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>-</texturefocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
 					<enable>String.IsEqual(System.Time(mm),04) | String.IsEqual(System.Time(mm),14) | String.IsEqual(System.Time(mm),24) | String.IsEqual(System.Time(mm),34) | String.IsEqual(System.Time(mm),44) | String.IsEqual(System.Time(mm),54) | String.IsEqual(System.Time(mm),09) | String.IsEqual(System.Time(mm),19) | String.IsEqual(System.Time(mm),29) | String.IsEqual(System.Time(mm),39) | String.IsEqual(System.Time(mm),49) | String.IsEqual(System.Time(mm),59)</enable>
 				</control>
 			</control>
@@ -1828,8 +1828,8 @@
 				<onup>noop</onup>
 				<ondown>noop</ondown>
 				<viewtype label="">panel</viewtype>
-				<pagecontrol>-</pagecontrol>
-				<scrolltime>-</scrolltime>
+				<pagecontrol></pagecontrol>
+				<scrolltime></scrolltime>
 				<hitrect x="-15" y="-15" w="1" h="1" />
 				<itemlayout height="52" width="52">
 					<control type="label">
@@ -2483,7 +2483,7 @@
 		<width>600</width>
 		<height>90</height>
 		<itemgap>-3</itemgap>
-		<pagecontrol>-</pagecontrol>
+		<pagecontrol></pagecontrol>
 		<onleft>8100</onleft>
 		<onright>9000</onright>
 		<onup>8200</onup>

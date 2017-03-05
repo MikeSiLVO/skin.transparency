@@ -3,7 +3,7 @@
 	<default type="button">
 		<width>1320</width>
 		<height>52</height>
-		<label>-</label>
+		<label></label>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		<font>font-20</font>
@@ -39,10 +39,10 @@
 	<default type="image">
 		<left>0</left>
 		<top>0</top>
-		<texture>-</texture>
+		<texture></texture>
 	</default>
 	<default type="label">
-		<label>-</label>
+		<label></label>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<scrollsuffix>     -     </scrollsuffix>
@@ -57,10 +57,10 @@
 		<left>0</left>
 		<top>0</top>
 		<texturebg border="10,0,10,0">Progress-Back.png</texturebg>
-		<lefttexture>-</lefttexture>
+		<lefttexture></lefttexture>
 		<midtexture border="10,0,10,0">Progress-Mid.png</midtexture>
-		<righttexture>-</righttexture>
-		<overlaytexture>-</overlaytexture>
+		<righttexture></righttexture>
+		<overlaytexture></overlaytexture>
 	</default>
 	<default type="radiobutton">
 		<left>0</left>
@@ -77,7 +77,7 @@
 		<textureradiooffdisabled colordiffuse="40FFFFFF">radiobutton-off.png</textureradiooffdisabled>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
-		<label>-</label>
+		<label></label>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<focusedcolor>white</focusedcolor>
@@ -141,7 +141,7 @@
 		<spinwidth>50</spinwidth>
 		<spinheight>33</spinheight>
 		<texturefocus border="7">list-focus.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturenofocus></texturenofocus>
 		<textureup>scroll-up-2.png</textureup>
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
@@ -174,7 +174,7 @@
 		<alttexturefocus>scroll-down-focus.png</alttexturefocus>
 		<alttexturenofocus>scroll-down.png</alttexturenofocus>
 		<textcolor>white</textcolor>
-		<label>-</label>
+		<label></label>
 		<font>font-20</font>
 		<disabledcolor>darkgrey</disabledcolor>
 		<pulseonselect>true</pulseonselect>

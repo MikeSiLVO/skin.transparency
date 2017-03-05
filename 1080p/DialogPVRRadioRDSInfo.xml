@@ -67,7 +67,7 @@
 					<onright>49</onright>
 					<onup>61</onup>
 					<ondown>9000</ondown>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="1620" height="44">
 						<control type="image">

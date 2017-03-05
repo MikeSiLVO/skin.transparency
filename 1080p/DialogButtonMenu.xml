@@ -59,8 +59,8 @@
 					<description>Master mode button</description>
 					<width>90</width>
 					<height>90</height>
-					<label>-</label>
-					<altlabel>-</altlabel>
+					<label></label>
+					<altlabel></altlabel>
 					<texturefocus>shut-master-focus.png</texturefocus>
 					<texturenofocus>shut-master-nofocus.png</texturenofocus>
 					<usealttexture>!System.IsMaster</usealttexture>
@@ -68,7 +68,7 @@
 					<alttexturenofocus>shut-nomaster-nofocus.png</alttexturenofocus>
 					<onclick>mastermode</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
+					<font></font>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Master) + System.HasLocks</visible>
 				</control>
 				<control type="button" id="22">
@@ -80,8 +80,8 @@
 					<onclick>dialog.close(all,true)</onclick>
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + [System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="23">
@@ -92,8 +92,8 @@
 					<texturenofocus>shut-info-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<pulseonselect>no</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="10">
@@ -104,8 +104,8 @@
 					<texturenofocus>shut-filemanager-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(FileManager)</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="11">
@@ -116,8 +116,8 @@
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
 					<onclick>Quit</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
 				</control>
 				<control type="button" id="13">
@@ -128,8 +128,8 @@
 					<texturenofocus>shut-restart-nofocus.png</texturenofocus>
 					<onclick>RestartApp</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
 				</control>
 				<control type="button" id="36">
@@ -141,8 +141,8 @@
 					<texturefocus>shut-shutdown-focus.png</texturefocus>
 					<texturenofocus>shut-shutdown-nofocus.png</texturenofocus>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<onclick condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">Shutdown</onclick>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 				</control>
@@ -156,8 +156,8 @@
 					<texturenofocus>shut-timer-nofocus.png</texturenofocus>
 					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!System.HasAlarm(shutdowntimer) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 				</control>
 				<control type="button" id="35">
@@ -170,8 +170,8 @@
 					<texturenofocus>shut-timer-nofocus.png</texturenofocus>
 					<onclick>CancelAlarm(shutdowntimer)</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>System.HasAlarm(shutdowntimer) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
 				</control>
 				<control type="button" id="15">
@@ -183,8 +183,8 @@
 					<onclick>Dialog.Close(ShutdownMenu)</onclick>
 					<onclick>Suspend</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
 				</control>
 				<control type="button" id="16">
@@ -196,8 +196,8 @@
 					<onclick>Dialog.Close(ShutdownMenu)</onclick>
 					<onclick>Hibernate</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
 				</control>
 				<control type="button" id="17">
@@ -208,8 +208,8 @@
 					<texturenofocus>shut-favourites-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="18">
@@ -220,8 +220,8 @@
 					<texturenofocus>shut-reboot-nofocus.png</texturenofocus>
 					<onclick>Reset</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
 				</control>
 				<control type="button" id="19">
@@ -232,8 +232,8 @@
 					<texturefocus>shut-settings-focus.png</texturefocus>
 					<onclick>ActivateWindow(Settings)</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.LoggedOn</visible>
 				</control>
 				<control type="button" id="20">
@@ -244,8 +244,8 @@
 					<texturefocus>shut-eject-focus.png</texturefocus>
 					<onclick>EjectTray</onclick>
 					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
+					<font></font>
+					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.LoggedOn</visible>
 				</control>
 			</control>

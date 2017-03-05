@@ -5,8 +5,8 @@
 			<description>fake button to steal focus</description>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
 			<onclick>noop</onclick>
 			<visible>Skin.String(WeatherMenu,2) | Skin.String(WeatherMenu,3) | Skin.String(WeatherMenu,4) | Skin.String(WeatherMenu,5) | Skin.String(WeatherMenu,6) | String.IsEmpty(Window.Property(Map.IsFetched))</visible>
 		</control>
@@ -83,7 +83,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<visible>!String.IsEmpty(Window.Property(Map.IsFetched))</visible>
 						<itemlayout width="550" height="38">
@@ -212,7 +212,7 @@
 						<onright>49</onright>
 						<onup>5</onup>
 						<ondown>5</ondown>
-						<pagecontrol>-</pagecontrol>
+						<pagecontrol></pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout width="550" height="50">
 							<control type="label">

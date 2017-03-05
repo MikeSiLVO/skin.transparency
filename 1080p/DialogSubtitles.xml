@@ -403,10 +403,10 @@
 			<top>0</top>
 			<width>1</width>
 			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<label></label>
+			<font></font>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
 			<visible>true</visible>
 		</control>
 	</controls>

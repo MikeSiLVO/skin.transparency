@@ -196,13 +196,13 @@
 				<control type="button" id="21">
 					<description>Level button</description>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="22">
 					<description>Only show current level</description>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="20">

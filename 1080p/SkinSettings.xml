@@ -1074,7 +1074,7 @@
 					<width>1320</width>
 					<height>610</height>
 					<itemgap>-2</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>501</onup>
@@ -1114,7 +1114,7 @@
 					<width>1470</width>
 					<height>668</height>
 					<itemgap>0</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>601</onup>
@@ -1132,8 +1132,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Master)</onclick>
 						<onleft>9000</onleft>
@@ -1154,8 +1154,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Logoff)</onclick>
 						<onleft>602</onleft>
@@ -1176,8 +1176,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Info)</onclick>
 						<onleft>603</onleft>
@@ -1198,8 +1198,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Filemanager)</onclick>
 						<onleft>604</onleft>
@@ -1220,8 +1220,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Exit)</onclick>
 						<onleft>605</onleft>
@@ -1242,8 +1242,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Restart)</onclick>
 						<onleft>606</onleft>
@@ -1264,8 +1264,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Shutdown)</onclick>
 						<onleft>607</onleft>
@@ -1286,8 +1286,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Timer)</onclick>
 						<onleft>608</onleft>
@@ -1308,8 +1308,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Suspend)</onclick>
 						<onleft>609</onleft>
@@ -1330,8 +1330,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Hibernate)</onclick>
 						<onleft>610</onleft>
@@ -1352,8 +1352,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Favourites)</onclick>
 						<onleft>611</onleft>
@@ -1374,8 +1374,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Reboot)</onclick>
 						<onleft>612</onleft>
@@ -1396,8 +1396,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Settings)</onclick>
 						<onleft>613</onleft>
@@ -1418,8 +1418,8 @@
 						<top>195</top>
 						<width>105</width>
 						<height>105</height>
-						<texturefocus border="7">-</texturefocus>
-						<texturenofocus border="7">-</texturenofocus>
+						<texturefocus border="7"></texturefocus>
+						<texturenofocus border="7"></texturenofocus>
 						<pulseonselect>yes</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Eject)</onclick>
 						<onleft>614</onleft>
@@ -1764,7 +1764,7 @@
 					<width>375</width>
 					<height>910</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>9000</onleft>
 					<onright>8100</onright>
 					<onup>801</onup>
@@ -1905,7 +1905,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2002,7 +2002,7 @@
 					<width>525</width>
 					<height>969</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2234,7 +2234,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2403,7 +2403,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2572,7 +2572,7 @@
 					<width>525</width>
 					<height>1035</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2723,7 +2723,7 @@
 					<width>624</width>
 					<height>1035</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -2955,7 +2955,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3106,7 +3106,7 @@
 					<width>525</width>
 					<height>1035</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3338,7 +3338,7 @@
 					<width>525</width>
 					<height>297</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3417,7 +3417,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3496,7 +3496,7 @@
 					<width>525</width>
 					<height>297</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3717,7 +3717,7 @@
 					<width>525</width>
 					<height>818</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3805,7 +3805,7 @@
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -3929,7 +3929,7 @@
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -4053,7 +4053,7 @@
 					<width>525</width>
 					<height>900</height>
 					<itemgap>-3</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<onleft>801</onleft>
 					<onright>8200</onright>
 					<onup>8100</onup>
@@ -6630,8 +6630,8 @@
 						<top>-15</top>
 						<width>1</width>
 						<height>1</height>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 						<onfocus condition="Skin.String(player1score,5) | Skin.String(player2score,5)">Skin.Reset(player1score)</onfocus>
 						<onfocus condition="Skin.String(player1score,5) | Skin.String(player2score,5)">Skin.Reset(player2score)</onfocus>
 						<onfocus>SetFocus(80)</onfocus>
@@ -6799,7 +6799,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross1)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6814,7 +6814,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross2)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6829,7 +6829,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross3)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6844,7 +6844,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross4)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6859,7 +6859,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross5)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6874,7 +6874,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross6)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6889,7 +6889,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross7)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6904,7 +6904,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross8)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6919,7 +6919,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(cross9)</onclick>
 								<onclick>Skin.SetString(playerturn,2)</onclick>
@@ -6939,7 +6939,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle1)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -6954,7 +6954,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle2)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -6969,7 +6969,7 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle3)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -6984,7 +6984,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle4)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -6999,7 +6999,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle5)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -7014,7 +7014,7 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle6)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -7029,7 +7029,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle7)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -7044,7 +7044,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle8)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -7059,7 +7059,7 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
+								<texturenofocus></texturenofocus>
 								<texturefocus>game-select.png</texturefocus>
 								<onclick>Skin.SetBool(circle9)</onclick>
 								<onclick>Skin.SetString(playerturn,1)</onclick>
@@ -7183,8 +7183,8 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>9</onleft>
 								<onright>2</onright>
@@ -7196,8 +7196,8 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>1</onleft>
 								<onright>3</onright>
@@ -7209,8 +7209,8 @@
 								<top>30</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>2</onleft>
 								<onright>4</onright>
@@ -7222,8 +7222,8 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>3</onleft>
 								<onright>5</onright>
@@ -7235,8 +7235,8 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>4</onleft>
 								<onright>6</onright>
@@ -7248,8 +7248,8 @@
 								<top>278</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>5</onleft>
 								<onright>7</onright>
@@ -7261,8 +7261,8 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>6</onleft>
 								<onright>8</onright>
@@ -7274,8 +7274,8 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>7</onleft>
 								<onright>9</onright>
@@ -7287,8 +7287,8 @@
 								<top>540</top>
 								<width>165</width>
 								<height>165</height>
-								<texturenofocus>-</texturenofocus>
-								<texturefocus>-</texturefocus>
+								<texturenofocus></texturenofocus>
+								<texturefocus></texturefocus>
 								<onfocus>SetFocus(99)</onfocus>
 								<onleft>8</onleft>
 								<onright>1</onright>

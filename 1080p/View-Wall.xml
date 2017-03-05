@@ -603,7 +603,7 @@
 					<top>0</top>
 					<width>372</width>
 					<height>543</height>
-					<texture>-</texture>
+					<texture></texture>
 				</control>
 			</focusedlayout>
 		</control>
@@ -1255,7 +1255,7 @@
 					<top>0</top>
 					<width>480</width>
 					<height>267</height>
-					<texture>-</texture>
+					<texture></texture>
 				</control>
 			</focusedlayout>
 		</control>
@@ -1852,7 +1852,7 @@
 					<top>0</top>
 					<width>578</width>
 					<height>578</height>
-					<texture>-</texture>
+					<texture></texture>
 				</control>
 			</focusedlayout>
 		</control>

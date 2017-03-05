@@ -449,8 +449,8 @@
 				<top>21</top>
 				<width>60</width>
 				<height>60</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<texturefocus>trailer-focus.png</texturefocus>
 				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onleft>9000</onleft>

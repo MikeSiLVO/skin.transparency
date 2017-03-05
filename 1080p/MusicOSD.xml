@@ -49,8 +49,8 @@
 				<control type="button" id="901">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-previous-focus.png</texturefocus>
 					<texturenofocus>osdplayer-previous-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
@@ -58,8 +58,8 @@
 				<control type="button" id="902">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-rewind-focus.png</texturefocus>
 					<texturenofocus>osdplayer-rewind-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(Rewind)</onclick>
@@ -67,8 +67,8 @@
 				<control type="togglebutton" id="903">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-pause-focus.png</texturefocus>
 					<texturenofocus>osdplayer-pause-nofocus.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -79,8 +79,8 @@
 				<control type="button" id="904">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-forward-focus.png</texturefocus>
 					<texturenofocus>osdplayer-forward-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(Forward)</onclick>
@@ -88,8 +88,8 @@
 				<control type="button" id="905">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-next-focus.png</texturefocus>
 					<texturenofocus>osdplayer-next-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
@@ -97,8 +97,8 @@
 				<control type="button" id="906">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-stop-focus.png</texturefocus>
 					<texturenofocus>osdplayer-stop-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
@@ -111,10 +111,10 @@
 						<top>0</top>
 						<width>60</width>
 						<height>60</height>
-						<label>-</label>
-						<font>-</font>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<label></label>
+						<font></font>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 						<onleft>906</onleft>
 						<onright>908</onright>
 						<onclick>PlayerControl(Repeat)</onclick>
@@ -171,8 +171,8 @@
 				<control type="togglebutton" id="908">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-random-focus.png</texturefocus>
 					<texturenofocus>osdplayer-random-nofocus.png</texturenofocus>
 					<usealttexture>Playlist.IsRandom</usealttexture>
@@ -183,8 +183,8 @@
 				<control type="button" id="909">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-record-focus.png</texturefocus>
 					<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(record)</onclick>
@@ -193,8 +193,8 @@
 				<control type="button" id="910">
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 					<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
 					<onclick>PlayerControl(record)</onclick>
@@ -214,8 +214,8 @@
 					<description>Background Settings</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-background-nofocus.png</texturenofocus>
 					<texturefocus>osd-background-focus.png</texturefocus>
 					<onclick>ActivateWindow(1112)</onclick>
@@ -227,8 +227,8 @@
 					<top>0</top>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-info-nofocus.png</texturenofocus>
 					<texturefocus>osd-info-focus.png</texturefocus>
 					<onclick>Skin.ToggleSetting(Music_OSD_Info)</onclick>
@@ -237,8 +237,8 @@
 					<description>Visualization Menu</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-vis-nofocus.png</texturenofocus>
 					<texturefocus>osd-vis-focus.png</texturefocus>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
@@ -247,8 +247,8 @@
 					<description>Visualization Settings</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-preset-nofocus.png</texturenofocus>
 					<texturefocus>osd-preset-focus.png</texturefocus>
 					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
@@ -258,8 +258,8 @@
 					<description>Visualization Presets</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 					<texturefocus>osd-bookmark-focus.png</texturefocus>
 					<onclick>ActivateWindow(VisualisationPresetList)</onclick>
@@ -269,8 +269,8 @@
 					<description>Audio Menu</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 					<texturefocus>osd-audio-focus.png</texturefocus>
 					<onclick>ActivateWindow(1114)</onclick>
@@ -279,8 +279,8 @@
 					<description>Lyrics Script</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 					<texturefocus>osd-subs-focus.png</texturefocus>
 					<onclick>RunScript(script.cu.lrclyrics)</onclick>
@@ -291,8 +291,8 @@
 					<description>Last.fm love</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-love-nofocus.png</texturenofocus>
 					<texturefocus>osd-love-focus.png</texturefocus>
 					<onclick>RunScript(service.scrobbler.lastfm,action=LastFM.Love)</onclick>
@@ -302,8 +302,8 @@
 					<description>Last.fm ban</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-ban-nofocus.png</texturenofocus>
 					<texturefocus>osd-ban-focus.png</texturefocus>
 					<onclick>RunScript(service.scrobbler.lastfm,action=LastFM.Ban)</onclick>
@@ -313,8 +313,8 @@
 					<description>rds</description>
 					<width>60</width>
 					<height>60</height>
-					<label>-</label>
-					<font>-</font>
+					<label></label>
+					<font></font>
 					<texturenofocus>osd-rds-nofocus.png</texturenofocus>
 					<texturefocus>osd-rds-focus.png</texturefocus>
 					<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>

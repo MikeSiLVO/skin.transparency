@@ -67,7 +67,7 @@
 				<aligny>center</aligny>
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
-				<label>-</label>
+				<label></label>
 				<onup>16</onup>
 				<onleft>17</onleft>
 				<onright>17</onright>

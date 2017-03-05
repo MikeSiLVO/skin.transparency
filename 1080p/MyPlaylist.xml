@@ -129,7 +129,7 @@
 					<left>0</left>
 					<top>0</top>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="radiobutton" id="20">
@@ -145,7 +145,7 @@
 					<left>0</left>
 					<top>135</top>
 					<include>ButtonCommonValues</include>
-					<label>-</label>
+					<label></label>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="21">

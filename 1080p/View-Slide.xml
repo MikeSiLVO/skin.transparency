@@ -1380,8 +1380,8 @@
 				<top>90</top>
 				<width>72</width>
 				<height>72</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<texturefocus>trailer-focus.png</texturefocus>
 				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onup>9000</onup>
