@@ -16,18 +16,19 @@
 		</control>
 		<control type="group">
 			<include>ContentFade</include>
+			<control type="image">
+				<left>0</left>
+				<top>278</top>
+				<width>1920</width>
+				<height>630</height>
+				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
+				<include>Window_OpenClose_Animation</include>
+			</control>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
-				<control type="image">
-					<left>360</left>
-					<top>212</top>
-					<width>1200</width>
-					<height>78</height>
-					<texture border="20">settings-header.png</texture>
-				</control>
 				<control type="label">
 					<left>360</left>
-					<top>228</top>
+					<top>298</top>
 					<width>1200</width>
 					<height>45</height>
 					<font>font-32c</font>
@@ -37,14 +38,6 @@
 					<aligny>center</aligny>
 					<label>[UPPERCASE][B]$LOCALIZE[31046][/B][/UPPERCASE]</label>
 				</control>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>278</top>
-				<width>1920</width>
-				<height>630</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="fixedlist" id="52">
 				<left>0</left>
