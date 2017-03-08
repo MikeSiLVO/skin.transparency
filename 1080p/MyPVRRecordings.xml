@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol>50</defaultcontrol>
-	<views>50</views>
+	<defaultcontrol>58</defaultcontrol>
+	<views>58</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
@@ -34,14 +34,10 @@
 				<animation effect="slide" start="0,0" end="1045,393" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="1045,-190" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<include>ContentPanel</include>
-				<include>Fanart-PVRRecordings</include>
+				<include>MediaInfo-PVRRecordings</include>
 				<include>ScrollOffsetLabel</include>
 				<include>AllViewCommonPageControls</include>
 			</control>
-		</control>
-		<control type="group">
-			<include>ContentFade2</include>
-			<include>Fanart-PVRRecordings_Extras</include>
 		</control>
 		<control type="group">
 			<top>34</top>
