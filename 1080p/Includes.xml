@@ -42,7 +42,7 @@
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>50</onleft>
+			<onleft>52</onleft>
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
@@ -122,7 +122,7 @@
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>50</onleft>
+			<onleft>58</onleft>
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
@@ -1650,8 +1650,10 @@
 			<description>Channels</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[19019]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
@@ -1663,8 +1665,10 @@
 			<description>Guide</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[22020]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
@@ -1676,8 +1680,10 @@
 			<description>Recordings</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[19163]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
@@ -1689,8 +1695,10 @@
 			<description>Search</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[137]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
@@ -1702,8 +1710,10 @@
 			<description>Timers</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[19040]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>
@@ -1715,8 +1725,10 @@
 			<description>Rules</description>
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[19138]</label>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onleft>
+			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">50</onright>
+			<onleft condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onleft>
+			<onright condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">58</onright>
 			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
 			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
 			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers) | Window.IsVisible(TVTimerRules) | Window.IsVisible(RadioTimerRules)">52</onleft>

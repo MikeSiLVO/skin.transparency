@@ -47,8 +47,8 @@
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim2</include>
-				<onleft>50</onleft>
-				<onright>50</onright>
+				<onleft>58</onleft>
+				<onright>58</onright>
 				<itemgap>-2</itemgap>
 				<control type="button" id="2">
 					<description>View As button</description>
