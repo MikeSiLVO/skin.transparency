@@ -681,8 +681,8 @@
 			<top>213</top>
 			<width>1320</width>
 			<height>654</height>
-			<onup>52</onup>
-			<ondown>52</ondown>
+			<onup>58</onup>
+			<ondown>58</ondown>
 			<onleft>9000</onleft>
 			<onright>60</onright>
 			<viewtype label="535">list</viewtype>
