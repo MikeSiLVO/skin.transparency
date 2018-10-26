@@ -75,22 +75,6 @@
 				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
 				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 				<action>volume</action>
-				<onup>889</onup>
-				<ondown>889</ondown>
-			</control>
-			<control type="button" id="889">
-				<left>68</left>
-				<top>186</top>
-				<width>1065</width>
-				<height>45</height>
-				<label>15047</label>
-				<texturenofocus border="7">list-nofocus.png</texturenofocus>
-				<texturefocus border="7">list-focus.png</texturefocus>
-				<onclick>Dialog.Close(1114)</onclick>
-				<onclick>ActivateWindow(OSDAudioDSPSettings)</onclick>
-				<visible>system.getbool(audiooutput.dspaddonsenabled)</visible>
-				<onup>888</onup>
-				<ondown>888</ondown>
 			</control>
 		</control>
 	</controls>

@@ -5,6 +5,7 @@
 		<top>30</top>
 	</coordinates>
 	<include>dialogeffect</include>
+	<onload>Dialog.Close(osdsubtitlesettings)</onload>
 	<controls>
 		<control type="group" id="250">
 			<control type="image">

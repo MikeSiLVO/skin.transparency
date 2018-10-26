@@ -78,14 +78,14 @@
 			</control>
 			<control type="image">
 				<left>60</left>
-				<top>638</top>
+				<top>660</top>
 				<width>1800</width>
 				<height>3</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>1600</left>
-				<top>160</top>
+				<top>140</top>
 				<width>273</width>
 				<orientation>vertical</orientation>
 				<onleft condition="Control.IsVisible(49)">49</onleft>
@@ -215,6 +215,20 @@
 					<usealttexture>!String.IsEmpty(Window(Home).Property(Transparency-AddonScreenshots))</usealttexture>
 					<onclick condition="String.IsEmpty(Window(Home).Property(Transparency-AddonScreenshots))">SetProperty(Transparency-AddonScreenshots,True,Home)</onclick>
 					<onclick condition="!String.IsEmpty(Window(Home).Property(Transparency-AddonScreenshots))">ClearProperty(Transparency-AddonScreenshots,Home)</onclick>
+				</control>
+				<control type="button" id="10">
+					<description>Dependencies</description>
+					<width>273</width>
+					<height>52</height>
+					<label>39024</label>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 				</control>
 			</control>
 			<control type="textbox">

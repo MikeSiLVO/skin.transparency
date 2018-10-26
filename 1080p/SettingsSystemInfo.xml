@@ -179,7 +179,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>61</pagecontrol>
-				<onright>61</onright>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="scrollbar" id="61">

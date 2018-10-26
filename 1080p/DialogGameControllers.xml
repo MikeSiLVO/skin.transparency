@@ -93,11 +93,21 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="gamecontroller" id="31">
-				<left>600</left>
+				<left>745</left>
 				<top>225</top>
-				<width>720</width>
+				<width>429</width>
 				<height>429</height>
 				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="textbox" id="32">
+				<description>Description</description>
+				<left>500</left>
+				<top>680</top>
+				<width>920</width>
+				<height>160</height>
+				<font>font-20</font>
+				<textcolor>blue</textcolor>
+				<align>center</align>
 			</control>
 			<control type="label">
 				<description>Feature Types Label</description>
@@ -133,8 +143,7 @@
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
 			</control>
 			<control type="label" id="8">
-				<description>separator label</description>
-				<label />
+				<description>feature group title</description>
 				<height>38</height>
 				<font>font-20</font>
 				<align>center</align>
@@ -169,9 +178,9 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<left>360</left>
+				<left>0</left>
 				<top>990</top>
-				<width>1200</width>
+				<width>1920</width>
 				<height>52</height>
 				<align>center</align>
 				<orientation>horizontal</orientation>
@@ -204,7 +213,7 @@
 					<aligny>center</aligny>
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<label>10035</label>
+					<label>13007</label>
 				</control>
 				<control type="button" id="20">
 					<description>More</description>
@@ -220,6 +229,20 @@
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>21452</label>
 				</control>
+				<control type="button" id="22">
+					<description>Get all</description>
+					<width>300</width>
+					<height>52</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>35021</label>
+				</control>
 				<control type="button" id="17">
 					<description>Help</description>
 					<width>300</width>
@@ -233,6 +256,20 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>10043</label>
+				</control>
+				<control type="button" id="21">
+					<description>Ignore input</description>
+					<width>300</width>
+					<height>52</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>35019</label>
 				</control>
 			</control>
 		</control>

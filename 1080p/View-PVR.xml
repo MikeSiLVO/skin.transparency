@@ -148,10 +148,10 @@
 	<include name="Grid-PVRGuideEPG">
 		<control type="epggrid" id="10">
 			<description>EPG Grid</description>
-			<left>62</left>
-			<top>90</top>
+			<left>52</left>
+			<top>70</top>
 			<width>1792</width>
-			<height>765</height>
+			<height>805</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
 			<onup>10</onup>
@@ -162,6 +162,18 @@
 			<timeblocks>40</timeblocks>
 			<rulerunit>6</rulerunit>
 			<progresstexture border="0,3,8,3">epg-marker.png</progresstexture>
+			<rulerdatelayout height="40" width="1792">
+				<control type="label" id="2">
+					<left>0</left>
+					<top>5</top>
+					<width>1792</width>
+					<height>40</height>
+					<font>font-19</font>
+					<align>center</align>
+					<textcolor>blue</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</rulerdatelayout>
 			<rulerlayout height="44" width="60">
 				<control type="image" id="1">
 					<left>0</left>
@@ -369,7 +381,7 @@
 			<visible>Control.IsVisible(10)</visible>
 			<control type="label">
 				<left>60</left>
-				<top>866</top>
+				<top>876</top>
 				<width>1800</width>
 				<height>45</height>
 				<font>font-23</font>
@@ -380,7 +392,7 @@
 			</control>
 			<control type="label">
 				<left>60</left>
-				<top>898</top>
+				<top>910</top>
 				<width>1800</width>
 				<height>45</height>
 				<font>font-23</font>

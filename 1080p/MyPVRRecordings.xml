@@ -69,6 +69,11 @@
 					<altlabel>$LOCALIZE[31412] $LOCALIZE[585]</altlabel>
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
+				<control type="button" id="10">
+					<description>Watched Toggle</description>
+					<include>ButtonCommonValues</include>
+					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
+				</control>
 				<control type="radiobutton" id="5">
 					<description>Group items</description>
 					<include>ButtonCommonValues</include>

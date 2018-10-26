@@ -289,8 +289,8 @@
 						<font></font>
 						<texturefocus>osdplayer-record-focus.png</texturefocus>
 						<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
-						<onclick>PlayerControl(record)</onclick>
-						<visible>Player.CanRecord + !Player.Recording</visible>
+						<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+						<visible>PVR.CanRecordPlayingChannel + !PVR.IsRecordingPlayingChannel</visible>
 					</control>
 					<control type="button" id="910">
 						<width>60</width>
@@ -299,8 +299,8 @@
 						<font></font>
 						<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 						<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
-						<onclick>PlayerControl(record)</onclick>
-						<visible>Player.CanRecord + Player.Recording</visible>
+						<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+						<visible>PVR.CanRecordPlayingChannel + PVR.IsRecordingPlayingChannel</visible>
 					</control>
 				</control>
 				<control type="grouplist">
@@ -334,7 +334,7 @@
 						<font></font>
 						<texturenofocus>osd-epg-nofocus.png</texturenofocus>
 						<texturefocus>osd-epg-focus.png</texturefocus>
-						<onclick>ActivateWindow(PVROSDGuide)</onclick>
+						<onclick>ActivateWindow(pvrchannelguide)</onclick>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="button" id="921">
@@ -399,7 +399,7 @@
 						<font></font>
 						<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 						<texturefocus>osd-subs-focus.png</texturefocus>
-						<onclick>ActivateWindow(SubtitleSearch)</onclick>
+						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 					</control>
 					<control type="button" id="917">
 						<description>DVD menu button</description>

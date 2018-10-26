@@ -187,8 +187,8 @@
 					<font></font>
 					<texturefocus>osdplayer-record-focus.png</texturefocus>
 					<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
-					<onclick>PlayerControl(record)</onclick>
-					<visible>Player.CanRecord + !Player.Recording</visible>
+					<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+					<visible>PVR.CanRecordPlayingChannel + !PVR.IsRecordingPlayingChannel</visible>
 				</control>
 				<control type="button" id="910">
 					<width>60</width>
@@ -197,8 +197,8 @@
 					<font></font>
 					<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 					<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
-					<onclick>PlayerControl(record)</onclick>
-					<visible>Player.CanRecord + Player.Recording</visible>
+					<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+					<visible>PVR.CanRecordPlayingChannel + PVR.IsRecordingPlayingChannel</visible>
 				</control>
 			</control>
 			<control type="grouplist">
