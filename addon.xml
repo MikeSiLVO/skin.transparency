@@ -87,8 +87,6 @@
 		<platform>all</platform>
 		<license>Creative Commons Attribution-ShareAlike 3.0 license</license>
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=115</forum>
-		<website></website>
-		<email></email>
 		<source>https://gitlab.com/ronie/skin.transparency/</source>
 		<assets>
 			<icon>resources/icon.png</icon>
