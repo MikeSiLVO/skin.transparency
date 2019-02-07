@@ -49,7 +49,6 @@ msgstr ""
 msgctxt "#31008"
 msgid "Pixel format"
 msgstr ""
-msgstr ""
 
 msgctxt "#31009"
 msgid "Memory usage"
