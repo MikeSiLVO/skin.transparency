@@ -1313,7 +1313,7 @@
 				<width>262</width>
 				<height>38</height>
 				<aspectratio>keep</aspectratio>
-				<texture fallback="rating0.png">$INFO[ListItem.Property(Album_Rating),rating,.png]</texture>
+				<texture fallback="rating/0.0.png">$INFO[ListItem.Property(Album_Rating),rating/,.png]</texture>
 				<visible>Container.Content(Albums)</visible>
 			</control>
 			<control type="image">
@@ -1322,7 +1322,7 @@
 				<width>262</width>
 				<height>38</height>
 				<aspectratio>keep</aspectratio>
-				<texture fallback="rating0.png">$INFO[ListItem.UserRating,rating,.png]</texture>
+				<texture fallback="rating/0.0.png">$INFO[ListItem.UserRating,rating/,.0.png]</texture>
 				<visible>Container.Content(Songs)</visible>
 			</control>
 		</control>
