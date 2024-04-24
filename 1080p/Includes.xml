@@ -305,6 +305,17 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
+	<include name="Breadcrumbs-Favourites">
+		<control type="image">
+			<width>44</width>
+			<height>45</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<label>$LOCALIZE[1036]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+	</include>
 	<include name="Breadcrumbs-Games">
 		<control type="image">
 			<width>44</width>
@@ -1839,7 +1850,6 @@
 				<onright>noop</onright>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<viewtype label="">panel</viewtype>
 				<pagecontrol></pagecontrol>
 				<scrolltime></scrolltime>
 				<hitrect x="-15" y="-15" w="1" h="1" />

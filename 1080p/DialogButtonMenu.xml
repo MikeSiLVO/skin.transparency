@@ -67,7 +67,7 @@
 					<alttexturefocus>shut-nomaster-focus.png</alttexturefocus>
 					<alttexturenofocus>shut-nomaster-nofocus.png</alttexturenofocus>
 					<onclick>mastermode</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Master) + System.HasLocks</visible>
 				</control>
@@ -79,7 +79,7 @@
 					<texturenofocus>shut-logoff-nofocus.png</texturenofocus>
 					<onclick>dialog.close(all,true)</onclick>
 					<onclick>system.logoff</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Logoff) + [System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)] + System.LoggedOn</visible>
@@ -91,7 +91,7 @@
 					<texturefocus>shut-info-focus.png</texturefocus>
 					<texturenofocus>shut-info-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
-					<pulseonselect>no</pulseonselect>
+					<pulseonselect>false</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Info) + System.LoggedOn</visible>
@@ -103,7 +103,7 @@
 					<texturefocus>shut-filemanager-focus.png</texturefocus>
 					<texturenofocus>shut-filemanager-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(FileManager)</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Filemanager) + System.LoggedOn</visible>
@@ -115,7 +115,7 @@
 					<texturefocus>shut-exit-focus.png</texturefocus>
 					<texturenofocus>shut-exit-nofocus.png</texturenofocus>
 					<onclick>Quit</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
@@ -127,7 +127,7 @@
 					<texturefocus>shut-restart-focus.png</texturefocus>
 					<texturenofocus>shut-restart-nofocus.png</texturenofocus>
 					<onclick>RestartApp</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Restart)</visible>
@@ -140,7 +140,7 @@
 					<height>90</height>
 					<texturefocus>shut-shutdown-focus.png</texturefocus>
 					<texturenofocus>shut-shutdown-nofocus.png</texturenofocus>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<onclick condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">Shutdown</onclick>
@@ -155,7 +155,7 @@
 					<texturefocus>shut-timer-focus.png</texturefocus>
 					<texturenofocus>shut-timer-nofocus.png</texturenofocus>
 					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!System.HasAlarm(shutdowntimer) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
@@ -169,7 +169,7 @@
 					<texturefocus>shut-timer-focus.png</texturefocus>
 					<texturenofocus>shut-timer-nofocus.png</texturenofocus>
 					<onclick>CancelAlarm(shutdowntimer)</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>System.HasAlarm(shutdowntimer) + !Skin.HasSetting(Hide_Shutdown_Shutdown)</visible>
@@ -182,7 +182,7 @@
 					<texturenofocus>shut-suspend-nofocus.png</texturenofocus>
 					<onclick>Dialog.Close(ShutdownMenu)</onclick>
 					<onclick>Suspend</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
@@ -195,7 +195,7 @@
 					<texturenofocus>shut-hibernate-nofocus.png</texturenofocus>
 					<onclick>Dialog.Close(ShutdownMenu)</onclick>
 					<onclick>Hibernate</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
@@ -206,8 +206,8 @@
 					<height>90</height>
 					<texturefocus>shut-favourites-focus.png</texturefocus>
 					<texturenofocus>shut-favourites-nofocus.png</texturenofocus>
-					<onclick>ActivateWindow(Favourites)</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<onclick>ActivateWindow(favouritesbrowser)</onclick>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
@@ -219,7 +219,7 @@
 					<texturefocus>shut-reboot-focus.png</texturefocus>
 					<texturenofocus>shut-reboot-nofocus.png</texturenofocus>
 					<onclick>Reset</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
@@ -231,7 +231,7 @@
 					<texturenofocus>shut-settings-nofocus.png</texturenofocus>
 					<texturefocus>shut-settings-focus.png</texturefocus>
 					<onclick>ActivateWindow(Settings)</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Settings) + System.LoggedOn</visible>
@@ -243,7 +243,7 @@
 					<texturenofocus>shut-eject-nofocus.png</texturenofocus>
 					<texturefocus>shut-eject-focus.png</texturefocus>
 					<onclick>EjectTray</onclick>
-					<pulseonselect>yes</pulseonselect>
+					<pulseonselect>true</pulseonselect>
 					<font></font>
 					<label></label>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Eject) + System.LoggedOn</visible>

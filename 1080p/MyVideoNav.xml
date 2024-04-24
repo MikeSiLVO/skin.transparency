@@ -242,8 +242,8 @@
 					<description>Unlock Shares</description>
 					<include>ButtonCommonValues</include>
 					<label>12333</label>
-					<pulseonselect>no</pulseonselect>
-					<onclick>Xbmc.MasterMode</onclick>
+					<pulseonselect>false</pulseonselect>
+					<onclick>MasterMode</onclick>
 					<selected>System.IsMaster</selected>
 					<visible>System.HasLocks + !Skin.HasSetting(KioskMode)</visible>
 				</control>

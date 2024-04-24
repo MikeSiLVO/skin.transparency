@@ -44,7 +44,6 @@
 			<font>font-20</font>
 			<align>center</align>
 			<aligny>center</aligny>
-			<disabledcolor>grey</disabledcolor>
 		</control>
 		<control type="image">
 			<left>726</left>

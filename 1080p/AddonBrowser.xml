@@ -183,7 +183,7 @@
 			<include>ContentFade</include>
 			<animation effect="slide" start="0,0" end="0,-930" time="0" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-210,-930" time="0" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
-			<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+			<visible>!String.IsEmpty(ListItem.AddonLifecycleDesc)</visible>
 			<control type="image">
 				<left>360</left>
 				<top>945</top>
@@ -210,7 +210,7 @@
 				<height>90</height>
 				<align>center</align>
 				<aligny>top</aligny>
-				<label>$INFO[ListItem.AddonBroken]</label>
+				<label>$INFO[ListItem.AddonLifecycleDesc]</label>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font-20</font>

@@ -175,6 +175,20 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 				</control>
+				<control type="button" id="14">
+					<description>versions</description>
+					<width>273</width>
+					<height>52</height>
+					<label>24069</label>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				</control>
 				<control type="togglebutton" id="201">
 					<description>news</description>
 					<width>273</width>
