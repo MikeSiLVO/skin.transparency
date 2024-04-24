@@ -1134,7 +1134,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Master)</onclick>
 						<onleft>9000</onleft>
 						<onright>603</onright>
@@ -1156,7 +1156,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Logoff)</onclick>
 						<onleft>602</onleft>
 						<onright>604</onright>
@@ -1178,7 +1178,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Info)</onclick>
 						<onleft>603</onleft>
 						<onright>605</onright>
@@ -1200,7 +1200,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Filemanager)</onclick>
 						<onleft>604</onleft>
 						<onright>606</onright>
@@ -1222,7 +1222,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Exit)</onclick>
 						<onleft>605</onleft>
 						<onright>607</onright>
@@ -1244,7 +1244,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Restart)</onclick>
 						<onleft>606</onleft>
 						<onright>608</onright>
@@ -1266,7 +1266,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Shutdown)</onclick>
 						<onleft>607</onleft>
 						<onright>609</onright>
@@ -1288,7 +1288,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Timer)</onclick>
 						<onleft>608</onleft>
 						<onright>610</onright>
@@ -1310,7 +1310,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Suspend)</onclick>
 						<onleft>609</onleft>
 						<onright>611</onright>
@@ -1332,7 +1332,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Hibernate)</onclick>
 						<onleft>610</onleft>
 						<onright>612</onright>
@@ -1354,7 +1354,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Favourites)</onclick>
 						<onleft>611</onleft>
 						<onright>613</onright>
@@ -1376,7 +1376,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Reboot)</onclick>
 						<onleft>612</onleft>
 						<onright>614</onright>
@@ -1398,7 +1398,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Settings)</onclick>
 						<onleft>613</onleft>
 						<onright>615</onright>
@@ -1420,7 +1420,7 @@
 						<height>105</height>
 						<texturefocus border="7"></texturefocus>
 						<texturenofocus border="7"></texturenofocus>
-						<pulseonselect>yes</pulseonselect>
+						<pulseonselect>true</pulseonselect>
 						<onclick>Skin.ToggleSetting(Hide_Shutdown_Eject)</onclick>
 						<onleft>614</onleft>
 						<onright>9000</onright>

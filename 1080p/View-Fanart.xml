@@ -1229,7 +1229,7 @@
 				<top>758</top>
 				<width>315</width>
 				<height>315</height>
-				<aspectratio scalediffuse="keep">scale</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<bordersize>6</bordersize>
 				<visible>ListItem.IsParentFolder</visible>
@@ -1472,7 +1472,7 @@
 				<top>748</top>
 				<width>312</width>
 				<height>312</height>
-				<aspectratio scalediffuse="keep">scale</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Listitem.Icon]</texture>
 				<visible>ListItem.IsParentFolder</visible>
 			</control>

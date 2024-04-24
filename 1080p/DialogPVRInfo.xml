@@ -365,6 +365,21 @@
 					<label>19687</label>
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
 				</control>
+				<control type="button" id="11">
+					<description>Set reminder button</description>
+					<width>300</width>
+					<height>52</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="7">button-focus.png</texturefocus>
+					<texturenofocus border="7">button-nofocus.png</texturenofocus>
+					<label>826</label>
+					<visible>Window.IsActive(PVRGuideInfo)</visible>
+				</control>
 			</control>
 		</control>
 	</controls>
