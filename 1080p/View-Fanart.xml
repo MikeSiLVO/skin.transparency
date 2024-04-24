@@ -364,6 +364,18 @@
 					<label>$INFO[ListItem.Genre,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[515]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
+					<left>725</left>
+					<top>890</top>
+					<width>915</width>
+					<height>45</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.LastPlayed,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[568]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+				<control type="label">
 					<left>386</left>
 					<top>920</top>
 					<width>750</width>
@@ -374,6 +386,18 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$VAR[ViewFanartLabel1]</label>
+				</control>
+				<control type="label">
+					<left>725</left>
+					<top>920</top>
+					<width>915</width>
+					<height>45</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.PlayCount,[UPPERCASE][B][COLOR=lightblue]PLAY COUNT: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
 					<left>386</left>
@@ -388,7 +412,7 @@
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<left>630</left>
+					<left>725</left>
 					<top>950</top>
 					<width>240</width>
 					<height>45</height>
@@ -400,6 +424,18 @@
 					<label>$INFO[ListItem.Rating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[563]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
+					<left>910</left>
+					<top>950</top>
+					<width>240</width>
+					<height>45</height>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.UserRating,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[38018]: [/COLOR][/B][/UPPERCASE]]</label>
+				</control>
+				<!-- <control type="label">
 					<left>873</left>
 					<top>950</top>
 					<width>255</width>
@@ -410,7 +446,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
-				</control>
+				</control> -->
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(FanartShowPlot)</visible>
@@ -757,7 +793,7 @@
 				<top>594</top>
 				<width>327</width>
 				<height>465</height>
-				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>

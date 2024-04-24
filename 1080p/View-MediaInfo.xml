@@ -303,12 +303,12 @@
 				<font>font-20</font>
 			</control>
 			<control type="label">
-				<description>Studio txt</description>
+				<description>Last Played txt</description>
 				<left>0</left>
 				<top>420</top>
 				<width>338</width>
 				<height>38</height>
-				<label>[UPPERCASE][B]$LOCALIZE[572]:[/UPPERCASE][/B]</label>
+				<label>[UPPERCASE][B]$LOCALIZE[568]:[/UPPERCASE][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20c</font>
@@ -316,12 +316,12 @@
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<description>Studio Value</description>
+				<description>Last Played Value</description>
 				<left>0</left>
 				<top>450</top>
 				<width>338</width>
 				<height>38</height>
-				<label fallback="10005">$INFO[ListItem.Studio]</label>
+				<label fallback="10005">$INFO[ListItem.LastPlayed]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
@@ -598,7 +598,7 @@
 			<animation effect="slide" start="0,0" end="0,378" time="0" condition="[[Container.Content(TVShows) + !Skin.HasSetting(TVShowsPosters)] | Container.Content(Seasons)]">Conditional</animation>
 			<control type="label">
 				<description>Seasons txt</description>
-				<left>-22</left>
+				<left>-72</left>
 				<top>195</top>
 				<width>360</width>
 				<height>30</height>
@@ -611,9 +611,9 @@
 			</control>
 			<control type="label">
 				<description>Seasons Value</description>
-				<left>348</left>
+				<left>300</left>
 				<top>195</top>
-				<width>330</width>
+				<width>130</width>
 				<height>30</height>
 				<label fallback="10005">$INFO[ListItem.Property(TotalSeasons)]</label>
 				<align>left</align>
@@ -623,8 +623,8 @@
 			</control>
 			<control type="label">
 				<description>Episodes txt</description>
-				<left>-22</left>
-				<top>225</top>
+				<left>122</left>
+				<top>195</top>
 				<width>360</width>
 				<height>30</height>
 				<label>[UPPERCASE][B]$LOCALIZE[20360]:[/UPPERCASE][/B]</label>
@@ -636,8 +636,8 @@
 			</control>
 			<control type="label">
 				<description>Episodes Value</description>
-				<left>348</left>
-				<top>225</top>
+				<left>490</left>
+				<top>195</top>
 				<width>330</width>
 				<height>30</height>
 				<label fallback="10005">$INFO[ListItem.Property(TotalEpisodes)]</label>
@@ -646,12 +646,39 @@
 				<font>font-20</font>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
+
+			<control type="label">
+				<description>Last Played</description>
+				<left>-22</left>
+				<top>225</top>
+				<width>360</width>
+				<height>30</height>
+				<label>[UPPERCASE][B]$LOCALIZE[568]:[/B][/UPPERCASE]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font-20c</font>
+				<textcolor>lightblue</textcolor>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="label">
+				<description>Last Played Value</description>
+				<left>348</left>
+				<top>225</top>
+				<width>915</width>
+				<height>30</height>
+				<label fallback="10005">$INFO[ListItem.LastPlayed]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			
 			<control type="label">
 				<left>-22</left>
 				<top>255</top>
 				<width>360</width>
 				<height>30</height>
-				<label>$VAR[ViewMediaInfoLabel5]</label>
+				<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font-20c</font>
@@ -662,7 +689,7 @@
 				<top>255</top>
 				<width>330</width>
 				<height>30</height>
-				<label fallback="10005">$VAR[ViewMediaInfoLabel6]</label>
+				<label fallback="10005">$INFO[ListItem.UserRating]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font-20</font>

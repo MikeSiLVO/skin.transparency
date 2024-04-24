@@ -197,6 +197,14 @@
 			<visible>Control.IsVisible(589)</visible>
 		</control>
 	</include>
+	
+	<!-- Added by me to fix empty artwork in search box -->
+	<variable name="DialogSelectImage">
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+	
+	
 	<include name="Breadcrumbs">
 		<left>0</left>
 		<top>0</top>
