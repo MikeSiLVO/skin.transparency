@@ -114,7 +114,7 @@
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>
 				<font>font-20</font>
 				<aligny>center</aligny>
-				<reverse>yes</reverse>
+				<reverse>true</reverse>
 			</control>
 			<control type="image" id="11">
 				<description>Default Seperator</description>

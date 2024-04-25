@@ -88,7 +88,7 @@
 			<texturefocus border="7">list-focus.png</texturefocus>
 			<texturenofocus border="7">list-nofocus.png</texturenofocus>
 			<aligny>center</aligny>
-			<reverse>yes</reverse>
+			<reverse>true</reverse>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Sliderex</description>
