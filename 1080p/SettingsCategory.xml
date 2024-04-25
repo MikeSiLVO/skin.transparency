@@ -229,6 +229,24 @@
 			<texturefocus border="7">list-focus.png</texturefocus>
 			<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		</control>
+		<control type="colorbutton" id="15">
+			<description>Default ColorButton</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1320</width>
+			<height>52</height>
+			<font>font-20</font>
+			<textcolor>white</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus border="7">list-focus.png</texturefocus>
+			<texturenofocus border="7">list-nofocus.png</texturenofocus>
+			<textoffsetx>10</textoffsetx>
+			<aligny>center</aligny>
+			<colorwidth>80</colorwidth>
+			<colorheight>46</colorheight>
+			<texturecolormask>picture-diffuse.png</texturecolormask>
+			<texturecolordisabledmask colordiffuse="40FFFFFF">picture-diffuse.png</texturecolordisabledmask>
+		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
 			<left>0</left>
@@ -240,7 +258,7 @@
 			<texturefocus border="7">list-focus.png</texturefocus>
 			<texturenofocus border="7">list-nofocus.png</texturenofocus>
 			<aligny>center</aligny>
-			<reverse>yes</reverse>
+			<reverse>true</reverse>
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Sliderex</description>
