@@ -309,7 +309,6 @@
 				<include>Breadcrumbs-Settings-Catagory</include>
 			</control>
 		</control>
-
 		<control type="group">
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Settings_Bottom_Animation</include>
