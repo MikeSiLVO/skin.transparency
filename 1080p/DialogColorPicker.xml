@@ -4,7 +4,6 @@
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<control type="group">
-			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
 				<left>0</left>
@@ -26,7 +25,7 @@
 				<top>132</top>
 				<width>1464</width>
 				<height>818</height>
-				<texture border="17">panel-black.png</texture>
+				<texture border="17">panel.png</texture>
 				<bordersize>25</bordersize>
 			</control>
 			<control type="image">
@@ -68,6 +67,11 @@
 					<control type="image">
 						<width>120</width>
 						<height>85.25</height>
+						<texture>black.png</texture>
+					</control>
+					<control type="image">
+						<width>120</width>
+						<height>85.25</height>
 						<texture>cover-diffuse3.png</texture>
 						<bordersize>2</bordersize>
 						<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
@@ -75,7 +79,7 @@
 				</itemlayout>
 				<focusedlayout width="120" height="85.25">
 					<control type="group">
-						<animation effect="zoom" time="300" tween="sine" easing="inout" start="100" end="125" center="50,40">Focus</animation>
+						<animation effect="zoom" time="300" tween="sine" easing="inout" start="100" end="125" center="auto">Focus</animation>
 						<control type="image">
 							<width>120</width>
 							<height>85.25</height>
