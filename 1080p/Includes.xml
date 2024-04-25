@@ -678,6 +678,49 @@
 		<texturefocus border="10">Button_Side_Focus.png</texturefocus>
 		<texturenofocus border="10">Button_Side_NoFocus.png</texturenofocus>
 	</include>
+	<include name="CommonTimeDate">
+		<control type="grouplist">
+			<left>650</left>
+			<top>0</top>
+			<width>794</width>
+			<height>45</height>
+			<orientation>horizontal</orientation>
+			<itemgap>0</itemgap>
+			<control type="image">
+				<width>44</width>
+				<height>45</height>
+				<texture>dot.png</texture>
+			</control>
+			<control type="label">
+				<description>date label</description>
+				<width min="15" max="600">auto</width>
+				<height>45</height>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[System.Date]</label>
+			</control>
+			<control type="image">
+				<width>44</width>
+				<height>45</height>
+				<texture>dot.png</texture>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<width min="15" max="150">auto</width>
+				<height>45</height>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[System.Time]</label>
+			</control>
+			<control type="image">
+				<width>44</width>
+				<height>45</height>
+				<texture>dot.png</texture>
+			</control>
+		</control>
+	</include>
 	<include name="CommonFileCount">
 		<control type="grouplist">
 			<left>682</left>

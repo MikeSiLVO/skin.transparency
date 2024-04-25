@@ -281,6 +281,7 @@
 				<height>82</height>
 				<texture border="1">Header.png</texture>
 			</control>
+			<include>CommonTimeDate</include>
 			<include>CommonFileCount</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>

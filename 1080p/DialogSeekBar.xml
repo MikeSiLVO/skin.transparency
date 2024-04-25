@@ -163,7 +163,7 @@
 					<top>27</top>
 					<width>210</width>
 					<height>300</height>
-					<texture>$INFO[Player.Art(thumb)]</texture>
+					<texture>$INFO[Player.Art(poster)]</texture>
 				</control>
 				<control type="image">
 					<left>207</left>

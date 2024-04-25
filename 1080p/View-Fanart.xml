@@ -388,7 +388,7 @@
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<left>630</left>
+					<left>725</left>
 					<top>950</top>
 					<width>240</width>
 					<height>45</height>
@@ -757,7 +757,7 @@
 				<top>594</top>
 				<width>327</width>
 				<height>465</height>
-				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(poster)]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
