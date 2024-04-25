@@ -618,6 +618,28 @@
 			<include>WindowTitleCommons</include>
 		</control>
 	</include>
+	<include name="Breadcrumbs-Settings-ColorPicker">
+		<control type="image">
+			<width>44</width>
+			<height>45</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings</description>
+			<label>$LOCALIZE[10004]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+		<control type="image">
+			<width>44</width>
+			<height>45</height>
+			<texture>dot.png</texture>
+		</control>
+		<control type="label" id="1101">
+			<description>Catagory</description>
+			<label>$INFO[Control.GetLabel(1)]</label>
+			<include>WindowTitleCommons</include>
+		</control>
+	</include>
 	<include name="ButtonCommonValues">
 		<height>70</height>
 		<font>font-20bc</font>
