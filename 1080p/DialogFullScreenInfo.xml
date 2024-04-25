@@ -219,7 +219,7 @@
 					<top>60</top>
 					<width>309</width>
 					<height>438</height>
-					<texture>$INFO[Player.Art(thumb)]</texture>
+					<texture>$INFO[Player.Art(poster)]</texture>
 					<visible>VideoPlayer.Content(Movies) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
 				</control>
 				<control type="image">

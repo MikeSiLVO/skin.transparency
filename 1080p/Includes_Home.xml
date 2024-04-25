@@ -2580,7 +2580,7 @@
 	<include name="HomeTVButton">
 		<item id="5">
 			<label>19020</label>
-			<onclick>ActivateWindow(TVChannels)</onclick>
+			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<icon>special://skin/backgrounds/tv.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 		</item>
@@ -2768,6 +2768,12 @@
 					<onclick>ActivateWindow(Videos)</onclick>
 					<visible>!Skin.HasSetting(Menu_Movies_Sub_Library)</visible>
 				</item>
+				<item id="8109">
+					<description>Menu Movies Sub Sets</description>
+					<label>$LOCALIZE[20434]</label>
+					<onclick>ActivateWindow(Videos,moviesets,return)</onclick>
+					<visible>Skin.HasSetting(Menu_Movies_Sub_Sets)</visible>
+				</item>
 				<item id="8103">
 					<description>Menu Movies Sub Genres</description>
 					<label>$LOCALIZE[135]</label>
@@ -2803,12 +2809,6 @@
 					<label>$LOCALIZE[20451]</label>
 					<onclick>ActivateWindow(Videos,moviecountries,return)</onclick>
 					<visible>Skin.HasSetting(Menu_Movies_Sub_Countries)</visible>
-				</item>
-				<item id="8109">
-					<description>Menu Movies Sub Sets</description>
-					<label>$LOCALIZE[20434]</label>
-					<onclick>ActivateWindow(Videos,moviesets,return)</onclick>
-					<visible>Skin.HasSetting(Menu_Movies_Sub_Sets)</visible>
 				</item>
 				<item id="8110">
 					<description>Menu Movies Sub Tags</description>
@@ -3119,29 +3119,29 @@
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">HorizontalSubMenuLayout</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">VerticalSubMenuLayout</include>
 			<content>
-				<item id="8102">
-					<description>Menu TV Sub TVGuide</description>
-					<label>$LOCALIZE[31191]</label>
-					<onclick>ActivateWindow(TVGuide)</onclick>
-					<visible>!Skin.HasSetting(Menu_TV_Sub_TVGuide)</visible>
-				</item>
-				<item id="8103">
-					<description>Menu TV Sub TVRecordings</description>
-					<label>$LOCALIZE[31193]</label>
-					<onclick>ActivateWindow(TVRecordings)</onclick>
-					<visible>!Skin.HasSetting(Menu_TV_Sub_TVRecordings)</visible>
-				</item>
-				<item id="8104">
-					<description>Menu TV Sub TVSearch</description>
-					<label>$LOCALIZE[31195]</label>
-					<onclick>ActivateWindow(TVSearch)</onclick>
-					<visible>!Skin.HasSetting(Menu_TV_Sub_TVSearch)</visible>
-				</item>
 				<item id="8105">
 					<description>Menu TV Sub TVTimers</description>
 					<label>$LOCALIZE[31197]</label>
 					<onclick>ActivateWindow(TVTimers)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_TVTimers)</visible>
+				</item>
+				<item id="8103">
+					<description>Menu TV Sub TVChannels</description>
+					<label>$LOCALIZE[10700]</label>
+					<onclick>ActivateWindow(TVChannels)</onclick>
+					<visible></visible>
+				</item>
+				<item id="8102">
+					<description>Menu TV Sub TVGuide</description>
+					<label>$LOCALIZE[31191]</label>
+					<onclick>ActivateWindow(TVGuide)</onclick>
+					<visible>!Skin.HasSetting(Menu_TV_Sub_TVGuide)</visible>
+				</item>				
+				<item id="8104">
+					<description>Menu TV Sub TVSearch</description>
+					<label>$LOCALIZE[31195]</label>
+					<onclick>ActivateWindow(TVSearch)</onclick>
+					<visible>!Skin.HasSetting(Menu_TV_Sub_TVSearch)</visible>
 				</item>
 				<item id="8106">
 					<description>Menu TV Sub TVTimerRules</description>

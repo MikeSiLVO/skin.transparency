@@ -131,7 +131,7 @@
 					<top>8</top>
 					<width>75</width>
 					<height>75</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture>$VAR[IconPoster]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
@@ -179,7 +179,7 @@
 					<top>8</top>
 					<width>75</width>
 					<height>75</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture>$VAR[IconPoster]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
