@@ -2629,7 +2629,7 @@
 	<include name="HomeFavouritesButton">
 		<item id="11">
 			<label>1036</label>
-			<onclick>ActivateWindow(Favourites)</onclick>
+			<onclick>ActivateWindow(favouritesbrowser)</onclick>
 			<icon>special://skin/backgrounds/favourites.jpg</icon>
 			<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
 		</item>
@@ -2676,8 +2676,6 @@
 	</include>
 	<include name="SubMenu">
 		<control type="group" id="8000">
-			<onup>5050</onup>
-			<onright>5050</onright>
 			<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!ControlGroup(8000).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(HorizontalHomeMenu)">Home_Hor_Sub</include>
 			<include condition="!Skin.HasSetting(HorizontalHomeMenu)">Home_Ver_Sub</include>
@@ -3136,7 +3134,7 @@
 					<label>$LOCALIZE[31191]</label>
 					<onclick>ActivateWindow(TVGuide)</onclick>
 					<visible>!Skin.HasSetting(Menu_TV_Sub_TVGuide)</visible>
-				</item>				
+				</item>
 				<item id="8104">
 					<description>Menu TV Sub TVSearch</description>
 					<label>$LOCALIZE[31195]</label>
