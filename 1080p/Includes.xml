@@ -2623,7 +2623,7 @@
 	</include>
 	<include name="SkinSettingsImageButtonGroup">
 		<control type="group">
-			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26) | Container(302).HasFocus(27) | Container(302).HasFocus(28)</visible>
+			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26) | Container(302).HasFocus(27) | Container(302).HasFocus(28) | Container(302).HasFocus(29)</visible>
 			<left>832</left>
 			<top>322</top>
 			<control type="button" id="303">
@@ -2663,6 +2663,7 @@
 				<onclick condition="Container(302).HasFocus(24)">Skin.SetImage(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetImage(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.SetImage(Custom_Back_Login_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(29)">Skin.SetImage(Custom_Back_Favourites_Folder)</onclick>
 				<onleft>302</onleft>
 				<onright>304</onright>
 				<onup>303</onup>
@@ -2705,6 +2706,7 @@
 				<onclick condition="Container(302).HasFocus(24)">Skin.SetPath(WeatherPath)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.SetPath(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.SetPath(Custom_Back_Login_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(29)">Skin.SetPath(Custom_Back_Favourites_Folder)</onclick>
 				<onleft>303</onleft>
 				<onright>305</onright>
 				<onup>304</onup>
@@ -2747,6 +2749,7 @@
 				<onclick condition="Container(302).HasFocus(24)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
 				<onclick condition="Container(302).HasFocus(25)">Skin.Reset(Custom_Back_Settings_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(26)">Skin.Reset(Custom_Back_Login_Folder)</onclick>
+				<onclick condition="Container(302).HasFocus(29)">Skin.Reset(Custom_Back_Favourites_Folder)</onclick>
 				<onleft>304</onleft>
 				<onright>399</onright>
 				<onup>305</onup>

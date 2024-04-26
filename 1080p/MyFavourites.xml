@@ -4,8 +4,20 @@
 	<views>50,51,52,53</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
+		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
+		<control type="multiimage">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<imagepath fallback="special://skin/backgrounds/favourites.jpg" background="true">$INFO[Skin.String(Custom_Back_Favourites_Folder)]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		</control>
 		<control type="group">
-			<include>ContentFade</include>
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="1045,174" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -26,7 +38,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>ContentFade2</include>
 			<include>FullList_Extras</include>
 			<include>List_Extras</include>
 			<include>Thumbnail-Videos_Extras</include>
@@ -35,7 +46,6 @@
 		</control>
 		<control type="group">
 			<top>34</top>
-			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
 			<visible>![Skin.HasSetting(KioskMode) + !Player.HasMedia]</visible>
@@ -108,7 +118,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>ContentFade</include>
 			<include>Window_OpenClose_Header_Animation</include>
 			<control type="image">
 				<left>0</left>
@@ -117,6 +126,7 @@
 				<height>82</height>
 				<texture border="1">Header.png</texture>
 			</control>
+			<include>CommonTimeDate</include>
 			<include>CommonFileCount</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>

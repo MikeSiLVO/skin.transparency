@@ -851,6 +851,12 @@
 								<icon>special://skin/backgrounds/background-login.jpg</icon>
 								<thumb>$INFO[Skin.String(Custom_Back_Login_Folder)]</thumb>
 							</item>
+							<item id="29">
+								<label>$LOCALIZE[1036]</label>
+								<onclick>noop</onclick>
+								<icon>special://skin/backgrounds/favourites.jpg</icon>
+								<thumb>$INFO[Skin.String(Custom_Back_Favourites_Folder)]</thumb>
+							</item>
 						</content>
 					</control>
 					<control type="image">
@@ -1113,12 +1119,6 @@
 					<top>278</top>
 					<width>1470</width>
 					<height>668</height>
-					<itemgap>0</itemgap>
-					<pagecontrol></pagecontrol>
-					<onleft>9000</onleft>
-					<onright>9000</onright>
-					<onup>601</onup>
-					<ondown>601</ondown>
 					<control type="image">
 						<left>0</left>
 						<top>195</top>
