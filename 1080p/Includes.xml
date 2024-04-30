@@ -708,6 +708,7 @@
 			<height>45</height>
 			<orientation>horizontal</orientation>
 			<itemgap>0</itemgap>
+			<visible>!Player.HasVideo</visible>
 			<control type="image">
 				<width>44</width>
 				<height>45</height>
