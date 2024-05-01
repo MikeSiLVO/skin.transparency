@@ -126,12 +126,13 @@
 				<height>82</height>
 				<texture border="1">Header.png</texture>
 			</control>
-			<include>CommonTimeDate</include>
+			<include condition="!Skin.HasSetting(TopbarDateTime)">CommonTimeDate</include>
 			<include>CommonFileCount</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Favourites</include>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(TouchScreenMode)">TouchScreenControls</include>
 	</controls>
 </window>

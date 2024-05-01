@@ -75,7 +75,7 @@
 				<texture border="1">Header.png</texture>
 			</control>
 			<control type="group">
-				<include>CommonTimeDate</include>
+				<include condition="!Skin.HasSetting(TopbarDateTime)">CommonTimeDate</include>
 				<include>CommonFileCount</include>
 			</control>
 			<control type="grouplist">

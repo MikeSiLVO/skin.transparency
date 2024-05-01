@@ -304,6 +304,7 @@
 				<font></font>
 				<visible>false</visible>
 			</control>
+			<include condition="!Skin.HasSetting(TopbarDateTime)">CommonTimeDate</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Settings-Catagory</include>
