@@ -702,19 +702,13 @@
 	</include>
 	<include name="CommonTimeDate">
 		<control type="grouplist">
-			<left>650</left>
-			<top>0</top>
-			<width>794</width>
+			<width>100%</width>
 			<height>45</height>
 			<orientation>horizontal</orientation>
+			<align>center</align>
 			<itemgap>0</itemgap>
 			<visible>!Player.HasVideo</visible>
 			<visible>!Skin.HasSetting(TopbarDateTime)</visible>
-			<control type="image">
-				<width>44</width>
-				<height>45</height>
-				<texture>dot.png</texture>
-			</control>
 			<control type="label">
 				<description>date label</description>
 				<width min="15" max="600">auto</width>
@@ -737,11 +731,6 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[System.Time]</label>
-			</control>
-			<control type="image">
-				<width>44</width>
-				<height>45</height>
-				<texture>dot.png</texture>
 			</control>
 		</control>
 	</include>
@@ -781,7 +770,7 @@
 				<width>44</width>
 				<height>45</height>
 				<texture>dot.png</texture>
-				<visible>!String.IsEmpty(Container.TotalTime)</visible>
+				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets)]</visible>
 			</control>
 			<control type="label">
 				<description>Item Count Label</description>
@@ -791,7 +780,7 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
-				<visible>!String.IsEmpty(Container.TotalTime)</visible>
+				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets)]</visible>
 			</control>
 		</control>
 	</include>
