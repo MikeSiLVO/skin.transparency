@@ -770,7 +770,7 @@
 				<width>44</width>
 				<height>45</height>
 				<texture>dot.png</texture>
-				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets)]</visible>
+				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets) | Window.IsActive(music)]</visible>
 			</control>
 			<control type="label">
 				<description>Item Count Label</description>
@@ -780,7 +780,7 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[555]: $INFO[Container.TotalTime]</label>
-				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets)]</visible>
+				<visible>!String.IsEmpty(Container.TotalTime) + [Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://movies/sets) | Window.IsActive(music)]</visible>
 			</control>
 		</control>
 	</include>
