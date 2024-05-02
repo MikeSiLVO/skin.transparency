@@ -707,7 +707,7 @@
 			<orientation>horizontal</orientation>
 			<align>center</align>
 			<itemgap>0</itemgap>
-			<visible>!Player.HasVideo</visible>
+			<visible>![Player.HasVideo + Player.Paused]</visible>
 			<visible>!Skin.HasSetting(TopbarDateTime)</visible>
 			<control type="label">
 				<description>date label</description>
