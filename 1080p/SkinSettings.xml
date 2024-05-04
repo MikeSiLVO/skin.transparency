@@ -68,7 +68,7 @@
 					<onright>199</onright>
 					<onup>101</onup>
 					<ondown>101</ondown>
-					<control type="radiobutton" id="141">
+					<control type="radiobutton" id="142">
 						<label>$LOCALIZE[31608]</label>
 						<onclick>Skin.ToggleSetting(TopbarDateTime)</onclick>
 						<selected>Skin.HasSetting(TopbarDateTime)</selected>
