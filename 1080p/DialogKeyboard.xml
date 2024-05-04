@@ -7,6 +7,16 @@
 		<top>200</top>
 	</coordinates>
 	<controls>
+		<control type="button" id="310">
+			<left>-300</left>
+			<top>-300</top>
+			<width>1</width>
+			<height>1</height>
+			<texturefocus />
+			<texturenofocus />
+			<label />
+			<font />
+		</control>
 		<control type="group">
 			<include>VisibleFadeEffect</include>
 			<visible>!Window.IsVisible(NumericInput)</visible>
@@ -533,6 +543,43 @@
 						<font>font-20</font>
 						<onup>170</onup>
 						<ondown>110</ondown>
+						<visible>!Control.IsVisible(310)</visible>
+					</control>
+					<control type="radiobutton" id="3104">
+						<description>Symbols button</description>
+						<width>144</width>
+						<height>72</height>
+						<label>@#!*   </label>
+						<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
+						<texturefocus border="10">key-focus.png</texturefocus>
+						<radioposy>8</radioposy>
+						<radiowidth>30</radiowidth>
+						<radioheight>30</radioheight>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<onup>170</onup>
+						<ondown>110</ondown>
+						<onclick>SendClick(304)</onclick>
+						<visible>Control.IsVisible(310)</visible>
+					</control>
+					<control type="radiobutton" id="3010">
+						<description>Show password button</description>
+						<width>72</width>
+						<height>72</height>
+						<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
+						<texturefocus border="10">key-focus.png</texturefocus>
+						<radiowidth>36</radiowidth>
+						<radioheight>36</radioheight>
+						<textureradioonfocus>shut-master-nofocus.png</textureradioonfocus>
+						<textureradioonnofocus>shut-master-nofocus.png</textureradioonnofocus>
+						<textureradioofffocus>shut-nomaster-focus.png</textureradioofffocus>
+						<textureradiooffnofocus>shut-nomaster-focus.png</textureradiooffnofocus>
+						<radioposx>18</radioposx>
+						<onup>170</onup>
+						<ondown>110</ondown>
+						<onclick>SendClick(310)</onclick>
+						<visible>Control.IsVisible(310)</visible>
 					</control>
 				</control>
 			</control>
