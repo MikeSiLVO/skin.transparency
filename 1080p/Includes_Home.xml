@@ -761,7 +761,6 @@
 			<top>735</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<visible>Player.HasVideo</visible>
 			<control type="image">
 				<description>gradient</description>
@@ -942,7 +941,6 @@
 			<visible>Container(5040).HasFocus(5) + [PVR.IsRecording | PVR.HasTimer] + ![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<control type="image">
 				<description>gradient</description>
 				<left>645</left>
@@ -1075,7 +1073,6 @@
 			<top>735</top>
 			<include>HomeInfoAnimation</include>
 			<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(Favourites)">Conditional</animation>
 			<visible>Player.HasAudio</visible>
 			<control type="image">
 				<description>gradient</description>
