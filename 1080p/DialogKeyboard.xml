@@ -527,6 +527,22 @@
 						<font>font-20</font>
 						<onup>168</onup>
 						<ondown>108</ondown>
+						<visible>!Control.IsVisible(310)</visible>
+					</control>
+					<control type="button" id="3007">
+						<description>IP Input button</description>
+						<width>72</width>
+						<height>72</height>
+						<label>IP</label>
+						<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
+						<texturefocus border="10">key-focus.png</texturefocus>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font-20</font>
+						<onup>168</onup>
+						<ondown>108</ondown>
+						<onclick>SendClick(307)</onclick>
+						<visible>Control.IsVisible(310)</visible>
 					</control>
 					<control type="radiobutton" id="304">
 						<description>Symbols button</description>
@@ -543,25 +559,6 @@
 						<font>font-20</font>
 						<onup>170</onup>
 						<ondown>110</ondown>
-						<visible>!Control.IsVisible(310)</visible>
-					</control>
-					<control type="radiobutton" id="3104">
-						<description>Symbols button</description>
-						<width>144</width>
-						<height>72</height>
-						<label>@#!*   </label>
-						<texturenofocus border="10">key-special-nofocus.png</texturenofocus>
-						<texturefocus border="10">key-focus.png</texturefocus>
-						<radioposy>8</radioposy>
-						<radiowidth>30</radiowidth>
-						<radioheight>30</radioheight>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font-20</font>
-						<onup>170</onup>
-						<ondown>110</ondown>
-						<onclick>SendClick(304)</onclick>
-						<visible>Control.IsVisible(310)</visible>
 					</control>
 					<control type="radiobutton" id="3010">
 						<description>Show password button</description>
@@ -579,6 +576,7 @@
 						<onup>170</onup>
 						<ondown>110</ondown>
 						<onclick>SendClick(310)</onclick>
+						<selected>!String.IsEqual(Control.GetLabel(310), $LOCALIZE[12308])</selected>
 						<visible>Control.IsVisible(310)</visible>
 					</control>
 				</control>
