@@ -1492,7 +1492,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, - ][/I]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1155" height="60">
@@ -1535,7 +1535,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, - ][/I]</label>
 						<visible>!Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
@@ -1549,7 +1549,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, - ][/I]</label>
 						<visible>Control.HasFocus(5045)</visible>
 					</control>
 				</focusedlayout>
