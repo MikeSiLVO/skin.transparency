@@ -188,7 +188,7 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Container(5044).ListItem.Property(FanartImage)]</texture>
+			<texture background="true">$INFO[Container(5044).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -202,7 +202,7 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Container(5045).ListItem.Property(FanartImage)]</texture>
+			<texture background="true">$INFO[Container(5045).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -1227,7 +1227,7 @@
 				<width>117</width>
 				<height>168</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" background="true">$INFO[Container(5044).ListItem.Thumb]</texture>
+				<texture diffuse="gamecase-diffuse.png" fallback="DefaultVideo.png" background="true">$INFO[Container(5044).ListItem.Art(poster)]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1307,7 +1307,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Year][/I]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1155" height="60">
@@ -1322,7 +1322,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Title][/B]</label>
 						<visible>!Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
@@ -1336,7 +1336,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Title][/B]</label>
 						<visible>Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
@@ -1350,7 +1350,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Year][/I]</label>
 						<visible>!Control.HasFocus(5044)</visible>
 					</control>
 					<control type="label">
@@ -1364,15 +1364,11 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Year][/I]</label>
 						<visible>Control.HasFocus(5044)</visible>
 					</control>
 				</focusedlayout>
-				<content>
-					<include condition="!Skin.HasSetting(HomeRecentMovies)">RecentMoviesList</include>
-					<include condition="Skin.HasSetting(HomeRandomMovies)">RandomMoviesList</include>
-					<include condition="Skin.HasSetting(HomeWatchlistMovies)">RecommendedMoviesList</include>
-				</content>
+				<content target="videos" browse="never">$VAR[MoviesWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>621</left>
@@ -1416,7 +1412,7 @@
 				<width>292</width>
 				<height>165</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5045).ListItem.Thumb]</texture>
+				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5045).ListItem.Art(thumb)]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1482,7 +1478,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.TvShowTitle][/B]</label>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -1496,7 +1492,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1155" height="60">
@@ -1511,7 +1507,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.TvShowTitle][/B]</label>
 						<visible>!Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
@@ -1525,7 +1521,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.TvShowTitle][/B]</label>
 						<visible>Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
@@ -1539,7 +1535,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
 						<visible>!Control.HasFocus(5045)</visible>
 					</control>
 					<control type="label">
@@ -1553,15 +1549,11 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, ][/I]</label>
 						<visible>Control.HasFocus(5045)</visible>
 					</control>
 				</focusedlayout>
-				<content>
-					<include condition="!Skin.HasSetting(HomeRecentTVShows)">RecentEpisodesList</include>
-					<include condition="Skin.HasSetting(HomeRandomTVShows)">RandomEpisodesList</include>
-					<include condition="Skin.HasSetting(HomeWatchlistTVShows)">RecommendedEpisodesList</include>
-				</content>
+				<content target="videos" browse="never">$VAR[EpisodeWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>458</left>
