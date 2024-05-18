@@ -784,7 +784,7 @@
 			</control>
 		</control>
 	</include>
-	<include name="CommonFileCount2">
+	<!-- <include name="CommonFileCount2">
 		<control type="grouplist">
 			<left>1148</left>
 			<top>862</top>
@@ -819,7 +819,7 @@
 				<label>$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
 			</control>
 		</control>
-	</include>
+	</include> -->
 	<include name="CommonFileCount3">
 		<control type="grouplist">
 			<left>402</left>
