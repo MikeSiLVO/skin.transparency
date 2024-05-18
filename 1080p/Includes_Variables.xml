@@ -1398,4 +1398,14 @@
 	<variable name="Weather84">
 		<value condition="!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
+	<variable name="MoviesWidgetContent">
+		<value condition="!Skin.HasSetting(HomeRecentMovies)">special://skin/extras/playlists/recentmovies.xsp</value>
+		<value condition="Skin.HasSetting(HomeRandomMovies)">special://skin/extras/playlists/randommovies.xsp</value>
+		<value condition="Skin.HasSetting(HomeWatchlistMovies)">special://skin/extras/playlists/recommendedmovies.xsp</value>
+	</variable>
+	<variable name="EpisodeWidgetContent">
+		<value condition="!Skin.HasSetting(HomeRecentTVShows)">special://skin/extras/playlists/recentepisodes.xsp</value>
+		<value condition="Skin.HasSetting(HomeRandomTVShows)">special://skin/extras/playlists/randomepisodes.xsp</value>
+		<value condition="Skin.HasSetting(HomeWatchlistTVShows)">special://skin/extras/playlists/recommendedepisodes.xsp</value>
+	</variable>
 </includes>
