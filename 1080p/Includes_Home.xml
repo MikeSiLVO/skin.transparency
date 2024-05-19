@@ -1924,9 +1924,6 @@
 					</control>
 				</focusedlayout>
 				<content target="music" browse="never">$VAR[AlbumsWidgetContent]</content>
-				<!-- <content>
-					<include condition="Skin.HasSetting(HomeWatchlistAlbums)">RecommendedAlbumsList</include>
-				</content> -->
 			</control>
 			<control type="label">
 				<left>546</left>
