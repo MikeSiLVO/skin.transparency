@@ -216,7 +216,7 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Container(5048).ListItem.Property(FanartImage)]</texture>
+			<texture background="true">$INFO[Container(5048).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -230,7 +230,7 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Container(5046).ListItem.Property(FanartImage)]</texture>
+			<texture background="true">$INFO[Container(5046).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<include>VisibleFadeEffect</include>
@@ -1597,7 +1597,7 @@
 				<width>292</width>
 				<height>165</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5048).ListItem.Thumb]</texture>
+				<texture diffuse="video-diffuse.png" background="true" fallback="DefaultVideo.png">$INFO[Container(5048).ListItem.Art(thumb)]</texture>
 				<fadetime>400</fadetime>
 			</control>
 			<control type="label">
@@ -1663,7 +1663,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -1677,7 +1677,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Label][/I]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1155" height="60">
@@ -1692,7 +1692,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>!Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
@@ -1706,7 +1706,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
@@ -1720,7 +1720,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Label][/I]</label>
 						<visible>!Control.HasFocus(5048)</visible>
 					</control>
 					<control type="label">
@@ -1734,15 +1734,11 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Label][/I]</label>
 						<visible>Control.HasFocus(5048)</visible>
 					</control>
 				</focusedlayout>
-				<content>
-					<include condition="!Skin.HasSetting(HomeRecentMusicVideos)">RecentMusicVideosList</include>
-					<include condition="Skin.HasSetting(HomeRandomMusicVideos)">RandomMusicVideosList</include>
-					<include condition="Skin.HasSetting(HomeRecommendedMusicVideos)">RecommendedMusicVideosList</include>
-				</content>
+				<content target="videos" browse="never">$VAR[MusicVideosWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>458</left>
@@ -1852,7 +1848,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -1866,7 +1862,7 @@
 						<aligny>center</aligny>
 						<scroll>true</scroll>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Title][/I]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout width="1155" height="60">
@@ -1881,7 +1877,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>!Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
@@ -1895,7 +1891,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.Artist][/B]</label>
 						<visible>Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
@@ -1909,7 +1905,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Title][/I]</label>
 						<visible>!Control.HasFocus(5046)</visible>
 					</control>
 					<control type="label">
@@ -1923,15 +1919,14 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<scrollspeed>0</scrollspeed>
-						<label>[I]$INFO[ListItem.Label2][/I]</label>
+						<label>[I]$INFO[ListItem.Title][/I]</label>
 						<visible>Control.HasFocus(5046)</visible>
 					</control>
 				</focusedlayout>
-				<content>
-					<include condition="!Skin.HasSetting(HomeRecentAlbums)">RecentAlbumsList</include>
-					<include condition="Skin.HasSetting(HomeRandomAlbums)">RandomAlbumsList</include>
+				<content target="music" browse="never">$VAR[AlbumsWidgetContent]</content>
+				<!-- <content>
 					<include condition="Skin.HasSetting(HomeWatchlistAlbums)">RecommendedAlbumsList</include>
-				</content>
+				</content> -->
 			</control>
 			<control type="label">
 				<left>546</left>

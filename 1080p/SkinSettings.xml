@@ -408,6 +408,7 @@
 						<label>$LOCALIZE[24001] - $LOCALIZE[31174]</label>
 						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
 						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
+						<visible>System.AddonIsEnabled(service.skin.widgets)</visible>
 					</control>
 					<control type="image" id="222">
 						<width>1320</width>

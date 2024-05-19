@@ -1408,4 +1408,14 @@
 		<value condition="Skin.HasSetting(HomeRandomTVShows)">special://skin/extras/playlists/randomepisodes.xsp</value>
 		<value condition="Skin.HasSetting(HomeWatchlistTVShows)">special://skin/extras/playlists/recommendedepisodes.xsp</value>
 	</variable>
+	<variable name="MusicVideosWidgetContent">
+		<value condition="!Skin.HasSetting(HomeRecentMusicVideos)">special://skin/extras/playlists/recentmusicvideos.xsp</value>
+		<value condition="Skin.HasSetting(HomeRandomMusicVideos)">special://skin/extras/playlists/randommusicvideos.xsp</value>
+		<value condition="Skin.HasSetting(HomeRecommendedMusicVideos)">special://skin/extras/playlists/recommendedmusicvideos.xsp</value>
+	</variable>
+	<variable name="AlbumsWidgetContent">
+		<value condition="!Skin.HasSetting(HomeRecentAlbums)">special://skin/extras/playlists/recentlyaddedalbums.xsp</value>
+		<value condition="Skin.HasSetting(HomeRandomAlbums)">special://skin/extras/playlists/randomalbums.xsp</value>
+		<value condition="Skin.HasSetting(HomeWatchlistAlbums)">special://skin/extras/playlists/recommendedalbums.xsp</value>
+	</variable>
 </includes>
