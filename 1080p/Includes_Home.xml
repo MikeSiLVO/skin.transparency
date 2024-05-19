@@ -1368,7 +1368,7 @@
 						<visible>Control.HasFocus(5044)</visible>
 					</control>
 				</focusedlayout>
-				<content target="videos" browse="never">$VAR[MoviesWidgetContent]</content>
+				<content target="videos">$VAR[MoviesWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>621</left>
@@ -1553,7 +1553,7 @@
 						<visible>Control.HasFocus(5045)</visible>
 					</control>
 				</focusedlayout>
-				<content target="videos" browse="never">$VAR[EpisodeWidgetContent]</content>
+				<content target="videos">$VAR[EpisodeWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>458</left>
@@ -1738,7 +1738,7 @@
 						<visible>Control.HasFocus(5048)</visible>
 					</control>
 				</focusedlayout>
-				<content target="videos" browse="never">$VAR[MusicVideosWidgetContent]</content>
+				<content target="videos">$VAR[MusicVideosWidgetContent]</content>
 			</control>
 			<control type="label">
 				<left>458</left>
@@ -1923,7 +1923,7 @@
 						<visible>Control.HasFocus(5046)</visible>
 					</control>
 				</focusedlayout>
-				<content target="music" browse="never">$VAR[AlbumsWidgetContent]</content>
+				<content target="music">$VAR[AlbumsWidgetContent]</content>
 				<!-- <content>
 					<include condition="Skin.HasSetting(HomeWatchlistAlbums)">RecommendedAlbumsList</include>
 				</content> -->
