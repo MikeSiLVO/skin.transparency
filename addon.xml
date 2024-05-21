@@ -99,6 +99,6 @@
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 		</assets>
-		<news>Includes the latest changes for Kodi v18 Leia</news>
+		<news>Includes the latest changes for Kodi v21 Omega</news>
 	</extension>
 </addon>
