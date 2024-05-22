@@ -46,6 +46,7 @@
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<scrollsuffix>     -     </scrollsuffix>
+		<scrollspeed>90</scrollspeed>
 	</default>
 	<default type="mover">
 		<left>0</left>

@@ -90,7 +90,6 @@
 						<width>2025</width>
 						<height>120</height>
 						<include>MusicPlayerTitle</include>
-						<scrollspeed>60</scrollspeed>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -145,7 +144,6 @@
 						<width>2025</width>
 						<height>52</height>
 						<include>MusicPlayerArtist</include>
-						<scrollspeed>60</scrollspeed>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -199,7 +197,6 @@
 						<width>2025</width>
 						<height>48</height>
 						<include>MusicPlayerAlbum</include>
-						<scrollspeed>60</scrollspeed>
 					</control>
 				</control>
 			</control>
