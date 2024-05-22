@@ -2513,6 +2513,7 @@
 				<textcolor>blue</textcolor>
 				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
+				<scrollspeed>90</scrollspeed>
 			</control>
 		</control>
 	</include>

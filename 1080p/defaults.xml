@@ -35,6 +35,7 @@
 		<top>0</top>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
+		<scrollspeed>90</scrollspeed>
 	</default>
 	<default type="image">
 		<left>0</left>
