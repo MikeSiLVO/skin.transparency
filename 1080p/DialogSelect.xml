@@ -143,7 +143,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DialogSelectLabel]</label>
 				</control>
 				<control type="label">
 					<left>120</left>
@@ -154,7 +154,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
-					<label>$INFO[ListItem.Label2]</label>
+					<label>$VAR[DialogSelectLabel2]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="750" height="88">
@@ -191,7 +191,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DialogSelectLabel]</label>
 				</control>
 				<control type="label">
 					<left>120</left>
@@ -202,7 +202,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
-					<label>$INFO[ListItem.Label2]</label>
+					<label>$VAR[DialogSelectLabel2]</label>
 				</control>
 			</focusedlayout>
 		</control>

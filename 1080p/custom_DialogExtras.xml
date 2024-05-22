@@ -113,6 +113,16 @@
 					<onclick>SendClick(2003,10)</onclick>
 				</item>
 				<item>
+					<label>40000</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>SendClick(2003,14)</onclick>
+				</item>
+				<item>
+					<label>40211</label>
+					<onclick>Dialog.Close(1115)</onclick>
+					<onclick>SendClick(2003,15)</onclick>
+				</item>
+				<item>
 					<label>31219</label>
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],clearlogo)</onclick>
