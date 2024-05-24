@@ -137,8 +137,7 @@
 							<onleft>7</onleft>
 							<onright>8</onright>
 							<onup>49</onup>
-							<ondown condition="Control.IsVisible(11)">1110</ondown>
-							<ondown condition="!Control.IsVisible(11)">50</ondown>
+							<ondown>1110</ondown>
 						</control>
 						<control type="togglebutton" id="8">
 							<description>Play/browse to Show</description>
@@ -162,8 +161,7 @@
 							<onleft>5</onleft>
 							<onright>6</onright>
 							<onup>49</onup>
-							<ondown condition="Control.IsVisible(11)">1110</ondown>
-							<ondown condition="!Control.IsVisible(11)">50</ondown>
+							<ondown>1110</ondown>
 						</control>
 						<control type="button" id="6">
 							<description>Refresh</description>
@@ -183,8 +181,7 @@
 							<onleft>8</onleft>
 							<onright>1113</onright>
 							<onup>49</onup>
-							<ondown condition="Control.IsVisible(11)">1110</ondown>
-							<ondown condition="!Control.IsVisible(11)">50</ondown>
+							<ondown>1110</ondown>
 						</control>
 						<control type="button" id="1113">
 							<description>Extras</description>
@@ -204,8 +201,7 @@
 							<onleft>6</onleft>
 							<onright>7</onright>
 							<onup>49</onup>
-							<ondown condition="Control.IsVisible(11)">1110</ondown>
-							<ondown condition="!Control.IsVisible(11)">50</ondown>
+							<ondown>1110</ondown>
 							<onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
 							<onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50) + System.HasAddon(script.metadata.actors)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
 							<onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + System.HasAddon(script.metadata.actors)">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
@@ -230,8 +226,7 @@
 							<onleft>1113</onleft>
 							<onright>5</onright>
 							<onup>49</onup>
-							<ondown condition="Control.IsVisible(11)">1110</ondown>
-							<ondown condition="!Control.IsVisible(11)">50</ondown>
+							<ondown>1110</ondown>
 						</control>
 					</control>
 				</control>
@@ -262,6 +257,7 @@
 					<animation effect="slide" start="0,0" end="-165,0" time="0" condition="Container.Content(MusicVideos)">Conditional</animation>
 				</control>
 				<control type="group" id="1110">
+					<ondown>50</ondown>
 					<control type="button" id="11">
 						<left>1792</left>
 						<top>706</top>
