@@ -434,8 +434,8 @@
 				<top>994</top>
 				<width>60</width>
 				<height>60</height>
-				<label></label>
-				<font></font>
+				<label />
+				<font />
 				<onclick>Skin.ToggleSetting(EpgLegend)</onclick>
 				<texturefocus>osd-info-focus.png</texturefocus>
 				<texturenofocus>osd-info-nofocus.png</texturenofocus>
@@ -1116,6 +1116,16 @@
 				<height>63</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
 				<visible>PVR.HasTimer</visible>
+			</control>
+			<control type="image">
+				<left>292</left>
+				<top>914</top>
+				<width>194</width>
+				<height>160</height>
+				<aspectratio scalediffuse="false" align="center">keep</aspectratio>
+				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<bordersize>6</bordersize>
+				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="label">
 				<description>Next timer date</description>

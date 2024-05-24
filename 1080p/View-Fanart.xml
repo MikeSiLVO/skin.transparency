@@ -449,8 +449,8 @@
 				<top>21</top>
 				<width>60</width>
 				<height>60</height>
-				<label></label>
-				<font></font>
+				<label />
+				<font />
 				<texturefocus>trailer-focus.png</texturefocus>
 				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onleft>9000</onleft>
@@ -460,6 +460,17 @@
 				<onclick condition="Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]")</onclick>
 				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !String.IsEmpty(Listitem.Trailer)</visible>
+			</control>
+			<control type="button" id="7006">
+				<left>1833</left>
+				<top>81</top>
+				<width>60</width>
+				<height>60</height>
+				<label />
+				<font />
+				<texturefocus>osd-bookmark-focus.png</texturefocus>
+				<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
+				<visible>ListItem.HasVideoExtras</visible>
 			</control>
 		</control>
 		<control type="videowindow">
