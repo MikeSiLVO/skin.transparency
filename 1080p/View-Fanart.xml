@@ -468,7 +468,8 @@
 				<height>60</height>
 				<label />
 				<font />
-				<texturefocus>osd-bookmark-focus.png</texturefocus>
+				<enable>no</enable>
+				<texturefocus>osd-bookmark-nofocus.png</texturefocus>
 				<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 				<visible>ListItem.HasVideoExtras</visible>
 			</control>

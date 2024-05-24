@@ -283,7 +283,7 @@
 						<label />
 						<font />
 						<enable>no</enable>
-						<texturefocus>osd-bookmark-focus.png</texturefocus>
+						<texturefocus>osd-bookmark-nofocus.png</texturefocus>
 						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 						<onup>9000</onup>
 						<visible>ListItem.HasVideoExtras</visible>
