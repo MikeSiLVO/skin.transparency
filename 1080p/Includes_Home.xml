@@ -785,7 +785,7 @@
 				<top>24</top>
 				<width>129</width>
 				<height>183</height>
-				<texture>$INFO[Player.Art(thumb)]</texture>
+				<texture>$INFO[Player.Art(poster)]</texture>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>
 			<control type="image">
