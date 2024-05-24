@@ -137,7 +137,8 @@
 							<onleft>7</onleft>
 							<onright>8</onright>
 							<onup>49</onup>
-							<ondown>1110</ondown>
+							<ondown condition="Control.IsVisible(11)">1110</ondown>
+							<ondown condition="!Control.IsVisible(11)">50</ondown>
 						</control>
 						<control type="togglebutton" id="8">
 							<description>Play/browse to Show</description>
@@ -161,7 +162,8 @@
 							<onleft>5</onleft>
 							<onright>6</onright>
 							<onup>49</onup>
-							<ondown>1110</ondown>
+							<ondown condition="Control.IsVisible(11)">1110</ondown>
+							<ondown condition="!Control.IsVisible(11)">50</ondown>
 						</control>
 						<control type="button" id="6">
 							<description>Refresh</description>
@@ -181,7 +183,8 @@
 							<onleft>8</onleft>
 							<onright>1113</onright>
 							<onup>49</onup>
-							<ondown>1110</ondown>
+							<ondown condition="Control.IsVisible(11)">1110</ondown>
+							<ondown condition="!Control.IsVisible(11)">50</ondown>
 						</control>
 						<control type="button" id="1113">
 							<description>Extras</description>
@@ -201,7 +204,8 @@
 							<onleft>6</onleft>
 							<onright>7</onright>
 							<onup>49</onup>
-							<ondown>1110</ondown>
+							<ondown condition="Control.IsVisible(11)">1110</ondown>
+							<ondown condition="!Control.IsVisible(11)">50</ondown>
 							<onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
 							<onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50) + System.HasAddon(script.metadata.actors)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
 							<onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + System.HasAddon(script.metadata.actors)">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
@@ -226,7 +230,8 @@
 							<onleft>1113</onleft>
 							<onright>5</onright>
 							<onup>49</onup>
-							<ondown>1110</ondown>
+							<ondown condition="Control.IsVisible(11)">1110</ondown>
+							<ondown condition="!Control.IsVisible(11)">50</ondown>
 						</control>
 					</control>
 				</control>
@@ -269,6 +274,19 @@
 						<onup>9000</onup>
 						<ondown>50</ondown>
 						<visible>Container.Content(Movies) + !String.IsEmpty(Listitem.trailer)</visible>
+					</control>
+					<control type="button" id="11110">
+						<left>1720</left>
+						<top>706</top>
+						<width>72</width>
+						<height>72</height>
+						<label />
+						<font />
+						<enable>no</enable>
+						<texturefocus>osd-bookmark-focus.png</texturefocus>
+						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
+						<onup>9000</onup>
+						<visible>ListItem.HasVideoExtras</visible>
 					</control>
 				</control>
 				<control type="label">
@@ -321,7 +339,7 @@
 					<height>165</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>1113</onup>
+					<onup>9000</onup>
 					<ondown>61</ondown>
 					<viewtype label="">list</viewtype>
 					<pagecontrol>61</pagecontrol>
