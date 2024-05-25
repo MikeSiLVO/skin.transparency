@@ -155,7 +155,7 @@
 			<onleft>9000</onleft>
 			<onright>60</onright>
 			<onup>10</onup>
-			<ondown>999</ondown>
+			<ondown>10</ondown>
 			<viewtype label="19069">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>350</scrolltime>
@@ -429,7 +429,7 @@
 				<height>120</height>
 				<texture border="10">underlay4.png</texture>
 			</control>
-			<control type="button" id="999">
+			<!-- <control type="button" id="999">
 				<left>120</left>
 				<top>994</top>
 				<width>60</width>
@@ -444,7 +444,7 @@
 				<onright>10</onright>
 				<onup>10</onup>
 				<ondown>10</ondown>
-			</control>
+			</control> -->
 			<control type="textbox">
 				<left>210</left>
 				<top>987</top>
@@ -454,7 +454,7 @@
 				<autoscroll time="3000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(EpgLegend)</visible>
 			</control>
-			<control type="group">
+			<!-- <control type="group">
 				<visible>Skin.HasSetting(EpgLegend)</visible>
 				<control type="image">
 					<left>210</left>
@@ -684,7 +684,7 @@
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 				</control>
-			</control>
+			</control> -->
 		</control>
 	</include>
 	<include name="MediaInfo-PVRRecordings">
