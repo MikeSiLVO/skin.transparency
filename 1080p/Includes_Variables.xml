@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<variable name="ExtraFanartPath">
+		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + [!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2))]">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + [!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2))]">$INFO[Control.GetLabel(4410)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
 	<variable name="ArtistSlide">
 		<value condition="String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
