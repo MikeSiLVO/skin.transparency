@@ -165,11 +165,6 @@
 						<selected>Skin.HasSetting(TVLogo)</selected>
 					</control>
 					<control type="radiobutton" id="119">
-						<label>$LOCALIZE[20343] - $LOCALIZE[31171]</label>
-						<onclick>Skin.ToggleSetting(SeasonFanart)</onclick>
-						<selected>Skin.HasSetting(SeasonFanart)</selected>
-					</control>
-					<control type="radiobutton" id="120">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31172]</label>
 						<onclick>Skin.ToggleSetting(TVShowsExtraFanart)</onclick>
 						<selected>Skin.HasSetting(TVShowsExtraFanart)</selected>
