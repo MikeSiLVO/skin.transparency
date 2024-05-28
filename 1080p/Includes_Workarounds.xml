@@ -338,7 +338,7 @@
 			<top>45</top>
 			<width>345</width>
 			<height>134</height>
-			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/logo.png]</texture>
+			<texture background="true">$VAR[ArtworkLogo]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
 			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(595)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
@@ -350,7 +350,7 @@
 			<top>45</top>
 			<width>345</width>
 			<height>134</height>
-			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+			<texture background="true">$VAR[PlayerArtworkLogo]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
@@ -417,13 +417,13 @@
 		<texture>disc.png</texture>
 	</include>
 	<include name="musicalbumsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/discart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc]</texture>
 	</include>
 	<include name="musicalbumsdisc0-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]$INFO[ListItem(-1).Album,/,/discart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc-1]</texture>
 	</include>
 	<include name="musicalbumsdisc1-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]$INFO[ListItem(1).Album,/,/discart.png]</texture>
+		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc1]</texture>
 	</include>
 	<include name="musicsongsnodisc-View_Icons">
 		<texture>disc.png</texture>

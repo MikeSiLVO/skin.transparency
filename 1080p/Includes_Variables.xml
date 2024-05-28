@@ -5,6 +5,35 @@
 		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + [!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart2))]">$INFO[Control.GetLabel(4410)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+	<variable name="ArtworkLogo">
+		<value condition="Container.Content(seasons) | Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(albumartist.clearlogo))">$INFO[ListItem.Art(albumartist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+		<value>$INFO[ListItem.Art(clearlogo)]</value>
+	</variable>
+	<variable name="PlayerArtworkLogo">
+		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+		<value>$INFO[Player.Art(clearlogo)]</value>
+	</variable>
+	<variable name="ArtworkDisc">
+		<value condition="!String.IsEmpty(ListItem.Art(album.discart))">$INFO[ListItem.Art(album.discart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
+		<value>$INFO[Container.ListItem.Art(discart)]</value>
+	</variable>
+	<variable name="ArtworkDisc-1">
+		<value condition="!String.IsEmpty(ListItem(-1).Art(album.discart))">$INFO[ListItem(-1).Art(album.discart)]</value>
+		<value condition="!String.IsEmpty(ListItem(-1).Art(discart))">$INFO[ListItem(-1).Art(discart)]</value>
+		<value>$INFO[Container.ListItem(-1).Art(discart)]</value>
+	</variable>
+	<variable name="ArtworkDisc1">
+		<value condition="!String.IsEmpty(ListItem(1).Art(album.discart))">$INFO[ListItem(1).Art(album.discart)]</value>
+		<value condition="!String.IsEmpty(ListItem(1).Art(discart))">$INFO[ListItem(1).Art(discart)]</value>
+		<value>$INFO[Container.ListItem(1).Art(discart)]</value>
+	</variable>
+	<variable name="PlayerArtworkDisc">
+		<value condition="!String.IsEmpty(Player.Art(album.discart))">$INFO[Player.Art(album.discart)]</value>
+		<value>$INFO[Player.Art(discart)]</value>
+	</variable>
 	<variable name="ArtistSlide">
 		<value condition="String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
