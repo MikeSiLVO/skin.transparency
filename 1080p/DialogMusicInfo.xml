@@ -20,7 +20,6 @@
 			<texture>black.png</texture>
 			<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
 			<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
-			<animation effect="fade" start="100" end="0" time="300" condition="String.IsEqual(Window.Property(script.metadata.actors.isactive),1)">Conditional</animation>
 		</control>
 		<control type="group">
 			<include>DialogFade</include>
@@ -237,22 +236,6 @@
 						<texturefocus border="7">button-focus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label></label>
-					</control>
-					<control type="button" id="1245">
-						<description>Filmography</description>
-						<width>300</width>
-						<height>52</height>
-						<font>font-20</font>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<texturefocus border="7">button-focus.png</texturefocus>
-						<texturenofocus border="7">button-nofocus.png</texturenofocus>
-						<label>20342</label>
-						<onclick>RunScript(script.metadata.actors,$INFO[Listitem.Artist])</onclick>
-						<visible>String.IsEqual(ListItem.DBTYPE,artist) + System.HasAddon(script.metadata.actors)</visible>
 					</control>
 				</control>
 			</control>

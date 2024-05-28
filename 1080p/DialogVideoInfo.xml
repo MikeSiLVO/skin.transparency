@@ -13,7 +13,6 @@
 				<texture>black.png</texture>
 				<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
 				<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
-				<animation effect="fade" start="100" end="0" time="300" condition="String.IsEqual(Window.Property(script.metadata.actors.isactive),1)">Conditional</animation>
 			</control>
 			<control type="group">
 				<include>DialogFade</include>
@@ -203,9 +202,9 @@
 							<onup>49</onup>
 							<ondown>1110</ondown>
 							<onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
-							<onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50) + System.HasAddon(script.metadata.actors)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
-							<onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + System.HasAddon(script.metadata.actors)">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
-							<onclick condition="[Container.Content(Movies) | Container.Content(Episodes)] + System.HasAddon(script.metadata.actors)">SetProperty(WriterName,$INFO[ListItem.Writer],Home)</onclick>
+							<!-- <onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick> -->
+							<!-- <onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick> -->
+							<!-- <onclick condition="[Container.Content(Movies) | Container.Content(Episodes)]">SetProperty(WriterName,$INFO[ListItem.Writer],Home)</onclick> -->
 							<onclick>ActivateWindow(1115)</onclick>
 						</control>
 						<control type="button" id="7">
