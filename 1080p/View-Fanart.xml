@@ -388,7 +388,7 @@
 					<label>$INFO[ListItem.Year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[345]: [/COLOR][/B][/UPPERCASE]]</label>
 				</control>
 				<control type="label">
-					<left>725</left>
+					<left>626</left>
 					<top>950</top>
 					<width>240</width>
 					<height>45</height>
@@ -409,7 +409,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]]</label>
+					<label>$INFO[ListItem.Top250,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[31052]: [/COLOR][/B][/UPPERCASE]# ]</label>
 				</control>
 			</control>
 			<control type="group">
