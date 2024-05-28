@@ -54,6 +54,10 @@
 		<value condition="String.IsEqual(ListItem.AudioChannels,10)">9.1</value>
 		<value>$INFO[ListItem.AudioChannels]</value>
 	</variable>
+	<variable name="VersionsExtrasIcon">
+		<value condition="ListItem.HasVideoVersions">VideoVersions.png</value>
+		<value condition="ListItem.HasVideoExtras">Extras.png</value>
+	</variable>
 	<variable name="ArtistSlide">
 		<value condition="String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>

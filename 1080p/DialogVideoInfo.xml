@@ -271,18 +271,12 @@
 						<ondown>50</ondown>
 						<visible>Container.Content(Movies) + !String.IsEmpty(Listitem.trailer)</visible>
 					</control>
-					<control type="button" id="11110">
+					<control type="image">
 						<left>1720</left>
 						<top>706</top>
 						<width>72</width>
 						<height>72</height>
-						<label />
-						<font />
-						<enable>no</enable>
-						<texturefocus>osd-bookmark-nofocus.png</texturefocus>
-						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
-						<onup>9000</onup>
-						<visible>ListItem.HasVideoExtras</visible>
+						<texture>$VAR[VersionsExtrasIcon]</texture>
 					</control>
 				</control>
 				<control type="label">

@@ -461,17 +461,12 @@
 				<onclick condition="!Skin.HasSetting(Fullscreen_Trailer)">PlayMedia("$INFO[ListItem.Trailer]",1)</onclick>
 				<visible>!Skin.HasSetting(Hide_Trailer_Icon) + !String.IsEmpty(Listitem.Trailer)</visible>
 			</control>
-			<control type="button" id="7006">
+			<control type="image">
 				<left>1833</left>
 				<top>81</top>
 				<width>60</width>
 				<height>60</height>
-				<label />
-				<font />
-				<enable>no</enable>
-				<texturefocus>osd-bookmark-nofocus.png</texturefocus>
-				<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
-				<visible>ListItem.HasVideoExtras</visible>
+				<texture>$VAR[VersionsExtrasIcon]</texture>
 			</control>
 		</control>
 		<control type="videowindow">
