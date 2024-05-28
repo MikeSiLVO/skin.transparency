@@ -122,7 +122,7 @@
 			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
 			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
 			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
-			<onleft>58</onleft>
+			<onleft>50</onleft>
 			<onright>9000</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
