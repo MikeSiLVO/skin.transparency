@@ -30,18 +30,6 @@
 				<texture>jukebox-fanart-fallback.png</texture>
 			</control>
 			<control type="image">
-				<description>album and song level fanart</description>
-				<left>614</left>
-				<top>231</top>
-				<width>690</width>
-				<height>390</height>
-				<texture background="true">$INFO[Fanart.Image]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>VisibleFadeEffect4</include>
-				<visible>!Player.HasAudio</visible>
-			</control>
-			<control type="image">
 				<description>artist level fanart</description>
 				<left>614</left>
 				<top>231</top>

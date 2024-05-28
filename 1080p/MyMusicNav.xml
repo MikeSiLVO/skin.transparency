@@ -157,34 +157,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>[[String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Container.Art(artist.fanart)) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>album and song level fanart</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[Container.Art(artist.fanart)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Skin.HasSetting(MusicExtraFanart) + !String.IsEmpty(Control.GetLabel(6110))] + !String.IsEmpty(Container.Art(artist.fanart)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
-		<control type="image">
-			<description>artist level fanart</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Skin.HasSetting(MusicExtraFanart) + !String.IsEmpty(Control.GetLabel(6110))] + !String.IsEmpty(ListItem.Property(Fanart_Image)) + !Control.IsVisible(591) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>[[String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(artist.fanart)) + String.IsEmpty(ListItem.Art(albumartist.fanart)) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -198,6 +171,7 @@
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
+		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
 		<include>fanart-mymusicsongs</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

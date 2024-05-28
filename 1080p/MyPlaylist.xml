@@ -51,18 +51,6 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Fanart.Image]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Window.IsVisible(VideoPlaylist) + !String.IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -82,7 +70,7 @@
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(VideoPlaylist) + String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>Window.IsVisible(VideoPlaylist) + String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

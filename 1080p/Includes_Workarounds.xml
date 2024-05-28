@@ -2,123 +2,58 @@
 <includes>
 	<include name="cdart-home">
 		<control type="image">
-			<description>dirty hack for showing cdart image</description>
 			<left>1224</left>
 			<top>6</top>
 			<width>213</width>
 			<height>213</height>
-			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,discart.png]</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$VAR[PlayerArtworkDisc]</texture>
 			<aspectratio>keep</aspectratio>
 			<include>cdartspinhome</include>
-			<visible>![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for showing cdart image</description>
-			<left>1224</left>
-			<top>6</top>
-			<width>213</width>
-			<height>213</height>
-			<texture diffuse="disc_mask.png" background="true">disc.png</texture>
-			<aspectratio>keep</aspectratio>
-			<include>cdartspinhome</include>
-			<visible>String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)</visible>
 		</control>
 	</include>
 	<include name="cdart-jukebox">
 		<control type="image">
-			<description>dirty hack for showing cdart image</description>
 			<left>810</left>
 			<top>585</top>
 			<width>300</width>
 			<height>300</height>
-			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,discart.png]</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$VAR[PlayerArtworkDisc]</texture>
 			<aspectratio>keep</aspectratio>
 			<include>cdartspinjukebox</include>
-			<visible>Player.HasAudio + ![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for showing cdart image</description>
-			<left>810</left>
-			<top>585</top>
-			<width>300</width>
-			<height>300</height>
-			<texture diffuse="disc_mask.png" background="true">disc.png</texture>
-			<aspectratio>keep</aspectratio>
-			<include>cdartspinjukebox</include>
-			<visible>Player.HasAudio + [String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
+			<visible>Player.HasAudio</visible>
 		</control>
 	</include>
 	<include name="cdart-musicvisualisation">
 		<control type="image">
-			<description>dirty hack for showing cdart image</description>
 			<width>300</width>
 			<height>300</height>
 			<left>52</left>
 			<top>-6</top>
-			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$INFO[Player.FolderPath,,discart.png]</texture>
+			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$VAR[PlayerArtworkDisc]</texture>
 			<aspectratio>keep</aspectratio>
 			<include>cdartspin</include>
-			<visible>![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for showing cdart image</description>
-			<width>300</width>
-			<height>300</height>
-			<left>52</left>
-			<top>-6</top>
-			<texture diffuse="disc_mask.png" background="true">disc.png</texture>
-			<aspectratio>keep</aspectratio>
-			<include>cdartspin</include>
-			<visible>String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)</visible>
 		</control>
 	</include>
 	<include name="clearart-dialogfullscreeninfo">
 		<control type="image" id="7017">
-			<description>dirty hack for showing clearart image (episodes in tv show folder)</description>
 			<left>15</left>
 			<top>274</top>
 			<width>418</width>
 			<height>236</height>
-			<texture background="true">$INFO[Player.FolderPath,,clearart.png]</texture>
+			<texture background="true">$VAR[PlayerArtworkClearlogo]</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<animation effect="slide" start="-345,0" end="0,0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-345,0" time="300">WindowClose</animation>
-			<visible>![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-		<control type="image" id="7018">
-			<description>dirty hack for showing clearart image (episodes in season folders)</description>
-			<left>15</left>
-			<top>274</top>
-			<width>418</width>
-			<height>236</height>
-			<texture background="true">$INFO[Player.FolderPath,,../clearart.png]</texture>
-			<aspectratio align="center" aligny="bottom">keep</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<animation effect="slide" start="-345,0" end="0,0" time="300">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="-345,0" time="300">WindowClose</animation>
-			<visible>![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
 	<include name="clearart-dialogseekbar">
 		<control type="image" id="7019">
-			<description>dirty hack for showing clearart image (episodes in tv show folder)</description>
 			<left>1</left>
 			<top>94</top>
 			<width>418</width>
 			<height>236</height>
-			<texture background="true">$INFO[Player.FolderPath,,clearart.png]</texture>
-			<aspectratio align="right" aligny="bottom">keep</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + ![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-		<control type="image" id="7020">
-			<description>dirty hack for showing clearart image (episodes in season folders)</description>
-			<left>1</left>
-			<top>94</top>
-			<width>418</width>
-			<height>236</height>
-			<texture background="true">$INFO[Player.FolderPath,,../clearart.png]</texture>
+			<texture background="true">$VAR[PlayerArtworkClearlogo]</texture>
 			<aspectratio align="right" aligny="bottom">keep</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<visible>VideoPlayer.Content(Episodes) + Window.IsVisible(FullscreenVideo) + !Window.IsVisible(FullscreenInfo) + !Window.IsVisible(VideoOSD) + ![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
@@ -126,12 +61,11 @@
 	</include>
 	<include name="fanartslideshow-musicvisualisation">
 		<control type="multiimage" id="6101">
-			<description>dirty hack for showing fanart slideshow</description>
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
+			<imagepath background="true">$VAR[PlayerExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
@@ -154,7 +88,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
@@ -167,7 +101,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
@@ -180,76 +114,35 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-mymusicsongs">
 		<control type="image">
-			<description>dirty hack for fanart in album and song view</description>
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
+			<texture background="true">$VAR[AlbumSongFanart]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Files) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for fanart for album up icon</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Files) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for fanart in artist view and song up icon</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[listitem.fileNameAndPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Files) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-Programs_Pictures">
 		<control type="image">
-			<description>dirty hack for (inside folder) fanart in programs pictures</description>
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![String.Contains(ListItem.Path,androidapp://) | String.Contains(Container.FolderPath,androidapp://) | String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>dirty hack for (inside folder) fanart in programs pictures</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[ListItem.FolderPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![String.Contains(ListItem.Path,androidapp://) | String.Contains(Container.FolderPath,androidapp://) | String.Contains(ListItem.FolderPath,addons://) | String.Contains(ListItem.Path,special://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-extra-movies">
@@ -362,11 +255,11 @@
 			<top>45</top>
 			<width>345</width>
 			<height>134</height>
-			<texture background="true">$INFO[ListItem.Path,,clearlogo.png]</texture>
+			<texture background="true">$VAR[ArtworkLogo]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,38" time="0" condition="Control.IsVisible(57)">Conditional</animation>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(596)] + Container.Content(Movies) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(590) | Control.IsVisible(596)] + [Container.Content(Movies) | Container.Content(Sets)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
 	<include name="logo-tv">
@@ -375,20 +268,10 @@
 			<top>45</top>
 			<width>345</width>
 			<height>134</height>
-			<texture background="true">$INFO[ListItem.Path,,clearlogo.png]</texture>
+			<texture background="true">$VAR[ArtworkLogo]</texture>
 			<fadetime>IconCrossfadeTime</fadetime>
 			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(590) | Control.IsVisible(596)] + [Container.Content(TVShows) | Container.Content(Seasons)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
-		</control>
-		<control type="image">
-			<left>15</left>
-			<top>45</top>
-			<width>345</width>
-			<height>134</height>
-			<texture background="true">$INFO[ListItem.Path,,../logo.png]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<animation effect="rotate" start="0" end="15" center="auto" time="0" condition="true">Conditional</animation>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(590) | Control.IsVisible(596)] + Container.Content(Episodes) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(590) | Control.IsVisible(596)] + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]</visible>
 		</control>
 	</include>
 	<include name="moviedisc-dvd-View_Icons">
