@@ -113,88 +113,10 @@
 					<onclick>SendClick(2003,10)</onclick>
 				</item>
 				<item>
-					<label>31219</label>
+					<label>21435</label>
 					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],clearlogo)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31224</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],extrathumbs)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31221</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],extrafanart)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31229</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=movie,dbid=$INFO[ListItem.DBID],discart)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31219</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearlogo)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
-				</item>
-				<item>
-					<label>31220</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,dbid=$INFO[ListItem.DBID],clearart)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
-				</item>
-				<item>
-					<label>31221</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,dbid=$INFO[ListItem.DBID],extrafanart)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
-				</item>
-				<item>
-					<label>31223</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.ratingupdate,Single=TVShow)</onclick>
-					<visible>System.HasAddon(script.ratingupdate) + Container.Content(TVShows)</visible>
-				</item>
-				<item>
-					<label>31223</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.ratingupdate,Single=Movie)</onclick>
-					<visible>System.HasAddon(script.ratingupdate) + Container.Content(Movies)</visible>
-				</item>
-				<item>
-					<label>31224</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,dbid=$INFO[ListItem.DBID],extrathumbs)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(MusicVideos)</visible>
-				</item>
-				<item>
-					<label>31221</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,dbid=$INFO[ListItem.DBID],extrafanart)</onclick>
-					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(MusicVideos)</visible>
-				</item>
-				<item>
-					<label>31226</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.metadata.actors,$INFO[Window(Home).Property(ActorName)])</onclick>
-					<visible>System.HasAddon(script.metadata.actors) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !String.IsEmpty(Window(Home).Property(ActorName))</visible>
-				</item>
-				<item>
-					<label>31227</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.metadata.actors,$INFO[Window(Home).Property(DirectorName)])</onclick>
-					<visible>System.HasAddon(script.metadata.actors) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</item>
-				<item>
-					<label>31228</label>
-					<onclick>Dialog.Close(1115)</onclick>
-					<onclick>RunScript(script.metadata.actors,$INFO[Window(Home).Property(WriterName)])</onclick>
-					<visible>System.HasAddon(script.metadata.actors) + [Container.Content(Movies) | Container.Content(Episodes)]</visible>
+					<onclick>RunScript(script.metadata.editor,dbid=$INFO[ListItem.DBID],type=$INFO[ListItem.DBType])</onclick>
+					<visible>System.HasAddon(script.metadata.editor) + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[31006]</label>
