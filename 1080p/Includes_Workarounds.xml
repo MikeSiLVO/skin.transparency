@@ -309,7 +309,7 @@
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
-			<imagepath background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,/extrafanart/]</imagepath>
+			<imagepath background="true">$VAR[ExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
