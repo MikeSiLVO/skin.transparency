@@ -6,6 +6,12 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
+		<control type="button" id="20">
+			<left>-15</left>
+			<top>-15</top>
+			<width>1</width>
+			<height>1</height>
+		</control>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
@@ -29,6 +35,29 @@
 				<onclick>Dialog.Close(addonsettings)</onclick>
 				<visible>Skin.HasSetting(TouchScreenMode)</visible>
 			</control>
+			<control type="image">
+				<left>300</left>
+				<top>75</top>
+				<width>1320</width>
+				<height>98</height>
+				<texture diffuse="underlay5-diffuse.png" border="0,10,0,10">underlay4.png</texture>
+			</control>
+			<control type="button" id="99">
+				<left>660</left>
+				<top>97</top>
+				<width>600</width>
+				<height>52</height>
+				<label>$LOCALIZE[31100] $INFO[Control.GetLabel(20)]</label>
+				<font>font-23</font>
+				<textcolor>white</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<texturenofocus border="7">button-nofocus.png</texturenofocus>
+				<texturefocus border="7">button-focus.png</texturefocus>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onclick>settingslevelchange</onclick>
+			</control>
 			<control type="label" id="2">
 				<description>heading label</description>
 				<left>60</left>
@@ -51,12 +80,12 @@
 			<control type="grouplist" id="5">
 				<description>control settings area</description>
 				<left>300</left>
-				<top>120</top>
+				<top>165</top>
 				<width>1320</width>
 				<height>786</height>
 				<itemgap>-2</itemgap>
 				<pagecontrol>61</pagecontrol>
-				<onup>28</onup>
+				<onup>99</onup>
 				<ondown>28</ondown>
 				<onleft>3</onleft>
 				<onright>61</onright>
@@ -64,7 +93,7 @@
 			<control type="grouplist" id="3">
 				<description>control section area</description>
 				<left>0</left>
-				<top>120</top>
+				<top>165</top>
 				<width>300</width>
 				<height>802</height>
 				<itemgap>-2</itemgap>
@@ -75,7 +104,7 @@
 			</control>
 			<control type="scrollbar" id="61">
 				<left>1635</left>
-				<top>120</top>
+				<top>165</top>
 				<width>30</width>
 				<height>789</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
