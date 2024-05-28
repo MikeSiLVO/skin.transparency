@@ -115,6 +115,15 @@
 					<height>22</height>
 					<info>Player.Progress</info>
 				</control>
+				<control type="ranges">
+					<left>630</left>
+					<top>221</top>
+					<width>1112</width>
+					<height>8</height>
+					<texturebg border="2">empty.png</texturebg>
+					<righttexture>chapter_marker.png</righttexture>
+					<info>Player.Chapters</info>
+				</control>
 				<control type="slider" id="888">
 					<description>Slider</description>
 					<left>630</left>
