@@ -5,19 +5,6 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="image">
-			<description>album and song fanart in library section</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture background="true">$INFO[Fanart.Image]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!String.IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
 			<description>artist fanart in library section</description>
 			<left>0</left>
 			<top>0</top>
@@ -42,7 +29,7 @@
 			<aspectratio>scale</aspectratio>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Fanart.Image) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<include>fanart-mymusicplaylisteditor</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

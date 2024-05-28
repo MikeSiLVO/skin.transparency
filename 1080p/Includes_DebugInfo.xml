@@ -221,14 +221,6 @@
 			</control>
 			<control type="label">
 				<left>0</left>
-				<top>780</top>
-				<width>1860</width>
-				<height>60</height>
-				<label>Fanart.Image: $INFO[Fanart.Image]</label>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<left>0</left>
 				<top>810</top>
 				<width>1860</width>
 				<height>60</height>
