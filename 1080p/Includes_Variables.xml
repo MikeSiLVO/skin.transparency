@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="ExtraFanartPath">
-		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + [!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2))]">$INFO[Control.GetLabel(4411)]</value>
-		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + [!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2))]">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + [!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2)) | !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(ListItem.Art(albumartist.fanart2))]">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + [!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart2))]">$INFO[Control.GetLabel(4410)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ArtistSlide">

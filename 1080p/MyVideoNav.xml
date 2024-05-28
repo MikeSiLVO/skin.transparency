@@ -14,6 +14,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
+			<pauseatend>5000</pauseatend>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
 			<label>$INFO[ListItem.Art(fanart2)]</label>
@@ -55,7 +56,6 @@
 			<label>$INFO[ListItem.Art(tvshow.fanart18)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart19)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart20)]</label>
-			<pauseatend>5000</pauseatend>
 		</control>
 		<control type="fadelabel" id="4411">
 			<top>-100</top>
@@ -64,6 +64,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
+			<pauseatend>5000</pauseatend>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart2)]</label>
@@ -106,7 +107,6 @@
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart18)]</label>
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart19)]</label>
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart20)]</label>
-			<pauseatend>5000</pauseatend>
 		</control>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
