@@ -273,7 +273,10 @@
 				<height>82</height>
 				<texture border="1">Header.png</texture>
 			</control>
-			<include condition="!Skin.HasSetting(TopbarDateTime)">CommonTimeDate</include>
+			<include condition="!Skin.HasSetting(TopbarDateTime)" content="CommonDateTime">
+				<param name="left">1100</param>
+				<param name="align">right</param>
+			</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
 				<include>Breadcrumbs-Settings-SystemInfo</include>

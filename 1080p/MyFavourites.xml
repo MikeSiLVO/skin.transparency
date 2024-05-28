@@ -126,7 +126,7 @@
 				<height>82</height>
 				<texture border="1">Header.png</texture>
 			</control>
-			<include condition="!Skin.HasSetting(TopbarDateTime)">CommonTimeDate</include>
+			<include condition="!Skin.HasSetting(TopbarDateTime)">CommonDateTime</include>
 			<include>CommonFileCount</include>
 			<control type="grouplist">
 				<include>Breadcrumbs</include>
