@@ -410,6 +410,7 @@
 							<label>[UPPERCASE][B]$LOCALIZE[24052]:[/B][/UPPERCASE]</label>
 							<label2>$INFO[ListItem.AddonDisclaimer]</label2>
 							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(ListItem.AddonDisclaimer)</visible>
 						</item>
 						<item>
 							<label>[UPPERCASE][B]$LOCALIZE[560]:[/B][/UPPERCASE]</label>
