@@ -58,7 +58,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(10000).Property(Transparency.EPGTitle)]</label>
+					<label>$INFO[Window(Home).Property(Transparency.EPGTitle)]</label>
 				</control>
 				<control type="label">
 					<left>386</left>
@@ -70,7 +70,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[Window(10000).Property(Transparency.EPGDate)]</label>
+					<label>$INFO[Window(Home).Property(Transparency.EPGDate)]</label>
 				</control>
 			</control>
 			<control type="group">

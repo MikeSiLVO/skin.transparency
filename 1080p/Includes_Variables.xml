@@ -151,7 +151,7 @@
 		<value>[UPPERCASE][B]$LOCALIZE[19047]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="DialogPlotTextBox">
-		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Window(10000).Property(Transparency.EPGPlot)]</value>
+		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Window(Home).Property(Transparency.EPGPlot)]</value>
 		<value condition="!Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(Songs)">$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
