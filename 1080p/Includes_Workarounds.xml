@@ -296,24 +296,6 @@
 	<include name="movienodisc-View_Item">
 		<texture diffuse="disc_mask.png">disc-dvd.png</texture>
 	</include>
-	<include name="musicalbumsnodisc-View_Icons">
-		<texture>disc.png</texture>
-	</include>
-	<include name="musicalbumsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc]</texture>
-	</include>
-	<include name="musicalbumsdisc0-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc-1]</texture>
-	</include>
-	<include name="musicalbumsdisc1-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc1]</texture>
-	</include>
-	<include name="musicsongsnodisc-View_Icons">
-		<texture>disc.png</texture>
-	</include>
-	<include name="musicsongsdisc-View_Icons">
-		<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$INFO[ListItem.Path,,discart.png]</texture>
-	</include>
 	<include name="thumbs-extra-movies">
 		<animation effect="slide" start="0,0" end="15,300" time="0" condition="Control.IsVisible(50)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="1530,188" time="0" condition="Control.IsVisible(57)">Conditional</animation>

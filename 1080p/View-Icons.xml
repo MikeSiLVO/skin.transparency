@@ -551,8 +551,7 @@
 					<width>320</width>
 					<height>320</height>
 					<aspectratio>stretch</aspectratio>
-					<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)]">musicalbumsdisc0-View_Icons</include>
-					<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)">musicalbumsnodisc-View_Icons</include>
+					<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc-1]</texture>
 					<animation reversible="false" effect="zoom" start="819,718,319,319" end="478,764,228,228" time="200">Hidden</animation>
 					<visible>Container.Content(Albums) + Container(56).OnNext + !ListItem(-1).IsParentFolder</visible>
 				</control>
@@ -566,8 +565,7 @@
 					<width>320</width>
 					<height>320</height>
 					<aspectratio>stretch</aspectratio>
-					<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)]">musicalbumsdisc1-View_Icons</include>
-					<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)">musicalbumsnodisc-View_Icons</include>
+					<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc1]</texture>
 					<animation reversible="false" effect="zoom" start="819,718,319,319" end="1209,764,228,228" time="200">Hidden</animation>
 					<visible>Container.Content(Albums) + Container(56).OnPrevious + !ListItem(1).IsParentFolder</visible>
 				</control>
@@ -581,8 +579,7 @@
 					<width>320</width>
 					<height>320</height>
 					<aspectratio>stretch</aspectratio>
-					<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)]">musicalbumsdisc-View_Icons</include>
-					<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)">musicalbumsnodisc-View_Icons</include>
+					<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc]</texture>
 					<animation reversible="true" effect="zoom" start="819,718,319,319" end="861,765,228,228" time="250" condition="!Control.HasFocus(56)">Conditional</animation>
 					<animation reversible="true" effect="zoom" start="861,765,228,228" end="819,718,319,319" time="250">WindowOpen</animation>
 					<animation reversible="true" effect="fade" start="0" end="100" time="100" delay="200">Visible</animation>
@@ -705,8 +702,7 @@
 						<width>228</width>
 						<height>228</height>
 						<aspectratio>stretch</aspectratio>
-						<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)]">musicsongsdisc-View_Icons</include>
-						<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)">musicsongsnodisc-View_Icons</include>
+						<texture diffuse="disc_mask.png" fallback="disc.png" background="true">$VAR[ArtworkDisc]</texture>
 						<animation effect="zoom" start="93,74,228,228" end="51,28,319,319" time="250">Focus</animation>
 						<animation effect="zoom" start="51,28,319,319" end="93,74,228,228" time="250">UnFocus</animation>
 						<visible>Container.Content(Songs) + !ListItem.IsParentFolder</visible>
