@@ -700,39 +700,44 @@
 		<texturefocus border="10">Button_Side_Focus.png</texturefocus>
 		<texturenofocus border="10">Button_Side_NoFocus.png</texturenofocus>
 	</include>
-	<include name="CommonTimeDate">
-		<control type="grouplist">
-			<width>100%</width>
-			<height>45</height>
-			<orientation>horizontal</orientation>
-			<align>center</align>
-			<itemgap>0</itemgap>
-			<visible>![[Player.HasVideo | Player.HasAudio] + Player.Paused] + !Window.IsVisible(busydialog) + !Window.IsVisible(notification) + !Window.IsVisible(volumebar)</visible>
-			<visible>!Skin.HasSetting(TopbarDateTime)</visible>
-			<control type="label">
-				<description>date label</description>
-				<width min="15" max="600">auto</width>
+	<include name="CommonDateTime">
+		<param name="left">560</param>
+		<param name="align">center</param>
+		<definition>
+			<control type="grouplist">
+				<left>$PARAM[left]</left>
+				<width>800</width>
 				<height>45</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[System.Date]</label>
+				<orientation>horizontal</orientation>
+				<align>$PARAM[align]</align>
+				<itemgap>0</itemgap>
+				<visible>![[Player.HasVideo | Player.HasAudio] + Player.Paused] + !Window.IsVisible(busydialog) + !Window.IsVisible(notification) + !Window.IsVisible(volumebar)</visible>
+				<visible>!Skin.HasSetting(TopbarDateTime)</visible>
+				<control type="label">
+					<description>date label</description>
+					<width min="15" max="600">auto</width>
+					<height>45</height>
+					<aligny>center</aligny>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[System.Date]</label>
+				</control>
+				<control type="image">
+					<width>44</width>
+					<height>45</height>
+					<texture>dot.png</texture>
+				</control>
+				<control type="label">
+					<description>time label</description>
+					<width min="15" max="150">auto</width>
+					<height>45</height>
+					<aligny>center</aligny>
+					<font>font-20</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[System.Time]</label>
+				</control>
 			</control>
-			<control type="image">
-				<width>44</width>
-				<height>45</height>
-				<texture>dot.png</texture>
-			</control>
-			<control type="label">
-				<description>time label</description>
-				<width min="15" max="150">auto</width>
-				<height>45</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[System.Time]</label>
-			</control>
-		</control>
+		</definition>
 	</include>
 	<include name="CommonFileCount">
 		<control type="grouplist">
