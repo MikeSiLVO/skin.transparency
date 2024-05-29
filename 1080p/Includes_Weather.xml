@@ -886,7 +886,7 @@
 							<height>525</height>
 							<texture diffuse="weather-diffuse.png">$INFO[ListItem.Property(Layer)]</texture>
 							<aspectratio>scale</aspectratio>
-							<colordiffuse scalediffuse="false">70FFFFFF</colordiffuse>
+							<colordiffuse>70FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
 							<description>legend image</description>
