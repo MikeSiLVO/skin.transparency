@@ -368,20 +368,9 @@
 				<top>915</top>
 				<width>330</width>
 				<height>330</height>
-				<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">moviedisc-dvd-View_Item</include>
-				<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)">movienodisc-View_Item</include>
+				<texture fallback="$VAR[ArtworkDiscFallback]" diffuse="disc_mask.png" background="true">$VAR[ArtworkDisc]</texture>
 				<include>Window_OpenClose_Visible_ItemDisc_Animation</include>
-				<visible>Container.Content(Movies) + ![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !ListItem.IsParentFolder</visible>
-			</control>
-			<control type="image">
-				<left>-60</left>
-				<top>915</top>
-				<width>330</width>
-				<height>330</height>
-				<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">moviedisc-bluray-View_Item</include>
-				<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)">movienodisc-View_Item</include>
-				<include>Window_OpenClose_Visible_ItemDisc_Animation</include>
-				<visible>Container.Content(Movies) + [String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + Control.IsVisible(590) + !ListItem.IsParentFolder</visible>
+				<visible>Container.Content(Movies) + Control.IsVisible(590) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
 				<left>-60</left>
