@@ -43,6 +43,11 @@
 		<value condition="!String.IsEmpty(ListItem(1).Art(discart))">$INFO[ListItem(1).Art(discart)]</value>
 		<value>$INFO[Container.ListItem(1).Art(discart)]</value>
 	</variable>
+	<variable name="ArtworkDiscFallback">
+		<value condition="[String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">disc-bluray.png</value>
+		<value condition="!Container.Content(Seasons) + !ListItem.IsFolder + ![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K)] + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">disc-dvd.png</value>
+		<value>disc.png</value>
+	</variable>
 	<variable name="PlayerArtworkDisc">
 		<value condition="!String.IsEmpty(Player.Art(album.discart))">$INFO[Player.Art(album.discart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>

@@ -57,17 +57,6 @@
 			<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Path) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
-	<include name="moviedisc-dvd-View_Icons">
-		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,discart.png]</texture>
-		<visible>!ListItem.IsParentFolder</visible>
-	</include>
-	<include name="moviedisc-bluray-View_Icons">
-		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,discart.png]</texture>
-		<visible>!ListItem.IsParentFolder</visible>
-	</include>
-	<include name="movienodisc-View_Icons">
-		<texture>disc.png</texture>
-	</include>
 	<include name="moviedisc-dvd-View_Item">
 		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,discart.png]</texture>
 		<visible>!ListItem.IsParentFolder</visible>

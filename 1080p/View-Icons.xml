@@ -228,33 +228,10 @@
 						<width>260</width>
 						<height>260</height>
 						<aspectratio>stretch</aspectratio>
-						<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">moviedisc-dvd-View_Icons</include>
-						<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)">movienodisc-View_Icons</include>
+						<texture fallback="$VAR[ArtworkDiscFallback]" diffuse="disc_mask.png" background="true">$VAR[ArtworkDisc]</texture>
 						<animation effect="zoom" start="58,94,259,259" end="32,68,313,313" time="250">Focus</animation>
 						<animation effect="zoom" start="32,68,313,313" end="58,94,259,259" time="250">UnFocus</animation>
-						<visible>![String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !ListItem.IsParentFolder + !ListItem.IsFolder</visible>
-					</control>
-					<control type="image">
-						<left>58</left>
-						<top>94</top>
-						<width>260</width>
-						<height>260</height>
-						<aspectratio>stretch</aspectratio>
-						<include condition="![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)]">moviedisc-bluray-View_Icons</include>
-						<include condition="String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)">movienodisc-View_Icons</include>
-						<animation effect="zoom" start="58,94,259,259" end="32,68,313,313" time="250">Focus</animation>
-						<animation effect="zoom" start="32,68,313,313" end="58,94,259,259" time="250">UnFocus</animation>
-						<visible>[String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)] + !ListItem.IsParentFolder</visible>
-					</control>
-					<control type="image">
-						<left>58</left>
-						<top>94</top>
-						<width>260</width>
-						<height>260</height>
-						<texture>disc.png</texture>
-						<animation effect="zoom" start="58,94,259,259" end="32,68,313,313" time="250">Focus</animation>
-						<animation effect="zoom" start="32,68,313,313" end="58,94,259,259" time="250">UnFocus</animation>
-						<visible>[Container.Content(Seasons) | [!Container.Content(Seasons) + ListItem.IsFolder]] + !ListItem.IsParentFolder</visible>
+						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
 						<left>141</left>
