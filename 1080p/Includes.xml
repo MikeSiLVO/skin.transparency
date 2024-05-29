@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include file="defaults.xml" />
+	<include file="Includes_Animations.xml" />
+	<include file="Includes_Artwork.xml" />
+	<include file="Includes_Backgrounds.xml" />
+	<include file="Includes_CDWall.xml" />
+	<include file="Includes_DebugInfo.xml" />
+	<include file="Includes_Home.xml" />
+	<include file="Includes_HomeWidgetLists.xml" />
+	<include file="Includes_MediaFlagsMusic.xml" />
+	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
+	<include file="Includes_MediaFlagsVideo.xml" />
+	<include file="Includes_MediaFlagsVideoFullScreen.xml" />
 	<include file="Includes_Variables.xml" />
+	<include file="Includes_Weather.xml" />
+	<include file="Includes_Workarounds.xml" />
 	<include file="View-CoverFlow.xml" />
 	<include file="View-Fanart.xml" />
 	<include file="View-FullList.xml" />
@@ -18,17 +31,6 @@
 	<include file="View-ThumbWall.xml" />
 	<include file="View-Wall.xml" />
 	<include file="View-WideIcon.xml" />
-	<include file="Includes_Animations.xml" />
-	<include file="Includes_CDWall.xml" />
-	<include file="Includes_DebugInfo.xml" />
-	<include file="Includes_Home.xml" />
-	<include file="Includes_HomeWidgetLists.xml" />
-	<include file="Includes_MediaFlagsMusic.xml" />
-	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
-	<include file="Includes_MediaFlagsVideo.xml" />
-	<include file="Includes_MediaFlagsVideoFullScreen.xml" />
-	<include file="Includes_Weather.xml" />
-	<include file="Includes_Workarounds.xml" />
 	<constant name="FanartCrossfadeTime">300</constant>
 	<constant name="IconCrossfadeTime">300</constant>
 	<include name="AllViewCommonPageControls">
