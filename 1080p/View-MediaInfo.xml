@@ -255,7 +255,6 @@
 				<height>202</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<texture flipy="true" diffuse="video-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture flipy="true" diffuse="video-diffuse-mirror.png" border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!ListItem.IsParentFolder</visible>
@@ -580,12 +579,11 @@
 			</control>
 			<control type="image">
 				<left>-20</left>
-				<top>160</top>
+				<top>169</top>
 				<width>699</width>
 				<height>160</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<texture fallback="DefaultBanner.png" flipy="true" diffuse="banner-diffuse-mirror.png" background="true">$VAR[IconBanner]</texture>
-				<bordertexture flipy="true" diffuse="banner-diffuse-mirror.png" border="13">banner-shadow.png</bordertexture>
 				<bordersize>13</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!ListItem.IsParentFolder</visible>
@@ -1043,7 +1041,6 @@
 				<height>202</height>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<texture flipy="true" diffuse="video-diffuse-mirror.png" background="true">$INFO[ListItem.Icon]</texture>
-				<bordertexture flipy="true" diffuse="video-diffuse-mirror.png" border="9">video-shadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>!ListItem.IsParentFolder</visible>

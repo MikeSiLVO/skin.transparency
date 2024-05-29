@@ -108,10 +108,10 @@
 		<value condition="String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
 	</variable>
-	<variable name="ContextMenu">
+	<!-- <variable name="ContextMenu">
 		<value condition="Container.Content(Actors)">$LOCALIZE[31226]</value>
 		<value condition="Container.Content(Directors)">$LOCALIZE[31227]</value>
-	</variable>
+	</variable> -->
 	<variable name="DialogAlbumInfoTitle">
 		<value condition="Container.Content(Artists)">$INFO[Listitem.Artist]</value>
 		<value condition="Container.Content(Albums)">$INFO[Listitem.Album]</value>
