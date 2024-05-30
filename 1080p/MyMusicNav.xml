@@ -12,6 +12,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(ListItem.Art(artist.fanart2)) | !String.IsEmpty(ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
 			<label>$INFO[ListItem.Art(fanart2)]</label>
@@ -82,6 +83,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart2)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart2)]</label>
@@ -172,7 +174,7 @@
 			<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
-		<include>fanart-mymusicsongs</include>
+		<include condition="!Skin.HasSetting(MusicExtraFanart)">fanart-mymusicsongs</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

@@ -15,6 +15,7 @@
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
 			<pauseatend>5000</pauseatend>
+			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2))</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
 			<label>$INFO[ListItem.Art(fanart2)]</label>
@@ -65,6 +66,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2))</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart2)]</label>
@@ -86,7 +88,6 @@
 			<label>$INFO[Container.ListItem.Art(fanart18)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart19)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart20)]</label>
-			<label>$INFO[Container.ListItem.Art(tvshow.fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart2)]</label>
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart3)]</label>
@@ -178,7 +179,7 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart) + !String.IsEmpty(Control.GetLabel(6102))] + ![[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Skin.HasSetting(TVShowsExtraFanart) + !String.IsEmpty(Control.GetLabel(6105))] + ![Container.Content(MusicVideos) + Skin.HasSetting(MusicVideosExtraFanart) + !String.IsEmpty(Control.GetLabel(6107))] + !String.IsEmpty(ListItem.Property(Fanart_Image)) + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart)] + ![[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Skin.HasSetting(TVShowsExtraFanart)] + ![Container.Content(MusicVideos) + Skin.HasSetting(MusicVideosExtraFanart)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
