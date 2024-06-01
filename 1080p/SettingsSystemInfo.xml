@@ -216,7 +216,8 @@
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim2</include>
 				<onleft>5999</onleft>
-				<onright>5999</onright>
+				<onright condition="Control.IsVisible(30)">61</onright>
+				<onright condition="!Control.IsVisible(30)">5999</onright>
 				<itemgap>-2</itemgap>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
