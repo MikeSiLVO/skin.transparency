@@ -7,7 +7,6 @@
 	<include file="Includes_CDWall.xml" />
 	<include file="Includes_DebugInfo.xml" />
 	<include file="Includes_Home.xml" />
-	<include file="Includes_HomeWidgetLists.xml" />
 	<include file="Includes_MediaFlagsMusic.xml" />
 	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
 	<include file="Includes_MediaFlagsVideo.xml" />
