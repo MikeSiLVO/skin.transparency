@@ -1082,7 +1082,7 @@
 					<control type="radiobutton" id="513">
 						<label>31211</label>
 						<selected>Skin.HasSetting(NextAired)</selected>
-						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
+						<enable>System.AddonIsEnabled(plugin.video.themoviedb.helper)</enable>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 					</control>
 					<control type="image" id="514">

@@ -1623,7 +1623,7 @@
 			<animation effect="slide" start="0,0" end="578,-248" condition="Control.IsVisible(596)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-300,135" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="150" condition="Control.IsVisible(55) + Control.IsVisible(7031)">Conditional</animation>
-			<visible>!String.IsEmpty(Window(Home).Property(NextAired.Label)) + !ListItem.IsParentFolder + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + [Control.IsVisible(50) | Control.IsVisible(590)]]] + !String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			<visible>!String.IsEmpty(Container(9143).ListItem.Property(Next_Aired)) + !ListItem.IsParentFolder + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes) + [Control.IsVisible(50) | Control.IsVisible(590)]]] + !String.IsEmpty(ListItem.TVShowTitle)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -1639,7 +1639,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-20</font>
-				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Container(9143).ListItem.Property(Next_Aired.Season),S]$INFO[Container(9143).ListItem.Property(Next_Aired.Episode),E, - ]$INFO[Container(9143).ListItem.Property(Next_Aired.Name)][CR]$INFO[Container(9143).ListItem.Property(Next_Aired.Long)]</label>
 			</control>
 		</control>
 	</include>
@@ -3035,5 +3035,15 @@
 		<aligny>center</aligny>
 		<animation effect="zoom" start="1" end="100" center="0,22" time="400" tween="back" easing="out">Visible</animation>
 		<animation effect="zoom" start="100" end="1" center="0,22" time="400" tween="back" easing="in">Hidden</animation>
+	</include>
+	<include name="TMDbHelperContentList">
+		<control type="list" id="9143">
+			<left>-100</left>
+			<top>-100</top>
+			<width>100</width>
+			<height>100</height>
+			<itemlayout height="100" width="100" />
+			<focusedlayout height="100" width="100" />
+		</control>
 	</include>
 </includes>
