@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<onload condition="Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<views>50,51,52,53,54,55,57,58,59,589,590,592,596,598,599</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
+		<include condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">TMDbHelperContentList</include>
 		<control type="fadelabel" id="4410">
 			<top>-100</top>
 			<width>2560</width>
