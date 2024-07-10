@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=5040&amp;options=noGroups)</onload>
 	<controls>
 		<include condition="!Skin.HasSetting(HideHomeVideoBackground)">home-videowindow</include>
-		<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + Skin.HasSetting(Home_Movies_Fanart_Background)">Home_Movies_Fanart</include>
-		<include condition="!Skin.HasSetting(Menu_TVShows) + Skin.HasSetting(Home_TVShows_Fanart_Background)">Home_TVShows_Fanart</include>
-		<include condition="!Skin.HasSetting(Menu_Music) + Skin.HasSetting(Home_Music_Fanart_Background)">Home_Music_Fanart</include>
 		<control type="multiimage">
 			<include>FullscreenDimensions</include>
-			<imagepath background="true">$INFO[Container(5040).ListItem.Icon]</imagepath>
+			<imagepath background="true">$INFO[Container(5040).ListItem.Property(background)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>7000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>600</fadetime>
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 			<include>VisibleFadeEffect</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![[Control.HasFocus(5044) + !String.IsEmpty(Control.GetLabel(7021))] | [Control.HasFocus(5045) + !String.IsEmpty(Control.GetLabel(7022))] | [Control.HasFocus(5046) + !String.IsEmpty(Control.GetLabel(7023))] | [Control.HasFocus(5047) + !String.IsEmpty(Control.GetLabel(7024))] | [Control.HasFocus(5048) + !String.IsEmpty(Control.GetLabel(7025))]]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)]</visible>
 		</control>
-		<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + [!Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeWatchlistMovies)]">recentlyfanartmovies</include>
-		<include condition="!Skin.HasSetting(Menu_TVShows) + [!Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeWatchlistTVShows)]">recentlyfanartepisodes</include>
-		<include condition="Skin.HasSetting(Menu_MusicVideos) + [!Skin.HasSetting(HomeRecentMusicvideos) | Skin.HasSetting(HomeRandomMusicvideos) | Skin.HasSetting(HomeWatchlistMusicvideos)]">recentlyfanartmusicvideos</include>
-		<include condition="!Skin.HasSetting(Menu_Music) + [!Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeWatchlistAlbums)]">recentlyfanartalbums</include>
-		<include condition="!Skin.HasSetting(Menu_Programs) + !Skin.HasSetting(HomeRandomAddons)">randomfanartaddons</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<include condition="Window.Previous(Startup)">Splash</include>
 		<control type="group">

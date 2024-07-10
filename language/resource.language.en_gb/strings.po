@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: /1080p/script-skinshortcuts.xml
+msgctxt "#31000"
+msgid "Edit submenu"
+msgstr ""
+
 # Dialog labels
 msgctxt "#31001"
 msgid "Working..."
@@ -53,7 +58,21 @@ msgctxt "#31009"
 msgid "Memory usage"
 msgstr ""
 
-# empty strings from id 31007 to 31023
+#: /1080p/script-skinshortcuts.xml
+msgctxt "#31010"
+msgid "Restore"
+msgstr ""
+
+#: /1080p/SkinSettings.xml
+msgctxt "#31011"
+msgid "Setup the main menu"
+msgstr ""
+
+#: /1080p/SkinSettings.xml
+msgctxt "#31012"
+msgid "Reset main menu to defaults"
+msgstr ""
+
 # Page labels
 msgctxt "#31024"
 msgid "Page"

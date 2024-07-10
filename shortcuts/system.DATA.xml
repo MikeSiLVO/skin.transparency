@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+	<shortcut>
+		<defaultID>20077</defaultID>
+		<label>$LOCALIZE[20077]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(SkinSettings)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>14200</defaultID>
+		<label>$LOCALIZE[14200]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(PlayerSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19020</defaultID>
+		<label>$LOCALIZE[19020]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(PVRSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>14211</defaultID>
+		<label>$LOCALIZE[14211]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(MediaSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>13000</defaultID>
+		<label>$LOCALIZE[13000]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(SystemSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>705</defaultID>
+		<label>$LOCALIZE[705]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(NetworkSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>13200</defaultID>
+		<label>$LOCALIZE[13200]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(Profiles,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>14206</defaultID>
+		<label>$LOCALIZE[14206]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(InterfaceSettings,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>$LOCALIZE[24001]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(AddonBrowser)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>130</defaultID>
+		<label>$LOCALIZE[130]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(SystemInfo,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>10003</defaultID>
+		<label>$LOCALIZE[10003]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(FileManager,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>10050</defaultID>
+		<label>$LOCALIZE[10050]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>ActivateWindow(Eventlog)</action>
+	</shortcut>
+</shortcuts>

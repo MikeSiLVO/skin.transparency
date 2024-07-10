@@ -1,7 +1,7 @@
-<addon id="skin.transparency" name="Transparency!" provider-name="ronie" version="13.0.0">
+<addon id="skin.transparency.ssedition" name="Transparency! (SS Edition)" provider-name="ronie, SiLVO" version="0.0.1">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
-		<import addon="script.favourites" version="6.0.2" />
+		<import addon="script.skinshortcuts" version="2.0.3" />
 		<import addon="script.globalsearch" version="5.0.0" />
 		<import addon="script.image.resource.select" version="0.0.5" />
 		<import addon="resource.images.studios.white" version="0.0.9" />
@@ -9,8 +9,6 @@
 		<import addon="resource.images.moviegenreicons.coloured" version="0.0.5" />
 		<import addon="resource.images.musicgenreicons.poster" version="0.0.5" />
 		<import addon="resource.images.weathericons.animated" version="0.0.4" />
-		<import addon="resource.images.weatherfanart.prairie" version="0.0.4" />
-		<import addon="resource.images.weatherfanart.multi" version="0.0.4" />
 	</requires>
 	<extension debugging="false" effectslowdown="1" point="xbmc.gui.skin">
 		<res aspect="16:9" default="true" folder="1080p" height="1080" width="1920" />
@@ -99,6 +97,6 @@
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 		</assets>
-		<news>Includes the latest changes for Kodi v21 Omega</news>
+		<news>Add Skin Shortcuts support</news>
 	</extension>
 </addon>

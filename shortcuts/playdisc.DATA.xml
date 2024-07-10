@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+	<shortcut>
+		<defaultID>13391</defaultID>
+		<label>$LOCALIZE[13391]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>EjectTray()</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>600</defaultID>
+		<label>$LOCALIZE[600]</label>
+		<label2 />
+		<icon />
+		<thumb />
+		<action>RipCD</action>
+		<visible>System.HasMediaAudioCD</visible>
+	</shortcut>
+</shortcuts>

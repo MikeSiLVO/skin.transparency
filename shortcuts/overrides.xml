@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+	<doNotShareMenu />
+	<doNotShareLevels />
+	<alwaysRestore>True</alwaysRestore>
+	<!-- Override actions -->
+	<override action="ActivateWindow(Favourites)">
+		<action>ActivateWindow(favouritesbrowser)</action>
+	</override>
+	<!-- Visible Overrides -->
+	<visibleoverride condition="Library.HasContent(music)">ActivateWindow(Music,files)</visibleoverride>
+	<visibleoverride condition="Library.HasContent(movies)">ActivateWindow(videos,files,return)</visibleoverride>
+	<visibleoverride condition="Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</visibleoverride>
+	<visibleoverride condition="Library.HasContent(musicvideos)">ActivateWindow(videos,files,return)</visibleoverride>
+	<visibleoverride condition="System.HasPVRAddon">ActivateWindow(addonbrowser,addons://repository.xbmc.org/xbmc.pvrclient,return)</visibleoverride>
+	<visibleoverride condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</visibleoverride>
+	<!-- Backgrounds -->
+	<backgroundBrowse>True</backgroundBrowse>
+	<background label="$LOCALIZE[3]" icon="special://skin/backgrounds/videos.jpg">special://skin/backgrounds/videos.jpg</background>
+	<background label="$LOCALIZE[342]" icon="special://skin/backgrounds/movies.jpg">special://skin/backgrounds/movies.jpg</background>
+	<background label="$LOCALIZE[20343]" icon="special://skin/backgrounds/tvshows.jpg">special://skin/backgrounds/tvshows.jpg</background>
+	<background label="$LOCALIZE[20389]" icon="special://skin/backgrounds/musicvideos.jpg">special://skin/backgrounds/musicvideos.jpg</background>
+	<background label="$LOCALIZE[19020]" icon="special://skin/backgrounds/tv.jpg">special://skin/backgrounds/tv.jpg</background>
+	<background label="$LOCALIZE[2]" icon="special://skin/backgrounds/music.jpg">special://skin/backgrounds/music.jpg</background>
+	<background label="$LOCALIZE[1]" icon="special://skin/backgrounds/pictures.jpg">special://skin/backgrounds/pictures.jpg</background>
+	<background label="$LOCALIZE[24001]" icon="special://skin/backgrounds/programs.jpg">special://skin/backgrounds/programs.jpg</background>
+	<background label="$LOCALIZE[15016]" icon="special://skin/backgrounds/games.jpg">special://skin/backgrounds/games.jpg</background>
+	<background label="$LOCALIZE[8]" icon="special://skin/backgrounds/weather.jpg">special://skin/backgrounds/weather.jpg</background>
+	<background label="$LOCALIZE[1035]" icon="special://skin/backgrounds/favourites.jpg">special://skin/backgrounds/favourites.jpg</background>
+	<background label="$LOCALIZE[5]" icon="special://skin/backgrounds/settings.jpg">special://skin/backgrounds/settings.jpg</background>
+	<background label="$LOCALIZE[341]" icon="special://skin/backgrounds/playdisc.jpg">special://skin/backgrounds/playdisc.jpg</background>
+	<backgrounddefault defaultID="videos">special://skin/backgrounds/videos.jpg</backgrounddefault>
+	<backgrounddefault defaultID="movies">special://skin/backgrounds/movies.jpg</backgrounddefault>
+	<backgrounddefault defaultID="tvshows">special://skin/backgrounds/tvshows.jpg</backgrounddefault>
+	<backgrounddefault defaultID="musicvideos">special://skin/backgrounds/musicvideos.jpg</backgrounddefault>
+	<backgrounddefault defaultID="tv">special://skin/backgrounds/tv.jpg</backgrounddefault>
+	<backgrounddefault defaultID="music">special://skin/backgrounds/music.jpg</backgrounddefault>
+	<backgrounddefault defaultID="pictures">special://skin/backgrounds/pictures.jpg</backgrounddefault>
+	<backgrounddefault defaultID="addons">special://skin/backgrounds/programs.jpg</backgrounddefault>
+	<backgrounddefault defaultID="games">special://skin/backgrounds/games.jpg</backgrounddefault>
+	<backgrounddefault defaultID="weather">special://skin/backgrounds/weather.jpg</backgrounddefault>
+	<backgrounddefault defaultID="favourites">special://skin/backgrounds/favourites.jpg</backgrounddefault>
+	<backgrounddefault defaultID="system">special://skin/backgrounds/settings.jpg</backgrounddefault>
+	<backgrounddefault defaultID="playdisc">special://skin/backgrounds/playdisc.jpg</backgrounddefault>
+</overrides>
