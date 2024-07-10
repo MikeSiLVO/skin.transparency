@@ -20,7 +20,7 @@
 			<texture fallback="disc.png" diffuse="disc_mask.png" background="true">$VAR[PlayerArtworkDisc]</texture>
 			<aspectratio>keep</aspectratio>
 			<include>cdartspinjukebox</include>
-			<visible>Player.HasAudio</visible>
+			<visible>!String.IsEmpty(MusicPlayer.Title) + [Player.Playing | Player.Paused]</visible>
 		</control>
 	</include>
 	<include name="cdart-musicvisualisation">
