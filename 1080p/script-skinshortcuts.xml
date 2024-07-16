@@ -69,22 +69,17 @@
 							<height>60</height>
 							<font>font-20c</font>
 							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
+							<textcolor>white</textcolor>
 							<selectedcolor>lightblue</selectedcolor>
-							<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+							<label>[UPPERCASE][B]$VAR[ShortcutsDisabledVar]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="500" height="60">
 						<control type="image">
 							<width>500</width>
 							<height>60</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="image">
-							<width>500</width>
-							<height>60</height>
 							<texture border="7">list-focus2.png</texture>
-							<animation effect="fade" start="100" end="40" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
+							<animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -92,9 +87,9 @@
 							<height>60</height>
 							<font>font-20c</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>lightblue</selectedcolor>
+							<label>[UPPERCASE][B]$VAR[ShortcutsDisabledVar]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						</control>
 					</focusedlayout>
 				</control>
@@ -108,7 +103,7 @@
 				<onleft>9001</onleft>
 				<control type="togglebutton" id="313">
 					<description>Enable/Disable</description>
-					<onup>310</onup>
+					<onup>312</onup>
 					<ondown>401</ondown>
 					<onleft>9001</onleft>
 					<onright>9000</onright>
@@ -128,6 +123,7 @@
 					<top>60</top>
 					<width>1100</width>
 					<height>780</height>
+					<itemgap>0</itemgap>
 					<onleft>9001</onleft>
 					<onright>9000</onright>
 					<onup>313</onup>
@@ -166,6 +162,14 @@
 						<height>60</height>
 						<label>$ADDON[script.skinshortcuts 32045]</label>
 						<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
+						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+					</control>
+					<control type="button" id="312">
+						<description>Add widget</description>
+						<width>1100</width>
+						<height>60</height>
+						<label>$ADDON[script.skinshortcuts 32044]</label>
+						<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					</control>
 				</control>

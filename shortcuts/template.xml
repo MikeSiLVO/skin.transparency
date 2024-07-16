@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<other include="widget">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|widget">poster</condition>
+		<!-- Set Movie Properties -->
+		<property name="artwork" tag="property" attribute="name|widgetType" value="movie">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(poster)]</property>
+		<property name="fallback" tag="property" attribute="name|widgetType" value="movie">DefaultMovies.png</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="movie">$INFO[ListItem.Title]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="movie">$INFO[ListItem.Year]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="movie">$LOCALIZE[342]: $INFO[Window.Property(Movies.Count)]  $LOCALIZE[16101]: $INFO[Window.Property(Movies.UnWatched)]</property>
+		<!-- Set TV Show Properties -->
+		<property name="artwork" tag="property" attribute="name|widgetType" value="tvshow">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(poster)]</property>
+		<property name="fallback" tag="property" attribute="name|widgetType" value="tvshow">DefaultTVShows.png</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="tvshow">$INFO[ListItem.Title]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="tvshow">$INFO[ListItem.Year]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="tvshow">$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]  $LOCALIZE[16101]: $INFO[Window.Property(TVShows.UnWatched)]</property>
+		<controls>
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+				<left>375</left>
+				<top>705</top>
+				<include>HomeInfoAnimation</include>
+				<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+				<control type="image">
+					<left>645</left>
+					<width>900</width>
+					<height>255</height>
+					<texture border="2">gradient.png</texture>
+				</control>
+				<control type="image">
+					<left>1400</left>
+					<top>46</top>
+					<width>117</width>
+					<height>168</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="gamecase-diffuse.png" fallback="$SKINSHORTCUTS[fallback]" background="true">$SKINSHORTCUTS[artwork]</texture>
+					<fadetime>400</fadetime>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>8</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>$SKINSHORTCUTS[label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-25c_bold</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="list" id="$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]">
+					<preloaditems>2</preloaditems>
+					<orientation>vertical</orientation>
+					<left>216</left>
+					<top>45</top>
+					<height>180</height>
+					<width>1155</width>
+					<onup>20</onup>
+					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
+					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<itemlayout width="1155" height="60">
+						<control type="label">
+							<height>26</height>
+							<width>1155</width>
+							<font>font-19</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>[B]$SKINSHORTCUTS[title][/B]</label>
+						</control>
+						<control type="label">
+							<top>26</top>
+							<height>26</height>
+							<width>1155</width>
+							<font>font-17</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>$SKINSHORTCUTS[subtitle]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1155" height="60">
+						<control type="group">
+							<visible>!Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>26</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>26</top>
+								<height>26</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>26</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>blue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>26</top>
+								<height>26</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>lightblue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+					</focusedlayout>
+					<content target="$SKINSHORTCUTS[target]" browse="never">$SKINSHORTCUTS[content]</content>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>220</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>[UPPERCASE][B]$SKINSHORTCUTS[mediacount][/B][/UPPERCASE]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-15c</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</controls>
+	</other>
+	<other include="widget">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|widget">landscape</condition>
+		<!-- Set Episode Properties -->
+		<property name="artwork" tag="property" attribute="name|widgetType" value="episode">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(thumb)]</property>
+		<property name="fallback" tag="property" attribute="name|widgetType" value="episode">DefaultTVShows.png</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="episode">$INFO[ListItem.TvShowTitle]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="episode">$INFO[ListItem.Season,s]$INFO[ListItem.Episode,e]$INFO[ListItem.Title, - ]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="episode">$LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)]  $LOCALIZE[16101]: $INFO[Window.Property(Episodes.UnWatched)]</property>
+		<!-- Set Music Video Properties -->
+		<property name="artwork" tag="property" attribute="name|widgetType" value="musicvideo">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(thumb)]</property>
+		<property name="fallback" tag="property" attribute="name|widgetType" value="musicvideo">DefaultMusicVideos.png</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="musicvideo">$INFO[ListItem.Artist]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="musicvideo">$INFO[ListItem.Label]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="musicvideo">$LOCALIZE[20389]: $INFO[Window.Property(MusicVideos.Count)]  $LOCALIZE[16101]: $INFO[Window.Property(MusicVideos.UnWatched)]</property>
+		<controls>
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+				<left>375</left>
+				<top>705</top>
+				<include>HomeInfoAnimation</include>
+				<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+				<control type="image">
+					<left>645</left>
+					<width>900</width>
+					<height>255</height>
+					<texture border="2">gradient.png</texture>
+				</control>
+				<control type="image">
+					<left>1230</left>
+					<top>48</top>
+					<width>292</width>
+					<height>165</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<texture diffuse="video-diffuse.png" background="true" fallback="$SKINSHORTCUTS[fallback]">$SKINSHORTCUTS[artwork]</texture>
+					<fadetime>400</fadetime>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>8</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>$SKINSHORTCUTS[label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-25c_bold</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="list" id="$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]">
+					<preloaditems>2</preloaditems>
+					<orientation>vertical</orientation>
+					<left>52</left>
+					<top>45</top>
+					<height>180</height>
+					<width>1155</width>
+					<onup>20</onup>
+					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
+					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<itemlayout width="1155" height="60">
+						<control type="label">
+							<height>24</height>
+							<width>1155</width>
+							<font>font-19</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>[B]$SKINSHORTCUTS[title][/B]</label>
+						</control>
+						<control type="label">
+							<top>24</top>
+							<height>24</height>
+							<width>1155</width>
+							<font>font-17</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>$SKINSHORTCUTS[subtitle]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1155" height="60">
+						<control type="group">
+							<visible>!Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>24</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>24</top>
+								<height>24</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>24</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>blue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>24</top>
+								<height>24</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>lightblue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+					</focusedlayout>
+					<content target="$SKINSHORTCUTS[target]" browse="never">$SKINSHORTCUTS[content]</content>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>220</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>[UPPERCASE][B]$SKINSHORTCUTS[mediacount][/B][/UPPERCASE]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-15c</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</controls>
+	</other>
+	<other include="widget">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|widget">square</condition>
+		<!-- Set Album Properties -->
+		<property name="artwork" tag="property" attribute="name|widgetType" value="album">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Thumb]</property>
+		<property name="fallback" tag="property" attribute="name|widgetType" value="album">DefaultAlbumCover.png</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="album">$INFO[ListItem.Artist]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="album">$INFO[ListItem.Title]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="album">$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]  $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]</property>
+		<controls>
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+				<left>375</left>
+				<top>705</top>
+				<include>HomeInfoAnimation</include>
+				<animation effect="slide" end="0,-102" time="0" condition="Skin.HasSetting(HorizontalHomeMenu)">Conditional</animation>
+				<control type="image">
+					<left>645</left>
+					<width>900</width>
+					<height>255</height>
+					<texture border="2">gradient.png</texture>
+				</control>
+				<control type="image">
+					<left>1344</left>
+					<top>46</top>
+					<width>168</width>
+					<height>168</height>
+					<texture fallback="$SKINSHORTCUTS[fallback]" background="true">$SKINSHORTCUTS[artwork]</texture>
+					<fadetime>400</fadetime>
+				</control>
+				<control type="image">
+					<left>1326</left>
+					<top>44</top>
+					<width>192</width>
+					<height>174</height>
+					<texture>cdcase.png</texture>
+					<visible>!Skin.HasSetting(HideMusicCase)</visible>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>8</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>$SKINSHORTCUTS[label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-25c_bold</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="list" id="$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]">
+					<preloaditems>2</preloaditems>
+					<orientation>vertical</orientation>
+					<left>142</left>
+					<top>45</top>
+					<height>180</height>
+					<width>1155</width>
+					<onup>20</onup>
+					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
+					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<itemlayout width="1155" height="60">
+						<control type="label">
+							<height>26</height>
+							<width>1155</width>
+							<font>font-19</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>[B]$SKINSHORTCUTS[title][/B]</label>
+						</control>
+						<control type="label">
+							<top>26</top>
+							<height>26</height>
+							<width>1155</width>
+							<font>font-17</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+							<scrollspeed>0</scrollspeed>
+							<label>$SKINSHORTCUTS[subtitle]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1155" height="60">
+						<control type="group">
+							<visible>!Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>26</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>26</top>
+								<height>26</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="label">
+								<height>26</height>
+								<width>1155</width>
+								<font>font-19</font>
+								<textcolor>blue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>[B]$SKINSHORTCUTS[title][/B]</label>
+							</control>
+							<control type="label">
+								<top>26</top>
+								<height>26</height>
+								<width>1155</width>
+								<font>font-17</font>
+								<textcolor>lightblue</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>right</align>
+								<aligny>center</aligny>
+								<scrollspeed>0</scrollspeed>
+								<label>$SKINSHORTCUTS[subtitle]</label>
+							</control>
+						</control>
+					</focusedlayout>
+					<content target="$SKINSHORTCUTS[target]" browse="never">$SKINSHORTCUTS[content]</content>
+				</control>
+				<control type="label">
+					<left>520</left>
+					<top>220</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>[UPPERCASE][B]$SKINSHORTCUTS[mediacount][/B][/UPPERCASE]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font-15c</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</controls>
+	</other>
+	<!-- Property Groups -->
+	<propertyGroup name="widgetCommon">
+		<property name="id" tag="mainmenuid" />
+		<property name="idprefix">5040</property>
+		<property name="widget" tag="property" attribute="name|widget" />
+		<property name="label" tag="property" attribute="name|widgetName"/>
+		<property name="target" tag="property" attribute="name|widgetTarget"/>
+		<property name="type" tag="property" attribute="name|widgetType" />
+		<property name="content" tag="property" attribute="name|widgetPath" />
+		<condition tag="property" attribute="name|widgetPath" />
+	</propertyGroup>
+</template>

@@ -516,12 +516,12 @@
 		<value condition="String.Contains(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
 		<value condition="String.Contains(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 	</variable>
-	<variable name="HomeWeatherFanartPath">
+	<!-- <variable name="HomeWeatherFanartPath">
 		<value condition="String.IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + String.IsEmpty(Skin.String(HomeWeatherPath))">resource://resource.images.weatherfanart.prairie/$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
 		<value condition="!String.IsEmpty(Skin.String(HomeWeatherPath))">$INFO[Skin.String(HomeWeatherPath)]</value>
 		<value condition="!String.IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + Skin.HasSetting(resource.images.homeweatherfanart.multi)">$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
 		<value condition="!String.IsEmpty(Skin.String(resource.images.homeweatherfanart.path)) + !Skin.HasSetting(resource.images.homeweatherfanart.multi)">$INFO[Skin.String(resource.images.homeweatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
-	</variable>
+	</variable> -->
 	<variable name="WeatherFanartPath">
 		<value condition="String.IsEmpty(Skin.String(resource.images.weatherfanart.path)) + String.IsEmpty(Skin.String(WeatherPath))">resource://resource.images.weatherfanart.multi/$INFO[Window(Weather).Property(Current.FanartCode)]</value>
 		<value condition="!String.IsEmpty(Skin.String(WeatherPath))">$INFO[Skin.String(WeatherPath)]</value>
@@ -1511,25 +1511,8 @@
 	<variable name="Weather84">
 		<value condition="!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
-	<variable name="MoviesWidgetContent">
-		<value condition="!Skin.HasSetting(HomeRecentMovies)">special://skin/extras/playlists/recentmovies.xsp</value>
-		<value condition="Skin.HasSetting(HomeRandomMovies)">special://skin/extras/playlists/randommovies.xsp</value>
-		<value condition="Skin.HasSetting(HomeWatchlistMovies)">special://skin/extras/playlists/recommendedmovies.xsp</value>
-	</variable>
-	<variable name="EpisodeWidgetContent">
-		<value condition="!Skin.HasSetting(HomeRecentTVShows)">special://skin/extras/playlists/recentepisodes.xsp</value>
-		<value condition="Skin.HasSetting(HomeRandomTVShows)">special://skin/extras/playlists/randomepisodes.xsp</value>
-		<value condition="Skin.HasSetting(HomeWatchlistTVShows)">special://skin/extras/playlists/recommendedepisodes.xsp</value>
-	</variable>
-	<variable name="MusicVideosWidgetContent">
-		<value condition="!Skin.HasSetting(HomeRecentMusicVideos)">special://skin/extras/playlists/recentmusicvideos.xsp</value>
-		<value condition="Skin.HasSetting(HomeRandomMusicVideos)">special://skin/extras/playlists/randommusicvideos.xsp</value>
-		<value condition="Skin.HasSetting(HomeRecommendedMusicVideos)">special://skin/extras/playlists/recommendedmusicvideos.xsp</value>
-	</variable>
-	<variable name="AlbumsWidgetContent">
-		<value condition="!Skin.HasSetting(HomeRecentAlbums)">special://skin/extras/playlists/recentlyaddedalbums.xsp</value>
-		<value condition="Skin.HasSetting(HomeRandomAlbums)">special://skin/extras/playlists/randomalbums.xsp</value>
-		<value condition="Skin.HasSetting(HomeWatchlistAlbums)">special://skin/extras/playlists/recommendedalbums.xsp</value>
+	<variable name="ShortcutsDisabledVar">
+		<value condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)">[COLOR red]×[/COLOR] </value>
 	</variable>
 	<variable name="SettingsDescription">
 		<value condition="Control.HasFocus(2)">$LOCALIZE[31159]</value>

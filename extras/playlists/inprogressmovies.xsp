@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
-	<name>Random Movies</name>
+	<name>In Progress Movies</name>
 	<match>all</match>
 	<limit>15</limit>
 	<group>none</group>
-	<order direction="ascending">random</order>
+	<rule field="inprogress" operator="true" />
+	<order direction="descending">lastplayed</order>
 </smartplaylist>

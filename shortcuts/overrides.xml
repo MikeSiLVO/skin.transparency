@@ -3,12 +3,13 @@
 	<doNotShareMenu />
 	<doNotShareLevels />
 	<alwaysRestore>True</alwaysRestore>
+	<defaultwidgetsGetMore>False</defaultwidgetsGetMore>
 	<!-- Override actions -->
 	<override action="ActivateWindow(Favourites)">
-		<action>ActivateWindow(favouritesbrowser)</action>
+		<action>ActivateWindow(FavouritesBrowser)</action>
 	</override>
 	<!-- Visible Overrides -->
-	<visibleoverride condition="Library.HasContent(music)">ActivateWindow(Music,files)</visibleoverride>
+	<visibleoverride condition="Library.HasContent(music)">ActivateWindow(music,files)</visibleoverride>
 	<visibleoverride condition="Library.HasContent(movies)">ActivateWindow(videos,files,return)</visibleoverride>
 	<visibleoverride condition="Library.HasContent(tvshows)">ActivateWindow(videos,files,return)</visibleoverride>
 	<visibleoverride condition="Library.HasContent(musicvideos)">ActivateWindow(videos,files,return)</visibleoverride>
@@ -42,4 +43,40 @@
 	<backgrounddefault defaultID="favourites">special://skin/backgrounds/favourites.jpg</backgrounddefault>
 	<backgrounddefault defaultID="system">special://skin/backgrounds/settings.jpg</backgrounddefault>
 	<backgrounddefault defaultID="playdisc">special://skin/backgrounds/playdisc.jpg</backgrounddefault>
+	<!-- Widgets -->
+	<widget-groupings>
+		<!-- Movies -->
+		<node label="$LOCALIZE[342]">
+			<shortcut label="$LOCALIZE[31013]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(movies)" widget="poster" widgetType="movie" widgetTarget="videos">special://skin/extras/playlists/randommovies.xsp</shortcut>
+			<shortcut label="$LOCALIZE[20386]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(movies)" widget="poster" widgetType="movie" widgetTarget="videos">special://skin/extras/playlists/recentmovies.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31014]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(movies)" widget="poster" widgetType="movie" widgetTarget="videos">special://skin/extras/playlists/inprogressmovies.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31017]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(movies)" widget="poster" widgetType="movie" widgetTarget="videos">special://skin/extras/playlists/recommendedmovies.xsp</shortcut>
+		</node>
+		<!-- TV Shows -->
+		<node label="$LOCALIZE[20343]">
+			<shortcut label="$LOCALIZE[31015]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="poster" widgetType="tvshow" widgetTarget="videos">special://skin/extras/playlists/randomtvshows.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31016]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="poster" widgetType="tvshow" widgetTarget="videos">special://skin/extras/playlists/recenttvshows.xsp</shortcut>
+			<shortcut label="$LOCALIZE[626]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="poster" widgetType="tvshow" widgetTarget="videos">special://skin/extras/playlists/inprogresstvshows.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31018]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="poster" widgetType="tvshow" widgetTarget="videos">special://skin/extras/playlists/recommendedtvshows.xsp</shortcut>
+		</node>
+		<!-- Episodes -->
+		<node label="$LOCALIZE[20360]">
+			<shortcut label="$LOCALIZE[31019]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="landscape" widgetType="episode" widgetTarget="videos">special://skin/extras/playlists/randomepisodes.xsp</shortcut>
+			<shortcut label="$LOCALIZE[20387]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="landscape" widgetType="episode" widgetTarget="videos">special://skin/extras/playlists/recentepisodes.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31020]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="landscape" widgetType="episode" widgetTarget="videos">special://skin/extras/playlists/inprogressepisodes.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31021]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(tvshows)" widget="landscape" widgetType="episode" widgetTarget="videos">special://skin/extras/playlists/recommendedepisodes.xsp</shortcut>
+		</node>
+		<!-- Music Videos -->
+		<node label="$LOCALIZE[20389]">
+			<shortcut label="$LOCALIZE[31022]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(musicvideos)" widget="landscape" widgetType="musicvideo" widgetTarget="videos">special://skin/extras/playlists/randommusicvideos.xsp</shortcut>
+			<shortcut label="$LOCALIZE[20390]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(musicvideos)" widget="landscape" widgetType="musicvideo" widgetTarget="videos">special://skin/extras/playlists/recentmusicvideos.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31023]" icon="DefaultVideoPlaylists.png" condition="Library.HasContent(musicvideos)" widget="landscape" widgetType="musicvideo" widgetTarget="videos">special://skin/extras/playlists/recommendedmusicvideos.xsp</shortcut>
+		</node>
+		<!-- Albums -->
+		<node label="$LOCALIZE[132]">
+			<shortcut label="$LOCALIZE[31028]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/randomalbums.xsp</shortcut>
+			<shortcut label="$LOCALIZE[359]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recentlyaddedalbums.xsp</shortcut>
+			<shortcut label="$LOCALIZE[31029]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recommendedalbums.xsp</shortcut>
+		</node>
+	</widget-groupings>
 </overrides>

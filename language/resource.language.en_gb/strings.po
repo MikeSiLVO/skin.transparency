@@ -73,6 +73,61 @@ msgctxt "#31012"
 msgid "Reset main menu to defaults"
 msgstr ""
 
+#: /shortcuts/overrides.xml
+msgctxt "#31013"
+msgid "Random movies"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31014"
+msgid "In progress movies"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31015"
+msgid "Random TV shows"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31016"
+msgid "Recently added TV shows"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31017"
+msgid "Recommended movies"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31018"
+msgid "Recommended TV shows"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31019"
+msgid "Random episodes"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31020"
+msgid "In progress episodes"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31021"
+msgid "Recommended episodes"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31022"
+msgid "Random music videos"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31023"
+msgid "Recommended music videos"
+msgstr ""
+
 # Page labels
 msgctxt "#31024"
 msgid "Page"
@@ -90,7 +145,16 @@ msgctxt "#31027"
 msgid "Music Library"
 msgstr ""
 
-# empty strings from id 31028 to 31029
+#: /shortcuts/overrides.xml
+msgctxt "#31028"
+msgid "Random albums"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31029"
+msgid "Recommended albums"
+msgstr ""
+
 # Viewmode labels
 msgctxt "#31030"
 msgid "Fanart"

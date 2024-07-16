@@ -3,9 +3,11 @@
 	<name>Recommended Music Videos</name>
 	<match>one</match>
 	<limit>15</limit>
+	<rule field="playcount" operator="is">
+		<value>0</value>
+	</rule>
 	<rule field="rating" operator="greaterthan">
 		<value>6.9</value>
 	</rule>
-	<rule field="inprogress" operator="true" />
-	<order direction="descending">lastplayed</order>
+	<order direction="ascending">random</order>
 </smartplaylist>

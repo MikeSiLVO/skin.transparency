@@ -103,6 +103,12 @@
 			<style>upper</style>
 		</font>
 		<font>
+			<name>font-25c_bold</name>
+			<filename>teen-normal.ttf</filename>
+			<size>38</size>
+			<style>uppercase bold</style>
+		</font>
+		<font>
 			<name>font-28</name>
 			<filename>teen-normal.ttf</filename>
 			<size>42</size>
@@ -266,6 +272,12 @@
 			<filename>arial.ttf</filename>
 			<size>33</size>
 			<style>upper</style>
+		</font>
+		<font>
+			<name>font-25c_bold</name>
+			<filename>arial.ttf</filename>
+			<size>33</size>
+			<style>uppercase bold</style>
 		</font>
 		<font>
 			<name>font-28</name>
@@ -434,6 +446,12 @@
 			<filename>teen-normal.ttf</filename>
 			<size>44</size>
 			<style>upper</style>
+		</font>
+		<font>
+			<name>font-25c_bold</name>
+			<filename>teen-normal.ttf</filename>
+			<size>44</size>
+			<style>uppercase bold</style>
 		</font>
 		<font>
 			<name>font-28</name>
@@ -607,6 +625,12 @@
 			<size>44</size>
 			<style>upper</style>
 			<aspect>0.84</aspect>
+		</font>
+		<font>
+			<name>font-25c_bold</name>
+			<filename>arial.ttf</filename>
+			<size>44</size>
+			<style>uppercase bold</style>
 		</font>
 		<font>
 			<name>font-28</name>

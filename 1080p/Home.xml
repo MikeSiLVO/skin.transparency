@@ -21,19 +21,16 @@
 			<include>ContentFade</include>
 			<control type="group">
 				<animation effect="fade" start="100" end="0" time="500" condition="Window.IsVisible(script-globalsearch-main.xml)">Conditional</animation>
-				<include condition="!Skin.HasSetting(Menu_Weather) + !Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
-				<include condition="!Skin.HasSetting(Menu_Settings) + !Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
-				<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies) | !Skin.HasSetting(Menu_TVShows) | Skin.HasSetting(Menu_MusicVideos) | !Skin.HasSetting(Menu_TV)] + !Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
-				<include condition="!Skin.HasSetting(Menu_TV) + !Skin.HasSetting(homepageTVinfo)">TVInfo</include>
-				<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
+				<include condition="!Skin.HasSetting(homepageWeatherinfo)">WeatherInfo</include>
+				<include condition="!Skin.HasSetting(homepageSysteminfo)">SystemInfo</include>
+				<include condition="!Skin.HasSetting(homepageVideoinfo)">VideoInfo</include>
+				<include condition="!Skin.HasSetting(homepageTVinfo)">TVInfo</include>
+				<include condition="!Skin.HasSetting(homepageMusicinfo)">MusicInfo</include>
 				<control type="group" id="5050">
 					<left>0</left>
 					<top>0</top>
-					<include condition="[!Skin.HasSetting(Menu_Videos) | !Skin.HasSetting(Menu_Movies)] + !Skin.HasSetting(HomeRecentMovies) | Skin.HasSetting(HomeRandomMovies) | Skin.HasSetting(HomeWatchlistMovies)">RecentlyAddedMovies</include>
-					<include condition="!Skin.HasSetting(Menu_TVShows) + !Skin.HasSetting(HomeRecentTVShows) | Skin.HasSetting(HomeRandomTVShows) | Skin.HasSetting(HomeWatchlistTVShows)">RecentlyAddedTVShows</include>
-					<include condition="Skin.HasSetting(Menu_MusicVideos) + !Skin.HasSetting(HomeRecentMusicVideos) | Skin.HasSetting(HomeRandomMusicVideos) | Skin.HasSetting(HomeWatchlistMusicVideos)">RecentlyAddedMusicVideos</include>
-					<include condition="!Skin.HasSetting(Menu_Music) + !Skin.HasSetting(HomeRecentAlbums) | Skin.HasSetting(HomeRandomAlbums) | Skin.HasSetting(HomeWatchlistAlbums)">RecentlyAddedAlbums</include>
-					<include condition="!Skin.HasSetting(Menu_Programs) + !Skin.HasSetting(HomeRandomAddons) + System.AddonIsEnabled(service.skin.widgets)">RandomAddons</include>
+					<include>skinshortcuts-template-widget</include>
+					<!-- <include condition="!Skin.HasSetting(HomeRandomAddons) + System.AddonIsEnabled(service.skin.widgets)">RandomAddons</include> -->
 				</control>
 				<control type="button">
 					<description>Show vertical submenu button</description>
