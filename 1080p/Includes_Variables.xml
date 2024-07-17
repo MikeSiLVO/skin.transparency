@@ -1532,4 +1532,17 @@
 		<value condition="Skin.HasSetting(HomeRandomAlbums)">special://skin/extras/playlists/randomalbums.xsp</value>
 		<value condition="Skin.HasSetting(HomeWatchlistAlbums)">special://skin/extras/playlists/recommendedalbums.xsp</value>
 	</variable>
+	<variable name="SettingsDescription">
+		<value condition="Control.HasFocus(2)">$LOCALIZE[31159]</value>
+		<value condition="Control.HasFocus(3)">$LOCALIZE[31160]</value>
+		<value condition="Control.HasFocus(4)">$LOCALIZE[31161]</value>
+		<value condition="Control.HasFocus(5)">$LOCALIZE[31164]</value>
+		<value condition="Control.HasFocus(6)">$LOCALIZE[31165]</value>
+		<value condition="Control.HasFocus(9)">$LOCALIZE[31166]</value>
+		<value condition="Control.HasFocus(10)">$LOCALIZE[31167]</value>
+		<value condition="Control.HasFocus(11)">$LOCALIZE[31168]</value>
+		<value condition="Control.HasFocus(12)">$LOCALIZE[31169]</value>
+		<value condition="Control.HasFocus(13)">$LOCALIZE[31170]</value>
+		<value condition="Control.HasFocus(14)">$LOCALIZE[31152]</value>
+	</variable>
 </includes>
