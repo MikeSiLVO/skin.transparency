@@ -115,7 +115,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>13</onleft>
 						<onright>3</onright>
 						<onup>10</onup>
@@ -169,7 +169,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>2</onleft>
 						<onright>4</onright>
 						<onup>11</onup>
@@ -223,7 +223,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>3</onleft>
 						<onright>5</onright>
 						<onup>12</onup>
@@ -277,7 +277,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>4</onleft>
 						<onright>6</onright>
 						<onup>13</onup>
@@ -331,7 +331,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>5</onleft>
 						<onright>14</onright>
 						<onup>2</onup>
@@ -380,7 +380,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>6</onleft>
 						<onright>9</onright>
 						<onup>3</onup>
@@ -434,7 +434,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>14</onleft>
 						<onright>10</onright>
 						<onup>5</onup>
@@ -488,7 +488,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>9</onleft>
 						<onright>11</onright>
 						<onup>6</onup>
@@ -542,7 +542,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>10</onleft>
 						<onright>12</onright>
 						<onup>14</onup>
@@ -596,7 +596,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>11</onleft>
 						<onright>13</onright>
 						<onup>14</onup>
@@ -650,7 +650,7 @@
 						<texturefocus border="25">settings-button-focus.png</texturefocus>
 						<texturenofocus border="25">settings-button-nofocus.png</texturenofocus>
 						<textoffsetx>0</textoffsetx>
-						<textoffsety>171</textoffsety>
+						<textoffsety>167</textoffsety>
 						<onleft>12</onleft>
 						<onright>2</onright>
 						<onup>9</onup>
