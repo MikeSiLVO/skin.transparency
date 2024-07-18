@@ -4,6 +4,7 @@
 	<doNotShareLevels />
 	<alwaysRestore>True</alwaysRestore>
 	<defaultwidgetsGetMore>False</defaultwidgetsGetMore>
+	<widgetRename>False</widgetRename>
 	<!-- Override actions -->
 	<override action="ActivateWindow(Favourites)">
 		<action>ActivateWindow(FavouritesBrowser)</action>
@@ -78,5 +79,11 @@
 			<shortcut label="$LOCALIZE[359]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recentlyaddedalbums.xsp</shortcut>
 			<shortcut label="$LOCALIZE[31029]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recommendedalbums.xsp</shortcut>
 		</node>
+		<!-- System Info -->
+		<shortcut label="$LOCALIZE[138]" icon="homeinfo-system.png" widget="systeminfo">systeminfo</shortcut>
+		<!-- Weather Info -->
+		<shortcut label="$LOCALIZE[20088]" icon="DefaultAddonWeather.png" widget="weatherinfo">weatherinfo</shortcut>
+		<!-- Recordings Info -->
+		<shortcut label="$LOCALIZE[10601]" icon="homeinfo-pvrtimer.png" widget="recordinginfo">recordinginfo</shortcut>
 	</widget-groupings>
 </overrides>

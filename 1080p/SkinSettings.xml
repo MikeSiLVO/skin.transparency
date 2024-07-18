@@ -347,29 +347,11 @@
 						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
 					</control>
-					<control type="radiobutton" id="229">
-						<description>enable tv info</description>
-						<label>31501</label>
-						<onclick>Skin.ToggleSetting(homepageTVinfo)</onclick>
-						<selected>!Skin.HasSetting(homepageTVinfo)</selected>
-					</control>
 					<control type="radiobutton" id="230">
 						<description>enable music info</description>
 						<label>20083</label>
 						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
 						<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
-					</control>
-					<control type="radiobutton" id="231">
-						<description>enable weather info</description>
-						<label>20084</label>
-						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
-						<selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
-					</control>
-					<control type="radiobutton" id="232">
-						<description>enable System info</description>
-						<label>20085</label>
-						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
-						<selected>!Skin.HasSetting(homepageSysteminfo)</selected>
 					</control>
 				</control>
 				<control type="scrollbar" id="299">
