@@ -86,4 +86,6 @@
 		<!-- Recordings Info -->
 		<shortcut label="$LOCALIZE[10601]" icon="homeinfo-pvrtimer.png" widget="recordinginfo">recordinginfo</shortcut>
 	</widget-groupings>
+	<!-- Default Widgets -->
+	<widgetdefaultnode defaultID="movies" label="$LOCALIZE[20386]" type="movie" target="videos" path="special://skin/extras/playlists/recentmovies.xsp" >poster</widgetdefaultnode>
 </overrides>
