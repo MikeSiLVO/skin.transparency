@@ -44,7 +44,7 @@
 		<font>
 			<name>font-19</name>
 			<filename>NotoSansDisplay.ttf</filename>
-			<size>26</size>
+			<size>29</size>
 		</font>
 		<font>
 			<name>font-20</name>
@@ -83,6 +83,12 @@
 			<filename>NotoSansDisplay.ttf</filename>
 			<size>32</size>
 			<style>upper</style>
+		</font>
+		<font>
+			<name>font-23c_bold</name>
+			<filename>NotoSansDisplay.ttf</filename>
+			<size>32</size>
+			<style>uppercase bold</style>
 		</font>
 		<font>
 			<name>font-24c</name>

@@ -46,7 +46,7 @@
 					<label>$SKINSHORTCUTS[label]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font-25c_bold</font>
+					<font>font-23c_bold</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -206,7 +206,7 @@
 					<label>$SKINSHORTCUTS[label]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font-25c_bold</font>
+					<font>font-23c_bold</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -367,7 +367,7 @@
 					<label>$SKINSHORTCUTS[label]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font-25c_bold</font>
+					<font>font-23c_bold</font>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
