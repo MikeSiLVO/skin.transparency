@@ -8,10 +8,7 @@
 		<control type="group">
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<control type="multiimage">
-				<left>0</left>
-				<top>0</top>
-				<width>1920</width>
-				<height>1080</height>
+				<include>FullscreenDimensions</include>
 				<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 				<aspectratio>scale</aspectratio>
 				<timeperimage>5000</timeperimage>
@@ -22,10 +19,7 @@
 				<visible>String.IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1920</width>
-				<height>1080</height>
+				<include>FullscreenDimensions</include>
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>

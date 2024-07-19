@@ -3,10 +3,7 @@
 	<include name="fanart-mymusicplaylisteditor">
 		<control type="image">
 			<description>dirty hack for fanart in album and song view</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.Path,,../fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -16,10 +13,7 @@
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart for album up icon</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -29,10 +23,7 @@
 		</control>
 		<control type="image">
 			<description>dirty hack for fanart in artist view and song up icon</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -43,10 +34,7 @@
 	</include>
 	<include name="fanart-extra-programs">
 		<control type="multiimage" id="6114">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>

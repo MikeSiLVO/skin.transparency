@@ -63,17 +63,11 @@
 		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</texture>
 			<aspectratio>keep</aspectratio>
 			<fadetime>2000</fadetime>
@@ -86,10 +80,7 @@
 		<include>fanartslideshow-musicvisualisation</include>
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -100,10 +91,7 @@
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]] + String.IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -116,10 +104,7 @@
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists-visualisation</include>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + [String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
 		</control>
 		<control type="group">

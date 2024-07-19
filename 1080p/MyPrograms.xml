@@ -6,10 +6,7 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-programs.jpg" background="true">$INFO[Skin.String(Custom_Back_Programs_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -19,10 +16,7 @@
 			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>

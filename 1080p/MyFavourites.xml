@@ -6,10 +6,7 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>

@@ -148,10 +148,7 @@
 		</control>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -162,10 +159,7 @@
 			<visible>[[String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(artist.fanart)) + String.IsEmpty(ListItem.Art(albumartist.fanart)) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Skin.String(Music_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>

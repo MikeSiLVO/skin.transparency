@@ -2,39 +2,27 @@
 <includes>
 	<include name="home-videowindow">
 		<control type="videowindow">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasVideo</visible>
 		</control>
 	</include>
 	<include name="home-visualisation1">
 		<control type="visualisation">
 			<description>visualisation</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)] + !Slideshow.IsActive</visible>
 		</control>
 	</include>
 	<include name="home-visualisation2">
 		<control type="visualisation">
 			<description>visualisation</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio + [String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)] + !Slideshow.IsActive</visible>
 		</control>
 	</include>
 	<include name="home-artistslideshow">
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</texture>
 			<aspectratio>keep</aspectratio>
 			<fadetime>2000</fadetime>
@@ -48,10 +36,7 @@
 	<include name="home-fanart-fallback">
 		<control type="multiimage">
 			<description>fallback texture if no fanart is available</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -64,10 +49,7 @@
 	</include>
 	<include name="home-musicplayer-fanart">
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -184,10 +166,7 @@
 	</include>
 	<include name="recentlyfanartmovies">
 		<control type="image" id="7021">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(5044).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
@@ -198,10 +177,7 @@
 	</include>
 	<include name="recentlyfanartepisodes">
 		<control type="image" id="7022">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(5045).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
@@ -212,10 +188,7 @@
 	</include>
 	<include name="recentlyfanartmusicvideos">
 		<control type="image" id="7025">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(5048).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
@@ -226,10 +199,7 @@
 	</include>
 	<include name="recentlyfanartalbums">
 		<control type="image" id="7023">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(5046).ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
@@ -240,10 +210,7 @@
 	</include>
 	<include name="randomfanartaddons">
 		<control type="image" id="7024">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(5047).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>

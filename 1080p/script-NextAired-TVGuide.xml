@@ -3,10 +3,7 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-tv.jpg" background="true">$INFO[Skin.String(Custom_Back_TV_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -16,10 +13,7 @@
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$VAR[NextAiredFanart]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -28,10 +22,7 @@
 			<visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture>black.png</texture>
 			<colordiffuse>7FFFFFFF</colordiffuse>
 		</control>

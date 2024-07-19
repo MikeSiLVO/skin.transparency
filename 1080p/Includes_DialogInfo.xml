@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<include name="VideoInfoPoster">
+		<control type="image">
+			<left>27</left>
+			<top>594</top>
+			<width>327</width>
+			<height>465</height>
+			<texture>$VAR[IconPoster]</texture>
+		</control>
+	</include>
+	<include name="VideoInfoCase">
+		<control type="image">
+			<left>27</left>
+			<top>552</top>
+			<width>351</width>
+			<height>540</height>
+			<texture fallback="$PARAM[fallback]">$PARAM[texture]</texture>
+		</control>
+	</include>
+	<include name="VideoInfoLandscape">
+		<control type="image">
+			<left>15</left>
+			<top>796</top>
+			<width>447</width>
+			<height>252</height>
+			<aspectratio scalediffuse="true" aligny="center">keep</aspectratio>
+			<texture diffuse="video-diffuse.png">$INFO[Listitem.Icon]</texture>
+			<bordertexture border="9">video-shadow.png</bordertexture>
+			<bordersize>8</bordersize>
+		</control>
+	</include>
+	<include name="VideoInfoBanner">
+		<control type="image">
+			<left>60</left>
+			<top>90</top>
+			<width>1800</width>
+			<height>186</height>
+			<texture diffuse="banner-diffuse.png">$VAR[IconBanner]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="image">
+			<left>60</left>
+			<top>276</top>
+			<width>1800</width>
+			<height>186</height>
+			<texture flipy="true" diffuse="banner-diffuse-mirror.png">$VAR[IconBanner]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+	</include>
+	<include name="VideoInfoPlot">
+		<param name="visible">!Control.IsVisible(50)</param>
+		<definition>
+			<control type="textbox" id="4">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label />
+				<font>font-19</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>61</pagecontrol>
+				<autoscroll time="3000" delay="16000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="VideoInfoDetails">
+		<param name="left">86</param>
+		<param name="width">1800</param>
+		<param name="layoutheight">45</param>
+		<definition>
+			<control type="list" id="49">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<onleft>49</onleft>
+				<onright>49</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<pagecontrol />
+				<scrolltime>200</scrolltime>
+				<animation effect="slide" start="0,0" end="0,-165" time="0" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
+				<itemlayout width="1800" height="$PARAM[layoutheight]">
+					<control type="image">
+						<width>1749</width>
+						<height>$PARAM[layoutheight]</height>
+						<texture border="7">list-nofocus.png</texture>
+					</control>
+					<control type="label">
+						<width>240</width>
+						<height>$PARAM[layoutheight]</height>
+						<font>font-20c</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>262</left>
+						<width>1470</width>
+						<height>$PARAM[layoutheight]</height>
+						<font>font-20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1800" height="$PARAM[layoutheight]">
+					<control type="image">
+						<width>1749</width>
+						<height>$PARAM[layoutheight]</height>
+						<texture border="7">list-nofocus.png</texture>
+					</control>
+					<control type="image">
+						<width>1749</width>
+						<height>$PARAM[layoutheight]</height>
+						<texture border="7">list-focus2.png</texture>
+						<include>VisibleFadeEffect</include>
+						<visible>Control.HasFocus(49)</visible>
+						<include>ListFocusScroll22</include>
+					</control>
+					<control type="label">
+						<width>240</width>
+						<height>$PARAM[layoutheight]</height>
+						<font>font-20c</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>262</left>
+						<width>1470</width>
+						<height>$PARAM[layoutheight]</height>
+						<font>font-20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<include>$PARAM[content]</include>
+				</content>
+			</control>
+		</definition>
+	</include>
+	<include name="VideoInfoDetailsMovieContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Director]</label2>
+			<onclick>SendClick(2003,13)</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Writer]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[572]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Studio]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Genre]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[574]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Country]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Duration]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.RatingAndVotes]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[202]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.TagLine]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20074]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.mpaa]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="VideoInfoDetailsTVShowContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[33054]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(TotalSeasons)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20360]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(TotalEpisodes)] [COLOR=grey] $INFO[ListItem.Property(WatchedEpisodes),(, $LOCALIZE[16102] - ]$INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101])][/COLOR]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20416]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Premiered]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Genre]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Rating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20074]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.mpaa]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Path]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="VideoInfoDetailsEpisodeContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20364]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.TVShowTitle]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20359]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[552]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Premiered]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[572]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Studio]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Director]</label2>
+			<onclick>SendClick(2003,13)</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20417]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Writer]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Duration]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Rating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="VideoInfoDetailsMusicVideoContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Artist]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Album]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Genre]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[572]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Studio]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[20339]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Director]</label2>
+			<onclick>SendClick(2003,13)</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[2050]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Duration]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+</includes>

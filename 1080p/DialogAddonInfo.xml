@@ -4,15 +4,7 @@
 	<onunload>ClearProperty(Transparency-AddonScreenshots,Home)</onunload>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>black.png</texture>
-			<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
-			<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
-		</control>
+		<include>BackgroundDim</include>
 		<control type="group">
 			<include>DialogFade6</include>
 			<visible>!Window.IsVisible(TextViewer)</visible>

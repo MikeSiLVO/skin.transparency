@@ -6,10 +6,7 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-pictures.jpg" background="true">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -20,10 +17,7 @@
 			<visible>[String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Container(597).ListItem(0).Thumb)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -33,10 +27,7 @@
 		</control>
 		<include>fanart-Programs_Pictures</include>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[Container(597).Listitem(0).Icon]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>1000</fadetime>
@@ -45,10 +36,7 @@
 			<visible>Control.IsVisible(597) + !String.IsEmpty(Container(597).ListItem(0).Thumb)</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture>black.png</texture>
 			<include>VisibleFadeEffect</include>
 			<colordiffuse>A2000000</colordiffuse>
@@ -69,10 +57,7 @@
 			<visible>[Control.IsVisible(594) | Control.IsVisible(50)] + !Skin.HasSetting(Picture_Fullscreen)</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<aspectratio>scale</aspectratio>

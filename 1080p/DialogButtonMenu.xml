@@ -5,10 +5,7 @@
 	<controls>
 		<control type="image">
 			<description>shutdown</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">special://skin/backgrounds/shutdown.jpg</texture>
 			<aspectratio>scale</aspectratio>
 			<animation effect="fade" start="0" end="70" time="400">WindowOpen</animation>

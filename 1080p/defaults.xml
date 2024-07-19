@@ -3,7 +3,7 @@
 	<default type="button">
 		<width>1320</width>
 		<height>52</height>
-		<label></label>
+		<label />
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		<font>font-20</font>

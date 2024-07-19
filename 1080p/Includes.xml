@@ -6,6 +6,7 @@
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_CDWall.xml" />
 	<include file="Includes_DebugInfo.xml" />
+	<include file="Includes_DialogInfo.xml" />
 	<include file="Includes_Home.xml" />
 	<include file="Includes_MediaFlagsMusic.xml" />
 	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
@@ -32,6 +33,10 @@
 	<include file="View-WideIcon.xml" />
 	<constant name="FanartCrossfadeTime">300</constant>
 	<constant name="IconCrossfadeTime">300</constant>
+	<include name="FullscreenDimensions">
+		<width>100%</width>
+		<height>1080</height>
+	</include>
 	<include name="AllViewCommonPageControls">
 		<control type="scrollbar" id="60">
 			<left>1624</left>
@@ -1452,10 +1457,7 @@
 	</include>
 	<include name="CommonVideoPlayingBackground">
 		<control type="videowindow">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasVideo + !Slideshow.IsActive</visible>
 		</control>
 	</include>
@@ -2895,10 +2897,7 @@
 	<include name="Splash">
 		<control type="image">
 			<description>splash</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture>black.png</texture>
 			<animation effect="fade" start="100" end="0" time="1500" reversible="false">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0" reversible="false">WindowClose</animation>

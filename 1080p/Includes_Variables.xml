@@ -208,7 +208,6 @@
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle)">$INFO[Listitem.OriginalTitle]</value>
 	</variable>
 	<variable name="DialogVideoInfoLabel">
-		<value condition="!Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</value>
 		<value condition="Control.HasFocus(50)">[B]$INFO[Container(50).Listitem.Label]$INFO[Container(50).Listitem.Label2, (,)][/B]</value>
 	</variable>
 	<variable name="HomePowerButton">

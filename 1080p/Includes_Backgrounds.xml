@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<include name="BackgroundDim">
+		<param name="visible">true</param>
+		<definition>
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture>black.png</texture>
+				<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
+				<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="BackgroundUnderlay">
+		<param name="width">1920</param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="image">
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture border="10">underlay.png</texture>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
 	<include name="fanartslideshow-musicvisualisation">
 		<control type="multiimage" id="6101">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath background="true">$VAR[PlayerExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -19,10 +41,7 @@
 	</include>
 	<include name="fanart-mymusicsongs">
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$VAR[AlbumSongFanart]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -33,10 +52,7 @@
 	</include>
 	<include name="fanart-Programs_Pictures">
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
@@ -47,10 +63,7 @@
 	</include>
 	<include name="fanart-extra-movies">
 		<control type="multiimage" id="6102">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -63,10 +76,7 @@
 	</include>
 	<include name="fanart-extra-tvshows">
 		<control type="multiimage" id="6105">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -79,10 +89,7 @@
 	</include>
 	<include name="fanart-extra-musicvideos">
 		<control type="multiimage" id="6107">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>
@@ -95,10 +102,7 @@
 	</include>
 	<include name="fanart-extra-music">
 		<control type="multiimage" id="6110">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<timeperimage>5000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>2000</fadetime>

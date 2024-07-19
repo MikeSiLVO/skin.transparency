@@ -504,10 +504,7 @@
 			</control>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture background="true">cdwall-grid.png</texture>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="![Window.IsVisible(Home) + Skin.HasSetting(HideVisBackground)] + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>

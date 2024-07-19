@@ -4,10 +4,7 @@
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -17,10 +14,7 @@
 			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture>special://skin/backgrounds/background-settings.jpg</texture>
 			<aspectratio>scale</aspectratio>
 			<visible>!Skin.HasSetting(Enable_Custom_Back_Settings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>

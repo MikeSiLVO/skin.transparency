@@ -3,10 +3,7 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<controls>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-settings.jpg" background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -18,10 +15,7 @@
 			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(FileManager) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-videos.jpg" background="true">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -33,10 +27,7 @@
 			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Videos) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -48,10 +39,7 @@
 			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Music) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/background-pictures.jpg" background="true">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>5000</timeperimage>
@@ -63,24 +51,14 @@
 			<visible>Window.IsVisible(NetworkSetup) + Window.IsVisible(Pictures) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<texture>black.png</texture>
 			<colordiffuse>B0000000</colordiffuse>
 			<visible>Window.IsVisible(NetworkSetup) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>black.png</texture>
-			<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
-			<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
-			<visible>![Window.IsVisible(MediaSource) | Window.IsVisible(SongInformation) | Window.IsVisible(PictureInfo) | Window.IsVisible(MusicInformation) | Window.IsVisible(MovieInformation) | Window.IsVisible(TextViewer) | Window.IsVisible(AddonSettings) | Window.IsVisible(DialogPVRChannelManager.xml) | Window.IsVisible(script-XBMC_Lyrics-settings.xml)]</visible>
-		</control>
+		<include content="BackgroundDim">
+			<param name="visible">![Window.IsVisible(MediaSource) | Window.IsVisible(SongInformation) | Window.IsVisible(PictureInfo) | Window.IsVisible(MusicInformation) | Window.IsVisible(MovieInformation) | Window.IsVisible(TextViewer) | Window.IsVisible(AddonSettings) | Window.IsVisible(DialogPVRChannelManager.xml) | Window.IsVisible(script-XBMC_Lyrics-settings.xml)]</param>
+		</include>
 		<control type="group">
 			<include>dialogeffect</include>
 			<control type="button">

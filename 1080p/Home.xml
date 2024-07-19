@@ -7,10 +7,7 @@
 		<include condition="!Skin.HasSetting(Menu_TVShows) + Skin.HasSetting(Home_TVShows_Fanart_Background)">Home_TVShows_Fanart</include>
 		<include condition="!Skin.HasSetting(Menu_Music) + Skin.HasSetting(Home_Music_Fanart_Background)">Home_Music_Fanart</include>
 		<control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<include>FullscreenDimensions</include>
 			<imagepath background="true">$INFO[Container(5040).ListItem.Icon]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>7000</timeperimage>
