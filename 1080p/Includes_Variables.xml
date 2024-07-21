@@ -12,7 +12,6 @@
 		<value condition="Window.IsVisible(pictures) + Control.IsVisible(597) + !String.IsEmpty(Container(597).ListItem.Thumb)">$INFO[Container(597).Listitem.Icon]</value>
 		<value condition="Window.IsVisible(pictures) + [Control.IsVisible(594) | Control.IsVisible(50)] + Skin.HasSetting(Picture_Fullscreen)">$INFO[ListItem.FilenameAndPath]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Movies_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_Movies_Folder)]</value>
-		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Movies_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_Movies_Folder)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_TVShows_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_TVShows_Folder)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_MusicVideos_Folder)) + Window.IsVisible(videos) + String.Contains(Container.FolderPath,videodb://musicvideos/) + ![Control.IsVisible(598) + !Window.IsVisible(MovieInformation)]">$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Videos_Folder)) + Window.IsVisible(videos)">$INFO[Skin.String(Custom_Back_Videos_Folder)]</value>
@@ -663,9 +662,16 @@
 		<value condition="String.Contains(VideoPlayer.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
 		<value condition="String.Contains(VideoPlayer.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 	</variable>
-	<variable name="MovieGenreIcon">
-		<value condition="String.IsEmpty(Skin.String(resource.images.moviegenreicons.path))">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
-		<value condition="!String.IsEmpty(Skin.String(resource.images.moviegenreicons.path))">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+	<variable name="VideoGenreIcon">
+		<value condition="String.IsEmpty(Skin.String(resource.images.moviegenreicons.path)) + [String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)]">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
+		<value condition="!String.IsEmpty(Skin.String(resource.images.moviegenreicons.path)) + [String.IsEqual(Container.FolderPath,videodb://movies/genres/) | String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)]">$INFO[Skin.String(resource.images.moviegenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+		<value condition="String.IsEmpty(Skin.String(resource.images.musicgenreicons.path)) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.poster/,.jpg]</value>
+		<value condition="!String.IsEmpty(Skin.String(resource.images.musicgenreicons.path)) + String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)">$INFO[Skin.String(resource.images.musicgenreicons.path)]$INFO[ListItem.Label,,.jpg]</value>
+	</variable>
+	<variable name="VideoGenreIconFallback">
+		<value condition="String.IsEqual(Container.FolderPath,videodb://movies/genres/)">genre-movies-icon.jpg</value>
+		<value condition="String.IsEqual(Container.FolderPath,videodb://tvshows/genres/)">genre-tvshows-icon.jpg</value>
+		<value condition="String.IsEqual(Container.FolderPath,videodb://musicvideos/genres/)">genre-music-icon.jpg</value>
 	</variable>
 	<variable name="MovieGenreIconThumbnail">
 		<value>$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
@@ -826,7 +832,7 @@
 		<value condition="Skin.String(SkinSettings,5)">$LOCALIZE[31200]</value>
 		<value condition="Skin.String(SkinSettings,6)">$LOCALIZE[31138]</value>
 		<value condition="Skin.String(SkinSettings,7)">$LOCALIZE[14018]</value>
-		<value condition="Skin.String(SkinSettings,10)">Transparency!</value>
+		<value condition="Skin.String(SkinSettings,8)">Transparency! $LOCALIZE[31048]</value>
 	</variable>
 	<variable name="SkinSettingsFanartPath">
 		<value condition="Container(302).HasFocus(2)">[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</value>
