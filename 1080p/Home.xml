@@ -4,16 +4,12 @@
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=5040&amp;options=noGroups)</onload>
 	<controls>
 		<include condition="!Skin.HasSetting(HideHomeVideoBackground)">home-videowindow</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<imagepath background="true">$INFO[Container(5040).ListItem.Property(background)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>7000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>600</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)]</visible>
+			<include content="CommonBackground">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+			</include>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<include condition="Window.Previous(Startup)">Splash</include>

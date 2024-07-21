@@ -16,10 +16,6 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "Sessiz"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "Meşgul..."

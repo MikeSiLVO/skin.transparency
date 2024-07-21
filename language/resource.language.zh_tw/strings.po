@@ -16,10 +16,6 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "靜音"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "執行中..."

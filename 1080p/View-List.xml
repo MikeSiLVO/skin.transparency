@@ -530,16 +530,8 @@
 				<top>38</top>
 				<width>456</width>
 				<height>698</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
-			</control>
-			<control type="image">
-				<left>270</left>
-				<top>51</top>
-				<width>56</width>
-				<height>33</height>
-				<texture>movieset.png</texture>
-				<visible>ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + !ListItem.IsParentFolder + String.StartsWith(Container.Folderpath,videodb://)</visible>
 			</control>
 		</control>
 		<control type="group">

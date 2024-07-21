@@ -3,21 +3,13 @@
 	<defaultcontrol>20</defaultcontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<imagepath background="true">$INFO[Skin.String(Custom_Back_Settings_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<visible>Skin.HasSetting(Enable_Custom_Back_Settings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture>special://skin/backgrounds/background-settings.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(Enable_Custom_Back_Settings) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<include>VisibleFadeEffect</include>
+			<include content="CommonBackground">
+				<param name="imagepath">$INFO[Skin.String(Custom_Back_Settings_Folder)]</param>
+				<param name="fallback">special://skin/backgrounds/background-settings.jpg</param>
+			</include>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

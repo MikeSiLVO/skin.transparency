@@ -5,57 +5,17 @@
 	<views>50,51,52,58,59</views>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<description>fallback if no playing or list fanart is available</description>
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>Window.IsVisible(MusicPlaylist) + String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(MusicPlayer.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>song fanart</description>
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Window.IsVisible(MusicPlaylist) + !Player.HasAudio | [Player.HasAudio + String.IsEmpty(MusicPlayer.Property(Fanart_Image))] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="image">
-			<description>song playing fanart</description>
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Window.IsVisible(MusicPlaylist) + Player.HasAudio</visible>
-		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Window.IsVisible(VideoPlaylist) + !String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-videos.jpg" background="true">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<visible>Window.IsVisible(VideoPlaylist) + String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<include content="CommonBackground" condition="Window.IsVisible(musicplaylist)">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="fallback">special://skin/backgrounds/background-music.jpg</param>
+			</include>
+			<include content="CommonBackground" condition="Window.IsVisible(videoplaylist)">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="fallback">special://skin/backgrounds/background-videos.jpg</param>
+			</include>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

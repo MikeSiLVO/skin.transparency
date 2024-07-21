@@ -116,11 +116,13 @@
 					<label>40000</label>
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>SendClick(2003,14)</onclick>
+					<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
 				</item>
 				<item>
 					<label>40211</label>
 					<onclick>Dialog.Close(1115)</onclick>
 					<onclick>SendClick(2003,15)</onclick>
+					<visible>String.IsEqual(ListItem.DBTYPE,movie)</visible>
 				</item>
 				<item>
 					<label>21435</label>

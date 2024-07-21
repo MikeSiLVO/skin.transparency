@@ -326,7 +326,7 @@
 			</control>
 			<control type="label">
 				<left>386</left>
-				<top>852</top>
+				<top>840</top>
 				<width>926</width>
 				<height>45</height>
 				<font>font-30</font>
@@ -334,26 +334,13 @@
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Title]</label>
-			</control>
-			<control type="label">
-				<left>386</left>
-				<top>852</top>
-				<width>926</width>
-				<height>45</height>
-				<font>font-30</font>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.label]</label>
-				<visible>String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder</visible>
+				<label>$VAR[ViewFanartTitle]</label>
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(FanartShowPlot)</visible>
+				<top>880</top>
 				<control type="label">
 					<left>386</left>
-					<top>890</top>
 					<width>915</width>
 					<height>45</height>
 					<font>font-20</font>
@@ -365,7 +352,7 @@
 				</control>
 				<control type="label">
 					<left>386</left>
-					<top>920</top>
+					<top>32</top>
 					<width>750</width>
 					<height>45</height>
 					<font>font-20</font>
@@ -377,7 +364,7 @@
 				</control>
 				<control type="label">
 					<left>386</left>
-					<top>950</top>
+					<top>64</top>
 					<width>240</width>
 					<height>45</height>
 					<font>font-20</font>
@@ -389,7 +376,7 @@
 				</control>
 				<control type="label">
 					<left>626</left>
-					<top>950</top>
+					<top>64</top>
 					<width>240</width>
 					<height>45</height>
 					<font>font-20</font>
@@ -401,7 +388,7 @@
 				</control>
 				<control type="label">
 					<left>873</left>
-					<top>950</top>
+					<top>64</top>
 					<width>255</width>
 					<height>45</height>
 					<font>font-20</font>
@@ -417,9 +404,9 @@
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
 					<left>386</left>
-					<top>896</top>
+					<top>884</top>
 					<width>735</width>
-					<height>90</height>
+					<height>100</height>
 					<font>font-19</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -512,18 +499,9 @@
 				<top>552</top>
 				<width>351</width>
 				<height>540</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem.VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
 				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
-			</control>
-			<control type="image">
-				<left>168</left>
-				<top>562</top>
-				<width>45</width>
-				<height>27</height>
-				<texture>movieset.png</texture>
-				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-				<visible>!ListItem.IsParentFolder + ListItem.IsFolder + !Window.IsVisible(VideoPlaylist) + String.StartsWith(Container.Folderpath,videodb://)</visible>
 			</control>
 			<control type="image">
 				<left>45</left>
@@ -600,7 +578,7 @@
 				<left>60</left>
 				<top>903</top>
 				<width>1178</width>
-				<height>124</height>
+				<height>140</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -614,7 +592,7 @@
 				<left>386</left>
 				<top>903</top>
 				<width>900</width>
-				<height>124</height>
+				<height>140</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -839,7 +817,7 @@
 				<left>476</left>
 				<top>855</top>
 				<width>810</width>
-				<height>124</height>
+				<height>108</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>

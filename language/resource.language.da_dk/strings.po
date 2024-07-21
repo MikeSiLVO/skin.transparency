@@ -16,10 +16,6 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "Lyden er skruet helt ned"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "Arbejder..."

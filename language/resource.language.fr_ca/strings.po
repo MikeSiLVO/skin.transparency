@@ -16,10 +16,6 @@ msgstr ""
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "Volume en sourdine"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "Travail en cours..."

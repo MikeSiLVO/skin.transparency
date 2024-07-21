@@ -590,8 +590,8 @@
 					<height>225</height>
 					<texture border="2">gradient.png</texture>
 				</control>
-				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))]">Home_Weather_Icons</include>
-				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">Home_Animated_Weather_Icons</include>
+				<include condition="![Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))]">skinshortcuts-template-Home_Weather_Icons</include>
+				<include condition="Skin.HasSetting(resource.images.weathericons.multi) | String.IsEmpty(Skin.String(resource.images.weathericons.path))">skinshortcuts-template-Home_Animated_Weather_Icons</include>
 				<control type="label">
 					<description>location label</description>
 					<left>188</left>
@@ -928,6 +928,170 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 				</control>
+			</control>
+		</controls>
+	</other>
+	<other include="Home_Weather_Icons">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|widget">weatherinfo</condition>
+		<controls>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1380</left>
+				<top>0</top>
+				<width>129</width>
+				<height>129</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>915</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1005</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1095</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1185</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1275</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1365</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<left>1455</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+			</control>
+		</controls>
+	</other>
+	<other include="Home_Animated_Weather_Icons">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|widget">weatherinfo</condition>
+		<controls>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1380</left>
+				<top>0</top>
+				<width>129</width>
+				<height>129</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>915</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1005</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1095</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1185</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1275</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1365</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
+			</control>
+			<control type="multiimage">
+				<description>Weather image</description>
+				<left>1455</left>
+				<top>164</top>
+				<width>60</width>
+				<height>60</height>
+				<imagepath>$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>1</fadetime>
 			</control>
 		</controls>
 	</other>

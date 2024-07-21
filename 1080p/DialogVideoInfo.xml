@@ -8,18 +8,18 @@
 			<include>BackgroundDim</include>
 			<control type="group">
 				<include>DialogFade</include>
-				<include content="BackgroundUnderlay" condition="String.IsEqual(ListItem.DBTYPE,movie)">
+				<include content="BackgroundUnderlay" condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set)">
 					<param name="top">825</param>
 					<param name="height">237</param>
 				</include>
-				<include content="BackgroundUnderlay" condition="!String.IsEqual(ListItem.DBTYPE,movie)">
+				<include content="BackgroundUnderlay" condition="!String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEqual(ListItem.DBTYPE,set)">
 					<param name="top">783</param>
 					<param name="height">279</param>
 				</include>
-				<include condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(TVShowsPosters)">VideoInfoPoster</include>
-				<include content="VideoInfoCase" condition="String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(HideMovieCase)">
+				<include condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set) | String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(TVShowsPosters)">VideoInfoPoster</include>
+				<include content="VideoInfoCase" condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set)] + !Skin.HasSetting(HideMovieCase)">
 					<param name="fallback">case-sets.png</param>
-					<param name="texture">case$INFO[ListItem.VideoResolution].png</param>
+					<param name="texture">$INFO[ListItem.VideoResolution,case,.png]</param>
 				</include>
 				<include content="VideoInfoCase" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(TVShowsPosters) + !Skin.HasSetting(HideTVShowCase)">
 					<param name="texture">case-tv.png</param>
@@ -29,7 +29,7 @@
 			<control type="group">
 				<include>dialogeffect4</include>
 				<include>DialogFade</include>
-				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(custom_DialogPlot.xml)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
 				<control type="button">
 					<left>1860</left>
 					<top>30</top>
@@ -69,7 +69,7 @@
 				<control type="group" id="9000">
 					<left>210</left>
 					<top>573</top>
-					<animation effect="slide" start="0,0" end="165,0" time="0" condition="String.IsEqual(ListItem.DBTYPE,movie)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="165,0" time="0" condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,92" time="0" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="165,0" time="0" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,27" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
@@ -111,7 +111,7 @@
 						<altlabel>1024</altlabel>
 						<alttexturefocus border="7">button-focus.png</alttexturefocus>
 						<alttexturenofocus border="7">button-nofocus.png</alttexturenofocus>
-						<usealttexture>Container.Content(TVShows)</usealttexture>
+						<usealttexture>String.IsEqual(ListItem.DBTYPE,tvshow)</usealttexture>
 						<onleft>5</onleft>
 						<onright>6</onright>
 						<onup>49</onup>
@@ -133,11 +133,11 @@
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label>184</label>
 						<onleft>8</onleft>
-						<onright>1113</onright>
+						<onright>900</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
 					</control>
-					<control type="button" id="1113">
+					<control type="button" id="900">
 						<description>Extras</description>
 						<left>900</left>
 						<top>50</top>
@@ -177,7 +177,7 @@
 						<texturefocus border="7">button-focus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
 						<label>38023</label>
-						<onleft>1113</onleft>
+						<onleft>900</onleft>
 						<onright>5</onright>
 						<onup>49</onup>
 						<ondown>1110</ondown>
@@ -232,7 +232,7 @@
 						<param name="left">382</param>
 						<param name="top">868</param>
 						<param name="width">1485</param>
-						<param name="height">154</param>
+						<param name="height">172</param>
 					</include>
 					<include content="VideoInfoPlot" condition="String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,musicvideo)">
 						<param name="left">495</param>

@@ -21,7 +21,7 @@
 				<top>180</top>
 				<width>114</width>
 				<height>174</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-8).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-8).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="-52,180,114,174" end="-166,180,112,172" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-8).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -48,7 +48,7 @@
 				<top>177</top>
 				<width>117</width>
 				<height>177</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-7).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="56,177,117,177" end="-52,180,114,174" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -75,7 +75,7 @@
 				<top>172</top>
 				<width>120</width>
 				<height>183</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-6).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="166,172,120,183" end="56,177,117,177" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -102,7 +102,7 @@
 				<top>165</top>
 				<width>123</width>
 				<height>190</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-5).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="280,165,123,190" end="166,172,120,183" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -129,7 +129,7 @@
 				<top>153</top>
 				<width>132</width>
 				<height>202</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-4).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="398,153,132,202" end="280,165,123,190" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -156,7 +156,7 @@
 				<top>126</top>
 				<width>150</width>
 				<height>231</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-3).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="524,126,150,231" end="398,153,132,202" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -183,7 +183,7 @@
 				<top>75</top>
 				<width>183</width>
 				<height>284</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-2).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="666,75,183,283" end="524,126,150,231" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -210,7 +210,7 @@
 				<top>-9</top>
 				<width>240</width>
 				<height>372</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-1).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="840,-9,240,372" end="666,75,183,283" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -237,9 +237,9 @@
 				<top>75</top>
 				<width>183</width>
 				<height>284</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1068,75,183,283" end="840,-9,240,372" time="250">Hidden</animation>
-				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
+				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
 				<left>1068</left>
@@ -248,7 +248,7 @@
 				<height>284</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="1068,75,183,283" end="840,-9,240,372" time="250">Hidden</animation>
-				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnNext + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<left>1242</left>
@@ -264,7 +264,7 @@
 				<top>126</top>
 				<width>150</width>
 				<height>231</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(1).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1242,126,150,231" end="1068,75,183,283" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -291,7 +291,7 @@
 				<top>153</top>
 				<width>132</width>
 				<height>202</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(2).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1386,153,132,202" end="1242,126,150,231" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -318,7 +318,7 @@
 				<top>165</top>
 				<width>123</width>
 				<height>190</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(3).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1512,165,123,190" end="1386,153,132,202" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -345,7 +345,7 @@
 				<top>172</top>
 				<width>120</width>
 				<height>183</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(4).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1630,172,120,183" end="1512,165,123,190" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -372,7 +372,7 @@
 				<top>177</top>
 				<width>117</width>
 				<height>177</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(5).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1746,177,117,177" end="1630,172,120,183" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -399,7 +399,7 @@
 				<top>180</top>
 				<width>114</width>
 				<height>174</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(6).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1858,180,114,174" end="1746,177,117,177" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -426,7 +426,7 @@
 				<top>180</top>
 				<width>112</width>
 				<height>172</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(7).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1968,180,112,172" end="1858,180,114,174" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnNext + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -460,7 +460,7 @@
 				<top>180</top>
 				<width>112</width>
 				<height>172</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-7).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="-160,180,112,172" end="-52,180,114,174" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -487,7 +487,7 @@
 				<top>180</top>
 				<width>114</width>
 				<height>174</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-6).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="-52,180,114,174" end="56,177,117,177" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -514,7 +514,7 @@
 				<top>177</top>
 				<width>117</width>
 				<height>177</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-5).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="56,177,117,177" end="166,172,120,183" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -541,7 +541,7 @@
 				<top>172</top>
 				<width>120</width>
 				<height>183</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-4).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="166,172,120,183" end="280,165,123,190" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -568,7 +568,7 @@
 				<top>165</top>
 				<width>123</width>
 				<height>190</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-3).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="280,165,123,190" end="398,153,132,202" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -595,7 +595,7 @@
 				<top>153</top>
 				<width>132</width>
 				<height>202</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-2).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="398,153,132,202" end="524,126,150,231" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -622,7 +622,7 @@
 				<top>126</top>
 				<width>150</width>
 				<height>231</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(-1).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="524,126,150,231" end="666,75,183,283" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -649,9 +649,9 @@
 				<top>75</top>
 				<width>183</width>
 				<height>284</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="666,75,183,283" end="840,-9,240,372" time="250">Hidden</animation>
-				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
+				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
 				<left>666</left>
@@ -660,7 +660,7 @@
 				<height>284</height>
 				<texture>case-tv.png</texture>
 				<animation reversible="false" effect="zoom" start="666,75,183,283" end="840,-9,240,372" time="250">Hidden</animation>
-				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
+				<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + Container(596).OnPrevious + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 			</control>
 			<control type="image">
 				<left>840</left>
@@ -676,7 +676,7 @@
 				<top>-9</top>
 				<width>240</width>
 				<height>372</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(1).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="840,-9,240,372" end="1068,75,183,283" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -703,7 +703,7 @@
 				<top>75</top>
 				<width>183</width>
 				<height>284</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(2).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1068,75,183,283" end="1242,126,150,231" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -730,7 +730,7 @@
 				<top>126</top>
 				<width>150</width>
 				<height>231</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(3).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1242,126,150,231" end="1386,153,132,202" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -757,7 +757,7 @@
 				<top>153</top>
 				<width>132</width>
 				<height>202</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(4).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1386,153,132,202" end="1512,165,123,190" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -784,7 +784,7 @@
 				<top>165</top>
 				<width>123</width>
 				<height>190</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(5).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1512,165,123,190" end="1630,172,120,183" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -811,7 +811,7 @@
 				<top>172</top>
 				<width>120</width>
 				<height>183</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(6).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1630,172,120,183" end="1746,177,117,177" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -838,7 +838,7 @@
 				<top>177</top>
 				<width>117</width>
 				<height>177</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(7).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1746,177,117,177" end="1858,180,114,174" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -865,7 +865,7 @@
 				<top>180</top>
 				<width>114</width>
 				<height>174</height>
-				<texture fallback="case-sets.png">case$INFO[ListItem(8).VideoResolution].png</texture>
+				<texture fallback="case-sets.png">$INFO[ListItem(8).VideoResolution,case,.png]</texture>
 				<animation reversible="false" effect="zoom" start="1858,180,114,174" end="1972,180,112,172" time="250">Hidden</animation>
 				<visible>Container.Content(Movies) + Container(596).OnPrevious + !ListItem(8).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
@@ -897,7 +897,7 @@
 					<top>180</top>
 					<width>114</width>
 					<height>174</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-7).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-7).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -923,7 +923,7 @@
 					<top>177</top>
 					<width>117</width>
 					<height>177</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-6).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-6).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -949,7 +949,7 @@
 					<top>172</top>
 					<width>120</width>
 					<height>183</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-5).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-5).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -975,7 +975,7 @@
 					<top>165</top>
 					<width>123</width>
 					<height>190</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-4).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-4).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1001,7 +1001,7 @@
 					<top>153</top>
 					<width>132</width>
 					<height>202</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-3).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-3).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1027,7 +1027,7 @@
 					<top>126</top>
 					<width>150</width>
 					<height>231</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-2).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-2).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1053,7 +1053,7 @@
 					<top>75</top>
 					<width>183</width>
 					<height>284</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(-1).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(-1).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(-1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1079,8 +1079,8 @@
 					<top>-9</top>
 					<width>240</width>
 					<height>372</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(0).VideoResolution].png</texture>
-					<visible>Container.Content(Movies) + Container.Content(Movies) + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
+					<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
+					<visible>Container.Content(Movies) + Container.Content(Movies) + !ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
 					<left>840</left>
@@ -1088,15 +1088,7 @@
 					<width>240</width>
 					<height>372</height>
 					<texture>case-tv.png</texture>
-					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem(0).IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
-				</control>
-				<control type="image">
-					<left>987</left>
-					<top>291</top>
-					<width>66</width>
-					<height>39</height>
-					<texture>movieset.png</texture>
-					<visible>Container.Content(Movies) + ListItem.IsFolder + !ListItem.IsParentFolder + String.StartsWith(Container.FolderPath,plugin://)</visible>
+					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !ListItem.IsParentFolder + !Skin.HasSetting(HideTVShowCase)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1113,7 +1105,7 @@
 					<top>75</top>
 					<width>183</width>
 					<height>284</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(1).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(1).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(1).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1139,7 +1131,7 @@
 					<top>126</top>
 					<width>150</width>
 					<height>231</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(2).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(2).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(2).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1165,7 +1157,7 @@
 					<top>153</top>
 					<width>132</width>
 					<height>202</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(3).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(3).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(3).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1191,7 +1183,7 @@
 					<top>165</top>
 					<width>123</width>
 					<height>190</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(4).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(4).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(4).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1217,7 +1209,7 @@
 					<top>172</top>
 					<width>120</width>
 					<height>183</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(5).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(5).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(5).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1243,7 +1235,7 @@
 					<top>177</top>
 					<width>117</width>
 					<height>177</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(6).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(6).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(6).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">
@@ -1269,7 +1261,7 @@
 					<top>180</top>
 					<width>114</width>
 					<height>174</height>
-					<texture fallback="case-sets.png">case$INFO[ListItem(7).VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[ListItem(7).VideoResolution,case,.png]</texture>
 					<visible>Container.Content(Movies) + !ListItem(7).IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 				<control type="image">

@@ -16,10 +16,6 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "소리 꺼짐"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "동작중..."

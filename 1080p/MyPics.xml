@@ -5,44 +5,17 @@
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<imagepath fallback="special://skin/backgrounds/background-pictures.jpg" background="true">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>[String.IsEmpty(ListItem.Property(Fanart_Image)) + String.IsEmpty(Container(597).ListItem(0).Thumb)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<include content="CommonBackground">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="fallback">special://skin/backgrounds/background-pictures.jpg</param>
+			</include>
 		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>!String.IsEmpty(ListItem.Property(Fanart_Image)) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<include>fanart-Programs_Pictures</include>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[Container(597).Listitem(0).Icon]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>1000</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>Control.IsVisible(597) + !String.IsEmpty(Container(597).ListItem(0).Thumb)</visible>
-		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture>black.png</texture>
-			<include>VisibleFadeEffect</include>
-			<colordiffuse>A2000000</colordiffuse>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsActive(PictureInfo)" reversible="true">conditional</animation>
-			<visible>Control.IsVisible(597)</visible>
-		</control>
+		<include content="BackgroundDim">
+			<param name="visible">Control.IsVisible(597) + !Window.IsActive(pictureinfo)</param>
+		</include>
 		<control type="image">
 			<left>-21</left>
 			<top>-21</top>
@@ -55,14 +28,6 @@
 			<bordersize>14</bordersize>
 			<include>VisibleFadeEffect</include>
 			<visible>[Control.IsVisible(594) | Control.IsVisible(50)] + !Skin.HasSetting(Picture_Fullscreen)</visible>
-		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<visible>[Control.IsVisible(594) | Control.IsVisible(50)] + Skin.HasSetting(Picture_Fullscreen)</visible>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">

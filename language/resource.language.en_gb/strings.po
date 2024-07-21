@@ -493,7 +493,10 @@ msgctxt "#31175"
 msgid "Random"
 msgstr ""
 
-# empty string with id 31176
+msgctxt "#31176"
+msgid "[B]OPEN THE EVENT LOG[/B][CR]Library update reports - Failed scrapes - Missing files[CR]PVR events - Add-on events"
+msgstr ""
+
 msgctxt "#31177"
 msgid "Enable touchscreen mode"
 msgstr ""

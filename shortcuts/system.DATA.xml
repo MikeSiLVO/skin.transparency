@@ -88,12 +88,4 @@
 		<thumb />
 		<action>ActivateWindow(FileManager,return)</action>
 	</shortcut>
-	<shortcut>
-		<defaultID>10050</defaultID>
-		<label>$LOCALIZE[10050]</label>
-		<label2 />
-		<icon />
-		<thumb />
-		<action>ActivateWindow(Eventlog)</action>
-	</shortcut>
 </shortcuts>

@@ -16,10 +16,6 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "Hangerő elnémítva"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "Dolgozom..."

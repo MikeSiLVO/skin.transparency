@@ -5,15 +5,10 @@
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/favourites.jpg" background="true">$INFO[Skin.String(Custom_Back_Favourites_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
+		<include content="CommonBackground">
+			<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+			<param name="fallback">special://skin/backgrounds/favourites.jpg</param>
+		</include>
 		<control type="group">
 			<include>Window_OpenClose_Right_Panel_Animation</include>
 			<control type="group">

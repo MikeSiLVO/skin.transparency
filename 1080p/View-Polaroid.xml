@@ -79,7 +79,7 @@
 				<width>567</width>
 				<height>518</height>
 				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[ListItem(0).Icon]</texture>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				<fadetime>50</fadetime>
 			</control>
@@ -92,7 +92,7 @@
 				<texture>PolaroidBack.jpg</texture>
 				<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				<fadetime>50</fadetime>
-				<visible>String.IsEmpty(ListItem(0).Thumb)</visible>
+				<visible>String.IsEmpty(ListItem.Thumb)</visible>
 			</control>
 			<control type="image">
 				<left>520</left>
@@ -299,7 +299,7 @@
 					<width>567</width>
 					<height>518</height>
 					<aspectratio>scale</aspectratio>
-					<texture background="true">$INFO[ListItem(0).Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
@@ -310,7 +310,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture>PolaroidBack.jpg</texture>
 					<animation effect="rotate" end="6" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
-					<visible>String.IsEmpty(ListItem(0).Thumb)</visible>
+					<visible>String.IsEmpty(ListItem.Thumb)</visible>
 				</control>
 				<control type="image">
 					<left>-980</left>
@@ -330,7 +330,7 @@
 					<textcolor>black</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem(0).Label]</label>
+					<label>$INFO[ListItem.Label]</label>
 					<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
@@ -342,7 +342,7 @@
 					<textcolor>black</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[I]$INFO[ListItem(0).Date][/I]</label>
+					<label>[I]$INFO[ListItem.Date][/I]</label>
 					<animation effect="rotate" end="5" center="auto" time="0" reversible="false" condition="true">Conditional</animation>
 				</control>
 			</control>

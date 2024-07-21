@@ -110,49 +110,13 @@
 			<label>$INFO[Container.ListItem.Art(tvshow.fanart20)]</label>
 		</control>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-videos.jpg" background="true">$INFO[Skin.String(Custom_Back_Videos_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>[String.IsEmpty(ListItem.Property(Fanart_Image)) + !String.Contains(Container.FolderPath,videodb://movies/) + !String.Contains(Container.FolderPath,videodb://tvshows/) + !String.Contains(Container.FolderPath,videodb://musicvideos/) + !String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/) + !String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-movies.jpg" background="true">$INFO[Skin.String(Custom_Back_Movies_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-tvshows.jpg" background="true">$INFO[Skin.String(Custom_Back_TVShows_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-musicvideos.jpg" background="true">$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>String.IsEmpty(ListItem.Property(Fanart_Image)) + String.Contains(Container.FolderPath,videodb://musicvideos/) + ![Control.IsVisible(598) + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<include content="CommonBackground">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="fallback">special://skin/backgrounds/background-videos.jpg</param>
+			</include>
 		</control>
 		<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies</include>
 		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
@@ -205,16 +169,16 @@
 				<animation effect="slide" start="0,0" end="1045,-190" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(590) | Control.IsVisible(592) | Control.IsVisible(596) | Control.IsVisible(598)]">Conditional</animation>
 				<include>ContentPanel</include>
-				<include condition="!Skin.HasSetting(Hide-Videos-FullList)">FullList-Videos</include>
-				<!-- view id=52 -->
+				<include>Fanart-Videos</include>
+				<!-- view id=50 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-List)">List-Videos</include>
 				<!-- view id=51 -->
+				<include condition="!Skin.HasSetting(Hide-Videos-FullList)">FullList-Videos</include>
+				<!-- view id=52 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-Thumbnail)">Thumbnail-Videos</include>
 				<!-- view id=53 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-WideIcon)">WideIcon</include>
 				<!-- view id=54 -->
-				<include>Fanart-Videos</include>
-				<!-- view id=50 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-Movies</include>
 				<!-- view id=58 -->
 				<include condition="!Skin.HasSetting(Hide-Videos-MediaInfo)">MediaInfo-TVShows</include>

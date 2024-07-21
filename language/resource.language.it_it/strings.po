@@ -16,10 +16,6 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "Muto"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "Elaborazione in corso..."

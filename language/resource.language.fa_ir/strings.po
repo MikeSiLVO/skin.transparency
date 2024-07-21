@@ -16,10 +16,6 @@ msgstr ""
 "Language: fa_IR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "صدا قطع شده"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "در حال کار..."

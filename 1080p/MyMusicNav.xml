@@ -12,6 +12,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>Skin.HasSetting(MusicExtraFanart)</visible>
 			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(ListItem.Art(artist.fanart2)) | !String.IsEmpty(ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
@@ -83,6 +84,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>Skin.HasSetting(MusicExtraFanart)</visible>
 			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart2)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
@@ -147,28 +149,22 @@
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart20)]</label>
 		</control>
 		<include condition="!Skin.HasSetting(HideVideoBackgrounds)">CommonVideoPlayingBackground</include>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		<control type="group">
+			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>[[String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Art(artist.fanart)) + String.IsEmpty(ListItem.Art(albumartist.fanart)) + ![Control.IsVisible(592) + ![Window.IsVisible(SongInformation) | Window.IsVisible(MusicInformation)]]] | Control.IsVisible(591)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
+			<include content="CommonBackground">
+				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="fallback">special://skin/backgrounds/background-music.jpg</param>
+			</include>
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture background="true">$INFO[Skin.String(Music_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+				<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds)</visible>
+			</control>
 		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[Skin.String(Music_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-		<include condition="Skin.HasSetting(MusicExtraFanart)">fanart-extra-music</include>
-		<include condition="!Skin.HasSetting(MusicExtraFanart)">fanart-mymusicsongs</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
 		<control type="group">
@@ -194,14 +190,14 @@
 				<animation effect="slide" start="0,0" end="1045,-190" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(591) | Control.IsVisible(592) | Control.IsVisible(595)]">Conditional</animation>
 				<include>ContentPanel</include>
-				<include condition="!Skin.HasSetting(Hide-Music-FullList)">FullList-Music</include>
-				<!-- view id=52 -->
-				<include condition="!Skin.HasSetting(Hide-Music-List)">List-Music</include>
-				<!-- view id=51 -->
-				<include condition="!Skin.HasSetting(Hide-Music-Thumbnail)">Thumbnail</include>
-				<!-- view id=53 -->
 				<include>Fanart-Music</include>
 				<!-- view id=50 -->
+				<include condition="!Skin.HasSetting(Hide-Music-List)">List-Music</include>
+				<!-- view id=51 -->
+				<include condition="!Skin.HasSetting(Hide-Music-FullList)">FullList-Music</include>
+				<!-- view id=52 -->
+				<include condition="!Skin.HasSetting(Hide-Music-Thumbnail)">Thumbnail</include>
+				<!-- view id=53 -->
 				<include condition="!Skin.HasSetting(Hide-Music-MediaInfo)">MediaInfo-Music</include>
 				<!-- view id=59 -->
 				<include condition="!Skin.HasSetting(Hide-Music-MediaInfo)">MediaInfo-AddOns</include>

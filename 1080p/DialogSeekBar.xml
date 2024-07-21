@@ -170,7 +170,7 @@
 					<top>0</top>
 					<width>225</width>
 					<height>348</height>
-					<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[VideoPlayer.VideoResolution,case,.png]</texture>
 					<visible>!Skin.HasSetting(HideMovieCase)</visible>
 				</control>
 			</control>

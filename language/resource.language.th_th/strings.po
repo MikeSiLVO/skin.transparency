@@ -16,10 +16,6 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgctxt "#31000"
-msgid "Volume muted"
-msgstr "ปิด ระดับเสียง"
-
 msgctxt "#31001"
 msgid "Working..."
 msgstr "กำลังทำงาน..."

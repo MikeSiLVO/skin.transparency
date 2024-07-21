@@ -236,7 +236,7 @@
 					<top>24</top>
 					<width>333</width>
 					<height>507</height>
-					<texture fallback="case-sets.png">case$INFO[VideoPlayer.VideoResolution].png</texture>
+					<texture fallback="case-sets.png">$INFO[VideoPlayer.VideoResolution,case,.png]</texture>
 					<visible>VideoPlayer.Content(Movies) + !Skin.HasSetting(HideMovieCase) + ![String.StartsWith(Player.FileNameAndPath,http) | String.StartsWith(Player.FileNameAndPath,mms) | String.StartsWith(Player.FileNameAndPath,rtmp)]</visible>
 				</control>
 			</control>

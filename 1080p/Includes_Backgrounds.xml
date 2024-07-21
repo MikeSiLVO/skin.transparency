@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<include name="CommonBackground">
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>2000</fadetime>
+			<aspectratio>scale</aspectratio>
+			<imagepath fallback="$PARAM[fallback]" background="true">$PARAM[imagepath]</imagepath>
+			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+		</control>
+	</include>
+	<include name="SettingsPanelBackground">
+		<control type="image">
+			<left>266</left>
+			<top>169</top>
+			<width>1391</width>
+			<height>744</height>
+			<texture diffuse="panel-diffuse.png">$VAR[SettingsPanelBackgroundPath]</texture>
+			<animation effect="zoom" start="788,458,345,208" end="266,169,1391,744" time="300">WindowOpen</animation>
+			<animation effect="zoom" start="266,169,1391,744" end="788,458,345,208" time="300" delay="350">WindowClose</animation>
+			<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="[[ControlGroup(9000).HasFocus + !Window.IsVisible(SettingsCategory.xml) + !Window.IsVisible(eventlog) + ![Window.IsVisible(addonbrowser) + Control.IsVisible(50)]] | [[Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(eventlog)] + !Control.HasFocus(90) + !ControlGroup(5).HasFocus]] + Skin.HasSetting(WideSideMenuButtons)">Conditional</animation>
+			<include>ContentFade</include>
+		</control>
+	</include>
 	<include name="BackgroundDim">
 		<param name="visible">true</param>
 		<definition>
 			<control type="image">
 				<include>FullscreenDimensions</include>
-				<texture>black.png</texture>
-				<animation effect="fade" start="0" end="70" time="300">WindowOpen</animation>
-				<animation effect="fade" start="70" end="0" time="300">WindowClose</animation>
+				<texture colordiffuse="B3FFFFFF">black.png</texture>
 				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
@@ -37,17 +59,6 @@
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="![Window.IsVisible(Home) + Skin.HasSetting(HideVisBackground)] + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<visible>Player.HasAudio + Skin.HasSetting(Vis-Slideshow) + ![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
-		</control>
-	</include>
-	<include name="fanart-mymusicsongs">
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$VAR[AlbumSongFanart]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 		</control>
 	</include>
 	<include name="fanart-Programs_Pictures">
@@ -98,19 +109,6 @@
 			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
 			<visible>[Container.Content(MusicVideos) | Container.Content(MusicVideos)] + !String.IsEmpty(ListItem.Path) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
-	</include>
-	<include name="fanart-extra-music">
-		<control type="multiimage" id="6110">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath background="true">$VAR[ExtraFanartPath]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>[Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + !ListItem.IsParentFolder + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://musicplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addon://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
 </includes>

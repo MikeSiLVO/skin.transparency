@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<variable name="CommonBackgroundPath">
+		<value condition="Window.IsActive(home)">$INFO[Container(5040).ListItem.Property(background)]</value>
+		<value condition="Window.IsVisible(music) + Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="Window.IsVisible(music) + Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(artist.fanart))">$INFO[Container.ListItem.Art(artist.fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(albumartist.fanart))">$INFO[ListItem.Art(albumartist.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(albumartist.fanart))">$INFO[Container.ListItem.Art(albumartist.fanart)]</value>
+		<value condition="Window.IsVisible(pictures) + Control.IsVisible(597) + !String.IsEmpty(Container(597).ListItem.Thumb)">$INFO[Container(597).Listitem.Icon]</value>
+		<value condition="Window.IsVisible(pictures) + [Control.IsVisible(594) | Control.IsVisible(50)] + Skin.HasSetting(Picture_Fullscreen)">$INFO[ListItem.FilenameAndPath]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Movies_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_Movies_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Movies_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://recentlyaddedmovies/)] + ![Control.IsVisible(592) + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_Movies_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_TVShows_Folder)) + Window.IsVisible(videos) + [String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(movieinformation)]">$INFO[Skin.String(Custom_Back_TVShows_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_MusicVideos_Folder)) + Window.IsVisible(videos) + String.Contains(Container.FolderPath,videodb://musicvideos/) + ![Control.IsVisible(598) + !Window.IsVisible(MovieInformation)]">$INFO[Skin.String(Custom_Back_MusicVideos_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Videos_Folder)) + Window.IsVisible(videos)">$INFO[Skin.String(Custom_Back_Videos_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Music_Folder)) + [Window.IsVisible(music) | Window.IsVisible(musicplaylisteditor) | Window.IsVisible(musicplaylist)]">$INFO[Skin.String(Custom_Back_Music_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Favourites_Folder)) + Window.IsVisible(favouritesbrowser)">$INFO[Skin.String(Custom_Back_Favourites_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Games_Folder)) + Window.IsVisible(games)">$INFO[Skin.String(Custom_Back_Games_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Pictures_Folder)) + Window.IsVisible(pictures)">$INFO[Skin.String(Custom_Back_Pictures_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Programs_Folder)) + Window.IsVisible(programs)">$INFO[Skin.String(Custom_Back_Programs_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Settings_Folder)) + Window.IsVisible(addonbrowser)">$INFO[Skin.String(Custom_Back_Settings_Folder)]</value>
+		<value condition="!String.IsEmpty(Skin.String(Custom_Back_TV_Folder)) + [Window.IsVisible(tvchannels) | Window.IsVisible(tvguide) | Window.IsVisible(tvsearch) | Window.IsVisible(tvtimers)]">$INFO[Skin.String(Custom_Back_TV_Folder)]</value>
+	</variable>
+	<variable name="SettingsPanelBackgroundPath">
+		<value condition="Window.IsVisible(addonbrowser)">special://skin/backgrounds/addons.jpg</value>
+		<value condition="Window.IsVisible(playersettings)">special://skin/backgrounds/videos.jpg</value>
+		<value condition="Window.IsVisible(pvrsettings)">special://skin/backgrounds/tv.jpg</value>
+		<value condition="Window.IsVisible(mediasettings)">special://skin/backgrounds/music.jpg</value>
+		<value condition="Window.IsVisible(systemsettings) | Window.IsVisible(eventlog)">special://skin/backgrounds/settings.jpg</value>
+		<value condition="Window.IsVisible(servicesettings)">special://skin/backgrounds/network.jpg</value>
+		<value condition="Window.IsVisible(appearancesettings)">special://skin/backgrounds/appearance.jpg</value>
+		<value condition="Window.IsVisible(gamesettings)">special://skin/backgrounds/games.jpg</value>
+		<value condition="Window.IsVisible(profiles)">special://skin/backgrounds/background-login.jpg</value>
+		<value condition="Window.IsVisible(systeminfo)">special://skin/backgrounds/systeminfo.jpg</value>
+		<value condition="Window.IsVisible(skinsettings)">special://skin/backgrounds/skin.jpg</value>
+	</variable>
 	<variable name="ExtraFanartPath">
 		<value condition="Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
 		<value condition="Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
@@ -10,13 +47,6 @@
 		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + [!String.IsEmpty(Player.Art(albumartist.fanart1)) | !String.IsEmpty(Player.Art(albumartist.fanart2))] + ">$INFO[Control.GetLabel(4411)]</value>
 		<value condition="String.IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Player.Art(fanart)]</value>
-	</variable>
-	<variable name="AlbumSongFanart">
-		<value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Art(artist.fanart))]">$INFO[Container.ListItem.Art(artist.fanart)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(albumartist.fanart))]">$INFO[ListItem.Art(albumartist.fanart)]</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Art(albumartist.fanart))]">$INFO[Container.ListItem.Art(albumartist.fanart)]</value>
-		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ArtworkLogo">
 		<value condition="Container.Content(seasons) | Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
@@ -268,8 +298,8 @@
 		<value>$INFO[ListItem(-1).Icon]</value>
 	</variable>
 	<variable name="Icon(0)Poster">
-		<value condition="!String.IsEmpty(ListItem(0).Art(poster))">$INFO[ListItem(0).Art(poster)]</value>
-		<value>$INFO[ListItem(0).Icon]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="Icon(1)Poster">
 		<value condition="!String.IsEmpty(ListItem(1).Art(poster))">$INFO[ListItem(1).Art(poster)]</value>
@@ -939,12 +969,16 @@
 		<value condition="Container.Content(Albums)">[B]$INFO[ListItem.Label][/B]</value>
 		<value condition="Container.Content(Songs)">[B]$INFO[ListItem.Label2][/B]</value>
 	</variable>
-	<variable name="ViewFanartLabel1">
-		<value>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</value>
-	</variable>
 	<variable name="ViewFanartText">
 		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.Plot]</value>
+	</variable>
+	<variable name="ViewFanartTitle">
+		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+		<value condition="!String.IsEmpty(ListItem.label)">$INFO[ListItem.label]</value>
+	</variable>
+	<variable name="ViewFanartLabel1">
+		<value>$INFO[ListItem.Duration,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[2050]: [/COLOR][/B][/UPPERCASE]]</value>
 	</variable>
 	<variable name="ViewFanartLabel2">
 		<value condition="Skin.HasSetting(TVShowsPosters) + String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder">$INFO[ListItem.Label]</value>
@@ -1520,11 +1554,12 @@
 		<value condition="Control.HasFocus(4)">$LOCALIZE[31161]</value>
 		<value condition="Control.HasFocus(5)">$LOCALIZE[31164]</value>
 		<value condition="Control.HasFocus(6)">$LOCALIZE[31165]</value>
-		<value condition="Control.HasFocus(9)">$LOCALIZE[31166]</value>
+		<value condition="Control.HasFocus(7)">$LOCALIZE[31152]</value>
+		<value condition="Control.HasFocus(8)">$LOCALIZE[31166]</value>
+		<value condition="Control.HasFocus(9)">$LOCALIZE[31176]</value>
 		<value condition="Control.HasFocus(10)">$LOCALIZE[31167]</value>
 		<value condition="Control.HasFocus(11)">$LOCALIZE[31168]</value>
 		<value condition="Control.HasFocus(12)">$LOCALIZE[31169]</value>
 		<value condition="Control.HasFocus(13)">$LOCALIZE[31170]</value>
-		<value condition="Control.HasFocus(14)">$LOCALIZE[31152]</value>
 	</variable>
 </includes>

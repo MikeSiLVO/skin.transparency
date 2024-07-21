@@ -2,15 +2,10 @@
 <window>
 	<defaultcontrol always="true">52</defaultcontrol>
 	<controls>
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<imagepath fallback="special://skin/backgrounds/background-login.jpg" background="true">$INFO[Skin.String(Custom_Back_Login_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
+		<include content="CommonBackground">
+			<param name="imagepath">$INFO[Skin.String(Custom_Back_Login_Folder)]</param>
+			<param name="fallback">special://skin/backgrounds/background-login.jpg</param>
+		</include>
 		<control type="group">
 			<include>ContentFade</include>
 			<control type="image">
