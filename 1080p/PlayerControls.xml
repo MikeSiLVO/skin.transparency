@@ -338,8 +338,8 @@
 				<top>0</top>
 				<width>60</width>
 				<height>60</height>
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<onclick>PlayerControl(Repeat)</onclick>
 				<onleft>405</onleft>
 				<onright>407</onright>

@@ -9,8 +9,8 @@
 				<top>21</top>
 				<width>60</width>
 				<height>60</height>
-				<label></label>
-				<font></font>
+				<label />
+				<font />
 				<texturefocus>trailer-focus.png</texturefocus>
 				<texturenofocus>trailer-nofocus.png</texturenofocus>
 				<onup>9000</onup>

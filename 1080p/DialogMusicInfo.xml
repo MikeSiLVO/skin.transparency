@@ -182,7 +182,7 @@
 						<aligny>center</aligny>
 						<texturefocus border="7">button-focus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
-						<label></label>
+						<label />
 					</control>
 					<control type="button" id="7">
 						<description>Rating button</description>
@@ -210,7 +210,7 @@
 						<aligny>center</aligny>
 						<texturefocus border="7">button-focus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
-						<label></label>
+						<label />
 					</control>
 					<control type="button" id="12">
 						<description>Get Fanart</description>
@@ -224,7 +224,7 @@
 						<aligny>center</aligny>
 						<texturefocus border="7">button-focus.png</texturefocus>
 						<texturenofocus border="7">button-nofocus.png</texturenofocus>
-						<label></label>
+						<label />
 					</control>
 				</control>
 			</control>
@@ -342,7 +342,6 @@
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>61</ondown>
-				<viewtype label="">list</viewtype>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
@@ -398,7 +397,6 @@
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>61</ondown>
-				<viewtype label="">list</viewtype>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
@@ -565,8 +563,8 @@
 				<top>1050</top>
 				<width>30</width>
 				<height>30</height>
-				<label></label>
-				<font></font>
+				<label />
+				<font />
 				<texturefocus>magnifier-small-focus.png</texturefocus>
 				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
 				<onleft>61</onleft>
@@ -588,7 +586,7 @@
 						<onright>49</onright>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
-						<pagecontrol></pagecontrol>
+						<pagecontrol />
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
 							<control type="image">
@@ -731,7 +729,7 @@
 						<onright>49</onright>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
-						<pagecontrol></pagecontrol>
+						<pagecontrol />
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1800" height="44">
 							<control type="image">
@@ -879,7 +877,7 @@
 						<onright>49</onright>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
-						<pagecontrol></pagecontrol>
+						<pagecontrol />
 						<scrolltime>200</scrolltime>
 						<itemlayout width="1620" height="44">
 							<control type="image">

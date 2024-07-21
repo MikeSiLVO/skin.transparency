@@ -110,7 +110,7 @@
 					<onright>49</onright>
 					<onup>61</onup>
 					<ondown>9000</ondown>
-					<pagecontrol></pagecontrol>
+					<pagecontrol />
 					<scrolltime>200</scrolltime>
 					<itemlayout width="1800" height="44">
 						<control type="image">
@@ -247,8 +247,8 @@
 				<top>1050</top>
 				<width>30</width>
 				<height>30</height>
-				<label></label>
-				<font></font>
+				<label />
+				<font />
 				<texturefocus>magnifier-small-focus.png</texturefocus>
 				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
 				<onleft>61</onleft>
@@ -295,7 +295,7 @@
 					<aligny>center</aligny>
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
-					<label></label>
+					<label />
 					<visible>Window.IsActive(PVRGuideInfo)</visible>
 				</control>
 				<control type="button" id="9">

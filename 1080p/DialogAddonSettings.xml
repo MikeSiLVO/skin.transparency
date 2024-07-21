@@ -61,7 +61,7 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<font>font-32</font>
-				<label></label>
+				<label />
 			</control>
 			<control type="image">
 				<left>0</left>

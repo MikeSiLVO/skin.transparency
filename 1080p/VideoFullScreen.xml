@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol></defaultcontrol>
 	<controls>
 		<control type="label" id="1">
 			<description>seek label</description>
@@ -29,7 +28,7 @@
 			<top>30</top>
 			<width>1845</width>
 			<height>60</height>
-			<label></label>
+			<label />
 			<align>left</align>
 			<font>font-19</font>
 			<include>VisibleFadeEffect</include>
@@ -40,7 +39,7 @@
 			<top>98</top>
 			<width>1845</width>
 			<height>60</height>
-			<label></label>
+			<label />
 			<align>left</align>
 			<font>font-19</font>
 			<include>VisibleFadeEffect</include>
@@ -51,7 +50,7 @@
 			<top>165</top>
 			<width>1845</width>
 			<height>90</height>
-			<label></label>
+			<label />
 			<align>left</align>
 			<font>font-19</font>
 			<include>VisibleFadeEffect</include>
@@ -202,7 +201,7 @@
 				<top>180</top>
 				<width>225</width>
 				<height>22</height>
-				<overlaytexture></overlaytexture>
+				<overlaytexture />
 				<info>PVR.ActStreamProgrSNR</info>
 			</control>
 			<control type="label">

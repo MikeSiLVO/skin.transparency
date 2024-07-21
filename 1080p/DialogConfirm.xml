@@ -30,7 +30,7 @@
 			<top>0</top>
 			<width>0</width>
 			<height>0</height>
-			<font></font>
+			<font />
 			<visible>false</visible>
 		</control>
 		<control type="label">
@@ -58,7 +58,7 @@
 			<width>930</width>
 			<height>142</height>
 			<align>center</align>
-			<label></label>
+			<label />
 			<font>font-20</font>
 			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>
@@ -82,7 +82,7 @@
 				<description>Yes button</description>
 				<width>300</width>
 				<height>52</height>
-				<label></label>
+				<label />
 				<font>font-23</font>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -94,7 +94,7 @@
 				<description>No button</description>
 				<width>300</width>
 				<height>52</height>
-				<label></label>
+				<label />
 				<font>font-23</font>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -106,7 +106,7 @@
 				<description>Custom button</description>
 				<width>300</width>
 				<height>52</height>
-				<label></label>
+				<label />
 				<font>font-23</font>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>

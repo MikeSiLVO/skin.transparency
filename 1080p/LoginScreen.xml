@@ -179,11 +179,11 @@
 					<top>10</top>
 					<width>30</width>
 					<height>30</height>
-					<label></label>
-					<font></font>
+					<label />
+					<font />
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
-					<texturefocus></texturefocus>
-					<texturenofocus></texturenofocus>
+					<texturefocus />
+					<texturenofocus />
 					<pulseonselect>true</pulseonselect>
 					<onleft>52</onleft>
 					<onright>52</onright>

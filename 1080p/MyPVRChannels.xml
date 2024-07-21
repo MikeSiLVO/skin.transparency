@@ -45,7 +45,7 @@
 				<control type="button" id="2">
 					<description>View As button</description>
 					<include>ButtonCommonValues</include>
-					<label></label>
+					<label />
 					<visible>!Skin.HasSetting(KioskMode)</visible>
 				</control>
 				<control type="button" id="3">
@@ -64,7 +64,7 @@
 				<control type="button" id="28">
 					<description>Change Channel Groups</description>
 					<include>ButtonCommonValues</include>
-					<label></label>
+					<label />
 				</control>
 				<control type="radiobutton" id="31">
 					<description>Filter</description>

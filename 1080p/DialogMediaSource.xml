@@ -26,7 +26,7 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<font>font-32</font>
-				<label></label>
+				<label />
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -211,7 +211,7 @@
 				<height>45</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label></label>
+				<label />
 				<font>font-20</font>
 				<texturefocus border="7">list-focus.png</texturefocus>
 				<texturenofocus border="7">list-nofocus.png</texturenofocus>

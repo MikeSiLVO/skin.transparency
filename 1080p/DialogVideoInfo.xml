@@ -250,7 +250,6 @@
 					<onright>50</onright>
 					<onup>9000</onup>
 					<ondown>61</ondown>
-					<viewtype label="">list</viewtype>
 					<pagecontrol>61</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<focusposition>4</focusposition>

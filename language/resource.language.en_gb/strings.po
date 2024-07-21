@@ -229,7 +229,11 @@ msgctxt "#31047"
 msgid "Last logged in"
 msgstr ""
 
-# empty strings from id 31048 to 31049
+#: /1080p/Includes_Variables.xml
+msgctxt "#31048"
+msgid "home menu"
+msgstr ""
+
 msgctxt "#31050"
 msgid "Finish Time"
 msgstr ""
@@ -614,10 +618,6 @@ msgstr ""
 # empty string with id 31210
 msgctxt "#31211"
 msgid "Enable NextAired add-on"
-msgstr ""
-
-msgctxt "#31212"
-msgid "Enable Qlock add-on"
 msgstr ""
 
 msgctxt "#31215"

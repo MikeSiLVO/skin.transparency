@@ -160,8 +160,8 @@
 					<control type="button" id="901">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-previous-focus.png</texturefocus>
 						<texturenofocus>osdplayer-previous-nofocus.png</texturenofocus>
 						<onclick>PlayerControl(Previous)</onclick>
@@ -169,8 +169,8 @@
 					<control type="button" id="902">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-rewind-focus.png</texturefocus>
 						<texturenofocus>osdplayer-rewind-nofocus.png</texturenofocus>
 						<onclick>PlayerControl(Rewind)</onclick>
@@ -178,8 +178,8 @@
 					<control type="togglebutton" id="903">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-pause-focus.png</texturefocus>
 						<texturenofocus>osdplayer-pause-nofocus.png</texturenofocus>
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -190,8 +190,8 @@
 					<control type="button" id="904">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-forward-focus.png</texturefocus>
 						<texturenofocus>osdplayer-forward-nofocus.png</texturenofocus>
 						<onclick>PlayerControl(Forward)</onclick>
@@ -199,8 +199,8 @@
 					<control type="button" id="905">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-next-focus.png</texturefocus>
 						<texturenofocus>osdplayer-next-nofocus.png</texturenofocus>
 						<onclick>PlayerControl(Next)</onclick>
@@ -208,8 +208,8 @@
 					<control type="button" id="906">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-stop-focus.png</texturefocus>
 						<texturenofocus>osdplayer-stop-nofocus.png</texturenofocus>
 						<onclick>PlayerControl(Stop)</onclick>
@@ -222,10 +222,10 @@
 							<top>0</top>
 							<width>60</width>
 							<height>60</height>
-							<label></label>
-							<font></font>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<label />
+							<font />
+							<texturefocus />
+							<texturenofocus />
 							<onleft>906</onleft>
 							<onright>908</onright>
 							<onclick>PlayerControl(Repeat)</onclick>
@@ -282,8 +282,8 @@
 					<control type="togglebutton" id="908">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-random-focus.png</texturefocus>
 						<texturenofocus>osdplayer-random-nofocus.png</texturenofocus>
 						<usealttexture>Playlist.IsRandom</usealttexture>
@@ -294,8 +294,8 @@
 					<control type="button" id="909">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-record-focus.png</texturefocus>
 						<texturenofocus>osdplayer-record-nofocus.png</texturenofocus>
 						<onclick>PVR.ToggleRecordPlayingChannel</onclick>
@@ -304,8 +304,8 @@
 					<control type="button" id="910">
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osdplayer-recordrecording-focus.png</texturefocus>
 						<texturenofocus>osdplayer-recordrecording-nofocus.png</texturenofocus>
 						<onclick>PVR.ToggleRecordPlayingChannel</onclick>
@@ -328,8 +328,8 @@
 						<description>Channels Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-channels-nofocus.png</texturenofocus>
 						<texturefocus>osd-channels-focus.png</texturefocus>
 						<onclick>ActivateWindow(PVROSDChannels)</onclick>
@@ -339,8 +339,8 @@
 						<description>EPG Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-epg-nofocus.png</texturenofocus>
 						<texturefocus>osd-epg-focus.png</texturefocus>
 						<onclick>ActivateWindow(pvrchannelguide)</onclick>
@@ -350,8 +350,8 @@
 						<description>3D Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-3d-nofocus.png</texturenofocus>
 						<texturefocus>osd-3d-focus.png</texturefocus>
 						<onclick>ActivateWindow(1116)</onclick>
@@ -361,8 +361,8 @@
 						<description>Audio Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 						<texturefocus>osd-audio-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
@@ -372,8 +372,8 @@
 						<description>Video Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-video-nofocus.png</texturenofocus>
 						<texturefocus>osd-video-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDVideoSettings)</onclick>
@@ -383,8 +383,8 @@
 						<description>Colormanagement Settings</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-vis-nofocus.png</texturenofocus>
 						<texturefocus>osd-vis-focus.png</texturefocus>
 						<onclick>ActivateWindow(OSDCMSSettings)</onclick>
@@ -394,8 +394,8 @@
 						<description>Bookmarks Menu</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-bookmark-nofocus.png</texturenofocus>
 						<texturefocus>osd-bookmark-focus.png</texturefocus>
 						<onclick>ActivateWindow(VideoBookmarks)</onclick>
@@ -404,8 +404,8 @@
 						<description>Subtitles button</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-subs-nofocus.png</texturenofocus>
 						<texturefocus>osd-subs-focus.png</texturefocus>
 						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
@@ -414,8 +414,8 @@
 						<description>DVD menu button</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturenofocus>osd-dvd-nofocus.png</texturenofocus>
 						<texturefocus>osd-dvd-focus.png</texturefocus>
 						<onclick>PlayerControl(ShowVideoMenu)</onclick>
@@ -425,8 +425,8 @@
 						<description>Teletext button</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osd-teletext-focus.png</texturefocus>
 						<texturenofocus>osd-teletext-nofocus.png</texturenofocus>
 						<onclick>ActivateWindow(Teletext)</onclick>
@@ -436,8 +436,8 @@
 						<description>Info button</description>
 						<width>60</width>
 						<height>60</height>
-						<label></label>
-						<font></font>
+						<label />
+						<font />
 						<texturefocus>osd-info-focus.png</texturefocus>
 						<texturenofocus>osd-info-nofocus.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(VideoOSDInfo)</onclick>

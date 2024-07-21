@@ -54,8 +54,8 @@
 				<top>87</top>
 				<width>972</width>
 				<height>45</height>
-				<texturefocus border="7"></texturefocus>
-				<texturenofocus border="7"></texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<font>font-23</font>
 				<align>center</align>
 				<aligny>center</aligny>

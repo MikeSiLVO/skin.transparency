@@ -686,9 +686,9 @@
 			<top>-15</top>
 			<width>1</width>
 			<height>1</height>
-			<label></label>
-			<texturenofocus></texturenofocus>
-			<texturefocus></texturefocus>
+			<label />
+			<texturenofocus />
+			<texturefocus />
 		</control>
 	</controls>
 </window>
