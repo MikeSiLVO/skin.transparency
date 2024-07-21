@@ -144,6 +144,7 @@
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
 					<label>$VAR[DialogSelectLabel]</label>
+					<animation effect="slide" end="0,16" condition="Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
 				</control>
 				<control type="label">
 					<left>120</left>
@@ -192,6 +193,7 @@
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
 					<label>$VAR[DialogSelectLabel]</label>
+					<animation effect="slide" end="0,16" condition="Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
 				</control>
 				<control type="label">
 					<left>120</left>

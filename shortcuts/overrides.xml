@@ -18,6 +18,7 @@
 	<visibleoverride condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</visibleoverride>
 	<!-- Backgrounds -->
 	<backgroundBrowse>True</backgroundBrowse>
+	<background label="$LOCALIZE[31049]" icon="DefaultAddonWeather.png">weather_fanart</background>
 	<background label="$LOCALIZE[3]" icon="special://skin/backgrounds/videos.jpg">special://skin/backgrounds/videos.jpg</background>
 	<background label="$LOCALIZE[342]" icon="special://skin/backgrounds/movies.jpg">special://skin/backgrounds/movies.jpg</background>
 	<background label="$LOCALIZE[20343]" icon="special://skin/backgrounds/tvshows.jpg">special://skin/backgrounds/tvshows.jpg</background>
@@ -44,6 +45,10 @@
 	<backgrounddefault defaultID="favourites">special://skin/backgrounds/favourites.jpg</backgrounddefault>
 	<backgrounddefault defaultID="system">special://skin/backgrounds/settings.jpg</backgrounddefault>
 	<backgrounddefault defaultID="playdisc">special://skin/backgrounds/playdisc.jpg</backgrounddefault>
+	<!-- Background Frames -->
+	<property property="backgroundFrame" label="$LOCALIZE[20338]" icon="special://skin/backgrounds/movies.png">special://skin/backgrounds/movies.png</property>
+	<property property="backgroundFrame" label="$LOCALIZE[20364]" icon="special://skin/backgrounds/tvshows.png">special://skin/backgrounds/tvshows.png</property>
+	<property property="backgroundFrame" label="$LOCALIZE[2]" icon="special://skin/backgrounds/music.png">special://skin/backgrounds/music.png</property>
 	<!-- Widgets -->
 	<widget-groupings>
 		<!-- Movies -->

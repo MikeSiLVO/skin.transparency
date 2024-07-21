@@ -38,6 +38,16 @@
 		<width>100%</width>
 		<height>1080</height>
 	</include>
+	<include name="HiddenObject">
+		<left>-300</left>
+		<top>-300</top>
+		<width>1</width>
+		<height>1</height>
+		<texturefocus />
+		<texturenofocus />
+		<label />
+		<font />
+	</include>
 	<include name="AllViewCommonPageControls">
 		<control type="scrollbar" id="60">
 			<left>1624</left>

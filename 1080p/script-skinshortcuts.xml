@@ -2,6 +2,9 @@
 <window>
 	<defaultcontrol>9000</defaultcontrol>
 	<controls>
+		<control type="button" id="404">
+			<include>HiddenObject</include>
+		</control>
 		<control type="image">
 			<width>1920</width>
 			<height>1080</height>
@@ -12,6 +15,8 @@
 		</control>
 		<control type="group">
 			<include>dialogeffect</include>
+			<visible>!Window.IsVisible(DialogSelect.xml)</visible>
+			<include>VisibleFadeEffect</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -163,6 +168,16 @@
 						<label>$ADDON[script.skinshortcuts 32045]</label>
 						<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+					</control>
+					<control type="button" id="500">
+						<description>Set background frame</description>
+						<width>1100</width>
+						<height>60</height>
+						<label>Use background frame</label>
+						<label2>$INFO[Container(211).ListItem.Property(backgroundFrame)]</label2>
+						<onclick>SetProperty(chooseProperty,backgroundFrame)</onclick>
+						<onclick>SendClick(404)</onclick>
+						<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !String.IsEmpty(Container(211).ListItem.Property(backgroundName))</visible>
 					</control>
 					<control type="button" id="312">
 						<description>Add widget</description>

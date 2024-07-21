@@ -234,6 +234,11 @@ msgctxt "#31048"
 msgid "home menu"
 msgstr ""
 
+#: /shortcuts/overrides.xml
+msgctxt "#31049"
+msgid "Weather background"
+msgstr ""
+
 msgctxt "#31050"
 msgid "Finish Time"
 msgstr ""
