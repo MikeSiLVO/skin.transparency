@@ -88,4 +88,6 @@
 	</widget-groupings>
 	<!-- Default Widgets -->
 	<widgetdefaultnode defaultID="movies" label="$LOCALIZE[20386]" type="movie" target="videos" path="special://skin/extras/playlists/recentmovies.xsp" >poster</widgetdefaultnode>
+	<widgetdefaultnode defaultID="tvshows" label="$LOCALIZE[31016]" type="tvshow" target="videos" path="special://skin/extras/playlists/recenttvshows.xsp" >poster</widgetdefaultnode>
+	<widgetdefaultnode defaultID="music" label="$LOCALIZE[359]" type="album" target="music" path="special://skin/extras/playlists/recentlyaddedalbums.xsp" >square</widgetdefaultnode>
 </overrides>
