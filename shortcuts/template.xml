@@ -1095,82 +1095,109 @@
 			</control>
 		</controls>
 	</other>
-	<other include="HomeFanartMovieFrame">
+	<!-- <other include="HomeFanart">
+		<property name="background" tag="property" attribute="name|background" />
+		<condition tag="property" attribute="name|background" />
+		<controls>
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+			</control>
+		</controls>
+	</other> -->
+	<other include="HomeFanartFrame">
+		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
+		<condition tag="property" attribute="name|backgroundFrame" />
+		<!-- movies -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">472</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">30</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">1118</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">585</property>
+		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">skinshortcuts-template-HomeFanartMovieFrameAnimation</property>
+		<!-- movies2 -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">550</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">20</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">816</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">459</property>
+		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">skinshortcuts-template-HomeFanartMovieFrameAnimation2</property>
+		<!-- movies3 -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">405</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">-25</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">1024</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">576</property>
+		<!-- tvshows -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">480</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">60</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">1350</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">802</property>
+		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">skinshortcuts-template-HomeFanartTVFrameAnimation</property>
+		<!-- tvshows2 -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows2.png">370</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows2.png">180</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows2.png">1180</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows2.png">670</property>
+		<!-- tvshows3 -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows3.png">370</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows3.png">180</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows3.png">1180</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows3.png">670</property>
+		<!-- music -->
+		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/music.png">585</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/music.png">255</property>
+		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/music.png">795</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/music.png">555</property>
+		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/music.png">skinshortcuts-template-HomeFanartMusicFrameAnimation</property>
+		<controls>
+			<control type="group">
+				<skinshortcuts>visibility</skinshortcuts>
+				<animation effect="fade" start="0" end="100" time="400" delay="200">Visible</animation>
+				<control type="multiimage">
+					<left>$SKINSHORTCUTS[left]</left>
+					<top>$SKINSHORTCUTS[top]</top>
+					<width>$SKINSHORTCUTS[width]</width>
+					<height>$SKINSHORTCUTS[height]</height>
+					<timeperimage>5000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>600</fadetime>
+					<aspectratio aligny="top">scale</aspectratio>
+					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
+					<include>$SKINSHORTCUTS[animationinclude]</include>
+					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
+				</control>
+			</control>
+		</controls>
+	</other>
+	<other include="HomeFanartMovieFrameAnimation">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
 		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/movies.png</condition>
 		<controls>
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<include>VisibleFadeEffect</include>
-				<control type="multiimage">
-					<left>472</left>
-					<top>30</top>
-					<width>1118</width>
-					<height>585</height>
-					<timeperimage>5000</timeperimage>
-					<randomize>true</randomize>
-					<fadetime>1000</fadetime>
-					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
-					<animation effect="rotatey" center="480" start="20" end="20" time="0" condition="true">Conditional</animation>
-					<animation effect="rotate" center="480,330" start="-10" end="-10" time="0" condition="true">Conditional</animation>
-					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
-				</control>
-			</control>
+			<animation effect="rotatey" center="480" end="20" condition="true">Conditional</animation>
+			<animation effect="rotate" center="480,330" end="-10" condition="true">Conditional</animation>
 		</controls>
 	</other>
-	<other include="HomeFanartTVFrame">
+	<other include="HomeFanartMovieFrameAnimation2">
+		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
+		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/movies2.png</condition>
+		<controls>
+			<animation effect="rotatex" center="auto" end="-15" condition="true">Conditional</animation>
+		</controls>
+	</other>
+	<other include="HomeFanartTVFrameAnimation">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
 		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/tvshows.png</condition>
 		<controls>
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<include>VisibleFadeEffect</include>
-				<control type="multiimage">
-					<left>480</left>
-					<top>60</top>
-					<width>1350</width>
-					<height>802</height>
-					<timeperimage>5000</timeperimage>
-					<randomize>true</randomize>
-					<fadetime>1000</fadetime>
-					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
-					<animation effect="rotatey" center="500" start="-6" end="-6" time="0" condition="true">Conditional</animation>
-					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
-				</control>
-			</control>
+			<animation effect="rotatey" center="500" start="-6" end="-6" condition="true">Conditional</animation>
 		</controls>
 	</other>
-	<other include="HomeFanartMusicFrame">
+	<other include="HomeFanartMusicFrameAnimation">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
 		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/music.png</condition>
 		<controls>
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
-				<include>VisibleFadeEffect</include>
-				<control type="multiimage">
-					<left>585</left>
-					<top>255</top>
-					<width>795</width>
-					<height>555</height>
-					<timeperimage>5000</timeperimage>
-					<randomize>true</randomize>
-					<fadetime>1000</fadetime>
-					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
-					<animation effect="rotatey" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
-					<animation effect="rotatex" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
-					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
-				</control>
-			</control>
+			<animation effect="rotatey" center="0" end="10" condition="true">Conditional</animation>
+			<animation effect="rotatex" center="0" end="10" condition="true">Conditional</animation>
 		</controls>
 	</other>
 	<other include="HomeFrameBackground">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
-		<!-- <condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/movies.png</condition>
-		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/tvshows.png</condition>
-		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/music.png</condition> -->
 		<condition tag="property" attribute="name|backgroundFrame" />
 		<match>any</match>
 		<variables>

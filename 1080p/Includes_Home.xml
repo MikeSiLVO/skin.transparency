@@ -819,7 +819,7 @@
 			<height>1080</height>
 			<control type="image">
 				<left>0</left>
-				<top>878</top>
+				<top>877</top>
 				<width>1920</width>
 				<height>24</height>
 				<texture>shadow-top.png</texture>
@@ -989,7 +989,7 @@
 		</control>
 		<control type="group">
 			<left>0</left>
-			<top>15</top>
+			<top>14</top>
 			<width>1920</width>
 			<height>1080</height>
 			<control type="image">

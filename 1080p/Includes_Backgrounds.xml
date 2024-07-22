@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="CommonBackground">
-		<control type="multiimage">
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<aspectratio>scale</aspectratio>
-			<imagepath fallback="$PARAM[fallback]" background="true">$PARAM[imagepath]</imagepath>
-			<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
-		</control>
+		<param name="fadetime">2000</param>
+		<definition>
+			<control type="multiimage">
+				<include>FullscreenDimensions</include>
+				<timeperimage>5000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>$PARAM[fadetime]</fadetime>
+				<aspectratio>scale</aspectratio>
+				<imagepath fallback="$PARAM[fallback]" background="true">$PARAM[imagepath]</imagepath>
+				<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation</include>
+			</control>
+		</definition>
 	</include>
 	<include name="SettingsPanelBackground">
 		<control type="image">
