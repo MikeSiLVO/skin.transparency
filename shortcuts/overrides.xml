@@ -49,6 +49,81 @@
 	<property property="backgroundFrame" label="$LOCALIZE[20338]" icon="special://skin/backgrounds/movies.png">special://skin/backgrounds/movies.png</property>
 	<property property="backgroundFrame" label="$LOCALIZE[20364]" icon="special://skin/backgrounds/tvshows.png">special://skin/backgrounds/tvshows.png</property>
 	<property property="backgroundFrame" label="$LOCALIZE[2]" icon="special://skin/backgrounds/music.png">special://skin/backgrounds/music.png</property>
+	<!-- Menu -->
+	<groupings>
+		<node label="32029">
+			<content>common</content>
+		</node>
+		<node label="32030">
+			<content>video</content>
+			<node label="32040">
+				<content>playlist-video</content>
+			</node>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			<node label="32075">
+				<content>videosources</content>
+				<content>upnp-video</content>
+			</node>
+		</node>
+		<node label="32031">
+			<content>music</content>
+			<node label="32040">
+				<content>playlist-audio</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32075">
+				<content>musicsources</content>
+				<content>upnp-music</content>
+			</node>
+		</node>
+		<node label="14204" condition="PVR.HasTVChannels | PVR.HasRadioChannels">
+			<content>pvr</content>
+			<node label="19023" condition="PVR.HasTVChannels">
+				<content>pvr-tv</content>
+			</node>
+			<node label="19024" condition="PVR.HasRadioChannels">
+				<content>pvr-radio</content>
+			</node>
+		</node>
+		<node label="32020">
+			<content>picturesources</content>
+		</node>
+		<node label="32007">
+			<node label="32009">
+				<shortcut label="10001" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
+				<shortcut label="20244" type="32021" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
+				<content>addon-program</content>
+			</node>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32012">
+				<shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
+				<content>addon-image</content>
+			</node>
+		</node>
+		<node label="32006">
+			<shortcut label="1036" type="1036" icon="DefaultFolder.png">ActivateWindow(favouritesbrowser)</shortcut>
+			<content>favourite</content>
+		</node>
+		<node label="10004">
+			<content>settings</content>
+		</node>
+		<node label="32054">
+			<content>commands</content>
+		</node>
+	</groupings>
 	<!-- Widgets -->
 	<widget-groupings>
 		<!-- Movies -->
