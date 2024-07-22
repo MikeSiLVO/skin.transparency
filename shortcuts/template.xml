@@ -1111,7 +1111,7 @@
 					<randomize>true</randomize>
 					<fadetime>1000</fadetime>
 					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$INFO[Container(5040).ListItem.Property(background)]</imagepath>
+					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
 					<animation effect="rotatey" center="480" start="20" end="20" time="0" condition="true">Conditional</animation>
 					<animation effect="rotate" center="480,330" start="-10" end="-10" time="0" condition="true">Conditional</animation>
 					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
@@ -1135,7 +1135,7 @@
 					<randomize>true</randomize>
 					<fadetime>1000</fadetime>
 					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$INFO[Container(5040).ListItem.Property(background)]</imagepath>
+					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
 					<animation effect="rotatey" center="500" start="-6" end="-6" time="0" condition="true">Conditional</animation>
 					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
 				</control>
@@ -1158,13 +1158,27 @@
 					<randomize>true</randomize>
 					<fadetime>1000</fadetime>
 					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$INFO[Container(5040).ListItem.Property(background)]</imagepath>
+					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
 					<animation effect="rotatey" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 					<animation effect="rotatex" center="0" start="10" end="10" time="0" condition="true">Conditional</animation>
 					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
 				</control>
 			</control>
 		</controls>
+	</other>
+	<other include="HomeFrameBackground">
+		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
+		<!-- <condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/movies.png</condition>
+		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/tvshows.png</condition>
+		<condition tag="property" attribute="name|backgroundFrame">special://skin/backgrounds/music.png</condition> -->
+		<condition tag="property" attribute="name|backgroundFrame" />
+		<match>any</match>
+		<variables>
+			<variable name="HomeFrameBackgroundPath">
+				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
+				<value>$INFO[Container(5040).ListItem.Property(background)]</value>
+			</variable>
+		</variables>
 	</other>
 	<!-- Property Groups -->
 	<propertyGroup name="widgetCommon">
