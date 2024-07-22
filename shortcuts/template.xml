@@ -1101,7 +1101,6 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="multiimage">
 					<left>472</left>
@@ -1126,7 +1125,6 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="multiimage">
 					<left>480</left>
@@ -1150,7 +1148,6 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<visible>![Player.HasVideo + !Skin.HasSetting(HideHomeVideoBackground)] + ![Player.HasAudio + !Skin.HasSetting(HideVisBackground)]</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="multiimage">
 					<left>585</left>

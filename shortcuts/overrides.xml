@@ -92,7 +92,18 @@
 		<shortcut label="$LOCALIZE[10601]" icon="homeinfo-pvrtimer.png" widget="recordinginfo">recordinginfo</shortcut>
 	</widget-groupings>
 	<!-- Default Widgets -->
-	<widgetdefaultnode defaultID="movies" label="$LOCALIZE[20386]" type="movie" target="videos" path="special://skin/extras/playlists/recentmovies.xsp" >poster</widgetdefaultnode>
-	<widgetdefaultnode defaultID="tvshows" label="$LOCALIZE[31016]" type="tvshow" target="videos" path="special://skin/extras/playlists/recenttvshows.xsp" >poster</widgetdefaultnode>
-	<widgetdefaultnode defaultID="music" label="$LOCALIZE[359]" type="album" target="music" path="special://skin/extras/playlists/recentlyaddedalbums.xsp" >square</widgetdefaultnode>
+	<widgetdefaultnode defaultID="movies" label="$LOCALIZE[20386]" type="movie" target="videos" path="special://skin/extras/playlists/recentmovies.xsp">poster</widgetdefaultnode>
+	<widgetdefaultnode defaultID="tvshows" label="$LOCALIZE[31016]" type="tvshow" target="videos" path="special://skin/extras/playlists/recenttvshows.xsp">poster</widgetdefaultnode>
+	<widgetdefaultnode defaultID="music" label="$LOCALIZE[359]" type="album" target="music" path="special://skin/extras/playlists/recentlyaddedalbums.xsp">square</widgetdefaultnode>
+	<!-- Remove unneeded menu properties -->
+	<propertySettings property="defaultID" templateonly="True" />
+	<propertySettings property="labelID" templateonly="True" />
+	<propertySettings property="id" templateonly="True" />
+	<propertySettings property="backgroundName" templateonly="True" />
+	<propertySettings property="group" templateonly="True" />
+	<propertySettings property="list" templateonly="True" />
+	<propertySettings property="widget" templateonly="True" />
+	<propertySettings property="widgetTarget" templateonly="True" />
+	<propertySettings property="widgetType" templateonly="True" />
+	<propertySettings property="widgetPath" templateonly="True" />
 </overrides>

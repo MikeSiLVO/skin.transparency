@@ -166,7 +166,7 @@
 						<width>1100</width>
 						<height>60</height>
 						<label>$ADDON[script.skinshortcuts 32045]</label>
-						<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
+						<label2>$INFO[Container(211).ListItem.Property(background)]</label2>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					</control>
 					<control type="button" id="500">
@@ -177,7 +177,7 @@
 						<label2>$INFO[Container(211).ListItem.Property(backgroundFrame)]</label2>
 						<onclick>SetProperty(chooseProperty,backgroundFrame)</onclick>
 						<onclick>SendClick(404)</onclick>
-						<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !String.IsEmpty(Container(211).ListItem.Property(backgroundName))</visible>
+						<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !String.IsEmpty(Container(211).ListItem.Property(background))</visible>
 					</control>
 					<control type="button" id="312">
 						<description>Add widget</description>
