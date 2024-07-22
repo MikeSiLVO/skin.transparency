@@ -243,7 +243,11 @@ msgctxt "#31050"
 msgid "Finish Time"
 msgstr ""
 
-# empty string with id 31051
+#: /1080p/script-skinshortcuts.xml
+msgctxt "#31051"
+msgid "Use background frame"
+msgstr ""
+
 msgctxt "#31052"
 msgid "IMDB"
 msgstr ""

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="CommonBackgroundPath">
-		<value condition="Window.IsActive(home) + String.IsEqual(Container(5040).ListItem.Property(background),weather_fanart)">$VAR[WeatherFanartPath]</value>
+		<value condition="Window.IsActive(home) + String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
 		<value condition="Window.IsActive(home) + !String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$INFO[Container(5040).ListItem.Property(backgroundFrame)]</value>
 		<value condition="Window.IsActive(home)">$INFO[Container(5040).ListItem.Property(background)]</value>
 		<value condition="Window.IsVisible(music) + Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>

@@ -99,7 +99,6 @@
 	<propertySettings property="defaultID" templateonly="True" />
 	<propertySettings property="labelID" templateonly="True" />
 	<propertySettings property="id" templateonly="True" />
-	<propertySettings property="backgroundName" templateonly="True" />
 	<propertySettings property="group" templateonly="True" />
 	<propertySettings property="list" templateonly="True" />
 	<propertySettings property="widget" templateonly="True" />

@@ -166,14 +166,14 @@
 						<width>1100</width>
 						<height>60</height>
 						<label>$ADDON[script.skinshortcuts 32045]</label>
-						<label2>$INFO[Container(211).ListItem.Property(background)]</label2>
+						<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					</control>
 					<control type="button" id="500">
 						<description>Set background frame</description>
 						<width>1100</width>
 						<height>60</height>
-						<label>Use background frame</label>
+						<label>$LOCALIZE[31051]</label>
 						<label2>$INFO[Container(211).ListItem.Property(backgroundFrame)]</label2>
 						<onclick>SetProperty(chooseProperty,backgroundFrame)</onclick>
 						<onclick>SendClick(404)</onclick>
