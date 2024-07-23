@@ -15,6 +15,9 @@
 		<property name="title" tag="property" attribute="name|widgetType" value="tvshow">$INFO[ListItem.Title]</property>
 		<property name="subtitle" tag="property" attribute="name|widgetType" value="tvshow">$INFO[ListItem.Year]</property>
 		<property name="mediacount" tag="property" attribute="name|widgetType" value="tvshow">$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]  $LOCALIZE[16101]: $INFO[Window.Property(TVShows.UnWatched)]</property>
+		<!-- Set Sort Properties -->
+		<property name="sortby" tag="property" attribute="name|widgetPath" value="special://skin/extras/playlists/recentmovies.xsp">dateadded</property>
+		<property name="sortorder" tag="property" attribute="name|widgetPath" value="special://skin/extras/playlists/recentmovies.xsp">descending</property>
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -143,7 +146,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="$SKINSHORTCUTS[target]" browse="never">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortorder]" browse="never">$SKINSHORTCUTS[content]</content>
 				</control>
 				<control type="label">
 					<left>520</left>
@@ -1199,7 +1202,6 @@
 	<other include="HomeFrameBackground">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
 		<condition tag="property" attribute="name|backgroundFrame" />
-		<match>any</match>
 		<variables>
 			<variable name="HomeFrameBackgroundPath">
 				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
@@ -1216,6 +1218,8 @@
 		<property name="target" tag="property" attribute="name|widgetTarget"/>
 		<property name="type" tag="property" attribute="name|widgetType" />
 		<property name="content" tag="property" attribute="name|widgetPath" />
+		<property name="sortby" tag="property" attribute="name|widgetSortby" />
+		<property name="sortorder" tag="property" attribute="name|widgetSort" />
 		<condition tag="property" attribute="name|widgetPath" />
 	</propertyGroup>
 </template>
