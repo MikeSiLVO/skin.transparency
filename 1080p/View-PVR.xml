@@ -98,13 +98,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>222</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">222</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>

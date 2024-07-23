@@ -28,27 +28,35 @@
 		</control>
 	</include>
 	<include name="BackgroundDim">
+		<param name="colordiffuse">B3FFFFFF</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="image">
 				<include>FullscreenDimensions</include>
-				<texture colordiffuse="B3FFFFFF">black.png</texture>
+				<texture colordiffuse="$PARAM[colordiffuse]">black.png</texture>
 				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>
 	<include name="BackgroundUnderlay">
 		<param name="width">1920</param>
+		<param name="include">DefaultUnderlayTexture</param>
 		<param name="visible">true</param>
 		<definition>
 			<control type="image">
 				<top>$PARAM[top]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
-				<texture border="10">underlay.png</texture>
+				<include>$PARAM[include]</include>
 				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
+	</include>
+	<include name="DefaultUnderlayTexture">
+		<texture border="10">underlay.png</texture>
+	</include>
+	<include name="AltUnderlayTexture">
+		<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
 	</include>
 	<include name="fanartslideshow-musicvisualisation">
 		<control type="multiimage" id="6101">

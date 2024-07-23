@@ -4,13 +4,10 @@
 	<controls>
 		<include>BackgroundDim</include>
 		<control type="group">
-			<control type="image">
-				<left>0</left>
-				<top>878</top>
-				<width>1920</width>
-				<height>172</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">878</param>
+				<param name="height">172</param>
+			</include>
 			<control type="image">
 				<left>75</left>
 				<top>765</top>

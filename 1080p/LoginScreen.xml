@@ -8,16 +8,13 @@
 		</include>
 		<control type="group">
 			<include>ContentFade</include>
-			<control type="image">
-				<left>0</left>
-				<top>278</top>
-				<width>1920</width>
-				<height>630</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<include>Window_OpenClose_Animation</include>
-			</control>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
+				<include content="BackgroundUnderlay">
+					<param name="top">278</param>
+					<param name="height">630</param>
+					<param name="include">AltUnderlayTexture</param>
+				</include>
 				<control type="label">
 					<left>360</left>
 					<top>298</top>

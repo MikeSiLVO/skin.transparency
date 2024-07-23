@@ -6,13 +6,11 @@
 			<top>22</top>
 			<visible>Control.IsVisible(594)</visible>
 			<include>VisibleFadeEffect</include>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>136</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">20</param>
+				<param name="height">136</param>
+				<param name="include">AltUnderlayTexture</param>
+			</include>
 			<control type="label">
 				<left>0</left>
 				<top>42</top>

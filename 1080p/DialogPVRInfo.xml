@@ -5,13 +5,10 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>DialogFade5</include>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1920</width>
-				<height>237</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">825</param>
+				<param name="height">237</param>
+			</include>
 			<control type="image">
 				<left>12</left>
 				<top>758</top>

@@ -226,13 +226,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + ![Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(AddOns) | Container.Content(LiveTV)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1312</width>
-				<height>237</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">825</param>
+				<param name="width">1312</param>
+				<param name="height">237</param>
+			</include>
 			<control type="label">
 				<left>386</left>
 				<top>921</top>
@@ -281,22 +279,16 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1312</width>
-				<height>237</height>
-				<texture border="10">underlay.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1312</width>
-				<height>184</height>
-				<texture border="10">underlay.png</texture>
-				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
-			</control>
+			<include content="BackgroundUnderlay" condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">
+				<param name="top">825</param>
+				<param name="width">1312</param>
+				<param name="height">237</param>
+			</include>
+			<include content="BackgroundUnderlay" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">
+				<param name="top">825</param>
+				<param name="width">1312</param>
+				<param name="height">184</param>
+			</include>
 			<control type="label">
 				<left>386</left>
 				<top>840</top>
@@ -489,13 +481,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(TVShows)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>783</top>
-				<width>1312</width>
-				<height>279</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">783</param>
+				<param name="width">1312</param>
+				<param name="height">279</param>
+			</include>
 			<control type="label">
 				<left>60</left>
 				<top>802</top>
@@ -621,13 +611,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(Seasons)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>783</top>
-				<width>1312</width>
-				<height>279</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">783</param>
+				<param name="width">1312</param>
+				<param name="height">279</param>
+			</include>
 			<control type="image">
 				<left>410</left>
 				<top>832</top>
@@ -732,22 +720,18 @@
 			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
-			<control type="image">
-				<left>0</left>
-				<top>783</top>
-				<width>1312</width>
-				<height>279</height>
-				<texture border="10">underlay.png</texture>
-				<visible>[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>783</top>
-				<width>1312</width>
-				<height>226</height>
-				<texture border="10">underlay.png</texture>
-				<visible>[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</visible>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">783</param>
+				<param name="width">1312</param>
+				<param name="height">279</param>
+				<param name="visible">[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</param>
+			</include>
+			<include content="BackgroundUnderlay">
+				<param name="top">783</param>
+				<param name="width">1312</param>
+				<param name="height">226</param>
+				<param name="visible">[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</param>
+			</include>
 			<control type="label">
 				<left>476</left>
 				<top>802</top>
@@ -882,13 +866,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1312</width>
-				<height>237</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">825</param>
+				<param name="width">1312</param>
+				<param name="height">237</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -950,13 +932,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(LiveTV)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>825</top>
-				<width>1312</width>
-				<height>237</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">825</param>
+				<param name="width">1312</param>
+				<param name="height">237</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -1084,13 +1064,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + ![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos) | Container.Content(AddOns)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>222</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">222</param>
+			</include>
 			<control type="label">
 				<left>386</left>
 				<top>921</top>
@@ -1143,13 +1121,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>222</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">222</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -1217,13 +1193,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>222</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">222</param>
+			</include>
 			<include condition="!Skin.HasSetting(Enable_Music_Media_Flags)">MusicMediaFlags</include>
 			<control type="label">
 				<left>393</left>
@@ -1348,14 +1322,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(MusicVideos)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>783</top>
-				<width>1312</width>
-				<height>279</height>
-				<texture border="10">underlay.png</texture>
-				<visible>Container.Content(MusicVideos)</visible>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">783</param>
+				<param name="width">1312</param>
+				<param name="height">279</param>
+			</include>
 			<control type="label">
 				<left>476</left>
 				<top>802</top>
@@ -1477,13 +1448,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>222</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">222</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -1637,13 +1606,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>210</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">210</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -1731,13 +1698,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>878</top>
-				<width>1312</width>
-				<height>172</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">878</param>
+				<param name="width">1312</param>
+				<param name="height">172</param>
+			</include>
 			<control type="label">
 				<left>370</left>
 				<top>896</top>
@@ -1826,13 +1791,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + Container.Content(AddOns)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>878</top>
-				<width>1312</width>
-				<height>172</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">878</param>
+				<param name="width">1312</param>
+				<param name="height">172</param>
+			</include>
 			<control type="label">
 				<left>370</left>
 				<top>896</top>
@@ -1897,13 +1860,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<control type="image">
-				<left>0</left>
-				<top>840</top>
-				<width>1312</width>
-				<height>210</height>
-				<texture border="10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">840</param>
+				<param name="width">1312</param>
+				<param name="height">210</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>

@@ -1309,22 +1309,16 @@
 			<top>22</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(596)</visible>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>122</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>150</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
-			</control>
+			<include content="BackgroundUnderlay" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">
+				<param name="top">20</param>
+				<param name="height">122</param>
+				<param name="include">AltUnderlayTexture</param>
+			</include>
+			<include content="BackgroundUnderlay" condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">
+				<param name="top">20</param>
+				<param name="height">150</param>
+				<param name="include">AltUnderlayTexture</param>
+			</include>
 			<control type="image">
 				<left>1734</left>
 				<top>40</top>

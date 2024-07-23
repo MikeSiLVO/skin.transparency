@@ -1251,22 +1251,18 @@
 			<top>22</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>122</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>150</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-				<visible>[[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</visible>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">20</param>
+				<param name="height">122</param>
+				<param name="include">AltUnderlayTexture</param>
+				<param name="visible">Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)</param>
+			</include>
+			<include content="BackgroundUnderlay">
+				<param name="top">20</param>
+				<param name="height">150</param>
+				<param name="include">AltUnderlayTexture</param>
+				<param name="visible">[[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</param>
+			</include>
 			<control type="image">
 				<left>1734</left>
 				<top>40</top>
@@ -2912,13 +2908,11 @@
 			<top>22</top>
 			<include>Window_OpenClose_Visible_TopInfo_Animation</include>
 			<visible>Control.IsVisible(55)</visible>
-			<control type="image">
-				<left>0</left>
-				<top>20</top>
-				<width>1920</width>
-				<height>136</height>
-				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay.png</texture>
-			</control>
+			<include content="BackgroundUnderlay">
+				<param name="top">20</param>
+				<param name="height">136</param>
+				<param name="include">AltUnderlayTexture</param>
+			</include>
 			<control type="label">
 				<left>60</left>
 				<top>58</top>
