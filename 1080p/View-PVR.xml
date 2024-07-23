@@ -998,10 +998,18 @@
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
 				</control>
-				<control type="label">
+				<control type="image">
 					<left>15</left>
-					<top>0</top>
-					<width>390</width>
+					<top>6</top>
+					<width>60</width>
+					<height>33</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!String.IsEqual(ListItem.Label,$LOCALIZE[19026])</visible>
+				</control>
+				<control type="label">
+					<left>90</left>
+					<width>300</width>
 					<height>45</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
@@ -1009,6 +1017,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+					<animation effect="slide" end="-75" condition="String.IsEqual(ListItem.Label,$LOCALIZE[19026])">Conditional</animation>
 				</control>
 				<control type="label">
 					<left>405</left>
@@ -1052,10 +1061,18 @@
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(52)</visible>
 				</control>
-				<control type="label">
+				<control type="image">
 					<left>15</left>
-					<top>0</top>
-					<width>390</width>
+					<top>6</top>
+					<width>60</width>
+					<height>33</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!String.IsEqual(ListItem.Label,$LOCALIZE[19026])</visible>
+				</control>
+				<control type="label">
+					<left>90</left>
+					<width>300</width>
 					<height>45</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
@@ -1063,6 +1080,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
+					<animation effect="slide" end="-75" condition="String.IsEqual(ListItem.Label,$LOCALIZE[19026])">Conditional</animation>
 				</control>
 				<control type="label">
 					<left>405</left>
@@ -1093,7 +1111,7 @@
 	</include>
 	<include name="FullList-PVRTimers_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(52)</visible>
+			<visible>Control.IsVisible(52) + PVR.HasTimer</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
 			<control type="image">
 				<left>495</left>
@@ -1101,17 +1119,6 @@
 				<width>939</width>
 				<height>63</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-				<visible>PVR.HasTimer</visible>
-			</control>
-			<control type="image">
-				<left>292</left>
-				<top>914</top>
-				<width>194</width>
-				<height>160</height>
-				<aspectratio scalediffuse="false" align="center">keep</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<bordersize>6</bordersize>
-				<fadetime>IconCrossfadeTime</fadetime>
 			</control>
 			<control type="label">
 				<description>Next timer date</description>
@@ -1124,7 +1131,6 @@
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<label>$INFO[PVR.NextTimer]</label>
-				<visible>PVR.HasTimer</visible>
 			</control>
 		</control>
 	</include>
