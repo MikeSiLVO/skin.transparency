@@ -18,9 +18,9 @@
 			<top>870</top>
 			<width>1920</width>
 			<height>360</height>
-			<visible>Control.IsVisible(55)</visible>
 			<texture>white-reflect.png</texture>
 			<include>VisibleFadeEffect3</include>
+			<visible>Control.IsVisible(55)</visible>
 		</control>
 		<control type="group" id="7001">
 			<include>Window_OpenClose_Animation</include>

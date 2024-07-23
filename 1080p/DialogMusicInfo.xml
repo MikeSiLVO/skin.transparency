@@ -572,441 +572,426 @@
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
-				<control type="group">
-					<include>VisibleFadeEffect</include>
-					<control type="list" id="49">
-						<left>120</left>
-						<top>172</top>
-						<width>1800</width>
-						<height>450</height>
-						<onleft>49</onleft>
-						<onright>49</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<pagecontrol />
-						<scrolltime>200</scrolltime>
-						<itemlayout width="1800" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>240</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1470</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</itemlayout>
-						<focusedlayout width="1800" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-focus2.png</texture>
-								<include>VisibleFadeEffect</include>
-								<visible>Control.HasFocus(49)</visible>
-								<include>ListFocusScroll22</include>
-							</control>
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>240</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1470</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</focusedlayout>
-						<content>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21892]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21894]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21896]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21898]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-								<onclick>noop</onclick>
-							</item>
-						</content>
-					</control>
+				<control type="list" id="49">
+					<left>120</left>
+					<top>172</top>
+					<width>1800</width>
+					<height>450</height>
+					<onleft>49</onleft>
+					<onright>49</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<pagecontrol />
+					<scrolltime>200</scrolltime>
+					<itemlayout width="1800" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>0</top>
+							<width>240</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1470</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1800" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-focus2.png</texture>
+							<include>VisibleFadeEffect</include>
+							<visible>Control.HasFocus(49)</visible>
+							<include>ListFocusScroll22</include>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>0</top>
+							<width>240</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1470</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21892]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21894]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21896]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21898]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
+							<onclick>noop</onclick>
+						</item>
+					</content>
 				</control>
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
-				<control type="group">
-					<include>VisibleFadeEffect</include>
-					<control type="list" id="49">
-						<left>120</left>
-						<top>150</top>
-						<width>1800</width>
-						<height>450</height>
-						<onleft>49</onleft>
-						<onright>49</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<pagecontrol />
-						<scrolltime>200</scrolltime>
-						<itemlayout width="1800" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>240</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1470</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</itemlayout>
-						<focusedlayout width="1800" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1749</width>
-								<height>45</height>
-								<texture border="7">list-focus2.png</texture>
-								<include>VisibleFadeEffect</include>
-								<visible>Control.HasFocus(49)</visible>
-								<include>ListFocusScroll22</include>
-							</control>
-							<control type="label">
-								<left>0</left>
-								<top>0</top>
-								<width>240</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1470</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</focusedlayout>
-						<content>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Artist]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Genre]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21899]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Label)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Year]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Rating)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.UserRating]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Style)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[21895]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[146][/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Property(Album_Type)]</label2>
-								<onclick>noop</onclick>
-							</item>
-						</content>
-					</control>
+				<control type="list" id="49">
+					<left>120</left>
+					<top>150</top>
+					<width>1800</width>
+					<height>450</height>
+					<onleft>49</onleft>
+					<onright>49</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<pagecontrol />
+					<scrolltime>200</scrolltime>
+					<itemlayout width="1800" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>0</top>
+							<width>240</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1470</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1800" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1749</width>
+							<height>45</height>
+							<texture border="7">list-focus2.png</texture>
+							<include>VisibleFadeEffect</include>
+							<visible>Control.HasFocus(49)</visible>
+							<include>ListFocusScroll22</include>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>0</top>
+							<width>240</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1470</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Artist]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Genre]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21899]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Label)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Year]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Rating)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.UserRating]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Style)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[21895]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[146][/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Property(Album_Type)]</label2>
+							<onclick>noop</onclick>
+						</item>
+					</content>
 				</control>
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
-				<control type="group">
-					<include>VisibleFadeEffect</include>
-					<control type="list" id="49">
-						<left>150</left>
-						<top>150</top>
-						<width>1620</width>
-						<height>450</height>
-						<onleft>49</onleft>
-						<onright>49</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<pagecontrol />
-						<scrolltime>200</scrolltime>
-						<itemlayout width="1620" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1620</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="label">
-								<left>15</left>
-								<top>0</top>
-								<width>225</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1342</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</itemlayout>
-						<focusedlayout width="1620" height="44">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1620</width>
-								<height>45</height>
-								<texture border="7">list-nofocus.png</texture>
-								<include>VisibleFadeEffect</include>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>1620</width>
-								<height>45</height>
-								<texture border="7">list-focus2.png</texture>
-								<include>VisibleFadeEffect</include>
-								<visible>Control.HasFocus(49)</visible>
-								<include>ListFocusScroll22</include>
-							</control>
-							<control type="label">
-								<left>15</left>
-								<top>0</top>
-								<width>225</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<textcolor>lightblue</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label]</label>
-							</control>
-							<control type="label">
-								<left>262</left>
-								<top>0</top>
-								<width>1342</width>
-								<height>45</height>
-								<font>font-20</font>
-								<align>left</align>
-								<aligny>center</aligny>
-								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<label>$INFO[ListItem.Label2]</label>
-							</control>
-						</focusedlayout>
-						<content>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Artist]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427]: ,)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[554]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.TrackNumber]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Year]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Genre]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Rating]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.UserRating]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.Comment]</label2>
-								<onclick>noop</onclick>
-							</item>
-							<item>
-								<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
-								<label2>$INFO[ListItem.FilenameAndPath]</label2>
-								<onclick>noop</onclick>
-							</item>
-						</content>
-					</control>
+				<control type="list" id="49">
+					<left>150</left>
+					<top>150</top>
+					<width>1620</width>
+					<height>450</height>
+					<onleft>49</onleft>
+					<onright>49</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<pagecontrol />
+					<scrolltime>200</scrolltime>
+					<itemlayout width="1620" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1620</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<top>0</top>
+							<width>225</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1342</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="1620" height="44">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1620</width>
+							<height>45</height>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>1620</width>
+							<height>45</height>
+							<texture border="7">list-focus2.png</texture>
+							<include>VisibleFadeEffect</include>
+							<visible>Control.HasFocus(49)</visible>
+							<include>ListFocusScroll22</include>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<top>0</top>
+							<width>225</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>lightblue</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>262</left>
+							<top>0</top>
+							<width>1342</width>
+							<height>45</height>
+							<font>font-20</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Artist]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427]: ,)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[554]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.TrackNumber]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Year]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Genre]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Rating]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.UserRating]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.Comment]</label2>
+							<onclick>noop</onclick>
+						</item>
+						<item>
+							<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+							<label2>$INFO[ListItem.FilenameAndPath]</label2>
+							<onclick>noop</onclick>
+						</item>
+					</content>
 				</control>
 			</control>
 		</control>

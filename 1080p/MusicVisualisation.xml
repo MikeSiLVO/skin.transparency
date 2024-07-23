@@ -95,9 +95,9 @@
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 		<include>cdwall-musicvisualisation</include>
@@ -119,7 +119,6 @@
 					<textcolor>99FFFFFF</textcolor>
 					<font>font-160</font>
 					<angle>90</angle>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>
@@ -164,7 +163,6 @@
 					<textcolor>99FFFFFF</textcolor>
 					<font>font-160</font>
 					<angle>300</angle>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>
@@ -209,7 +207,6 @@
 					<label>$INFO[MusicPlayer.Time]</label>
 					<textcolor>99FFFFFF</textcolor>
 					<font>font-160</font>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<animation effect="fade" time="1500">Visible</animation>
 				<animation effect="fade" time="1500">Hidden</animation>

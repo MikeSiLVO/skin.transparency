@@ -67,8 +67,8 @@
 			<randomize>true</randomize>
 			<fadetime>750</fadetime>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<include>VisibleFadeEffect</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="![Window.IsVisible(Home) + Skin.HasSetting(HideVisBackground)] + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + Skin.HasSetting(Vis-Slideshow) + ![String.Contains(Player.FolderPath,pvr://) | String.Contains(Player.FolderPath,http://) | String.Contains(Player.FolderPath,https://) | String.Contains(Player.FolderPath,htsp://)]</visible>
 		</control>
 	</include>
@@ -78,8 +78,8 @@
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
@@ -91,8 +91,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath background="true">$VAR[ExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
 			<visible>Container.Content(Movies) + !String.IsEmpty(ListItem.Path) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
@@ -104,8 +104,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath background="true">$VAR[ExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !String.IsEmpty(ListItem.Path) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>
@@ -117,8 +117,8 @@
 			<fadetime>2000</fadetime>
 			<imagepath background="true">$VAR[ExtraFanartPath]</imagepath>
 			<aspectratio>scale</aspectratio>
-			<include>VisibleFadeEffect</include>
 			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
 			<visible>[Container.Content(MusicVideos) | Container.Content(MusicVideos)] + !String.IsEmpty(ListItem.Path) + ![String.Contains(ListItem.Path,plugin://) | String.Contains(ListItem.Path,special://videoplaylists/) | String.Contains(Container.FolderPath,plugin://) | String.Contains(Container.FolderPath,addons://)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
 		</control>
 	</include>

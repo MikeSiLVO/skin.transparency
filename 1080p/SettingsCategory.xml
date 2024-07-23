@@ -248,7 +248,6 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<font>font-20</font>
-				<include>VisibleFadeEffect</include>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 		</control>

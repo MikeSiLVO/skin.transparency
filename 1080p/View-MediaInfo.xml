@@ -22,7 +22,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -75,7 +74,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -83,8 +81,8 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(58)</visible>
 					<include>VisibleFadeEffect</include>
+					<visible>Control.HasFocus(58)</visible>
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
@@ -447,7 +445,6 @@
 					<width>630</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -487,7 +484,6 @@
 					<width>630</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -495,8 +491,8 @@
 					<width>630</width>
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(59)</visible>
 					<include>VisibleFadeEffect</include>
+					<visible>Control.HasFocus(59)</visible>
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
@@ -794,7 +790,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -828,7 +823,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -837,8 +831,8 @@
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
-					<include>ListFocusScroll</include>
 					<visible>Control.HasFocus(59)</visible>
+					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1338,7 +1332,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1372,7 +1365,6 @@
 					<width>945</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1381,8 +1373,8 @@
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
-					<include>ListFocusScroll</include>
 					<visible>Control.HasFocus(599)</visible>
+					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
 					<left>15</left>

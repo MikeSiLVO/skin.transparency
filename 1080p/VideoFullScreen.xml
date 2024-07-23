@@ -11,7 +11,6 @@
 			<align>left</align>
 			<font>font-19</font>
 			<shadowcolor>black</shadowcolor>
-			<include>VisibleFadeEffect</include>
 		</control>
 		<!-- codec infos -->
 		<control type="image">
@@ -31,7 +30,6 @@
 			<label />
 			<align>left</align>
 			<font>font-19</font>
-			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="label" id="11">
 			<description>row 2 label</description>
@@ -42,7 +40,6 @@
 			<label />
 			<align>left</align>
 			<font>font-19</font>
-			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="label" id="12">
 			<description>row 3 label</description>
@@ -53,7 +50,6 @@
 			<label />
 			<align>left</align>
 			<font>font-19</font>
-			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="group">
 			<left>0</left>

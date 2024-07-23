@@ -25,7 +25,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -65,7 +64,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -73,8 +71,8 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
+					<visible>Control.HasFocus(50)</visible>
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
@@ -1011,7 +1009,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1033,7 +1030,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1041,8 +1037,8 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
+					<visible>Control.HasFocus(50)</visible>
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">
@@ -1537,7 +1533,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1567,7 +1562,6 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-nofocus.png</texture>
-					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1575,8 +1569,8 @@
 					<width>532</width>
 					<height>45</height>
 					<texture border="7">list-focus2.png</texture>
-					<visible>Control.HasFocus(50)</visible>
 					<include>VisibleFadeEffect</include>
+					<visible>Control.HasFocus(50)</visible>
 					<include>ListFocusScroll</include>
 				</control>
 				<control type="label">

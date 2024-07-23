@@ -37,7 +37,6 @@
 						<width>1320</width>
 						<height>98</height>
 						<texture border="7">list-nofocus.png</texture>
-						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
 						<left>8</left>
@@ -89,7 +88,6 @@
 						<width>1320</width>
 						<height>98</height>
 						<texture border="7">list-nofocus.png</texture>
-						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -98,8 +96,8 @@
 						<height>98</height>
 						<texture border="7">list-focus2.png</texture>
 						<include>VisibleFadeEffect</include>
-						<include>ListFocusScroll</include>
 						<visible>Control.HasFocus(570)</visible>
+						<include>ListFocusScroll</include>
 					</control>
 					<control type="image">
 						<left>8</left>

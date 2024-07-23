@@ -53,9 +53,9 @@
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
 			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
 			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
+			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]]</visible>
 		</control>
 	</include>

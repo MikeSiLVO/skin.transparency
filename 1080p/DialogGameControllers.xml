@@ -89,7 +89,6 @@
 				<top>225</top>
 				<width>429</width>
 				<height>429</height>
-				<include>VisibleFadeEffect</include>
 			</control>
 			<control type="textbox" id="32">
 				<description>Description</description>
