@@ -167,6 +167,14 @@
 			<shortcut label="$LOCALIZE[359]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recentlyaddedalbums.xsp</shortcut>
 			<shortcut label="$LOCALIZE[31029]" icon="DefaultMusicPlaylists.png" condition="Library.HasContent(music)" widget="square" widgetType="album" widgetTarget="music">special://skin/extras/playlists/recommendedalbums.xsp</shortcut>
 		</node>
+		<node label="$LOCALIZE[24001]">
+			<shortcut label="$LOCALIZE[1037]" icon="DefaultAddonVideo.png" widget="square" widgetType="addon">addons://sources/video/</shortcut>
+			<shortcut label="$LOCALIZE[1038]" icon="DefaultAddonMusic.png" widget="square" widgetType="addon">addons://sources/audio/</shortcut>
+			<shortcut label="$LOCALIZE[35049]" icon="DefaultAddonGame.png" widget="square" widgetType="addon">addons://sources/game/</shortcut>
+			<shortcut label="$LOCALIZE[1043]" icon="DefaultAddonProgram.png" widget="square" widgetType="addon">addons://sources/executable/</shortcut>
+			<shortcut label="$LOCALIZE[20244]" icon="DefaultAddonLibrary.png" condition="System.Platform.Android" widget="square" widgetType="addon">androidapp://sources/apps/</shortcut>
+			<shortcut label="$LOCALIZE[1039]" icon="DefaultAddonImages.png" widget="square" widgetType="addon">addons://sources/image/</shortcut>
+		</node>
 		<!-- System Info -->
 		<shortcut label="$LOCALIZE[138]" icon="homeinfo-system.png" widget="systeminfo">systeminfo</shortcut>
 		<!-- Weather Info -->

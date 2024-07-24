@@ -326,12 +326,33 @@
 	<other include="widget">
 		<propertyGroup>widgetCommon</propertyGroup>
 		<condition tag="property" attribute="name|widget">square</condition>
+		<property name="artwork" tag="property" attribute="name|widget" value="square">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Thumb]</property>
 		<!-- Set Album Properties -->
-		<property name="artwork" tag="property" attribute="name|widgetType" value="album">$INFO[Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Thumb]</property>
+		<property name="is_addon" tag="property" attribute="name|widgetType" value="album">false</property>
 		<property name="fallback" tag="property" attribute="name|widgetType" value="album">DefaultAlbumCover.png</property>
 		<property name="title" tag="property" attribute="name|widgetType" value="album">$INFO[ListItem.Artist]</property>
 		<property name="subtitle" tag="property" attribute="name|widgetType" value="album">$INFO[ListItem.Title]</property>
 		<property name="mediacount" tag="property" attribute="name|widgetType" value="album">$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]  $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]</property>
+		<!-- Set Addon Properties -->
+		<property name="is_addon" tag="property" attribute="name|widgetType" value="addon">true</property>
+		<property name="title" tag="property" attribute="name|widgetType" value="addon">$INFO[ListItem.Label]</property>
+		<property name="subtitle" tag="property" attribute="name|widgetType" value="addon">$INFO[ListItem.AddonVersion,v]</property>
+		<property name="mediacount" tag="property" attribute="name|widgetType" value="addon">$LOCALIZE[12012]</property>
+		<!-- Set Video Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="addons://sources/video/">DefaultAddonVideo.png</property>
+		<!-- Set Audio Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="addons://sources/audio/">DefaultAddonMusic.png</property>
+		<!-- Set Game Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="addons://sources/game/">DefaultAddonGame.png</property>
+		<!-- Set Program Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="addons://sources/executable/">DefaultAddonProgram.png</property>
+		<!-- Set Android Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="androidapp://sources/apps/">DefaultAddonLibrary.png</property>
+		<!-- Set Image Addon Properties -->
+		<property name="fallback" tag="property" attribute="name|widgetPath" value="addons://sources/image/">DefaultAddonImages.png</property>
+		<!-- Set Sort Properties -->
+		<property name="sortby" tag="property" attribute="name|widgetType" value="addon">lastused</property>
+		<property name="sortorder" tag="property" attribute="name|widgetType" value="addon">descending</property>
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -360,7 +381,7 @@
 					<width>192</width>
 					<height>174</height>
 					<texture>cdcase.png</texture>
-					<visible>!Skin.HasSetting(HideMusicCase)</visible>
+					<visible>!Skin.HasSetting(HideMusicCase) + !$SKINSHORTCUTS[is_addon]</visible>
 				</control>
 				<control type="label">
 					<left>520</left>
@@ -387,35 +408,8 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<itemlayout width="1155" height="60">
-						<control type="label">
-							<height>26</height>
-							<width>1155</width>
-							<font>font-19</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<scroll>true</scroll>
-							<scrollspeed>0</scrollspeed>
-							<label>[B]$SKINSHORTCUTS[title][/B]</label>
-						</control>
-						<control type="label">
-							<top>26</top>
-							<height>26</height>
-							<width>1155</width>
-							<font>font-17</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>right</align>
-							<aligny>center</aligny>
-							<scroll>true</scroll>
-							<scrollspeed>0</scrollspeed>
-							<label>$SKINSHORTCUTS[subtitle]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout width="1155" height="60">
 						<control type="group">
-							<visible>!Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<animation effect="slide" end="20" condition="$SKINSHORTCUTS[is_addon] | !$SKINSHORTCUTS[is_addon] + Skin.HasSetting(HideMusicCase)">Conditional</animation>
 							<control type="label">
 								<height>26</height>
 								<width>1155</width>
@@ -424,6 +418,7 @@
 								<shadowcolor>black</shadowcolor>
 								<align>right</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<scrollspeed>0</scrollspeed>
 								<label>[B]$SKINSHORTCUTS[title][/B]</label>
 							</control>
@@ -436,12 +431,45 @@
 								<shadowcolor>black</shadowcolor>
 								<align>right</align>
 								<aligny>center</aligny>
+								<scroll>true</scroll>
 								<scrollspeed>0</scrollspeed>
 								<label>$SKINSHORTCUTS[subtitle]</label>
 							</control>
 						</control>
+					</itemlayout>
+					<focusedlayout width="1155" height="60">
+						<control type="group">
+							<visible>!Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<control type="group">
+								<animation effect="slide" end="20" condition="$SKINSHORTCUTS[is_addon] | !$SKINSHORTCUTS[is_addon] + Skin.HasSetting(HideMusicCase)">Conditional</animation>
+								<control type="label">
+									<height>26</height>
+									<width>1155</width>
+									<font>font-19</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>black</shadowcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<scrollspeed>0</scrollspeed>
+									<label>[B]$SKINSHORTCUTS[title][/B]</label>
+								</control>
+								<control type="label">
+									<top>26</top>
+									<height>26</height>
+									<width>1155</width>
+									<font>font-17</font>
+									<textcolor>white</textcolor>
+									<shadowcolor>black</shadowcolor>
+									<align>right</align>
+									<aligny>center</aligny>
+									<scrollspeed>0</scrollspeed>
+									<label>$SKINSHORTCUTS[subtitle]</label>
+								</control>
+							</control>
+						</control>
 						<control type="group">
 							<visible>Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id])</visible>
+							<animation effect="slide" end="20" condition="$SKINSHORTCUTS[is_addon] | !$SKINSHORTCUTS[is_addon] + Skin.HasSetting(HideMusicCase)">Conditional</animation>
 							<control type="label">
 								<height>26</height>
 								<width>1155</width>
