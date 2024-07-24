@@ -26,7 +26,6 @@
 					<left>0</left>
 					<top>0</top>
 					<include>skinshortcuts-template-widget</include>
-					<!-- <include condition="!Skin.HasSetting(HomeRandomAddons) + System.AddonIsEnabled(service.skin.widgets)">RandomAddons</include> -->
 				</control>
 				<control type="button">
 					<description>Show vertical submenu button</description>

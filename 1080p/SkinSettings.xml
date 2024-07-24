@@ -308,28 +308,6 @@
 						<height>3</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="image" id="216">
-						<width>1320</width>
-						<height>3</height>
-						<texture>separator.png</texture>
-					</control>
-					<!-- <control type="radiobutton" id="221">
-						<description>enable random addon info</description>
-						<label>$LOCALIZE[24001] - $LOCALIZE[31174]</label>
-						<onclick>Skin.ToggleSetting(HomeRandomAddons)</onclick>
-						<selected>!Skin.HasSetting(HomeRandomAddons)</selected>
-						<visible>System.AddonIsEnabled(service.skin.widgets)</visible>
-					</control> -->
-					<control type="image" id="222">
-						<width>1320</width>
-						<height>3</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="image" id="227">
-						<width>1320</width>
-						<height>3</height>
-						<texture>separator.png</texture>
-					</control>
 					<control type="radiobutton" id="228">
 						<description>enable video info</description>
 						<label>20176</label>
