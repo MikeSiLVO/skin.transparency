@@ -837,6 +837,26 @@
 		<value condition="Skin.String(SkinSettings,7)">$LOCALIZE[14018]</value>
 		<value condition="Skin.String(SkinSettings,8)">Transparency! $LOCALIZE[31048]</value>
 	</variable>
+	<variable name="SkinSettingsStudiosIconsName">
+		<value condition="String.IsEmpty(Skin.String(resource.images.studios.name))">$INFO[System.AddonTitle(resource.images.studios.white)]</value>
+		<value>$INFO[Skin.String(resource.images.studios.name)]</value>
+	</variable>
+	<variable name="SkinSettingsRecordlabelsIconsName">
+		<value condition="String.IsEmpty(Skin.String(resource.images.recordlabels.name))">$INFO[System.AddonTitle(resource.images.recordlabels.white)]</value>
+		<value>$INFO[Skin.String(resource.images.recordlabels.name)]</value>
+	</variable>
+	<variable name="SkinSettingsMoviegenreIconsName">
+		<value condition="String.IsEmpty(Skin.String(resource.images.moviegenreicons.name))">$INFO[System.AddonTitle(resource.images.moviegenreicons.coloured)]</value>
+		<value>$INFO[Skin.String(resource.images.moviegenreicons.name)]</value>
+	</variable>
+	<variable name="SkinSettingsMusicgenreIconsName">
+		<value condition="String.IsEmpty(Skin.String(resource.images.musicgenreicons.name))">$INFO[System.AddonTitle(resource.images.musicgenreicons.poster)]</value>
+		<value>$INFO[Skin.String(resource.images.musicgenreicons.name)]</value>
+	</variable>
+	<variable name="SkinSettingsWeatherIconsName">
+		<value condition="String.IsEmpty(Skin.String(resource.images.weathericons.name))">$INFO[System.AddonTitle(resource.images.weathericons.white)]</value>
+		<value>$INFO[Skin.String(resource.images.weathericons.name)]</value>
+	</variable>
 	<variable name="SkinSettingsFanartPath">
 		<value condition="Container(302).HasFocus(2)">[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</value>
 		<value condition="Container(302).HasFocus(3)">[COLOR=blue]$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)][/COLOR]</value>

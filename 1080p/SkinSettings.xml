@@ -635,27 +635,27 @@
 					<ondown>401</ondown>
 					<control type="button" id="519">
 						<label>31201</label>
-						<label2>$INFO[Skin.String(resource.images.studios.name)]</label2>
+						<label2>$VAR[SkinSettingsStudiosIconsName]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.studios&amp;property=resource.images.studios)</onclick>
 					</control>
 					<control type="button" id="520">
 						<label>31202</label>
-						<label2>$INFO[Skin.String(resource.images.recordlabels.name)]</label2>
+						<label2>$VAR[SkinSettingsRecordlabelsIconsName]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.recordlabels&amp;property=resource.images.recordlabels)</onclick>
 					</control>
 					<control type="button" id="521">
 						<label>31203</label>
-						<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
+						<label2>$VAR[SkinSettingsMoviegenreIconsName]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
 					</control>
 					<control type="button" id="522">
 						<label>31204</label>
-						<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
+						<label2>$VAR[SkinSettingsMusicgenreIconsName]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
 					</control>
 					<control type="button" id="523">
 						<label>31205</label>
-						<label2>$INFO[Skin.String(resource.images.weathericons.name)]</label2>
+						<label2>$VAR[SkinSettingsWeatherIconsName]</label2>
 						<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=resource.images.weathericons)</onclick>
 					</control>
 					<control type="image" id="518">
