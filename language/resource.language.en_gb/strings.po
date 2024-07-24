@@ -252,7 +252,11 @@ msgctxt "#31052"
 msgid "IMDB"
 msgstr ""
 
-# empty strings from id 31053 to 31054
+#: /shortcuts/overrides.xml
+msgctxt "#31053"
+msgid "Random artists"
+msgstr ""
+
 # Playlist Editor labels
 msgctxt "#31055"
 msgid "Open playlist"

@@ -1098,15 +1098,29 @@
 			</control>
 		</controls>
 	</other>
-	<!-- <other include="HomeFanart">
-		<property name="background" tag="property" attribute="name|background" />
-		<condition tag="property" attribute="name|background" />
+	<other include="HomeRandomFanartLists">
+		<propertyGroup>widgetCommon</propertyGroup>
+		<condition tag="property" attribute="name|background">DefaultMovies.png</condition>
+		<property name="listid" tag="property" attribute="name|background" value="DefaultMovies.png">9035</property>
+		<property name="content" tag="property" attribute="name|background" value="DefaultMovies.png">videodb://movies/titles/</property>
+		<condition tag="property" attribute="name|background">DefaultTVShows.png</condition>
+		<property name="listid" tag="property" attribute="name|background" value="DefaultTVShows.png">9036</property>
+		<property name="content" tag="property" attribute="name|background" value="DefaultTVShows.png">videodb://tvshows/titles/</property>
+		<condition tag="property" attribute="name|background">DefaultMusicArtists.png</condition>
+		<property name="listid" tag="property" attribute="name|background" value="DefaultMusicArtists.png">9037</property>
+		<property name="content" tag="property" attribute="name|background" value="DefaultMusicArtists.png">musicdb://artists/?albumartistsonly=true</property>
+		<condition tag="property" attribute="name|background">DefaultMusicVideos.png</condition>
+		<property name="listid" tag="property" attribute="name|background" value="DefaultMusicVideos.png">9038</property>
+		<property name="content" tag="property" attribute="name|background" value="DefaultMusicVideos.png">videodb://musicvideos/titles/</property>
+		<match>any</match>
 		<controls>
-			<control type="group">
-				<skinshortcuts>visibility</skinshortcuts>
+			<control type="wraplist" id="$SKINSHORTCUTS[listid]">
+				<autoscroll time="7000">true</autoscroll>
+				<include>HiddenList</include>
+				<content sortby="random" limit="100">$SKINSHORTCUTS[content]</content>
 			</control>
 		</controls>
-	</other> -->
+	</other>
 	<other include="HomeFanartFrame">
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
 		<condition tag="property" attribute="name|backgroundFrame" />
@@ -1158,7 +1172,7 @@
 					<top>$SKINSHORTCUTS[top]</top>
 					<width>$SKINSHORTCUTS[width]</width>
 					<height>$SKINSHORTCUTS[height]</height>
-					<timeperimage>5000</timeperimage>
+					<timeperimage>7000</timeperimage>
 					<randomize>true</randomize>
 					<fadetime>600</fadetime>
 					<aspectratio aligny="top">scale</aspectratio>
@@ -1204,6 +1218,10 @@
 		<condition tag="property" attribute="name|backgroundFrame" />
 		<variables>
 			<variable name="HomeFrameBackgroundPath">
+				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMovies.png)">$INFO[Container(9035).ListItem.Art(fanart)]</value>
+				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultTVShows.png)">$INFO[Container(9036).ListItem.Art(fanart)]</value>
+				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicArtists.png)">$INFO[Container(9037).ListItem.Art(fanart)]</value>
+				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicVideos.png)">$INFO[Container(9038).ListItem.Art(fanart)]</value>
 				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
 				<value>$INFO[Container(5040).ListItem.Property(background)]</value>
 			</variable>

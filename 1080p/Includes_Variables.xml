@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="CommonBackgroundPath">
-		<value condition="Window.IsActive(home) + String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png) + String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$VAR[WeatherFanartPath]</value>
-		<value condition="Window.IsActive(home) + !String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$INFO[Container(5040).ListItem.Property(backgroundFrame)]</value>
-		<value condition="Window.IsActive(home)">$INFO[Container(5040).ListItem.Property(background)]</value>
 		<value condition="Window.IsVisible(music) + Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
 		<value condition="Window.IsVisible(music) + Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
@@ -24,6 +21,16 @@
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Programs_Folder)) + Window.IsVisible(programs)">$INFO[Skin.String(Custom_Back_Programs_Folder)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_Settings_Folder)) + Window.IsVisible(addonbrowser)">$INFO[Skin.String(Custom_Back_Settings_Folder)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_TV_Folder)) + [Window.IsVisible(tvchannels) | Window.IsVisible(tvguide) | Window.IsVisible(tvsearch) | Window.IsVisible(tvtimers)]">$INFO[Skin.String(Custom_Back_TV_Folder)]</value>
+	</variable>
+	<variable name="HomeBackgroundPath">
+		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$INFO[Container(5040).ListItem.Property(backgroundFrame)]</value>
+		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMovies.png)">$INFO[Container(9035).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultTVShows.png)">$INFO[Container(9036).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicArtists.png)">$INFO[Container(9037).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicVideos.png)">$INFO[Container(9038).ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png) + String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$VAR[WeatherFanartPath]</value>
+		<value>$INFO[Container(5040).ListItem.Property(background)]</value>
 	</variable>
 	<variable name="SettingsPanelBackgroundPath">
 		<value condition="Window.IsVisible(addonbrowser)">special://skin/backgrounds/addons.jpg</value>

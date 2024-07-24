@@ -5,7 +5,7 @@
 		<definition>
 			<control type="multiimage">
 				<include>FullscreenDimensions</include>
-				<timeperimage>5000</timeperimage>
+				<timeperimage>7000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>$PARAM[fadetime]</fadetime>
 				<aspectratio>scale</aspectratio>

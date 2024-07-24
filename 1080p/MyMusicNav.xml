@@ -11,7 +11,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<pauseatend>5000</pauseatend>
+			<pauseatend>7000</pauseatend>
 			<visible>Skin.HasSetting(MusicExtraFanart)</visible>
 			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(artist.fanart1)) | !String.IsEmpty(ListItem.Art(artist.fanart2)) | !String.IsEmpty(ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
@@ -83,7 +83,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<pauseatend>5000</pauseatend>
+			<pauseatend>7000</pauseatend>
 			<visible>Skin.HasSetting(MusicExtraFanart)</visible>
 			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(artist.fanart2)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart1)) | !String.IsEmpty(Container.ListItem.Art(albumartist.fanart2))</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>

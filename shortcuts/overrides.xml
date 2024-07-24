@@ -18,6 +18,10 @@
 	<visibleoverride condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</visibleoverride>
 	<!-- Backgrounds -->
 	<backgroundBrowse>True</backgroundBrowse>
+	<background label="$LOCALIZE[31013]" icon="DefaultMovies.png">movies_fanart</background>
+	<background label="$LOCALIZE[31015]" icon="DefaultTVShows.png">tvshows_fanart</background>
+	<background label="$LOCALIZE[31053]" icon="DefaultMusicArtists.png">artists_fanart</background>
+	<background label="$LOCALIZE[31022]" icon="DefaultMusicVideos.png">musicvideos_fanart</background>
 	<background label="$LOCALIZE[31049]" icon="DefaultAddonWeather.png">weather_fanart</background>
 	<background label="$LOCALIZE[3]" icon="special://skin/backgrounds/videos.jpg">special://skin/backgrounds/videos.jpg</background>
 	<background label="$LOCALIZE[342]" icon="special://skin/backgrounds/movies.jpg">special://skin/backgrounds/movies.jpg</background>
@@ -29,7 +33,7 @@
 	<background label="$LOCALIZE[24001]" icon="special://skin/backgrounds/programs.jpg">special://skin/backgrounds/programs.jpg</background>
 	<background label="$LOCALIZE[15016]" icon="special://skin/backgrounds/games.jpg">special://skin/backgrounds/games.jpg</background>
 	<background label="$LOCALIZE[8]" icon="special://skin/backgrounds/weather.jpg">special://skin/backgrounds/weather.jpg</background>
-	<background label="$LOCALIZE[1035]" icon="special://skin/backgrounds/favourites.jpg">special://skin/backgrounds/favourites.jpg</background>
+	<background label="$LOCALIZE[1036]" icon="special://skin/backgrounds/favourites.jpg">special://skin/backgrounds/favourites.jpg</background>
 	<background label="$LOCALIZE[5]" icon="special://skin/backgrounds/settings.jpg">special://skin/backgrounds/settings.jpg</background>
 	<background label="$LOCALIZE[341]" icon="special://skin/backgrounds/playdisc.jpg">special://skin/backgrounds/playdisc.jpg</background>
 	<backgrounddefault defaultID="videos">special://skin/backgrounds/videos.jpg</backgrounddefault>

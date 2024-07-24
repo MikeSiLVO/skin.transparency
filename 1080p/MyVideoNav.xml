@@ -14,7 +14,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
-			<pauseatend>5000</pauseatend>
+			<pauseatend>7000</pauseatend>
 			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2))</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
@@ -65,7 +65,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<pauseatend>5000</pauseatend>
+			<pauseatend>7000</pauseatend>
 			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2))</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>

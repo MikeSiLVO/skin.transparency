@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=5040&amp;options=noGroups)</onload>
 	<controls>
+		<include>skinshortcuts-template-HomeRandomFanartLists</include>
 		<include condition="!Skin.HasSetting(HideHomeVideoBackground)">home-videowindow</include>
 		<control type="group">
 			<visible>![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
@@ -10,7 +11,7 @@
 			<include>skinshortcuts-template-HomeFanartFrame</include>
 			<include content="CommonBackground">
 				<param name="fadetime">600</param>
-				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
+				<param name="imagepath">$VAR[HomeBackgroundPath]</param>
 			</include>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>
