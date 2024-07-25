@@ -1128,18 +1128,18 @@
 	</other>
 	<other include="HomeRandomFanartLists">
 		<propertyGroup>widgetCommon</propertyGroup>
-		<condition tag="property" attribute="name|background">DefaultMovies.png</condition>
-		<property name="listid" tag="property" attribute="name|background" value="DefaultMovies.png">9035</property>
-		<property name="content" tag="property" attribute="name|background" value="DefaultMovies.png">videodb://movies/titles/</property>
-		<condition tag="property" attribute="name|background">DefaultTVShows.png</condition>
-		<property name="listid" tag="property" attribute="name|background" value="DefaultTVShows.png">9036</property>
-		<property name="content" tag="property" attribute="name|background" value="DefaultTVShows.png">videodb://tvshows/titles/</property>
-		<condition tag="property" attribute="name|background">DefaultMusicArtists.png</condition>
-		<property name="listid" tag="property" attribute="name|background" value="DefaultMusicArtists.png">9037</property>
-		<property name="content" tag="property" attribute="name|background" value="DefaultMusicArtists.png">musicdb://artists/?albumartistsonly=true</property>
-		<condition tag="property" attribute="name|background">DefaultMusicVideos.png</condition>
-		<property name="listid" tag="property" attribute="name|background" value="DefaultMusicVideos.png">9038</property>
-		<property name="content" tag="property" attribute="name|background" value="DefaultMusicVideos.png">videodb://musicvideos/titles/</property>
+		<condition tag="property" attribute="name|background">$INFO[Container(9035).ListItem.Art(fanart)]</condition>
+		<property name="listid" tag="property" attribute="name|background" value="$INFO[Container(9035).ListItem.Art(fanart)]">9035</property>
+		<property name="content" tag="property" attribute="name|background" value="$INFO[Container(9035).ListItem.Art(fanart)]">videodb://movies/titles/</property>
+		<condition tag="property" attribute="name|background">$INFO[Container(9036).ListItem.Art(fanart)]</condition>
+		<property name="listid" tag="property" attribute="name|background" value="$INFO[Container(9036).ListItem.Art(fanart)]">9036</property>
+		<property name="content" tag="property" attribute="name|background" value="$INFO[Container(9036).ListItem.Art(fanart)]">videodb://tvshows/titles/</property>
+		<condition tag="property" attribute="name|background">$INFO[Container(9037).ListItem.Art(fanart)]</condition>
+		<property name="listid" tag="property" attribute="name|background" value="$INFO[Container(9037).ListItem.Art(fanart)]">9037</property>
+		<property name="content" tag="property" attribute="name|background" value="$INFO[Container(9037).ListItem.Art(fanart)]">musicdb://artists/?albumartistsonly=true</property>
+		<condition tag="property" attribute="name|background">$INFO[Container(9038).ListItem.Art(fanart)]</condition>
+		<property name="listid" tag="property" attribute="name|background" value="$INFO[Container(9038).ListItem.Art(fanart)]">9038</property>
+		<property name="content" tag="property" attribute="name|background" value="$INFO[Container(9038).ListItem.Art(fanart)]">videodb://musicvideos/titles/</property>
 		<match>any</match>
 		<controls>
 			<control type="wraplist" id="$SKINSHORTCUTS[listid]">
@@ -1150,7 +1150,13 @@
 		</controls>
 	</other>
 	<other include="HomeFanartFrame">
+		<propertyGroup>widgetCommon</propertyGroup>
 		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
+		<property name="frameBackground" tag="property" attribute="name|background" value="$INFO[Container(9035).ListItem.Art(fanart)]">$INFO[Container(9035).ListItem.Art(fanart)]</property>
+		<property name="frameBackground" tag="property" attribute="name|background" value="$INFO[Container(9036).ListItem.Art(fanart)]">$INFO[Container(9036).ListItem.Art(fanart)]</property>
+		<property name="frameBackground" tag="property" attribute="name|background" value="$INFO[Container(9037).ListItem.Art(fanart)]">$INFO[Container(9037).ListItem.Art(fanart)]</property>
+		<property name="frameBackground" tag="property" attribute="name|background" value="$INFO[Container(9038).ListItem.Art(fanart)]">$INFO[Container(9038).ListItem.Art(fanart)]</property>
+		<property name="frameBackground" tag="property" attribute="name|background" value="DefaultAddonWeather.png">$VAR[WeatherFanartPath]</property>
 		<condition tag="property" attribute="name|backgroundFrame" />
 		<!-- movies -->
 		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">472</property>
@@ -1160,15 +1166,15 @@
 		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies.png">skinshortcuts-template-HomeFanartMovieFrameAnimation</property>
 		<!-- movies2 -->
 		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">550</property>
-		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">20</property>
+		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">70</property>
 		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">816</property>
 		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">459</property>
 		<property name="animationinclude" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies2.png">skinshortcuts-template-HomeFanartMovieFrameAnimation2</property>
 		<!-- movies3 -->
-		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">405</property>
+		<!-- <property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">405</property>
 		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">-25</property>
 		<property name="width" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">1024</property>
-		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">576</property>
+		<property name="height" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/movies3.png">576</property> -->
 		<!-- tvshows -->
 		<property name="left" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">480</property>
 		<property name="top" tag="property" attribute="name|backgroundFrame" value="special://skin/backgrounds/tvshows.png">60</property>
@@ -1194,7 +1200,9 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<animation effect="fade" start="0" end="100" time="400" delay="200">Visible</animation>
+				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+				<visible>![Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]) + !String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(fanart))]</visible>
+				<animation effect="fade" start="0" end="100" time="150" delay="350">Visible</animation>
 				<control type="multiimage">
 					<left>$SKINSHORTCUTS[left]</left>
 					<top>$SKINSHORTCUTS[top]</top>
@@ -1202,9 +1210,9 @@
 					<height>$SKINSHORTCUTS[height]</height>
 					<timeperimage>7000</timeperimage>
 					<randomize>true</randomize>
-					<fadetime>600</fadetime>
+					<fadetime>500</fadetime>
 					<aspectratio aligny="top">scale</aspectratio>
-					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
+					<imagepath background="true">$SKINSHORTCUTS[frameBackground]</imagepath>
 					<include>$SKINSHORTCUTS[animationinclude]</include>
 					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
 				</control>
@@ -1240,20 +1248,6 @@
 			<animation effect="rotatey" center="0" end="10" condition="true">Conditional</animation>
 			<animation effect="rotatex" center="0" end="10" condition="true">Conditional</animation>
 		</controls>
-	</other>
-	<other include="HomeFrameBackground">
-		<property name="backgroundFrame" tag="property" attribute="name|backgroundFrame" />
-		<condition tag="property" attribute="name|backgroundFrame" />
-		<variables>
-			<variable name="HomeFrameBackgroundPath">
-				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMovies.png)">$INFO[Container(9035).ListItem.Art(fanart)]</value>
-				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultTVShows.png)">$INFO[Container(9036).ListItem.Art(fanart)]</value>
-				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicArtists.png)">$INFO[Container(9037).ListItem.Art(fanart)]</value>
-				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicVideos.png)">$INFO[Container(9038).ListItem.Art(fanart)]</value>
-				<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
-				<value>$INFO[Container(5040).ListItem.Property(background)]</value>
-			</variable>
-		</variables>
 	</other>
 	<!-- Property Groups -->
 	<propertyGroup name="widgetCommon">

@@ -10,7 +10,7 @@
 			<include>VisibleFadeEffect</include>
 			<include>skinshortcuts-template-HomeFanartFrame</include>
 			<include content="CommonBackground">
-				<param name="fadetime">600</param>
+				<param name="fadetime">500</param>
 				<param name="imagepath">$VAR[HomeBackgroundPath]</param>
 			</include>
 		</control>

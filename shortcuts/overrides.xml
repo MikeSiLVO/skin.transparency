@@ -18,11 +18,11 @@
 	<visibleoverride condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</visibleoverride>
 	<!-- Backgrounds -->
 	<backgroundBrowse>True</backgroundBrowse>
-	<background label="$LOCALIZE[31013]" icon="DefaultMovies.png">movies_fanart</background>
-	<background label="$LOCALIZE[31015]" icon="DefaultTVShows.png">tvshows_fanart</background>
-	<background label="$LOCALIZE[31053]" icon="DefaultMusicArtists.png">artists_fanart</background>
-	<background label="$LOCALIZE[31022]" icon="DefaultMusicVideos.png">musicvideos_fanart</background>
-	<background label="$LOCALIZE[31049]" icon="DefaultAddonWeather.png">weather_fanart</background>
+	<background label="$LOCALIZE[31013]">$INFO[Container(9035).ListItem.Art(fanart)]</background>
+	<background label="$LOCALIZE[31015]">$INFO[Container(9036).ListItem.Art(fanart)]</background>
+	<background label="$LOCALIZE[31053]">$INFO[Container(9037).ListItem.Art(fanart)]</background>
+	<background label="$LOCALIZE[31022]">$INFO[Container(9038).ListItem.Art(fanart)]</background>
+	<background label="$LOCALIZE[31049]" icon="DefaultAddonWeather.png">$VAR[WeatherFanartPath]</background>
 	<background label="$LOCALIZE[3]" icon="special://skin/backgrounds/videos.jpg">special://skin/backgrounds/videos.jpg</background>
 	<background label="$LOCALIZE[342]" icon="special://skin/backgrounds/movies.jpg">special://skin/backgrounds/movies.jpg</background>
 	<background label="$LOCALIZE[20343]" icon="special://skin/backgrounds/tvshows.jpg">special://skin/backgrounds/tvshows.jpg</background>
@@ -52,7 +52,7 @@
 	<!-- Background Frames -->
 	<property property="backgroundFrame" label="$LOCALIZE[20338]" icon="special://skin/backgrounds/movies.png">special://skin/backgrounds/movies.png</property>
 	<property property="backgroundFrame" label="Movie-2" icon="special://skin/backgrounds/movies2.png">special://skin/backgrounds/movies2.png</property>
-	<property property="backgroundFrame" label="Movie-3" icon="special://skin/backgrounds/movies3.png">special://skin/backgrounds/movies3.png</property>
+	<!-- <property property="backgroundFrame" label="Movie-3" icon="special://skin/backgrounds/movies3.png">special://skin/backgrounds/movies3.png</property> -->
 	<property property="backgroundFrame" label="$LOCALIZE[20364]" icon="special://skin/backgrounds/tvshows.png">special://skin/backgrounds/tvshows.png</property>
 	<property property="backgroundFrame" label="TV-Red" icon="special://skin/backgrounds/tvshows2.png">special://skin/backgrounds/tvshows2.png</property>
 	<property property="backgroundFrame" label="TV-Blue" icon="special://skin/backgrounds/tvshows3.png">special://skin/backgrounds/tvshows3.png</property>

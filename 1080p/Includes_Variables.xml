@@ -25,10 +25,6 @@
 	<variable name="HomeBackgroundPath">
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$INFO[Container(5040).ListItem.Property(backgroundFrame)]</value>
-		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMovies.png)">$INFO[Container(9035).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultTVShows.png)">$INFO[Container(9036).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicArtists.png)">$INFO[Container(9037).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultMusicVideos.png)">$INFO[Container(9038).ListItem.Art(fanart)]</value>
 		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png) + String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$VAR[WeatherFanartPath]</value>
 		<value>$INFO[Container(5040).ListItem.Property(background)]</value>
 	</variable>
