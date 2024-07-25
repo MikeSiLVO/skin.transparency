@@ -516,30 +516,32 @@
 		<value>flags/movies/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoSource">
-		<value condition="String.Contains(ListItem.Filename,dvdrip) | String.Contains(ListItem.Filename,sddvd) | String.EndsWith(ListItem.Filename,.ifo) | String.EndsWith(ListItem.Filename,.vob) | [[!String.Contains(ListItem.Filename,hddvd) + !String.Contains(ListItem.Filename,pdtv) + !String.Contains(ListItem.Filename,bluray) + !String.Contains(ListItem.Filename,blu-ray) + !String.Contains(ListItem.Filename,brrip) + !String.Contains(ListItem.Filename,sdtv) + !String.Contains(ListItem.Filename,tvrip) + !String.Contains(ListItem.Filename,hdtv) + !String.EndsWith(ListItem.Filename,.evo) + !String.EndsWith(ListItem.Filename,.m2ts) + !String.EndsWith(ListItem.Filename,.bdmv)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [String.IsEqual(ListItem.VideoResolution,480) | String.IsEqual(ListItem.VideoResolution,540) | String.IsEqual(ListItem.VideoResolution,576)]]">flags/movies/source/dvd.png</value>
-		<value condition="String.Contains(ListItem.Filename,hddvd) | String.EndsWith(ListItem.Filename,.evo)">flags/movies/source/hddvd.png</value>
-		<value condition="String.Contains(ListItem.Filename,bluray) | String.Contains(ListItem.Filename,blu-ray) | String.Contains(ListItem.Filename,brrip) | String.EndsWith(ListItem.Filename,.m2ts) | String.EndsWith(ListItem.Filename,.bdmv) | [[!String.Contains(ListItem.Filename,dvdrip) + !String.Contains(ListItem.Filename,sddvd) + !String.Contains(ListItem.Filename,blu-ray) + !String.Contains(ListItem.Filename,brrip) + !String.Contains(ListItem.Filename,tvrip) + !String.Contains(ListItem.Filename,pdtv) + !String.Contains(ListItem.Filename,hddvd) + !String.Contains(ListItem.Filename,sdtv) + !String.Contains(ListItem.Filename,hdtv) + !String.EndsWith(ListItem.Filename,.evo) + !String.EndsWith(ListItem.Filename,.ifo) + !String.EndsWith(ListItem.Filename,.vob)] + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)] + [String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K)]]">flags/movies/source/bluray.png</value>
-		<value condition="String.Contains(ListItem.Filename,sdtv) | String.Contains(ListItem.Filename,tvrip) | [[!String.Contains(ListItem.Filename,hdtv) + !String.Contains(ListItem.Filename,bluray) + !String.Contains(ListItem.Filename,hddvd) + !String.Contains(ListItem.Filename,dvdrip) + !String.Contains(ListItem.Filename,sddvd) + !String.Contains(ListItem.Filename,blu-ray) + !String.Contains(ListItem.Filename,brrip) + !String.Contains(ListItem.Filename,pdtv) + !String.EndsWith(ListItem.Filename,.evo) + !String.EndsWith(ListItem.Filename,.m2ts) + !String.EndsWith(ListItem.Filename,.bdmv) + !String.EndsWith(ListItem.Filename,.ifo) + !String.EndsWith(ListItem.Filename,.vob)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [String.IsEqual(ListItem.VideoResolution,480) | String.IsEqual(ListItem.VideoResolution,540) | String.IsEqual(ListItem.VideoResolution,576)]]">flags/movies/source/sdtv.png</value>
-		<value condition="String.Contains(ListItem.Filename,hdtv) | String.Contains(ListItem.Filename,pdtv) | [[!String.Contains(ListItem.Filename,sdtv) + !String.Contains(ListItem.Filename,bluray) + !String.Contains(ListItem.Filename,hddvd) + !String.Contains(ListItem.Filename,dvdrip) + !String.Contains(ListItem.Filename,sddvd) + !String.Contains(ListItem.Filename,blu-ray) + !String.Contains(ListItem.Filename,brrip) + !String.Contains(ListItem.Filename,tvrip) + !String.EndsWith(ListItem.Filename,.evo) + !String.EndsWith(ListItem.Filename,.m2ts) + !String.EndsWith(ListItem.Filename,.bdmv) + !String.EndsWith(ListItem.Filename,.ifo) + !String.EndsWith(ListItem.Filename,.vob)] + [Container.Content(Episodes) | Container.Content(MusicVideos)] + [String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080)]]">flags/movies/source/hdtv.png</value>
+		<value condition="ListItem.IsStereoscopic">flags/default/source/bluray3d.png</value>
+		<value condition="String.Contains(ListItem.Filename,web-dl) | String.Contains(ListItem.Filename,webdl) | String.Contains(ListItem.Filename,webrip)">flags/default/source/webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,hddvd) | String.EndsWith(ListItem.Filename,.evo)">flags/default/source/hddvd.png</value>
+		<value condition="String.Contains(ListItem.Filename,sdtv) | String.Contains(ListItem.Filename,tvrip)">flags/default/source/sdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename,hdtv) | String.Contains(ListItem.Filename,pdtv)">flags/default/source/hdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename,dvd) | String.Contains(ListItem.Filename,dvdrip) | String.Contains(ListItem.Filename,sddvd) | String.EndsWith(ListItem.Filename,.ifo) | String.EndsWith(ListItem.Filename,.vob) | String.IsEqual(ListItem.VideoResolution,480) | String.IsEqual(ListItem.VideoResolution,540) | String.IsEqual(ListItem.VideoResolution,576)">flags/default/source/dvd.png</value>
+		<value condition="String.Contains(ListItem.Filename,bluray) | String.Contains(ListItem.Filename,blu-ray) | String.Contains(ListItem.Filename,bdrip) | String.Contains(ListItem.Filename,brrip) | String.IsEqual(ListItem.FileExtension,bdmv) | String.IsEqual(ListItem.FileExtension,iso) | String.Contains(ListItem.Filename,remux) | String.IsEqual(ListItem.VideoResolution,720) | String.IsEqual(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K)">flags/default/source/bluray.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoSubtitles">
-		<value condition="!String.IsEmpty(ListItem.SubtitleLanguage)">flags/movies/subtitles/cc.png</value>
-		<value>mediaflag-subtitles.png</value>
+		<value condition="!String.IsEmpty(ListItem.SubtitleLanguage)">flags/default/cc.png</value>
+		<value>flags/default/no_cc.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoRating">
-		<value condition="String.Contains(ListItem.Mpaa,Rated G) | String.Contains(ListItem.Mpaa,Rated: G)">flags/movies/rating/rating-g.png</value>
-		<value condition="[String.Contains(ListItem.Mpaa,Rated PG) | String.Contains(ListItem.Mpaa,Rated: PG)] + !String.Contains(ListItem.Mpaa,Rated PG-13) + !String.Contains(ListItem.Mpaa,Rated: PG-13)">flags/movies/rating/rating-pg.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Rated PG-13) | String.Contains(ListItem.Mpaa,Rated: PG-13)">flags/movies/rating/rating-pg13.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Rated R) | String.Contains(ListItem.Mpaa,Rated: R)">flags/movies/rating/rating-r.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Rated NC-17) | String.Contains(ListItem.Mpaa,Rated: NC-17)">flags/movies/rating/rating-nc17.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:U)">flags/movies/rating/bbfcU.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:UC)">flags/movies/rating/bbfcUC.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:PG)">flags/movies/rating/bbfcPG.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:12)">flags/movies/rating/bbfc12.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:12A)">flags/movies/rating/bbfc12A.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:15)">flags/movies/rating/bbfc15.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:18)">flags/movies/rating/bbfc18.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:R18)">flags/movies/rating/bbfcR18.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:G) | String.IsEqual(ListItem.MPAA,USA:G) | String.IsEqual(ListItem.Mpaa,Rated G) | String.IsEqual(ListItem.Mpaa,Rated: G) | String.IsEqual(ListItem.Mpaa,G)">flags/movies/rating/rating-g.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:PG) | String.IsEqual(ListItem.MPAA,USA:PG) | String.IsEqual(ListItem.Mpaa,Rated PG) | String.IsEqual(ListItem.Mpaa,Rated: PG) | String.IsEqual(ListItem.Mpaa,PG)">flags/movies/rating/rating-pg.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:PG-13) | String.IsEqual(ListItem.MPAA,USA:PG-13) | String.IsEqual(ListItem.Mpaa,Rated PG-13) | String.IsEqual(ListItem.Mpaa,Rated: PG-13) | String.IsEqual(ListItem.Mpaa,PG-13)">flags/movies/rating/rating-pg13.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:R) | String.IsEqual(ListItem.MPAA,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,Rated: R) | String.IsEqual(ListItem.Mpaa,R)">flags/movies/rating/rating-r.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:NC-17) | String.IsEqual(ListItem.MPAA,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,Rated: NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">flags/movies/rating/rating-nc17.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,UK:U) | String.IsEqual(ListItem.MPAA,United Kingdom:U)">flags/movies/rating/bbfcU.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:UC) | String.IsEqual(ListItem.MPAA,United Kingdom:UC)">flags/movies/rating/bbfcUC.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,UK:PG) | String.IsEqual(ListItem.MPAA,United Kingdom:PG)">flags/movies/rating/bbfcPG.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12) | String.IsEqual(ListItem.MPAA,United Kingdom:12)">flags/movies/rating/bbfc12.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12A) | String.IsEqual(ListItem.MPAA,United Kingdom:12A)">flags/movies/rating/bbfc12A.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:15) | String.IsEqual(ListItem.MPAA,United Kingdom:15)">flags/movies/rating/bbfc15.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:18) | String.IsEqual(ListItem.MPAA,United Kingdom:18)">flags/movies/rating/bbfc18.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:R18) | String.IsEqual(ListItem.MPAA,United Kingdom:R18)">flags/movies/rating/bbfcR18.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:TP)">flags/movies/rating/spaTP.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:R7)">flags/movies/rating/spaR7.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:ITP)">flags/movies/rating/spaITP.png</value>
@@ -548,28 +550,29 @@
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:R16)">flags/movies/rating/spaR16.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:R18)">flags/movies/rating/spaR18.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:X)">flags/movies/rating/spaX.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:0) | String.Contains(ListItem.Mpaa,Germany:o.A) | String.Contains(ListItem.Mpaa,FSK0) | String.Contains(ListItem.Mpaa,FSK 0) | String.Contains(ListItem.Mpaa,FSK o.A)">flags/movies/rating/fsk0.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:6) | String.Contains(ListItem.Mpaa,FSK6) | String.Contains(ListItem.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:12) | String.Contains(ListItem.Mpaa,FSK12) | String.Contains(ListItem.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:16) | String.Contains(ListItem.Mpaa,FSK16) | String.Contains(ListItem.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,Germany:18) | String.Contains(ListItem.Mpaa,FSK18) | String.Contains(ListItem.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
-		<value condition="String.Contains(Listitem.mpaa,French:U)">flags/movies/rating/csaU.png</value>
-		<value condition="String.Contains(Listitem.mpaa,French:-10)">flags/movies/rating/csa10.png</value>
-		<value condition="String.Contains(Listitem.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
-		<value condition="String.Contains(Listitem.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
-		<value condition="String.Contains(Listitem.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:0) | String.IsEqual(ListItem.Mpaa,Germany:o.A) | String.IsEqual(ListItem.Mpaa,FSK0) | String.IsEqual(ListItem.Mpaa,FSK 0) | String.IsEqual(ListItem.Mpaa,FSK o.A)">flags/movies/rating/fsk0.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:6) | String.IsEqual(ListItem.Mpaa,FSK6) | String.IsEqual(ListItem.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:12) | String.IsEqual(ListItem.Mpaa,FSK12) | String.IsEqual(ListItem.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:16) | String.IsEqual(ListItem.Mpaa,FSK16) | String.IsEqual(ListItem.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,Germany:18) | String.IsEqual(ListItem.Mpaa,FSK18) | String.IsEqual(ListItem.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,French:U)">flags/movies/rating/csaU.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,French:-10)">flags/movies/rating/csa10.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:G)">flags/movies/rating/oflcG.png</value>
-		<value condition="String.Contains(Listitem.mpaa,Australia:MA)">flags/movies/rating/oflcMA15+.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:MA)">flags/movies/rating/oflcMA15+.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:M)">flags/movies/rating/oflcM.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:PG)">flags/movies/rating/oflcPG.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:R)">flags/movies/rating/oflcR18+.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:X)">flags/movies/rating/oflcX18+.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-Y) + ![String.Contains(ListItem.Mpaa,TV-Y7) | String.Contains(ListItem.Mpaa,TV-Y7-FV)]">flags/movies/rating/tv-y.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-Y7) | String.Contains(ListItem.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
-		<value condition="String.Contains(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-Y)">flags/movies/rating/tv-y.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
+		<value>$INFO[ListItem.Mpaa]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
 		<value condition="String.IsEmpty(Skin.String(resource.images.studios.path))">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
