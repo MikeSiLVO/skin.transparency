@@ -84,7 +84,7 @@
 							<width>500</width>
 							<height>60</height>
 							<texture border="7">list-focus2.png</texture>
-							<animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
+							<visible>Control.HasFocus(211)</visible>
 						</control>
 						<control type="label">
 							<left>10</left>
