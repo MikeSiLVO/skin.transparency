@@ -41,14 +41,6 @@
 		<action>ActivateWindow(SystemSettings,return)</action>
 	</shortcut>
 	<shortcut>
-		<defaultID>705</defaultID>
-		<label>$LOCALIZE[705]</label>
-		<label2 />
-		<icon />
-		<thumb />
-		<action>ActivateWindow(NetworkSettings,return)</action>
-	</shortcut>
-	<shortcut>
 		<defaultID>13200</defaultID>
 		<label>$LOCALIZE[13200]</label>
 		<label2 />
