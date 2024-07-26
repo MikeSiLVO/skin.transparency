@@ -1323,14 +1323,11 @@
 				<aligny>center</aligny>
 				<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 			</control>
-			<control type="group">
-				<left>555</left>
-				<top>90</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(Movies)</visible>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_Movies_Media_Flags)">
+				<param name="left">555</param>
+				<param name="top">90</param>
+				<param name="visible">Container.Content(movies)</param>
+			</include>
 		</control>
 		<control type="group">
 			<left>0</left>

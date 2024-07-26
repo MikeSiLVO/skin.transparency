@@ -189,9 +189,9 @@
 					<top>234</top>
 					<width>606</width>
 					<height>72</height>
-					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Enable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
-					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
-					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
+					<include condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(Disable_Movies_Media_Flags)">FullScreenVideoMediaFlags</include>
+					<include condition="VideoPlayer.Content(Episodes) + !Skin.HasSetting(Disable_TVShows_Media_Flags)">FullScreenVideoMediaFlags</include>
+					<include condition="VideoPlayer.Content(MusicVideos) + !Skin.HasSetting(Disable_MusicVideos_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="VideoPlayer.Content(LiveTV) + !Skin.HasSetting(Enable_TV_Media_Flags)">FullScreenVideoMediaFlags</include>
 					<include condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">FullScreenVideoMediaFlags</include>
 				</control>

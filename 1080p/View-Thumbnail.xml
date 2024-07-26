@@ -951,7 +951,7 @@
 				<width>939</width>
 				<height>63</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-				<visible>!Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
+				<visible>!Skin.HasSetting(Disable_Movies_Media_Flags) + String.IsEqual(ListItem.DBTYPE,movie)</visible>
 			</control>
 			<control type="image">
 				<left>495</left>
@@ -959,7 +959,7 @@
 				<width>939</width>
 				<height>63</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
+				<visible>!Skin.HasSetting(Disable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="image">
 				<left>495</left>
@@ -967,32 +967,13 @@
 				<width>939</width>
 				<height>63</height>
 				<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
-				<visible>!Skin.HasSetting(Enable_MusicVideos_Media_Flags) + Container.Content(MusicVideos)</visible>
+				<visible>!Skin.HasSetting(Disable_MusicVideos_Media_Flags) + Container.Content(MusicVideos)</visible>
 			</control>
-			<control type="group">
-				<left>555</left>
-				<top>922</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(Movies)</visible>
-			</control>
-			<control type="group">
-				<left>555</left>
-				<top>922</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(Episodes)</visible>
-			</control>
-			<control type="group">
-				<left>555</left>
-				<top>922</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_MusicVideos_Media_Flags)">VideoMediaFlags</include>
-				<visible>Container.Content(MusicVideos)</visible>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_Movies_Media_Flags) | !Skin.HasSetting(Disable_TVShows_Media_Flags) | !Skin.HasSetting(Disable_MusicVideos_Media_Flags)">
+				<param name="left">555</param>
+				<param name="top">922</param>
+				<param name="visible">!Skin.HasSetting(Disable_Movies_Media_Flags) + Container.Content(movies) | !Skin.HasSetting(Disable_TVShows_Media_Flags) + Container.Content(episodes) | !Skin.HasSetting(Disable_MusicVideos_Media_Flags) + Container.Content(musicvideos)</param>
+			</include>
 		</control>
 	</include>
 </includes>

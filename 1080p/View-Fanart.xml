@@ -276,13 +276,13 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
-			<include content="BackgroundUnderlay" condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">
+			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
+			<include content="BackgroundUnderlay" condition="!Skin.HasSetting(Disable_Movies_Media_Flags)">
 				<param name="top">825</param>
 				<param name="width">1312</param>
 				<param name="height">237</param>
 			</include>
-			<include content="BackgroundUnderlay" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">
+			<include content="BackgroundUnderlay" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">
 				<param name="top">825</param>
 				<param name="width">1312</param>
 				<param name="height">184</param>
@@ -378,17 +378,12 @@
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
-			<control type="group">
-				<visible>Control.IsVisible(50) + !Skin.HasSetting(Enable_Movies_Media_Flags) + [Container.Content(Movies) | Window.IsVisible(VideoPlaylist)]</visible>
-				<control type="group">
-					<left>378</left>
-					<top>982</top>
-					<width>708</width>
-					<height>72</height>
-					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-				</control>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_Movies_Media_Flags)">
+				<param name="left">378</param>
+				<param name="top">982</param>
+				<param name="visible">Control.IsVisible(50) + !Skin.HasSetting(Disable_Movies_Media_Flags) + [Container.Content(movies) | Window.IsVisible(videoplaylist)]</param>
+				<param name="condition">!Skin.HasSetting(Disable_Movies_Media_Flags)</param>
+			</include>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Sets) | Window.IsVisible(VideoPlaylist)]</visible>
@@ -437,14 +432,14 @@
 			<control type="group">
 				<include condition="Skin.HasSetting(MoviesExtraThumbs)">thumbs-extra-movies</include>
 			</control>
-			<animation effect="slide" end="0,60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+			<animation effect="slide" end="0,60" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
 			<control type="image">
 				<left>27</left>
 				<top>594</top>
 				<width>327</width>
 				<height>465</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
 				<visible>ListItem.IsParentFolder + !Window.IsVisible(VideoPlaylist)</visible>
 			</control>
 			<control type="image">
@@ -454,7 +449,7 @@
 				<height>465</height>
 				<texture background="true">$VAR[IconPoster]</texture>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
@@ -463,7 +458,7 @@
 				<width>351</width>
 				<height>540</height>
 				<texture fallback="case-sets.png">$INFO[ListItem.VideoResolution,case,.png]</texture>
-				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
 				<visible>!ListItem.IsParentFolder + !Skin.HasSetting(HideMovieCase)</visible>
 			</control>
 			<control type="image">
@@ -472,7 +467,7 @@
 				<width>50</width>
 				<height>18</height>
 				<texture>3d-logo.png</texture>
-				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">Conditional</animation>
+				<animation effect="slide" end="0,-60" time="0" condition="Skin.HasSetting(Disable_Movies_Media_Flags)">Conditional</animation>
 				<visible>ListItem.IsStereoScopic</visible>
 			</control>
 		</control>
@@ -715,20 +710,20 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
-			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Enable_TVShows_Media_Flags)">Conditional</animation>
+			<animation effect="slide" end="0,52" time="0" condition="Skin.HasSetting(Disable_TVShows_Media_Flags)">Conditional</animation>
 			<include content="BackgroundUnderlay">
 				<param name="top">783</param>
 				<param name="width">1312</param>
 				<param name="height">279</param>
-				<param name="visible">[Container.Content(Episodes) + !Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + !Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</param>
+				<param name="visible">[Container.Content(episodes) + !Skin.HasSetting(Disable_TVShows_Media_Flags)] | [Container.Content(musicvideos) + !Skin.HasSetting(Disable_MusicVideos_Media_Flags)]</param>
 			</include>
 			<include content="BackgroundUnderlay">
 				<param name="top">783</param>
 				<param name="width">1312</param>
 				<param name="height">226</param>
-				<param name="visible">[Container.Content(Episodes) + Skin.HasSetting(Enable_TVShows_Media_Flags)] | [Container.Content(MusicVideos) + Skin.HasSetting(Enable_MusicVideos_Media_Flags)]</param>
+				<param name="visible">[Container.Content(episodes) + Skin.HasSetting(Disable_TVShows_Media_Flags)] | [Container.Content(musicvideos) + Skin.HasSetting(Disable_MusicVideos_Media_Flags)]</param>
 			</include>
 			<control type="label">
 				<left>476</left>
@@ -820,22 +815,11 @@
 				<label>$INFO[ListItem.year,[UPPERCASE][B][COLOR=lightblue]$LOCALIZE[562]: [/UPPERCASE][/B][/COLOR]]</label>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
-			<control type="group">
-				<left>466</left>
-				<top>982</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
-				<visible>!Skin.HasSetting(Enable_TVShows_Media_Flags) + Container.Content(Episodes)</visible>
-			</control>
-			<control type="group">
-				<left>466</left>
-				<top>982</top>
-				<width>810</width>
-				<height>72</height>
-				<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">VideoMediaFlags</include>
-				<visible>!Skin.HasSetting(Enable_MusicVideos_Media_Flags) + Container.Content(MusicVideos)</visible>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_TVShows_Media_Flags) | !Skin.HasSetting(Disable_MusicVideos_Media_Flags)">
+				<param name="left">466</param>
+				<param name="top">982</param>
+				<param name="visible">!Skin.HasSetting(Disable_TVShows_Media_Flags) + Container.Content(episodes) | !Skin.HasSetting(Disable_MusicVideos_Media_Flags) + Container.Content(musicvideos)</param>
+			</include>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + [Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>

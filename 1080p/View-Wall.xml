@@ -718,28 +718,11 @@
 					<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
-			<control type="group">
-				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" time="3000" />
-				</animation>
-				<animation type="WindowClose">
-					<effect type="fade" start="100" end="0" time="3000" />
-				</animation>
-				<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
-				<visible>Container.Content(Movies)</visible>
-				<control type="group">
-					<left>1059</left>
-					<top>996</top>
-					<width>708</width>
-					<height>72</height>
-					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags) + Skin.HasSetting(WallShowPlot)">VideoMediaFlags</include>
-				</control>
-				<control type="group">
-					<left>867</left>
-					<top>222</top>
-					<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">MovieStudioFlag</include>
-				</control>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_Movies_Media_Flags)">
+				<param name="left">1059</param>
+				<param name="top">996</param>
+				<param name="visible">Container.Content(movies)</param>
+			</include>
 		</control>
 	</include>
 	<include name="Wall-Episodes">
@@ -1360,14 +1343,14 @@
 					<left>867</left>
 					<top>222</top>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
-					<include condition="!Skin.HasSetting(Enable_TVShows_Media_Flags)">MovieStudioFlag</include>
+					<include condition="!Skin.HasSetting(Disable_TVShows_Media_Flags)">LargeMovieStudioFlag</include>
 					<visible>Container.Content(Episodes)</visible>
 				</control>
 				<control type="group">
 					<left>867</left>
 					<top>222</top>
 					<animation effect="fade" start="40" end="40" time="0" condition="true">Conditional</animation>
-					<include condition="!Skin.HasSetting(Enable_MusicVideos_Media_Flags)">MovieStudioFlag</include>
+					<include condition="!Skin.HasSetting(Disable_MusicVideos_Media_Flags)">LargeMovieStudioFlag</include>
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 			</control>

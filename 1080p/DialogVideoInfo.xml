@@ -203,20 +203,17 @@
 						<ondown>1110</ondown>
 					</control>
 				</control>
-				<control type="group">
-					<left>720</left>
-					<top>706</top>
-					<width>810</width>
-					<height>72</height>
-					<include condition="[String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,musicvideo)] + !Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-					<animation effect="slide" start="0,0" end="-165,12" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-165,0" time="0" condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">Conditional</animation>
-				</control>
+				<include content="VideoMediaFlags" condition="[String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(Disable_Movies_Media_Flags) | String.IsEqual(ListItem.DBTYPE,episode) + !Skin.HasSetting(Disable_TVShows_Media_Flags) | String.IsEqual(ListItem.DBTYPE,musicvideo) + !Skin.HasSetting(Disable_MusicVideos_Media_Flags)]">
+					<param name="left">720</param>
+					<param name="top">720</param>
+					<param name="visible">true</param>
+					<param name="condition">true</param>
+				</include>
 				<control type="group" id="1110">
 					<ondown>50</ondown>
+					<top>720</top>
 					<control type="button" id="11">
 						<left>1792</left>
-						<top>706</top>
 						<width>72</width>
 						<height>72</height>
 						<font />
@@ -228,7 +225,6 @@
 					</control>
 					<control type="image">
 						<left>1720</left>
-						<top>706</top>
 						<width>72</width>
 						<height>72</height>
 						<texture>$VAR[VersionsExtrasIcon]</texture>
