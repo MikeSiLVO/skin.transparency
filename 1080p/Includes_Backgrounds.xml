@@ -66,6 +66,17 @@
 			</control>
 		</definition>
 	</include>
+	<include name="BackgroundUnderlay2">
+		<control type="image">
+			<left>495</left>
+			<top>927</top>
+			<width>939</width>
+			<height>63</height>
+			<texture diffuse="underlay2-diffuse.png" border="4">underlay2.png</texture>
+			<visible>!String.IsEqual(ListItem.DBTYPE,set)</visible>
+			<visible>[!Skin.HasSetting(Disable_Movies_Media_Flags) + Container.Content(movies) + !String.IsEqual(ListItem.DBTYPE,set)] | [!Skin.HasSetting(Disable_TVShows_Media_Flags) + Container.Content(episodes)] | [!Skin.HasSetting(Disable_MusicVideos_Media_Flags) + Container.Content(musicvideos)]</visible>
+		</control>
+	</include>
 	<include name="DefaultUnderlayTexture">
 		<texture border="10">underlay.png</texture>
 	</include>

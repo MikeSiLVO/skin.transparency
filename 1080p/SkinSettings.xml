@@ -682,18 +682,18 @@
 					</control>
 					<control type="radiobutton" id="411">
 						<label>$LOCALIZE[20342] - $LOCALIZE[31137]</label>
-						<onclick>Skin.ToggleSetting(Enable_Movies_Media_Flags)</onclick>
-						<selected>!Skin.HasSetting(Enable_Movies_Media_Flags)</selected>
+						<onclick>Skin.ToggleSetting(Disable_Movies_Media_Flags)</onclick>
+						<selected>!Skin.HasSetting(Disable_Movies_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="412">
 						<label>$LOCALIZE[20343] - $LOCALIZE[31137]</label>
-						<onclick>Skin.ToggleSetting(Enable_TVShows_Media_Flags)</onclick>
-						<selected>!Skin.HasSetting(Enable_TVShows_Media_Flags)</selected>
+						<onclick>Skin.ToggleSetting(Disable_TVShows_Media_Flags)</onclick>
+						<selected>!Skin.HasSetting(Disable_TVShows_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="413">
 						<label>$LOCALIZE[20389] - $LOCALIZE[31137]</label>
-						<onclick>Skin.ToggleSetting(Enable_MusicVideos_Media_Flags)</onclick>
-						<selected>!Skin.HasSetting(Enable_MusicVideos_Media_Flags)</selected>
+						<onclick>Skin.ToggleSetting(Disable_MusicVideos_Media_Flags)</onclick>
+						<selected>!Skin.HasSetting(Disable_MusicVideos_Media_Flags)</selected>
 					</control>
 					<control type="radiobutton" id="414">
 						<label>$LOCALIZE[19020] - $LOCALIZE[31137]</label>

@@ -487,17 +487,13 @@
 	</include>
 	<include name="Icons-Movies_Extras">
 		<control type="group">
-			<visible>Control.IsVisible(57) + !Skin.HasSetting(Enable_Movies_Media_Flags) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(57) + !Skin.HasSetting(Disable_Movies_Media_Flags) + Container.Content(Movies)</visible>
 			<include>Window_OpenClose_Visible_MediaFlags_Animation</include>
-			<control type="group">
-				<left>1188</left>
-				<top>1012</top>
-				<width>708</width>
-				<height>72</height>
-				<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
-				<animation effect="zoom" start="90" end="90" center="auto" time="0" condition="true">Conditional</animation>
-				<include condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">VideoMediaFlags</include>
-			</control>
+			<include content="VideoMediaFlags" condition="!Skin.HasSetting(Disable_Movies_Media_Flags)">
+				<param name="left">1134</param>
+				<param name="top">1012</param>
+				<param name="visible">true</param>
+			</include>
 		</control>
 	</include>
 	<include name="Icons-Albums">

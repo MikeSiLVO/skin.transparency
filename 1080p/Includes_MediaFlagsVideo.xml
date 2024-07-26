@@ -1,59 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="VideoMediaFlags">
-		<visible>!ListItem.IsParentFolder + !String.StartsWith(ListItem.Path,videodb://movies/sets/)</visible>
-		<include content="LabelFlag">
-			<param name="label">$INFO[ListItem.VideoResolution]</param>
-		</include>
-		<include content="LabelFlag">
-			<param name="left">102</param>
-			<param name="label">$INFO[ListItem.VideoAspect]</param>
-		</include>
-		<include content="DefaultFlag">
-			<param name="left">204</param>
-			<param name="fallback">mediaflag-videocodec.png</param>
-			<param name="texture">$INFO[ListItem.VideoCodec,flags/default/videocodec/,.png]</param>
-		</include>
-		<control type="image">
-			<left>306</left>
-			<top>0</top>
-			<width>96</width>
-			<height>72</height>
-			<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec]</texture>
-		</control>
-		<include content="DefaultFlag">
-			<param name="left">408</param>
-			<param name="fallback">mediaflag-source.png</param>
-			<param name="texture">$VAR[IncludesMediaFlagsVideoSource]</param>
-		</include>
-		<include content="DefaultFlag">
-			<param name="left">510</param>
-			<param name="texture">$VAR[IncludesMediaFlagsVideoSubtitles]</param>
-		</include>
-		<control type="image">
-			<left>612</left>
-			<top>0</top>
-			<width>96</width>
-			<height>72</height>
-			<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
-		</control>
-		<control type="image">
-			<left>714</left>
-			<top>0</top>
-			<width>96</width>
-			<height>72</height>
-			<texture>mediaflag.png</texture>
-			<visible>![Container.Content(Movies) + [Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57) + !Window.IsVisible(VideoPlaylist) + !ListItem.IsParentFolder</visible>
-		</control>
-		<control type="image">
-			<left>726</left>
-			<top>9</top>
-			<width>78</width>
-			<height>52</height>
-			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudio]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>
-			<visible>[[Container.Content(Movies) + ![[Control.IsVisible(50) | Control.IsVisible(592)] + !Window.IsVisible(MovieInformation)] + !Control.IsVisible(57)] | [!Container.Content(Movies) + !Window.IsVisible(VideoPlaylist)]]  + !ListItem.IsParentFolder</visible>
-		</control>
+		<param name="condition">false</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>708</width>
+				<height>72</height>
+				<visible>!ListItem.IsParentFolder + !String.IsEqual(ListItem.DBTYPE,set)</visible>
+				<visible>$PARAM[visible]</visible>
+				<animation effect="slide" start="0,0" end="-165,12" time="0" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-165,0" time="0" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,musicvideo)">Conditional</animation>
+				<animation effect="fade" end="70" condition="Control.IsVisible(57)">Conditional</animation>
+				<animation effect="zoom" end="90" center="auto" condition="Control.IsVisible(57)">Conditional</animation>
+				<animation type="WindowOpen" condition="Control.IsVisible(592)">
+					<effect type="fade" start="0" end="100" time="3000" />
+				</animation>
+				<animation type="WindowClose" condition="Control.IsVisible(592)">
+					<effect type="fade" start="100" end="0" time="3000" />
+				</animation>
+				<animation effect="fade" end="50" condition="Control.IsVisible(592)">Conditional</animation>
+				<include content="LabelFlag">
+					<param name="label">$INFO[ListItem.VideoResolution]</param>
+				</include>
+				<include content="LabelFlag">
+					<param name="left">102</param>
+					<param name="label">$INFO[ListItem.VideoAspect]</param>
+				</include>
+				<include content="DefaultFlag">
+					<param name="left">204</param>
+					<param name="fallback">mediaflag-videocodec.png</param>
+					<param name="texture">$INFO[ListItem.VideoCodec,flags/default/videocodec/,.png]</param>
+				</include>
+				<control type="image">
+					<left>306</left>
+					<top>0</top>
+					<width>96</width>
+					<height>72</height>
+					<texture fallback="mediaflag-audiocodec.png">$VAR[IncludesMediaFlagsVideoAudioCodec]</texture>
+				</control>
+				<include content="DefaultFlag">
+					<param name="left">408</param>
+					<param name="fallback">mediaflag-source.png</param>
+					<param name="texture">$VAR[IncludesMediaFlagsVideoSource]</param>
+				</include>
+				<include content="DefaultFlag">
+					<param name="left">510</param>
+					<param name="texture">$VAR[IncludesMediaFlagsVideoSubtitles]</param>
+				</include>
+				<control type="image">
+					<left>612</left>
+					<top>0</top>
+					<width>96</width>
+					<height>72</height>
+					<texture fallback="mediaflag-rating.png">$VAR[IncludesMediaFlagsVideoRating]</texture>
+				</control>
+				<control type="group">
+					<visible>![Container.Content(movies) + Control.IsVisible(50)] + ![Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,movie)] + !Window.IsVisible(videoplaylist)</visible>
+					<control type="image">
+						<left>714</left>
+						<top>0</top>
+						<width>96</width>
+						<height>72</height>
+						<texture>mediaflag.png</texture>
+					</control>
+					<control type="image">
+						<left>726</left>
+						<top>9</top>
+						<width>78</width>
+						<height>52</height>
+						<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudio]</texture>
+						<fadetime>IconCrossfadeTime</fadetime>
+					</control>
+				</control>
+				<include condition="$PARAM[condition]">LargeMovieStudioFlag</include>
+			</control>
+		</definition>
 	</include>
 	<!-- <include name="MediaFlag">
 		<include>$PARAM[include]</include>
@@ -120,20 +143,18 @@
 			</control>
 		</control>
 	</include> -->
-	<include name="MovieStudioFlag">
-		<visible>!ListItem.IsParentFolder + !String.StartsWith(ListItem.Path,videodb://movies/sets/)</visible>
+	<include name="LargeMovieStudioFlag">
 		<control type="image">
-			<left>1126</left>
-			<top>933</top>
+			<left>748</left>
+			<top>-49</top>
 			<width>172</width>
 			<height>128</height>
 			<texture>mediaflag.png</texture>
 			<animation effect="zoom" start="0" end="80" time="0" condition="Control.IsVisible(592)">Conditional</animation>
-			<visible>!ListItem.IsParentFolder</visible>
 		</control>
 		<control type="image">
-			<left>1143</left>
-			<top>950</top>
+			<left>765</left>
+			<top>-30</top>
 			<width>140</width>
 			<height>94</height>
 			<texture fallback="mediaflag-studio.png">$VAR[IncludesMediaFlagsVideoStudioBig]</texture>

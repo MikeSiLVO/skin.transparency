@@ -567,11 +567,11 @@
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:R)">flags/movies/rating/oflcR18+.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:X)">flags/movies/rating/oflcX18+.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,TV-Y)">flags/movies/rating/tv-y.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-G) | String.IsEqual(ListItem.MPAA,USA:TV-G) | String.IsEqual(ListItem.Mpaa,Rated TV-G) | String.IsEqual(ListItem.Mpaa,Rated: TV-G) | String.IsEqual(ListItem.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y7) | String.IsEqual(ListItem.MPAA,USA:TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-PG) | String.IsEqual(ListItem.MPAA,USA:TV-PG) | String.IsEqual(ListItem.Mpaa,Rated TV-PG) | String.IsEqual(ListItem.Mpaa,Rated: TV-PG) | String.IsEqual(ListItem.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-14) | String.IsEqual(ListItem.MPAA,USA:TV-14) | String.IsEqual(ListItem.Mpaa,Rated TV-14) | String.IsEqual(ListItem.Mpaa,Rated: TV-14) | String.IsEqual(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-MA) | String.IsEqual(ListItem.MPAA,USA:TV-MA) | String.IsEqual(ListItem.Mpaa,Rated TV-MA) | String.IsEqual(ListItem.Mpaa,Rated: TV-MA) | String.IsEqual(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 		<value>$INFO[ListItem.Mpaa]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
