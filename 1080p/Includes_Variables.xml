@@ -529,19 +529,34 @@
 		<value>flags/default/no_cc.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoRating">
-		<value condition="String.IsEqual(ListItem.MPAA,US:G) | String.IsEqual(ListItem.MPAA,USA:G) | String.IsEqual(ListItem.Mpaa,Rated G) | String.IsEqual(ListItem.Mpaa,Rated: G) | String.IsEqual(ListItem.Mpaa,G)">flags/movies/rating/rating-g.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:PG) | String.IsEqual(ListItem.MPAA,USA:PG) | String.IsEqual(ListItem.Mpaa,Rated PG) | String.IsEqual(ListItem.Mpaa,Rated: PG) | String.IsEqual(ListItem.Mpaa,PG)">flags/movies/rating/rating-pg.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:PG-13) | String.IsEqual(ListItem.MPAA,USA:PG-13) | String.IsEqual(ListItem.Mpaa,Rated PG-13) | String.IsEqual(ListItem.Mpaa,Rated: PG-13) | String.IsEqual(ListItem.Mpaa,PG-13)">flags/movies/rating/rating-pg13.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:R) | String.IsEqual(ListItem.MPAA,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,Rated: R) | String.IsEqual(ListItem.Mpaa,R)">flags/movies/rating/rating-r.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:NC-17) | String.IsEqual(ListItem.MPAA,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,Rated: NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">flags/movies/rating/rating-nc17.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,UK:U) | String.IsEqual(ListItem.MPAA,United Kingdom:U)">flags/movies/rating/bbfcU.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:UC) | String.IsEqual(ListItem.MPAA,United Kingdom:UC)">flags/movies/rating/bbfcUC.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,UK:PG) | String.IsEqual(ListItem.MPAA,United Kingdom:PG)">flags/movies/rating/bbfcPG.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:12) | String.IsEqual(ListItem.MPAA,United Kingdom:12)">flags/movies/rating/bbfc12.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:12A) | String.IsEqual(ListItem.MPAA,United Kingdom:12A)">flags/movies/rating/bbfc12A.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:15) | String.IsEqual(ListItem.MPAA,United Kingdom:15)">flags/movies/rating/bbfc15.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:18) | String.IsEqual(ListItem.MPAA,United Kingdom:18)">flags/movies/rating/bbfc18.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,UK:R18) | String.IsEqual(ListItem.MPAA,United Kingdom:R18)">flags/movies/rating/bbfcR18.png</value>
+		<!-- USA -->
+		<value condition="String.IsEqual(ListItem.MPAA,US:G) | String.IsEqual(ListItem.MPAA,USA:G) | String.IsEqual(ListItem.Mpaa,Rated G) | String.IsEqual(ListItem.Mpaa,Rated: G) | String.IsEqual(ListItem.Mpaa,G)">flags/default/mpaa/Rated_G.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:PG) | String.IsEqual(ListItem.MPAA,USA:PG) | String.IsEqual(ListItem.Mpaa,Rated PG) | String.IsEqual(ListItem.Mpaa,Rated: PG) | String.IsEqual(ListItem.Mpaa,PG)">flags/default/mpaa/Rated_PG.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:PG-13) | String.IsEqual(ListItem.MPAA,USA:PG-13) | String.IsEqual(ListItem.Mpaa,Rated PG-13) | String.IsEqual(ListItem.Mpaa,Rated: PG-13) | String.IsEqual(ListItem.Mpaa,PG-13)">flags/default/mpaa/Rated_PG-13.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-G) | String.IsEqual(ListItem.MPAA,USA:TV-G) | String.IsEqual(ListItem.Mpaa,Rated TV-G) | String.IsEqual(ListItem.Mpaa,Rated: TV-G) | String.IsEqual(ListItem.Mpaa,TV-G)">flags/default/mpaa/Rated_TV-G.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y) | String.IsEqual(ListItem.MPAA,USA:TV-Y) | String.IsEqual(ListItem.Mpaa,Rated TV-Y) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y) | String.IsEqual(ListItem.Mpaa,TV-Y)">flags/default/mpaa/Rated_TV-Y.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y7) | String.IsEqual(ListItem.MPAA,USA:TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/default/mpaa/Rated_TV-Y7.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-PG) | String.IsEqual(ListItem.MPAA,USA:TV-PG) | String.IsEqual(ListItem.Mpaa,Rated TV-PG) | String.IsEqual(ListItem.Mpaa,Rated: TV-PG) | String.IsEqual(ListItem.Mpaa,TV-PG)">flags/default/mpaa/Rated_TV-PG.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-14) | String.IsEqual(ListItem.MPAA,USA:TV-14) | String.IsEqual(ListItem.Mpaa,Rated TV-14) | String.IsEqual(ListItem.Mpaa,Rated: TV-14) | String.IsEqual(ListItem.Mpaa,TV-14)">flags/default/mpaa/Rated_TV-14.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:TV-MA) | String.IsEqual(ListItem.MPAA,USA:TV-MA) | String.IsEqual(ListItem.Mpaa,Rated TV-MA) | String.IsEqual(ListItem.Mpaa,Rated: TV-MA) | String.IsEqual(ListItem.Mpaa,TV-MA)">flags/default/mpaa/Rated_TV-MA.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:R) | String.IsEqual(ListItem.MPAA,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,Rated: R) | String.IsEqual(ListItem.Mpaa,R)">flags/default/mpaa/Rated_R.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:NC-17) | String.IsEqual(ListItem.MPAA,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,Rated: NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">flags/default/mpaa/Rated_NC-17.png</value>
+		<!-- Australia -->
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:G)">flags/default/mpaa/australia_G.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:PG)">flags/default/mpaa/australia_PG.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:MA) | String.IsEqual(Listitem.mpaa,Australia:MA15)">flags/default/mpaa/australia_MA.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:M)">flags/default/mpaa/australia_M.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:R) | String.IsEqual(Listitem.mpaa,Australia:R18)">flags/default/mpaa/australia_R.png</value>
+		<value condition="String.IsEqual(Listitem.mpaa,Australia:X)">flags/default/mpaa/australia_X.png</value>
+		<!-- United Kingdom -->
+		<value condition="String.IsEqual(ListItem.MPAA,UK:U) | String.IsEqual(ListItem.MPAA,United Kingdom:U)">flags/default/mpaa/bbfc_U.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,UK:PG) | String.IsEqual(ListItem.MPAA,United Kingdom:PG)">flags/default/mpaa/bbfc_PG.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12) | String.IsEqual(ListItem.MPAA,United Kingdom:12)">flags/default/mpaa/bbfc_12.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:12A) | String.IsEqual(ListItem.MPAA,United Kingdom:12A)">flags/default/mpaa/bbfc_12A.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:15) | String.IsEqual(ListItem.MPAA,United Kingdom:15)">flags/default/mpaa/bbfc_15.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:18) | String.IsEqual(ListItem.MPAA,United Kingdom:18)">flags/default/mpaa/bbfc_18.png</value>
+		<value condition="String.IsEqual(ListItem.Mpaa,UK:R18) | String.IsEqual(ListItem.MPAA,United Kingdom:R18)">flags/default/mpaa/bbfc_R18.png</value>
+		<!-- TO DO -->
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:TP)">flags/movies/rating/spaTP.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:R7)">flags/movies/rating/spaR7.png</value>
 		<value condition="String.IsEqual(ListItem.Mpaa,ES:ITP)">flags/movies/rating/spaITP.png</value>
@@ -560,18 +575,6 @@
 		<value condition="String.IsEqual(Listitem.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:G)">flags/movies/rating/oflcG.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:MA)">flags/movies/rating/oflcMA15+.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:M)">flags/movies/rating/oflcM.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:PG)">flags/movies/rating/oflcPG.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:R)">flags/movies/rating/oflcR18+.png</value>
-		<value condition="String.IsEqual(Listitem.mpaa,Australia:X)">flags/movies/rating/oflcX18+.png</value>
-		<value condition="String.IsEqual(ListItem.Mpaa,TV-Y)">flags/movies/rating/tv-y.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:TV-G) | String.IsEqual(ListItem.MPAA,USA:TV-G) | String.IsEqual(ListItem.Mpaa,Rated TV-G) | String.IsEqual(ListItem.Mpaa,Rated: TV-G) | String.IsEqual(ListItem.Mpaa,TV-G)">flags/movies/rating/tv-g.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y7) | String.IsEqual(ListItem.MPAA,USA:TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/movies/rating/tv-y7.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:TV-PG) | String.IsEqual(ListItem.MPAA,USA:TV-PG) | String.IsEqual(ListItem.Mpaa,Rated TV-PG) | String.IsEqual(ListItem.Mpaa,Rated: TV-PG) | String.IsEqual(ListItem.Mpaa,TV-PG)">flags/movies/rating/tv-pg.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:TV-14) | String.IsEqual(ListItem.MPAA,USA:TV-14) | String.IsEqual(ListItem.Mpaa,Rated TV-14) | String.IsEqual(ListItem.Mpaa,Rated: TV-14) | String.IsEqual(ListItem.Mpaa,TV-14)">flags/movies/rating/tv-14.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:TV-MA) | String.IsEqual(ListItem.MPAA,USA:TV-MA) | String.IsEqual(ListItem.Mpaa,Rated TV-MA) | String.IsEqual(ListItem.Mpaa,Rated: TV-MA) | String.IsEqual(ListItem.Mpaa,TV-MA)">flags/movies/rating/tv-ma.png</value>
 		<value>$INFO[ListItem.Mpaa]</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
