@@ -145,8 +145,8 @@
 			<description>EPG Grid</description>
 			<left>52</left>
 			<top>70</top>
-			<width>1792</width>
-			<height>805</height>
+			<width>1800</width>
+			<height>800</height>
 			<onleft>9000</onleft>
 			<onright>60</onright>
 			<onup>10</onup>
@@ -154,14 +154,13 @@
 			<viewtype label="19069">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>350</scrolltime>
-			<timeblocks>40</timeblocks>
+			<timeblocks>50</timeblocks>
 			<rulerunit>6</rulerunit>
 			<progresstexture border="0,3,8,3">epg-marker.png</progresstexture>
-			<rulerdatelayout height="40" width="1792">
+			<rulerdatelayout height="40" width="1800">
 				<control type="label" id="2">
-					<left>0</left>
 					<top>5</top>
-					<width>1792</width>
+					<width>1800</width>
 					<height>40</height>
 					<font>font-19</font>
 					<align>center</align>
@@ -169,19 +168,16 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</rulerdatelayout>
-			<rulerlayout height="44" width="60">
+			<rulerlayout height="40" width="60">
 				<control type="image" id="1">
-					<left>0</left>
-					<top>0</top>
 					<width>60</width>
-					<height>44</height>
+					<height>40</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="label" id="2">
-					<left>15</left>
-					<top>0</top>
-					<width>51</width>
-					<height>44</height>
+					<left>10</left>
+					<width>50</width>
+					<height>40</height>
 					<font>font-19</font>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
@@ -189,41 +185,34 @@
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 				</control>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>315</width>
-					<height>42</height>
+					<width>300</width>
+					<height>40</height>
 					<visible>ListItem.Property(DateLabel)</visible>
 					<texture>ruler-side-horiz.png</texture>
 					<colordiffuse>77AAD9FF</colordiffuse>
 				</control>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
 					<width>1</width>
-					<height>44</height>
+					<height>40</height>
 					<visible>!ListItem.Property(DateLabel)</visible>
 					<texture>ruler-side-vert.png</texture>
 				</control>
 			</rulerlayout>
-			<channellayout height="90" width="315">
+			<channellayout height="80" width="310">
 				<control type="image" id="1">
-					<left>0</left>
-					<top>0</top>
-					<width>315</width>
-					<height>90</height>
+					<width>310</width>
+					<height>80</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="image">
-					<left>0</left>
-					<top>90</top>
-					<width>315</width>
+					<top>80</top>
+					<width>310</width>
 					<height>1</height>
 					<texture>ruler-side-horiz.png</texture>
 				</control>
 				<control type="image">
 					<left>3</left>
-					<top>15</top>
+					<top>10</top>
 					<width>60</width>
 					<height>60</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -233,7 +222,7 @@
 					<left>72</left>
 					<top>1</top>
 					<width>240</width>
-					<height>90</height>
+					<height>80</height>
 					<font>font-20bc</font>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
@@ -242,33 +231,28 @@
 					<scroll>false</scroll>
 				</control>
 			</channellayout>
-			<focusedchannellayout height="90" width="315">
+			<focusedchannellayout height="80" width="310">
 				<control type="image" id="1">
-					<left>0</left>
-					<top>0</top>
-					<width>315</width>
-					<height>90</height>
+					<width>310</width>
+					<height>80</height>
 					<texture border="3">guide.png</texture>
 				</control>
 				<control type="image">
-					<left>0</left>
-					<top>90</top>
-					<width>315</width>
+					<top>80</top>
+					<width>310</width>
 					<height>1</height>
 					<texture>ruler-side-horiz.png</texture>
 					<colordiffuse>AAFFFFFF</colordiffuse>
 				</control>
 				<control type="image" id="1">
-					<left>0</left>
-					<top>0</top>
-					<width>315</width>
-					<height>90</height>
+					<width>310</width>
+					<height>80</height>
 					<texture border="3">list-focus2.png</texture>
 					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
 					<left>3</left>
-					<top>15</top>
+					<top>10</top>
 					<width>60</width>
 					<height>60</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -278,7 +262,7 @@
 					<left>72</left>
 					<top>1</top>
 					<width>240</width>
-					<height>90</height>
+					<height>80</height>
 					<font>font-20bc</font>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
@@ -287,20 +271,17 @@
 					<scroll>false</scroll>
 				</control>
 			</focusedchannellayout>
-			<itemlayout width="60" height="90">
+			<itemlayout width="60" height="80">
 				<control type="image" id="2">
 					<width>60</width>
-					<height>90</height>
-					<left>0</left>
-					<top>0</top>
+					<height>80</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 				</control>
 				<control type="label" id="1">
 					<left>9</left>
-					<top>0</top>
 					<width>45</width>
-					<height>90</height>
+					<height>80</height>
 					<font>font-20</font>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
@@ -309,44 +290,39 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="image">
-					<left>8</left>
-					<top>58</top>
-					<width>30</width>
-					<height>30</height>
+					<left>2</left>
+					<top>52</top>
+					<width>28</width>
+					<height>28</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<left>8</left>
-					<top>58</top>
-					<width>30</width>
-					<height>30</height>
+					<left>2</left>
+					<top>52</top>
+					<width>28</width>
+					<height>28</height>
 					<texture>pvr_schedule.png</texture>
 					<visible>ListItem.HasTimer</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout width="60" height="90">
+			<focusedlayout width="60" height="80">
 				<control type="image" id="2">
 					<width>60</width>
-					<height>90</height>
-					<left>0</left>
-					<top>0</top>
+					<height>80</height>
 					<aspectratio>stretch</aspectratio>
 					<texture border="3">$INFO[ListItem.Property(GenreType),epg-,.png]</texture>
 				</control>
 				<control type="image" id="2">
 					<width>60</width>
-					<height>90</height>
-					<left>0</left>
-					<top>0</top>
+					<height>80</height>
 					<texture border="7">guide-focus.png</texture>
 					<animation effect="fade" start="100" end="70" time="750" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="label" id="1">
 					<left>9</left>
-					<top>0</top>
 					<width>45</width>
-					<height>90</height>
+					<height>80</height>
 					<font>font-20</font>
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
@@ -355,18 +331,18 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="image">
-					<left>8</left>
-					<top>58</top>
-					<width>30</width>
-					<height>30</height>
+					<left>2</left>
+					<top>52</top>
+					<width>28</width>
+					<height>28</height>
 					<texture>pvr_record.png</texture>
 					<visible>ListItem.IsRecording</visible>
 				</control>
 				<control type="image">
-					<left>8</left>
-					<top>58</top>
-					<width>30</width>
-					<height>30</height>
+					<left>2</left>
+					<top>52</top>
+					<width>28</width>
+					<height>28</height>
 					<texture>pvr_schedule.png</texture>
 					<visible>ListItem.HasTimer</visible>
 				</control>
@@ -419,267 +395,20 @@
 			<include>Window_OpenClose_Visible_FanartInfo_Animation</include>
 			<control type="image">
 				<left>-90</left>
-				<top>960</top>
+				<top>952</top>
 				<width>1920</width>
-				<height>120</height>
+				<height>134</height>
 				<texture border="10">underlay4.png</texture>
 			</control>
-			<!-- <control type="button" id="999">
-				<left>120</left>
-				<top>994</top>
-				<width>60</width>
-				<height>60</height>
-				<label />
-				<font />
-				<onclick>Skin.ToggleSetting(EpgLegend)</onclick>
-				<texturefocus>osd-info-focus.png</texturefocus>
-				<texturenofocus>osd-info-nofocus.png</texturenofocus>
-				<pulseonselect>true</pulseonselect>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
-			</control> -->
 			<control type="textbox">
 				<left>210</left>
-				<top>987</top>
+				<top>966</top>
 				<width>1320</width>
-				<height>66</height>
+				<height>105</height>
+				<align>justify</align>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="3000" delay="10000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(EpgLegend)</visible>
+				<autoscroll time="3000" delay="7000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
-			<!-- <control type="group">
-				<visible>Skin.HasSetting(EpgLegend)</visible>
-				<control type="image">
-					<left>210</left>
-					<top>980</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-32.png</texture>
-				</control>
-				<control type="label">
-					<description>News Genre</description>
-					<left>240</left>
-					<top>978</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19516</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>585</left>
-					<top>980</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-16.png</texture>
-				</control>
-				<control type="label">
-					<description>Movie Genre</description>
-					<left>615</left>
-					<top>978</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19500</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>960</left>
-					<top>980</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-176.png</texture>
-				</control>
-				<control type="label">
-					<description>Special Genre</description>
-					<left>990</left>
-					<top>978</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19549</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>1335</left>
-					<top>980</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-48.png</texture>
-				</control>
-				<control type="label">
-					<description>News Genre</description>
-					<left>1365</left>
-					<top>978</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19532</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>210</left>
-					<top>1008</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-64.png</texture>
-				</control>
-				<control type="label">
-					<description>Sports Genre</description>
-					<left>240</left>
-					<top>1006</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19548</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>585</left>
-					<top>1008</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-80.png</texture>
-				</control>
-				<control type="label">
-					<description>Children Genre</description>
-					<left>615</left>
-					<top>1006</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19564</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>960</left>
-					<top>1008</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-144.png</texture>
-				</control>
-				<control type="label">
-					<description>Educational/Science Genre</description>
-					<left>990</left>
-					<top>1006</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19628</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>1335</left>
-					<top>1008</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-96.png</texture>
-				</control>
-				<control type="label">
-					<description>Music Genre</description>
-					<left>1365</left>
-					<top>1006</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19580</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>210</left>
-					<top>1036</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-112.png</texture>
-				</control>
-				<control type="label">
-					<description>Arts Genre</description>
-					<left>240</left>
-					<top>1035</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19596</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>585</left>
-					<top>1036</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-160.png</texture>
-				</control>
-				<control type="label">
-					<description>Leisure/Hobbies Genre</description>
-					<left>615</left>
-					<top>1035</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19644</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>960</left>
-					<top>1036</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-128.png</texture>
-				</control>
-				<control type="label">
-					<description>Social Genre</description>
-					<left>990</left>
-					<top>1035</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19612</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="image">
-					<left>1335</left>
-					<top>1036</top>
-					<width>22</width>
-					<height>22</height>
-					<texture>epg-0.png</texture>
-				</control>
-				<control type="label">
-					<description>Other/Unknown Genre</description>
-					<left>1365</left>
-					<top>1035</top>
-					<width>345</width>
-					<height>22</height>
-					<font>font-19</font>
-					<label>19499</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-				</control>
-			</control> -->
 		</control>
 	</include>
 	<include name="MediaInfo-PVRRecordings">

@@ -288,7 +288,7 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label />
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
+					<visible>Window.IsVisible(pvrguideinfo)</visible>
 				</control>
 				<control type="button" id="9">
 					<description>Timer button</description>
@@ -317,7 +317,7 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>19165</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
+					<visible>Window.IsVisible(pvrguideinfo)</visible>
 				</control>
 				<control type="button" id="4">
 					<description>Similar button</description>
@@ -332,7 +332,7 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>19003</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
+					<visible>Window.IsVisible(pvrguideinfo)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Play button</description>
@@ -347,7 +347,7 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>19687</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
+					<visible>Window.IsVisible(pvrrecordinginfo) | Window.IsVisible(pvrguideinfo)</visible>
 				</control>
 				<control type="button" id="11">
 					<description>Set reminder button</description>
@@ -362,7 +362,7 @@
 					<texturefocus border="7">button-focus.png</texturefocus>
 					<texturenofocus border="7">button-nofocus.png</texturenofocus>
 					<label>826</label>
-					<visible>Window.IsActive(PVRGuideInfo)</visible>
+					<visible>Window.IsVisible(pvrguideinfo)</visible>
 				</control>
 			</control>
 		</control>
