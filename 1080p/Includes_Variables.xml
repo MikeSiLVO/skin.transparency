@@ -533,14 +533,14 @@
 		<value condition="String.IsEqual(ListItem.MPAA,US:G) | String.IsEqual(ListItem.MPAA,USA:G) | String.IsEqual(ListItem.Mpaa,Rated G) | String.IsEqual(ListItem.Mpaa,Rated: G) | String.IsEqual(ListItem.Mpaa,G)">flags/default/mpaa/Rated_G.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:PG) | String.IsEqual(ListItem.MPAA,USA:PG) | String.IsEqual(ListItem.Mpaa,Rated PG) | String.IsEqual(ListItem.Mpaa,Rated: PG) | String.IsEqual(ListItem.Mpaa,PG)">flags/default/mpaa/Rated_PG.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:PG-13) | String.IsEqual(ListItem.MPAA,USA:PG-13) | String.IsEqual(ListItem.Mpaa,Rated PG-13) | String.IsEqual(ListItem.Mpaa,Rated: PG-13) | String.IsEqual(ListItem.Mpaa,PG-13)">flags/default/mpaa/Rated_PG-13.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:R) | String.IsEqual(ListItem.MPAA,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,Rated: R) | String.IsEqual(ListItem.Mpaa,R)">flags/default/mpaa/Rated_R.png</value>
+		<value condition="String.IsEqual(ListItem.MPAA,US:NC-17) | String.IsEqual(ListItem.MPAA,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,Rated: NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">flags/default/mpaa/Rated_NC-17.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-G) | String.IsEqual(ListItem.MPAA,USA:TV-G) | String.IsEqual(ListItem.Mpaa,Rated TV-G) | String.IsEqual(ListItem.Mpaa,Rated: TV-G) | String.IsEqual(ListItem.Mpaa,TV-G)">flags/default/mpaa/Rated_TV-G.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y) | String.IsEqual(ListItem.MPAA,USA:TV-Y) | String.IsEqual(ListItem.Mpaa,Rated TV-Y) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y) | String.IsEqual(ListItem.Mpaa,TV-Y)">flags/default/mpaa/Rated_TV-Y.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-Y7) | String.IsEqual(ListItem.MPAA,USA:TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated TV-Y7) | String.IsEqual(ListItem.Mpaa,Rated: TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7) | String.IsEqual(ListItem.Mpaa,TV-Y7-FV)">flags/default/mpaa/Rated_TV-Y7.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-PG) | String.IsEqual(ListItem.MPAA,USA:TV-PG) | String.IsEqual(ListItem.Mpaa,Rated TV-PG) | String.IsEqual(ListItem.Mpaa,Rated: TV-PG) | String.IsEqual(ListItem.Mpaa,TV-PG)">flags/default/mpaa/Rated_TV-PG.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-14) | String.IsEqual(ListItem.MPAA,USA:TV-14) | String.IsEqual(ListItem.Mpaa,Rated TV-14) | String.IsEqual(ListItem.Mpaa,Rated: TV-14) | String.IsEqual(ListItem.Mpaa,TV-14)">flags/default/mpaa/Rated_TV-14.png</value>
 		<value condition="String.IsEqual(ListItem.MPAA,US:TV-MA) | String.IsEqual(ListItem.MPAA,USA:TV-MA) | String.IsEqual(ListItem.Mpaa,Rated TV-MA) | String.IsEqual(ListItem.Mpaa,Rated: TV-MA) | String.IsEqual(ListItem.Mpaa,TV-MA)">flags/default/mpaa/Rated_TV-MA.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:R) | String.IsEqual(ListItem.MPAA,USA:R) | String.IsEqual(ListItem.Mpaa,Rated R) | String.IsEqual(ListItem.Mpaa,Rated: R) | String.IsEqual(ListItem.Mpaa,R)">flags/default/mpaa/Rated_R.png</value>
-		<value condition="String.IsEqual(ListItem.MPAA,US:NC-17) | String.IsEqual(ListItem.MPAA,USA:NC-17) | String.IsEqual(ListItem.Mpaa,Rated NC-17) | String.IsEqual(ListItem.Mpaa,Rated: NC-17) | String.IsEqual(ListItem.Mpaa,NC-17)">flags/default/mpaa/Rated_NC-17.png</value>
 		<!-- Australia -->
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:G)">flags/default/mpaa/australia_G.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,Australia:PG)">flags/default/mpaa/australia_PG.png</value>
@@ -575,7 +575,7 @@
 		<value condition="String.IsEqual(Listitem.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,French:-16)">flags/movies/rating/csa16.png</value>
 		<value condition="String.IsEqual(Listitem.mpaa,French:-18)">flags/movies/rating/csa18.png</value>
-		<value>$INFO[ListItem.Mpaa]</value>
+		<value>flags/default/mpaa/NR.png</value>
 	</variable>
 	<variable name="IncludesMediaFlagsVideoStudio">
 		<value condition="String.IsEmpty(Skin.String(resource.images.studios.path))">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
