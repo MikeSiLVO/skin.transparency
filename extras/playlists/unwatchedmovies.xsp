@@ -3,7 +3,6 @@
 	<name>Unwatched Movies</name>
 	<match>all</match>
 	<limit>15</limit>
-	<group>none</group>
 	<rule field="playcount" operator="is">
 		<value>0</value>
 	</rule>
