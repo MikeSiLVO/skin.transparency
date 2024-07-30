@@ -10,8 +10,8 @@
 				<height>72</height>
 				<visible>!ListItem.IsParentFolder + !String.IsEqual(ListItem.DBTYPE,set)</visible>
 				<visible>$PARAM[visible]</visible>
-				<animation effect="slide" start="0,0" end="-165,12" time="0" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-165,0" time="0" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,musicvideo)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-165,12" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-165,0" condition="Window.IsVisible(movieinformation) + String.IsEqual(ListItem.DBTYPE,musicvideo)">Conditional</animation>
 				<animation effect="fade" end="70" condition="Control.IsVisible(57)">Conditional</animation>
 				<animation effect="zoom" end="90" center="auto" condition="Control.IsVisible(57)">Conditional</animation>
 				<animation type="WindowOpen" condition="Control.IsVisible(592)">
