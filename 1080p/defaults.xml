@@ -117,22 +117,21 @@
 	<default type="spincontrol">
 		<left>0</left>
 		<top>0</top>
-		<textureup>scroll-up-2.png</textureup>
-		<texturedown>scroll-down-2.png</texturedown>
-		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
-		<textureupdisabled colordiffuse="40FFFFFF">scroll-up-2.png</textureupdisabled>
-		<texturedowndisabled colordiffuse="40FFFFFF">scroll-down-2.png</texturedowndisabled>
+		<textureup>spin_up.png</textureup>
+		<texturedown>spin_down.png</texturedown>
+		<textureupfocus colordiffuse="darkblue">spin_up.png</textureupfocus>
+		<texturedownfocus colordiffuse="darkblue">spin_down.png</texturedownfocus>
+		<textureupdisabled colordiffuse="40FFFFFF">spin_up.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="40FFFFFF">spin_down.png</texturedowndisabled>
 		<align>right</align>
 		<width>50</width>
-		<height>33</height>
+		<height>30</height>
 		<font>font-20</font>
 		<reverse>true</reverse>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
 		<subtype>text</subtype>
-		<textoffsetx>-8</textoffsetx>
-		<textoffsety>0</textoffsety>
+		<textoffsety>-5</textoffsety>
 		<pulseonselect>true</pulseonselect>
 	</default>
 	<default type="spincontrolex">
@@ -141,15 +140,15 @@
 		<width>450</width>
 		<height>45</height>
 		<spinwidth>50</spinwidth>
-		<spinheight>33</spinheight>
+		<spinheight>30</spinheight>
 		<texturefocus border="7">list-focus.png</texturefocus>
 		<texturenofocus />
-		<textureup>scroll-up-2.png</textureup>
-		<texturedown>scroll-down-2.png</texturedown>
-		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
-		<textureupdisabled colordiffuse="40FFFFFF">scroll-up-2.png</textureupdisabled>
-		<texturedowndisabled colordiffuse="40FFFFFF">scroll-down-2.png</texturedowndisabled>
+		<textureup>spin_up.png</textureup>
+		<texturedown>spin_down.png</texturedown>
+		<textureupfocus colordiffuse="darkblue">spin_up.png</textureupfocus>
+		<texturedownfocus colordiffuse="darkblue">spin_down.png</texturedownfocus>
+		<textureupdisabled colordiffuse="40FFFFFF">spin_up.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="40FFFFFF">spin_down.png</texturedowndisabled>
 		<font>font-20</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>darkgrey</disabledcolor>
@@ -169,12 +168,10 @@
 	<default type="togglebutton">
 		<left>0</left>
 		<top>0</top>
-		<width>30</width>
-		<height>30</height>
-		<texturefocus>scroll-up-focus.png</texturefocus>
-		<texturenofocus>scroll-up.png</texturenofocus>
-		<alttexturefocus>scroll-down-focus.png</alttexturefocus>
-		<alttexturenofocus>scroll-down.png</alttexturenofocus>
+		<width>1320</width>
+		<height>52</height>
+		<texturefocus border="7">list-focus.png</texturefocus>
+		<texturenofocus border="7">list-nofocus.png</texturenofocus>
 		<textcolor>white</textcolor>
 		<label />
 		<font>font-20</font>

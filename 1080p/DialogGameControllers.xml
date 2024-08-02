@@ -5,7 +5,6 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>dialogeffect4</include>
-			<include>DialogFade7</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>

@@ -20,9 +20,8 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<include>ContentPanel</include>
+			<include>Window_OpenClose_Settings_Panel_Animation</include>
 			<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<control type="group">
 				<control type="label">
 					<left>300</left>
@@ -445,8 +444,9 @@
 								<width>488</width>
 								<height>52</height>
 								<texture border="7">list-focus2.png</texture>
-								<include>ListFocusScroll2</include>
+								<include>VisibleFadeEffect</include>
 								<visible>Control.HasFocus(302)</visible>
+								<include>FocusPulse</include>
 							</control>
 							<control type="label">
 								<left>15</left>
@@ -566,7 +566,7 @@
 						<top>262</top>
 						<width>788</width>
 						<height>615</height>
-						<texture>black.png</texture>
+						<texture>colors/black.png</texture>
 						<colordiffuse>77FFFFFF</colordiffuse>
 					</control>
 					<control type="label">
@@ -580,7 +580,6 @@
 						<textcolor>lightblue</textcolor>
 					</control>
 					<include>SkinSettingsImageButtonGroup</include>
-					<include>SkinSettingsImageFanartButtonGroup</include>
 					<control type="label">
 						<left>848</left>
 						<top>874</top>

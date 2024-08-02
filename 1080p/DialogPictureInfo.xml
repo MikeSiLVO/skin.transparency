@@ -145,7 +145,6 @@
 						<top>0</top>
 						<width>1080</width>
 						<height>45</height>
-						<colordiffuse>FFFFFFFF</colordiffuse>
 						<texture border="7">list-nofocus.png</texture>
 					</control>
 					<control type="image">
@@ -153,10 +152,10 @@
 						<top>0</top>
 						<width>1080</width>
 						<height>45</height>
-						<colordiffuse>FFFFFFFF</colordiffuse>
-						<visible>Control.HasFocus(5)</visible>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll9</include>
+						<include>VisibleFadeEffect</include>
+						<visible>Control.HasFocus(5)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>15</left>

@@ -2,60 +2,25 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture>$INFO[ListItem.Art(fanart)]</texture>
-			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<visible>Window.Is(musicinformation) + Window.IsVisible(songinformation)</visible>
-		</control>
-		<include>BackgroundDim</include>
+		<include content="BackgroundDim">
+			<param name="visible">![Window.Is(songinformation) + Window.IsVisible(musicinformation)]</param>
+		</include>
 		<control type="group">
-			<include>DialogFade</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | [Window.Is(songinformation) + Window.IsVisible(musicinformation)]</param>
+			</include>
 			<include content="BackgroundUnderlay">
 				<param name="top">840</param>
 				<param name="height">222</param>
 			</include>
-			<control type="image">
-				<left>12</left>
-				<top>758</top>
-				<width>315</width>
-				<height>315</height>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-				<bordertexture>thumb-shadow.png</bordertexture>
-				<bordersize>6</bordersize>
-				<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
-			</control>
-			<control type="image">
-				<left>51</left>
-				<top>748</top>
-				<width>312</width>
-				<height>312</height>
-				<texture>$INFO[ListItem.Icon]</texture>
-				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)]</visible>
-			</control>
-			<control type="image">
-				<left>18</left>
-				<top>744</top>
-				<width>354</width>
-				<height>321</height>
-				<texture>cdcase.png</texture>
-				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + !Skin.HasSetting(HideMusicCase)</visible>
-			</control>
-			<control type="image">
-				<left>12</left>
-				<top>738</top>
-				<width>368</width>
-				<height>338</height>
-				<texture>cdcase-shadow.png</texture>
-				<visible>[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + !Skin.HasSetting(HideMusicCase)</visible>
-			</control>
+			<include condition="String.IsEqual(ListItem.DBTYPE,artist)">MusicInfoThumb</include>
+			<include condition="String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)">MusicInfoAlbum</include>
 		</control>
 		<control type="group">
 			<include>dialogeffect4</include>
-			<include>DialogFade</include>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(1113) | [Window.Is(songinformation) + Window.IsVisible(musicinformation)]</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -103,7 +68,8 @@
 					<orientation>horizontal</orientation>
 					<itemgap>0</itemgap>
 					<onup>49</onup>
-					<ondown>50</ondown>
+					<ondown condition="Control.IsVisible(50)">50</ondown>
+					<ondown condition="!Control.IsVisible(50)">1112</ondown>
 					<control type="togglebutton" id="900">
 						<description>list / info button</description>
 						<width>300</width>
@@ -241,7 +207,7 @@
 				<left>338</left>
 				<top>876</top>
 				<width>1522</width>
-				<height>154</height>
+				<height>168</height>
 				<label>$INFO[ListItem.Property(Artist_Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -256,7 +222,7 @@
 				<left>398</left>
 				<top>876</top>
 				<width>1462</width>
-				<height>154</height>
+				<height>168</height>
 				<label>$INFO[ListItem.Property(Album_Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -267,8 +233,9 @@
 				<visible>String.IsEqual(ListItem.DBTYPE,album) + !Control.IsVisible(50)</visible>
 			</control>
 			<control type="group">
-				<include>DialogFade5</include>
-				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
+				<include content="DialogFade">
+					<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(MusicInformation) | Window.IsVisible(TextViewer) | Window.IsVisible(1113) | ![Window.IsVisible(songinformation) + Window.Is(musicinformation)]</param>
+				</include>
 				<visible>String.IsEqual(ListItem.DBTYPE,song) + !Control.IsVisible(50)</visible>
 				<control type="label">
 					<left>393</left>
@@ -553,7 +520,6 @@
 				<onup>50</onup>
 				<textcolor>white</textcolor>
 				<showonepage>true</showonepage>
-				<visible>Control.IsVisible(50)</visible>
 			</control>
 			<control type="button" id="1112">
 				<left>1875</left>
@@ -562,437 +528,112 @@
 				<height>30</height>
 				<label />
 				<font />
-				<texturefocus>magnifier-small-focus.png</texturefocus>
-				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<texturenofocus>new_window.png</texturenofocus>
+				<texturefocus colordiffuse="darkblue">new_window.png</texturefocus>
 				<onleft>61</onleft>
 				<onright>61</onright>
-				<onup>11</onup>
+				<onup condition="Control.IsVisible(50)">50</onup>
+				<onup condition="!Control.IsVisible(50)">9000</onup>
 				<ondown>9000</ondown>
+				<onclick condition="Window.IsActive(home) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(dialog_plot_header,$LOCALIZE[21887],home)</onclick>
+				<onclick condition="Window.IsActive(home) + String.IsEqual(ListItem.DBTYPE,artist)">SetProperty(dialog_plot_content,$ESCINFO[ListItem.Property(Artist_Description)],home)</onclick>
+				<onclick condition="Window.IsActive(home) + [String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)]">SetProperty(dialog_plot_header,$LOCALIZE[183],home)</onclick>
+				<onclick condition="Window.IsActive(home) + String.IsEqual(ListItem.DBTYPE,album)">SetProperty(dialog_plot_content,$ESCINFO[ListItem.Property(Album_Description)],home)</onclick>
+				<onclick condition="Window.IsActive(home) + String.IsEqual(ListItem.DBTYPE,song)">SetProperty(dialog_plot_content,$ESCINFO[ListItem.Comment],home)</onclick>
 				<onclick>ActivateWindow(1113)</onclick>
 			</control>
-			<control type="group">
-				<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
-				<control type="list" id="49">
-					<left>120</left>
-					<top>172</top>
-					<width>1800</width>
-					<height>450</height>
-					<onleft>49</onleft>
-					<onright>49</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<pagecontrol />
-					<scrolltime>200</scrolltime>
-					<itemlayout width="1800" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>0</top>
-							<width>240</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1470</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout width="1800" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-focus2.png</texture>
-							<include>VisibleFadeEffect</include>
-							<visible>Control.HasFocus(49)</visible>
-							<include>ListFocusScroll22</include>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>0</top>
-							<width>240</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1470</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</focusedlayout>
-					<content>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21892]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21894]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21896]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21898]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-							<onclick>noop</onclick>
-						</item>
-					</content>
-				</control>
-			</control>
-			<control type="group">
-				<visible>String.IsEqual(ListItem.DBTYPE,album)</visible>
-				<control type="list" id="49">
-					<left>120</left>
-					<top>150</top>
-					<width>1800</width>
-					<height>450</height>
-					<onleft>49</onleft>
-					<onright>49</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<pagecontrol />
-					<scrolltime>200</scrolltime>
-					<itemlayout width="1800" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>0</top>
-							<width>240</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1470</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout width="1800" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1749</width>
-							<height>45</height>
-							<texture border="7">list-focus2.png</texture>
-							<include>VisibleFadeEffect</include>
-							<visible>Control.HasFocus(49)</visible>
-							<include>ListFocusScroll22</include>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>0</top>
-							<width>240</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1470</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</focusedlayout>
-					<content>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Artist]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Genre]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21899]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Label)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Year]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Rating)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.UserRating]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Style)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[21895]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[146][/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Property(Album_Type)]</label2>
-							<onclick>noop</onclick>
-						</item>
-					</content>
-				</control>
-			</control>
-			<control type="group">
-				<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
-				<control type="list" id="49">
-					<left>150</left>
-					<top>150</top>
-					<width>1620</width>
-					<height>450</height>
-					<onleft>49</onleft>
-					<onright>49</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<pagecontrol />
-					<scrolltime>200</scrolltime>
-					<itemlayout width="1620" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1620</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="label">
-							<left>15</left>
-							<top>0</top>
-							<width>225</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1342</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout width="1620" height="44">
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1620</width>
-							<height>45</height>
-							<texture border="7">list-nofocus.png</texture>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<width>1620</width>
-							<height>45</height>
-							<texture border="7">list-focus2.png</texture>
-							<include>VisibleFadeEffect</include>
-							<visible>Control.HasFocus(49)</visible>
-							<include>ListFocusScroll22</include>
-						</control>
-						<control type="label">
-							<left>15</left>
-							<top>0</top>
-							<width>225</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>right</align>
-							<aligny>center</aligny>
-							<textcolor>lightblue</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="label">
-							<left>262</left>
-							<top>0</top>
-							<width>1342</width>
-							<height>45</height>
-							<font>font-20</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>white</textcolor>
-							<selectedcolor>white</selectedcolor>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-					</focusedlayout>
-					<content>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Artist]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427]: ,)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[554]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.TrackNumber]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Year]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Genre]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Rating]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.UserRating]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.Comment]</label2>
-							<onclick>noop</onclick>
-						</item>
-						<item>
-							<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
-							<label2>$INFO[ListItem.FilenameAndPath]</label2>
-							<onclick>noop</onclick>
-						</item>
-					</content>
-				</control>
+			<control type="list" id="49">
+				<left>120</left>
+				<top>150</top>
+				<width>1800</width>
+				<height>450</height>
+				<onleft>49</onleft>
+				<onright>49</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<pagecontrol />
+				<scrolltime>200</scrolltime>
+				<itemlayout width="1800" height="44">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1749</width>
+						<height>45</height>
+						<texture border="7">list-nofocus.png</texture>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>240</width>
+						<height>45</height>
+						<font>font-20</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>262</left>
+						<top>0</top>
+						<width>1470</width>
+						<height>45</height>
+						<font>font-20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1800" height="44">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1749</width>
+						<height>45</height>
+						<texture border="7">list-nofocus.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1749</width>
+						<height>45</height>
+						<texture border="7">list-focus2.png</texture>
+						<include>VisibleFadeEffect</include>
+						<visible>Control.HasFocus(49)</visible>
+						<include>FocusPulse</include>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>240</width>
+						<height>45</height>
+						<font>font-20</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>lightblue</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>262</left>
+						<top>0</top>
+						<width>1470</width>
+						<height>45</height>
+						<font>font-20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<include condition="String.IsEqual(ListItem.DBTYPE,artist)">MusicInfoDetailsArtistContent</include>
+					<include condition="String.IsEqual(ListItem.DBTYPE,album)">MusicInfoDetailsAlbumContent</include>
+					<include condition="String.IsEqual(ListItem.DBTYPE,song)">MusicInfoDetailsSongContent</include>
+				</content>
 			</control>
 		</control>
 	</controls>

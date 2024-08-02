@@ -9,7 +9,7 @@
 			<include content="BackgroundUnderlay">
 				<param name="top">20</param>
 				<param name="height">136</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 			</include>
 			<control type="label">
 				<left>0</left>
@@ -72,7 +72,7 @@
 					<width>291</width>
 					<height>226</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture diffuse="picture-diffuse.png" background="true">black.png</texture>
+					<texture diffuse="picture-diffuse.png" background="true">colors/black.png</texture>
 					<bordersize>12</bordersize>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>

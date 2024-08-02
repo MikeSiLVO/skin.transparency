@@ -4,14 +4,11 @@
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Artwork.xml" />
 	<include file="Includes_Backgrounds.xml" />
-	<include file="Includes_CDWall.xml" />
 	<include file="Includes_DebugInfo.xml" />
 	<include file="Includes_DialogInfo.xml" />
 	<include file="Includes_Home.xml" />
-	<include file="Includes_MediaFlagsMusic.xml" />
-	<include file="Includes_MediaFlagsMusicFullScreen.xml" />
+	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_MediaFlagsVideo.xml" />
-	<include file="Includes_MediaFlagsVideoFullScreen.xml" />
 	<include file="Includes_Variables.xml" />
 	<include file="Includes_Weather.xml" />
 	<include file="Includes_Workarounds.xml" />
@@ -783,42 +780,6 @@
 			</control>
 		</control>
 	</include>
-	<!-- <include name="CommonFileCount2">
-		<control type="grouplist">
-			<left>1148</left>
-			<top>862</top>
-			<width>750</width>
-			<height>45</height>
-			<align>right</align>
-			<orientation>horizontal</orientation>
-			<itemgap>0</itemgap>
-			<animation effect="slide" start="0,0" end="0,105" time="0" condition="Window.IsVisible(Favourites)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-248,75" time="0" condition="Window.IsVisible(custom_DialogFavourites.xml)">Conditional</animation>
-			<control type="label">
-				<description>Page Count Label</description>
-				<width min="15" max="375">auto</width>
-				<height>45</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[31024] $INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages]</label>
-			</control>
-			<control type="image">
-				<width>44</width>
-				<height>45</height>
-				<texture>dot.png</texture>
-			</control>
-			<control type="label">
-				<description>Item Count Label</description>
-				<width min="15" max="375">auto</width>
-				<height>45</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
-			</control>
-		</control>
-	</include> -->
 	<include name="CommonFileCount3">
 		<control type="grouplist">
 			<left>402</left>
@@ -1912,7 +1873,7 @@
 	</include>
 	<include name="SkinSettingsImageButtonGroup">
 		<control type="group">
-			<visible>Container(302).HasFocus(1) | Container(302).HasFocus(4) | Container(302).HasFocus(5) | Container(302).HasFocus(7) | Container(302).HasFocus(8) | Container(302).HasFocus(9) | Container(302).HasFocus(10) | Container(302).HasFocus(11) | Container(302).HasFocus(12) | Container(302).HasFocus(13) | Container(302).HasFocus(14) | Container(302).HasFocus(15) | Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26) | Container(302).HasFocus(27) | Container(302).HasFocus(28) | Container(302).HasFocus(29)</visible>
+			<visible>Container(302).HasFocus(16) | Container(302).HasFocus(17) | Container(302).HasFocus(18) | Container(302).HasFocus(19) | Container(302).HasFocus(20) | Container(302).HasFocus(21) | Container(302).HasFocus(22) | Container(302).HasFocus(23) | Container(302).HasFocus(24) | Container(302).HasFocus(25) | Container(302).HasFocus(26) | Container(302).HasFocus(28) | Container(302).HasFocus(29)</visible>
 			<left>832</left>
 			<top>322</top>
 			<control type="button" id="303">
@@ -1924,21 +1885,7 @@
 				<label>31113</label>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(1)">Skin.SetImage(Home_Custom_Back_Videos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(4)">Skin.SetImage(Home_Custom_Back_MusicVideos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(5)">Skin.SetImage(Home_Custom_Back_TV_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(7)">Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(8)">Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(27)">Skin.SetImage(Home_Custom_Back_Games_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">Skin.SetImage(HomeWeatherPath)</onclick>
-				<onclick condition="Container(302).HasFocus(10)">Skin.SetImage(Home_Custom_Back_Favourites_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(11)">Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(12)">Skin.SetImage(Home_Custom_Back_PlayDisc_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(13)">Skin.SetImage(Home_Custom_Back_Custom1_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(14)">Skin.SetImage(Home_Custom_Back_Custom2_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(15)">Skin.SetImage(Home_Custom_Back_Custom3_Folder)</onclick>
+				<texturefocus border="7">button-focus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(16)">Skin.SetImage(Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(17)">Skin.SetImage(Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(18)">Skin.SetImage(Custom_Back_TVShows_Folder)</onclick>
@@ -1967,21 +1914,7 @@
 				<label>31111</label>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(1)">Skin.SetPath(Home_Custom_Back_Videos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(4)">Skin.SetPath(Home_Custom_Back_MusicVideos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(5)">Skin.SetPath(Home_Custom_Back_TV_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(7)">Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(8)">Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(27)">Skin.SetPath(Home_Custom_Back_Games_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(resource.images.homeweatherfanart.path)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">Skin.SetPath(HomeWeatherPath)</onclick>
-				<onclick condition="Container(302).HasFocus(10)">Skin.SetPath(Home_Custom_Back_Favourites_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(11)">Skin.SetPath(Home_Custom_Back_Settings_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(12)">Skin.SetPath(Home_Custom_Back_PlayDisc_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(13)">Skin.SetPath(Home_Custom_Back_Custom1_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(14)">Skin.SetPath(Home_Custom_Back_Custom2_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(15)">Skin.SetPath(Home_Custom_Back_Custom3_Folder)</onclick>
+				<texturefocus border="7">button-focus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(16)">Skin.SetPath(Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(17)">Skin.SetPath(Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(18)">Skin.SetPath(Custom_Back_TVShows_Folder)</onclick>
@@ -2010,21 +1943,7 @@
 				<label>571</label>
 				<align>center</align>
 				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(1)">Skin.Reset(Home_Custom_Back_Videos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(4)">Skin.Reset(Home_Custom_Back_MusicVideos_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(5)">Skin.Reset(Home_Custom_Back_TV_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(7)">Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(8)">Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(27)">Skin.Reset(Home_Custom_Back_Games_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">Skin.Reset(HomeWeatherPath)</onclick>
-				<onclick condition="Container(302).HasFocus(9)">RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.homeweatherfanart)</onclick>
-				<onclick condition="Container(302).HasFocus(10)">Skin.Reset(Home_Custom_Back_Favourites_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(11)">Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(12)">Skin.Reset(Home_Custom_Back_PlayDisc_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(13)">Skin.Reset(Home_Custom_Back_Custom1_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(14)">Skin.Reset(Home_Custom_Back_Custom2_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(15)">Skin.Reset(Home_Custom_Back_Custom3_Folder)</onclick>
+				<texturefocus border="7">button-focus.png</texturefocus>
 				<onclick condition="Container(302).HasFocus(16)">Skin.Reset(Custom_Back_Videos_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(17)">Skin.Reset(Custom_Back_Movies_Folder)</onclick>
 				<onclick condition="Container(302).HasFocus(18)">Skin.Reset(Custom_Back_TVShows_Folder)</onclick>
@@ -2044,159 +1963,16 @@
 				<onup>305</onup>
 				<ondown>305</ondown>
 			</control>
-			<include>ButtonScroll</include>
-		</control>
-	</include>
-	<include name="SkinSettingsImageFanartButtonGroup">
-		<control type="group">
-			<left>832</left>
-			<top>322</top>
-			<visible>Container(302).HasFocus(2) | Container(302).HasFocus(3) | Container(302).HasFocus(6)</visible>
-			<control type="button" id="304">
-				<description>Single Image button</description>
-				<left>15</left>
-				<top>0</top>
-				<width>248</width>
-				<height>52</height>
-				<label>31113</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(2)">Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.SetImage(Home_Custom_Back_TVShows_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
-				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
-				<onleft>302</onleft>
-				<onright>305</onright>
-				<onup>304</onup>
-				<ondown>304</ondown>
-			</control>
-			<control type="button" id="305">
-				<description>Multi Image button</description>
-				<left>270</left>
-				<top>0</top>
-				<width>248</width>
-				<height>52</height>
-				<label>31111</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Home_Custom_Back_Movies_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Home_Custom_Back_TVShows_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Home_Custom_Back_Music_Folder)</onclick>
-				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
-				<onleft>304</onleft>
-				<onright>306</onright>
-				<onup>305</onup>
-				<ondown>305</ondown>
-			</control>
-			<control type="button" id="306">
-				<description>Default Image button</description>
-				<left>525</left>
-				<top>0</top>
-				<width>248</width>
-				<height>52</height>
-				<label>571</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(2)">Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.Reset(Home_Custom_Back_TVShows_Folder)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
-				<enable>[Container(302).HasFocus(2) + !Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Home_Music_Fanart_Background)]</enable>
-				<onleft>305</onleft>
-				<onright>399</onright>
-				<onup>306</onup>
-				<ondown>303</ondown>
-			</control>
-			<control type="radiobutton" id="303">
-				<description>Fanart Image button</description>
-				<left>525</left>
-				<top>60</top>
-				<width>248</width>
-				<height>52</height>
-				<label>31030</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Background)</onclick>
-				<selected>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Background)]</selected>
-				<onleft>307</onleft>
-				<onright>399</onright>
-				<onup>306</onup>
-				<ondown>303</ondown>
-			</control>
-			<control type="button" id="307">
-				<description>Options Image button</description>
-				<left>270</left>
-				<top>60</top>
-				<width>248</width>
-				<height>52</height>
-				<label>33063</label>
-				<align>center</align>
-				<texturenofocus border="7">button-nofocus.png</texturenofocus>
-				<texturefocus border="7">button-nofocus.png</texturefocus>
-				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Home_Movies_Fanart_Options)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Home_TVShows_Fanart_Options)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Home_Music_Fanart_Options)</onclick>
-				<onleft>302</onleft>
-				<onright>303</onright>
-				<onup>307</onup>
-				<ondown>308</ondown>
-				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Background)]</visible>
-			</control>
-			<control type="button" id="308">
-				<left>15</left>
-				<top>120</top>
-				<width>758</width>
-				<height>45</height>
-				<label>$LOCALIZE[657]:</label>
-				<label2>$VAR[SkinSettingsFanartPath]</label2>
-				<onclick condition="Container(302).HasFocus(2)">Skin.SetPath(Custom_Home_Movies_Fanart_Background_Path)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.SetPath(Custom_Home_TVShows_Fanart_Background_Path)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.SetPath(Custom_Home_Music_Fanart_Background_Path)</onclick>
-				<enable>Container(302).HasFocus(2) | Container(302).HasFocus(3) | Container(302).HasFocus(6)</enable>
-				<onup>307</onup>
-				<ondown>309</ondown>
-				<onleft>302</onleft>
-				<onright>308</onright>
-				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
-			</control>
-			<control type="radiobutton" id="309">
-				<left>15</left>
-				<top>165</top>
-				<width>758</width>
-				<height>45</height>
-				<label>$LOCALIZE[31134]</label>
-				<onclick condition="Container(302).HasFocus(2)">Skin.ToggleSetting(Animate_Home_Movies_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(3)">Skin.ToggleSetting(Animate_Home_TVShows_Fanart_Background)</onclick>
-				<onclick condition="Container(302).HasFocus(6)">Skin.ToggleSetting(Animate_Home_Music_Fanart_Background)</onclick>
-				<selected>[Container(302).HasFocus(2) + !Skin.HasSetting(Animate_Home_Movies_Fanart_Background)] | [Container(302).HasFocus(3) + !Skin.HasSetting(Animate_Home_TVShows_Fanart_Background)] | [Container(302).HasFocus(6) + !Skin.HasSetting(Animate_Home_Music_Fanart_Background)]</selected>
-				<onup>308</onup>
-				<ondown>309</ondown>
-				<onleft>302</onleft>
-				<onright>309</onright>
-				<visible>[Container(302).HasFocus(2) + Skin.HasSetting(Home_Movies_Fanart_Options)] | [Container(302).HasFocus(3) + Skin.HasSetting(Home_TVShows_Fanart_Options)] | [Container(302).HasFocus(6) + Skin.HasSetting(Home_Music_Fanart_Options)]</visible>
-			</control>
-			<include>ButtonScroll4</include>
 		</control>
 	</include>
 	<include name="Splash">
 		<control type="image">
 			<description>splash</description>
 			<include>FullscreenDimensions</include>
-			<texture>black.png</texture>
+			<texture>colors/colors/black.png</texture>
 			<animation effect="fade" start="100" end="0" time="1500" reversible="false">WindowOpen</animation>
 			<animation effect="fade" start="0" end="0" time="0" reversible="false">WindowClose</animation>
 		</control>
-	</include>
-	<include name="ToggleButtonNormal">
-		<left>236</left>
-	</include>
-	<include name="ToggleButtonWide">
-		<left>346</left>
 	</include>
 	<include name="TouchScreenControls">
 		<control type="group">
@@ -2326,12 +2102,7 @@
 	</include>
 	<include name="TMDbHelperContentList">
 		<control type="list" id="9143">
-			<left>-100</left>
-			<top>-100</top>
-			<width>100</width>
-			<height>100</height>
-			<itemlayout height="100" width="100" />
-			<focusedlayout height="100" width="100" />
+			<include>HiddenList</include>
 		</control>
 	</include>
 </includes>

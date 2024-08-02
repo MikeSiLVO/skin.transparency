@@ -75,6 +75,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(50)</visible>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -117,7 +118,7 @@
 				<left>338</left>
 				<top>910</top>
 				<width>954</width>
-				<height>124</height>
+				<height>134</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -248,7 +249,6 @@
 					<width>310</width>
 					<height>80</height>
 					<texture border="3">list-focus2.png</texture>
-					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
 					<left>3</left>
@@ -317,7 +317,7 @@
 					<width>60</width>
 					<height>80</height>
 					<texture border="7">guide-focus.png</texture>
-					<animation effect="fade" start="100" end="70" time="750" pulse="true" condition="true">Conditional</animation>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label" id="1">
 					<left>9</left>
@@ -482,6 +482,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(58)</visible>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -642,6 +643,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(52)</visible>
+					<include>FocusPulse</include>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -789,6 +791,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(52)</visible>
+					<include>FocusPulse</include>
 				</control>
 				<control type="image">
 					<left>15</left>

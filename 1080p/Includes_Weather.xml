@@ -945,7 +945,7 @@
 					<top>1038</top>
 					<width>1920</width>
 					<height>42</height>
-					<texture>black.png</texture>
+					<texture>colors/black.png</texture>
 					<colordiffuse>80000000</colordiffuse>
 					<visible>!String.IsEmpty(Window.Property(Alerts.RSS))</visible>
 				</control>

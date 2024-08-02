@@ -18,8 +18,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+			<include>Window_OpenClose_Settings_Panel_Animation</include>
 			<control type="image">
 				<left>230</left>
 				<top>132</top>
@@ -67,7 +66,7 @@
 					<control type="image">
 						<width>120</width>
 						<height>85.25</height>
-						<texture>black.png</texture>
+						<texture>colors/black.png</texture>
 					</control>
 					<control type="image">
 						<width>120</width>

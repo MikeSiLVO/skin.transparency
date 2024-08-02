@@ -124,7 +124,7 @@
 						<texture border="7">list-focus2.png</texture>
 						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(49)</visible>
-						<include>ListFocusScroll22</include>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<width>240</width>
@@ -149,7 +149,10 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<include>$PARAM[content]</include>
+					<include condition="!String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,musicvideo)">VideoInfoDetailsMovieContent</include>
+					<include condition="String.IsEqual(ListItem.DBTYPE,tvshow)">VideoInfoDetailsTVShowContent</include>
+					<include condition="String.IsEqual(ListItem.DBTYPE,episode)">VideoInfoDetailsEpisodeContent</include>
+					<include condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">VideoInfoDetailsMusicVideoContent</include>
 				</content>
 			</control>
 		</definition>
@@ -374,6 +377,198 @@
 		<item>
 			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
 			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[15311][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="MusicInfoThumb">
+		<control type="image">
+			<left>12</left>
+			<top>758</top>
+			<width>315</width>
+			<height>315</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture diffuse="thumb-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+			<bordertexture>thumb-shadow.png</bordertexture>
+			<bordersize>6</bordersize>
+		</control>
+	</include>
+	<include name="MusicInfoAlbum">
+		<control type="group">
+			<visible>![Window.Is(songinformation) + Window.IsVisible(musicinformation)]</visible>
+			<control type="image">
+				<left>51</left>
+				<top>748</top>
+				<width>312</width>
+				<height>312</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(HideMusicCase)</visible>
+				<control type="image">
+					<left>18</left>
+					<top>744</top>
+					<width>354</width>
+					<height>321</height>
+					<texture>cdcase.png</texture>
+				</control>
+				<control type="image">
+					<left>12</left>
+					<top>738</top>
+					<width>368</width>
+					<height>338</height>
+					<texture>cdcase-shadow.png</texture>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="MusicInfoDetailsArtistContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21892]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21893]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21897]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21894]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21896]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21898]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="MusicInfoDetailsAlbumContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Artist]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Genre]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21899]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Label)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Rating)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[175]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[176]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Style)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[21895]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[146][/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Property(Album_Type)]</label2>
+			<onclick>noop</onclick>
+		</item>
+	</include>
+	<include name="MusicInfoDetailsSongContent">
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[557]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Artist]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[558]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Album]$INFO[ListItem.DiscNumber, ($LOCALIZE[427]: ,)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[554]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.TrackNumber]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[562]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Year]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[515]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Genre]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[567]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.PlayCount]$INFO[ListItem.LastPlayed, ($LOCALIZE[568]: ,)]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[563]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Rating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[38018]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.UserRating]</label2>
+			<onclick>noop</onclick>
+		</item>
+		<item>
+			<label>[UPPERCASE][B]$LOCALIZE[569]:[/B][/UPPERCASE]</label>
+			<label2>$INFO[ListItem.Comment]</label2>
 			<onclick>noop</onclick>
 		</item>
 		<item>

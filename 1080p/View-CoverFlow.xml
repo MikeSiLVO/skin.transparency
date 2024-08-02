@@ -1254,13 +1254,13 @@
 			<include content="BackgroundUnderlay">
 				<param name="top">20</param>
 				<param name="height">122</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 				<param name="visible">Container.Content(Movies) + Skin.HasSetting(Enable_Movies_Media_Flags)</param>
 			</include>
 			<include content="BackgroundUnderlay">
 				<param name="top">20</param>
 				<param name="height">150</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 				<param name="visible">[[Container.Content(Movies) | Container.Content(Sets)] + !Skin.HasSetting(Enable_Movies_Media_Flags)] | Container.Content(TVShows) | Container.Content(Seasons)</param>
 			</include>
 			<control type="image">
@@ -1375,13 +1375,14 @@
 					<left>450</left>
 					<top>206</top>
 					<width>1020</width>
-					<height>192</height>
+					<height>176</height>
 					<font>font-20</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>justify</align>
 					<label>$INFO[ListItem.Plot]</label>
 					<autoscroll time="2000" delay="18000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
 				</control>
 			</control>
 		</control>
@@ -2911,7 +2912,7 @@
 			<include content="BackgroundUnderlay">
 				<param name="top">20</param>
 				<param name="height">136</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 			</include>
 			<control type="label">
 				<left>60</left>

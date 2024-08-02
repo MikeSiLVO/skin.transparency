@@ -8,7 +8,9 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="500" condition="[Window.Is(profilesettings) + Window.IsVisible(locksettings)] | [Window.Is(contentsettings) + Window.IsVisible(addonsettings)] | Window.IsVisible(sliderdialog)">Conditional</animation>
+			<include content="DialogFade">
+				<param name="condition">[Window.Is(profilesettings) + Window.IsVisible(locksettings)] | [Window.Is(contentsettings) + Window.IsVisible(addonsettings)] | Window.IsVisible(sliderdialog) | Window.IsVisible(filebrowser)</param>
+			</include>
 			<control type="image">
 				<description>background image</description>
 				<left>0</left>
@@ -56,6 +58,7 @@
 				<onright>60</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
+				<itemgap>-2</itemgap>
 			</control>
 			<control type="button" id="7">
 				<description>Default Button</description>
@@ -99,7 +102,7 @@
 			</control>
 			<control type="edit" id="12">
 				<description>Default Edit</description>
-				<height>45</height>
+				<height>52</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>

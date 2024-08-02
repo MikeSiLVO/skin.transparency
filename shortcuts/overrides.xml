@@ -52,7 +52,6 @@
 	<!-- Background Frames -->
 	<property property="backgroundFrame" label="$LOCALIZE[20338]" icon="special://skin/backgrounds/movies.png">special://skin/backgrounds/movies.png</property>
 	<property property="backgroundFrame" label="Movie-2" icon="special://skin/backgrounds/movies2.png">special://skin/backgrounds/movies2.png</property>
-	<!-- <property property="backgroundFrame" label="Movie-3" icon="special://skin/backgrounds/movies3.png">special://skin/backgrounds/movies3.png</property> -->
 	<property property="backgroundFrame" label="$LOCALIZE[20364]" icon="special://skin/backgrounds/tvshows.png">special://skin/backgrounds/tvshows.png</property>
 	<property property="backgroundFrame" label="TV-Red" icon="special://skin/backgrounds/tvshows2.png">special://skin/backgrounds/tvshows2.png</property>
 	<property property="backgroundFrame" label="TV-Blue" icon="special://skin/backgrounds/tvshows3.png">special://skin/backgrounds/tvshows3.png</property>

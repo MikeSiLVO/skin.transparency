@@ -33,7 +33,16 @@
 				<label>$LOCALIZE[31001]</label>
 				<font>font-18</font>
 			</control>
-			<control type="multiimage">
+			<control type="image">
+				<description>Busy animation</description>
+				<left>278</left>
+				<top>3</top>
+				<width>45</width>
+				<height>45</height>
+				<texture colordiffuse="darkblue">busy.png</texture>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="2000" loop="true" condition="true">Conditional</animation>
+			</control>
+			<!-- <control type="multiimage">
 				<description>Busy animation</description>
 				<left>278</left>
 				<top>3</top>
@@ -42,7 +51,7 @@
 				<imagepath>busy</imagepath>
 				<timeperimage>100</timeperimage>
 				<fadetime>0</fadetime>
-			</control>
+			</control> -->
 			<control type="label">
 				<description>Busy label</description>
 				<left>352</left>

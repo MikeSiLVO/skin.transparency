@@ -79,7 +79,7 @@
 					<width>450</width>
 					<height>38</height>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[31050]: $INFO[Player.FinishTime]</label>
+					<label>$INFO[Player.FinishTime,$LOCALIZE[31050]: ]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-20</font>
@@ -163,7 +163,7 @@
 					<width>735</width>
 					<height>38</height>
 					<textcolor>lightgrey</textcolor>
-					<label>$LOCALIZE[19148]: $INFO[VideoPlayer.ChannelNumberLabel,, - ]$LOCALIZE[19141]: $INFO[VideoPlayer.ChannelGroup]</label>
+					<label>$INFO[VideoPlayer.ChannelNumberLabel,$LOCALIZE[19148]: , - ]$LOCALIZE[19141]: $INFO[VideoPlayer.ChannelGroup]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-19</font>
@@ -177,7 +177,7 @@
 					<width>735</width>
 					<height>38</height>
 					<textcolor>lightgrey</textcolor>
-					<label>$LOCALIZE[209]: $INFO[VideoPlayer.NextTitle]</label>
+					<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[209]: ]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font-19</font>

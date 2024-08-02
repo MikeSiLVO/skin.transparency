@@ -161,16 +161,20 @@
 		<value condition="Container.Content(Actors)">$LOCALIZE[31226]</value>
 		<value condition="Container.Content(Directors)">$LOCALIZE[31227]</value>
 	</variable> -->
+	<variable name="DialogAddonInfoText">
+		<value condition="!String.IsEmpty(Window(Home).Property(Transparency-AddonNews))">$INFO[Listitem.AddonNews]</value>
+		<value>$INFO[ListItem.AddonDescription]</value>
+	</variable>
 	<variable name="DialogAlbumInfoTitle">
-		<value condition="Container.Content(Artists)">$INFO[Listitem.Artist]</value>
-		<value condition="Container.Content(Albums)">$INFO[Listitem.Album]</value>
-		<value condition="Container.Content(Songs)">$INFO[Listitem.Title]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$INFO[Listitem.Artist]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[Listitem.Album]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$INFO[Listitem.Title]</value>
 	</variable>
 	<variable name="DialogAlbumInfoLabel">
-		<value condition="Container.Content(Artists) + !Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</value>
-		<value condition="Container.Content(Artists) + Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[21888]:[/B][/UPPERCASE]</value>
-		<value condition="Container.Content(Albums) + !Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</value>
-		<value condition="Container.Content(Albums) + Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[182]:[/B][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + !Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[21888]:[/B][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album) + !Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,album) + Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[182]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="DialogFullScreenInfoLabel1">
 		<value condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Year,, - ]$INFO[VideoPlayer.Studio]</value>
@@ -194,12 +198,14 @@
 		<value condition="String.EndsWith(Listitem.Filename,.wmf)">foldericons/pictures/wmf.png</value>
 	</variable>
 	<variable name="DialogPlotHeader">
-		<value condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)">[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</value>
-		<value condition="Container.Content(Artists)">[UPPERCASE][B]$LOCALIZE[21887]:[/B][/UPPERCASE]</value>
-		<value condition="Container.Content(Albums) | Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[183]:[/B][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(dialog_plot_header))">$INFO[Window(home).Property(dialog_plot_header)]</value>
+		<value condition="Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos)">[UPPERCASE][B]$LOCALIZE[207][/B][/UPPERCASE]</value>
+		<value condition="Container.Content(Artists)">[UPPERCASE][B]$LOCALIZE[21887][/B][/UPPERCASE]</value>
+		<value condition="Container.Content(Albums) | Container.Content(Songs)">[UPPERCASE][B]$LOCALIZE[183][/B][/UPPERCASE]</value>
 		<value>[UPPERCASE][B]$LOCALIZE[19047]:[/B][/UPPERCASE]</value>
 	</variable>
 	<variable name="DialogPlotTextBox">
+		<value condition="!String.IsEmpty(Window(home).Property(dialog_plot_content))">$INFO[Window(home).Property(dialog_plot_content)]</value>
 		<value condition="VideoPlayer.Content(LiveTV)">$INFO[Window(Home).Property(Transparency.EPGPlot)]</value>
 		<value condition="!Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(Songs)">$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
@@ -1570,7 +1576,7 @@
 	<variable name="Weather84">
 		<value condition="!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))">[B]$LOCALIZE[33050][/B]</value>
 	</variable>
-	<variable name="ShortcutsDisabledVar">
+	<variable name="ShortcutsDisabled">
 		<value condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)">[COLOR red]×[/COLOR] </value>
 	</variable>
 	<variable name="SettingsDescription">

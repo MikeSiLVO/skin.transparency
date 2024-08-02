@@ -21,7 +21,7 @@
 			<height>30</height>
 			<texturefocus>close-window-focus.png</texturefocus>
 			<texturenofocus>close-window-nofocus.png</texturenofocus>
-			<onclick>Dialog.Close(numericinput )</onclick>
+			<onclick>Dialog.Close(numericinput)</onclick>
 			<visible>Skin.HasSetting(TouchScreenMode)</visible>
 		</control>
 		<control type="label" id="1">

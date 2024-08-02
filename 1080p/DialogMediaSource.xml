@@ -5,7 +5,9 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>dialogeffect</include>
-			<include>DialogFade3</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(ContentSettings)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -91,9 +93,10 @@
 						<top>0</top>
 						<width>1320</width>
 						<height>45</height>
-						<visible>Control.HasFocus(10)</visible>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll12</include>
+						<include>VisibleFadeEffect</include>
+						<visible>Control.HasFocus(10)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>15</left>

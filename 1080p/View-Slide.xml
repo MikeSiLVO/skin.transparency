@@ -1312,12 +1312,12 @@
 			<include content="BackgroundUnderlay" condition="Skin.HasSetting(Enable_Movies_Media_Flags)">
 				<param name="top">20</param>
 				<param name="height">122</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 			</include>
 			<include content="BackgroundUnderlay" condition="!Skin.HasSetting(Enable_Movies_Media_Flags)">
 				<param name="top">20</param>
 				<param name="height">150</param>
-				<param name="include">AltUnderlayTexture</param>
+				<param name="alt">true</param>
 			</include>
 			<control type="image">
 				<left>1734</left>

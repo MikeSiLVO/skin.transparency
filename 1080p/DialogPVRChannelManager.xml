@@ -5,7 +5,9 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>dialogeffect4</include>
-			<include>DialogFade7</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(DialogPVRGroupManager.xml)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -400,8 +402,9 @@
 						<width>705</width>
 						<height>45</height>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll4</include>
+						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(20)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="image">
 						<left>60</left>

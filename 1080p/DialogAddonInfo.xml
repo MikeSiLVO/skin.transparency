@@ -6,8 +6,9 @@
 	<controls>
 		<include>BackgroundDim</include>
 		<control type="group">
-			<include>DialogFade6</include>
-			<visible>!Window.IsVisible(TextViewer)</visible>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(AddonSettings) | Window.IsVisible(TextViewer)</param>
+			</include>
 			<include content="BackgroundUnderlay">
 				<param name="top">840</param>
 				<param name="height">210</param>
@@ -34,7 +35,9 @@
 		</control>
 		<control type="group">
 			<include>dialogeffect4</include>
-			<include>DialogFade5</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(MusicInformation) | Window.IsVisible(TextViewer)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -237,32 +240,17 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<left>398</left>
-				<top>868</top>
+				<top>766</top>
 				<width>1462</width>
-				<height>154</height>
-				<label>$INFO[ListItem.AddonDescription]</label>
+				<height>308</height>
+				<label>$VAR[DialogAddonInfoText]</label>
 				<font>font-19</font>
 				<align>justify</align>
+				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>60</pagecontrol>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>String.IsEmpty(Window(Home).Property(Transparency-AddonNews))</visible>
-			</control>
-			<control type="textbox">
-				<description>textarea</description>
-				<left>398</left>
-				<top>868</top>
-				<width>1462</width>
-				<height>154</height>
-				<label>$INFO[ListItem.AddonNews]</label>
-				<font>font-19</font>
-				<align>justify</align>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<pagecontrol>60</pagecontrol>
-				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!String.IsEmpty(Window(Home).Property(Transparency-AddonNews))</visible>
 			</control>
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
@@ -339,7 +327,7 @@
 						<texture border="7">list-focus2.png</texture>
 						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(49)</visible>
-						<include>ListFocusScroll22</include>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>15</left>

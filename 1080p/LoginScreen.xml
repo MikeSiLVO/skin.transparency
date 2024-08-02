@@ -13,7 +13,7 @@
 				<include content="BackgroundUnderlay">
 					<param name="top">278</param>
 					<param name="height">630</param>
-					<param name="include">AltUnderlayTexture</param>
+					<param name="alt">true</param>
 				</include>
 				<control type="label">
 					<left>360</left>

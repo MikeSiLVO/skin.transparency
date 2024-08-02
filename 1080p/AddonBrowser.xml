@@ -23,8 +23,7 @@
 		<control type="group">
 			<include>ContentPanel</include>
 			<include>ContentFade</include>
-			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+			<include>Window_OpenClose_Settings_Panel_Animation</include>
 			<animation effect="slide" start="0,0" end="1045,174" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + !Skin.HasSetting(FanartShort) + !Skin.HasSetting(FanartLong)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="1045,393" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartShort)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="1045,-190" time="300" tween="quadratic" easing="out" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
@@ -45,107 +44,56 @@
 			<top>34</top>
 			<include>ContentFade</include>
 			<include>Window_OpenClose_Left_Panel_Animation</include>
-			<control type="group" id="9000">
+			<control type="grouplist" id="9000">
+				<width>387</width>
+				<height>910</height>
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
 				<include>SideMenuAnim</include>
-				<control type="image">
-					<left>0</left>
-					<top>-24</top>
-					<height>24</height>
-					<texture border="0,0,10,0">shadow-top2.png</texture>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-				</control>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<itemgap>-2</itemgap>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<left>0</left>
-					<top>0</top>
 					<include>ButtonCommonValues</include>
 					<label />
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>610</onup>
-					<ondown>3</ondown>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
-					<left>0</left>
-					<top>68</top>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
-					<onleft>50</onleft>
-					<onright>4</onright>
-					<onup>2</onup>
-					<ondown>5</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<top>94</top>
-					<width>22</width>
-					<height>22</height>
-					<label />
-					<onleft>3</onleft>
-					<onright>50</onright>
-					<onup>2</onup>
-					<ondown>5</ondown>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ToggleButtonNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ToggleButtonWide</include>
+					<include>ButtonCommonValues</include>
+					<include>ButtonToggleCommonValues</include>
+					<label>$LOCALIZE[31412] $LOCALIZE[584]</label>
+					<altlabel>$LOCALIZE[31412] $LOCALIZE[585]</altlabel>
 				</control>
 				<control type="button" id="5">
 					<description>Addon settings</description>
-					<left>0</left>
-					<top>135</top>
 					<include>ButtonCommonValues</include>
 					<label>10004</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>4</onup>
-					<ondown>9</ondown>
 				</control>
 				<control type="button" id="9">
 					<description>Manual update</description>
-					<left>0</left>
-					<top>202</top>
 					<include>ButtonCommonValues</include>
 					<label>24034</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>5</onup>
-					<ondown>7</ondown>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Hide foreign</description>
-					<left>0</left>
-					<top>270</top>
 					<include>ButtonCommonValues</include>
 					<label>25001</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>9</onup>
-					<ondown>8</ondown>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide broken</description>
-					<left>0</left>
-					<top>338</top>
 					<include>ButtonCommonValues</include>
 					<label>24999</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>610</ondown>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
-					<left>0</left>
-					<top>405</top>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>8</onup>
-					<ondown>2</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>

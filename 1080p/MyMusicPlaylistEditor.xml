@@ -244,7 +244,7 @@
 							<texture border="7">list-focus2.png</texture>
 							<include>VisibleFadeEffect</include>
 							<visible>Control.HasFocus(50)</visible>
-							<include>ListFocusScroll23</include>
+							<include>FocusPulse</include>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -396,7 +396,7 @@
 							<texture border="7">list-focus2.png</texture>
 							<include>VisibleFadeEffect</include>
 							<visible>Control.HasFocus(100)</visible>
-							<include>ListFocusScroll8</include>
+							<include>FocusPulse</include>
 						</control>
 						<control type="label">
 							<left>15</left>

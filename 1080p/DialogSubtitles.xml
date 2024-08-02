@@ -181,8 +181,9 @@
 						<width>1065</width>
 						<height>45</height>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll10</include>
+						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(120)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="image">
 						<left>9</left>
@@ -338,8 +339,9 @@
 						<width>330</width>
 						<height>52</height>
 						<texture border="7">list-focus2.png</texture>
-						<include>ListFocusScroll31</include>
+						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(150)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>68</left>

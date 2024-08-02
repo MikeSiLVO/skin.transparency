@@ -4,7 +4,9 @@
 	<controls>
 		<include>BackgroundDim</include>
 		<control type="group">
-			<include>DialogFade5</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(MusicInformation) | Window.IsVisible(TextViewer)</param>
+			</include>
 			<include content="BackgroundUnderlay">
 				<param name="top">825</param>
 				<param name="height">237</param>
@@ -21,8 +23,9 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>DialogFade5</include>
-			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(MusicInformation) | Window.IsVisible(TextViewer) | Window.IsVisible(1113)</param>
+			</include>
 			<control type="label">
 				<left>338</left>
 				<top>858</top>
@@ -52,7 +55,7 @@
 				<left>338</left>
 				<top>938</top>
 				<width>1500</width>
-				<height>98</height>
+				<height>100</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -156,7 +159,7 @@
 						<texture border="7">list-focus2.png</texture>
 						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(49)</visible>
-						<include>ListFocusScroll22</include>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -241,8 +244,8 @@
 				<height>30</height>
 				<label />
 				<font />
-				<texturefocus>magnifier-small-focus.png</texturefocus>
-				<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
+				<texturenofocus>new_window.png</texturenofocus>
+				<texturefocus colordiffuse="darkblue">new_window.png</texturefocus>
 				<onleft>61</onleft>
 				<onright>61</onright>
 				<ondown>49</ondown>

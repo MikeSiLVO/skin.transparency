@@ -23,7 +23,7 @@
 		</control>
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>black.png</texture>
+			<texture>colors/black.png</texture>
 			<colordiffuse>7FFFFFFF</colordiffuse>
 		</control>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

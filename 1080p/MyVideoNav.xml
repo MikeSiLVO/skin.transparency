@@ -116,29 +116,12 @@
 			<include content="CommonBackground">
 				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
 				<param name="fallback">special://skin/backgrounds/background-videos.jpg</param>
+				<param name="genrefolder">$INFO[Skin.String(Video_Genre_Folder)]</param>
 			</include>
 		</control>
 		<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies</include>
 		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
 		<include condition="Skin.HasSetting(MusicVideosExtraFanart)">fanart-extra-musicvideos</include>
-		<!-- <control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>VisibleFadeEffect</include>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<visible>![Container.Content(Movies) + Skin.HasSetting(MoviesExtraFanart)] + ![[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + Skin.HasSetting(TVShowsExtraFanart)] + ![Container.Content(MusicVideos) + Skin.HasSetting(MusicVideosExtraFanart)] + ![[Control.IsVisible(592) | Control.IsVisible(598)] + !Window.IsVisible(MovieInformation)] + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control> -->
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[Skin.String(Video_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>Container.Content(Genres) + Skin.HasSetting(VideoGenreBackgrounds) + ![Player.HasVideo + !Skin.HasSetting(HideVideoBackgrounds)]</visible>
-		</control>
 		<include condition="Skin.HasSetting(TVLogo)">logo-tv</include>
 		<include condition="Skin.HasSetting(MovieLogo)">logo-movies</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

@@ -78,10 +78,18 @@
 					<onfocus>Skin.SetString(WeatherMenu,6)</onfocus>
 					<visible>!String.IsEmpty(Window(Weather).Property(Alerts.IsFetched))</visible>
 				</control>
+				<control type="button" id="107">
+					<description>Settings button</description>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[5]</label>
+					<onfocus>Skin.SetString(WeatherMenu,1)</onfocus>
+					<onclick>ActivateWindow(servicesettings,weather)</onclick>
+				</control>
 				<control type="button" id="2">
 					<description>Refresh button</description>
 					<include>ButtonCommonValues</include>
 					<label />
+					<onfocus>Skin.SetString(WeatherMenu,1)</onfocus>
 				</control>
 				<control type="button" id="610">
 					<description>PlayerControls</description>
@@ -125,7 +133,7 @@
 			<top>1044</top>
 			<width>1800</width>
 			<height>30</height>
-			<label>[B]$LOCALIZE[31605] $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>
+			<label>[B]$LOCALIZE[8] $INFO[Window(Weather).Property(WeatherProvider)][/B]</label>
 			<font>font-15</font>
 			<align>right</align>
 			<textcolor>white</textcolor>

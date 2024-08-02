@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
-	<coordinates>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
 	<controls>
 		<control type="button" id="20">
-			<left>-15</left>
-			<top>-15</top>
-			<width>1</width>
-			<height>1</height>
+			<include>HiddenObject</include>
 		</control>
 		<include content="BackgroundDim">
 			<param name="visible">!Window.IsVisible(AddonInformation)</param>
 		</include>
 		<control type="group">
 			<include>dialogeffect</include>
-			<include>DialogFade2</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(TextViewer)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>

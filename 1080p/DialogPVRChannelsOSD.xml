@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
 		<left>360</left>
-		<top>0</top>
+		<top>60</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -50,15 +50,15 @@
 			<control type="list" id="11">
 				<description>control area</description>
 				<left>68</left>
-				<top>128</top>
+				<top>120</top>
 				<width>1050</width>
-				<height>570</height>
+				<height>585</height>
 				<pagecontrol>60</pagecontrol>
 				<onleft>PreviousChannelGroup</onleft>
 				<onright>60</onright>
 				<ondown>11</ondown>
 				<onup>11</onup>
-				<itemlayout width="1050" height="44">
+				<itemlayout width="1050" height="45">
 					<control type="progress">
 						<description>Progressbar</description>
 						<left>60</left>
@@ -120,7 +120,7 @@
 						<label>$INFO[ListItem.Title]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout width="1050" height="44">
+				<focusedlayout width="1050" height="45">
 					<control type="progress">
 						<description>Progressbar</description>
 						<left>60</left>
@@ -145,8 +145,9 @@
 						<width>1065</width>
 						<height>45</height>
 						<texture border="7">list-focus.png</texture>
-						<include>ListFocusScroll26</include>
+						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(11)</visible>
+						<include>FocusPulse</include>
 					</control>
 					<control type="image">
 						<left>15</left>

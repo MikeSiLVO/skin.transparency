@@ -83,7 +83,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(58)</visible>
-					<include>ListFocusScroll</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -360,7 +360,7 @@
 			<left>300</left>
 			<top>756</top>
 			<width>1320</width>
-			<height>129</height>
+			<height>142</height>
 			<font>font-20</font>
 			<align>justify</align>
 			<textcolor>white</textcolor>
@@ -493,7 +493,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(59)</visible>
-					<include>ListFocusScroll</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -832,7 +832,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(59)</visible>
-					<include>ListFocusScroll</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1374,7 +1374,7 @@
 					<texture border="7">list-focus2.png</texture>
 					<include>VisibleFadeEffect</include>
 					<visible>Control.HasFocus(599)</visible>
-					<include>ListFocusScroll</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -1530,7 +1530,7 @@
 				<left>675</left>
 				<top>3</top>
 				<width>758</width>
-				<height>154</height>
+				<height>168</height>
 				<label>$INFO[ListItem.AddonDescription]</label>
 				<font>font-19</font>
 				<align>center</align>

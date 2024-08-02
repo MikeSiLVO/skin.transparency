@@ -5,7 +5,9 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>dialogeffect</include>
-			<include>DialogFade3</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>

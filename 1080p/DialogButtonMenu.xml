@@ -3,13 +3,9 @@
 	<onload condition="!Skin.HasSetting(Hide_Shutdown_Shutdown)">SetFocus(36)</onload>
 	<onload condition="Skin.HasSetting(Hide_Shutdown_Shutdown)">SetFocus(999)</onload>
 	<controls>
-		<control type="image">
-			<description>shutdown</description>
-			<include>FullscreenDimensions</include>
-			<texture background="true">special://skin/backgrounds/shutdown.jpg</texture>
-			<aspectratio>scale</aspectratio>
-			<animation effect="fade" start="0" end="70" time="400">WindowOpen</animation>
-			<animation effect="fade" start="70" end="0" time="400">WindowClose</animation>
+		<control type="group">
+			<include>Window_OpenClose_Animation</include>
+			<include>BackgroundDim</include>
 		</control>
 		<control type="group">
 			<left>0</left>

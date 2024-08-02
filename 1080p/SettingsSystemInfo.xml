@@ -25,9 +25,8 @@
 		<control type="group">
 			<include>ContentPanel</include>
 			<include>ContentFade</include>
+			<include>Window_OpenClose_Settings_Panel_Animation</include>
 			<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + ControlGroup(9000).HasFocus">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
 			<control type="label" id="40">
 				<description>fake filter text label</description>
 				<left>300</left>
@@ -186,15 +185,6 @@
 			<include>Window_OpenClose_Left_Panel_Animation</include>
 			<include>CommonNowPlaying</include>
 			<include>ContentFade</include>
-			<control type="image">
-				<left>-375</left>
-				<top>141</top>
-				<height>24</height>
-				<texture border="0,0,10,0">shadow-top2.png</texture>
-				<animation effect="slide" start="0,0" end="375,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus">Conditional</animation>
-				<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-				<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-			</control>
 			<control type="grouplist" id="9000">
 				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
 				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>

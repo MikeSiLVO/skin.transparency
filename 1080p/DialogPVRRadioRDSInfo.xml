@@ -5,7 +5,9 @@
 		<include>BackgroundDim</include>
 		<control type="group">
 			<include>dialogeffect4</include>
-			<include>DialogFade5</include>
+			<include content="DialogFade">
+				<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(MusicInformation) | Window.IsVisible(TextViewer)</param>
+			</include>
 			<control type="button">
 				<left>1860</left>
 				<top>30</top>
@@ -108,7 +110,7 @@
 						<texture border="7">list-focus2.png</texture>
 						<include>VisibleFadeEffect</include>
 						<visible>Control.HasFocus(49)</visible>
-						<include>ListFocusScroll22</include>
+						<include>FocusPulse</include>
 					</control>
 					<control type="label">
 						<left>15</left>

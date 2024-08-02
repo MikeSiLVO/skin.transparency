@@ -6,9 +6,9 @@
 	<controls>
 		<control type="group">
 			<include>ContentFade</include>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">Conditional</animation>
-			<left>0</left>
-			<top>0</top>
+			<include content="DialogFade">
+				<param name="condition">Window.Next(Home)</param>
+			</include>
 			<visible>Player.HasAudio</visible>
 			<control type="button">
 				<left>1887</left>
@@ -274,6 +274,7 @@
 					<texturenofocus>osd-audio-nofocus.png</texturenofocus>
 					<texturefocus>osd-audio-focus.png</texturefocus>
 					<onclick>ActivateWindow(1114)</onclick>
+					<visible>system.getbool(input.enablemouse) | Skin.HasSetting(TouchScreenMode)</visible>
 				</control>
 				<control type="button" id="918">
 					<description>Lyrics Script</description>

@@ -91,7 +91,7 @@
 					<height>45</height>
 					<visible>Control.HasFocus(3)</visible>
 					<texture border="7">list-focus2.png</texture>
-					<include>ListFocusScroll14</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="label">
 					<left>15</left>
@@ -144,7 +144,19 @@
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
 					<label>$VAR[DialogSelectLabel]</label>
-					<animation effect="slide" end="0,16" condition="Window.IsVisible(script-skinshortcuts.xml) + String.IsEmpty(ListItem.Label2)">Conditional</animation>
+					<visible>![String.IsEmpty(ListItem.Label2) + !Window.Is(DialogVideoManager.xml)]</visible>
+				</control>
+				<control type="label">
+					<left>105</left>
+					<top>22</top>
+					<width>630</width>
+					<height>45</height>
+					<font>font-20</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<selectedcolor>blue</selectedcolor>
+					<label>$VAR[DialogSelectLabel]</label>
+					<visible>String.IsEmpty(ListItem.Label2) + !Window.Is(DialogVideoManager.xml)</visible>
 				</control>
 				<control type="label">
 					<left>120</left>
@@ -173,7 +185,7 @@
 					<height>90</height>
 					<visible>Control.HasFocus(6)</visible>
 					<texture border="7">list-focus2.png</texture>
-					<include>ListFocusScroll30</include>
+					<include>FocusPulse</include>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -193,7 +205,19 @@
 					<aligny>center</aligny>
 					<selectedcolor>blue</selectedcolor>
 					<label>$VAR[DialogSelectLabel]</label>
-					<animation effect="slide" end="0,16" condition="Window.IsVisible(script-skinshortcuts.xml) + String.IsEmpty(ListItem.Label2)">Conditional</animation>
+					<visible>![String.IsEmpty(ListItem.Label2) + !Window.Is(DialogVideoManager.xml)]</visible>
+				</control>
+				<control type="label">
+					<left>105</left>
+					<top>22</top>
+					<width>630</width>
+					<height>45</height>
+					<font>font-20</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<selectedcolor>blue</selectedcolor>
+					<label>$VAR[DialogSelectLabel]</label>
+					<visible>String.IsEmpty(ListItem.Label2) + !Window.Is(DialogVideoManager.xml)</visible>
 				</control>
 				<control type="label">
 					<left>120</left>

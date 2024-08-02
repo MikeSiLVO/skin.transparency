@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1113">
 	<defaultcontrol always="true">61</defaultcontrol>
+	<onunload>ClearProperty(dialog_plot_header,Home)</onunload>
+	<onunload>ClearProperty(dialog_plot_content,Home)</onunload>
 	<controls>
 		<control type="group">
 			<include>dialogeffect4</include>
@@ -37,7 +39,7 @@
 				<left>435</left>
 				<top>123</top>
 				<width>1050</width>
-				<height>672</height>
+				<height>680</height>
 				<label>$VAR[DialogPlotTextBox]</label>
 				<font>font-23</font>
 				<align>justify</align>

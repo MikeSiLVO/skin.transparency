@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="Thumbwall-Videos">
+		<include content="BackgroundDim">
+			<param name="colordiffuse">80FFFFFF</param>
+			<param name="visible">Control.IsVisible(589)</param>
+		</include>
 		<control type="panel" id="589">
 			<visible>Container.Content(Movies)</visible>
 			<left>0</left>
@@ -63,7 +67,7 @@
 					<height>180</height>
 					<aspectratio>stretch</aspectratio>
 					<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture>black.png</bordertexture>
+					<bordertexture>colors/black.png</bordertexture>
 					<bordersize>2</bordersize>
 					<animation effect="zoom" start="100" end="140" center="auto">Focus</animation>
 					<animation effect="slide" start="0,0" end="16,0" time="0" condition="Container.Column(0)">Conditional</animation>
@@ -79,7 +83,7 @@
 					<height>180</height>
 					<aspectratio>stretch</aspectratio>
 					<texture fallback="DefaultVideo.png" background="true">$VAR[IconPoster]</texture>
-					<bordertexture>black.png</bordertexture>
+					<bordertexture>colors/black.png</bordertexture>
 					<bordersize>2</bordersize>
 					<animation effect="zoom" start="100" end="140" center="auto">Focus</animation>
 					<animation effect="slide" start="0,0" end="16,0" time="0" condition="Container.Column(0)">Conditional</animation>

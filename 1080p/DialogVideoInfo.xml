@@ -7,7 +7,9 @@
 			<include>VisibleFadeEffect</include>
 			<include>BackgroundDim</include>
 			<control type="group">
-				<include>DialogFade</include>
+				<include content="DialogFade">
+					<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings)</param>
+				</include>
 				<include content="BackgroundUnderlay" condition="String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set)">
 					<param name="top">825</param>
 					<param name="height">237</param>
@@ -28,8 +30,9 @@
 			</control>
 			<control type="group">
 				<include>dialogeffect4</include>
-				<include>DialogFade</include>
-				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(1113)">Conditional</animation>
+				<include content="DialogFade">
+					<param name="condition">Window.IsVisible(FileBrowser) | Window.IsVisible(AddonSettings) | Window.IsVisible(1113)</param>
+				</include>
 				<control type="button">
 					<left>1860</left>
 					<top>30</top>
@@ -42,29 +45,46 @@
 				</control>
 				<control type="label">
 					<description>Item Title value</description>
-					<left>60</left>
-					<top>22</top>
-					<width>1800</width>
-					<height>45</height>
+					<width>100%</width>
+					<height>76</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>blue</textcolor>
+					<textoffsetx>60</textoffsetx>
 					<label>$VAR[DialogVideoInfoTitle]</label>
 					<font>font-32</font>
 				</control>
 				<control type="image">
-					<top>81</top>
+					<top>76</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
 				</control>
+				<include content="VideoInfoDetails" condition="!String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,musicvideo)">
+					<param name="top">79</param>
+					<param name="height">468</param>
+					<param name="layoutheight">36</param>
+				</include>
+				<include condition="String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(TVShowsPosters)">VideoInfoBanner</include>
+				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,tvshow)">
+					<param name="top">280</param>
+					<param name="height">405</param>
+				</include>
+				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,episode)">
+					<param name="top">87</param>
+					<param name="height">570</param>
+				</include>
+				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">
+					<param name="top">94</param>
+					<param name="height">450</param>
+				</include>
 				<control type="image">
-					<top>540</top>
+					<top>546</top>
 					<width>1920</width>
 					<height>3</height>
 					<texture>separator.png</texture>
-					<animation effect="slide" start="0,0" end="0,143" time="0" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,81" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,140" time="0" condition="String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,80" time="0" condition="String.IsEqual(ListItem.DBTYPE,episode)">Conditional</animation>
 				</control>
 				<control type="group" id="9000">
 					<left>210</left>
@@ -249,7 +269,8 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>9000</onup>
-					<ondown>61</ondown>
+					<ondown condition="Control.IsVisible(61)">61</ondown>
+					<ondown condition="!Control.IsVisible(61)">1114</ondown>
 					<pagecontrol>61</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<focusposition>4</focusposition>
@@ -290,55 +311,36 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="spincontrol" id="61">
-					<description>Next page button</description>
+				<control type="group">
+					<top>1052</top>
 					<left>1770</left>
-					<top>1048</top>
-					<subtype>page</subtype>
-					<font>font-19</font>
-					<onleft>1114</onleft>
-					<onright>1114</onright>
-					<ondown>5</ondown>
-					<onup>50</onup>
-					<textcolor>white</textcolor>
-					<showonepage>true</showonepage>
+					<control type="spincontrol" id="61">
+						<description>Next page button</description>
+						<subtype>page</subtype>
+						<font>font-19</font>
+						<onleft>1114</onleft>
+						<onright>1114</onright>
+						<ondown>5</ondown>
+						<onup>50</onup>
+						<textcolor>white</textcolor>
+						<showonepage>false</showonepage>
+					</control>
+					<control type="button" id="1114">
+						<left>115</left>
+						<width>30</width>
+						<height>30</height>
+						<font />
+						<texturenofocus>new_window.png</texturenofocus>
+						<texturefocus colordiffuse="darkblue">new_window.png</texturefocus>
+						<onleft>61</onleft>
+						<onright>61</onright>
+						<onup>11</onup>
+						<ondown>5</ondown>
+						<onclick condition="Window.IsActive(home)">SetProperty(dialog_plot_header,$LOCALIZE[207],home)</onclick>
+						<onclick condition="Window.IsActive(home)">SetProperty(dialog_plot_content,$ESCINFO[ListItem.Plot],home)</onclick>
+						<onclick>ActivateWindow(1113)</onclick>
+					</control>
 				</control>
-				<control type="button" id="1114">
-					<left>1875</left>
-					<top>1050</top>
-					<width>30</width>
-					<height>30</height>
-					<font />
-					<texturefocus>magnifier-small-focus.png</texturefocus>
-					<texturenofocus>magnifier-small-nofocus.png</texturenofocus>
-					<onleft>61</onleft>
-					<onright>61</onright>
-					<onup>11</onup>
-					<ondown>5</ondown>
-					<onclick>ActivateWindow(1113)</onclick>
-				</control>
-				<include content="VideoInfoDetails" condition="!String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEqual(ListItem.DBTYPE,musicvideo)">
-					<param name="top">86</param>
-					<param name="height">442</param>
-					<param name="layoutheight">34</param>
-					<param name="content">VideoInfoDetailsMovieContent</param>
-				</include>
-				<include condition="String.IsEqual(ListItem.DBTYPE,tvshow) + Skin.HasSetting(TVShowsPosters)">VideoInfoBanner</include>
-				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,tvshow)">
-					<param name="top">280</param>
-					<param name="height">405</param>
-					<param name="content">VideoInfoDetailsTVShowContent</param>
-				</include>
-				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,episode)">
-					<param name="top">87</param>
-					<param name="height">570</param>
-					<param name="content">VideoInfoDetailsEpisodeContent</param>
-				</include>
-				<include content="VideoInfoDetails" condition="String.IsEqual(ListItem.DBTYPE,musicvideo)">
-					<param name="top">94</param>
-					<param name="height">450</param>
-					<param name="content">VideoInfoDetailsMusicVideoContent</param>
-				</include>
 			</control>
 		</control>
 	</controls>

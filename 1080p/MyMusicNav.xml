@@ -155,15 +155,8 @@
 			<include content="CommonBackground">
 				<param name="imagepath">$VAR[CommonBackgroundPath]</param>
 				<param name="fallback">special://skin/backgrounds/background-music.jpg</param>
+				<param name="genrefolder">$INFO[Skin.String(Music_Genre_Folder)]</param>
 			</include>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<texture background="true">$INFO[Skin.String(Music_Genre_Folder)]$INFO[ListItem.Label,,.jpg]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include condition="Skin.HasSetting(AnimateFanart)">backgroundanimation</include>
-				<visible>Container.Content(Genres) + Skin.HasSetting(MusicGenreBackgrounds)</visible>
-			</control>
 		</control>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

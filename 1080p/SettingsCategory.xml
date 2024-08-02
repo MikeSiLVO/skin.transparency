@@ -17,8 +17,7 @@
 		<control type="group">
 			<include>ContentFade</include>
 			<include>ContentPanel</include>
-			<animation effect="fade" start="0" end="100" time="350" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+			<include>Window_OpenClose_Settings_Panel_Animation</include>
 			<control type="image">
 				<left>300</left>
 				<top>68</top>
@@ -78,24 +77,6 @@
 				<orientation>vertical</orientation>
 			</control>
 			<animation effect="slide" start="0,0" end="112,0" time="200" delay="200" tween="quadratic" easing="out" condition="Skin.HasSetting(WideSideMenuButtons) + !Control.HasFocus(90) + !ControlGroup(5).HasFocus">Conditional</animation>
-		</control>
-		<control type="group">
-			<top>34</top>
-			<include>ContentFade</include>
-			<include>Window_OpenClose_Left_Panel_Animation</include>
-			<control type="group">
-				<include condition="!Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Normal</include>
-				<include condition="Skin.HasSetting(WideSideMenuButtons)">Window_OpenClose_Left_Panel_Position_Wide</include>
-				<include>SideMenuAnim3</include>
-				<control type="image">
-					<left>0</left>
-					<top>-24</top>
-					<height>24</height>
-					<texture border="0,0,10,0">shadow-top2.png</texture>
-					<include condition="!Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesNormal</include>
-					<include condition="Skin.HasSetting(WideSideMenuButtons)">ButtonCommonValuesWide</include>
-				</control>
-			</control>
 		</control>
 		<control type="group">
 			<top>34</top>
@@ -241,9 +222,9 @@
 			</control>
 			<control type="textbox" id="6">
 				<left>360</left>
-				<top>981</top>
+				<top>971</top>
 				<width>1200</width>
-				<height>96</height>
+				<height>106</height>
 				<align>center</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
