@@ -1187,7 +1187,7 @@
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] + ![Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)]</visible>
+				<visible>![Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)]</visible>
 				<visible>![Control.HasFocus($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]) + !String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Art(fanart))]</visible>
 				<animation effect="fade" start="0" end="100" time="150" delay="350">Visible</animation>
 				<control type="multiimage">
@@ -1201,7 +1201,7 @@
 					<aspectratio aligny="top">scale</aspectratio>
 					<imagepath background="true">$VAR[HomeFrameBackgroundPath]</imagepath>
 					<include>$SKINSHORTCUTS[animationinclude]</include>
-					<include condition="Skin.HasSetting(AnimateBackgrounds)">backgroundanimation2</include>
+					<include>backgroundanimation2</include>
 				</control>
 			</control>
 		</controls>

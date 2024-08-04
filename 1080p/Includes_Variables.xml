@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="CommonBackgroundPath">
-		<value condition="Window.IsVisible(music) + Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
-		<value condition="Window.IsVisible(music) + Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),cdwallfanart)" />
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),extrafanart)">$VAR[PlayerExtraFanartPath]</value>
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),slideshowfanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+		<value condition="Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(artist.fanart))">$INFO[Container.ListItem.Art(artist.fanart)]</value>
@@ -23,10 +27,24 @@
 		<value condition="!String.IsEmpty(Skin.String(Custom_Back_TV_Folder)) + [Window.IsVisible(tvchannels) | Window.IsVisible(tvguide) | Window.IsVisible(tvsearch) | Window.IsVisible(tvtimers)]">$INFO[Skin.String(Custom_Back_TV_Folder)]</value>
 	</variable>
 	<variable name="HomeBackgroundPath">
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),cdwallfanart)" />
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),extrafanart)">$VAR[PlayerExtraFanartPath]</value>
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + String.IsEqual(Skin.String(VizBackground),slideshowfanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
+		<value condition="Player.HasAudio + !Skin.HasSetting(HideVisBackgrounds) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(5040).ListItem.Property(backgroundFrame))">$INFO[Container(5040).ListItem.Property(backgroundFrame)]</value>
 		<value condition="String.IsEqual(Container(5040).ListItem.Property(background),DefaultAddonWeather.png)">$VAR[WeatherFanartPath]</value>
 		<value>$INFO[Container(5040).ListItem.Property(background)]</value>
+	</variable>
+	<variable name="MusicVizBackground">
+		<value condition="String.IsEqual(Skin.String(VizBackground),cdwallfanart)" />
+		<value condition="String.IsEqual(Skin.String(VizBackground),extrafanart)">$VAR[PlayerExtraFanartPath]</value>
+		<value condition="String.IsEqual(Skin.String(VizBackground),slideshowfanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
+		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+	</variable>
+	<variable name="MusicVizBackgroundFallback">
+		<value condition="String.IsEqual(Skin.String(VizBackground),cdwallfanart)" />
+		<value>special://skin/backgrounds/background-music.jpg</value>
 	</variable>
 	<variable name="SettingsPanelBackgroundPath">
 		<value condition="Window.IsVisible(addonbrowser)">special://skin/backgrounds/addons.jpg</value>
@@ -41,15 +59,10 @@
 		<value condition="Window.IsVisible(systeminfo)">special://skin/backgrounds/systeminfo.jpg</value>
 		<value condition="Window.IsVisible(skinsettings)">special://skin/backgrounds/skin.jpg</value>
 	</variable>
-	<variable name="ExtraFanartPath">
-		<value condition="Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
-		<value condition="Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
-		<value>$INFO[ListItem.Art(fanart)]</value>
-	</variable>
 	<variable name="PlayerExtraFanartPath">
-		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + [!String.IsEmpty(Player.Art(artist.fanart1)) | !String.IsEmpty(Player.Art(artist.fanart2))]">$INFO[Control.GetLabel(4410)]</value>
-		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + [!String.IsEmpty(Player.Art(albumartist.fanart1)) | !String.IsEmpty(Player.Art(albumartist.fanart2))] + ">$INFO[Control.GetLabel(4411)]</value>
-		<value condition="String.IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
+		<value condition="Control.IsVisible(4410) + !String.IsEmpty(Control.GetLabel(4410))">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="Control.IsVisible(4411) + !String.IsEmpty(Control.GetLabel(4411))">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="!String.IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
 		<value>$INFO[Player.Art(fanart)]</value>
 	</variable>
 	<variable name="WeatherFanartPath">
@@ -153,14 +166,6 @@
 		<value condition="ListItem.HasVideoVersions">VideoVersions.png</value>
 		<value condition="ListItem.HasVideoExtras">Extras.png</value>
 	</variable>
-	<variable name="ArtistSlide">
-		<value condition="String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
-		<value>$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</value>
-	</variable>
-	<!-- <variable name="ContextMenu">
-		<value condition="Container.Content(Actors)">$LOCALIZE[31226]</value>
-		<value condition="Container.Content(Directors)">$LOCALIZE[31227]</value>
-	</variable> -->
 	<variable name="DialogAddonInfoText">
 		<value condition="!String.IsEmpty(Window(Home).Property(Transparency-AddonNews))">$INFO[Listitem.AddonNews]</value>
 		<value>$INFO[ListItem.AddonDescription]</value>
@@ -858,11 +863,6 @@
 	<variable name="SkinSettingsWeatherIconsName">
 		<value condition="String.IsEmpty(Skin.String(resource.images.weathericons.name))">$INFO[System.AddonTitle(resource.images.weathericons.white)]</value>
 		<value>$INFO[Skin.String(resource.images.weathericons.name)]</value>
-	</variable>
-	<variable name="SkinSettingsFanartPath">
-		<value condition="Container(302).HasFocus(2)">[COLOR=blue]$INFO[Skin.String(Custom_Home_Movies_Fanart_Background_Path)][/COLOR]</value>
-		<value condition="Container(302).HasFocus(3)">[COLOR=blue]$INFO[Skin.String(Custom_Home_TVShows_Fanart_Background_Path)][/COLOR]</value>
-		<value condition="Container(302).HasFocus(6)">[COLOR=blue]$INFO[Skin.String(Custom_Home_Music_Fanart_Background_Path)][/COLOR]</value>
 	</variable>
 	<variable name="SkinSettingsShutdownLabel">
 		<value condition="Control.HasFocus(602)">$LOCALIZE[20045]</value>

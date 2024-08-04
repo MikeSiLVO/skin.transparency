@@ -1412,11 +1412,7 @@
 	</include>
 	<include name="CommonVisualizationBackground">
 		<include condition="!Skin.HasSetting(Vis-Visualization)">home-visualisation1</include>
-		<include condition="Skin.HasSetting(Vis-ArtistSlide)">home-artistslideshow</include>
-		<include condition="Skin.HasSetting(Vis-Slideshow)">fanartslideshow-musicvisualisation</include>
-		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-fanart-fallback</include>
-		<include condition="[!Skin.HasSetting(Vis-Fanart) | Skin.HasSetting(Vis-Slideshow)]">home-musicplayer-fanart</include>
-		<include condition="Skin.HasSetting(Vis-CDWall)">cdwall-musicvisualisation</include>
+		<include condition="String.IsEqual(Skin.String(VizBackground),cdwallfanart)">cdwall-musicvisualisation</include>
 		<include condition="!Skin.HasSetting(Vis-Visualization)">home-visualisation2</include>
 	</include>
 	<include name="ContentPanel">

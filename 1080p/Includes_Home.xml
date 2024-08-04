@@ -20,45 +20,6 @@
 			<visible>Player.HasAudio + [String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)] + !Slideshow.IsActive</visible>
 		</control>
 	</include>
-	<include name="home-artistslideshow">
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</texture>
-			<aspectratio>keep</aspectratio>
-			<fadetime>2000</fadetime>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<visible>Player.HasAudio + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
-		</control>
-	</include>
-	<include name="home-fanart-fallback">
-		<control type="multiimage">
-			<description>fallback texture if no fanart is available</description>
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)]+ !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]] + String.IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
-		</control>
-	</include>
-	<include name="home-musicplayer-fanart">
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(HideVisBackground) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation</include>
-			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]]</visible>
-		</control>
-	</include>
 	<include name="HomeButtonNormal">
 		<width>376</width>
 	</include>

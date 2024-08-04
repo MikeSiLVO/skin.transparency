@@ -83,7 +83,12 @@
 						<control type="image">
 							<width>500</width>
 							<height>60</height>
-							<texture border="7">list-focus2.png</texture>
+							<texture border="7">list-nofocus.png</texture>
+						</control>
+						<control type="image">
+							<width>500</width>
+							<height>60</height>
+							<texture border="7">list-focus.png</texture>
 							<visible>Control.HasFocus(211)</visible>
 						</control>
 						<control type="label">

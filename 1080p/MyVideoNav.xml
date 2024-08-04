@@ -15,7 +15,8 @@
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
 			<pauseatend>7000</pauseatend>
-			<visible>!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(fanart2)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart2))</visible>
+			<visible>!String.IsEmpty(ListItem.Art(fanart1)) + !String.IsEmpty(ListItem.Art(fanart2)) + !String.IsEmpty(ListItem.Art(tvshow.fanart1)) + !String.IsEmpty(ListItem.Art(tvshow.fanart2))</visible>
+			<visible>[[Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting(MoviesExtraFanart) | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + Skin.HasSetting(TVShowsExtraFanart) | Container.Content(musicvideos) + Skin.HasSetting(MusicVideosExtraFanart)]</visible>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
 			<label>$INFO[ListItem.Art(fanart2)]</label>
@@ -67,6 +68,7 @@
 			<randomize>true</randomize>
 			<pauseatend>7000</pauseatend>
 			<visible>!String.IsEmpty(Container.ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart2)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart2))</visible>
+			<visible>[[Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting(MoviesExtraFanart) | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + Skin.HasSetting(TVShowsExtraFanart) | Container.Content(musicvideos) + Skin.HasSetting(MusicVideosExtraFanart)]</visible>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart2)]</label>
@@ -119,9 +121,6 @@
 				<param name="genrefolder">$INFO[Skin.String(Video_Genre_Folder)]</param>
 			</include>
 		</control>
-		<include condition="Skin.HasSetting(MoviesExtraFanart)">fanart-extra-movies</include>
-		<include condition="Skin.HasSetting(TVShowsExtraFanart)">fanart-extra-tvshows</include>
-		<include condition="Skin.HasSetting(MusicVideosExtraFanart)">fanart-extra-musicvideos</include>
 		<include condition="Skin.HasSetting(TVLogo)">logo-tv</include>
 		<include condition="Skin.HasSetting(MovieLogo)">logo-movies</include>
 		<include condition="!Skin.HasSetting(HideVisBackgrounds)">CommonVisualizationBackground</include>

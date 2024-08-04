@@ -9,6 +9,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>String.IsEqual(Skin.String(VizBackground),extrafanart) + !String.IsEmpty(Player.Art(artist.fanart1)) + !String.IsEmpty(Player.Art(artist.fanart2))</visible>
 			<label>$INFO[Player.Art(artist.fanart)]</label>
 			<label>$INFO[Player.Art(artist.fanart1)]</label>
 			<label>$INFO[Player.Art(artist.fanart2)]</label>
@@ -39,6 +40,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<pauseatend>5000</pauseatend>
+			<visible>String.IsEqual(Skin.String(VizBackground),extrafanart) + !String.IsEmpty(Player.Art(albumartist.fanart1)) + !String.IsEmpty(Player.Art(albumartist.fanart2))</visible>
 			<label>$INFO[Player.Art(albumartist.fanart)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart1)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart2)]</label>
@@ -66,40 +68,10 @@
 			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(Vis-Visualization) + ![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum)]</visible>
 		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture fallback="special://skin/backgrounds/background-music.jpg" background="true">$VAR[ArtistSlide]</texture>
-			<aspectratio>keep</aspectratio>
-			<fadetime>2000</fadetime>
-			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<visible>Player.HasAudio + Skin.HasSetting(Vis-ArtistSlide)</visible>
-		</control>
-		<include>fanartslideshow-musicvisualisation</include>
-		<control type="multiimage">
-			<description>fallback texture if no fanart is available</description>
-			<include>FullscreenDimensions</include>
-			<timeperimage>5000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>2000</fadetime>
-			<imagepath fallback="special://skin/backgrounds/background-music.jpg" background="true">$INFO[Skin.String(Custom_Back_Music_Folder)]</imagepath>
-			<aspectratio>scale</aspectratio>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]] + String.IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
-		</control>
-		<control type="image">
-			<include>FullscreenDimensions</include>
-			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include condition="Skin.HasSetting(Vis-Animation)">backgroundanimation2</include>
-			<animation effect="fade" start="100" end="20" time="0" condition="![String.IsEqual(Visualisation.Name,waveform) | String.IsEqual(Visualisation.Name,spectrum) | String.IsEmpty(Visualisation.Name)] + !Skin.HasSetting(Vis-Visualization)">Conditional</animation>
-			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + [!Skin.HasSetting(Vis-Fanart) | [Skin.HasSetting(Vis-Slideshow) + String.IsEmpty(Control.GetLabel(6101))]]</visible>
-		</control>
+		<include content="CommonBackground">
+			<param name="imagepath">$VAR[MusicVizBackground]</param>
+			<param name="fallback">$VAR[MusicVizBackgroundFallback]</param>
+		</include>
 		<include>cdwall-musicvisualisation</include>
 		<include condition="Skin.HasSetting(ArtistLogo)">logo-artists-visualisation</include>
 		<control type="visualisation" id="2">
