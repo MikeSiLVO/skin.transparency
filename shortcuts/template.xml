@@ -60,8 +60,6 @@
 					<top>45</top>
 					<height>180</height>
 					<width>1155</width>
-					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
-					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<itemlayout width="1155" height="60">
@@ -219,8 +217,6 @@
 					<top>45</top>
 					<height>180</height>
 					<width>1155</width>
-					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
-					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<itemlayout width="1155" height="60">
@@ -400,8 +396,6 @@
 					<top>45</top>
 					<height>180</height>
 					<width>1155</width>
-					<ondown condition="!Skin.HasSetting(HorizontalHomeMenu)">$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]</ondown>
-					<ondown condition="Skin.HasSetting(HorizontalHomeMenu)">9000</ondown>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<itemlayout width="1155" height="60">
