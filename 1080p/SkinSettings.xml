@@ -290,23 +290,6 @@
 					<onright>299</onright>
 					<onup>201</onup>
 					<ondown>201</ondown>
-					<control type="radiobutton" id="202">
-						<description>Horizontal</description>
-						<label>31118</label>
-						<onclick>Skin.ToggleSetting(HorizontalHomeMenu)</onclick>
-						<selected>Skin.HasSetting(HorizontalHomeMenu)</selected>
-					</control>
-					<control type="radiobutton" id="203">
-						<description>Wide Home Buttons</description>
-						<label>31117</label>
-						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
-						<selected>Skin.HasSetting(WideHomeMenu)</selected>
-					</control>
-					<control type="image" id="208">
-						<width>1320</width>
-						<height>3</height>
-						<texture>separator.png</texture>
-					</control>
 					<control type="radiobutton" id="228">
 						<description>enable video info</description>
 						<label>20176</label>
@@ -1464,6 +1447,23 @@
 					<control type="button" id="803">
 						<label>$LOCALIZE[31012]</label>
 						<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+					</control>
+					<control type="image" id="208">
+						<width>1320</width>
+						<height>3</height>
+						<texture>separator.png</texture>
+					</control>
+					<control type="radiobutton" id="804">
+						<description>Horizontal</description>
+						<label>31118</label>
+						<onclick>Skin.ToggleSetting(HorizontalHomeMenu)</onclick>
+						<selected>Skin.HasSetting(HorizontalHomeMenu)</selected>
+					</control>
+					<control type="radiobutton" id="805">
+						<description>Wide Home Buttons</description>
+						<label>31117</label>
+						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
+						<selected>Skin.HasSetting(WideHomeMenu)</selected>
 					</control>
 				</control>
 				<control type="group">
