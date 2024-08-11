@@ -486,7 +486,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="$SKINSHORTCUTS[target]" browse="never">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortorder]"  browse="never">$SKINSHORTCUTS[content]</content>
 				</control>
 				<control type="label">
 					<left>520</left>
