@@ -1448,18 +1448,18 @@
 						<label>$LOCALIZE[31012]</label>
 						<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
 					</control>
-					<control type="image" id="208">
+					<control type="image" id="804">
 						<width>1320</width>
 						<height>3</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="804">
+					<control type="radiobutton" id="805">
 						<description>Horizontal</description>
 						<label>31118</label>
 						<onclick>Skin.ToggleSetting(HorizontalHomeMenu)</onclick>
 						<selected>Skin.HasSetting(HorizontalHomeMenu)</selected>
 					</control>
-					<control type="radiobutton" id="805">
+					<control type="radiobutton" id="806">
 						<description>Wide Home Buttons</description>
 						<label>31117</label>
 						<onclick>Skin.ToggleSetting(WideHomeMenu)</onclick>
